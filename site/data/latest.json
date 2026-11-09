@@ -1,0 +1,8 @@
+{
+  "mode": "demo",
+  "generated_at": null,
+  "ai": {"status":"demo","model":null,"headline":"오늘의 시장을 움직이는 핵심 변수를 한눈에","overview":"첫 자동 갱신 뒤 실제 자료에 기반한 AI 시장 브리핑이 표시됩니다.","analysis":{}},
+  "market": [],
+  "news": {"stocks":[],"housing":[],"bonds":[]},
+  "errors":[]
+}
