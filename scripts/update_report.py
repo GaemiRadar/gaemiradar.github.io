@@ -285,7 +285,7 @@ def run_gemini(client, types, model, material, instruction):
         config=types.GenerateContentConfig(
             system_instruction=instruction,
             response_mime_type="application/json",
-            response_schema=schema(),
+            response_json_schema=schema(),
             temperature=0.2,
         ),
     )
