@@ -1,86 +1,45 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-09T22:52:01.855715+09:00",
+  "generated_at": "2026-11-09T23:12:34.288366+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
-    "status": "ok",
-    "model": "gemini-3.6-flash",
-    "draft_model": "gemini-3.6-flash",
+    "status": "error",
+    "model": null,
+    "draft_model": null,
     "review_model": null,
-    "review_status": "failed",
-    "headline": "미국 고용 호조 및 물가·실적 발표 앞두고 증시·채권 시장 변동성 확대",
-    "overview": "외국인 매도세로 국내 주가지수가 사흘째 하락한 가운데, 미국 물가지수 발표와 AI 기업 실적을 앞두고 증시 관망세가 이어지고 있습니다. 채권 시장은 미국 고용 지표 호조와 대외 금리 상승 영향으로 국고채 금리가 오르고 있습니다.",
+    "review_status": "not_run",
+    "headline": "오늘의 금융시장 주요 뉴스와 시장 지표",
+    "overview": "뉴스와 가격 데이터는 수집되었지만 Gemini 분석이 완료되지 않았습니다. 관리자 확인이 필요합니다.",
     "analysis": {
       "stocks": {
-        "direction": "중립",
+        "direction": "판단 유보",
+        "horizon": "향후 1주",
         "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "외국인 순매도와 반도체 약세로 한국 코스피 및 코스닥 지수가 하락했으나, 미국 증시의 반도체 저가 매수세와 주요 빅테크 실적 기대감이 공존하고 있습니다.",
-        "bull_cases": [
-          "미국 뉴욕증시 내 반도체 저가 매수세 유입 및 나스닥 지수 상승",
-          "빅테크 및 AI 기업 실적 발표를 통한 증시 반등 계기 마련 기대"
-        ],
-        "bear_cases": [
-          "외국인 투자자의 6천억 원대 순매도 지속 및 한국 반도체주 약세",
-          "미국 소비자물가지수(CPI) 등 주요 지표 발표를 앞둔 관망 심리"
-        ],
-        "watch": [
-          "외국인 수급 동향",
-          "미국 CPI 및 PPI 물가 지표",
-          "주요 AI 관련 기업 실적 발표"
-        ],
-        "citation_ids": [
-          "stocks-0",
-          "stocks-3",
-          "stocks-6"
-        ]
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
       },
       "housing": {
         "direction": "판단 유보",
+        "horizon": "향후 1~3개월",
         "confidence": "낮음",
-        "horizon": "중장기",
-        "summary": "전국 주택 가격을 단정할 수 있는 통계가 부재하며, 매물 증가 및 거래 감소 속에 지역별 거래량과 가격 추이가 엇갈려 종합적인 방향성 판단을 유보합니다.",
-        "bull_cases": [
-          "분당 등 일부 1기 신도시 지역의 매매 가격 상승세",
-          "토지거래허가구역 비지정 지역 중심의 거래량 증가"
-        ],
-        "bear_cases": [
-          "주택담보대출 상환 부담 지속",
-          "매물 증가 속 거래 감소 현상 및 일부 규제 지역의 거래 반토막"
-        ],
-        "watch": [
-          "지역별 아파트 거래량 및 매물 추이",
-          "주택담보대출 금리 변동",
-          "토지거래허가구역 등 부동산 규제 정책"
-        ],
-        "citation_ids": [
-          "housing-2",
-          "housing-3",
-          "housing-6"
-        ]
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
       },
       "bonds": {
-        "direction": "하락 우세",
+        "direction": "판단 유보",
+        "horizon": "향후 1주",
         "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "미국 고용 지표 호조와 대외 금리 상승으로 국고채 금리가 상승했습니다. 채권 금리가 상승하면 고정금리 채권의 가격은 하락하므로 채권 가격에는 하락 압력이 작용하고 있습니다.",
-        "bull_cases": [
-          "향후 금리 인하 기대감 재부각 시 채권 가격 반등 가능성"
-        ],
-        "bear_cases": [
-          "예상을 웃돈 미국 고용 지표로 인한 연준 긴축 우려 및 국고채 금리 상승",
-          "한국은행 기준금리 인상 전망 및 대외 금리 상승으로 인한 채권 가격 하락"
-        ],
-        "watch": [
-          "미국 CPI 및 PPI 등 물가 지표",
-          "한국은행 11월 금융통화위원회 기준금리 결정",
-          "국고채 2년 및 3년물 금리 추이"
-        ],
-        "citation_ids": [
-          "bonds-0",
-          "bonds-2",
-          "bonds-7"
-        ]
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
       }
     }
   },
@@ -395,19 +354,19 @@
         "id": "stocks-7"
       },
       {
+        "title": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다",
+        "publisher": "버핏연구소",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hNHdtaU9XRzM5Uk03WnZXYjdkem9VaEhGY2ItR2VRc0MyT3h0cEluQzBQenlkbXMzY2N0WnBUNVBHb2dueUV5N1d3c3Y5SExRX3oxbGNGcVNJbVJJN013ZzdB?oc=5",
+        "published_at": "2026-11-08T22:45:58+00:00",
+        "summary": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다 &nbsp;&nbsp; 버핏연구소",
+        "id": "stocks-8"
+      },
+      {
         "title": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망]",
         "publisher": "서울경제",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QMC1zcG1EaFBtWTlJeTFoVkx6d3F6bXhkSUc3ZXlPU3hxVGppVVRudktDZFByVk5ma3JET0hKWWxoTU0xSFdqdGttQXEyQkJMR2c?oc=5",
         "published_at": "2026-11-08T21:15:00+00:00",
         "summary": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망] &nbsp;&nbsp; 서울경제",
-        "id": "stocks-8"
-      },
-      {
-        "title": "쓰나미 여진 올라… AI실적에 개미들 긴장 - 머니투데이",
-        "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92VW5TeFhDVHQ2N0lzZmp5Qmtob3N4MEx2TkRhVVRMNUFOc1FCQnVvV1NDMFBkalJ1Wk5UNFU3UjYyMEdBRWFLYzBac1UzUlYxdXRhYTZ5cXR2MDlMYXpscnhqd0hwbVZ2eG1kUVVR0gFuQVVfeXFMT3ZVblN4WENUdDY3SXNmanlCa2hvc3gwTHZORGFVVEw1QU5zUUJCdW9XU0MwUGRqUnVaTlQ0VTdSNjIwR0FFYUtjMFpzVTNSVjF1dGFhNnlxdHYwOUxhemxyeGp3SHBtVnZ4bWRRVVE?oc=5",
-        "published_at": "2026-11-08T19:00:00+00:00",
-        "summary": "쓰나미 여진 올라… AI실적에 개미들 긴장 - 머니투데이 &nbsp;&nbsp; 머니투데이",
         "id": "stocks-9"
       }
     ],
@@ -583,6 +542,8 @@
     "FRED DGS2: ReadTimeout",
     "FRED DEXKOUS: ReadTimeout",
     "FRED VIXCLS: ReadTimeout",
-    "Pro 재검토 실패(gemini-3.5-flash): ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
+    "Flash 모델 gemini-3.5-flash-lite 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
+    "Gemini AI 분석 실패: ValueError (HTTP unknown): All Flash models failed"
   ]
 }
