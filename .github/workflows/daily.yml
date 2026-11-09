@@ -1,0 +1,74 @@
+name: Daily Dual-AI Finance Briefing
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/index.html'
+      - 'scripts/**'
+      - 'requirements.txt'
+      - '.github/workflows/daily.yml'
+  schedule:
+    # 09:07 Korean time = 00:07 UTC. Actual GitHub execution may be delayed.
+    - cron: '7 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch news and build report
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_FLASH_MODEL: gemini-3.6-flash
+          GEMINI_FLASH_FALLBACK: gemini-2.5-flash
+          GEMINI_REVIEW_MODEL: gemini-2.5-pro
+          ENABLE_PRO_REVIEW: "1"
+        run: python scripts/update_report.py
+      - name: Save latest public data to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update daily market snapshot"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
