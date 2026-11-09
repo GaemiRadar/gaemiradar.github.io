@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-09T22:28:19.063146+09:00",
+  "generated_at": "2026-11-09T22:46:35.341710+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "ok",
@@ -8,48 +8,48 @@
     "draft_model": "gemini-3.5-flash-lite",
     "review_model": null,
     "review_status": "failed",
-    "headline": "국내외 증시 숨 고르기 및 금리 상승에 따른 채권시장 약세",
-    "overview": "국내 증시는 외국인 매도세와 미 물가 및 AI 실적 경계감으로 사흘째 하락세를 보였으며, 채권시장은 미국 고용 호조와 기준금리 인상 전망 등의 영향으로 금리가 상승(채권 가격 하락)하였습니다.",
+    "headline": "국내외 증시 하락 및 고용 호조에 따른 금리 상승 우려 시황",
+    "overview": "외국인 매도세로 인해 코스피가 하락세를 보였으며, 미국 고용 지표 호조와 인플레이션 경계감으로 인해 채권 금리는 상승(채권 가격 하락) 압력을 받았습니다. 부동산 시장은 매수·매도자 간 힘겨루기와 규제 영향 속에서 혼조세를 보이고 있습니다.",
     "analysis": {
       "stocks": {
         "direction": "하락 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "외국인 투자자의 대규모 반도체 매도와 미국 물가 지표 및 빅테크 실적 발표를 앞둔 경계감으로 증시가 약세를 보이고 있습니다.",
+        "summary": "외국인의 반도체 중심 대규모 매도세로 코스피가 사흘 연속 하락하였으며, 미국 물가 지표와 주요 기업 실적 발표를 앞두고 관망세가 짙습니다.",
         "bull_cases": [
-          "작은 호재에도 지수가 반등할 수 있다는 증권가 시각 존재",
-          "일부 글로벌 증시에서의 반도체 저가 매수세 유입 가능성"
+          "미국 뉴욕증시에서 반도체 저가 매수세 유입 시 국내 증시의 기술적 반등 가능성",
+          "빅테크 및 AI 관련 기업의 실적 발표가 반전 계기로 작용할 가능성"
         ],
         "bear_cases": [
-          "외국인의 지속적인 대규모 매도세와 코스피 사흘째 하락",
-          "미국 물가 지표 및 주요 AI 실적 발표를 앞둔 불확실성"
+          "외국인 투자자의 지속적인 대규모 순매도 공세",
+          "미국 물가 지표 및 긴축 우려 확산에 따른 증시 위축"
         ],
         "watch": [
-          "미국 CPI 및 주요 경제 지표 발표",
-          "외국인 수급 동향 및 반도체 업종 추이"
+          "미국 주요 물가 지표 발표 결과",
+          "외국인 수급 동향 및 반도체 업종 주가 추이"
         ],
         "citation_ids": [
           "stocks-0",
-          "stocks-1",
-          "stocks-3"
+          "stocks-3",
+          "stocks-4"
         ]
       },
       "housing": {
         "direction": "판단 유보",
         "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "부동산 시장은 매물 증가와 거래 감소가 공존하는 혼조세를 보이고 있으며 규제 지역에 따라 차별화된 양상이 나타나고 있습니다.",
+        "horizon": "중기",
+        "summary": "전국 집값 방향을 단정할 수 있는 실제 가격 통계가 부족한 가운데, 토지거래허가구역 지정 등 규제 요인에 따라 지역별 거래량과 가격 흐름이 엇갈리고 있습니다.",
         "bull_cases": [
-          "일부 지역 중심의 거래량 증가 및 실수요 유입",
-          "대출 금리 하락 안정화 기대감"
+          "일부 선호 지역 중심의 실수요 유입 및 거래량 회복 조세",
+          "주택담보대출 금리 변동에 따른 매수 심리 자극 가능성"
         ],
         "bear_cases": [
-          "매수·매도자 간 힘겨루기와 거래 감소 양상",
-          "상환 부담에 대한 우려 및 토지거래허가구역 등의 영향"
+          "대출 상환 부담과 매물 증가 속 거래 위축",
+          "규제 지역 지정에 따른 국소적 시장 침체"
         ],
         "watch": [
-          "지역별 아파트 거래량 및 매물 증감",
-          "주택담보대출 금리 및 대출 규제 변화"
+          "지역별 아파트 거래량 및 매물 추이",
+          "대출 규제 및 금리 환경 변화"
         ],
         "citation_ids": [
           "housing-2",
@@ -61,22 +61,23 @@
         "direction": "하락 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "예상을 웃돈 미국 고용 지표와 국내외 기준금리 인상 전망 등이 겹치면서 국고채 금리가 상승(고정금리 채권 가격 하락)하고 있습니다.",
+        "summary": "예상을 웃도는 미국 고용 지표 발표 등으로 연방준비제도의 긴축 우려가 커지면서 시장 금리가 상승(고정금리 채권 가격 하락)하였습니다.",
         "bull_cases": [
-          "글로벌 통화정책 피벗 기대감이 유지될 경우 채권 매수 심리 회복 가능성"
+          "물가 지표가 예상보다 안정될 경우 긴축 우려 완화 가능성",
+          "안전자산 선호 심리 부각 시 채권 매수세 유입 가능성"
         ],
         "bear_cases": [
-          "예상보다 양호한 고용 지표에 따른 연준 긴축 우려 확산",
-          "한은 기준금리 인상 전망 및 대외 금리 상승 압력으로 인한 채권 가격 하락(금리 상승)"
+          "고용 지표 호조 및 추가 기준금리 인상 전망에 따른 금리 상승 압력",
+          "대외 금리 상승 연동에 따른 채권 가격 하락(금리 상승)"
         ],
         "watch": [
           "미국 CPI 및 PPI 등 물가 지표",
-          "국내외 중앙은행의 기준금리 관련 발언 및 금리 추이"
+          "국내외 기준금리 결정 및 통화정책 관련 발언"
         ],
         "citation_ids": [
           "bonds-0",
           "bonds-2",
-          "bonds-3"
+          "bonds-7"
         ]
       }
     }
@@ -352,12 +353,20 @@
         "id": "stocks-2"
       },
       {
+        "title": "외국인 10조 던진 한 주…코스피 반등 열쇠는 '11일 새벽' 두 숫자",
+        "publisher": "ISSUE ON (이슈온)",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5DTldEOVl6VmlOM29ONTh3OGMzVll6UFVwTl95eUhFYUc1ZFBQTkVQa210YXduZFNpRXo3MW14Wld0NTNrWk85WUNBa1VBY29VUnlpNXpCRk5halBFSjJkbXJHRTFCcm5yZzE0?oc=5",
+        "published_at": "2026-11-09T02:20:10+00:00",
+        "summary": "외국인 10조 던진 한 주…코스피 반등 열쇠는 '11일 새벽' 두 숫자 &nbsp;&nbsp; ISSUE ON (이슈온)",
+        "id": "stocks-3"
+      },
+      {
         "title": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대",
         "publisher": "매일신문",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YLXNsRFFrZEwwemFsdzdTNDBOVUhpWThpeFRnemFINTlSYmoxT2FyQ2p2bnp1WjN0UjNCemdnTFVhai02MksyZF9OQ05VSmxNS2EtdHpiSjM3UkY5ZWtMSXVR?oc=5",
         "published_at": "2026-11-09T01:09:18+00:00",
         "summary": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대 &nbsp;&nbsp; 매일신문",
-        "id": "stocks-3"
+        "id": "stocks-4"
       },
       {
         "title": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각",
@@ -365,7 +374,7 @@
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUU9IBeEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUUw?oc=5",
         "published_at": "2026-11-09T00:32:22+00:00",
         "summary": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각 &nbsp;&nbsp; 뉴시스",
-        "id": "stocks-4"
+        "id": "stocks-5"
       },
       {
         "title": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건",
@@ -373,7 +382,7 @@
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1UX1dlVmpFS0dvdHNueWNFdnRYMXZWUTZpZXlfaDlDZ3RsQzgwbDR1ZUluWUhkeUNzVDByajRyaTRnbFg5bkNvdTA4c0NmQ3VKMkE?oc=5",
         "published_at": "2026-11-09T00:18:40+00:00",
         "summary": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건 &nbsp;&nbsp; 매일경제",
-        "id": "stocks-5"
+        "id": "stocks-6"
       },
       {
         "title": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락",
@@ -381,7 +390,7 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1qekRpeTF2b29rdzZnQ29xRmloUkdYd3MwY1RjNC0tVGg0WkxqM1hGckJwdXlKY1pma0hTeEpIdUd4cjFnTDByZ21jN1YzUmdkeVdrY0I5QkFnSXAwdFlGLTMybHB1ZXBmYkV0R3Qwdw?oc=5",
         "published_at": "2026-11-08T23:12:56+00:00",
         "summary": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락 &nbsp;&nbsp; 뉴스퀘스트",
-        "id": "stocks-6"
+        "id": "stocks-7"
       },
       {
         "title": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수'",
@@ -389,7 +398,7 @@
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16ZG9RZXo0VEFCMmg5NFBYbDdzNXBMcDcxdmRpM3JKR3N4WmN6TThkOXM5Q214aUlyaC1GUlpQcm9oRWRGVHpvSi1kRW5sMTVGcE1qOThuNXp5bEQ2MkJncVVWcWxYd19ZNmc?oc=5",
         "published_at": "2026-11-08T23:00:00+00:00",
         "summary": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수' &nbsp;&nbsp; 서울파이낸스",
-        "id": "stocks-7"
+        "id": "stocks-8"
       },
       {
         "title": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다",
@@ -397,14 +406,6 @@
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hNHdtaU9XRzM5Uk03WnZXYjdkem9VaEhGY2ItR2VRc0MyT3h0cEluQzBQenlkbXMzY2N0WnBUNVBHb2dueUV5N1d3c3Y5SExRX3oxbGNGcVNJbVJJN013ZzdB?oc=5",
         "published_at": "2026-11-08T22:45:58+00:00",
         "summary": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다 &nbsp;&nbsp; 버핏연구소",
-        "id": "stocks-8"
-      },
-      {
-        "title": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망]",
-        "publisher": "서울경제",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QMC1zcG1EaFBtWTlJeTFoVkx6d3F6bXhkSUc3ZXlPU3hxVGppVVRudktDZFByVk5ma3JET0hKWWxoTU0xSFdqdGttQXEyQkJMR2c?oc=5",
-        "published_at": "2026-11-08T21:15:00+00:00",
-        "summary": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망] &nbsp;&nbsp; 서울경제",
         "id": "stocks-9"
       }
     ],
@@ -581,6 +582,6 @@
     "FRED DEXKOUS: ReadTimeout",
     "FRED VIXCLS: ReadTimeout",
     "Flash 모델 gemini-3.6-flash 실패: ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "Pro 재검토 실패(gemini-2.5-pro): ClientError (HTTP 404): This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog"
+    "Pro 재검토 실패(gemini-3.5-flash): ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
   ]
 }
