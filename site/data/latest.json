@@ -1,8 +1,549 @@
 {
-  "mode": "demo",
-  "generated_at": null,
-  "ai": {"status":"demo","model":null,"headline":"오늘의 시장을 움직이는 핵심 변수를 한눈에","overview":"첫 자동 갱신 뒤 실제 자료에 기반한 AI 시장 브리핑이 표시됩니다.","analysis":{}},
-  "market": [],
-  "news": {"stocks":[],"housing":[],"bonds":[]},
-  "errors":[]
+  "mode": "live",
+  "generated_at": "2026-11-09T21:40:41.877981+09:00",
+  "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
+  "ai": {
+    "status": "error",
+    "model": null,
+    "draft_model": null,
+    "review_model": null,
+    "review_status": "not_run",
+    "headline": "오늘의 금융시장 주요 뉴스와 시장 지표",
+    "overview": "뉴스와 가격 데이터는 수집되었지만 Gemini 분석이 완료되지 않았습니다. 관리자 확인이 필요합니다.",
+    "analysis": {
+      "stocks": {
+        "direction": "판단 유보",
+        "horizon": "향후 1주",
+        "confidence": "낮음",
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
+      },
+      "housing": {
+        "direction": "판단 유보",
+        "horizon": "향후 1~3개월",
+        "confidence": "낮음",
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
+      },
+      "bonds": {
+        "direction": "판단 유보",
+        "horizon": "향후 1주",
+        "confidence": "낮음",
+        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
+        "bull_cases": [],
+        "bear_cases": [],
+        "watch": [],
+        "citation_ids": []
+      }
+    }
+  },
+  "market": [
+    {
+      "id": "KOSPI",
+      "name": "코스피",
+      "unit": "pt",
+      "change_unit": "pct",
+      "value": 5018.85,
+      "change": -0.807,
+      "as_of": "2026-11-09",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/%5EKS11",
+      "history": [
+        {
+          "date": "2026-10-15",
+          "value": 5554.22
+        },
+        {
+          "date": "2026-10-16",
+          "value": 5668.05
+        },
+        {
+          "date": "2026-10-19",
+          "value": 5768.01
+        },
+        {
+          "date": "2026-10-20",
+          "value": 5552.74
+        },
+        {
+          "date": "2026-10-21",
+          "value": 5735.66
+        },
+        {
+          "date": "2026-10-22",
+          "value": 5533.77
+        },
+        {
+          "date": "2026-10-23",
+          "value": 5550.3
+        },
+        {
+          "date": "2026-10-26",
+          "value": 5469.47
+        },
+        {
+          "date": "2026-10-27",
+          "value": 5638.34
+        },
+        {
+          "date": "2026-10-28",
+          "value": 6012.44
+        },
+        {
+          "date": "2026-10-29",
+          "value": 5937.66
+        },
+        {
+          "date": "2026-10-30",
+          "value": 5730.74
+        },
+        {
+          "date": "2026-11-02",
+          "value": 5859.08
+        },
+        {
+          "date": "2026-11-03",
+          "value": 5648.79
+        },
+        {
+          "date": "2026-11-04",
+          "value": 5683.8
+        },
+        {
+          "date": "2026-11-05",
+          "value": 5383.8
+        },
+        {
+          "date": "2026-11-06",
+          "value": 5059.69
+        },
+        {
+          "date": "2026-11-09",
+          "value": 5018.85
+        }
+      ]
+    },
+    {
+      "id": "KOSDAQ",
+      "name": "코스닥",
+      "unit": "pt",
+      "change_unit": "pct",
+      "value": 638.97,
+      "change": -0.823,
+      "as_of": "2026-11-09",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/%5EKQ11",
+      "history": [
+        {
+          "date": "2026-10-15",
+          "value": 760.82
+        },
+        {
+          "date": "2026-10-16",
+          "value": 794.78
+        },
+        {
+          "date": "2026-10-19",
+          "value": 808.89
+        },
+        {
+          "date": "2026-10-20",
+          "value": 781.97
+        },
+        {
+          "date": "2026-10-21",
+          "value": 792.76
+        },
+        {
+          "date": "2026-10-22",
+          "value": 764.1
+        },
+        {
+          "date": "2026-10-23",
+          "value": 751.69
+        },
+        {
+          "date": "2026-10-26",
+          "value": 727.21
+        },
+        {
+          "date": "2026-10-27",
+          "value": 743.83
+        },
+        {
+          "date": "2026-10-28",
+          "value": 771.28
+        },
+        {
+          "date": "2026-10-29",
+          "value": 753.23
+        },
+        {
+          "date": "2026-10-30",
+          "value": 724.38
+        },
+        {
+          "date": "2026-11-02",
+          "value": 734.36
+        },
+        {
+          "date": "2026-11-03",
+          "value": 704.39
+        },
+        {
+          "date": "2026-11-04",
+          "value": 714.95
+        },
+        {
+          "date": "2026-11-05",
+          "value": 678.41
+        },
+        {
+          "date": "2026-11-06",
+          "value": 644.27
+        },
+        {
+          "date": "2026-11-09",
+          "value": 638.97
+        }
+      ]
+    },
+    {
+      "id": "SP500",
+      "name": "S&P 500",
+      "unit": "pt",
+      "change_unit": "pct",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/SP500",
+      "history": []
+    },
+    {
+      "id": "NASDAQCOM",
+      "name": "나스닥 종합",
+      "unit": "pt",
+      "change_unit": "pct",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/NASDAQCOM",
+      "history": []
+    },
+    {
+      "id": "DGS10",
+      "name": "미국 국채 10년",
+      "unit": "%",
+      "change_unit": "pp",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/DGS10",
+      "history": []
+    },
+    {
+      "id": "DGS2",
+      "name": "미국 국채 2년",
+      "unit": "%",
+      "change_unit": "pp",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/DGS2",
+      "history": []
+    },
+    {
+      "id": "DEXKOUS",
+      "name": "달러 / 원",
+      "unit": "원",
+      "change_unit": "pct",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/DEXKOUS",
+      "history": []
+    },
+    {
+      "id": "VIXCLS",
+      "name": "VIX 변동성 지수",
+      "unit": "pt",
+      "change_unit": "pct",
+      "value": null,
+      "change": null,
+      "as_of": null,
+      "source": "FRED / Federal Reserve Bank of St. Louis",
+      "source_url": "https://fred.stlouisfed.org/series/VIXCLS",
+      "history": []
+    }
+  ],
+  "news": {
+    "stocks": [
+      {
+        "title": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pc09NSkJqTGxZV1htTndNX2dGZzkyNHg4aDBjT0kzcHYwWk9lU3hFUjVaRm94a1g0MlBzWEcwVEVCMG53cE81QTczZmNoaUFUM21XOHNTc3lLekIyazFkWFlwMURhN2s?oc=5",
+        "published_at": "2026-11-09T12:21:46+00:00",
+        "summary": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락 &nbsp;&nbsp; 자본시장뉴스",
+        "id": "stocks-0"
+      },
+      {
+        "title": "美 물가·코어위브 실적·젠슨 황 의혹 한 주에 몰려…증시 숨 고르기",
+        "publisher": "마켓잉크",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51b241dU5EeEs1MnhONFdzUHdxWDhaeWRqMExXMDVlUTNoQlA3OGxkbFNhdmV1TE5DU3BaSDEzNndFUllGWk5LQXI1ZUtTdThGcFZjM0lUalBKS05tTnh1cThYMnJmdG1QZmlLdVZONA?oc=5",
+        "published_at": "2026-11-09T10:42:21+00:00",
+        "summary": "美 물가·코어위브 실적·젠슨 황 의혹 한 주에 몰려…증시 숨 고르기 &nbsp;&nbsp; 마켓잉크",
+        "id": "stocks-1"
+      },
+      {
+        "title": "사흘 연속 약세 코스피, 빅테크 실적 반등계기 될까",
+        "publisher": "동행미디어 시대",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LaHJQb1hRNm41SGRaMnRSSWJEV0tudWxpU095eGZVcVdZaVllajBVSk1LZGdvSlMxSThyMy13Z0lxX242SDRZWk5DcW9YR0hReHJDQXlnc3NYY1g4ZGc?oc=5",
+        "published_at": "2026-11-09T10:13:27+00:00",
+        "summary": "사흘 연속 약세 코스피, 빅테크 실적 반등계기 될까 &nbsp;&nbsp; 동행미디어 시대",
+        "id": "stocks-2"
+      },
+      {
+        "title": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대",
+        "publisher": "매일신문",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YLXNsRFFrZEwwemFsdzdTNDBOVUhpWThpeFRnemFINTlSYmoxT2FyQ2p2bnp1WjN0UjNCemdnTFVhai02MksyZF9OQ05VSmxNS2EtdHpiSjM3UkY5ZWtMSXVR?oc=5",
+        "published_at": "2026-11-09T01:09:18+00:00",
+        "summary": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대 &nbsp;&nbsp; 매일신문",
+        "id": "stocks-3"
+      },
+      {
+        "title": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각",
+        "publisher": "뉴시스",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUU9IBeEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUUw?oc=5",
+        "published_at": "2026-11-09T00:32:22+00:00",
+        "summary": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각 &nbsp;&nbsp; 뉴시스",
+        "id": "stocks-4"
+      },
+      {
+        "title": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건",
+        "publisher": "매일경제",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1UX1dlVmpFS0dvdHNueWNFdnRYMXZWUTZpZXlfaDlDZ3RsQzgwbDR1ZUluWUhkeUNzVDByajRyaTRnbFg5bkNvdTA4c0NmQ3VKMkE?oc=5",
+        "published_at": "2026-11-09T00:18:40+00:00",
+        "summary": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건 &nbsp;&nbsp; 매일경제",
+        "id": "stocks-5"
+      },
+      {
+        "title": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락",
+        "publisher": "뉴스퀘스트",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1qekRpeTF2b29rdzZnQ29xRmloUkdYd3MwY1RjNC0tVGg0WkxqM1hGckJwdXlKY1pma0hTeEpIdUd4cjFnTDByZ21jN1YzUmdkeVdrY0I5QkFnSXAwdFlGLTMybHB1ZXBmYkV0R3Qwdw?oc=5",
+        "published_at": "2026-11-08T23:12:56+00:00",
+        "summary": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락 &nbsp;&nbsp; 뉴스퀘스트",
+        "id": "stocks-6"
+      },
+      {
+        "title": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수'",
+        "publisher": "서울파이낸스",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16ZG9RZXo0VEFCMmg5NFBYbDdzNXBMcDcxdmRpM3JKR3N4WmN6TThkOXM5Q214aUlyaC1GUlpQcm9oRWRGVHpvSi1kRW5sMTVGcE1qOThuNXp5bEQ2MkJncVVWcWxYd19ZNmc?oc=5",
+        "published_at": "2026-11-08T23:00:00+00:00",
+        "summary": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수' &nbsp;&nbsp; 서울파이낸스",
+        "id": "stocks-7"
+      },
+      {
+        "title": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다",
+        "publisher": "버핏연구소",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hNHdtaU9XRzM5Uk03WnZXYjdkem9VaEhGY2ItR2VRc0MyT3h0cEluQzBQenlkbXMzY2N0WnBUNVBHb2dueUV5N1d3c3Y5SExRX3oxbGNGcVNJbVJJN013ZzdB?oc=5",
+        "published_at": "2026-11-08T22:45:58+00:00",
+        "summary": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다 &nbsp;&nbsp; 버핏연구소",
+        "id": "stocks-8"
+      },
+      {
+        "title": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망]",
+        "publisher": "서울경제",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QMC1zcG1EaFBtWTlJeTFoVkx6d3F6bXhkSUc3ZXlPU3hxVGppVVRudktDZFByVk5ma3JET0hKWWxoTU0xSFdqdGttQXEyQkJMR2c?oc=5",
+        "published_at": "2026-11-08T21:15:00+00:00",
+        "summary": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망] &nbsp;&nbsp; 서울경제",
+        "id": "stocks-9"
+      }
+    ],
+    "housing": [
+      {
+        "title": "금리 인상 영향 총정리 대출 부동산 주식 대응법 : 금융",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE80dHhKMTJmd2V4bEFlclFGanVRSldyTHI1Njk4S1BZdzhJMVliS055RWs4XzZKOFpaWldxR1lCUWJfN0NXY2FrUjBNdw?oc=5",
+        "published_at": "2026-11-09T10:01:20+00:00",
+        "summary": "금리 인상 영향 총정리 대출 부동산 주식 대응법 : 금융 &nbsp;&nbsp; 재경일보",
+        "id": "housing-0"
+      },
+      {
+        "title": "주택담보대출 금리가 낮아졌음에도 불구하고, 구매자들은 여전히 ​​상환 부담에 대해 우려하고 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNTl2TGw5M2pKTDRVM2RPMi1UeklXZEMxa1RmRnhoTFNheFZ1b0gza091elY4aWVuT2lrZUR4WXlvSk8yQi1XQzd2UmJhdDI1dmdLTmhzMVVzYkNJcWNKbVZDNmR4eUhrTm8xSHQ0X0IwcmlKQXRoUk5zc1lSbWt3YmpRX293Z01EcndrZDJxVQ?oc=5",
+        "published_at": "2026-11-09T09:48:25+00:00",
+        "summary": "주택담보대출 금리가 낮아졌음에도 불구하고, 구매자들은 여전히 ​​상환 부담에 대해 우려하고 있습니다. &nbsp;&nbsp; Vietnam.vn",
+        "id": "housing-1"
+      },
+      {
+        "title": "'매물↑ 거래↓' 이상현상…매수·매도자 힘겨루기 속 꺾이지 않는 집값",
+        "publisher": "이데일리",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNlJ4NWpZNDdGWmc4cUFjNzdxYm9Za190eDBVVk01RXN3T0Vpbl9GWHdVMnlNWDdva0NCUk1oMkdHMTZJRUY4NXlnWTk5dXNlemRWdEFMM0c3NHBxMEtPYmVmOEtYRDFzaUxSUkRuX0otZWY4SjkyS2t0c3pqTDI1SA?oc=5",
+        "published_at": "2026-11-09T09:29:57+00:00",
+        "summary": "'매물↑ 거래↓' 이상현상…매수·매도자 힘겨루기 속 꺾이지 않는 집값 &nbsp;&nbsp; 이데일리",
+        "id": "housing-2"
+      },
+      {
+        "title": "'토허제'가 갈랐다…산본 거래량 2배 늘때 분당 '반토막'",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYNkUzZW83WGQtR1JjYWNwWUxPd3I3VVBfWWw4Rlh0Z2cyck5CVnU1eGV6TWM4ckg5ajJwMGZIVlNfaExiNDYtUDk1MGR2NGJqWTVLS1FsNnBSUQ?oc=5",
+        "published_at": "2026-11-09T09:06:32+00:00",
+        "summary": "'토허제'가 갈랐다…산본 거래량 2배 늘때 분당 '반토막' &nbsp;&nbsp; 한국경제",
+        "id": "housing-3"
+      },
+      {
+        "title": "3040세대 아파트 고르는 기준···집값보다 '등하굣길'",
+        "publisher": "스마트비즈",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pWTBfaG9NMFp3d0Q3ZVl0cTdWaV8xZUxvcjNQN3VCbDBSRWZkNVcxOGJzYVJPencxUExrOFM2MzB2clBjRU9vMGNVQ0NoR0RQd2NCSFZTMXBydlpPTW1ud3pIS05hYUJ0NUN4UA?oc=5",
+        "published_at": "2026-11-09T07:51:17+00:00",
+        "summary": "3040세대 아파트 고르는 기준···집값보다 '등하굣길' &nbsp;&nbsp; 스마트비즈",
+        "id": "housing-4"
+      },
+      {
+        "title": "아파트값 1억 더 비싼데 현금은 3억 더 필요… 요상한 아파트 대출",
+        "publisher": "위키트리",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QMGZWTElEcXlpMGEzbFFVYmw2Wi1vWWtfRWZTeU9lejA1Ti1RYVR3ZDBlTV9ISTQxeXhjVl82UHNENGZvd3NpeXRKbUNGMVJoTVZod2pn?oc=5",
+        "published_at": "2026-11-09T06:30:00+00:00",
+        "summary": "아파트값 1억 더 비싼데 현금은 3억 더 필요… 요상한 아파트 대출 &nbsp;&nbsp; 위키트리",
+        "id": "housing-5"
+      },
+      {
+        "title": "거래·가격 엇갈리는 1기 신도시…거래량 2배 뛴 산본, 집값 35% 오른 분당",
+        "publisher": "서울경제",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fNmpyZW1Jc0JMN3FMV2R2anQzVi1Edk84VG01M0Y3WFhzMTNSYnU1YkM2dm8waEtTWjh3SGJObUhrdTJKdGl2ZG1xNWpjNnYyYkHSAVNBVV95cUxPWVVwNkRpLVdSRWJtTVN6eEs4X3BjNkdTMmZ1YTlsQVVIb1FySEJ3TUNBemF1ZWd2eWl4NlVXZmRHVmZ2VFk1QnN4NFVPbjB3eVhHbw?oc=5",
+        "published_at": "2026-11-09T05:16:24+00:00",
+        "summary": "거래·가격 엇갈리는 1기 신도시…거래량 2배 뛴 산본, 집값 35% 오른 분당 &nbsp;&nbsp; 서울경제",
+        "id": "housing-6"
+      },
+      {
+        "title": "시장은 완화보다 상실을 읽는다",
+        "publisher": "일요시사",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8zZmpsc19qNlJ2ZlFPQmMyQmFLeTRnUm5weEg4bGhUVzlybjdxb1NTcnJPRC14QXpMUlJmeTROTWJPWEU5TlFtQVBremxjZERxaFVoR1J2WDJHY1RqdUJJRkpDNW0?oc=5",
+        "published_at": "2026-11-09T05:00:32+00:00",
+        "summary": "시장은 완화보다 상실을 읽는다 &nbsp;&nbsp; 일요시사",
+        "id": "housing-7"
+      },
+      {
+        "title": "[경제pick] 5대 은행 가계대출 2.8조 증가···한은, 주택시장 예의주시",
+        "publisher": "글로벌E",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GNnozczJ4dHpjWlRiT1c1T2RTRElRTDEyWnlubGtDOTZjV1pHanVrMmxxeWRFQno5a2NwLVZRekhJZnY0OW1NZXoxU2lLVTR2Sjl0ZGpvMFRYX1FuTGdaUllGUjFzdUNJcXJ30gFvQVVfeXFMTzhsNE5XWFh4TXFBdFJYaUtyXzV0MWljNXhqSmZiNlhLdTFrWEpSNEItOXNRNTlxdW1QbVRMTDV4Y2ZaeFdDMy0xTUdiYmFUejNpeUJxOW1BazJGYXVOYnhFdFc2MkcwY21MVnJtV3RJ?oc=5",
+        "published_at": "2026-11-09T02:47:46+00:00",
+        "summary": "[경제pick] 5대 은행 가계대출 2.8조 증가···한은, 주택시장 예의주시 &nbsp;&nbsp; 글로벌E",
+        "id": "housing-8"
+      },
+      {
+        "title": "서울 아파트 매물 8만건 돌파에도 집값 상승세… 지역별 양극화 심화",
+        "publisher": "내외뉴스통신",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03M3U5THVXOFFtZGVRX2JudVlVZnVvWEJ1cHExejk3TEFjR0Z2cDAwMFRnZXBPTFNhc1hubk1KTjg4aUVtWHY1TFFPcFVNTzdDbHdUeDZoZU5TckRieXFBeUhEamJZV0JhNlVQWtIBcEFVX3lxTE4yVVZoeGNUMkxWVklYZVJxN2ctZzg5OFQyVVZGTUdBRlMtQ25kRXE0c1h5N3RrbzBTZDRaUUdWdGZXalZWTEd0UWQ1SGxnOUVhM0NpMjhIbGdYR2tETUxoYmN5WldpNGRkVkRHZjkzT2s?oc=5",
+        "published_at": "2026-11-09T02:31:54+00:00",
+        "summary": "서울 아파트 매물 8만건 돌파에도 집값 상승세… 지역별 양극화 심화 &nbsp;&nbsp; 내외뉴스통신",
+        "id": "housing-9"
+      }
+    ],
+    "bonds": [
+      {
+        "title": "예상 웃돈 美 고용에 채권시장 출렁…국고채 2년물 3.629%로 상승",
+        "publisher": "베타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FZmR4S1Nncm5pMGxQREdDSDBxZUR1Y2JheXlSOHJxemc0VTd5MkxXVFpfeTQxZU1sampsYk1nZVpNZXR3NUIwRkxCVmtEZUl1ZXlFMnhtME9rbm9RZ19MQVFYVy0?oc=5",
+        "published_at": "2026-11-09T11:13:02+00:00",
+        "summary": "예상 웃돈 美 고용에 채권시장 출렁…국고채 2년물 3.629%로 상승 &nbsp;&nbsp; 베타뉴스",
+        "id": "bonds-0"
+      },
+      {
+        "title": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Yc1NNcGh2YU54d2FINDcwaXJYaU4zNTAwbHllTWExaEVMUk9rRXdkUU1BektSOXg1WGJid01RVnlmdXBfU3FyajRQQ2tFeXlVenFxRHFYblBGMmwzVC1WNmxRWUM4cUJNaFJ1dE1aUm56S0lD0gF0QVVfeXFMTVhzU01waHZhTnh3YUg0NzBpclhpTjM1MDBseWVNYTFoRUxST2tFd2RRTUF6S1I5eDVYYmJ3TVFWeWZ1cF9TcXJqNFBDa0V5eVV6cXFEcVhuUEYybDNULVY2bFFZQzhxQk1oUnV0TVpSbnpLSUM?oc=5",
+        "published_at": "2026-11-09T10:43:26+00:00",
+        "summary": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산 &nbsp;&nbsp; 산경투데이",
+        "id": "bonds-1"
+      },
+      {
+        "title": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장",
+        "publisher": "코인리더스",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBwVk1CRElYc2pwX3pKUXRjZzdveFF5Z1NhZ08xM0RHbFNyZXFYOURoTUlfRmRNaUN0QXFKOXRoOXZObHoxNUpES2Fn?oc=5",
+        "published_at": "2026-11-09T08:14:00+00:00",
+        "summary": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장 &nbsp;&nbsp; 코인리더스",
+        "id": "bonds-2"
+      },
+      {
+        "title": "한은, 11월 기준금리 인상 전망…시장금리 향방·은행권 셈법 복잡",
+        "publisher": "메가경제",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ldUxfSGI0bzB5WGJCd08za2FHQ3Q0YVJGVE5ZS0NZdFlCNWR3V3VuTmZzSnpMR3V2NXFYb0E1dmN5LTVhTFd0Q2JzLW9LeU92UnRBY3JtMTJkYk91RVNvamJhb2hiN2NBUTJmTnFjcER2d9IBckFVX3lxTE5ldUxfSGI0bzB5WGJCd08za2FHQ3Q0YVJGVE5ZS0NZdFlCNWR3V3VuTmZzSnpMR3V2NXFYb0E1dmN5LTVhTFd0Q2JzLW9LeU92UnRBY3JtMTJkYk91RVNvamJhb2hiN2NBUTJmTnFjcER2dw?oc=5",
+        "published_at": "2026-11-09T06:07:15+00:00",
+        "summary": "한은, 11월 기준금리 인상 전망…시장금리 향방·은행권 셈법 복잡 &nbsp;&nbsp; 메가경제",
+        "id": "bonds-3"
+      },
+      {
+        "title": "‘블루 쇼크’ 언제까지…美국채랠리, 물가·연준에 달렸다",
+        "publisher": "헤럴드경제",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aVGdKWTdfRjlQRkh1UnVZcV9DbmcwWWlBSmxmLUtqQ2Y2NGswOHVrM01QOUZkcXotV2JDOG5Tc3p3X0ttUzZnS0JRTE1FWlNZQTM0N19n?oc=5",
+        "published_at": "2026-11-09T05:57:17+00:00",
+        "summary": "‘블루 쇼크’ 언제까지…美국채랠리, 물가·연준에 달렸다 &nbsp;&nbsp; 헤럴드경제",
+        "id": "bonds-4"
+      },
+      {
+        "title": "유로화, ECB 금리 인상 기대와 미국 달러 약세에 상승",
+        "publisher": "www.tmgm.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb3hvdTUzZDBZRHlOejNJVG9LU3lBXzhrQWM2X1Z2QzRYRm1KVTNiWGN5bGNodXdlVnFOOHY4a3FYYWVsMGItUkw0Z192VUJ1dEtvbU1GeTFPcmlxbzVRMksyTGxPQmF1NUR5YTN6RlJaMzh2ZVUtaGkyVDRPOWt1MnEyV1N4ODYzXzlieU1mdllaRW1hQmJCdUZIY3lHeXpmVktKVHJ3Y3lhak02V3l2UWF3eUNSSFNPWWVmd3dzRHA3Y01T?oc=5",
+        "published_at": "2026-11-09T04:17:22+00:00",
+        "summary": "유로화, ECB 금리 인상 기대와 미국 달러 약세에 상승 &nbsp;&nbsp; www.tmgm.com",
+        "id": "bonds-5"
+      },
+      {
+        "title": "금 가격 US$4,070에 묶여, 시장은 금리 인상 예상",
+        "publisher": "IDNFinancials",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOT3p2QUFoNXdqNl96VjVPNjhtenBYQ1pDd05RVENFWXVDZlpZekd0WklUTUVXNnU3bzVTLVlIOU5Hblo1dWlManBQdDN4S1pmb2tmbTVqV2JUdG9mUWlVYnRlTl9ZeXNKMlhzS1dfbUUzSkFZUVFndGxrTUx6cWl6aklrS05jaEpIUC1Lb2c2MEFSaDRVcnRna1llUFZWaEJHWDNwbVp0MnZZTDZxN3J3U243MUZHXzlmcFZVb3NHVzY2ZGIzUmdoQUZ4VkRzakdZUXpYaVVibGpRSi1fZk5oV2lWZUFSbVdNMnNLNWJmM2JnRGYxUlg4WkdsRkluVW5JR1lHNzZqZUtBSDk1TEFWRmtkQXlYYlFUVFFHdy13?oc=5",
+        "published_at": "2026-11-09T03:00:00+00:00",
+        "summary": "금 가격 US$4,070에 묶여, 시장은 금리 인상 예상 &nbsp;&nbsp; IDNFinancials",
+        "id": "bonds-6"
+      },
+      {
+        "title": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jd0VRT050THRGWVA4MENWNUtBaHhKb004OWlQbUlrSWtfMzhVdjJScjlFRncwd3h4NW1qZHRRMmhOXzNLUnk3Z0xUY21TOExDTzBpOE5EUmdwRGpxbjg0dm5ER21Ed1hxcG9McGxZZ0I5UQ?oc=5",
+        "published_at": "2026-11-09T02:12:17+00:00",
+        "summary": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑ &nbsp;&nbsp; KB Think",
+        "id": "bonds-7"
+      },
+      {
+        "title": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zcW5UazlxTnhtcjJ6eUZ3T3NQaGtEX3lGbmEyVDhKaHo2aVJBYzRyemxhcDNSR2lLc2pCRVoyN1FITXlPME9SVl9zdjEwZWFNVzNuYzM0TzJDZ01zZDlBa1Y5dTM1THJvejFVZm5sRQ?oc=5",
+        "published_at": "2026-11-09T01:16:00+00:00",
+        "summary": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄 &nbsp;&nbsp; Investing.com 한국어",
+        "id": "bonds-8"
+      },
+      {
+        "title": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtXzhmRVBxdkxzTnJ3SV9pR1NmYWoxR3BQbnd1RW8tLTltSG16U1JnX0VxOFJLYnllUWVHZ05ma1FWNUkxTjEyYXhscXo3anF5RUVwZXlrSDdYc3RzVS15cDBEenBPNHdILWlwX3BzbE9zUQ?oc=5",
+        "published_at": "2026-11-09T00:46:31+00:00",
+        "summary": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도 &nbsp;&nbsp; KB Think",
+        "id": "bonds-9"
+      }
+    ]
+  },
+  "errors": [
+    "FRED SP500: ReadTimeout",
+    "FRED NASDAQCOM: ReadTimeout",
+    "FRED DGS10: ReadTimeout",
+    "FRED DGS2: ReadTimeout",
+    "FRED DEXKOUS: ReadTimeout",
+    "FRED VIXCLS: ReadTimeout",
+    "Flash 모델 gemini-3.6-flash 실패: ClientError",
+    "Flash 모델 gemini-2.5-flash 실패: ClientError",
+    "Gemini AI 분석 실패: ValueError"
+  ]
 }
