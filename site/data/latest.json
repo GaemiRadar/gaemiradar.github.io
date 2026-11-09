@@ -1,45 +1,81 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-09T21:58:08.618409+09:00",
+  "generated_at": "2026-11-09T22:19:29.147221+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
-    "status": "error",
-    "model": null,
-    "draft_model": null,
+    "status": "ok",
+    "model": "gemini-3.5-flash-lite",
+    "draft_model": "gemini-3.5-flash-lite",
     "review_model": null,
-    "review_status": "not_run",
-    "headline": "오늘의 금융시장 주요 뉴스와 시장 지표",
-    "overview": "뉴스와 가격 데이터는 수집되었지만 Gemini 분석이 완료되지 않았습니다. 관리자 확인이 필요합니다.",
+    "review_status": "failed",
+    "headline": "외국인 매도 속 코스피 하락 및 미 고용 호조에 따른 금리·채권 시장 동향",
+    "overview": "국내 증시는 외국인 매도세와 반도체 투매 영향으로 약세를 보이고 있으며, 미국 고용 호조에 따른 긴축 우려로 채권 금리가 상승(채권 가격 하락)하는 흐름을 나타내고 있습니다.",
     "analysis": {
       "stocks": {
-        "direction": "판단 유보",
-        "horizon": "향후 1주",
+        "direction": "하락 우세",
         "confidence": "낮음",
-        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
-        "bull_cases": [],
-        "bear_cases": [],
-        "watch": [],
-        "citation_ids": []
+        "horizon": "단기",
+        "summary": "외국인의 대규모 매도와 반도체 약세로 코스피가 하락세를 보이고 있으나, 향후 미국 물가 지표와 빅테크 실적에 따라 반등 가능성도 열려 있습니다.",
+        "bull_cases": [
+          "빅테크 및 주요 기업 실적 발표가 반등 계기로 작용할 가능성",
+          "작은 호재에도 지수가 회복될 수 있는 기술적 반등 여력"
+        ],
+        "bear_cases": [
+          "외국인의 지속적인 반도체 및 국내 주식 매도 공세",
+          "미국 물가 지표 경계감 및 고용 호조에 따른 긴축 부담"
+        ],
+        "watch": [
+          "미국 CPI 등 물가 지표 발표 결과",
+          "코어위브 등 주요 AI 관련 기업 실적"
+        ],
+        "citation_ids": [
+          "stocks-0",
+          "stocks-2",
+          "stocks-3"
+        ]
       },
       "housing": {
         "direction": "판단 유보",
-        "horizon": "향후 1~3개월",
         "confidence": "낮음",
-        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
-        "bull_cases": [],
-        "bear_cases": [],
-        "watch": [],
-        "citation_ids": []
+        "horizon": "중기",
+        "summary": "전국 주택 가격의 구체적이고 신뢰할 수 있는 실거래가 통계가 부재하며, 규제 지역별(토허제 등)로 거래량과 가격 양상이 엇갈리고 있습니다.",
+        "bull_cases": [
+          "일부 지역에서의 매수세 유지 및 거래량 증가 움직임"
+        ],
+        "bear_cases": [
+          "대출 상환 부담 및 매수·매도자 간 힘겨루기로 인한 거래 정체"
+        ],
+        "watch": [
+          "주택담보대출 금리 및 대출 규제 정책 변화",
+          "지역별 아파트 거래량 및 매물 추이"
+        ],
+        "citation_ids": [
+          "housing-2",
+          "housing-3",
+          "housing-6"
+        ]
       },
       "bonds": {
-        "direction": "판단 유보",
-        "horizon": "향후 1주",
+        "direction": "하락 우세",
         "confidence": "낮음",
-        "summary": "AI 분석을 실행할 충분한 기사 또는 API 연결이 없습니다.",
-        "bull_cases": [],
-        "bear_cases": [],
-        "watch": [],
-        "citation_ids": []
+        "horizon": "단기",
+        "summary": "미국 고용 호조에 따른 연준 긴축 우려와 국내 기준금리 인상 전망으로 채권 금리가 상승(고정금리 채권 가격 하락)하고 있습니다.",
+        "bull_cases": [
+          "물가 상승세 둔화 확인 시 금리 하락(채권 가격 상승) 압력 재부각 가능성"
+        ],
+        "bear_cases": [
+          "예상을 웃도는 고용 지표 및 인플레이션 압력에 따른 추가 긴축 우려",
+          "한국은행 및 주요국의 기준금리 인상 기조"
+        ],
+        "watch": [
+          "미국 CPI 및 PPI 등 물가 지표",
+          "국고채 금리 및 기준금리 관련 통화당국 발언"
+        ],
+        "citation_ids": [
+          "bonds-0",
+          "bonds-2",
+          "bonds-3"
+        ]
       }
     }
   },
@@ -510,12 +546,20 @@
         "id": "bonds-6"
       },
       {
+        "title": "이비엔(EBN)뉴스센터",
+        "publisher": "www.ebn.co.kr",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94TkwtSHZvRmVFMEZGd3VNVl9YNUI4RmRyQ3ZkMmxLOTIzUktBQlNkQ2t1VlhneE1Kcng1UHoxSW1xWXp1QmVjM0JpY1ZxMENQdWtCcE4tQlpTZjMtR2FpeWsyU1dXQ2RDTms5eW5Gb1JQN2l1?oc=5",
+        "published_at": "2026-11-09T02:13:09+00:00",
+        "summary": "이비엔(EBN)뉴스센터 &nbsp;&nbsp; www.ebn.co.kr",
+        "id": "bonds-7"
+      },
+      {
         "title": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jd0VRT050THRGWVA4MENWNUtBaHhKb004OWlQbUlrSWtfMzhVdjJScjlFRncwd3h4NW1qZHRRMmhOXzNLUnk3Z0xUY21TOExDTzBpOE5EUmdwRGpxbjg0dm5ER21Ed1hxcG9McGxZZ0I5UQ?oc=5",
         "published_at": "2026-11-09T02:12:17+00:00",
         "summary": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑ &nbsp;&nbsp; KB Think",
-        "id": "bonds-7"
+        "id": "bonds-8"
       },
       {
         "title": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄",
@@ -523,14 +567,6 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zcW5UazlxTnhtcjJ6eUZ3T3NQaGtEX3lGbmEyVDhKaHo2aVJBYzRyemxhcDNSR2lLc2pCRVoyN1FITXlPME9SVl9zdjEwZWFNVzNuYzM0TzJDZ01zZDlBa1Y5dTM1THJvejFVZm5sRQ?oc=5",
         "published_at": "2026-11-09T01:16:00+00:00",
         "summary": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄 &nbsp;&nbsp; Investing.com 한국어",
-        "id": "bonds-8"
-      },
-      {
-        "title": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtXzhmRVBxdkxzTnJ3SV9pR1NmYWoxR3BQbnd1RW8tLTltSG16U1JnX0VxOFJLYnllUWVHZ05ma1FWNUkxTjEyYXhscXo3anF5RUVwZXlrSDdYc3RzVS15cDBEenBPNHdILWlwX3BzbE9zUQ?oc=5",
-        "published_at": "2026-11-09T00:46:31+00:00",
-        "summary": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도 &nbsp;&nbsp; KB Think",
         "id": "bonds-9"
       }
     ]
@@ -542,8 +578,7 @@
     "FRED DGS2: ReadTimeout",
     "FRED DEXKOUS: ReadTimeout",
     "FRED VIXCLS: ReadTimeout",
-    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
-    "Flash 모델 gemini-3.5-flash-lite 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
-    "Gemini AI 분석 실패: ValueError (HTTP unknown): All Flash models failed"
+    "Flash 모델 gemini-3.6-flash 실패: ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "Pro 재검토 실패(gemini-2.5-pro): ClientError (HTTP 404): This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.goog"
   ]
 }
