@@ -63,6 +63,22 @@ def get(url, retries=2):
     raise last
 
 
+def safe_api_error(exc, api_key=""):
+    """Show diagnostic status without exposing credentials or full private requests."""
+    code = getattr(exc, "code", None)
+    message = getattr(exc, "message", None)
+    # The Gemini SDK sometimes stores only the code/message in str(exc).
+    if code is None:
+        match = re.search(r"\b(400|401|402|403|404|408|429|500|502|503|504)\b", str(exc))
+        code = match.group(1) if match else "unknown"
+    content = str(message or exc).replace("\n", " ").replace("\r", " ")
+    if api_key:
+        content = content.replace(api_key, "[REDACTED]")
+    content = re.sub(r"AIza[0-9A-Za-z_-]{20,}", "[REDACTED]", content)
+    content = re.sub(r"\s+", " ", content).strip()
+    return f"{type(exc).__name__} (HTTP {code}): {content[:240]}"
+
+
 def safe_iso(s):
     try:
         d = parsedate_to_datetime(s)
@@ -154,12 +170,14 @@ def read_fred_csv(content, series_id):
 
 def market_from_fred(cfg, errors):
     id_ = cfg["id"]
-    url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={id_}"
+    # Limit the response to recent observations instead of many years of history.
+    start = (now_kst().date() - timedelta(days=120)).isoformat()
+    url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={id_}&cosd={start}"
     result = {**cfg, "value": None, "change": None, "as_of": None,
               "source": "FRED / Federal Reserve Bank of St. Louis",
               "source_url": f"https://fred.stlouisfed.org/series/{id_}", "history": []}
     try:
-        rows = read_fred_csv(get(url).content, id_)
+        rows = read_fred_csv(get(url, retries=1).content, id_)
         a, b = rows[-2:]
         # FRED's last observation can lag (markets close on weekends/holidays).
         result["value"] = round(b[1], 3)
@@ -292,7 +310,12 @@ def analyze(news, market, errors):
         result["overview"] = "자료 수집량이 충분하지 않아 AI가 방향성 판단을 유보합니다."
         return result
     flash_model = os.environ.get("GEMINI_FLASH_MODEL", "gemini-3.6-flash").strip()
-    flash_fallback = os.environ.get("GEMINI_FLASH_FALLBACK", "gemini-2.5-flash").strip()
+    flash_fallback = os.environ.get("GEMINI_FLASH_FALLBACK", "gemini-3.5-flash-lite").strip()
+    # Older GitHub workflow versions still request 2.5 Flash. New Google API
+    # projects can be restricted from accessing the 2.5 family. Migrate the
+    # legacy fallback automatically so users need to replace only this script.
+    if flash_fallback == "gemini-2.5-flash":
+        flash_fallback = "gemini-3.5-flash-lite"
     pro_model = os.environ.get("GEMINI_REVIEW_MODEL", "gemini-2.5-pro").strip()
     review_enabled = os.environ.get("ENABLE_PRO_REVIEW", "1").strip() == "1"
     news_context = {k: [{v: article.get(v) for v in ("id", "title", "publisher", "published_at", "summary")}
@@ -328,7 +351,7 @@ def analyze(news, market, errors):
                     break
                 except Exception as exc:
                     # Failed first-model calls do not silently become valid results.
-                    errors.append(f"Flash 모델 {model} 실패: {type(exc).__name__}")
+                    errors.append(f"Flash 모델 {model} 실패: {safe_api_error(exc, key)}")
             if draft is None:
                 raise ValueError("All Flash models failed")
             result.update({"status": "ok", "model": used_flash, "draft_model": used_flash,
@@ -348,14 +371,14 @@ def analyze(news, market, errors):
                                    "review_status": "completed", "headline": reviewed["headline"],
                                    "overview": reviewed["overview"], "analysis": reviewed["analysis"]})
                 except Exception as exc:
-                    errors.append(f"Pro 재검토 실패({pro_model}): {type(exc).__name__}")
+                    errors.append(f"Pro 재검토 실패({pro_model}): {safe_api_error(exc, key)}")
                     # Keep valid Flash draft, but indicate explicitly that review was skipped.
                     result["review_status"] = "failed"
             return result
         finally:
             client.close()
     except Exception as exc:
-        errors.append(f"Gemini AI 분석 실패: {type(exc).__name__}")
+        errors.append(f"Gemini AI 분석 실패: {safe_api_error(exc, key)}")
         result["status"] = "error"
         result["overview"] = "뉴스와 가격 데이터는 수집되었지만 Gemini 분석이 완료되지 않았습니다. 관리자 확인이 필요합니다."
         return result
