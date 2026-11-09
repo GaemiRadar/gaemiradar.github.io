@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-09T23:12:34.288366+09:00",
+  "generated_at": "2026-11-09T23:15:59.631756+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "error",
@@ -314,12 +314,20 @@
         "id": "stocks-2"
       },
       {
+        "title": "[뉴욕 주간 프리뷰] AI 관련주 분수령...CPI와 네오클라우드 실적 초점",
+        "publisher": "뉴스핌",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8xdFp1RGxQajRzQUM4cFZMSTBTbG5wVW5DTXBqUHBMalp5ODl4ZUI4Qm03MWtOdWU2UjA4alI4aGt5SjVpa0FFbTE2dGsxYk5qVVBGUEtxQ1RZZ010?oc=5",
+        "published_at": "2026-11-09T01:28:00+00:00",
+        "summary": "[뉴욕 주간 프리뷰] AI 관련주 분수령...CPI와 네오클라우드 실적 초점 &nbsp;&nbsp; 뉴스핌",
+        "id": "stocks-3"
+      },
+      {
         "title": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대",
         "publisher": "매일신문",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YLXNsRFFrZEwwemFsdzdTNDBOVUhpWThpeFRnemFINTlSYmoxT2FyQ2p2bnp1WjN0UjNCemdnTFVhai02MksyZF9OQ05VSmxNS2EtdHpiSjM3UkY5ZWtMSXVR?oc=5",
         "published_at": "2026-11-09T01:09:18+00:00",
         "summary": "外人 반도체 투매에 무너진 코스피…美 물가·AI 실적 시험대 &nbsp;&nbsp; 매일신문",
-        "id": "stocks-3"
+        "id": "stocks-4"
       },
       {
         "title": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각",
@@ -327,7 +335,7 @@
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUU9IBeEFVX3lxTE9jZEZvOTcyTTZSb3FORTZ3OG5qM3hxQ3ZCYk9RQURrNmpscDdBYl90aURoLTZGYUU3cnpLTmttenlBQ25sWWZyclVTZkU4V3hzMW1pRmpUNjItSXUwYkQyem1BLXFSWVBTYUxCUGhtdEV6QUdZYXVUUw?oc=5",
         "published_at": "2026-11-09T00:32:22+00:00",
         "summary": "[주간 뉴욕증시] AI株 급락 후 반등 이어질까…물가·실적에 촉각 &nbsp;&nbsp; 뉴시스",
-        "id": "stocks-4"
+        "id": "stocks-5"
       },
       {
         "title": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건",
@@ -335,7 +343,7 @@
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1UX1dlVmpFS0dvdHNueWNFdnRYMXZWUTZpZXlfaDlDZ3RsQzgwbDR1ZUluWUhkeUNzVDByajRyaTRnbFg5bkNvdTA4c0NmQ3VKMkE?oc=5",
         "published_at": "2026-11-09T00:18:40+00:00",
         "summary": "“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건 &nbsp;&nbsp; 매일경제",
-        "id": "stocks-5"
+        "id": "stocks-6"
       },
       {
         "title": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락",
@@ -343,7 +351,7 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1qekRpeTF2b29rdzZnQ29xRmloUkdYd3MwY1RjNC0tVGg0WkxqM1hGckJwdXlKY1pma0hTeEpIdUd4cjFnTDByZ21jN1YzUmdkeVdrY0I5QkFnSXAwdFlGLTMybHB1ZXBmYkV0R3Qwdw?oc=5",
         "published_at": "2026-11-08T23:12:56+00:00",
         "summary": "[굿모닝! 글로벌 뉴욕증시] 반도체 저가 매수에 나스닥 1.09%↑…고용 호조에 다우는 하락 &nbsp;&nbsp; 뉴스퀘스트",
-        "id": "stocks-6"
+        "id": "stocks-7"
       },
       {
         "title": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수'",
@@ -351,7 +359,7 @@
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16ZG9RZXo0VEFCMmg5NFBYbDdzNXBMcDcxdmRpM3JKR3N4WmN6TThkOXM5Q214aUlyaC1GUlpQcm9oRWRGVHpvSi1kRW5sMTVGcE1qOThuNXp5bEQ2MkJncVVWcWxYd19ZNmc?oc=5",
         "published_at": "2026-11-08T23:00:00+00:00",
         "summary": "[주간증시전망] 코스피 5000선 지켜낼까···美CPI·코어위브 실적 '변수' &nbsp;&nbsp; 서울파이낸스",
-        "id": "stocks-7"
+        "id": "stocks-8"
       },
       {
         "title": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다",
@@ -359,14 +367,6 @@
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hNHdtaU9XRzM5Uk03WnZXYjdkem9VaEhGY2ItR2VRc0MyT3h0cEluQzBQenlkbXMzY2N0WnBUNVBHb2dueUV5N1d3c3Y5SExRX3oxbGNGcVNJbVJJN013ZzdB?oc=5",
         "published_at": "2026-11-08T22:45:58+00:00",
         "summary": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다 &nbsp;&nbsp; 버핏연구소",
-        "id": "stocks-8"
-      },
-      {
-        "title": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망]",
-        "publisher": "서울경제",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QMC1zcG1EaFBtWTlJeTFoVkx6d3F6bXhkSUc3ZXlPU3hxVGppVVRudktDZFByVk5ma3JET0hKWWxoTU0xSFdqdGttQXEyQkJMR2c?oc=5",
-        "published_at": "2026-11-08T21:15:00+00:00",
-        "summary": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망] &nbsp;&nbsp; 서울경제",
         "id": "stocks-9"
       }
     ],
