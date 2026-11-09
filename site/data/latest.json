@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-09T21:40:41.877981+09:00",
+  "generated_at": "2026-11-09T21:54:56.442665+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "error",
@@ -354,19 +354,19 @@
         "id": "stocks-7"
       },
       {
-        "title": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다",
-        "publisher": "버핏연구소",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hNHdtaU9XRzM5Uk03WnZXYjdkem9VaEhGY2ItR2VRc0MyT3h0cEluQzBQenlkbXMzY2N0WnBUNVBHb2dueUV5N1d3c3Y5SExRX3oxbGNGcVNJbVJJN013ZzdB?oc=5",
-        "published_at": "2026-11-08T22:45:58+00:00",
-        "summary": "[위클리 이슈체크] 美 물가·AI 실적 몰린 한 주…코스피 11%대 급락 속 크래프톤·KT는 올랐다 &nbsp;&nbsp; 버핏연구소",
-        "id": "stocks-8"
-      },
-      {
         "title": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망]",
         "publisher": "서울경제",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QMC1zcG1EaFBtWTlJeTFoVkx6d3F6bXhkSUc3ZXlPU3hxVGppVVRudktDZFByVk5ma3JET0hKWWxoTU0xSFdqdGttQXEyQkJMR2c?oc=5",
         "published_at": "2026-11-08T21:15:00+00:00",
         "summary": "11% 추락한 코스피, 바닥 찍었나…11일 오전에 쏠리는 눈 [주간 증시 전망] &nbsp;&nbsp; 서울경제",
+        "id": "stocks-8"
+      },
+      {
+        "title": "쓰나미 여진 올라… AI실적에 개미들 긴장 - 머니투데이",
+        "publisher": "머니투데이",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92VW5TeFhDVHQ2N0lzZmp5Qmtob3N4MEx2TkRhVVRMNUFOc1FCQnVvV1NDMFBkalJ1Wk5UNFU3UjYyMEdBRWFLYzBac1UzUlYxdXRhYTZ5cXR2MDlMYXpscnhqd0hwbVZ2eG1kUVVR0gFuQVVfeXFMT3ZVblN4WENUdDY3SXNmanlCa2hvc3gwTHZORGFVVEw1QU5zUUJCdW9XU0MwUGRqUnVaTlQ0VTdSNjIwR0FFYUtjMFpzVTNSVjF1dGFhNnlxdHYwOUxhemxyeGp3SHBtVnZ4bWRRVVE?oc=5",
+        "published_at": "2026-11-08T19:00:00+00:00",
+        "summary": "쓰나미 여진 올라… AI실적에 개미들 긴장 - 머니투데이 &nbsp;&nbsp; 머니투데이",
         "id": "stocks-9"
       }
     ],
@@ -462,19 +462,19 @@
         "id": "bonds-0"
       },
       {
-        "title": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산",
-        "publisher": "산경투데이",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Yc1NNcGh2YU54d2FINDcwaXJYaU4zNTAwbHllTWExaEVMUk9rRXdkUU1BektSOXg1WGJid01RVnlmdXBfU3FyajRQQ2tFeXlVenFxRHFYblBGMmwzVC1WNmxRWUM4cUJNaFJ1dE1aUm56S0lD0gF0QVVfeXFMTVhzU01waHZhTnh3YUg0NzBpclhpTjM1MDBseWVNYTFoRUxST2tFd2RRTUF6S1I5eDVYYmJ3TVFWeWZ1cF9TcXJqNFBDa0V5eVV6cXFEcVhuUEYybDNULVY2bFFZQzhxQk1oUnV0TVpSbnpLSUM?oc=5",
-        "published_at": "2026-11-09T10:43:26+00:00",
-        "summary": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산 &nbsp;&nbsp; 산경투데이",
-        "id": "bonds-1"
-      },
-      {
         "title": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBwVk1CRElYc2pwX3pKUXRjZzdveFF5Z1NhZ08xM0RHbFNyZXFYOURoTUlfRmRNaUN0QXFKOXRoOXZObHoxNUpES2Fn?oc=5",
         "published_at": "2026-11-09T08:14:00+00:00",
         "summary": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장 &nbsp;&nbsp; 코인리더스",
+        "id": "bonds-1"
+      },
+      {
+        "title": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9BYlczdWkzZWFCZm1sdzc5ZVZJRlJyQXVQMC1wbE9mS3Y3RnNaWTV3WVVGdlBJb0k3OUFUQXpScVJGWWdXcDRlbXZTcUhYbFdyS1dnZ2JhYkFkcU82ZThHQlVQcURDaGpzTnk2c3I1WnXSAXRBVV95cUxNWHNTTXBodmFOeHdhSDQ3MGlyWGlOMzUwMGx5ZU1hMWhFTFJPa0V3ZFFNQXpLUjl4NVhiYndNUVZ5ZnVwX1Nxcmo0UENrRXl5VXpxcURxWG5QRjJsM1QtVjZsUVlDOHFCTWhSdXRNWlJuektJQw?oc=5",
+        "published_at": "2026-11-09T08:13:33+00:00",
+        "summary": "美 고용 호조에 국고채 금리 일제히 상승…연준 긴축 우려 확산 &nbsp;&nbsp; 산경투데이",
         "id": "bonds-2"
       },
       {
@@ -510,12 +510,20 @@
         "id": "bonds-6"
       },
       {
+        "title": "이비엔(EBN)뉴스센터",
+        "publisher": "www.ebn.co.kr",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94TkwtSHZvRmVFMEZGd3VNVl9YNUI4RmRyQ3ZkMmxLOTIzUktBQlNkQ2t1VlhneE1Kcng1UHoxSW1xWXp1QmVjM0JpY1ZxMENQdWtCcE4tQlpTZjMtR2FpeWsyU1dXQ2RDTms5eW5Gb1JQN2l1?oc=5",
+        "published_at": "2026-11-09T02:13:09+00:00",
+        "summary": "이비엔(EBN)뉴스센터 &nbsp;&nbsp; www.ebn.co.kr",
+        "id": "bonds-7"
+      },
+      {
         "title": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jd0VRT050THRGWVA4MENWNUtBaHhKb004OWlQbUlrSWtfMzhVdjJScjlFRncwd3h4NW1qZHRRMmhOXzNLUnk3Z0xUY21TOExDTzBpOE5EUmdwRGpxbjg0dm5ER21Ed1hxcG9McGxZZ0I5UQ?oc=5",
         "published_at": "2026-11-09T02:12:17+00:00",
         "summary": "대외금리 상승·증시 반등에 약세…국고 3년 3.7bp↑ &nbsp;&nbsp; KB Think",
-        "id": "bonds-7"
+        "id": "bonds-8"
       },
       {
         "title": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄",
@@ -523,14 +531,6 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zcW5UazlxTnhtcjJ6eUZ3T3NQaGtEX3lGbmEyVDhKaHo2aVJBYzRyemxhcDNSR2lLc2pCRVoyN1FITXlPME9SVl9zdjEwZWFNVzNuYzM0TzJDZ01zZDlBa1Y5dTM1THJvejFVZm5sRQ?oc=5",
         "published_at": "2026-11-09T01:16:00+00:00",
         "summary": "금값 반등…달러 약세가 12월 연준 금리 인상 전망 상쇄 &nbsp;&nbsp; Investing.com 한국어",
-        "id": "bonds-8"
-      },
-      {
-        "title": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtXzhmRVBxdkxzTnJ3SV9pR1NmYWoxR3BQbnd1RW8tLTltSG16U1JnX0VxOFJLYnllUWVHZ05ma1FWNUkxTjEyYXhscXo3anF5RUVwZXlrSDdYc3RzVS15cDBEenBPNHdILWlwX3BzbE9zUQ?oc=5",
-        "published_at": "2026-11-09T00:46:31+00:00",
-        "summary": "[한은은 지금] 로고프가 온다…김진일 금통위원과 토론도 &nbsp;&nbsp; KB Think",
         "id": "bonds-9"
       }
     ]
@@ -542,8 +542,8 @@
     "FRED DGS2: ReadTimeout",
     "FRED DEXKOUS: ReadTimeout",
     "FRED VIXCLS: ReadTimeout",
-    "Flash 모델 gemini-3.6-flash 실패: ClientError",
-    "Flash 모델 gemini-2.5-flash 실패: ClientError",
-    "Gemini AI 분석 실패: ValueError"
+    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
+    "Flash 모델 gemini-3.5-flash-lite 실패: ClientError (HTTP 400): Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema': Cannot find field. Invalid JSON payload received. Unknown name \"additional_properties\" at 'generation_config.response_schema.propert",
+    "Gemini AI 분석 실패: ValueError (HTTP unknown): All Flash models failed"
   ]
 }
