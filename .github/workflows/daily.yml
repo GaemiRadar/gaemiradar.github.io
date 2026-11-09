@@ -43,7 +43,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_FLASH_MODEL: gemini-3.6-flash
           GEMINI_FLASH_FALLBACK: gemini-2.5-flash
-          GEMINI_REVIEW_MODEL: gemini-2.5-pro
+          GEMINI_REVIEW_MODEL: gemini-3.5-flash
           ENABLE_PRO_REVIEW: "1"
         run: python scripts/update_report.py
       - name: Save latest public data to repository
