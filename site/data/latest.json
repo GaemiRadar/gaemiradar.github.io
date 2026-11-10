@@ -1,85 +1,83 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T20:38:30.580595+09:00",
-  "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
+  "generated_at": "2026-11-10T20:52:49.144789+09:00",
+  "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.5-flash-lite → gemini-3.5-flash-lite",
-    "draft_model": "gemini-3.5-flash-lite",
+    "model": "gemini-3.6-flash → gemini-3.5-flash-lite",
+    "draft_model": "gemini-3.6-flash",
     "review_model": "gemini-3.5-flash-lite",
     "review_status": "completed",
-    "headline": "국내외 증시 반등세와 채권금리 하락, 수도권 주택시장 심리 위축",
-    "overview": "국내 증시는 코스피와 코스닥이 4%대 급등세를 보이며 반등했고, 뉴욕증시 주요 지수도 기술주 중심의 반등을 나타냈습니다. 채권시장은 국고채 금리가 하락하며 채권가격이 상승하는 모습을 보였으나, 미국 금리 인상 우려 등의 요인이 상존합니다. 주택시장은 전국 입주전망지수의 미미한 반등에도 불구하고 서울 및 수도권은 잔금대출 부담과 금리 영향으로 심리가 위축되었습니다.",
+    "headline": "국내외 증시 외국인 매수 및 저가 매수로 반등, 채권 시장은 금리 향방 혼재",
+    "overview": "국내 증시는 외국인과 기관의 순매수에 힘입어 4%대 급등하며 반등했고, 미국 증시 또한 AI 저가 매수세와 유가 급락 영향으로 나스닥을 중심으로 반등했습니다. 채권 시장은 외국인의 국내 채권 순매수 및 미국 고용 호조에 따른 금리 상승 우려가 엇갈리며 금리 및 채권 가격 향방에 대한 보도가 상충하고 있습니다.",
     "analysis": {
-      "stocks": {
+      "stocks_kr": {
         "direction": "상승 우세",
-        "confidence": "낮음",
+        "confidence": "보통",
         "horizon": "단기",
-        "summary": "코스피와 코스닥이 4%대 급등을 기록하고 뉴욕증시 기술주가 반등했으나 미국 물가지표 등 변동성 요인이 남아 있음.",
+        "summary": "코스피와 코스닥 지수는 외국인과 기관의 대규모 순매수에 힘입어 4% 이상 급등하며 반등했습니다.",
         "bull_cases": [
-          "코스피 5200선 회복 및 4%대 급등",
-          "뉴욕증시 기술주 반등 및 나스닥 상승"
+          "외국인 및 기관 동반 순매수 유입 (8,500억 원 순매수)",
+          "AI 관련 공포 완화 및 반도체 실적 개선 기대감"
         ],
         "bear_cases": [
-          "미국 물가지표 발표 등 불확실성 상존",
-          "반도체 실적 및 외국인 수급 변동성"
+          "AI·반도체 사이클 및 금리 관련 불확실성 지속 가능성",
+          "정치적·지정학적 변수로 인한 증시 출렁임"
         ],
         "watch": [
-          "미국 물가지표 발표",
-          "외국인 수급 동향",
-          "주요 반도체 기업 실적"
+          "외국인 및 기관 수급 동향",
+          "반도체 실적 발표 및 AI 사이클 향방"
         ],
         "citation_ids": [
-          "stocks-1",
-          "stocks-6",
-          "stocks-7"
+          "stocks_kr-2",
+          "stocks_kr-5",
+          "stocks_kr-7"
         ]
       },
-      "housing": {
-        "direction": "하락 우세",
-        "confidence": "낮음",
+      "stocks_us": {
+        "direction": "상승 우세",
+        "confidence": "보통",
         "horizon": "단기",
-        "summary": "전국 일부 지수가 소폭 반등했으나 서울 및 수도권은 대출 부담과 금리 인상 우려로 입주 심리가 위축됨.",
+        "summary": "미국 증시는 유가 급락과 AI 기술주 중심의 저가 매수세 유입에 힘입어 나스닥 지수가 2.74% 급반등했습니다.",
         "bull_cases": [
-          "전국 아파트 입주전망지수 4개월 만에 소폭 반등",
-          "일부 지역의 개별 거래 및 가격 움직임"
+          "국제유가 급락 및 AI 저가 매수세 유입",
+          "S&P 500 상승 및 연말 랠리 기대감"
         ],
         "bear_cases": [
-          "서울 및 수도권 아파트 입주전망지수 하락",
-          "대출 사다리 축소 및 잔금대출 부담 가중"
+          "엔비디아 개별 악재에 따른 4%대 하락",
+          "주간 단위 기술주 급락 등 시장 변동성 잔존"
         ],
         "watch": [
-          "수도권 아파트 입주율",
-          "기준금리 및 대출 규제 기조"
+          "연말 랠리 재개 여부",
+          "주요 기술주 악재 여파 및 유가 추이"
         ],
         "citation_ids": [
-          "housing-0",
-          "housing-3",
-          "housing-5"
+          "stocks_us-3",
+          "stocks_us-5",
+          "stocks_us-7"
         ]
       },
       "bonds": {
-        "direction": "중립",
+        "direction": "판단 유보",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "국고채 금리는 일제히 하락하며 고정금리 채권가격이 상승했으나, 미국 고용 호조와 금리 인상 압력이 혼재됨.",
+        "summary": "채권 금리와 고정금리 채권 가격은 반대로 움직입니다. 국고채 금리 일제히 하락 소식과 미국 고용 호조에 따른 금리 상승 보도가 상충되어 판단을 유보합니다.",
         "bull_cases": [
-          "국고채 금리 전 구간 하락에 따른 채권가격 상승",
-          "외국인의 韓 채권 순매수 유입"
+          "외국인의 한국 채권 8.5조 원 순매수 전환 및 채권 강세 기대",
+          "국고채 금리 하락에 따른 고정금리 채권 가격 상승 요인"
         ],
         "bear_cases": [
-          "미국 고용 호조 및 물가 불안에 따른 금리 인상 우려",
-          "채권 발행 물량 증가 부담"
+          "미국 고용 호조로 인한 12월 금리 인상 가능성 및 금리 상승 압력",
+          "미국 30년물 국채 금리 상승 부담"
         ],
         "watch": [
-          "국고채 금리 추이",
-          "외국인 채권 순매수 규모",
-          "미국 통화정책 관련 지표"
+          "미국 고용 지표 및 통화정책 향방",
+          "외국인의 한국 채권 순매수 기조 지속 여부"
         ],
         "citation_ids": [
-          "bonds-0",
           "bonds-1",
-          "bonds-4"
+          "bonds-4",
+          "bonds-7"
         ]
       }
     }
@@ -767,22 +765,38 @@
     }
   ],
   "news": {
-    "stocks": [
+    "stocks_kr": [
+      {
+        "title": "\"증시 핵심 변수는 AI·반도체 사이클과 외국인 수급\" [금융연구원 2027 전망]",
+        "publisher": "금융신문",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fa0c3eUtveTNhSzJOeGEwMzFIOENYYndfbWJZLWpxV2FRYVZkUHoyc29Zb1o2NkhuS3paQjlLc1REZDI1SDBQWllhY2J3Tm5QVEd1Z1U4ZEtQVGRIOVdQb1RCcXF4WXp0YVBVSEptNVQ2eUZnZjZpc0ZNWEk?oc=5",
+        "published_at": "2026-11-10T08:21:43+00:00",
+        "summary": "\"증시 핵심 변수는 AI·반도체 사이클과 외국인 수급\" [금융연구원 2027 전망] &nbsp;&nbsp; 금융신문",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "코스피 나흘 만에 반등…외국인·기관 매수에 5200선 회복",
+        "publisher": "동행미디어 시대",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11ZnJmXzlISF9Tci1oME1VUlNHOFc2OExWSlYzOW54cTFxQnlfNUJZNTdnYjhiUEM2MUxOdTBHNDZFTHQ1bXBXMUpJZnZXWmtxQzlDSWNfWmotaTBiQnc?oc=5",
+        "published_at": "2026-11-10T07:58:42+00:00",
+        "summary": "코스피 나흘 만에 반등…외국인·기관 매수에 5200선 회복 &nbsp;&nbsp; 동행미디어 시대",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "‘돌아온 외국인’에 코스피 4.39% 급등…AI 공포 걷혔나",
+        "publisher": "시사저널",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5INDVBQWVLZW9lcWdfR2NrOGNwMHduZGZnUjNaQWJTODNaRC1KNnNpVmZxWXBJTWt4UXVCdVpNWWJSNi11TVd6YlVxMS12WkJJT3lLWjhNRlRzVkZId3ZFbUVaR3QwY0xZR25tMEs2UdIBc0FVX3lxTE8tUE1UVUZaSExsY2dKX093amdXUzlxbW5ZUzl2TGlSR1gzOHFJT2FuaHdERDFrMHk0WHZBUW5EYk12VkpUY1FGeTV2RGk4cE5ZaEVkZloyU3N5X0lwcHBCTmMyVm1rRXd5Zjhncng0bjNsOTQ?oc=5",
+        "published_at": "2026-11-10T07:31:08+00:00",
+        "summary": "‘돌아온 외국인’에 코스피 4.39% 급등…AI 공포 걷혔나 &nbsp;&nbsp; 시사저널",
+        "id": "stocks_kr-2"
+      },
       {
         "title": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트]",
         "publisher": "한경매거진",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84b1lPUzFWTXJBMDYwbnE1NU9QODJVelh3elp4STNSWjFpRVZqSndBLTZ5cU9ROFZDaDdnYXRVQ0dTcDE5SUxEczRCT2c5UWtTbjJuek5LNFdKTVpLZm9CelRaRUk1RjYwd2V5bg?oc=5",
         "published_at": "2026-11-10T07:18:00+00:00",
         "summary": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트] &nbsp;&nbsp; 한경매거진",
-        "id": "stocks-0"
-      },
-      {
-        "title": "코스피 5200선 회복 4%대 급등 [시황종합]",
-        "publisher": "https://www.2news.co.kr/",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3U2xUMktINkVGRDBoLS1aQWNzQWVUUndxUVJIRFBxanUtMWdZY2NNSUtxMXNqWDVjNEo2clhWTHRXN0ZPSHJRcUoxZ3Mta2tUUmNyeFg1MjV2aEVvTHBnV1B3R29BYV9S?oc=5",
-        "published_at": "2026-11-10T07:08:00+00:00",
-        "summary": "코스피 5200선 회복 4%대 급등 [시황종합] &nbsp;&nbsp; https://www.2news.co.kr/",
-        "id": "stocks-1"
+        "id": "stocks_kr-3"
       },
       {
         "title": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화”",
@@ -790,7 +804,31 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwV2RjNFFnOGttd2NRUEZkdXZKb2RjVHB0TDZRLUpGX1pMQ053YktDendoQ1l0ajY0UGxDMEJkb21oU1RPeWpQMkdoXzBGQXNHbDFBb1dXeGhYcWd5TVBVYkFqbTBuMXFkcTcyU9IBcEFVX3lxTE1sSmwyRjZMRFN3QU9nd0w2RTE1UzZZOUZnSjZrUWtHajh2U2ZxRUxvTVNjcWU0X3k5elpNWVJ6SjV2M1h3MzdWYkRpM1FPLURHWFYtZEN4bnBxV0lGdnAyZFAxcTZMU19GR1R5aTFPWEI?oc=5",
         "published_at": "2026-11-10T07:02:32+00:00",
         "summary": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화” &nbsp;&nbsp; 글로벌경제신문",
-        "id": "stocks-2"
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[마감시황] 코스피, 외인·기관 매수에 4.39% 반등…5200선 마감",
+        "publisher": "블록미디어",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MM1JTaTY2azUxUXRXRzk5Uk1Hb2NTUUt0X2RHV2lEMDl5V1N2Q3htSUJkeHU2VU92QXdtOGtLZWF2SDNrVjdDWjM2TS1WY1FJdVRqYUpCcUE?oc=5",
+        "published_at": "2026-11-10T06:51:28+00:00",
+        "summary": "[마감시황] 코스피, 외인·기관 매수에 4.39% 반등…5200선 마감 &nbsp;&nbsp; 블록미디어",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "코스피·코스닥, 4%대 급등 마감…4거래일 만에 반등",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wMGdwSUk0UVhMMGRIcEd0dXZnT29VTW41Z2x6NWw4SWNnT2JXdWpOSTd1VWU2dE5TYkNQNy1LVHpGcnpkbDU1VE03YUN2M284YzVERFVZbHpYUQ?oc=5",
+        "published_at": "2026-11-10T06:40:50+00:00",
+        "summary": "코스피·코스닥, 4%대 급등 마감…4거래일 만에 반등 &nbsp;&nbsp; 한국경제",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "코스피 4.39% 급등해 5230선 회복…외국인·기관 8500억 순매수",
+        "publisher": "www.ebn.co.kr",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nVjFhdlNjUEd5a0FzdzF2eEN2S2o0ZThSc2JBc082U3JJWjA2UUtYbkpWdEpLakY4Q0Q4QVhHaWtKWm1IUTl0R2JXM0ZOcDJsTndZb3czd3hVTXgzMDZpX3A4dHp3Wk5J?oc=5",
+        "published_at": "2026-11-10T06:36:23+00:00",
+        "summary": "코스피 4.39% 급등해 5230선 회복…외국인·기관 8500억 순매수 &nbsp;&nbsp; www.ebn.co.kr",
+        "id": "stocks_kr-7"
       },
       {
         "title": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\"",
@@ -798,15 +836,81 @@
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54dkJtSXN4NlB0SEZSdG1MWGpGbjIzbk1NcU1QMk1WVF9NS0RZY09PdmJ3Q0VKR1kwdENYb2hTRVM4R0thdmxBMm9Gc3huMklaZkl1Qm9tOXJ0eEQyMWFmdE9iaGt2SlRxUnBiZlN2aGNlbWc4?oc=5",
         "published_at": "2026-11-10T06:04:40+00:00",
         "summary": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\" &nbsp;&nbsp; 파이낸셜포스트",
-        "id": "stocks-3"
+        "id": "stocks_kr-8"
       },
       {
-        "title": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송]",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNlZVTmRCTFlsMms2bUwxc3kwbWxKU2RSZldPbk12bVFCN2xnMjRXOXk4aWhKdXNMeS15VW1tbjlCX2RDaDFvRTRJNEF0UGQtTnFoY3lTelNxLXpIcUNXM2xsemNFX3pTcGdQbUJyUk5VYV9RMUxlRTJmU3B0UVU3Nw?oc=5",
-        "published_at": "2026-11-09T23:08:50+00:00",
-        "summary": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송] &nbsp;&nbsp; 이데일리",
-        "id": "stocks-4"
+        "title": "“반도체 소부장 2027년 실적 성장성 봐야”…이오테크닉스·주성엔지니어링 주목 [더 워룸]",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wOUdzRGlWMEpBR2NtdzJ2OEtYbFcyUlBmZHU5TFNrdEhiMEhfWVhSZE9zdk5oa013MzQ4b1k5S01PMHlOeTRoQmF5MDhUTlVzdUh1NUI0ZUFwbkFRZk42MVlUVUNMSk9PT0JpNExpZWlRd0wxY2k0?oc=5",
+        "published_at": "2026-11-10T05:11:00+00:00",
+        "summary": "“반도체 소부장 2027년 실적 성장성 봐야”…이오테크닉스·주성엔지니어링 주목 [더 워룸] &nbsp;&nbsp; 한국경제TV",
+        "id": "stocks_kr-9"
+      }
+    ],
+    "stocks_us": [
+      {
+        "title": "[뉴욕 마켓 브리핑](10일)",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9kOEh3LXltekhySHduUlA4Y2tXZUN1MXZkMjZyNDRlbU5icHpxUElhQ3Y1ZzU0NUNLT29BaF9aWkNEdGJUZDhkUVhFV2VNRmp1dE5fc2paRllBVlkxaFpUbGNhSGJ1X0hvaGpWLUdRYlp2cTV00gF0QVVfeXFMT2Q4SHcteW16SHJId25SUDhja1dlQ3UxdmQyNnI0NGVtTmJwenFQSWFDdjVnNTQ1Q0tPb0FoX1paQ0R0YlRkOGRRWEVXZU1GanV0Tl9zalpGWUFWWTFoWlRsY2FIYnVfSG9oalYtR1FiWnZxNXQ?oc=5",
+        "published_at": "2026-11-10T00:33:42+00:00",
+        "summary": "[뉴욕 마켓 브리핑](10일) &nbsp;&nbsp; 연합인포맥스",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "[뉴욕 증시] 3대 지수 일제히 상승…‘中 간첩 불륜’ 엔비디아 4% ↓",
+        "publisher": "한양경제",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYWHREeG1ldW1wakktaUwxLWdZMm5BYTZsbFcwSkhrV2ZkNDNZZm9QeG01X2l4X0I3WW1tN1VVbVZrc1RYemtpZVczbnhrV3l5WHhEdTVqRldBSE92bXpaUHQ0bURsSlJxY1NDdmdldDBidw?oc=5",
+        "published_at": "2026-11-10T00:31:36+00:00",
+        "summary": "[뉴욕 증시] 3대 지수 일제히 상승…‘中 간첩 불륜’ 엔비디아 4% ↓ &nbsp;&nbsp; 한양경제",
+        "id": "stocks_us-1"
+      },
+      {
+        "title": "나스닥 한 주 3.4%·S&P500 2.7% 하락…5일 반도체 12% 급락",
+        "publisher": "ISSUE ON (이슈온)",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oT0JGZ2MzbGJIc0xwamVjanBEdFBibXdOMW0zSFJ1ampTTEoxOHRBeUhDQTkwUjg3S0pKS1l1VjJtOU5Qa1pwS2E0dHpHSmc0WW1Mbl9SRFBzeHNVMWVwTl9NU1haY2N4clFv?oc=5",
+        "published_at": "2026-11-09T23:37:21+00:00",
+        "summary": "나스닥 한 주 3.4%·S&P500 2.7% 하락…5일 반도체 12% 급락 &nbsp;&nbsp; ISSUE ON (이슈온)",
+        "id": "stocks_us-2"
+      },
+      {
+        "title": "美 증시, 민주당 압승·엔비디아 악재에도 급등…S&P500 7개월 만에 최대 상승",
+        "publisher": "www.ebn.co.kr",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IVmpZVVNHb3hmdktIQXc3dVFQSEJLaUVOU2gxY2VPQ1NBQjhzQTVuM1FaNl80MkZJSjZKdjNad0l5bkxVVm5PNTE4UGJrcFZ3dWVEZDhUamZaY1JqUVFKSGtDY1RPbFpZ?oc=5",
+        "published_at": "2026-11-09T23:29:06+00:00",
+        "summary": "美 증시, 민주당 압승·엔비디아 악재에도 급등…S&P500 7개월 만에 최대 상승 &nbsp;&nbsp; www.ebn.co.kr",
+        "id": "stocks_us-3"
+      },
+      {
+        "title": "3대 지수 중 가장 가파르게 튄 나스닥…상승 주역은?",
+        "publisher": "위키트리",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sZGYzallHYlRQNFZTNGxGZzJ4eTJkZTE4VVd2b1RpMzY5TWlaNjZydXZZN1NfYUFwMFF2SGgwTlY2b0s5bDg2cFFxWm9NNW11eUYyVHNn?oc=5",
+        "published_at": "2026-11-09T23:23:00+00:00",
+        "summary": "3대 지수 중 가장 가파르게 튄 나스닥…상승 주역은? &nbsp;&nbsp; 위키트리",
+        "id": "stocks_us-4"
+      },
+      {
+        "title": "국제유가 급락·AI 저가매수에 나스닥 2.74% 급등 [뉴욕증시]",
+        "publisher": "매일일보",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13cEQwajB3ZlZlQjFMU2lUbWZiaUV0TnhnWDU0dEtaY1RmaC14RWFNdVR1eWMyb1hDX2U0NktRRnI5dEhyaFV5d1RaWXN6d0dxNWdVXzAxQ1pEaEpTRjNUOV9fY1E?oc=5",
+        "published_at": "2026-11-09T23:16:59+00:00",
+        "summary": "국제유가 급락·AI 저가매수에 나스닥 2.74% 급등 [뉴욕증시] &nbsp;&nbsp; 매일일보",
+        "id": "stocks_us-5"
+      },
+      {
+        "title": "美 증시 폭락 끝났나…월가 \"연말 랠리 온다\"",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83cm4xYnIxeVdFeS1aSlUzbWZhQlA4ZzdDTXQtQ0gtcHVyLUd6OFdsanhWdFVycFEzSTVCYkhBSVNFdFdJSXMyYXlUUHVDSmZEZjU2RzB2MDFZVVNrQnJPa0RQUFktOFFsbE11Vk84OTU1QQ?oc=5",
+        "published_at": "2026-11-09T23:04:23+00:00",
+        "summary": "美 증시 폭락 끝났나…월가 \"연말 랠리 온다\" &nbsp;&nbsp; KB Think",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "[뉴욕증시] 엔비디아만 빠졌다…나스닥 2.74% 급반등",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50bklNa1ZTZnpUNmQ0b3FsSXNrTTZxdnZ6VjBReVVhOVduT3JoSlFxY0pGOS1HeEVvUjlERUtKZ3Nsb0VIRUNpai1LZWMyZG91T1hmSHVDRm1PTHhvUmFjSmpyVzMzQWc?oc=5",
+        "published_at": "2026-11-09T23:00:00+00:00",
+        "summary": "[뉴욕증시] 엔비디아만 빠졌다…나스닥 2.74% 급반등 &nbsp;&nbsp; 자본시장뉴스",
+        "id": "stocks_us-7"
       },
       {
         "title": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목",
@@ -814,121 +918,15 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZMnBVQW1ibmpUd2FERzVmazhWcUoyNlIwNGlKeGhxSTRmclJJQThZU0UwY2trTEVYVDZPdWJuVi1iMlNJM3lvTXE0SHVidlUtSzl4TjN6R0JoeVBZV2ZZVDlLYW0zQXk4T3YwRjNQNA?oc=5",
         "published_at": "2026-11-09T22:58:14+00:00",
         "summary": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목 &nbsp;&nbsp; 톱뉴스",
-        "id": "stocks-5"
+        "id": "stocks_us-8"
       },
       {
-        "title": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의",
-        "publisher": "업코리아",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85YjBLZmNUdXh5elNsd0ExbE91WmozVjM0b214Vk5oSXhjel9iTEVOSjlveVJETFBmX1RLQ2xtQmZKcW1uVEYweXV5Wm91YzZLampKSV80enA4LXA5N1J0UG95Mmt0enBoTTFTN1F3?oc=5",
-        "published_at": "2026-11-09T22:26:39+00:00",
-        "summary": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의 &nbsp;&nbsp; 업코리아",
-        "id": "stocks-6"
-      },
-      {
-        "title": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승",
-        "publisher": "증권일보",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qY3dKeC11OW12WW84SEF6WUh1eDZSRG9DeS1CM1BzYVJQcmhsYnJ1RkV1V2NzX2tsQlR0ZFREenRBWld5MDdKcElGMkJEc1dEdkdSUEhGQkstTFhlWnBHSA?oc=5",
-        "published_at": "2026-11-09T22:03:00+00:00",
-        "summary": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승 &nbsp;&nbsp; 증권일보",
-        "id": "stocks-7"
-      },
-      {
-        "title": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합]",
-        "publisher": "이투데이",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xZzZObHo2U1lUYU96OEx4MzRKYm5rLXFvR29YU1ZsUkVKem1TRUdSXzl3azZNajU1NGZ5M3V1QTdNT1NlR2UwR3FocnFZeGMwX2N0eA?oc=5",
-        "published_at": "2026-11-09T21:57:00+00:00",
-        "summary": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합] &nbsp;&nbsp; 이투데이",
-        "id": "stocks-8"
-      },
-      {
-        "title": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락",
-        "publisher": "중앙신문",
-        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOQ09mV3BVbTEzd0ZUVDNWeVFXUzFJcU9jcVJuNkMwMHVXdVByS1FiR3ZwOWhpNm1NaWJSOFozMVoxYlFNT3kzcUhqTnpad0wwX2Itb1pqbHpBZEY1dlQ5MlB5emdxdmgxVjFSTFExSFhFRzE1cGl4YktFN0lBd3JPT08teUgzMmdjOEo2bkV0NTh6UF9Mb1NtU003aXNwYzlvMEtmMmpOZUtKenRHbkpRTWFrNGQwX25nT2lCOThnYjNFTFdHNUJIa1o0OFd2MzdrV0psMElGSEM0QS1PZmpJZXd4a1R6Szh3YjM4ai12a1JiVkFqRXM3dFB1MUtMNVhjTmQ4VVUzUTFGaDVtblRMVzRTOHZ0eVFPVmtESE81OFhMN0tQNW1QbjhMTTl6MFZkRFh2Y2Q2ejE4b1dERFJtanlIanUzYmVMTm9nQUtwd2poTjlNclFkbTF2dE1ONENXSE5Wb3hiQnBQYWRvTFE?oc=5",
-        "published_at": "2026-11-09T21:52:21+00:00",
-        "summary": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락 &nbsp;&nbsp; 중앙신문",
-        "id": "stocks-9"
-      }
-    ],
-    "housing": [
-      {
-        "title": "11월 전국 아파트 입주전망지수 4개월만에 소폭 상승..수도권은 하락",
-        "publisher": "알파경제",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NOHlnazJXbm82Zm5WcEtwaUQzNnEtZ0dIOThteF9nSzhoQ0MwbldaZXVSYkhhamtyRzMxRi1RS2JYZVEta292UDN4Q2pkREM5dGVoRW03ZTdfNGIwc2RPeXhDeHFVNURma19nTGdn?oc=5",
-        "published_at": "2026-11-10T06:29:44+00:00",
-        "summary": "11월 전국 아파트 입주전망지수 4개월만에 소폭 상승..수도권은 하락 &nbsp;&nbsp; 알파경제",
-        "id": "housing-0"
-      },
-      {
-        "title": "[기획] “대출 사다리 끊겼다”…현금 부자만 사는 시장",
-        "publisher": "매일일보",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hZVJIemppWW1zSVRLNTJjaUs2c2IwZjVhYldlZTVvRThsaEVpZEExRDR2dlJuYjdFYVZwcTF3UnFMaXM5MUxKX0V6cUx5NnBzV2t3YTliRXdNUVVXeEFPQlBMdWQ?oc=5",
-        "published_at": "2026-11-10T05:29:46+00:00",
-        "summary": "[기획] “대출 사다리 끊겼다”…현금 부자만 사는 시장 &nbsp;&nbsp; 매일일보",
-        "id": "housing-1"
-      },
-      {
-        "title": "매물은 8만건 쌓이는데 거래는 '뚝'…서울 집값 향방은",
-        "publisher": "뉴시스",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9sS0tJNjZzaV9EdlVEVms0NFQwQWsxZXFaS0FrRk53dzNxMk53Mm9Uc1RnUEpkdUFQbi0xWHFNZVR0RmF5ejJVZ0tXVnZOUHBsM2Z0eWptRzhDdVhkZ0ZrbVJ2aTBTWUpUZlpKUEVJbVlzTkQ5SHFqMtIBeEFVX3lxTE9sS0tJNjZzaV9EdlVEVms0NFQwQWsxZXFaS0FrRk53dzNxMk53Mm9Uc1RnUEpkdUFQbi0xWHFNZVR0RmF5ejJVZ0tXVnZOUHBsM2Z0eWptRzhDdVhkZ0ZrbVJ2aTBTWUpUZlpKUEVJbVlzTkQ5SHFqMg?oc=5",
-        "published_at": "2026-11-10T03:08:10+00:00",
-        "summary": "매물은 8만건 쌓이는데 거래는 '뚝'…서울 집값 향방은 &nbsp;&nbsp; 뉴시스",
-        "id": "housing-2"
-      },
-      {
-        "title": "수도권 아파트 입주전망지수 ‘뚝’…금리 인상 우려에 심리 급격히 후퇴",
-        "publisher": "https://www.ppss.kr/",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nVDdNVjFCUElpQjlSRjAwNjdSVmdTOUpPV0tWTTQ1dURrcGRYcFNKZnJhWFFtWTJveFZhSWRudmFJQ1puZ1R3azlydXdpc0NIamQ0cXNwM1FWUDNSLWc3MkpvZHc?oc=5",
-        "published_at": "2026-11-10T02:56:57+00:00",
-        "summary": "수도권 아파트 입주전망지수 ‘뚝’…금리 인상 우려에 심리 급격히 후퇴 &nbsp;&nbsp; https://www.ppss.kr/",
-        "id": "housing-3"
-      },
-      {
-        "title": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBCR1MxY21VenVYeEFPczRlU2hBRW1UczZONlVjMlVQTFl1M0NQLUNEeE1WYVgzSjEwa3JxMHNwODBtSExSelliOEZCYw?oc=5",
-        "published_at": "2026-11-10T02:45:00+00:00",
-        "summary": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제 &nbsp;&nbsp; 재경일보",
-        "id": "housing-4"
-      },
-      {
-        "title": "전국 아파트 입주전망 반등에도 서울은 '뚝'⋯잔금대출 부담 커졌다",
-        "publisher": "이투데이",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlTUdLWkJpY01tbmtJVlpqU0xkVElDT19mVnZWSk5PYVctYW5sbVNJVXJ5Nlk4TlBSc3BQSWRwblpLNkFBM2xfQklkZ1FuZUVReWM2aA?oc=5",
-        "published_at": "2026-11-10T02:00:00+00:00",
-        "summary": "전국 아파트 입주전망 반등에도 서울은 '뚝'⋯잔금대출 부담 커졌다 &nbsp;&nbsp; 이투데이",
-        "id": "housing-5"
-      },
-      {
-        "title": "거래 뛴 산본·가격 오른 분당…1기 신도시 '탈동조화' 뚜렷",
-        "publisher": "nbn 시사경제",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiUUo2dkJ5UVA3a2pLRllMS09XQ1hQb3E3SDFKVDNQTVlRLW5sZ3dyMnlrQ0QyU29leHl4T3lJNHRhZG5IX29SYUxDQlJvVWQtcVVRY0JhOVkyOWN3OEFfQ0d4WkVzWGNLVlE?oc=5",
-        "published_at": "2026-11-10T01:59:35+00:00",
-        "summary": "거래 뛴 산본·가격 오른 분당…1기 신도시 '탈동조화' 뚜렷 &nbsp;&nbsp; nbn 시사경제",
-        "id": "housing-6"
-      },
-      {
-        "title": "“그때, 빚내서 집살걸” 초이노믹스 최경환 예언",
-        "publisher": "문화일보",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EaEdZT1BqaFJ1bFhhdVRkQmV6VjdFWVdUTUdHTEItQWpZcUpOeS14YzRtOHBuSU9VaW1md0xiZEdzMWF6T1pMa0xwd3pnY1lS?oc=5",
-        "published_at": "2026-11-10T01:41:27+00:00",
-        "summary": "“그때, 빚내서 집살걸” 초이노믹스 최경환 예언 &nbsp;&nbsp; 문화일보",
-        "id": "housing-7"
-      },
-      {
-        "title": "“집값 억제 얽매인 정책”… 서민 주거비용만 치솟았다",
-        "publisher": "시장경제신문",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1LVpGcXVGZ3otbTVqTENpTEpyek9JV3hxU0treWlLSVZQcW9PVjdPbENxY0oxdW14ZFpUX1ljQjNmTm5EYk1NY3VWQjJyb2ltdThHblMwMlBRQW1XSFlGSWxfc3QwcnM4QmlacFdiVFI?oc=5",
-        "published_at": "2026-11-10T01:33:49+00:00",
-        "summary": "“집값 억제 얽매인 정책”… 서민 주거비용만 치솟았다 &nbsp;&nbsp; 시장경제신문",
-        "id": "housing-8"
-      },
-      {
-        "title": "안양 산본 아파트 거래량 108% 폭증",
-        "publisher": "용인신문",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wZXRTSlJNdERWbHVzMGM3eGY3dS1QR1RQTHVvWUJGajlMaXh3WEFOZ2dWTTdsX0owWEF1c2xFYWlnX09rLWVDTWJveTlESUFhb1hEeU1XZE90ekJ0N1VPVXRwR1Y?oc=5",
-        "published_at": "2026-11-10T01:00:34+00:00",
-        "summary": "안양 산본 아파트 거래량 108% 폭증 &nbsp;&nbsp; 용인신문",
-        "id": "housing-9"
+        "title": "뉴욕증시 3대 지수 일제히 급등…유가 급락·반도체주 반등에 투심 회복",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41bFo4dGEzNXFzR2dwLVMyRm5xXzN5TGNHa0U4N0NIaTRVZFV3M3k0QXQ2ZFg2ZjlZTlZOWVd0QUhiblVDN19nTkdlc2ViQjhPRFhiY3dTWjhMSm9YUktMWkJxWkdGazZPWXpxMUViMXjSAXRBVV95cUxOeFRWT1ZmSGJrcTBKeXBQS0xHdmdZTkNhYmRRb3VucmVLdEloU2dmMWJkVVpLa1FnZk9ieVB0NGgzcHFjWlh5WFJGMzgxVEdLblJ1ODJaa3JwM2ktd09lbzZ6M0VkUTRCbUN0X0VteWVsNHNfTQ?oc=5",
+        "published_at": "2026-11-09T22:52:26+00:00",
+        "summary": "뉴욕증시 3대 지수 일제히 급등…유가 급락·반도체주 반등에 투심 회복 &nbsp;&nbsp; 산경투데이",
+        "id": "stocks_us-9"
       }
     ],
     "bonds": [
@@ -999,7 +997,7 @@
       {
         "title": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이",
         "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNNIBe0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hMFROUm5HZUxPNlZUWFktNjRMemYwTDBRdlpYbTVhZnRoa3dOY01aWkxNQndlbVoyOVJza2ZkTHZYdFV3b2dWWEtFWXJhekl2ZU90NXJTaVNfRjJLT2FEelNCc0VMQ0ptR2YwOWRn0gFuQVVfeXFMTWEwVE5SbkdlTE82VlRYWS02NEx6ZjBMMFF2WlhtNWFmdGhrd05jTVpaTE1Cd2VtWjI5UnNrZmRMdlh0VXdvZ1ZYS0VZcmF6SXZlT3Q1clNpU19GMktPYUR6U0JzRUxDSm1HZjA5ZGc?oc=5",
         "published_at": "2026-11-10T01:59:21+00:00",
         "summary": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이 &nbsp;&nbsp; 머니투데이",
         "id": "bonds-8"
@@ -1014,8 +1012,19 @@
       }
     ]
   },
+  "stock_spotlight": {
+    "KR": {
+      "items": [],
+      "as_of": null,
+      "status": "source_pending"
+    },
+    "US": {
+      "items": [],
+      "as_of": null,
+      "status": "source_pending"
+    }
+  },
   "errors": [
-    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo",
     "Pro 재검토 실패(gemini-3.5-flash): ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
   ]
 }
