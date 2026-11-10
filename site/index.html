@@ -124,6 +124,24 @@
     .stock-panel{padding:20px 22px}
     .stock-panel-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:15px}
     .stock-panel-caption{font-size:12px;color:#8794a6;line-height:1.7}
+    .stock-ai-panel{margin-top:16px;padding:19px 22px}
+    .stock-ai-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .stock-ai-top h3{font-size:16px;margin:0;font-weight:850;color:#293a50}
+    .stock-ai-top p{font-size:12px;line-height:1.6;color:#8996a8;margin:5px 0 0}
+    .stock-ai-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .stock-ai-item{border:1px solid #edf0f5;background:#fcfdff;border-radius:11px;padding:15px}
+    .stock-ai-item-head{display:flex;justify-content:space-between;align-items:center;gap:7px;flex-wrap:wrap}
+    .stock-ai-name{font-size:13px;font-weight:850;color:#304257}
+    .stock-ai-symbol{color:#8997aa;font-size:11px;margin-left:6px}
+    .stock-ai-signal{font-size:10px;border-radius:6px;padding:3px 6px;background:#f0f3f9;color:#687993}
+    .stock-ai-signal.good{background:#eff7f2;color:#2c8863}
+    .stock-ai-signal.bad{background:#fff1f0;color:#c65a54}
+    .stock-ai-summary{font-size:12px;line-height:1.75;color:#506075;margin-top:9px;min-height:38px}
+    .stock-ai-evidence{display:flex;gap:9px;flex-wrap:wrap;font-size:11px;margin-top:9px;color:#8695a7}
+    .stock-ai-evidence a{color:#566cc1;text-decoration:underline;text-underline-offset:2px}
+    .stock-ai-count{font-size:11px;color:#8795a8;margin-top:8px}
+    @media(max-width:740px){.stock-ai-list{grid-template-columns:1fr}.stock-ai-panel{padding:16px}}
+
     .stock-rows{display:grid;gap:8px}
     .stock-row{display:grid;grid-template-columns:30px minmax(0,1.3fr) minmax(70px,.8fr) 90px;align-items:center;gap:12px;border:1px solid #eef1f6;background:#fcfdff;padding:13px 15px;border-radius:11px}
     .stock-rank{font-weight:850;color:#8491a4}
@@ -178,6 +196,11 @@
         <div class="tv-widget-holder" id="tv-widget-kr" aria-label="국내주식 거래 활발, 상승률, 하락률 종목"></div>
         <div class="tv-widget-holder" id="tv-widget-us" aria-label="미국주식 거래 활발, 상승률, 하락률 종목" hidden></div>
         <div class="stock-panel-caption" id="stock-source" style="margin-top:12px">출처: TradingView · 각 목록은 개별 순위이며 투자 추천이 아닙니다. 데이터 지연 여부는 제공처 기준입니다.</div>
+      </div>
+      <div class="panel stock-ai-panel" id="stock-ai-panel" aria-label="최근 뉴스 기반 종목 AI 이슈 분석">
+        <div class="stock-ai-top"><div><h3>AI 종목 이슈 TOP 5</h3><p>최근 72시간 뉴스 언급량 상위 · 지정된 주요 기업 후보 중 선정 · 위 TradingView 거래 순위와 별개</p></div><span class="stock-panel-caption" id="stock-ai-asof">자동 갱신 대기</span></div>
+        <div class="stock-ai-list" id="stock-ai-list"><div class="stock-empty">종목 뉴스·AI 분석 결과를 불러오는 중입니다.</div></div>
+        <p class="stock-panel-caption" style="margin-top:12px">기사 제목을 근거로 한 AI 이슈 요약이며 사실 검증이나 매수·매도 추천이 아닙니다. 종목 가격·거래량 순위는 위 TradingView에서 확인하세요.</p>
       </div>
     </section>
     <section class="section" id="outlook-section"><div class="section-header"><div><h2 class="section-title">AI 시장 방향성 분석</h2><div class="section-sub">향후 1주를 중심으로 상승·하락 요인과 관찰 지표를 비교합니다.</div></div></div><div class="outlooks" id="outlooks"></div></section>
@@ -315,7 +338,53 @@ function renderStockSpotlight(){
   $('tv-widget-us').hidden=kr;
   $('stock-asof').textContent=kr?'국내 주식 · TradingView 제공':'미국 주식 · TradingView 제공';
   mountTradingView(state.stockMarket);
+  renderStockAIInsights();
 }
+
+function renderStockAIInsights(){
+  const host=$('stock-ai-list');
+  if(!host)return;
+  host.replaceChildren();
+  const region=state.stockMarket;
+  const selected=state.data.stock_news_spotlight?.[region];
+  const items=Array.isArray(selected?.items)?selected.items:[];
+  const reports=Array.isArray(state.data.ai?.stock_insights?.[region])?state.data.ai.stock_insights[region]:[];
+  const bySymbol=new Map(reports.filter(x=>x&&typeof x.symbol==='string').map(x=>[x.symbol,x]));
+  setNodeText('stock-ai-asof',selected?.as_of?fmtDate(selected.as_of,{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})+' 기준':'기사 자료 대기');
+  if(!items.length){
+    host.append(create('div','stock-empty',selected?.status==='insufficient_news'?'최근 72시간에 두 개 이상의 독립 기사 출처가 확인된 후보 종목이 부족합니다.': '종목 뉴스 데이터 수집을 기다리고 있습니다. GitHub Actions 실행 후 다시 확인하세요.'));
+    return;
+  }
+  for(const [i,item] of items.slice(0,5).entries()){
+    const card=create('article','stock-ai-item');
+    const hd=create('div','stock-ai-item-head');
+    const name=create('span','stock-ai-name',(i+1)+'. '+(item.name||item.symbol));
+    name.append(create('span','stock-ai-symbol',item.symbol||''));
+    hd.append(name);
+    const ins=bySymbol.get(item.symbol);
+    const label=ins?.signal||'분석 대기';
+    const cls=label==='긍정 이슈'?'good':label==='부정 이슈'?'bad':'';
+    hd.append(create('span',`stock-ai-signal ${cls}`,label));
+    card.append(hd);
+    card.append(create('div','stock-ai-count',`최근 기사 ${Number(item.article_count)||0}건 · 발행처 ${Number(item.publisher_count)||0}곳`));
+    card.append(create('div','stock-ai-summary',ins?.summary||'관련 기사만 확인됐습니다. Gemini 종목별 분석은 아직 생성되지 않았습니다.'));
+    const evidence=create('div','stock-ai-evidence');
+    const links=Array.isArray(item.articles)?item.articles:[];
+    const ids=new Set(Array.isArray(ins?.citation_ids)?ins.citation_ids:[]);
+    const choices=links.filter(a=>ids.has(a.id));
+    // Show sourced article links even if AI did not return a valid company summary.
+    for(const [j,a] of (choices.length?choices:links).slice(0,2).entries()){
+      if(!externalURL(a.url))continue;
+      const link=create('a','',`근거 기사 ${j+1} · ${a.publisher||'출처'}`);
+      link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';
+      link.title=a.title||'';
+      evidence.append(link);
+    }
+    if(evidence.childElementCount)card.append(evidence);
+    host.append(card);
+  }
+}
+
 function renderHeader(){const d=state.data;const stale=Boolean(d.generated_at && (Date.now()-Date.parse(d.generated_at)>36*60*60*1000));setNodeText('today',fmtDate(new Date(),{year:'numeric',month:'long',day:'numeric',weekday:'short'}));setNodeText('hero-title',safeText(d.ai?.headline)||DEMO.ai.headline);setNodeText('hero-description',safeText(d.ai?.overview)||DEMO.ai.overview);setNodeText('hero-asof',d.generated_at?`/ ${fmtDate(d.generated_at,{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}`:'/ SAMPLE VIEW');setNodeText('hero-time',d.generated_at?fmtDate(d.generated_at,{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}):'자동 갱신 전');const badge=$('mode-status');badge.className=`status-badge ${d.mode==='demo'?'demo':d.ai?.status==='ok'?'live':''}`;badge.textContent=d.mode==='demo'?'미리보기 · 예시':stale?'갱신 지연 · 확인 필요':d.ai?.status==='ok'?'AI 분석 갱신됨':'뉴스·지표만 갱신됨';const msg=$('state-alert');msg.className=`alert ${d.mode==='live'&&d.ai?.status==='ok'?'live':''}`;if(stale&&d.mode==='live')msg.textContent='보고서 갱신이 지연되고 있습니다. 아래의 작성 시점을 확인하고 최신 가격·뉴스와 혼동하지 마세요. GitHub Actions 실행 상태를 확인해 주세요.';else if(d.mode==='demo')msg.textContent='현재 화면은 기능과 디자인을 확인하는 예시입니다. 숫자와 전망은 실제 투자 정보가 아닙니다. GitHub 자동 갱신을 설정하면 실제 데이터를 불러옵니다.';else if(d.ai?.status==='ok')msg.textContent=(d.ai?.review_status==='completed'?'AI 1차 분석과 2차 검토를 완료했습니다. ':d.ai?.review_status==='failed'?'AI 1차 분석만 완료했습니다. 2차 검토는 오류로 실패했습니다. ':d.ai?.review_status==='skipped_quota'?'AI 1차 분석은 완료했으며, API 사용량 제한으로 2차 검토를 생략했습니다. ':'AI가 수집한 자료를 분석했습니다. ')+'분석은 RSS 기사 제목·요약과 공개 시장 지표를 기준으로 작성되며, 전망은 불확실합니다.';else msg.textContent='뉴스·시장 데이터 갱신은 완료되었지만 Gemini 분석은 아직 완료되지 않았습니다. 저장소의 GEMINI_API_KEY, 무료 사용 한도, Actions 실행 기록을 확인하세요.';}
 function render(){renderHeader();renderMetrics();renderOutlooks();renderStockSpotlight();renderNews();document.querySelectorAll('[data-tab]').forEach(b=>{const active=b.dataset.tab===state.tab;b.classList.toggle('active',active);if(b.classList.contains('nav-btn')){if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')}});setNodeText('crumb-current',state.tab==='all'?'종합 시장 현황':state.tab==='stocks'?'주식 시장 전망':`${CATS[state.tab].name} 시장 전망`)}
 async function reload(){const button=$('refresh');button.disabled=true;button.textContent='데이터 확인 중…';try{if(location.protocol==='file:'){state.data=DEMO}else{const r=await fetch('./data/latest.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('데이터 응답 실패');const json=await r.json();if(!json||!json.news||!json.market||!json.ai)throw new Error('잘못된 데이터 형식');state.data=json.mode==='demo'?DEMO:json}render()}catch(e){state.data=DEMO;render();setNodeText('state-alert','데이터 파일을 불러올 수 없습니다. 배포 설정을 확인해 주세요. 현재는 예시 화면을 표시합니다.')}finally{button.disabled=false;button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M5.8 9a7 7 0 0 1 12-2L20 12M4 12l2.2 3a7 7 0 0 0 12 0"/></svg>최신 데이터 확인'}}
