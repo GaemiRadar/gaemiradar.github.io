@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T12:21:54.869583+09:00",
+  "generated_at": "2026-11-10T12:50:24.110621+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "ok",
@@ -8,76 +8,76 @@
     "draft_model": "gemini-3.6-flash",
     "review_model": "gemini-3.5-flash",
     "review_status": "completed",
-    "headline": "글로벌 증시 반등과 국고채 금리 하락 속 부동산 시장 엇갈린 전망",
-    "overview": "뉴욕증시와 국내 증시가 반도체주 중심으로 반등세를 나타낸 가운데, 채권 시장은 외국인 순매수와 안전자산 선호로 국고채 금리가 하락하며 고정금리 채권 가격이 상승세를 보였습니다. 부동산 시장은 금리 인상 우려와 대출 부담으로 입주전망지수가 악화되는 한편 1기 신도시 지역별 거래 및 가격 탈동조화가 나타나 혼조세를 보이고 있습니다.",
+    "headline": "증시 반등과 채권 금리 하락 속 부동산 입주 심리 위축 및 지표 변동성 상존",
+    "overview": "뉴욕증시 주요 지수 반등과 국내 코스피 지수 상승 관측에도 불구하고 기술주 변동성과 물가지표 발표를 앞둔 관망세가 엇갈리고 있습니다. 국내 채권 시장은 외국인 매수세 속에 금리 하락으로 고정금리 채권 가격이 상승했으나, 미국 채권 금리는 소폭 상승했습니다. 부동산 시장은 입주전망 지수 위축과 지역별 거래 탈동조화가 나타나고 있으며 실질 전국 가격 통계 부재로 방향성 판단을 유보합니다.",
     "analysis": {
       "stocks": {
-        "direction": "상승 우세",
+        "direction": "중립",
         "confidence": "보통",
         "horizon": "단기 (1~2주)",
-        "summary": "미국 뉴욕증시 지수 반등과 국내 코스피·코스닥 지수의 급등세에 힘입어 상승 우세 흐름을 보이고 있으나, 미국 엔비디아 급락 및 CPI 발표를 앞둔 변동성에 유의가 필요합니다.",
+        "summary": "미국 뉴욕증시 3대 지수가 반등했으나 엔비디아 등 특정 종목 변동성 및 미국 물가지표 발표 앞 관망세가 존재하며, 한국 증시는 코스피·코스닥 상승 관측과 외국인 매도세가 교차하고 있습니다.",
         "bull_cases": [
-          "뉴욕증시 3대 지수 및 반도체주 동반 반등(나스닥 2.74% 상승)",
-          "국내 코스피(+4.30%) 및 코스닥(+3.83%) 지수 강세"
+          "미국 뉴욕증시 주요 지수 및 나스닥 반등",
+          "한국 코스피 및 코스닥 지수의 당일 상승세 관측"
         ],
         "bear_cases": [
-          "미국 엔비디아 6.4% 급락 등 일부 개별 대형주 변동성 확대",
-          "외국인 매도세 지속 가능성 및 미국 CPI 발표를 앞둔 경계감"
+          "엔비디아 급락 등 주요 AI 종목의 변동성 확대",
+          "미국 물가지표 발표 경계감 및 국내 증시 외국인 순매도"
         ],
         "watch": [
-          "미국 CPI(소비자물가지수) 발표 결과",
-          "외국인 수급 변화 및 코스피 5,000선 유지 여부"
+          "미국 물가지표 발표 결과 및 미국 국채 금리 변화",
+          "국내 증시 외국인 수급 및 달러/원 환율 흐름"
         ],
         "citation_ids": [
-          "stocks-0",
           "stocks-1",
-          "stocks-5"
+          "stocks-2",
+          "stocks-4"
         ]
       },
       "housing": {
         "direction": "판단 유보",
         "confidence": "낮음",
         "horizon": "중단기 (1~3개월)",
-        "summary": "전국 집값에 대한 실거래 통계가 부재한 상황에서, 서울·수도권 입주전망지수 하락과 1기 신도시 내 지역별 탈동조화 현상이 동시에 나타나 전국 방향성은 판단을 유보합니다.",
+        "summary": "금리 인상 우려와 잔금대출 부담으로 수도권 아파트 입주전망지수는 위축되었으나 분당 가격 상승 및 산본 거래량 증가 등 1기 신도시 내 탈동조화가 관측되며, 전국 집값 실질 통계가 없어 종합적인 집값 방향은 판단을 유보합니다.",
         "bull_cases": [
-          "분당 등 일부 1기 신도시 가격 상승",
-          "산본 등 일부 지역 아파트 거래량 폭증"
+          "분당 등 일부 1기 신도시 지역의 매매 가격 상승",
+          "산본 등 일부 신도시 지역의 아파트 거래량 증가"
         ],
         "bear_cases": [
-          "금리 인상 우려 및 잔금대출 부담으로 수도권·서울 입주전망지수 하락",
-          "대출 규제 및 심리 위축"
+          "금리 인상 우려 및 대출 부담에 따른 11월 수도권·서울 입주전망지수 하락",
+          "잔금대출 부담으로 인한 아파트 입주 심리 위축"
         ],
         "watch": [
-          "향후 금리 향방 및 가계대출 규제 추이",
-          "지역별 아파트 거래량 및 입주 심리 변화"
+          "수도권 아파트 입주전망지수 및 대출 금리 추이",
+          "1기 신도시 지역별 거래량 및 집값 탈동조화 양상"
         ],
         "citation_ids": [
           "housing-0",
-          "housing-2",
-          "housing-3"
+          "housing-3",
+          "housing-4"
         ]
       },
       "bonds": {
-        "direction": "상승 우세",
+        "direction": "중립",
         "confidence": "보통",
         "horizon": "단기 (1~2주)",
-        "summary": "외국인 선물 매수와 안전자산 선호 심리로 국고채 금리가 전 구간 하락함에 따라, 금리와 반대로 움직이는 고정금리 채권 가격은 상승 우세를 보이고 있습니다.",
+        "summary": "국내 국고채 시장은 외국인 선물 매수와 안전자산 선호 영향으로 금리가 하락하여 고정금리 채권 가격이 상승했으나, 미국 국채 금리는 소폭 상승세를 나타내며 금리와 채권 가격이 반대로 움직이는 특성상 혼조세를 보입니다.",
         "bull_cases": [
-          "외국인 8.5조 원 규모 채권 순매수 및 선물 매수세",
-          "유가 하락 및 안전자산 선호 심리에 따른 국고채 금리 하락(채권가격 상승)"
+          "외국인 8.5조원 채권 순매수 및 국고채 선물 매수세",
+          "국내 국고채 금리 전 구간 하락에 따른 고정금리 채권 가격 상승"
         ],
         "bear_cases": [
-          "10월 채권 발행량 증가(전월 대비 4.5조 원 증가한 91조 원)에 따른 공급 부담",
-          "연말 장부마감 관련 시장 변동성"
+          "미국 국채 10년 및 2년 금리 소폭 상승에 따른 채권 가격 하락 압력",
+          "10월 채권 발행량 91조원 증가에 따른 수급 부담"
         ],
         "watch": [
-          "외국인 국채 선물 매수세 지속 여부",
-          "국고채 금리 추이 및 크레딧 시장 강세 유지 여부"
+          "외국인 국채 선물 순매수 지속 여부",
+          "미국 국채 10년 금리 동향 및 국내 채권 발행 물량 수급"
         ],
         "citation_ids": [
+          "bonds-0",
           "bonds-1",
-          "bonds-4",
-          "bonds-5"
+          "bonds-2"
         ]
       }
     }
@@ -88,8 +88,8 @@
       "name": "코스피",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 5234.39,
-      "change": 4.295,
+      "value": 5220.53,
+      "change": 4.018,
       "as_of": "2026-11-10",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKS11",
@@ -164,7 +164,7 @@
         },
         {
           "date": "2026-11-10",
-          "value": 5234.39
+          "value": 5220.53
         }
       ]
     },
@@ -173,8 +173,8 @@
       "name": "코스닥",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 663.44,
-      "change": 3.83,
+      "value": 660.65,
+      "change": 3.393,
       "as_of": "2026-11-10",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKQ11",
@@ -249,7 +249,7 @@
         },
         {
           "date": "2026-11-10",
-          "value": 663.44
+          "value": 660.65
         }
       ]
     },
@@ -258,91 +258,521 @@
       "name": "S&P 500",
       "unit": "pt",
       "change_unit": "pct",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 7353.73,
+      "change": -4.356,
+      "as_of": "2026-11-05",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/SP500",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-13",
+          "value": 7805.45
+        },
+        {
+          "date": "2026-10-14",
+          "value": 7718.94
+        },
+        {
+          "date": "2026-10-15",
+          "value": 7744.06
+        },
+        {
+          "date": "2026-10-16",
+          "value": 7659.44
+        },
+        {
+          "date": "2026-10-19",
+          "value": 7690.73
+        },
+        {
+          "date": "2026-10-20",
+          "value": 7712.57
+        },
+        {
+          "date": "2026-10-21",
+          "value": 7757.17
+        },
+        {
+          "date": "2026-10-22",
+          "value": 7663.43
+        },
+        {
+          "date": "2026-10-23",
+          "value": 7623.68
+        },
+        {
+          "date": "2026-10-26",
+          "value": 7676.77
+        },
+        {
+          "date": "2026-10-27",
+          "value": 7722.6
+        },
+        {
+          "date": "2026-10-28",
+          "value": 7743.98
+        },
+        {
+          "date": "2026-10-29",
+          "value": 7720.39
+        },
+        {
+          "date": "2026-10-30",
+          "value": 7580.07
+        },
+        {
+          "date": "2026-11-02",
+          "value": 7541.4
+        },
+        {
+          "date": "2026-11-03",
+          "value": 7568.92
+        },
+        {
+          "date": "2026-11-04",
+          "value": 7688.62
+        },
+        {
+          "date": "2026-11-05",
+          "value": 7353.73
+        }
+      ]
     },
     {
       "id": "NASDAQCOM",
       "name": "나스닥 종합",
       "unit": "pt",
       "change_unit": "pct",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 24579.42,
+      "change": 1.087,
+      "as_of": "2026-11-06",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/NASDAQCOM",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-14",
+          "value": 26692.87
+        },
+        {
+          "date": "2026-10-15",
+          "value": 26713.03
+        },
+        {
+          "date": "2026-10-16",
+          "value": 26140.03
+        },
+        {
+          "date": "2026-10-19",
+          "value": 26430.89
+        },
+        {
+          "date": "2026-10-20",
+          "value": 26424.82
+        },
+        {
+          "date": "2026-10-21",
+          "value": 26702.86
+        },
+        {
+          "date": "2026-10-22",
+          "value": 26008.86
+        },
+        {
+          "date": "2026-10-23",
+          "value": 25955.34
+        },
+        {
+          "date": "2026-10-26",
+          "value": 26169.38
+        },
+        {
+          "date": "2026-10-27",
+          "value": 26477.81
+        },
+        {
+          "date": "2026-10-28",
+          "value": 26549.85
+        },
+        {
+          "date": "2026-10-29",
+          "value": 26184.72
+        },
+        {
+          "date": "2026-10-30",
+          "value": 25437.0
+        },
+        {
+          "date": "2026-11-02",
+          "value": 25164.36
+        },
+        {
+          "date": "2026-11-03",
+          "value": 25372.01
+        },
+        {
+          "date": "2026-11-04",
+          "value": 25736.51
+        },
+        {
+          "date": "2026-11-05",
+          "value": 24315.0
+        },
+        {
+          "date": "2026-11-06",
+          "value": 24579.42
+        }
+      ]
     },
     {
       "id": "DGS10",
       "name": "미국 국채 10년",
       "unit": "%",
       "change_unit": "pp",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 4.86,
+      "change": 0.02,
+      "as_of": "2026-11-06",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/DGS10",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-14",
+          "value": 5.19
+        },
+        {
+          "date": "2026-10-15",
+          "value": 5.1
+        },
+        {
+          "date": "2026-10-16",
+          "value": 5.09
+        },
+        {
+          "date": "2026-10-19",
+          "value": 5.15
+        },
+        {
+          "date": "2026-10-20",
+          "value": 5.12
+        },
+        {
+          "date": "2026-10-21",
+          "value": 5.13
+        },
+        {
+          "date": "2026-10-22",
+          "value": 4.96
+        },
+        {
+          "date": "2026-10-23",
+          "value": 5.0
+        },
+        {
+          "date": "2026-10-26",
+          "value": 5.0
+        },
+        {
+          "date": "2026-10-27",
+          "value": 4.99
+        },
+        {
+          "date": "2026-10-28",
+          "value": 5.05
+        },
+        {
+          "date": "2026-10-29",
+          "value": 4.98
+        },
+        {
+          "date": "2026-10-30",
+          "value": 4.94
+        },
+        {
+          "date": "2026-11-02",
+          "value": 4.91
+        },
+        {
+          "date": "2026-11-03",
+          "value": 4.95
+        },
+        {
+          "date": "2026-11-04",
+          "value": 4.9
+        },
+        {
+          "date": "2026-11-05",
+          "value": 4.84
+        },
+        {
+          "date": "2026-11-06",
+          "value": 4.86
+        }
+      ]
     },
     {
       "id": "DGS2",
       "name": "미국 국채 2년",
       "unit": "%",
       "change_unit": "pp",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 4.51,
+      "change": 0.05,
+      "as_of": "2026-11-06",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/DGS2",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-14",
+          "value": 4.82
+        },
+        {
+          "date": "2026-10-15",
+          "value": 4.77
+        },
+        {
+          "date": "2026-10-16",
+          "value": 4.74
+        },
+        {
+          "date": "2026-10-19",
+          "value": 4.77
+        },
+        {
+          "date": "2026-10-20",
+          "value": 4.79
+        },
+        {
+          "date": "2026-10-21",
+          "value": 4.81
+        },
+        {
+          "date": "2026-10-22",
+          "value": 4.65
+        },
+        {
+          "date": "2026-10-23",
+          "value": 4.69
+        },
+        {
+          "date": "2026-10-26",
+          "value": 4.68
+        },
+        {
+          "date": "2026-10-27",
+          "value": 4.7
+        },
+        {
+          "date": "2026-10-28",
+          "value": 4.67
+        },
+        {
+          "date": "2026-10-29",
+          "value": 4.61
+        },
+        {
+          "date": "2026-10-30",
+          "value": 4.56
+        },
+        {
+          "date": "2026-11-02",
+          "value": 4.59
+        },
+        {
+          "date": "2026-11-03",
+          "value": 4.61
+        },
+        {
+          "date": "2026-11-04",
+          "value": 4.58
+        },
+        {
+          "date": "2026-11-05",
+          "value": 4.46
+        },
+        {
+          "date": "2026-11-06",
+          "value": 4.51
+        }
+      ]
     },
     {
       "id": "DEXKOUS",
       "name": "달러 / 원",
       "unit": "원",
       "change_unit": "pct",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 1361.89,
+      "change": 0.661,
+      "as_of": "2026-11-06",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/DEXKOUS",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-14",
+          "value": 1343.02
+        },
+        {
+          "date": "2026-10-15",
+          "value": 1343.31
+        },
+        {
+          "date": "2026-10-16",
+          "value": 1334.03
+        },
+        {
+          "date": "2026-10-19",
+          "value": 1331.93
+        },
+        {
+          "date": "2026-10-20",
+          "value": 1327.63
+        },
+        {
+          "date": "2026-10-21",
+          "value": 1327.01
+        },
+        {
+          "date": "2026-10-22",
+          "value": 1326.23
+        },
+        {
+          "date": "2026-10-23",
+          "value": 1325.06
+        },
+        {
+          "date": "2026-10-26",
+          "value": 1327.13
+        },
+        {
+          "date": "2026-10-27",
+          "value": 1326.17
+        },
+        {
+          "date": "2026-10-28",
+          "value": 1344.12
+        },
+        {
+          "date": "2026-10-29",
+          "value": 1339.03
+        },
+        {
+          "date": "2026-10-30",
+          "value": 1333.99
+        },
+        {
+          "date": "2026-11-02",
+          "value": 1344.51
+        },
+        {
+          "date": "2026-11-03",
+          "value": 1344.72
+        },
+        {
+          "date": "2026-11-04",
+          "value": 1341.6
+        },
+        {
+          "date": "2026-11-05",
+          "value": 1352.95
+        },
+        {
+          "date": "2026-11-06",
+          "value": 1361.89
+        }
+      ]
     },
     {
       "id": "VIXCLS",
       "name": "VIX 변동성 지수",
       "unit": "pt",
       "change_unit": "pct",
-      "value": null,
-      "change": null,
-      "as_of": null,
+      "value": 25.64,
+      "change": -9.013,
+      "as_of": "2026-11-06",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/VIXCLS",
-      "history": []
+      "history": [
+        {
+          "date": "2026-10-14",
+          "value": 16.87
+        },
+        {
+          "date": "2026-10-15",
+          "value": 16.46
+        },
+        {
+          "date": "2026-10-16",
+          "value": 19.99
+        },
+        {
+          "date": "2026-10-19",
+          "value": 18.44
+        },
+        {
+          "date": "2026-10-20",
+          "value": 17.31
+        },
+        {
+          "date": "2026-10-21",
+          "value": 16.68
+        },
+        {
+          "date": "2026-10-22",
+          "value": 19.03
+        },
+        {
+          "date": "2026-10-23",
+          "value": 19.45
+        },
+        {
+          "date": "2026-10-26",
+          "value": 18.39
+        },
+        {
+          "date": "2026-10-27",
+          "value": 17.52
+        },
+        {
+          "date": "2026-10-28",
+          "value": 16.91
+        },
+        {
+          "date": "2026-10-29",
+          "value": 17.2
+        },
+        {
+          "date": "2026-10-30",
+          "value": 19.42
+        },
+        {
+          "date": "2026-11-02",
+          "value": 21.15
+        },
+        {
+          "date": "2026-11-03",
+          "value": 20.83
+        },
+        {
+          "date": "2026-11-04",
+          "value": 16.61
+        },
+        {
+          "date": "2026-11-05",
+          "value": 28.18
+        },
+        {
+          "date": "2026-11-06",
+          "value": 25.64
+        }
+      ]
     }
   ],
   "news": {
     "stocks": [
       {
-        "title": "[서학개미 생존공식] 엔비디아(NVDA) 6.4% 급락에도 나스닥 2.7%↑, 오늘 밤 CPI 분수령",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE10eFozVTdncmk0VDBZWG02MWxHMGhaYnNTNkVSNTBSYU1MbjlTc29KRGd1clNKS2dYckJMbmE1NmNBczJTNm0xVWVn?oc=5",
-        "published_at": "2026-11-10T00:01:51+00:00",
-        "summary": "[서학개미 생존공식] 엔비디아(NVDA) 6.4% 급락에도 나스닥 2.7%↑, 오늘 밤 CPI 분수령 &nbsp;&nbsp; 코인리더스",
-        "id": "stocks-0"
-      },
-      {
-        "title": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송]",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNlZVTmRCTFlsMms2bUwxc3kwbWxKU2RSZldPbk12bVFCN2xnMjRXOXk4aWhKdXNMeS15VW1tbjlCX2RDaDFvRTRJNEF0UGQtTnFoY3lTelNxLXpIcUNXM2xsemNFX3pTcGdQbUJyUk5VYV9RMUxlRTJmU3B0UVU3Nw?oc=5",
+        "title": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발",
+        "publisher": "마켓인",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwNk1XV2N5V0c0cXlOZG1Ud1N0OVJTLWcyaTN0MV9zRVRSSmd5QlVNbGhhSVFNcC1aby1LTzF5R2Z0b3p3V09ORjRBbEhmcnNmU2V3TThnZTVwYU5lVHFnYlBTNVZZTWhoWWQ0R3ItTXBjaHc?oc=5",
         "published_at": "2026-11-09T23:08:50+00:00",
-        "summary": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송] &nbsp;&nbsp; 이데일리",
-        "id": "stocks-1"
+        "summary": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발 &nbsp;&nbsp; 마켓인",
+        "id": "stocks-0"
       },
       {
         "title": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목",
@@ -350,7 +780,7 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZMnBVQW1ibmpUd2FERzVmazhWcUoyNlIwNGlKeGhxSTRmclJJQThZU0UwY2trTEVYVDZPdWJuVi1iMlNJM3lvTXE0SHVidlUtSzl4TjN6R0JoeVBZV2ZZVDlLYW0zQXk4T3YwRjNQNA?oc=5",
         "published_at": "2026-11-09T22:58:14+00:00",
         "summary": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목 &nbsp;&nbsp; 톱뉴스",
-        "id": "stocks-2"
+        "id": "stocks-1"
       },
       {
         "title": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의",
@@ -358,7 +788,7 @@
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85YjBLZmNUdXh5elNsd0ExbE91WmozVjM0b214Vk5oSXhjel9iTEVOSjlveVJETFBmX1RLQ2xtQmZKcW1uVEYweXV5Wm91YzZLampKSV80enA4LXA5N1J0UG95Mmt0enBoTTFTN1F3?oc=5",
         "published_at": "2026-11-09T22:26:39+00:00",
         "summary": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의 &nbsp;&nbsp; 업코리아",
-        "id": "stocks-3"
+        "id": "stocks-2"
       },
       {
         "title": "증시 옥죄던 고금리, 꺾여도 호재 아니다?",
@@ -366,7 +796,7 @@
         "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMVRsZnh1eUFOSmdzQU5sTE5UZkRMNk0waUQzazdtekJfMFE3UXpfNnZnOERnVEhOZi0weWFwMUtoWGxjMTM5WEE3ZExEazdYbmhFWTgxaU55Y0gwRG5jcUhYS0VwaGFkNG41VmJzT1owRUpaS3h4bmNGZDVwOFBFcDNDVllkSmpvUWozMGdQaVZXdE1ja25TTzUzQmd4YkZkLTlaYjJ4VzFNNHlKclpMeXBzVjE5Q0hnUWhJSllHbkR1cl81U2ZpclAwb2hsdFdsUWpPTFpuR3NJRmswcHJfUG9Pcllrb0pmM1NYa1pOWjc1MUMtNG00TmZjOEVBcFBJYnZXdjNUbGdjeUhfSjRveVQtdGRNQ3R2?oc=5",
         "published_at": "2026-11-09T22:04:00+00:00",
         "summary": "증시 옥죄던 고금리, 꺾여도 호재 아니다? &nbsp;&nbsp; 데일리안",
-        "id": "stocks-4"
+        "id": "stocks-3"
       },
       {
         "title": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합]",
@@ -374,7 +804,7 @@
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xZzZObHo2U1lUYU96OEx4MzRKYm5rLXFvR29YU1ZsUkVKem1TRUdSXzl3azZNajU1NGZ5M3V1QTdNT1NlR2UwR3FocnFZeGMwX2N0eA?oc=5",
         "published_at": "2026-11-09T21:57:00+00:00",
         "summary": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합] &nbsp;&nbsp; 이투데이",
-        "id": "stocks-5"
+        "id": "stocks-4"
       },
       {
         "title": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락",
@@ -382,7 +812,7 @@
         "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOQ09mV3BVbTEzd0ZUVDNWeVFXUzFJcU9jcVJuNkMwMHVXdVByS1FiR3ZwOWhpNm1NaWJSOFozMVoxYlFNT3kzcUhqTnpad0wwX2Itb1pqbHpBZEY1dlQ5MlB5emdxdmgxVjFSTFExSFhFRzE1cGl4YktFN0lBd3JPT08teUgzMmdjOEo2bkV0NTh6UF9Mb1NtU003aXNwYzlvMEtmMmpOZUtKenRHbkpRTWFrNGQwX25nT2lCOThnYjNFTFdHNUJIa1o0OFd2MzdrV0psMElGSEM0QS1PZmpJZXd4a1R6Szh3YjM4ai12a1JiVkFqRXM3dFB1MUtMNVhjTmQ4VVUzUTFGaDVtblRMVzRTOHZ0eVFPVmtESE81OFhMN0tQNW1QbjhMTTl6MFZkRFh2Y2Q2ejE4b1dERFJtanlIanUzYmVMTm9nQUtwd2poTjlNclFkbTF2dE1ONENXSE5Wb3hiQnBQYWRvTFE?oc=5",
         "published_at": "2026-11-09T21:52:21+00:00",
         "summary": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락 &nbsp;&nbsp; 중앙신문",
-        "id": "stocks-6"
+        "id": "stocks-5"
       },
       {
         "title": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락",
@@ -390,7 +820,7 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pc09NSkJqTGxZV1htTndNX2dGZzkyNHg4aDBjT0kzcHYwWk9lU3hFUjVaRm94a1g0MlBzWEcwVEVCMG53cE81QTczZmNoaUFUM21XOHNTc3lLekIyazFkWFlwMURhN2s?oc=5",
         "published_at": "2026-11-09T08:00:00+00:00",
         "summary": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락 &nbsp;&nbsp; 자본시장뉴스",
-        "id": "stocks-7"
+        "id": "stocks-6"
       },
       {
         "title": "양 지수 소폭↓ 코스피 5,000 사수",
@@ -398,6 +828,14 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02WjhoSnpWQ2NTLVhNd0pVSlh4emRhcE1LcGZVRmhtdDRHYno2Umo0TTNBUkRvLVRnVC1ROUpQQWN1dGItc2NBQ1hla05YZDNWc3ZrR1Z0djVWV0FVd1lmSjgyTGluOEViUnFpaw?oc=5",
         "published_at": "2026-11-09T07:02:38+00:00",
         "summary": "양 지수 소폭↓ 코스피 5,000 사수 &nbsp;&nbsp; KB Think",
+        "id": "stocks-7"
+      },
+      {
+        "title": "코스피 11% 급락할 때 8% 반등한 중국 기술주…증시 부양책에 ‘바닥론’ 고개",
+        "publisher": "매일경제 마켓",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lajdOWWhOY2hVVkxiU0pqTVM2bUcwWUFsdTJfTmpuUzQ0dlJBZFZGNkRnUGZqUkZlSXBNYUxQd0NDZkFRZDBaX3VqYXkxbjZtOEE?oc=5",
+        "published_at": "2026-11-09T05:00:16+00:00",
+        "summary": "코스피 11% 급락할 때 8% 반등한 중국 기술주…증시 부양책에 ‘바닥론’ 고개 &nbsp;&nbsp; 매일경제 마켓",
         "id": "stocks-8"
       },
       {
@@ -419,12 +857,20 @@
         "id": "housing-0"
       },
       {
+        "title": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBCR1MxY21VenVYeEFPczRlU2hBRW1UczZONlVjMlVQTFl1M0NQLUNEeE1WYVgzSjEwa3JxMHNwODBtSExSelliOEZCYw?oc=5",
+        "published_at": "2026-11-10T02:45:00+00:00",
+        "summary": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제 &nbsp;&nbsp; 재경일보",
+        "id": "housing-1"
+      },
+      {
         "title": "금리 인상 우려에 11월 수도권 아파트 입주전망지수 하락",
         "publisher": "연합뉴스",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tWTRnT1dKdTAyenVLRExNUE9ZNEhYampjLWE5d2plOUFFZUhUM09nbWl4S0d0Y1pqOE5xUkpGSjhYRlZuQ25JX29GdGZSQXRYeWUySlc5NmpTV2vSAWBBVV95cUxPRmNiRUpKWUZCOWUtbGM2R0QtaWp6aWdLNXgxX2xwOFQzbTRZNlRjRzQ1TDg5WjdfNXo2SzYza2JTRE1xZnA3ZExSWTIzemdKSUdseDZmcTlPQmNIenVvMXE?oc=5",
         "published_at": "2026-11-10T02:00:05+00:00",
         "summary": "금리 인상 우려에 11월 수도권 아파트 입주전망지수 하락 &nbsp;&nbsp; 연합뉴스",
-        "id": "housing-1"
+        "id": "housing-2"
       },
       {
         "title": "전국 아파트 입주전망 반등에도 서울은 '뚝'⋯잔금대출 부담 커졌다",
@@ -432,7 +878,7 @@
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlTUdLWkJpY01tbmtJVlpqU0xkVElDT19mVnZWSk5PYVctYW5sbVNJVXJ5Nlk4TlBSc3BQSWRwblpLNkFBM2xfQklkZ1FuZUVReWM2aA?oc=5",
         "published_at": "2026-11-10T02:00:00+00:00",
         "summary": "전국 아파트 입주전망 반등에도 서울은 '뚝'⋯잔금대출 부담 커졌다 &nbsp;&nbsp; 이투데이",
-        "id": "housing-2"
+        "id": "housing-3"
       },
       {
         "title": "거래 뛴 산본·가격 오른 분당…1기 신도시 '탈동조화' 뚜렷",
@@ -440,7 +886,7 @@
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiUUo2dkJ5UVA3a2pLRllMS09XQ1hQb3E3SDFKVDNQTVlRLW5sZ3dyMnlrQ0QyU29leHl4T3lJNHRhZG5IX29SYUxDQlJvVWQtcVVRY0JhOVkyOWN3OEFfQ0d4WkVzWGNLVlE?oc=5",
         "published_at": "2026-11-10T01:59:35+00:00",
         "summary": "거래 뛴 산본·가격 오른 분당…1기 신도시 '탈동조화' 뚜렷 &nbsp;&nbsp; nbn 시사경제",
-        "id": "housing-3"
+        "id": "housing-4"
       },
       {
         "title": "“그때, 빚내서 집살걸” 초이노믹스 최경환 예언",
@@ -448,7 +894,7 @@
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EaEdZT1BqaFJ1bFhhdVRkQmV6VjdFWVdUTUdHTEItQWpZcUpOeS14YzRtOHBuSU9VaW1md0xiZEdzMWF6T1pMa0xwd3pnY1lS?oc=5",
         "published_at": "2026-11-10T01:41:27+00:00",
         "summary": "“그때, 빚내서 집살걸” 초이노믹스 최경환 예언 &nbsp;&nbsp; 문화일보",
-        "id": "housing-4"
+        "id": "housing-5"
       },
       {
         "title": "안양 산본 아파트 거래량 108% 폭증",
@@ -456,7 +902,7 @@
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wZXRTSlJNdERWbHVzMGM3eGY3dS1QR1RQTHVvWUJGajlMaXh3WEFOZ2dWTTdsX0owWEF1c2xFYWlnX09rLWVDTWJveTlESUFhb1hEeU1XZE90ekJ0N1VPVXRwR1Y?oc=5",
         "published_at": "2026-11-10T01:00:34+00:00",
         "summary": "안양 산본 아파트 거래량 108% 폭증 &nbsp;&nbsp; 용인신문",
-        "id": "housing-5"
+        "id": "housing-6"
       },
       {
         "title": "1기 신도시 희비 가른 부동산 규제…집값은 분당, 거래는 산본[코주부]",
@@ -464,7 +910,7 @@
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jMDREcjFIeGNTbU9kRll3Smptc2xOUzVWejdkNEgtUXhBMzRQTi1MRmNLYjVvOXBycko4elhZUUJkMm1pQTF1VF9lS2kyUi1BeGfSAVNBVV95cUxNZjBDNU01RFVwWHRvOVNBMGxuRUZqdGlhRDZDbEQ0MjgtSWEtb2Zod3VJWkIxbDl0d3B6M0FIUndZZVF0TkdlenVNSDUxMUJUWWJjTQ?oc=5",
         "published_at": "2026-11-09T21:05:00+00:00",
         "summary": "1기 신도시 희비 가른 부동산 규제…집값은 분당, 거래는 산본[코주부] &nbsp;&nbsp; 서울경제",
-        "id": "housing-6"
+        "id": "housing-7"
       },
       {
         "title": "금리 인상 영향 총정리 대출 부동산 주식 대응법 : 금융",
@@ -472,7 +918,7 @@
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE80dHhKMTJmd2V4bEFlclFGanVRSldyTHI1Njk4S1BZdzhJMVliS055RWs4XzZKOFpaWldxR1lCUWJfN0NXY2FrUjBNdw?oc=5",
         "published_at": "2026-11-09T10:01:20+00:00",
         "summary": "금리 인상 영향 총정리 대출 부동산 주식 대응법 : 금융 &nbsp;&nbsp; 재경일보",
-        "id": "housing-7"
+        "id": "housing-8"
       },
       {
         "title": "주택담보대출 금리가 낮아졌음에도 불구하고, 구매자들은 여전히 ​​상환 부담에 대해 우려하고 있습니다.",
@@ -480,14 +926,6 @@
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNTl2TGw5M2pKTDRVM2RPMi1UeklXZEMxa1RmRnhoTFNheFZ1b0gza091elY4aWVuT2lrZUR4WXlvSk8yQi1XQzd2UmJhdDI1dmdLTmhzMVVzYkNJcWNKbVZDNmR4eUhrTm8xSHQ0X0IwcmlKQXRoUk5zc1lSbWt3YmpRX293Z01EcndrZDJxVQ?oc=5",
         "published_at": "2026-11-09T09:48:25+00:00",
         "summary": "주택담보대출 금리가 낮아졌음에도 불구하고, 구매자들은 여전히 ​​상환 부담에 대해 우려하고 있습니다. &nbsp;&nbsp; Vietnam.vn",
-        "id": "housing-8"
-      },
-      {
-        "title": "'매물↑ 거래↓' 이상현상…매수·매도자 힘겨루기 속 꺾이지 않는 집값",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNlJ4NWpZNDdGWmc4cUFjNzdxYm9Za190eDBVVk01RXN3T0Vpbl9GWHdVMnlNWDdva0NCUk1oMkdHMTZJRUY4NXlnWTk5dXNlemRWdEFMM0c3NHBxMEtPYmVmOEtYRDFzaUxSUkRuX0otZWY4SjkyS2t0c3pqTDI1SA?oc=5",
-        "published_at": "2026-11-09T09:29:57+00:00",
-        "summary": "'매물↑ 거래↓' 이상현상…매수·매도자 힘겨루기 속 꺾이지 않는 집값 &nbsp;&nbsp; 이데일리",
         "id": "housing-9"
       }
     ],
@@ -527,7 +965,7 @@
       {
         "title": "안전자산 선호·외국인 선물 매수…10월 국고채 금리 일제히 하락",
         "publisher": "조세일보",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0yb0xra1ZxSW5VWFJtWUZaLVpWUURYV3FUNmlWcGNiX2Z1TUlBSGZ5d21oYmZiWHUzMlVaeWpYWXNSQmZEVm9BZ3ZVRGhCTTR6b3J4UW5BX1JEUjg2VWRETGlGeXJQa092b0k5Zl83c1Q1a3hz?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5VaDRkSG1BX25kczRWd1N1aVp3ZnFCNERDUGNjcFhHT2VsQU1pV1FxN21reXNnRWduUE9EbkQzeUR4UjVVelNNZzBFMlVaMFdPUkE4cnI0Z01tb2k2X0t3?oc=5",
         "published_at": "2026-11-10T01:14:25+00:00",
         "summary": "안전자산 선호·외국인 선물 매수…10월 국고채 금리 일제히 하락 &nbsp;&nbsp; 조세일보",
         "id": "bonds-4"
@@ -574,12 +1012,5 @@
       }
     ]
   },
-  "errors": [
-    "FRED SP500: ReadTimeout",
-    "FRED NASDAQCOM: ReadTimeout",
-    "FRED DGS10: ReadTimeout",
-    "FRED DGS2: ReadTimeout",
-    "FRED DEXKOUS: ReadTimeout",
-    "FRED VIXCLS: ReadTimeout"
-  ]
+  "errors": []
 }
