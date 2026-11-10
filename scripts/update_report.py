@@ -9,6 +9,7 @@ import argparse
 import csv
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -168,23 +169,99 @@ def read_fred_csv(content, series_id):
     return rows
 
 
+def read_fred_json(payload, series_id):
+    """Parse official FRED API observations, skipping '.' and invalid values."""
+    observations = payload.get("observations") if isinstance(payload, dict) else None
+    if not isinstance(observations, list):
+        raise ValueError(f"FRED {series_id}: observations missing")
+    rows = []
+    for observation in observations:
+        if not isinstance(observation, dict):
+            continue
+        date_text = observation.get("date")
+        raw = observation.get("value")
+        if not isinstance(date_text, str) or raw in (".", "", None):
+            continue
+        try:
+            datetime.strptime(date_text, "%Y-%m-%d")
+            value = float(raw)
+            if math.isfinite(value):
+                rows.append((date_text, value))
+        except (TypeError, ValueError):
+            continue
+    # FRED typically returns ascending dates; sort to protect against changes.
+    rows.sort(key=lambda item: item[0])
+    if len(rows) < 2:
+        raise ValueError(f"FRED {series_id}: fewer than two observations")
+    return rows
+
+
+def fetch_fred_api_rows(series_id, api_key):
+    """Use the official FRED JSON endpoint, not HTML/graph CSV scraping.
+
+    A project-specific free FRED_API_KEY is required. Never embed or print
+    this key in log messages or the published JSON.
+    """
+    url = "https://api.stlouisfed.org/fred/series/observations"
+    params = {
+        "series_id": series_id,
+        "api_key": api_key,
+        "file_type": "json",
+        "observation_start": (now_kst().date() - timedelta(days=120)).isoformat(),
+        "sort_order": "asc",
+    }
+    last_exc = None
+    for attempt in range(3):
+        try:
+            response = SESSION.get(url, params=params, timeout=(5, 12))
+            response.raise_for_status()
+            return read_fred_json(response.json(), series_id)
+        except (requests.Timeout, requests.ConnectionError) as exc:
+            last_exc = exc
+        except requests.HTTPError as exc:
+            last_exc = exc
+            # Retry temporary service overload / throttling, not invalid keys.
+            status = exc.response.status_code if exc.response is not None else None
+            if status not in (429, 500, 502, 503, 504):
+                raise
+        if attempt < 2:
+            time.sleep((1, 2)[attempt])
+    if last_exc is not None:
+        raise last_exc
+    raise RuntimeError("FRED request failed without a response")
+
+
 def market_from_fred(cfg, errors):
+    """Fetch a public FRED series with an official key; never fabricate prices."""
     id_ = cfg["id"]
-    # Limit the response to recent observations instead of many years of history.
-    start = (now_kst().date() - timedelta(days=120)).isoformat()
-    url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={id_}&cosd={start}"
     result = {**cfg, "value": None, "change": None, "as_of": None,
               "source": "FRED / Federal Reserve Bank of St. Louis",
               "source_url": f"https://fred.stlouisfed.org/series/{id_}", "history": []}
+    api_key = os.environ.get("FRED_API_KEY", "").strip()
+    if not api_key:
+        return result
     try:
-        rows = read_fred_csv(get(url, retries=1).content, id_)
-        a, b = rows[-2:]
-        # FRED's last observation can lag (markets close on weekends/holidays).
-        result["value"] = round(b[1], 3)
-        result["change"] = round(b[1] - a[1], 3) if cfg["change_unit"] == "pp" else (round((b[1] - a[1]) / a[1] * 100, 3) if a[1] != 0 else None)
-        result["as_of"] = b[0]
-        result["history"] = [{"date": d, "value": v} for d, v in rows[-18:]]
+        rows = fetch_fred_api_rows(id_, api_key)
+        previous, current = rows[-2:]
+        # Don't display outdated data as if it were current. In normal trading
+        # calendars, one week is ample for holidays and weekend closures.
+        age = (now_kst().date() - datetime.strptime(current[0], "%Y-%m-%d").date()).days
+        if age < 0 or age > 7:
+            raise ValueError(f"observation stale by {age} days")
+        result["value"] = round(current[1], 3)
+        if cfg["change_unit"] == "pp":
+            result["change"] = round(current[1] - previous[1], 3)
+        else:
+            result["change"] = (round((current[1] - previous[1]) / previous[1] * 100, 3)
+                                if previous[1] else None)
+        result["as_of"] = current[0]
+        result["history"] = [{"date": day, "value": value} for day, value in rows[-18:]]
+    except requests.HTTPError as exc:
+        status = exc.response.status_code if exc.response is not None else "unknown"
+        errors.append(f"FRED {id_}: HTTP {status}")
     except (ValueError, requests.RequestException) as exc:
+        # Never stringify a requests exception: it might contain the API key
+        # in the request URL. The status/exception class is enough to debug.
         errors.append(f"FRED {id_}: {type(exc).__name__}")
     return result
 
@@ -214,6 +291,8 @@ def yahoo_index(symbol, label, id_, errors):
 
 
 def fetch_markets(errors):
+    if not os.environ.get("FRED_API_KEY", "").strip():
+        errors.append("FRED_API_KEY 미등록: GitHub Actions Secrets와 daily.yml 환경변수 설정 필요")
     return [yahoo_index("^KS11", "코스피", "KOSPI", errors),
             yahoo_index("^KQ11", "코스닥", "KOSDAQ", errors)] + [market_from_fred(s, errors) for s in SERIES]
 
@@ -278,20 +357,36 @@ def validate_report(parsed, news):
     return {"headline": parsed["headline"][:220], "overview": parsed["overview"][:600], "analysis": validated}
 
 
+def _gemini_is_server_overloaded(exc):
+    """Retry only transient server failures; do not mask invalid requests or quota exhaustion."""
+    status = getattr(exc, "code", None)
+    if status is None:
+        match = re.search(r"\bHTTP\s*(500|502|503|504)\b|\b(500|502|503|504)\b", str(exc))
+        status = next((group for group in match.groups() if group), None) if match else None
+    return str(status) in {"500", "502", "503", "504"}
+
+
 def run_gemini(client, types, model, material, instruction):
-    response = client.models.generate_content(
-        model=model,
-        contents=json.dumps(material, ensure_ascii=False),
-        config=types.GenerateContentConfig(
-            system_instruction=instruction,
-            response_mime_type="application/json",
-            response_json_schema=schema(),
-            temperature=0.2,
-        ),
-    )
-    if not response.text:
-        raise ValueError("Gemini returned empty content")
-    return json.loads(response.text)
+    """Retry transient Gemini 5xx responses with increasing delay (3 total attempts)."""
+    for attempt in range(3):
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=json.dumps(material, ensure_ascii=False),
+                config=types.GenerateContentConfig(
+                    system_instruction=instruction,
+                    response_mime_type="application/json",
+                    response_json_schema=schema(),
+                    temperature=0.2,
+                ),
+            )
+            if not response.text:
+                raise ValueError("Gemini returned empty content")
+            return json.loads(response.text)
+        except Exception as exc:
+            if not _gemini_is_server_overloaded(exc) or attempt == 2:
+                raise
+            time.sleep((2, 5)[attempt])
 
 
 def analyze(news, market, errors):
@@ -358,21 +453,27 @@ def analyze(news, market, errors):
                            "headline": draft["headline"], "overview": draft["overview"],
                            "analysis": draft["analysis"], "review_status": "not_run"})
             if review_enabled:
-                try:
-                    # Pro must verify only the same supplied records, not invent new facts.
-                    reviewed = run_gemini(
-                        client, types, pro_model,
-                        {**material, "first_pass_report": draft},
-                        shared_instruction + " 두 번째 단계: 첫 단계의 오류·비약·과신·기간 착오·잘못된 인용을 검토하고 "
-                        "타당한 경우만 유지하며 수정된 전체 JSON 보고서를 출력하라. 독립적인 사실검증이라고 주장하지 마라."
-                    )
-                    reviewed = validate_report(reviewed, news)
-                    result.update({"model": f"{used_flash} → {pro_model}", "review_model": pro_model,
-                                   "review_status": "completed", "headline": reviewed["headline"],
-                                   "overview": reviewed["overview"], "analysis": reviewed["analysis"]})
-                except Exception as exc:
-                    errors.append(f"Pro 재검토 실패({pro_model}): {safe_api_error(exc, key)}")
-                    # Keep valid Flash draft, but indicate explicitly that review was skipped.
+                # If the preferred reviewer is overloaded, retry it; then try a
+                # different, more widely available model before giving up.
+                backup_review = os.environ.get("GEMINI_REVIEW_FALLBACK", "gemini-3.5-flash-lite").strip()
+                review_models = [pro_model] + ([backup_review] if backup_review and backup_review != pro_model else [])
+                for reviewer in review_models:
+                    try:
+                        reviewed = run_gemini(
+                            client, types, reviewer,
+                            {**material, "first_pass_report": draft},
+                            shared_instruction + " 두 번째 단계: 첫 단계의 오류·비약·과신·기간 착오·잘못된 인용을 검토하고 "
+                            "타당한 경우만 유지하며 수정된 전체 JSON 보고서를 출력하라. 독립적인 사실검증이라고 주장하지 마라."
+                        )
+                        reviewed = validate_report(reviewed, news)
+                        result.update({"model": f"{used_flash} → {reviewer}", "review_model": reviewer,
+                                       "review_status": "completed", "headline": reviewed["headline"],
+                                       "overview": reviewed["overview"], "analysis": reviewed["analysis"]})
+                        break
+                    except Exception as exc:
+                        errors.append(f"Pro 재검토 실패({reviewer}): {safe_api_error(exc, key)}")
+                if result["review_status"] != "completed":
+                    # Keep the successful Flash draft and label failed review.
                     result["review_status"] = "failed"
             return result
         finally:
