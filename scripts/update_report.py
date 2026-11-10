@@ -71,6 +71,106 @@ ECONOMIC_KR = [
 ]
 
 
+# A limited watch-universe for *news coverage*, NOT the TradingView market-mover
+# rankings. The official TradingView widget cannot be read via a public JSON API.
+# These are company names/tickers only; no unlicensed stock prices are re-published.
+SPOTLIGHT_UNIVERSE = {
+    "KR": [
+        {"symbol": "005930", "name": "삼성전자", "query": '"삼성전자" 주식', "aliases": ["삼성전자"]},
+        {"symbol": "000660", "name": "SK하이닉스", "query": '"SK하이닉스" 주식', "aliases": ["SK하이닉스", "에스케이하이닉스"]},
+        {"symbol": "005380", "name": "현대차", "query": '"현대차" 주식', "aliases": ["현대차", "현대자동차"]},
+        {"symbol": "373220", "name": "LG에너지솔루션", "query": '"LG에너지솔루션" 주식', "aliases": ["LG에너지솔루션"]},
+        {"symbol": "035420", "name": "NAVER", "query": '"네이버" 주가', "aliases": ["네이버", "NAVER"]},
+        {"symbol": "035720", "name": "카카오", "query": '"카카오" 주가', "aliases": ["카카오"]},
+        {"symbol": "012450", "name": "한화에어로스페이스", "query": '"한화에어로스페이스" 주식', "aliases": ["한화에어로스페이스"]},
+        {"symbol": "034020", "name": "두산에너빌리티", "query": '"두산에너빌리티" 주식', "aliases": ["두산에너빌리티"]},
+        {"symbol": "068270", "name": "셀트리온", "query": '"셀트리온" 주식', "aliases": ["셀트리온"]},
+    ],
+    "US": [
+        {"symbol": "NVDA", "name": "엔비디아", "query": '"엔비디아" 주가', "aliases": ["엔비디아", "NVIDIA"]},
+        {"symbol": "TSLA", "name": "테슬라", "query": '"테슬라" 주가', "aliases": ["테슬라", "TESLA"]},
+        {"symbol": "AAPL", "name": "애플", "query": '"애플" 주가', "aliases": ["애플", "APPLE"]},
+        {"symbol": "MSFT", "name": "마이크로소프트", "query": '"마이크로소프트" 주가', "aliases": ["마이크로소프트", "MICROSOFT"]},
+        {"symbol": "AMD", "name": "AMD", "query": '"AMD" 주가', "aliases": ["AMD", "에이엠디"]},
+        {"symbol": "AMZN", "name": "아마존", "query": '"아마존" 주가', "aliases": ["아마존", "AMAZON"]},
+        {"symbol": "GOOGL", "name": "알파벳(구글)", "query": '"알파벳" 구글 주가', "aliases": ["알파벳", "구글", "ALPHABET", "GOOGLE"]},
+        {"symbol": "PLTR", "name": "팔란티어", "query": '"팔란티어" 주가', "aliases": ["팔란티어", "PALANTIR"]},
+        {"symbol": "AVGO", "name": "브로드컴", "query": '"브로드컴" 주가', "aliases": ["브로드컴", "BROADCOM"]},
+    ],
+}
+
+
+def _headline_mentions_company(title, aliases):
+    """Match a distinct company mention; avoid e.g. AMD inside another word."""
+    for alias in aliases:
+        pattern = r"(?<![\w])" + re.escape(alias) + r"(?![\w])" if alias.isascii() else re.escape(alias)
+        if re.search(pattern, title, re.IGNORECASE):
+            return True
+    return False
+
+
+def _spotlight_articles(rss_bytes, region, cfg, cutoff):
+    items = parse_rss(rss_bytes, 'stock_news', cutoff=cutoff)
+    cleaned = []
+    seen = set()
+    for item in items:
+        if not _headline_mentions_company(item['title'], cfg['aliases']):
+            continue
+        canonical = re.sub(r"\W+", "", item['title']).lower()
+        if canonical in seen:
+            continue
+        seen.add(canonical)
+        cleaned.append(item)
+    cleaned.sort(key=lambda a: a['published_at'], reverse=True)
+    # Up to eight distinct headlines per company. Do not copy full article text.
+    return [{k: a[k] for k in ('title', 'publisher', 'published_at', 'url')}
+            | {'id': f"sn-{region.lower()}-{cfg['symbol']}-{i}"}
+            for i, a in enumerate(cleaned[:8])]
+
+
+def fetch_stock_news_spotlight(errors, at=None):
+    """Rank *coverage among nine predefined companies*, never call it turnover rank.
+
+    Require at least two distinct headlines and two named publishers. Source
+    failures are nonfatal and never fall back to made-up companies or prices.
+    """
+    at = at or now_kst()
+    cutoff = at.astimezone(timezone.utc) - timedelta(hours=72)
+    output = {}
+    for region, configs in SPOTLIGHT_UNIVERSE.items():
+        ranked = []
+        failed = 0
+        for cfg in configs:
+            q = cfg['query'] + ' when:3d'
+            url = ('https://news.google.com/rss/search?q=' + quote(q) +
+                   '&hl=ko&gl=KR&ceid=KR:ko')
+            try:
+                # Limit the optional stock feed to one attempt so a single outage
+                # doesn't delay the entire daily finance report for many minutes.
+                response = SESSION.get(url, timeout=(5, 9))
+                response.raise_for_status()
+                articles = _spotlight_articles(response.content, region, cfg, cutoff)
+            except (requests.RequestException, ET.ParseError, ValueError, KeyError):
+                failed += 1
+                continue
+            publishers = {a['publisher'].strip().lower() for a in articles if a.get('publisher')}
+            if len(articles) < 2 or len(publishers) < 2:
+                continue
+            ranked.append({'symbol': cfg['symbol'], 'name': cfg['name'],
+                           'article_count': len(articles), 'publisher_count': len(publishers),
+                           'articles': articles[:4]})
+        ranked.sort(key=lambda v: (-v['article_count'], -v['publisher_count'], v['symbol']))
+        output[region] = {
+            'items': ranked[:5], 'as_of': at.isoformat(),
+            'status': 'ok' if ranked else ('feed_error' if failed == len(configs) else 'insufficient_news'),
+            'method': '최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교',
+            'candidate_count': len(configs), 'failed_feeds': failed,
+        }
+        if failed == len(configs):
+            errors.append(f'종목 뉴스 피드({region}) 일괄 수집 실패: 기존 시장 브리핑은 유지됩니다.')
+    return output
+
+
 def now_kst():
     return datetime.now(timezone.utc).astimezone(KST)
 
@@ -619,15 +719,25 @@ def schema():
         },
         "required": ["direction", "confidence", "horizon", "summary", "bull_cases", "bear_cases", "watch", "citation_ids"]
     }
+    stock_item = {"type": "object", "additionalProperties": False,
+                  "properties": {"symbol": {"type": "string"},
+                                 "signal": {"type": "string", "enum": ["긍정 이슈", "부정 이슈", "혼재", "판단 유보"]},
+                                 "summary": {"type": "string"},
+                                 "citation_ids": {"type": "array", "items": {"type": "string"}}},
+                  "required": ["symbol", "signal", "summary", "citation_ids"]}
     return {"type": "object", "additionalProperties": False,
             "properties": {"headline": {"type": "string"}, "overview": {"type": "string"},
                            "analysis": {"type": "object", "additionalProperties": False,
                                         "properties": {x: analysis_item for x in TOPICS},
-                                        "required": list(TOPICS)}},
+                                        "required": list(TOPICS)},
+                           "stock_insights": {"type": "object", "additionalProperties": False,
+                                              "properties": {"KR": {"type": "array", "items": stock_item},
+                                                             "US": {"type": "array", "items": stock_item}},
+                                              "required": ["KR", "US"]}},
             "required": ["headline", "overview", "analysis"]}
 
 
-def validate_report(parsed, news):
+def validate_report(parsed, news, stock_spotlight=None):
     """Do not publish invalid or cross-asset citations from either model."""
     if not isinstance(parsed, dict) or not isinstance(parsed.get("headline"), str) \
             or not isinstance(parsed.get("overview"), str) or not isinstance(parsed.get("analysis"), dict):
@@ -650,7 +760,36 @@ def validate_report(parsed, news):
         if item["confidence"] == "높음":
             item["confidence"] = "보통"
         validated[cat] = item
-    return {"headline": parsed["headline"][:220], "overview": parsed["overview"][:600], "analysis": validated}
+    # Validate each company against its own selected source IDs. Cross-company
+    # evidence or unknown symbols are never accepted as AI commentary.
+    insights = {"KR": [], "US": []}
+    input_insights = parsed.get('stock_insights') if isinstance(parsed.get('stock_insights'), dict) else {}
+    for region in ('KR', 'US'):
+        items = (stock_spotlight or {}).get(region, {}).get('items', [])
+        by_symbol = {x['symbol']: x for x in items}
+        region_insights = input_insights.get(region, [])
+        if not isinstance(region_insights, list):
+            continue
+        used = set()
+        for obj in region_insights:
+            if not isinstance(obj, dict) or obj.get('symbol') not in by_symbol:
+                continue
+            symbol = obj['symbol']
+            if symbol in used or obj.get('signal') not in ('긍정 이슈', '부정 이슈', '혼재', '판단 유보'):
+                continue
+            if not isinstance(obj.get('summary'), str) or not isinstance(obj.get('citation_ids'), list):
+                continue
+            candidate = by_symbol[symbol]
+            allowed = {a['id'] for a in candidate['articles']}
+            citations = [x for x in obj['citation_ids'] if isinstance(x, str) and x in allowed][:2]
+            if not citations or not obj['summary'].strip():
+                continue
+            used.add(symbol)
+            insights[region].append({'symbol': symbol, 'signal': obj['signal'],
+                                     'summary': obj['summary'].strip()[:240],
+                                     'citation_ids': citations})
+    return {"headline": parsed["headline"][:220], "overview": parsed["overview"][:600],
+            "analysis": validated, "stock_insights": insights}
 
 
 def _gemini_is_server_overloaded(exc):
@@ -691,14 +830,14 @@ def _gemini_is_quota_exceeded(exc):
     return str(status) == '429' or bool(re.search(r'\b(?:HTTP\s*)?429\b', str(exc)))
 
 
-def analyze(news, market, errors, economic_indicators=None):
+def analyze(news, market, errors, economic_indicators=None, stock_spotlight=None):
     """Flash draft -> Pro review. If Pro fails, label Flash-only (never pretend review happened)."""
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     result = {"status": "not_configured", "model": None, "draft_model": None,
               "review_model": None, "review_status": "not_run", "review_note": None,
               "headline": "오늘의 금융시장 주요 뉴스와 시장 지표",
               "overview": "뉴스 및 시장 지표가 수집되었습니다. AI 전망은 API 키 연결 후 표시됩니다.",
-              "analysis": empty_analysis()}
+              "analysis": empty_analysis(), "stock_insights": {"KR": [], "US": []}}
     if not key:
         return result
     article_count = sum(len(v) for v in news.values())
@@ -734,6 +873,13 @@ def analyze(news, market, errors, economic_indicators=None):
         "국내주식에는 KR 공식 경제지표가 있을 때만 한국 기준금리·물가를 언급하라. "
         "미국주식에는 US 공식 물가·고용·정책금리를 근거로 사용할 수 있지만 시장방향에 대한 인과관계를 단정하지 마라. "
         "기사 RSS에 없는 외국인·기관 수급액 또는 기업 실적 수치를 창작하지 마라. "
+        "recent_company_headlines_for_stock_insights에는 기존 TradingView 순위와 무관한 제한된 후보군 내 기사 언급 빈도 상위 종목이 있다. "
+        "후보가 있다면 stock_insights.KR 및 stock_insights.US 배열을 반드시 채워라. "
+        "기사 근거가 없는 지역은 빈 배열로 하고 제공된 회사 symbol만 넣으며, "
+        "회사별 근거 기사 id를 1~2개 citation_ids로 적어라. 기사 문구만으로 주가 등락 원인을 확정하거나 "
+        "해당 종목의 실시간 거래량·등락률·TradingView 상위권이라고 주장하지 마라. "
+        "판단 근거가 없는 회사는 생략하라. signal은 뉴스상 이슈의 긍정/부정/혼재를 뜻하며 투자 판단이 아니다. "
+        "RSS 제목·요약은 독립된 사실검증이 아니다. 요약은 최대 2문장으로 간단히 써라. "
         "응답은 정해진 JSON 스키마를 따르라."
     )
     # Pass only recently observed, properly labelled official macro series. Stale,
@@ -745,9 +891,18 @@ def analyze(news, market, errors, economic_indicators=None):
                  for item in econ.get(region, {}).get("items", []) if item.get("status") == "ok"]
         for region in ("KR", "US")
     }
+    stock_context = {
+        region: [{"symbol": item['symbol'], "name": item['name'],
+                  "news_coverage_count": item['article_count'],
+                  "articles": [{k: a[k] for k in ('id', 'title', 'publisher', 'published_at')}
+                               for a in item['articles'][:3]]}
+                 for item in (stock_spotlight or {}).get(region, {}).get('items', [])]
+        for region in ('KR', 'US')
+    }
     material = {"analysis_time_kst": now_kst().isoformat(), "news_rss_excerpt": news_context,
                 "public_market_observations": market_context,
-                "official_macroeconomic_observations": economic_context}
+                "official_macroeconomic_observations": economic_context,
+                "recent_company_headlines_for_stock_insights": stock_context}
     try:
         from google import genai
         from google.genai import types
@@ -760,7 +915,7 @@ def analyze(news, market, errors, economic_indicators=None):
                 try:
                     proposed = run_gemini(client, types, model, material,
                                           shared_instruction + " 첫 단계: 각 자산군의 상승·하락 근거를 균형 있게 분석하라.")
-                    draft = validate_report(proposed, news)
+                    draft = validate_report(proposed, news, stock_spotlight)
                     used_flash = model
                     break
                 except Exception as exc:
@@ -773,7 +928,8 @@ def analyze(news, market, errors, economic_indicators=None):
                 raise ValueError("All Flash models failed")
             result.update({"status": "ok", "model": used_flash, "draft_model": used_flash,
                            "headline": draft["headline"], "overview": draft["overview"],
-                           "analysis": draft["analysis"], "review_status": "not_run"})
+                           "analysis": draft["analysis"], "stock_insights": draft["stock_insights"],
+                           "review_status": "not_run"})
             if review_enabled and draft_quota_limited:
                 # Keep published, valid first-pass analysis but do not make extra
                 # API calls when the primary model already reported quota limits.
@@ -792,10 +948,12 @@ def analyze(news, market, errors, economic_indicators=None):
                             shared_instruction + " 두 번째 단계: 첫 단계의 오류·비약·과신·기간 착오·잘못된 인용을 검토하고 "
                             "타당한 경우만 유지하며 수정된 전체 JSON 보고서를 출력하라. 독립적인 사실검증이라고 주장하지 마라."
                         )
-                        reviewed = validate_report(reviewed, news)
+                        reviewed = validate_report(reviewed, news, stock_spotlight)
                         result.update({"model": f"{used_flash} → {reviewer}", "review_model": reviewer,
                                        "review_status": "completed", "headline": reviewed["headline"],
-                                       "overview": reviewed["overview"], "analysis": reviewed["analysis"]})
+                                       "overview": reviewed["overview"], "analysis": reviewed["analysis"],
+                                       "stock_insights": {r: (reviewed["stock_insights"][r] or draft["stock_insights"][r])
+                                                          for r in ('KR', 'US')}})
                         break
                     except Exception as exc:
                         errors.append(f"Pro 재검토 실패({reviewer}): {safe_api_error(exc, key)}")
@@ -823,11 +981,13 @@ def produce():
         raise RuntimeError("모든 뉴스 RSS 수집에 실패했습니다. 기존 배포를 보존합니다.")
     markets = fetch_markets(errors)
     economic_indicators = fetch_economic_indicators(errors)
-    ai = analyze(news, markets, errors, economic_indicators)
+    stock_news_spotlight = fetch_stock_news_spotlight(errors)
+    ai = analyze(news, markets, errors, economic_indicators, stock_news_spotlight)
     return {"mode": "live", "generated_at": now_kst().isoformat(),
             "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
             "ai": ai, "market": markets, "market_quality": summarize_market_quality(markets),
             "economic_indicators": economic_indicators, "news": news,
+            "stock_news_spotlight": stock_news_spotlight,
             "stock_spotlight": {"KR": {"items": [], "as_of": None, "status": "source_pending"},
                                 "US": {"items": [], "as_of": None, "status": "source_pending"}},
             "errors": errors}
