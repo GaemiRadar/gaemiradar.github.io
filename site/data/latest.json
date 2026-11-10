@@ -1,36 +1,36 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T20:52:49.144789+09:00",
+  "generated_at": "2026-11-10T20:53:54.677801+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.6-flash → gemini-3.5-flash-lite",
-    "draft_model": "gemini-3.6-flash",
-    "review_model": "gemini-3.5-flash-lite",
-    "review_status": "completed",
-    "headline": "국내외 증시 외국인 매수 및 저가 매수로 반등, 채권 시장은 금리 향방 혼재",
-    "overview": "국내 증시는 외국인과 기관의 순매수에 힘입어 4%대 급등하며 반등했고, 미국 증시 또한 AI 저가 매수세와 유가 급락 영향으로 나스닥을 중심으로 반등했습니다. 채권 시장은 외국인의 국내 채권 순매수 및 미국 고용 호조에 따른 금리 상승 우려가 엇갈리며 금리 및 채권 가격 향방에 대한 보도가 상충하고 있습니다.",
+    "model": "gemini-3.5-flash-lite",
+    "draft_model": "gemini-3.5-flash-lite",
+    "review_model": null,
+    "review_status": "failed",
+    "headline": "국내외 증시 반등 흐름 속 채권시장 및 금리 동향 브리핑",
+    "overview": "국내 증시는 외국인과 기관의 순매수에 힘입어 4%대 급등세를 보였으며, 미국 증시 또한 나스닥을 중심으로 저가 매수세가 유입되며 반등했습니다. 채권시장은 국내 국고채 금리가 하락세를 보인 반면, 미국은 물가 불안과 고용 호조 등으로 금리와 가격 변동성이 엇갈리는 흐름을 나타냈습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "상승 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "코스피와 코스닥 지수는 외국인과 기관의 대규모 순매수에 힘입어 4% 이상 급등하며 반등했습니다.",
+        "summary": "외국인과 기관의 대규모 순매수가 유입되며 코스피와 코스닥이 나흘 만에 급반등하여 5200선을 회복했습니다.",
         "bull_cases": [
-          "외국인 및 기관 동반 순매수 유입 (8,500억 원 순매수)",
-          "AI 관련 공포 완화 및 반도체 실적 개선 기대감"
+          "외국인과 기관의 동반 순매수세 유입",
+          "AI 공포 완화 및 반도체 사이클 기대감 재부각"
         ],
         "bear_cases": [
-          "AI·반도체 사이클 및 금리 관련 불확실성 지속 가능성",
-          "정치적·지정학적 변수로 인한 증시 출렁임"
+          "블루 웨이브 등 정치적·정책적 불확실성 상존",
+          "내년 반도체 및 금리 관련 불확실성 지속 가능성"
         ],
         "watch": [
-          "외국인 및 기관 수급 동향",
-          "반도체 실적 발표 및 AI 사이클 향방"
+          "외국인 및 기관의 순매수 지속 여부",
+          "국내 주요 반도체 기업 실적 추이"
         ],
         "citation_ids": [
+          "stocks_kr-1",
           "stocks_kr-2",
-          "stocks_kr-5",
           "stocks_kr-7"
         ]
       },
@@ -38,46 +38,46 @@
         "direction": "상승 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "미국 증시는 유가 급락과 AI 기술주 중심의 저가 매수세 유입에 힘입어 나스닥 지수가 2.74% 급반등했습니다.",
+        "summary": "엔비디아 관련 개별 악재에도 불구하고 국제유가 하락 및 AI 관련 저가 매수세가 유입되면서 나스닥 등 주요 지수가 상승했습니다.",
         "bull_cases": [
-          "국제유가 급락 및 AI 저가 매수세 유입",
-          "S&P 500 상승 및 연말 랠리 기대감"
+          "AI 저가 매수세 유입 및 나스닥 등 주요 지수 급반등",
+          "월가의 연말 랠리 기대감 제기"
         ],
         "bear_cases": [
-          "엔비디아 개별 악재에 따른 4%대 하락",
-          "주간 단위 기술주 급락 등 시장 변동성 잔존"
+          "개별 종목(엔비디아 등) 관련 악재 및 지정학적 리스크",
+          "고용 호조에 따른 통화정책 경계감"
         ],
         "watch": [
-          "연말 랠리 재개 여부",
-          "주요 기술주 악재 여파 및 유가 추이"
+          "주요 빅테크 및 반도체 섹터 주가 흐름",
+          "미국 연방준비제도 금리 인상 관련 지표"
         ],
         "citation_ids": [
-          "stocks_us-3",
+          "stocks_us-1",
           "stocks_us-5",
           "stocks_us-7"
         ]
       },
       "bonds": {
-        "direction": "판단 유보",
+        "direction": "중립",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "채권 금리와 고정금리 채권 가격은 반대로 움직입니다. 국고채 금리 일제히 하락 소식과 미국 고용 호조에 따른 금리 상승 보도가 상충되어 판단을 유보합니다.",
+        "summary": "국내 채권시장은 국고채 금리가 전 구간 하락(채권 가격 상승)하며 강세를 보인 반면, 미국은 고용 호조와 물가 불안으로 금리 인상 압력이 대립하고 있습니다. (참고: 채권 금리와 고정금리 채권 가격은 반대로 움직입니다.)",
         "bull_cases": [
-          "외국인의 한국 채권 8.5조 원 순매수 전환 및 채권 강세 기대",
-          "국고채 금리 하락에 따른 고정금리 채권 가격 상승 요인"
+          "외국인의 국내 채권 순매수 전환 및 국고채 금리 하락(채권 가격 상승)",
+          "중간선거 이후 채권시장 강세 기대"
         ],
         "bear_cases": [
-          "미국 고용 호조로 인한 12월 금리 인상 가능성 및 금리 상승 압력",
-          "미국 30년물 국채 금리 상승 부담"
+          "미국 고용 선방 및 물가 불안에 따른 금리 인상 탄력(금리 상승 시 채권 가격 하락)",
+          "국내외 채권 발행 물량 증가 부담"
         ],
         "watch": [
-          "미국 고용 지표 및 통화정책 향방",
-          "외국인의 한국 채권 순매수 기조 지속 여부"
+          "미국 연준의 금리 결정 및 물가·고용 지표",
+          "외국인의 국내외 채권 수급 동향"
         ],
         "citation_ids": [
+          "bonds-0",
           "bonds-1",
-          "bonds-4",
-          "bonds-7"
+          "bonds-4"
         ]
       }
     }
@@ -1025,6 +1025,8 @@
     }
   },
   "errors": [
-    "Pro 재검토 실패(gemini-3.5-flash): ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
+    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo",
+    "Pro 재검토 실패(gemini-3.5-flash): ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo",
+    "Pro 재검토 실패(gemini-3.5-flash-lite): ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
   ]
 }
