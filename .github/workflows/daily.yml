@@ -40,6 +40,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Fetch news and build report
         env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_FLASH_MODEL: gemini-3.6-flash
           GEMINI_FLASH_FALLBACK: gemini-2.5-flash
