@@ -61,6 +61,14 @@
     .metric-freshness{margin-top:9px;color:#8693a6;font-size:10px;line-height:1.5;word-break:keep-all}
     .metric-freshness.old{color:#a36c3b}
     .metric-freshness.unknown{color:#9ca7b7}
+    /* Provider-hosted recent S&P 500 quote (only visible when FRED observation is delayed). */
+    .sp500-quote[hidden]{display:none!important}
+    .sp500-quote{margin-top:13px;padding:19px 21px;background:#fff;border:1px solid var(--border);border-radius:17px;box-shadow:0 5px 19px #354b6c05}
+    .sp500-quote-heading{font-size:13px;font-weight:830;color:#30425c}
+    .sp500-quote-desc{font-size:11px;color:#8190a3;line-height:1.7;margin:7px 0 12px}
+    .sp500-quote-host{min-height:110px;max-width:100%;overflow:hidden}
+    .sp500-quote-source{font-size:11px;color:#8391a4;margin-top:8px;line-height:1.6}
+    .sp500-quote-source a{color:#4f63e9;text-decoration:underline}
     .delta{font-size:12px;font-weight:850}.delta.up{color:var(--up)}.delta.down{color:var(--down)}.delta.neutral{color:#8692a4}
     .view-tabs{display:flex;gap:7px;background:#ebeff5;border-radius:12px;padding:4px;width:max-content;max-width:100%;flex-wrap:wrap}
     .tab{border:0;background:transparent;color:#8694a7;padding:8px 18px;border-radius:9px;font-weight:750;font-size:12px}
@@ -152,7 +160,14 @@
     <div class="page-heading"><div><div class="eyebrow">● DAILY MARKET INTELLIGENCE</div><h1>오늘의 금융시장 인사이트</h1><div class="lead">국내·미국 주식과 채권·금리 중심 · Gemini AI 1차 분석 및 2차 검토</div></div><span id="mode-status" class="status-badge demo">예시 화면</span></div>
     <section class="hero" aria-label="시장 전체 요약"><div class="hero-content"><div class="hero-kicker"><span style="font-size:15px">✦</span> AI MARKET BRIEFING <span style="color:#97a9c4;font-size:10px;letter-spacing:0" id="hero-asof"></span></div><h2 id="hero-title">오늘의 시장을 움직이는 핵심 변수를 한눈에</h2><p id="hero-description">최신 뉴스 수집과 AI 분석을 연결하면 매일 새로운 상승·하락 시나리오가 여기에 표시됩니다.</p></div><div class="hero-side"><span class="small">리포트 작성 시점</span><strong id="hero-time">자동 갱신 전</strong></div></section>
     <div class="alert" id="state-alert" role="status">현재 예시 화면입니다. 자동 갱신을 설정한 후 실제 기사와 AI 분석이 표시됩니다.</div>
-    <section class="section" id="markets"><div class="section-header"><div><h2 class="section-title">핵심 시장 지표</h2><div class="section-sub">수치는 각 데이터 제공처의 최근 관측값이며 실시간 체결가는 아닙니다.</div></div><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="small-link">데이터 제공처 보기 ↗</a></div><div class="metrics" id="metrics"></div></section>
+    <section class="section" id="markets"><div class="section-header"><div><h2 class="section-title">핵심 시장 지표</h2><div class="section-sub">수치는 각 데이터 제공처의 최근 관측값이며 실시간 체결가는 아닙니다.</div></div><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="small-link">데이터 제공처 보기 ↗</a></div><div class="metrics" id="metrics"></div>
+      <div id="sp500-latest" class="sp500-quote" hidden aria-label="S&P 500 추가 시세 확인">
+        <div class="sp500-quote-heading">S&P 500 · 최근 시세 별도 확인</div>
+        <div class="sp500-quote-desc" id="sp500-latest-explainer">FRED 종가 자료가 지연됐습니다. 아래 TradingView 제공 시세를 참고하세요. 두 데이터의 갱신 주기는 다를 수 있습니다.</div>
+        <div class="sp500-quote-host" id="sp500-latest-widget"></div>
+        <div class="sp500-quote-source"><a href="https://www.tradingview.com/symbols/SPX/" target="_blank" rel="noopener noreferrer nofollow">TradingView에서 S&P 500 확인 ↗</a> · 별도 시세는 제공업체 조건에 따라 지연될 수 있습니다. AI 분석은 기존 FRED 관측값을 사용합니다.</div>
+      </div>
+    </section>
     <section class="section stock-spotlight" id="stock-spotlight" aria-label="국내·미국 주목 종목">
       <div class="section-header"><div><h2 class="section-title">오늘의 주목 종목 TOP 5</h2><div class="section-sub">거래 활발 · 상승률 상위 · 하락률 상위 종목을 각각 5개씩 자동 표시합니다.</div></div></div>
       <div class="panel stock-panel">
@@ -219,7 +234,37 @@ function metricFreshness(m){
   const lagLabel=lag===null?'발표 시차 미확인':lag===0?'당일 자료':lag===1?'전 영업일 자료':`기준일 ${lag}평일 경과`;
   return {text:`${type} · ${m.data_status==='delayed'?'갱신 지연 가능 · ':''}${lagLabel}`,cls:m.data_status==='delayed'||(lag!==null&&lag>=3)?'old':''};
 }
-function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=Array.isArray(state.data.market)?state.data.market:[];for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);const freshness=metricFreshness(m);item.append(create('div',`metric-freshness ${freshness.cls}`,freshness.text));if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'))}
+// Display a provider-hosted recent quote when FRED SP500 is behind.
+// This does NOT scrape third-party quotes into public latest.json or pass the
+// TradingView quote to Gemini. The older FRED number remains visibly dated.
+function renderSP500Latest(){
+  const container=$('sp500-latest');
+  const m=(Array.isArray(state.data.market)?state.data.market:[]).find(x=>x.id==='SP500');
+  const delayed=Boolean(m&&m.data_status==='delayed');
+  container.hidden=!delayed;
+  if(!delayed)return;
+  $('sp500-latest-explainer').textContent=`FRED S&P 500 마지막 관측일: ${m.as_of||'미제공'}. 아래에는 별도 제공업체의 최근 시세를 표시합니다. FRED 자료와 관측시점이 다를 수 있습니다.`;
+  const host=$('sp500-latest-widget');
+  if(host.dataset.mounted==='true')return;
+  host.dataset.mounted='true';
+  const outer=create('div','tradingview-widget-container');
+  const inner=create('div','tradingview-widget-container__widget');
+  outer.append(inner);
+  const script=document.createElement('script');
+  script.type='text/javascript';
+  script.async=true;
+  script.src='https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js';
+  script.textContent=JSON.stringify({
+    symbol:'SP:SPX',colorTheme:'light',isTransparent:true,
+    locale:'kr',width:'100%'
+  });
+  script.onerror=()=>{
+    inner.replaceChildren(create('div','stock-empty','TradingView 시세를 불러오지 못했습니다. 아래 출처 링크에서 확인하세요.'));
+  };
+  outer.append(script);
+  host.append(outer);
+}
+function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=Array.isArray(state.data.market)?state.data.market:[];for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);const freshness=metricFreshness(m);item.append(create('div',`metric-freshness ${freshness.cls}`,freshness.text));if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'));renderSP500Latest()}
 function makeList(items){const ul=create('ul','prop-list');(Array.isArray(items)?items:[]).slice(0,3).forEach(s=>ul.append(create('li','',s)));if(!ul.children.length)ul.append(create('li','','확인 가능한 근거가 없습니다.'));return ul}
 function refMap(){const m={};for(const [cat,arr] of Object.entries(state.data.news||{})){if(!Array.isArray(arr))continue;for(const a of arr){if(a.id)m[a.id]=a}}return m}
 function renderOutlooks(){const parent=$('outlooks');parent.replaceChildren();const analyses=state.data.ai?.analysis||{};const refs=refMap();const cats=state.tab==='all'?Object.keys(CATS):state.tab==='stocks'?[state.stockMarket==='KR'?'stocks_kr':'stocks_us']:[state.tab];for(const cat of cats){const data=analyses[cat]||{};const card=create('article','outlook');const top=create('div','outlook-top');top.append(create('div',`round-icon ${cat}`,CATS[cat].icon));const heading=create('div');heading.append(create('div','outlook-name',CATS[cat].name),create('div','outlook-kind',CATS[cat].subtitle));top.append(heading);top.append(create('span',`direction ${directionClass(data.direction)}`,data.direction||'판단 유보'));card.append(top,create('div','outlook-summary',data.summary||'검증된 자료를 수집하는 중입니다.'));const meta=create('div','outlook-meta');meta.append(create('span','',`분석 기간: ${data.horizon||'―'}`));const c=create('span','','·  신뢰도: ');c.append(create('b','',data.confidence||'―'));meta.append(c);card.append(meta);const proscons=create('div','proscons');for(const [kind,title,key] of [['pro','상승 요인','bull_cases'],['con','하락 요인','bear_cases']]){const section=create('div');section.append(create('div',`prop-title ${kind}`,(kind==='pro'?'↑ ':'↓ ')+title),makeList(data[key]));proscons.append(section)}card.append(proscons);const w=create('div','watch');w.append(create('b','','관찰 지표  '));w.append(document.createTextNode((data.watch||[]).join(' · ')||'데이터 연결 후 표시'));card.append(w);const links=create('div','refs');(data.citation_ids||[]).slice(0,3).forEach(id=>{const a=refs[id];if(!a||!externalURL(a.url))return;const link=create('a','',a.publisher||'근거 기사');link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.title=a.title||'';links.append(link)});if(links.childElementCount)card.append(links);parent.append(card)}}
