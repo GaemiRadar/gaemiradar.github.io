@@ -1,78 +1,79 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T21:27:46.251559+09:00",
+  "generated_at": "2026-11-10T21:28:35.679561+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.5-flash-lite → gemini-3.5-flash-lite",
+    "model": "gemini-3.5-flash-lite",
     "draft_model": "gemini-3.5-flash-lite",
-    "review_model": "gemini-3.5-flash-lite",
-    "review_status": "completed",
-    "headline": "국내외 주식시장 반등 속 채권 금리 혼조 및 경제 불확실성 상존",
-    "overview": "국내 증시는 외국인과 기관의 매수세 유입으로 코스피와 코스닥이 4%대 급등세를 보였고, 미국 증시 역시 나스닥 등을 중심으로 저가 매수세가 유입되며 반등했습니다. 채권시장은 국고채 금리 하락 소식과 미국 고용 및 물가 불안에 따른 금리 인상 가능성이 혼재되어 나타나고 있습니다. 채권 금리가 상승하면 고정금리 채권 가격은 하락하고, 금리가 하락하면 고정금리 채권 가격은 상승합니다.",
+    "review_model": null,
+    "review_status": "skipped_quota",
+    "review_note": "1차 모델의 API 사용량 제한으로 2차 검토를 이번 실행에서 생략했습니다.",
+    "headline": "국내외 증시 반등세와 채권시장 동향 브리핑",
+    "overview": "국내 증시는 외국인과 기관의 매수세에 힘입어 4%대 급등세를 보였으며, 미국 증시 또한 나스닥을 중심으로 저가 매수세가 유입되며 반등했습니다. 채권시장은 국고채 금리의 변동성과 미국 금리 인상 기대감이 혼재된 양상을 보이고 있습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "상승 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "외국인과 기관의 매수세가 유입되며 코스피가 5200선을 회복하고 4%대 급등세를 보였습니다.",
+        "summary": "외국인과 기관의 매수세가 유입되면서 코스피와 코스닥 지수가 4% 넘게 급등하며 나흘 만에 반등했습니다.",
         "bull_cases": [
-          "외국인과 기관의 순매수 유입으로 인한 지수 반등",
-          "AI 공포 완화 및 반도체 사이클 기대감"
+          "외국인과 기관의 대규모 순매수 유입",
+          "AI 공포 완화 및 지수 5200선 회복"
         ],
         "bear_cases": [
-          "내년 상반기까지 증시 불확실성 지속 전망",
-          "반도체 실적 및 대외 변수에 따른 변동성 잠재"
+          "내년 상반기까지 이어질 수 있는 증시 불확실성",
+          "반도체 사이클 및 대외 변수에 대한 경계감"
         ],
         "watch": [
-          "외국인 수급 추이",
-          "반도체 실적 및 사이클 동향"
+          "외국인 투자자의 수급 지속성",
+          "반도체 실적 추이"
         ],
         "citation_ids": [
           "stocks_kr-2",
           "stocks_kr-3",
-          "stocks_kr-5"
+          "stocks_kr-6"
         ]
       },
       "stocks_us": {
         "direction": "상승 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "엔비디아 관련 일부 악재에도 불구하고 국제유가 급락 및 AI 관련 저가 매수세가 유입되며 나스닥 등 주요 지수가 반등했습니다.",
+        "summary": "일부 개별 종목의 악재에도 불구하고 국제유가 하락과 AI 관련 저가 매수세가 유입되며 나스닥 등 주요 지수가 상승했습니다.",
         "bull_cases": [
-          "AI 관련 저가 매수세 유입",
-          "월가의 연말 랠리 기대감"
+          "AI 관련주 저가 매수세 유입",
+          "월가의 연말 랠리 기대감 부각"
         ],
         "bear_cases": [
-          "개별 종목 악재 지속",
-          "지수 변동성 확대 가능성"
+          "일부 대형 기술주의 개별 악재 및 하락",
+          "지수 변동성 지속"
         ],
         "watch": [
           "나스닥 지수 흐름",
-          "주요 기술주 실적 및 뉴스"
+          "대형 기술주 실적 및 이슈"
         ],
         "citation_ids": [
-          "stocks_us-1",
           "stocks_us-5",
-          "stocks_us-6"
+          "stocks_us-6",
+          "stocks_us-7"
         ]
       },
       "bonds": {
         "direction": "중립",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "국내 채권시장은 외국인 순매수와 국고채 금리 하락 압력이 관찰되는 반면, 미국은 고용 호조 및 물가 불안으로 금리 인상 우려가 혼재되어 있습니다. 금리와 고정금리 채권 가격은 통상 반대로 움직입니다.",
+        "summary": "채권시장은 금리와 고정금리 채권가격이 통상 반대로 움직이는 가운데, 외국인의 국내 채권 순매수와 미국 고용 호조에 따른 금리 인상 탄력 우려가 혼재되어 있습니다.",
         "bull_cases": [
-          "국내 채권 시장에서 외국인의 대규모 순매수 유입",
-          "국고채 금리 하락 시 고정금리 채권 가격 상승"
+          "외국인의 韓 채권 순매수 전환",
+          "일부 기간 국고채 금리 하락 압력"
         ],
         "bear_cases": [
-          "미국 고용 호조 및 물가 불안에 따른 금리 상승 시 고정금리 채권 가격 하락 압력",
+          "미국 고용 호조 및 물가 불안에 따른 금리 상승 압력 (채권가격 하락)",
           "채권 발행 증가 부담"
         ],
         "watch": [
-          "미국 금리 인상 경로 및 고용 지표",
-          "국내외 채권 금리 및 외국인 순매수 동향"
+          "미국 국채 금리 추이",
+          "외국인 채권 수급 동향"
         ],
         "citation_ids": [
           "bonds-1",
@@ -166,7 +167,11 @@
           "date": "2026-11-10",
           "value": 5239.13
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 0,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "KOSDAQ",
@@ -251,7 +256,11 @@
           "date": "2026-11-10",
           "value": 667.61
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 0,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "SP500",
@@ -336,7 +345,11 @@
           "date": "2026-11-05",
           "value": 7353.73
         }
-      ]
+      ],
+      "data_status": "delayed",
+      "lag_business_days": 2,
+      "price_type": "daily_observation",
+      "freshness_note": "예상 관측일보다 약 2평일 이전 자료입니다. 원본 기준일을 확인하세요."
     },
     {
       "id": "NASDAQCOM",
@@ -421,7 +434,11 @@
           "date": "2026-11-09",
           "value": 25253.14
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 0,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "DGS10",
@@ -506,7 +523,11 @@
           "date": "2026-11-06",
           "value": 4.86
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 1,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "DGS2",
@@ -591,7 +612,11 @@
           "date": "2026-11-06",
           "value": 4.51
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 1,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "DEXKOUS",
@@ -676,7 +701,11 @@
           "date": "2026-11-06",
           "value": 1361.89
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 1,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
     {
       "id": "VIXCLS",
@@ -761,9 +790,30 @@
           "date": "2026-11-06",
           "value": 25.64
         }
-      ]
+      ],
+      "data_status": "current_or_provider_lag",
+      "lag_business_days": 1,
+      "price_type": "daily_observation",
+      "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     }
   ],
+  "market_quality": {
+    "current": [
+      "KOSPI",
+      "KOSDAQ",
+      "NASDAQCOM",
+      "DGS10",
+      "DGS2",
+      "DEXKOUS",
+      "VIXCLS"
+    ],
+    "delayed": [
+      "SP500"
+    ],
+    "missing": [],
+    "date_check": [],
+    "method": "weekday_heuristic; holiday calendars and publication schedules not fully included"
+  },
   "news": {
     "stocks_kr": [
       {
@@ -997,7 +1047,7 @@
       {
         "title": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이",
         "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hMFROUm5HZUxPNlZUWFktNjRMemYwTDBRdlpYbTVhZnRoa3dOY01aWkxNQndlbVoyOVJza2ZkTHZYdFV3b2dWWEtFWXJhekl2ZU90NXJTaVNfRjJLT2FEelNCc0VMQ0ptR2YwOWRn0gFuQVVfeXFMTWEwVE5SbkdlTE82VlRYWS02NEx6ZjBMMFF2WlhtNWFmdGhrd05jTVpaTE1Cd2VtWjI5UnNrZmRMdlh0VXdvZ1ZYS0VZcmF6SXZlT3Q1clNpU19GMktPYUR6U0JzRUxDSm1HZjA5ZGc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNNIBe0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNA?oc=5",
         "published_at": "2026-11-10T01:59:21+00:00",
         "summary": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이 &nbsp;&nbsp; 머니투데이",
         "id": "bonds-8"
@@ -1025,7 +1075,6 @@
     }
   },
   "errors": [
-    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo",
-    "Pro 재검토 실패(gemini-3.5-flash): ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
+    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
   ]
 }
