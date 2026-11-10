@@ -101,6 +101,12 @@
     .footer{margin-top:35px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#a1abbb;font-size:11px;line-height:1.6}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     [hidden]{display:none!important}
+    .tv-widget-holder{min-width:0;min-height:480px;border-radius:12px;overflow:hidden;background:#fff}
+    .tv-widget-holder[hidden]{display:none!important}
+    .tv-widget-holder .tradingview-widget-container{width:100%;min-height:460px}
+    .tv-widget-holder .tradingview-widget-container__widget{width:100%;height:460px}
+    .tv-widget-holder .tradingview-widget-copyright{color:#8594a7;font-size:11px;padding:8px 2px 0}
+    .tv-widget-holder .tradingview-widget-copyright a{color:#4f63e9}
     @media(max-width:1280px){.outlooks{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
     .stock-spotlight{display:none}
     .stock-spotlight.is-visible{display:block}
@@ -145,8 +151,16 @@
     <div class="alert" id="state-alert" role="status">현재 예시 화면입니다. 자동 갱신을 설정한 후 실제 기사와 AI 분석이 표시됩니다.</div>
     <section class="section" id="markets"><div class="section-header"><div><h2 class="section-title">핵심 시장 지표</h2><div class="section-sub">수치는 각 데이터 제공처의 최근 관측값이며 실시간 체결가는 아닙니다.</div></div><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="small-link">데이터 제공처 보기 ↗</a></div><div class="metrics" id="metrics"></div></section>
     <section class="section stock-spotlight" id="stock-spotlight" aria-label="국내·미국 주목 종목">
-      <div class="section-header"><div><h2 class="section-title">주목할 종목 TOP 5</h2><div class="section-sub">거래대금 상위 3개 + 등락폭 상위 2개 · 동일 종목 제외 · 공개 가능한 데이터 확보 후 제공</div></div></div>
-      <div class="panel stock-panel"><div class="stock-panel-header"><div class="view-tabs" role="group" aria-label="주식시장 구분"><button type="button" class="tab active" data-stock-market="KR" aria-pressed="true">국내주식 (국장)</button><button type="button" class="tab" data-stock-market="US" aria-pressed="false">미국주식 (미장)</button></div><span id="stock-asof" class="stock-panel-caption">종목 정보 연동 준비 중</span></div><div id="stock-rows" class="stock-rows" aria-live="polite"></div><div class="stock-panel-caption" id="stock-source" style="margin-top:12px"></div></div>
+      <div class="section-header"><div><h2 class="section-title">오늘의 주목 종목 TOP 5</h2><div class="section-sub">거래 활발 · 상승률 상위 · 하락률 상위 종목을 각각 5개씩 자동 표시합니다.</div></div></div>
+      <div class="panel stock-panel">
+        <div class="stock-panel-header">
+          <div class="view-tabs" role="group" aria-label="주식시장 구분"><button type="button" class="tab active" data-stock-market="KR" aria-pressed="true">국내주식 (국장)</button><button type="button" class="tab" data-stock-market="US" aria-pressed="false">미국주식 (미장)</button></div>
+          <span id="stock-asof" class="stock-panel-caption">TradingView 제공 · 시세는 지연될 수 있음</span>
+        </div>
+        <div class="tv-widget-holder" id="tv-widget-kr" aria-label="국내주식 거래 활발, 상승률, 하락률 종목"></div>
+        <div class="tv-widget-holder" id="tv-widget-us" aria-label="미국주식 거래 활발, 상승률, 하락률 종목" hidden></div>
+        <div class="stock-panel-caption" id="stock-source" style="margin-top:12px">출처: TradingView · 각 목록은 개별 순위이며 투자 추천이 아닙니다. 데이터 지연 여부는 제공처 기준입니다.</div>
+      </div>
     </section>
     <section class="section" id="outlook-section"><div class="section-header"><div><h2 class="section-title">AI 시장 방향성 분석</h2><div class="section-sub">향후 1주를 중심으로 상승·하락 요인과 관찰 지표를 비교합니다.</div></div></div><div class="outlooks" id="outlooks"></div></section>
     <section class="section" id="news-section"><div class="section-header"><div><h2 class="section-title">오늘의 주요 뉴스</h2><div class="section-sub">발행 시각과 출처를 함께 확인하세요. 기사 제목을 누르면 원문으로 이동합니다.</div></div><span class="small-link" id="news-count">기사 0건</span></div><div class="news-layout"><div class="panel"><div class="news-toolbar"><div style="font-weight:820;font-size:14px">최신 금융 이슈</div><label><span class="sr-only">기사 검색</span><input class="search" id="news-search" type="search" placeholder="뉴스 제목 검색" autocomplete="off" /></label></div><ul class="news-list" id="news-list"></ul></div><aside class="panel insight-panel" id="sources-section"><div><div class="eyebrow" style="font-size:10px">TRUSTED SOURCES</div><h3>데이터와 분석의 출처</h3><p class="explain">AI는 수집한 뉴스 제목·RSS 요약 및 관측된 가격 지표를 분석합니다. 기사 본문을 모두 읽는 방식은 아닙니다.</p></div><div class="source-list"><a class="source-item" href="https://news.google.com/?hl=ko&gl=KR&ceid=KR:ko" target="_blank" rel="noopener noreferrer"><span class="source-icon">N</span>Google 뉴스 RSS <span class="external">↗</span></a><a class="source-item" href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer"><span class="source-icon">F</span>FRED 경제지표<span class="external">↗</span></a><a class="source-item" href="https://ecos.bok.or.kr/" target="_blank" rel="noopener noreferrer"><span class="source-icon">₩</span>한국은행 ECOS<span class="external">↗</span></a></div><p class="fineprint">AI 전망은 투자 권유나 수익을 보장하는 예측이 아니며, 뉴스가 부족하면 판단을 유보합니다.</p></aside></div></section>
@@ -173,24 +187,51 @@ function refMap(){const m={};for(const [cat,arr] of Object.entries(state.data.ne
 function renderOutlooks(){const parent=$('outlooks');parent.replaceChildren();const analyses=state.data.ai?.analysis||{};const refs=refMap();const cats=state.tab==='all'?Object.keys(CATS):state.tab==='stocks'?[state.stockMarket==='KR'?'stocks_kr':'stocks_us']:[state.tab];for(const cat of cats){const data=analyses[cat]||{};const card=create('article','outlook');const top=create('div','outlook-top');top.append(create('div',`round-icon ${cat}`,CATS[cat].icon));const heading=create('div');heading.append(create('div','outlook-name',CATS[cat].name),create('div','outlook-kind',CATS[cat].subtitle));top.append(heading);top.append(create('span',`direction ${directionClass(data.direction)}`,data.direction||'판단 유보'));card.append(top,create('div','outlook-summary',data.summary||'검증된 자료를 수집하는 중입니다.'));const meta=create('div','outlook-meta');meta.append(create('span','',`분석 기간: ${data.horizon||'―'}`));const c=create('span','','·  신뢰도: ');c.append(create('b','',data.confidence||'―'));meta.append(c);card.append(meta);const proscons=create('div','proscons');for(const [kind,title,key] of [['pro','상승 요인','bull_cases'],['con','하락 요인','bear_cases']]){const section=create('div');section.append(create('div',`prop-title ${kind}`,(kind==='pro'?'↑ ':'↓ ')+title),makeList(data[key]));proscons.append(section)}card.append(proscons);const w=create('div','watch');w.append(create('b','','관찰 지표  '));w.append(document.createTextNode((data.watch||[]).join(' · ')||'데이터 연결 후 표시'));card.append(w);const links=create('div','refs');(data.citation_ids||[]).slice(0,3).forEach(id=>{const a=refs[id];if(!a||!externalURL(a.url))return;const link=create('a','',a.publisher||'근거 기사');link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.title=a.title||'';links.append(link)});if(links.childElementCount)card.append(links);parent.append(card)}}
 function validNews(){const list=[];for(const cat of Object.keys(CATS)){for(const n of state.data.news?.[cat]||[]){if(n&&typeof n==='object')list.push({...n,cat})}}return list.sort((a,b)=>(Date.parse(b.published_at)||0)-(Date.parse(a.published_at)||0))}
 function renderNews(){const parent=$('news-list');parent.replaceChildren();const all=validNews();const selected=all.filter(n=>(state.tab==='all'||(state.tab==='stocks'?n.cat===(state.stockMarket==='KR'?'stocks_kr':'stocks_us'):n.cat===state.tab))&&(!state.search||`${n.title||''} ${n.publisher||''}`.toLocaleLowerCase('ko-KR').includes(state.search.toLocaleLowerCase('ko-KR'))));setNodeText('news-count',`기사 ${selected.length}건`);if(!selected.length){const item=create('li','empty',all.length?'검색 조건에 맞는 기사가 없습니다.':'새로운 기사 수집 전입니다. 첫 자동 갱신 이후 실제 기사와 원문 링크가 표시됩니다.');parent.append(item);return}for(const n of selected.slice(0,20)){const li=create('li','news-item');li.append(create('span',`news-tag ${n.cat}`,CATS[n.cat].name));const body=create('div','news-body');let title;if(externalURL(n.url)){title=create('a','news-title',n.title||'제목 없음');title.href=n.url;title.target='_blank';title.rel='noopener noreferrer'}else{title=create('div','news-title',n.title||'제목 없음')}body.append(title);body.append(create('div','news-date',`${n.publisher||'출처 미상'} · ${fmtDate(n.published_at,{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}`));li.append(body);parent.append(li)}}
+// Embed official TradingView hotlists as supplied by the provider. Do not scrape or republish quotes.
+// The provider displays separate top-five lists for most active, gainers and losers.
+// US exchange is documented by TradingView; KRX should be checked in the deployed widget.
+function mountTradingView(market){
+  const host=$('tv-widget-'+market.toLowerCase());
+  if(!host || host.dataset.mounted==='true')return;
+  host.dataset.mounted='true';
+  const outer=create('div','tradingview-widget-container');
+  const inner=create('div','tradingview-widget-container__widget');
+  const source=create('div','tradingview-widget-copyright');
+  const link=create('a','',market==='KR'?'한국 주식 시장':'미국 주식 시장');
+  link.href=market==='KR'?'https://www.tradingview.com/markets/stocks-korea/':'https://www.tradingview.com/markets/stocks-usa/';
+  link.target='_blank';link.rel='noopener noreferrer nofollow';
+  source.append(link,document.createTextNode(' by TradingView'));
+  outer.append(inner,source);
+  const script=document.createElement('script');
+  script.type='text/javascript';
+  script.async=true;
+  script.src='https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js';
+  script.textContent=JSON.stringify({
+    colorTheme:'light',dateRange:'1D',
+    exchange:market==='KR'?'KRX':'US',
+    showChart:false,locale:'kr',width:'100%',height:'460',
+    largeChartUrl:'',isTransparent:true,showSymbolLogo:true,showFloatingTooltip:true
+  });
+  script.onerror=()=>{
+    inner.replaceChildren(create('div','stock-empty','시장 순위 위젯을 불러오지 못했습니다. 아래의 TradingView 출처 링크에서 확인할 수 있습니다.'));
+  };
+  outer.append(script);
+  host.append(outer);
+}
 function renderStockSpotlight(){
-  const section=$('stock-spotlight');section.classList.toggle('is-visible',state.tab==='stocks');
+  const section=$('stock-spotlight');
+  section.classList.toggle('is-visible',state.tab==='stocks');
   if(state.tab!=='stocks')return;
-  document.querySelectorAll('[data-stock-market]').forEach(b=>{const active=b.dataset.stockMarket===state.stockMarket;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
-  const group=state.data.stock_spotlight?.[state.stockMarket]||{};
-  const items=Array.isArray(group.items)?group.items.slice(0,5):[];
-  const target=$('stock-rows');target.replaceChildren();
-  $('stock-asof').textContent=group.as_of?`${group.as_of} 기준 · 종가/지연 여부는 제공처 기준`:'종목 순위 데이터 연결 준비 중';
-  $('stock-source').textContent=group.source?`데이터 출처: ${group.source} · 투자 판단 전 공식 자료 확인 필요`:'현재는 종목 순위용 공개 표시 권한을 검토 중입니다. 제공 가능한 데이터가 확보되기 전까지 임의의 종목을 추천하지 않습니다.';
-  if(!items.length){target.append(create('div','stock-empty','거래량·등락률 순위 데이터를 아직 연결하지 않았습니다. 다음 단계에서 공개 표시 가능한 제공처와 연동합니다.'));return}
-  for(const [index,s] of items.entries()){
-    const row=create('div','stock-row');row.append(create('span','stock-rank',String(index+1)));
-    const name=create('div');name.append(create('div','stock-name',s.name||s.symbol||'종목'),create('div','stock-symbol',s.symbol||''));row.append(name);
-    const price=Number(s.price),delta=Number(s.change_pct);
-    row.append(create('span','stock-amount',s.price!==null&&Number.isFinite(price)?`${s.currency==='KRW'?'₩':'$'}${fmtNumber(price,s.currency==='KRW'?0:2)}`:'―'));
-    row.append(create('span',`stock-delta ${delta>0?'delta up':delta<0?'delta down':'delta neutral'}`,s.change_pct!==null&&Number.isFinite(delta)?`${delta>0?'+':''}${fmtNumber(delta,2)}%`:'―'));
-    target.append(row)
-  }
+  document.querySelectorAll('[data-stock-market]').forEach(b=>{
+    const active=b.dataset.stockMarket===state.stockMarket;
+    b.classList.toggle('active',active);
+    b.setAttribute('aria-pressed',String(active));
+  });
+  const kr=state.stockMarket==='KR';
+  $('tv-widget-kr').hidden=!kr;
+  $('tv-widget-us').hidden=kr;
+  $('stock-asof').textContent=kr?'국내 주식 · TradingView 제공':'미국 주식 · TradingView 제공';
+  mountTradingView(state.stockMarket);
 }
 function renderHeader(){const d=state.data;const stale=Boolean(d.generated_at && (Date.now()-Date.parse(d.generated_at)>36*60*60*1000));setNodeText('today',fmtDate(new Date(),{year:'numeric',month:'long',day:'numeric',weekday:'short'}));setNodeText('hero-title',safeText(d.ai?.headline)||DEMO.ai.headline);setNodeText('hero-description',safeText(d.ai?.overview)||DEMO.ai.overview);setNodeText('hero-asof',d.generated_at?`/ ${fmtDate(d.generated_at,{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}`:'/ SAMPLE VIEW');setNodeText('hero-time',d.generated_at?fmtDate(d.generated_at,{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}):'자동 갱신 전');const badge=$('mode-status');badge.className=`status-badge ${d.mode==='demo'?'demo':d.ai?.status==='ok'?'live':''}`;badge.textContent=d.mode==='demo'?'미리보기 · 예시':stale?'갱신 지연 · 확인 필요':d.ai?.status==='ok'?'AI 분석 갱신됨':'뉴스·지표만 갱신됨';const msg=$('state-alert');msg.className=`alert ${d.mode==='live'&&d.ai?.status==='ok'?'live':''}`;if(stale&&d.mode==='live')msg.textContent='보고서 갱신이 지연되고 있습니다. 아래의 작성 시점을 확인하고 최신 가격·뉴스와 혼동하지 마세요. GitHub Actions 실행 상태를 확인해 주세요.';else if(d.mode==='demo')msg.textContent='현재 화면은 기능과 디자인을 확인하는 예시입니다. 숫자와 전망은 실제 투자 정보가 아닙니다. GitHub 자동 갱신을 설정하면 실제 데이터를 불러옵니다.';else if(d.ai?.status==='ok')msg.textContent=(d.ai?.review_status==='completed'?'AI 1차 분석과 2차 검토를 완료했습니다. ':d.ai?.review_status==='failed'?'AI 1차 분석만 완료했습니다. 2차 검토는 오류로 실패했습니다. ':'AI가 수집한 자료를 분석했습니다. ')+'분석은 RSS 기사 제목·요약과 공개 시장 지표를 기준으로 작성되며, 전망은 불확실합니다.';else msg.textContent='뉴스·시장 데이터 갱신은 완료되었지만 Gemini 분석은 아직 완료되지 않았습니다. 저장소의 GEMINI_API_KEY, 무료 사용 한도, Actions 실행 기록을 확인하세요.';}
 function render(){renderHeader();renderMetrics();renderOutlooks();renderStockSpotlight();renderNews();document.querySelectorAll('[data-tab]').forEach(b=>{const active=b.dataset.tab===state.tab;b.classList.toggle('active',active);if(b.classList.contains('nav-btn')){if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')}});setNodeText('crumb-current',state.tab==='all'?'종합 시장 현황':state.tab==='stocks'?'주식 시장 전망':`${CATS[state.tab].name} 시장 전망`)}
