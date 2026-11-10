@@ -1,33 +1,33 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T21:44:14.029764+09:00",
-  "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
+  "generated_at": "2026-11-10T21:56:09.418489+09:00",
+  "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.5-flash-lite",
-    "draft_model": "gemini-3.5-flash-lite",
+    "model": "gemini-3.6-flash",
+    "draft_model": "gemini-3.6-flash",
     "review_model": null,
-    "review_status": "skipped_quota",
-    "review_note": "1차 모델의 API 사용량 제한으로 2차 검토를 이번 실행에서 생략했습니다.",
-    "headline": "국내외 증시 반등세와 채권시장 변동성 점검",
-    "overview": "국내 증시는 외국인과 기관의 매수세에 힘입어 4%대 급등세를 기록하였고, 미국 증시 역시 일부 악재에도 불구하고 저가 매수세 유입 등으로 나스닥이 반등했습니다. 채권 시장은 금리와 고정금리 채권 가격이 통상 반대로 움직이는 가운데, 대내외 경제 지표 및 발행 물량 변화에 따라 금리가 등락하는 모습을 보였습니다.",
+    "review_status": "failed",
+    "review_note": "2차 검토 API 사용량 제한(HTTP 429). 1차 분석은 유지했습니다.",
+    "headline": "국내·미국 증시 급반등 속 채권시장 금리 향방 혼조",
+    "overview": "국내 증시는 외국인과 기관의 매수세에 힘입어 코스피와 코스닥이 4%대 급등세를 보였습니다. 미국 증시 역시 엔비디아의 악재에도 불구하고 유가 하락과 AI 저가 매수세 유입으로 나스닥이 2.74% 상승했습니다. 채권 시장은 외국인 채권 순매수와 미국 고용 호조에 따른 금리 인상 우려가 엇갈리며 금리 향방에 대한 관망세가 이어지고 있습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "상승 우세",
-        "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "외국인과 기관의 매수 유입으로 코스피가 4% 이상 급등하며 5200선을 회복했습니다.",
+        "confidence": "보통",
+        "horizon": "단기 (1~4주)",
+        "summary": "외국인과 기관의 동반 매수로 코스피와 코스닥이 4%대 급반등하며 5,200선을 회복했습니다. 단기 반등세가 강하나 반도체 사이클 및 불확실성 해소 여부가 향후 주가 향방을 결정할 전망입니다.",
         "bull_cases": [
-          "외국인 및 기관의 동반 매수세 유입",
-          "AI 공포 완화 및 코스피 5200선 회복"
+          "외국인 및 기관 매수세 유입으로 코스피 4.39% 급등 및 5,200선 회복",
+          "AI 관련 공포 완화 및 주식시장 투자심리 개선"
         ],
         "bear_cases": [
-          "내년 상반기까지 지속될 수 있는 증시 불확실성 우려",
-          "반도체 사이클 및 외국인 수급 변동성에 대한 경계감"
+          "내년 상반기까지 반도체 및 증시 불확실성 지속 가능성",
+          "외국인 매수세의 지속성에 대한 불확실성"
         ],
         "watch": [
-          "외국인 및 기관 수급 추이",
-          "반도체 업황 및 실적"
+          "외국인 및 기관 수급의 지속 여부",
+          "AI 및 반도체 산업 사이클 흐름"
         ],
         "citation_ids": [
           "stocks_kr-2",
@@ -37,47 +37,47 @@
       },
       "stocks_us": {
         "direction": "상승 우세",
-        "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "개별 악재에도 불구하고 저가 매수세가 유입되면서 나스닥을 비롯한 뉴욕 증시가 반등세를 보였습니다.",
+        "confidence": "보통",
+        "horizon": "단기 (1~4주)",
+        "summary": "엔비디아 주가 하락에도 불구하고 국제유가 하락과 AI 저가 매수세 유입으로 나스닥 지수가 2.74% 급등했습니다. 다만 미국 CPI(3.72%) 등 물가 지표 부담은 지속되고 있습니다.",
         "bull_cases": [
-          "AI 관련 저가 매수세 유입",
-          "월가의 연말 랠리 기대감 부각"
+          "국제유가 급락 및 AI 종목 대상 저가 매수세 유입",
+          "VIX 지수 하락(-9.01%) 및 연말 랠리 기대감"
         ],
         "bear_cases": [
-          "엔비디아 관련 개별 악재 지속",
-          "일부 기술주의 높은 변동성"
+          "엔비디아 등 특정 주요 기술주 악재 및 주가 하락",
+          "미국 CPI 전년동월비 3.717% 등 높은 물가 수준 유지"
         ],
         "watch": [
-          "주요 기술주 주가 흐름",
-          "글로벌 유가 및 매크로 지표"
+          "미국 연방준비제도의 통화정책 및 금리 향방",
+          "주요 기술주 실적 및 반도체 업황 변동"
         ],
         "citation_ids": [
+          "stocks_us-1",
           "stocks_us-5",
-          "stocks_us-6",
           "stocks_us-7"
         ]
       },
       "bonds": {
-        "direction": "중립",
+        "direction": "판단 유보",
         "confidence": "낮음",
-        "horizon": "단기",
-        "summary": "금리와 고정금리 채권 가격이 통상 반대로 움직이는 가운데, 외국인의 순매수와 고용 지표 및 물가 불안 요인이 혼재되어 있습니다.",
+        "horizon": "단기 (1~4주)",
+        "summary": "외국인 채권 순매수로 국고채 금리가 하락했다는 분석과 미국 고용 호조로 국고채 금리가 상승했다는 소식이 상충하고 있습니다. 고정금리 채권 가격은 채권 금리와 반대로 움직이므로 금리 변동성에 유의할 필요가 있습니다.",
         "bull_cases": [
-          "외국인의 국내 채권 순매수 유입",
-          "일부 구간에서의 국고채 금리 하락(채권 가격 상승)"
+          "외국인 채권 순매수 유입 (채권 금리 하락 시 채권 가격 상승)",
+          "미국 중간선거 이후 채권시장 강세 기대"
         ],
         "bear_cases": [
-          "미국 고용 호조 및 물가 불안에 따른 금리 상승(채권 가격 하락) 압력",
-          "채권 발행 물가 증가 부담"
+          "미국 고용 호조 및 12월 금리 인상 가능성 (채권 금리 상승 시 채권 가격 하락)",
+          "미국 국채 10년물(4.86%) 및 2년물(4.51%) 금리 상승 압력"
         ],
         "watch": [
-          "미국 금리 인상 관련 통화정책 기대감",
-          "국내외 채권 발행 및 수급 동향"
+          "미국 연방기금금리 목표범위(현재 4.0%) 변화 가능성",
+          "외국인 한국 채권 순매수 흐름 및 국고채 금리 추이"
         ],
         "citation_ids": [
           "bonds-1",
-          "bonds-4",
+          "bonds-2",
           "bonds-5"
         ]
       }
@@ -814,6 +814,124 @@
     "date_check": [],
     "method": "weekday_heuristic; holiday calendars and publication schedules not fully included"
   },
+  "economic_indicators": {
+    "KR": {
+      "status": "not_configured",
+      "items": [
+        {
+          "id": "KR_BOK_BASE_RATE",
+          "region": "KR",
+          "name": "한국은행 기준금리",
+          "unit": "%",
+          "frequency": "monthly",
+          "measurement": "level",
+          "value": null,
+          "previous_value": null,
+          "as_of": null,
+          "status": "not_configured",
+          "source": "한국은행 ECOS",
+          "source_url": "https://ecos.bok.or.kr/",
+          "note": "ECOS_API_KEY 미설정: 한국 공식 통계를 분석에 사용하지 않습니다."
+        },
+        {
+          "id": "KR_CPI_YOY",
+          "region": "KR",
+          "name": "한국 소비자물가 전년동월비",
+          "unit": "%",
+          "frequency": "monthly",
+          "measurement": "year_over_year",
+          "value": null,
+          "previous_value": null,
+          "as_of": null,
+          "status": "not_configured",
+          "source": "한국은행 ECOS",
+          "source_url": "https://ecos.bok.or.kr/",
+          "note": "ECOS_API_KEY 미설정: 한국 공식 통계를 분석에 사용하지 않습니다."
+        }
+      ]
+    },
+    "US": {
+      "status": "ok",
+      "items": [
+        {
+          "id": "US_CPI_YOY",
+          "region": "US",
+          "name": "미국 소비자물가(CPI) 전년동월비",
+          "unit": "%",
+          "frequency": "monthly",
+          "measurement": "year_over_year",
+          "value": 3.717,
+          "previous_value": 3.353,
+          "as_of": "2026-09",
+          "status": "ok",
+          "source": "FRED / Federal Reserve Bank of St. Louis",
+          "source_url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+          "note": "관측월 기준의 월간 경제통계입니다. 실제 발표일과 다를 수 있습니다."
+        },
+        {
+          "id": "US_CORE_PCE_YOY",
+          "region": "US",
+          "name": "미국 근원 PCE 물가 전년동월비",
+          "unit": "%",
+          "frequency": "monthly",
+          "measurement": "year_over_year",
+          "value": 3.121,
+          "previous_value": 3.034,
+          "as_of": "2026-09",
+          "status": "ok",
+          "source": "FRED / Federal Reserve Bank of St. Louis",
+          "source_url": "https://fred.stlouisfed.org/series/PCEPILFE",
+          "note": "관측월 기준의 월간 경제통계입니다. 실제 발표일과 다를 수 있습니다."
+        },
+        {
+          "id": "US_UNEMPLOYMENT",
+          "region": "US",
+          "name": "미국 실업률",
+          "unit": "%",
+          "frequency": "monthly",
+          "measurement": "level",
+          "value": 4.1,
+          "previous_value": 4.2,
+          "as_of": "2026-10",
+          "status": "ok",
+          "source": "FRED / Federal Reserve Bank of St. Louis",
+          "source_url": "https://fred.stlouisfed.org/series/UNRATE",
+          "note": "관측월 기준의 월간 경제통계입니다. 실제 발표일과 다를 수 있습니다."
+        },
+        {
+          "id": "US_NONFARM_PAYROLL",
+          "region": "US",
+          "name": "미국 비농업 고용 전월 증감",
+          "unit": "천 명",
+          "frequency": "monthly",
+          "measurement": "month_difference",
+          "value": 165.0,
+          "previous_value": null,
+          "as_of": "2026-10",
+          "status": "ok",
+          "source": "FRED / Federal Reserve Bank of St. Louis",
+          "source_url": "https://fred.stlouisfed.org/series/PAYEMS",
+          "note": "관측월 기준의 월간 경제통계입니다. 실제 발표일과 다를 수 있습니다."
+        },
+        {
+          "id": "US_FED_TARGET_UPPER",
+          "region": "US",
+          "name": "미국 연방기금금리 목표범위 상단",
+          "unit": "%",
+          "frequency": "daily",
+          "measurement": "level",
+          "value": 4.0,
+          "previous_value": 4.0,
+          "as_of": "2026-11-09",
+          "status": "ok",
+          "source": "FRED / Federal Reserve Bank of St. Louis",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "note": "관측일 기준의 지표입니다. 실제 발표 시점과 다를 수 있습니다."
+        }
+      ]
+    },
+    "note": "월간 지표의 as_of는 경제통계 관측월이며 실제 공표일이 아닙니다. 수치는 추후 수정될 수 있습니다."
+  },
   "news": {
     "stocks_kr": [
       {
@@ -833,11 +951,11 @@
         "id": "stocks_kr-1"
       },
       {
-        "title": "코스피 나흘 만에 반등…외국인·기관 매수에 5200선 회복",
-        "publisher": "동행미디어 시대",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11ZnJmXzlISF9Tci1oME1VUlNHOFc2OExWSlYzOW54cTFxQnlfNUJZNTdnYjhiUEM2MUxOdTBHNDZFTHQ1bXBXMUpJZnZXWmtxQzlDSWNfWmotaTBiQnc?oc=5",
-        "published_at": "2026-11-10T07:58:42+00:00",
-        "summary": "코스피 나흘 만에 반등…외국인·기관 매수에 5200선 회복 &nbsp;&nbsp; 동행미디어 시대",
+        "title": "코스피 4%대 급반등에 5,200선 회복…외국인 매수 지속 여부 촉각",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tUjkybmNLYzNrQ1NSdXhDUk1BZmhrX240cXJQeVlZc1FfUmc3UFROMFp5aVI4Zjh3RXI4cUV3aWNHWV9FTWJrTlcxeC05bXVfallyclRZSEJSRXM2eXNEb24tTUZUb0QweXljMEd5RWbSAXRBVV95cUxOdFc4a2x2MDVOVF83VXVIOFdjOG5pc3Y3N2lsWjQ3SmFGNnkxdEhsVUU3ZFA4R216eEJibTNWWUVvc1JtMDJnZGdPY1g4T3NnOHNuM3Jwang4UkFCV2RYZmQwUG5hQW82czNpbEI3a1lJNG9LaQ?oc=5",
+        "published_at": "2026-11-10T07:52:05+00:00",
+        "summary": "코스피 4%대 급반등에 5,200선 회복…외국인 매수 지속 여부 촉각 &nbsp;&nbsp; 산경투데이",
         "id": "stocks_kr-2"
       },
       {
@@ -1005,12 +1123,20 @@
         "id": "bonds-2"
       },
       {
+        "title": "[기획] 국채금리 9월 고점 지났나…내년 향방은",
+        "publisher": "한국금융경제신문",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIYjVNbXlMWWV5TUNvaEVoUXlpcUdjLXJPTFJWemRDY2RKb3hsMU5DREZBdlZfYUZhVktXWTJCbW14NVdJY3ZHbGo4QVlJQUREVmNRaU5pVHdzOV9NU2pyRF9MYUZZSG1OWUpTY9IBcEFVX3lxTE1oZHJ5LWtYUzVYbHhBejhQZ3JiMnlVWXlrUzZqT1VZUXVfVEc0d2Q3MXN6bmZfQkROdVZlZVFnWDdTZU1CZndqTGdGSmFZWkxfSmpyZ29oVVh1bkxlUDlHRThmMTJVQzhFdG9TQllqTy0?oc=5",
+        "published_at": "2026-11-10T08:17:11+00:00",
+        "summary": "[기획] 국채금리 9월 고점 지났나…내년 향방은 &nbsp;&nbsp; 한국금융경제신문",
+        "id": "bonds-3"
+      },
+      {
         "title": "美 중간선거 이후 채권시장 강세···수익률 개선 여력은",
         "publisher": "서울파이낸스",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYR3VhREttUEtsUTVITHh6ZHhJT1hGVVhzV0p0VE14bXo0MnZaOFBxc1BHdFJWVFdIWkZUZTJ6ZjNVWFE1aVJRcWNVUFpHSkpJTy1WTHZpMXRESXYzYTcySU1CWTJMWUhrZ2c?oc=5",
         "published_at": "2026-11-10T07:21:21+00:00",
         "summary": "美 중간선거 이후 채권시장 강세···수익률 개선 여력은 &nbsp;&nbsp; 서울파이낸스",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "미국 고용 호조에 국고채 금리 일제히 상승…3년물 연 3.639%",
@@ -1018,7 +1144,7 @@
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IQzRaVDhqUUYwY1JQaVNmSTFqTXYxazhkR1NvV2JPUF9DRm4xME9lYklPdS1kWU11WW5TRzI2TzZXSHVjblk5RzBCN1d4QUg1MUJoVWNQMXplMjYweGMzNmlhVFhXWDk2eDhlekhR?oc=5",
         "published_at": "2026-11-10T06:54:01+00:00",
         "summary": "미국 고용 호조에 국고채 금리 일제히 상승…3년물 연 3.639% &nbsp;&nbsp; 폴리뉴스 Polinews",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "외국인, 韓채권 8.5조 순매수 전환…국고채 금리 '뚝'",
@@ -1026,7 +1152,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Eb21DRUVrQWZRazJGbW9UR0pYTmhFMmU4ZjlyYk0xTFJ5aE1jV3BmNjM0UzdjWHZzNUFwcjVsYkNIZ0IybmVvVmx3M0J5SE80LWJtQ3owTmx1X0ZTNGlrRlluWEYzSmtUQzJTOW1xdTJDQVk?oc=5",
         "published_at": "2026-11-10T04:45:49+00:00",
         "summary": "외국인, 韓채권 8.5조 순매수 전환…국고채 금리 '뚝' &nbsp;&nbsp; 마켓인",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "금융투자협회, '2026년 10월 장외채권시장 동향' 발표...채권 발행 91조원",
@@ -1034,7 +1160,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5FdmxIdzNKSGszNE1KZHdrWS1jZUdDVFlRUlZCZTJjY1libkhOeFJ4R0VxSDh3UFh4dXpmb0tVWGxDNVBZYkNyZDlQbUhMZDEwRGpsZElDdmc0YWFZQzN4WmdxZ1dMcl9iT3VSdFVfVUpkVFXSAXdBVV95cUxNZWtnZGsyczY5R1ZxamZpdUw2cWxRN0RnVm9scWRXYkhpNy1wR0ZJU3NaMFFkcFZDcVpVcE1uQlJqYVRLNlNvZUZGaVpfZm5NQ0RTdG55am5zS3RRdzZ2N2s1Z0Q5OTZzYnhJYTZPeDVSdVlZOTk0Zw?oc=5",
         "published_at": "2026-11-10T04:43:53+00:00",
         "summary": "금융투자협회, '2026년 10월 장외채권시장 동향' 발표...채권 발행 91조원 &nbsp;&nbsp; 핀포인트뉴스",
-        "id": "bonds-6"
+        "id": "bonds-7"
       },
       {
         "title": "美 30년물 24년 만에 최고인데…국고채 금리는 전 구간 하락, 외국인 8.5조 ‘사자’",
@@ -1042,7 +1168,7 @@
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nZlBWelAtdjNSNDNhd0Fhd1dNb0xtWGN0eWtfeW9MRVFkLU5KaUhnRXRFdllFb2Z1QTZpbmVJZE16SWRPX0NTOUFUaWFfTjJTMW5LSmlsNDFUdlp4TlRYRXhCbnE?oc=5",
         "published_at": "2026-11-10T04:17:05+00:00",
         "summary": "美 30년물 24년 만에 최고인데…국고채 금리는 전 구간 하락, 외국인 8.5조 ‘사자’ &nbsp;&nbsp; https://www.ppss.kr/",
-        "id": "bonds-7"
+        "id": "bonds-8"
       },
       {
         "title": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이",
@@ -1050,14 +1176,6 @@
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNNIBe0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNA?oc=5",
         "published_at": "2026-11-10T01:59:21+00:00",
         "summary": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이 &nbsp;&nbsp; 머니투데이",
-        "id": "bonds-8"
-      },
-      {
-        "title": "외국인 8.5조원 채권 순매수···10월 국고채 금리 일제히 하락",
-        "publisher": "서울파이낸스",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NRU44S0JLM3h4WW0zLWlPNTQ3Ny1XTlNtNmhMbEQzT0MyTE5MRHJPclNpb3FKRnJJb2puamF4WE5CN0N3eGhxTUI4cG00ODZZMFI4SVI0dHpNcFRaWkd3eWdaMGtJcENZbmc?oc=5",
-        "published_at": "2026-11-10T01:45:31+00:00",
-        "summary": "외국인 8.5조원 채권 순매수···10월 국고채 금리 일제히 하락 &nbsp;&nbsp; 서울파이낸스",
         "id": "bonds-9"
       }
     ]
@@ -1075,6 +1193,6 @@
     }
   },
   "errors": [
-    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
+    "Pro 재검토 실패(gemini-3.5-flash): ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
   ]
 }
