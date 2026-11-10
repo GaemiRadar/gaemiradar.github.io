@@ -146,6 +146,98 @@ def fetch_news(errors):
     return out
 
 
+def _previous_weekday(d):
+    """Weekend-only fallback; does not imply exchange holiday completeness."""
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d
+
+
+def _business_days_between(first, last):
+    """Count weekdays after first through last; public holidays excluded only by provider data."""
+    if last < first:
+        return -1
+    count = 0
+    cur = first
+    while cur < last:
+        cur += timedelta(days=1)
+        if cur.weekday() < 5:
+            count += 1
+    return count
+
+
+def expected_observation_day(series_id, at=None):
+    """Approximate latest expected trading observation, *not* exchange-verified availability.
+
+    Domestic daily bars settle after market close. US bars are only expected
+    after the New York close plus an allowance for provider publication.
+    Economic series have their own release lags; those are handled separately
+    by per-series grace counts.
+    """
+    at = at or now_kst()
+    if series_id in ('KOSPI', 'KOSDAQ'):
+        local = at.astimezone(KST)
+        day = local.date()
+        if local.hour < 16:  # allow publication of end-of-day daily bars
+            day -= timedelta(days=1)
+    else:
+        ny = at.astimezone(ZoneInfo('America/New_York'))
+        day = ny.date()
+        if ny.hour < 19:  # wait for settlement/data publication
+            day -= timedelta(days=1)
+    return _previous_weekday(day)
+
+
+def annotate_market_freshness(record, at=None):
+    """Add transparent observation age without calling it a real-time quote.
+
+    Weekday gap is a warning heuristic, not an exchange calendar. A single US
+    federal holiday and provider reporting delays can explain apparent lag.
+    """
+    record = dict(record)
+    at = at or now_kst()
+    observed = record.get('as_of')
+    if record.get('value') is None or not observed:
+        record.update({'data_status': 'missing', 'lag_business_days': None,
+                       'price_type': 'daily_observation',
+                       'freshness_note': '관측값 없음. 데이터를 제공받지 못했습니다.'})
+        return record
+    try:
+        obs_day = datetime.strptime(observed, '%Y-%m-%d').date()
+    except (TypeError, ValueError):
+        record.update({'data_status': 'missing', 'lag_business_days': None,
+                       'price_type': 'daily_observation',
+                       'freshness_note': '관측일 형식 확인 필요'})
+        return record
+    expected = expected_observation_day(record.get('id'), at=at)
+    gap = _business_days_between(obs_day, expected)
+    # US macroeconomic observation release can lag the closing market session.
+    grace = 1 if record.get('id') in ('KOSPI', 'KOSDAQ', 'SP500', 'NASDAQCOM', 'VIXCLS') else 2
+    if gap < 0:
+        status = 'date_check'
+        note = '자료 기준일이 예상일보다 늦습니다. 시장별 시간대를 확인하세요.'
+    elif gap > grace:
+        status = 'delayed'
+        note = f'예상 관측일보다 약 {gap}평일 이전 자료입니다. 원본 기준일을 확인하세요.'
+    else:
+        status = 'current_or_provider_lag'
+        note = '최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다.'
+    record.update({'data_status': status, 'lag_business_days': gap,
+                   'price_type': 'daily_observation', 'freshness_note': note})
+    return record
+
+
+def summarize_market_quality(markets):
+    """Compact dashboard/server diagnostics; never confuse delay with fetch errors."""
+    return {
+        'current': [m['id'] for m in markets if m.get('data_status') == 'current_or_provider_lag'],
+        'delayed': [m['id'] for m in markets if m.get('data_status') == 'delayed'],
+        'missing': [m['id'] for m in markets if m.get('data_status') == 'missing'],
+        'date_check': [m['id'] for m in markets if m.get('data_status') == 'date_check'],
+        'method': 'weekday_heuristic; holiday calendars and publication schedules not fully included',
+    }
+
+
 def read_fred_csv(content, series_id):
     text = content.decode("utf-8-sig", errors="replace")
     reader = csv.DictReader(io.StringIO(text))
@@ -293,8 +385,10 @@ def yahoo_index(symbol, label, id_, errors):
 def fetch_markets(errors):
     if not os.environ.get("FRED_API_KEY", "").strip():
         errors.append("FRED_API_KEY 미등록: GitHub Actions Secrets와 daily.yml 환경변수 설정 필요")
-    return [yahoo_index("^KS11", "코스피", "KOSPI", errors),
-            yahoo_index("^KQ11", "코스닥", "KOSDAQ", errors)] + [market_from_fred(s, errors) for s in SERIES]
+    raw = [yahoo_index("^KS11", "코스피", "KOSPI", errors),
+           yahoo_index("^KQ11", "코스닥", "KOSDAQ", errors)] + [market_from_fred(s, errors) for s in SERIES]
+    observed_at = now_kst()
+    return [annotate_market_freshness(item, at=observed_at) for item in raw]
 
 
 def empty_analysis():
@@ -389,11 +483,17 @@ def run_gemini(client, types, model, material, instruction):
             time.sleep((2, 5)[attempt])
 
 
+def _gemini_is_quota_exceeded(exc):
+    """Google Gemini 429 means request/quota restricted; do not hot-loop/retry."""
+    status = getattr(exc, 'code', None)
+    return str(status) == '429' or bool(re.search(r'\b(?:HTTP\s*)?429\b', str(exc)))
+
+
 def analyze(news, market, errors):
     """Flash draft -> Pro review. If Pro fails, label Flash-only (never pretend review happened)."""
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     result = {"status": "not_configured", "model": None, "draft_model": None,
-              "review_model": None, "review_status": "not_run",
+              "review_model": None, "review_status": "not_run", "review_note": None,
               "headline": "오늘의 금융시장 주요 뉴스와 시장 지표",
               "overview": "뉴스 및 시장 지표가 수집되었습니다. AI 전망은 API 키 연결 후 표시됩니다.",
               "analysis": empty_analysis()}
@@ -415,7 +515,7 @@ def analyze(news, market, errors):
     review_enabled = os.environ.get("ENABLE_PRO_REVIEW", "1").strip() == "1"
     news_context = {k: [{v: article.get(v) for v in ("id", "title", "publisher", "published_at", "summary")}
                         for article in items[:8]] for k, items in news.items()}
-    market_context = [{v: m.get(v) for v in ("name", "value", "unit", "change", "change_unit", "as_of", "source")}
+    market_context = [{v: m.get(v) for v in ("name", "value", "unit", "change", "change_unit", "as_of", "source", "data_status", "lag_business_days")}
                       for m in market]
     shared_instruction = (
         "한국어 금융시장 브리핑. 입력 자료는 Google 뉴스 RSS 제목과 짧은 요약, 관측된 시장지표다. "
@@ -426,7 +526,8 @@ def analyze(news, market, errors):
         "정보 부족·출처 상충 시 '판단 유보'와 '낮음'을 사용하라. "
         "'높음' 확신은 금지한다. 상승·하락 요인, 관찰 지표를 간결히 제시하고 투자를 직접 권유하지 마라. "
         "기사 근거가 있으면 해당 자산군에 속하는 기사 id를 최대 3개만 citation_ids에 적어라. "
-        "뉴스 발행일과 시장 관측일을 혼동하지 마라. 응답은 정해진 JSON 스키마를 따르라."
+        "뉴스 발행일과 시장 관측일을 혼동하지 마라. 지연 또는 누락된 지표의 최신 추세를 단정하지 마라. "
+        "응답은 정해진 JSON 스키마를 따르라."
     )
     material = {"analysis_time_kst": now_kst().isoformat(), "news_rss_excerpt": news_context,
                 "public_market_observations": market_context}
@@ -437,6 +538,7 @@ def analyze(news, market, errors):
         try:
             draft = None
             used_flash = None
+            draft_quota_limited = False
             for model in [flash_model] + ([flash_fallback] if flash_fallback and flash_fallback != flash_model else []):
                 try:
                     proposed = run_gemini(client, types, model, material,
@@ -445,14 +547,22 @@ def analyze(news, market, errors):
                     used_flash = model
                     break
                 except Exception as exc:
-                    # Failed first-model calls do not silently become valid results.
+                    # A 429 on an expensive primary model is a signal to skip optional
+                    # review if a cheaper draft model subsequently succeeds.
+                    if _gemini_is_quota_exceeded(exc):
+                        draft_quota_limited = True
                     errors.append(f"Flash 모델 {model} 실패: {safe_api_error(exc, key)}")
             if draft is None:
                 raise ValueError("All Flash models failed")
             result.update({"status": "ok", "model": used_flash, "draft_model": used_flash,
                            "headline": draft["headline"], "overview": draft["overview"],
                            "analysis": draft["analysis"], "review_status": "not_run"})
-            if review_enabled:
+            if review_enabled and draft_quota_limited:
+                # Keep published, valid first-pass analysis but do not make extra
+                # API calls when the primary model already reported quota limits.
+                result["review_status"] = "skipped_quota"
+                result["review_note"] = "1차 모델의 API 사용량 제한으로 2차 검토를 이번 실행에서 생략했습니다."
+            elif review_enabled:
                 # If the preferred reviewer is overloaded, retry it; then try a
                 # different, more widely available model before giving up.
                 backup_review = os.environ.get("GEMINI_REVIEW_FALLBACK", "gemini-3.5-flash-lite").strip()
@@ -472,6 +582,10 @@ def analyze(news, market, errors):
                         break
                     except Exception as exc:
                         errors.append(f"Pro 재검토 실패({reviewer}): {safe_api_error(exc, key)}")
+                        if _gemini_is_quota_exceeded(exc):
+                            # Avoid another model request after reviewer hits quota.
+                            result['review_note'] = '2차 검토 API 사용량 제한(HTTP 429). 1차 분석은 유지했습니다.'
+                            break
                 if result["review_status"] != "completed":
                     # Keep the successful Flash draft and label failed review.
                     result["review_status"] = "failed"
@@ -494,7 +608,7 @@ def produce():
     ai = analyze(news, markets, errors)
     return {"mode": "live", "generated_at": now_kst().isoformat(),
             "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
-            "ai": ai, "market": markets, "news": news,
+            "ai": ai, "market": markets, "market_quality": summarize_market_quality(markets), "news": news,
             "stock_spotlight": {"KR": {"items": [], "as_of": None, "status": "source_pending"},
                                 "US": {"items": [], "as_of": None, "status": "source_pending"}},
             "errors": errors}
