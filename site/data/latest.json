@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T20:21:45.137785+09:00",
+  "generated_at": "2026-11-10T20:38:30.580595+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "ok",
@@ -8,75 +8,78 @@
     "draft_model": "gemini-3.5-flash-lite",
     "review_model": "gemini-3.5-flash-lite",
     "review_status": "completed",
-    "headline": "국내외 증시 반등세와 채권시장 금리 하락 동향 브리핑",
-    "overview": "미국 증시 반등 및 블루 웨이브 영향 등에 힘입어 코스피가 급등세를 보였으나, 금리 인상 우려로 수도권 아파트 입주 심리는 위축되었습니다. 채권시장은 국고채 금리가 하락세를 기록하며 외국인의 순매수가 유입되었습니다.",
+    "headline": "국내외 증시 반등세와 채권금리 하락, 수도권 주택시장 심리 위축",
+    "overview": "국내 증시는 코스피와 코스닥이 4%대 급등세를 보이며 반등했고, 뉴욕증시 주요 지수도 기술주 중심의 반등을 나타냈습니다. 채권시장은 국고채 금리가 하락하며 채권가격이 상승하는 모습을 보였으나, 미국 금리 인상 우려 등의 요인이 상존합니다. 주택시장은 전국 입주전망지수의 미미한 반등에도 불구하고 서울 및 수도권은 잔금대출 부담과 금리 영향으로 심리가 위축되었습니다.",
     "analysis": {
       "stocks": {
         "direction": "상승 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "뉴욕증시 반등 및 반도체주 흐름에 힘입어 코스피가 큰 폭으로 상승했으나, 물가지표 발표 등 변동성 요인이 존재합니다.",
+        "summary": "코스피와 코스닥이 4%대 급등을 기록하고 뉴욕증시 기술주가 반등했으나 미국 물가지표 등 변동성 요인이 남아 있음.",
         "bull_cases": [
-          "뉴욕증시 3대 지수 동반 반등",
-          "반도체주 반등 및 외국인 수급 개선 기대"
+          "코스피 5200선 회복 및 4%대 급등",
+          "뉴욕증시 기술주 반등 및 나스닥 상승"
         ],
         "bear_cases": [
-          "미국 물가지표 발표를 앞둔 변동성 경계",
-          "고금리 장기화 우려 및 불확실성 상존"
+          "미국 물가지표 발표 등 불확실성 상존",
+          "반도체 실적 및 외국인 수급 변동성"
         ],
         "watch": [
-          "외국인 매수세 지속 여부",
-          "주요 경제 지표 및 반도체 실적"
+          "미국 물가지표 발표",
+          "외국인 수급 동향",
+          "주요 반도체 기업 실적"
         ],
         "citation_ids": [
-          "stocks-0",
           "stocks-1",
-          "stocks-4"
+          "stocks-6",
+          "stocks-7"
         ]
       },
       "housing": {
-        "direction": "판단 유보",
+        "direction": "하락 우세",
         "confidence": "낮음",
-        "horizon": "중기",
-        "summary": "전국 입주전망지수는 소폭 반등했으나 기준금리 부담과 잔금대출 우려로 수도권 중심의 심리는 위축되었습니다.",
+        "horizon": "단기",
+        "summary": "전국 일부 지수가 소폭 반등했으나 서울 및 수도권은 대출 부담과 금리 인상 우려로 입주 심리가 위축됨.",
         "bull_cases": [
-          "전국 아파트 입주전망지수의 4개월 만의 소폭 반등"
+          "전국 아파트 입주전망지수 4개월 만에 소폭 반등",
+          "일부 지역의 개별 거래 및 가격 움직임"
         ],
         "bear_cases": [
-          "금리 인상 우려에 따른 수도권 입주심리 위축",
-          "잔금대출 부담 및 매물 적체에 따른 거래 둔화"
+          "서울 및 수도권 아파트 입주전망지수 하락",
+          "대출 사다리 축소 및 잔금대출 부담 가중"
         ],
         "watch": [
-          "수도권 아파트 거래량 추이",
-          "잔금대출 및 금리 정책 변화"
+          "수도권 아파트 입주율",
+          "기준금리 및 대출 규제 기조"
         ],
         "citation_ids": [
           "housing-0",
-          "housing-1",
-          "housing-2"
+          "housing-3",
+          "housing-5"
         ]
       },
       "bonds": {
         "direction": "중립",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "국고채 금리가 전 구간에서 하락하며 채권 가격이 강세를 보였으나, 미국의 금리 인상 탄력 등 상반된 요인이 공존합니다.",
+        "summary": "국고채 금리는 일제히 하락하며 고정금리 채권가격이 상승했으나, 미국 고용 호조와 금리 인상 압력이 혼재됨.",
         "bull_cases": [
-          "국고채 금리 일제히 하락 및 외국인의 대규모 채권 순매수",
-          "채권시장 강세 흐름"
+          "국고채 금리 전 구간 하락에 따른 채권가격 상승",
+          "외국인의 韓 채권 순매수 유입"
         ],
         "bear_cases": [
-          "물가 불안 속 고용 선방에 따른 미국 금리 인상 탄력 우려",
-          "금리가 상승하면 고정금리 채권가격은 하락하는 역관계 존재"
+          "미국 고용 호조 및 물가 불안에 따른 금리 인상 우려",
+          "채권 발행 물량 증가 부담"
         ],
         "watch": [
-          "국고채 금리 변동 추이",
-          "외국인 채권 순매수 규모 유지 여부"
+          "국고채 금리 추이",
+          "외국인 채권 순매수 규모",
+          "미국 통화정책 관련 지표"
         ],
         "citation_ids": [
           "bonds-0",
           "bonds-1",
-          "bonds-7"
+          "bonds-4"
         ]
       }
     }
@@ -822,20 +825,12 @@
         "id": "stocks-6"
       },
       {
-        "title": "증시 옥죄던 고금리, 꺾여도 호재 아니다?",
-        "publisher": "데일리안",
-        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMVRsZnh1eUFOSmdzQU5sTE5UZkRMNk0waUQzazdtekJfMFE3UXpfNnZnOERnVEhOZi0weWFwMUtoWGxjMTM5WEE3ZExEazdYbmhFWTgxaU55Y0gwRG5jcUhYS0VwaGFkNG41VmJzT1owRUpaS3h4bmNGZDVwOFBFcDNDVllkSmpvUWozMGdQaVZXdE1ja25TTzUzQmd4YkZkLTlaYjJ4VzFNNHlKclpMeXBzVjE5Q0hnUWhJSllHbkR1cl81U2ZpclAwb2hsdFdsUWpPTFpuR3NJRmswcHJfUG9Pcllrb0pmM1NYa1pOWjc1MUMtNG00TmZjOEVBcFBJYnZXdjNUbGdjeUhfSjRveVQtdGRNQ3R2?oc=5",
-        "published_at": "2026-11-09T22:04:00+00:00",
-        "summary": "증시 옥죄던 고금리, 꺾여도 호재 아니다? &nbsp;&nbsp; 데일리안",
-        "id": "stocks-7"
-      },
-      {
         "title": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승",
         "publisher": "증권일보",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qY3dKeC11OW12WW84SEF6WUh1eDZSRG9DeS1CM1BzYVJQcmhsYnJ1RkV1V2NzX2tsQlR0ZFREenRBWld5MDdKcElGMkJEc1dEdkdSUEhGQkstTFhlWnBHSA?oc=5",
         "published_at": "2026-11-09T22:03:00+00:00",
         "summary": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승 &nbsp;&nbsp; 증권일보",
-        "id": "stocks-8"
+        "id": "stocks-7"
       },
       {
         "title": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합]",
@@ -843,6 +838,14 @@
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xZzZObHo2U1lUYU96OEx4MzRKYm5rLXFvR29YU1ZsUkVKem1TRUdSXzl3azZNajU1NGZ5M3V1QTdNT1NlR2UwR3FocnFZeGMwX2N0eA?oc=5",
         "published_at": "2026-11-09T21:57:00+00:00",
         "summary": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합] &nbsp;&nbsp; 이투데이",
+        "id": "stocks-8"
+      },
+      {
+        "title": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락",
+        "publisher": "중앙신문",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOQ09mV3BVbTEzd0ZUVDNWeVFXUzFJcU9jcVJuNkMwMHVXdVByS1FiR3ZwOWhpNm1NaWJSOFozMVoxYlFNT3kzcUhqTnpad0wwX2Itb1pqbHpBZEY1dlQ5MlB5emdxdmgxVjFSTFExSFhFRzE1cGl4YktFN0lBd3JPT08teUgzMmdjOEo2bkV0NTh6UF9Mb1NtU003aXNwYzlvMEtmMmpOZUtKenRHbkpRTWFrNGQwX25nT2lCOThnYjNFTFdHNUJIa1o0OFd2MzdrV0psMElGSEM0QS1PZmpJZXd4a1R6Szh3YjM4ai12a1JiVkFqRXM3dFB1MUtMNVhjTmQ4VVUzUTFGaDVtblRMVzRTOHZ0eVFPVmtESE81OFhMN0tQNW1QbjhMTTl6MFZkRFh2Y2Q2ejE4b1dERFJtanlIanUzYmVMTm9nQUtwd2poTjlNclFkbTF2dE1ONENXSE5Wb3hiQnBQYWRvTFE?oc=5",
+        "published_at": "2026-11-09T21:52:21+00:00",
+        "summary": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락 &nbsp;&nbsp; 중앙신문",
         "id": "stocks-9"
       }
     ],
@@ -856,12 +859,20 @@
         "id": "housing-0"
       },
       {
+        "title": "[기획] “대출 사다리 끊겼다”…현금 부자만 사는 시장",
+        "publisher": "매일일보",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hZVJIemppWW1zSVRLNTJjaUs2c2IwZjVhYldlZTVvRThsaEVpZEExRDR2dlJuYjdFYVZwcTF3UnFMaXM5MUxKX0V6cUx5NnBzV2t3YTliRXdNUVVXeEFPQlBMdWQ?oc=5",
+        "published_at": "2026-11-10T05:29:46+00:00",
+        "summary": "[기획] “대출 사다리 끊겼다”…현금 부자만 사는 시장 &nbsp;&nbsp; 매일일보",
+        "id": "housing-1"
+      },
+      {
         "title": "매물은 8만건 쌓이는데 거래는 '뚝'…서울 집값 향방은",
         "publisher": "뉴시스",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9sS0tJNjZzaV9EdlVEVms0NFQwQWsxZXFaS0FrRk53dzNxMk53Mm9Uc1RnUEpkdUFQbi0xWHFNZVR0RmF5ejJVZ0tXVnZOUHBsM2Z0eWptRzhDdVhkZ0ZrbVJ2aTBTWUpUZlpKUEVJbVlzTkQ5SHFqMtIBeEFVX3lxTE9sS0tJNjZzaV9EdlVEVms0NFQwQWsxZXFaS0FrRk53dzNxMk53Mm9Uc1RnUEpkdUFQbi0xWHFNZVR0RmF5ejJVZ0tXVnZOUHBsM2Z0eWptRzhDdVhkZ0ZrbVJ2aTBTWUpUZlpKUEVJbVlzTkQ5SHFqMg?oc=5",
         "published_at": "2026-11-10T03:08:10+00:00",
         "summary": "매물은 8만건 쌓이는데 거래는 '뚝'…서울 집값 향방은 &nbsp;&nbsp; 뉴시스",
-        "id": "housing-1"
+        "id": "housing-2"
       },
       {
         "title": "수도권 아파트 입주전망지수 ‘뚝’…금리 인상 우려에 심리 급격히 후퇴",
@@ -869,7 +880,7 @@
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nVDdNVjFCUElpQjlSRjAwNjdSVmdTOUpPV0tWTTQ1dURrcGRYcFNKZnJhWFFtWTJveFZhSWRudmFJQ1puZ1R3azlydXdpc0NIamQ0cXNwM1FWUDNSLWc3MkpvZHc?oc=5",
         "published_at": "2026-11-10T02:56:57+00:00",
         "summary": "수도권 아파트 입주전망지수 ‘뚝’…금리 인상 우려에 심리 급격히 후퇴 &nbsp;&nbsp; https://www.ppss.kr/",
-        "id": "housing-2"
+        "id": "housing-3"
       },
       {
         "title": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제",
@@ -877,14 +888,6 @@
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBCR1MxY21VenVYeEFPczRlU2hBRW1UczZONlVjMlVQTFl1M0NQLUNEeE1WYVgzSjEwa3JxMHNwODBtSExSelliOEZCYw?oc=5",
         "published_at": "2026-11-10T02:45:00+00:00",
         "summary": "기준금리 부담에 11월 수도권 입주심리 위축 : 경제 &nbsp;&nbsp; 재경일보",
-        "id": "housing-3"
-      },
-      {
-        "title": "금리 인상 우려에 11월 수도권 아파트 입주전망지수 하락",
-        "publisher": "연합뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tWTRnT1dKdTAyenVLRExNUE9ZNEhYampjLWE5d2plOUFFZUhUM09nbWl4S0d0Y1pqOE5xUkpGSjhYRlZuQ25JX29GdGZSQXRYeWUySlc5NmpTV2vSAWBBVV95cUxPRmNiRUpKWUZCOWUtbGM2R0QtaWp6aWdLNXgxX2xwOFQzbTRZNlRjRzQ1TDg5WjdfNXo2SzYza2JTRE1xZnA3ZExSWTIzemdKSUdseDZmcTlPQmNIenVvMXE?oc=5",
-        "published_at": "2026-11-10T02:00:05+00:00",
-        "summary": "금리 인상 우려에 11월 수도권 아파트 입주전망지수 하락 &nbsp;&nbsp; 연합뉴스",
         "id": "housing-4"
       },
       {
