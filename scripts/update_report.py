@@ -46,6 +46,31 @@ SERIES = [
 ]
 
 
+# These observations are fed to Gemini as evidence, not treated as trading signals.
+# Period dates are observation months, NOT the dates statistics were released.
+ECONOMIC_US = [
+    {"id": "US_CPI_YOY", "fred_id": "CPIAUCSL", "name": "미국 소비자물가(CPI) 전년동월비",
+     "method": "year_over_year", "unit": "%", "frequency": "monthly"},
+    {"id": "US_CORE_PCE_YOY", "fred_id": "PCEPILFE", "name": "미국 근원 PCE 물가 전년동월비",
+     "method": "year_over_year", "unit": "%", "frequency": "monthly"},
+    {"id": "US_UNEMPLOYMENT", "fred_id": "UNRATE", "name": "미국 실업률",
+     "method": "level", "unit": "%", "frequency": "monthly"},
+    {"id": "US_NONFARM_PAYROLL", "fred_id": "PAYEMS", "name": "미국 비농업 고용 전월 증감",
+     "method": "month_difference", "unit": "천 명", "frequency": "monthly"},
+    {"id": "US_FED_TARGET_UPPER", "fred_id": "DFEDTARU", "name": "미국 연방기금금리 목표범위 상단",
+     "method": "level", "unit": "%", "frequency": "daily"},
+]
+
+# Official Bank of Korea ECOS: 722Y001/0101000 and 901Y009/0.
+# Requires ECOS_API_KEY. No key -> omit KR official statistics, never invent them.
+ECONOMIC_KR = [
+    {"id": "KR_BOK_BASE_RATE", "stat_code": "722Y001", "item_code": "0101000",
+     "name": "한국은행 기준금리", "method": "level", "unit": "%", "frequency": "monthly"},
+    {"id": "KR_CPI_YOY", "stat_code": "901Y009", "item_code": "0",
+     "name": "한국 소비자물가 전년동월비", "method": "year_over_year", "unit": "%", "frequency": "monthly"},
+]
+
+
 def now_kst():
     return datetime.now(timezone.utc).astimezone(KST)
 
@@ -288,7 +313,7 @@ def read_fred_json(payload, series_id):
     return rows
 
 
-def fetch_fred_api_rows(series_id, api_key):
+def fetch_fred_api_rows(series_id, api_key, lookback_days=120):
     """Use the official FRED JSON endpoint, not HTML/graph CSV scraping.
 
     A project-specific free FRED_API_KEY is required. Never embed or print
@@ -299,7 +324,7 @@ def fetch_fred_api_rows(series_id, api_key):
         "series_id": series_id,
         "api_key": api_key,
         "file_type": "json",
-        "observation_start": (now_kst().date() - timedelta(days=120)).isoformat(),
+        "observation_start": (now_kst().date() - timedelta(days=lookback_days)).isoformat(),
         "sort_order": "asc",
     }
     last_exc = None
@@ -389,6 +414,183 @@ def fetch_markets(errors):
            yahoo_index("^KQ11", "코스닥", "KOSDAQ", errors)] + [market_from_fred(s, errors) for s in SERIES]
     observed_at = now_kst()
     return [annotate_market_freshness(item, at=observed_at) for item in raw]
+
+
+# ---- Stage 6: independently sourced macroeconomic context ----
+
+def _economic_age_months(period, at=None):
+    """Compare monthly observation periods (not publication dates)."""
+    at = at or now_kst()
+    date_text = str(period)[:7]
+    try:
+        year, month = map(int, date_text.split('-'))
+        if month < 1 or month > 12:
+            raise ValueError("invalid month")
+        return (at.year - year) * 12 + (at.month - month)
+    except (TypeError, ValueError) as exc:
+        raise ValueError("invalid economic observation month") from exc
+
+
+def _summarize_economic_series(cfg, rows, region, source, source_url, at=None):
+    """Transform official index levels into explicitly named derived indicators."""
+    at = at or now_kst()
+    result = {
+        "id": cfg["id"], "region": region, "name": cfg["name"],
+        "unit": cfg["unit"], "frequency": cfg["frequency"],
+        "measurement": cfg["method"], "value": None, "previous_value": None,
+        "as_of": None, "status": "missing", "source": source,
+        "source_url": source_url, "note": "유효한 관측값이 없습니다.",
+    }
+    if not rows:
+        return result
+    clean = []
+    for date_text, raw in rows:
+        try:
+            number = float(raw)
+            if not math.isfinite(number):
+                continue
+            # US rows use YYYY-MM-DD; ECOS rows use YYYY-MM-DD for comparison.
+            datetime.strptime(str(date_text), "%Y-%m-%d")
+            clean.append((str(date_text), number))
+        except (TypeError, ValueError):
+            continue
+    clean.sort(key=lambda item: item[0])
+    if not clean:
+        return result
+    date_text, latest = clean[-1]
+    result["as_of"] = date_text[:7] if cfg["frequency"] == "monthly" else date_text
+    result["note"] = ("관측월 기준의 월간 경제통계입니다. 실제 발표일과 다를 수 있습니다."
+                      if cfg["frequency"] == "monthly" else
+                      "관측일 기준의 지표입니다. 실제 발표 시점과 다를 수 있습니다.")
+    if cfg["method"] == "year_over_year":
+        target_month = f"{int(date_text[:4])-1:04d}-{date_text[5:7]}"
+        prior = next((v for d, v in clean if d[:7] == target_month), None)
+        if prior is None or prior == 0:
+            result["note"] = "전년 동월 관측값이 없어 전년동월비를 계산할 수 없습니다."
+            return result
+        value = (latest / prior - 1) * 100
+        prior_month = clean[-2][0][:7] if len(clean) >= 2 else None
+        if prior_month:
+            prev_target = f"{int(prior_month[:4])-1:04d}-{prior_month[5:7]}"
+            previous = next((v for d, v in clean if d[:7] == prev_target), None)
+            if previous not in (None, 0):
+                result["previous_value"] = round((clean[-2][1] / previous - 1) * 100, 3)
+    elif cfg["method"] == "month_difference":
+        if len(clean) < 2:
+            result["note"] = "전월 고용 관측값이 없습니다."
+            return result
+        value = latest - clean[-2][1]
+    elif cfg["method"] == "level":
+        value = latest
+        if len(clean) > 1:
+            result["previous_value"] = round(clean[-2][1], 3)
+    else:
+        raise ValueError("unknown economic measurement")
+    result["value"] = round(value, 3)
+    if cfg["frequency"] == "monthly":
+        age = _economic_age_months(result["as_of"], at=at)
+        good = 0 <= age <= 4
+        result["status"] = "ok" if good else "stale"
+    else:
+        observed_day = datetime.strptime(date_text, "%Y-%m-%d").date()
+        days = (at.date() - observed_day).days
+        result["status"] = "ok" if 0 <= days <= 14 else "stale"
+    if result["status"] == "stale":
+        result["note"] = "발표 시차 또는 장기간 미갱신 가능성: AI 시장 판단 근거에서 제외합니다."
+    return result
+
+
+def fetch_us_economic_indicators(errors):
+    key = os.environ.get("FRED_API_KEY", "").strip()
+    indicators = []
+    for cfg in ECONOMIC_US:
+        source_url = f"https://fred.stlouisfed.org/series/{cfg['fred_id']}"
+        blank = _summarize_economic_series(cfg, [], "US", "FRED / Federal Reserve Bank of St. Louis", source_url)
+        if not key:
+            blank.update(status="not_configured", note="FRED_API_KEY 설정이 필요합니다.")
+            indicators.append(blank)
+            continue
+        try:
+            lookback_days = 550 if cfg["frequency"] == "monthly" else 60
+            rows = fetch_fred_api_rows(cfg["fred_id"], key, lookback_days=lookback_days)
+            indicators.append(_summarize_economic_series(cfg, rows, "US", "FRED / Federal Reserve Bank of St. Louis", source_url))
+        except (requests.RequestException, ValueError, TypeError) as exc:
+            blank.update(status="error", note="데이터 수집 실패; 시장 분석에는 사용하지 않습니다.")
+            indicators.append(blank)
+            errors.append(f"미국 경제지표 {cfg['fred_id']}: {type(exc).__name__}")
+    return indicators
+
+
+def _parse_ecos_rows(payload, item_code):
+    """Defensively handle ECOS' nested JSON and error envelope."""
+    if not isinstance(payload, dict) or not isinstance(payload.get("StatisticSearch"), dict):
+        raise ValueError("ECOS StatisticSearch envelope missing")
+    data = payload["StatisticSearch"]
+    rows = data.get("row")
+    if not isinstance(rows, list):
+        raise ValueError("ECOS row list missing")
+    parsed = []
+    for entry in rows:
+        if not isinstance(entry, dict) or str(entry.get("ITEM_CODE1", "")) != item_code:
+            continue
+        period = str(entry.get("TIME", ""))
+        if not re.fullmatch(r"\d{6}", period):
+            continue
+        try:
+            year, month = int(period[:4]), int(period[4:])
+            if not 1 <= month <= 12:
+                continue
+            value = float(entry.get("DATA_VALUE"))
+            if math.isfinite(value):
+                parsed.append((f"{year:04d}-{month:02d}-01", value))
+        except (ValueError, TypeError):
+            pass
+    parsed.sort(key=lambda v: v[0])
+    if len(parsed) < 2:
+        raise ValueError("ECOS too few matching observations")
+    return parsed
+
+
+def fetch_ecos_economic_indicators(errors):
+    key = os.environ.get("ECOS_API_KEY", "").strip()
+    indicators = []
+    today = now_kst().date()
+    start_month = (today.replace(day=1) - timedelta(days=650)).strftime("%Y%m")
+    end_month = today.strftime("%Y%m")
+    for cfg in ECONOMIC_KR:
+        source_url = "https://ecos.bok.or.kr/"
+        blank = _summarize_economic_series(cfg, [], "KR", "한국은행 ECOS", source_url)
+        if not key:
+            blank.update(status="not_configured", note="ECOS_API_KEY 미설정: 한국 공식 통계를 분석에 사용하지 않습니다.")
+            indicators.append(blank)
+            continue
+        # The credential is in the URL path. Do not log the request URL or exception string.
+        url = (f"https://ecos.bok.or.kr/api/StatisticSearch/{quote(key, safe='')}/json/kr/1/100/"
+               f"{cfg['stat_code']}/M/{start_month}/{end_month}/{cfg['item_code']}")
+        try:
+            payload = get(url).json()
+            rows = _parse_ecos_rows(payload, cfg["item_code"])
+            indicators.append(_summarize_economic_series(cfg, rows, "KR", "한국은행 ECOS", source_url))
+        except (requests.RequestException, ValueError, TypeError) as exc:
+            blank.update(status="error", note="한국은행 ECOS 조회 실패; 시장 판단 근거에서 제외합니다.")
+            indicators.append(blank)
+            errors.append(f"한국 경제지표 {cfg['stat_code']}: {type(exc).__name__}")
+    return indicators
+
+
+def fetch_economic_indicators(errors):
+    """Do not publish API keys; missing one country's data must not block the other."""
+    kr = fetch_ecos_economic_indicators(errors)
+    us = fetch_us_economic_indicators(errors)
+    return {
+        "KR": {"status": "ok" if any(v["status"] == "ok" for v in kr) else
+                ("not_configured" if all(v["status"] == "not_configured" for v in kr) else "partial_or_unavailable"),
+               "items": kr},
+        "US": {"status": "ok" if any(v["status"] == "ok" for v in us) else
+                ("not_configured" if all(v["status"] == "not_configured" for v in us) else "partial_or_unavailable"),
+               "items": us},
+        "note": "월간 지표의 as_of는 경제통계 관측월이며 실제 공표일이 아닙니다. 수치는 추후 수정될 수 있습니다.",
+    }
 
 
 def empty_analysis():
@@ -489,7 +691,7 @@ def _gemini_is_quota_exceeded(exc):
     return str(status) == '429' or bool(re.search(r'\b(?:HTTP\s*)?429\b', str(exc)))
 
 
-def analyze(news, market, errors):
+def analyze(news, market, errors, economic_indicators=None):
     """Flash draft -> Pro review. If Pro fails, label Flash-only (never pretend review happened)."""
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     result = {"status": "not_configured", "model": None, "draft_model": None,
@@ -527,10 +729,25 @@ def analyze(news, market, errors):
         "'높음' 확신은 금지한다. 상승·하락 요인, 관찰 지표를 간결히 제시하고 투자를 직접 권유하지 마라. "
         "기사 근거가 있으면 해당 자산군에 속하는 기사 id를 최대 3개만 citation_ids에 적어라. "
         "뉴스 발행일과 시장 관측일을 혼동하지 마라. 지연 또는 누락된 지표의 최신 추세를 단정하지 마라. "
+        "official_macroeconomic_observations의 데이터는 별도 공식 지표이며 관측월은 발표일이 아니다. "
+        "전년동월비와 전월 증감, 금리 수준을 혼동하지 마라. 과거 수치가 최신 발표값이라고 추정하지 마라. "
+        "국내주식에는 KR 공식 경제지표가 있을 때만 한국 기준금리·물가를 언급하라. "
+        "미국주식에는 US 공식 물가·고용·정책금리를 근거로 사용할 수 있지만 시장방향에 대한 인과관계를 단정하지 마라. "
+        "기사 RSS에 없는 외국인·기관 수급액 또는 기업 실적 수치를 창작하지 마라. "
         "응답은 정해진 JSON 스키마를 따르라."
     )
+    # Pass only recently observed, properly labelled official macro series. Stale,
+    # missing and unconfigured series are explicitly excluded from Gemini input.
+    econ = economic_indicators or {}
+    economic_context = {
+        region: [{k: item.get(k) for k in ("name", "value", "previous_value", "unit", "measurement",
+                                             "as_of", "frequency", "source", "source_url")}
+                 for item in econ.get(region, {}).get("items", []) if item.get("status") == "ok"]
+        for region in ("KR", "US")
+    }
     material = {"analysis_time_kst": now_kst().isoformat(), "news_rss_excerpt": news_context,
-                "public_market_observations": market_context}
+                "public_market_observations": market_context,
+                "official_macroeconomic_observations": economic_context}
     try:
         from google import genai
         from google.genai import types
@@ -605,10 +822,12 @@ def produce():
     if sum(len(v) for v in news.values()) == 0:
         raise RuntimeError("모든 뉴스 RSS 수집에 실패했습니다. 기존 배포를 보존합니다.")
     markets = fetch_markets(errors)
-    ai = analyze(news, markets, errors)
+    economic_indicators = fetch_economic_indicators(errors)
+    ai = analyze(news, markets, errors, economic_indicators)
     return {"mode": "live", "generated_at": now_kst().isoformat(),
-            "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
-            "ai": ai, "market": markets, "market_quality": summarize_market_quality(markets), "news": news,
+            "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
+            "ai": ai, "market": markets, "market_quality": summarize_market_quality(markets),
+            "economic_indicators": economic_indicators, "news": news,
             "stock_spotlight": {"KR": {"items": [], "as_of": None, "status": "source_pending"},
                                 "US": {"items": [], "as_of": None, "status": "source_pending"}},
             "errors": errors}
