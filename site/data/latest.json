@@ -1,79 +1,78 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T21:28:35.679561+09:00",
+  "generated_at": "2026-11-10T21:29:52.359137+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표. 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.5-flash-lite",
-    "draft_model": "gemini-3.5-flash-lite",
-    "review_model": null,
-    "review_status": "skipped_quota",
-    "review_note": "1차 모델의 API 사용량 제한으로 2차 검토를 이번 실행에서 생략했습니다.",
-    "headline": "국내외 증시 반등세와 채권시장 동향 브리핑",
-    "overview": "국내 증시는 외국인과 기관의 매수세에 힘입어 4%대 급등세를 보였으며, 미국 증시 또한 나스닥을 중심으로 저가 매수세가 유입되며 반등했습니다. 채권시장은 국고채 금리의 변동성과 미국 금리 인상 기대감이 혼재된 양상을 보이고 있습니다.",
+    "model": "gemini-3.6-flash → gemini-3.5-flash",
+    "draft_model": "gemini-3.6-flash",
+    "review_model": "gemini-3.5-flash",
+    "review_status": "completed",
+    "review_note": null,
+    "headline": "외국인 매수세 속 국내·미국 증시 반등, 채권 시장은 금리 변동 요인 상충",
+    "overview": "국내 증시는 외국인과 기관의 매수에 힘입어 코스피 5200선을 회복하며 급등했고, 미국 증시 또한 AI 저가매수세 유입으로 나스닥을 중심으로 급반등했습니다. 채권 시장은 외국인 순매수에 따른 금리 하락(채권가격 상승) 요인과 미국 고용 호조로 인한 금리 상승(채권가격 하락) 우려가 팽팽히 맞서 판단 유보 상태입니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "상승 우세",
-        "confidence": "낮음",
+        "confidence": "보통",
         "horizon": "단기",
-        "summary": "외국인과 기관의 매수세가 유입되면서 코스피와 코스닥 지수가 4% 넘게 급등하며 나흘 만에 반등했습니다.",
+        "summary": "외국인과 기관의 동반 매수세로 코스피가 4%대 급등하며 5200선을 회복했으나, 내년 상반기 불확실성에 대한 경계감은 존재합니다.",
         "bull_cases": [
-          "외국인과 기관의 대규모 순매수 유입",
-          "AI 공포 완화 및 지수 5200선 회복"
+          "외국인 및 기관 매수세 유입으로 코스피 5200선 회복",
+          "AI 및 반도체 업종 중심의 공포 심리 완화"
         ],
         "bear_cases": [
-          "내년 상반기까지 이어질 수 있는 증시 불확실성",
-          "반도체 사이클 및 대외 변수에 대한 경계감"
+          "내년 상반기까지 이어질 수 있는 증시 불확실성 전망",
+          "외국인 매수세 지속 여부에 대한 불확실성"
         ],
         "watch": [
-          "외국인 투자자의 수급 지속성",
-          "반도체 실적 추이"
+          "외국인·기관 수급 지속성",
+          "반도체 사이클 및 실적 추이"
         ],
         "citation_ids": [
           "stocks_kr-2",
           "stocks_kr-3",
-          "stocks_kr-6"
+          "stocks_kr-4"
         ]
       },
       "stocks_us": {
         "direction": "상승 우세",
-        "confidence": "낮음",
+        "confidence": "보통",
         "horizon": "단기",
-        "summary": "일부 개별 종목의 악재에도 불구하고 국제유가 하락과 AI 관련 저가 매수세가 유입되며 나스닥 등 주요 지수가 상승했습니다.",
+        "summary": "국제유가 급락과 AI 기술주 저가 매수세에 힘입어 나스닥 지수가 급반등했습니다.",
         "bull_cases": [
-          "AI 관련주 저가 매수세 유입",
-          "월가의 연말 랠리 기대감 부각"
+          "국제유가 급락 및 AI 기술주 대상 저가 매수세 유입",
+          "월가의 연말 랠리 기대감 형성"
         ],
         "bear_cases": [
-          "일부 대형 기술주의 개별 악재 및 하락",
-          "지수 변동성 지속"
+          "엔비디아 개별 악재로 인한 종목 차별화",
+          "미국 고용 호조에 따른 금리 부담"
         ],
         "watch": [
-          "나스닥 지수 흐름",
-          "대형 기술주 실적 및 이슈"
+          "주요 AI 관련 종목 주가 향방",
+          "국제유가 및 연준 통화정책 향방"
         ],
         "citation_ids": [
+          "stocks_us-3",
           "stocks_us-5",
-          "stocks_us-6",
           "stocks_us-7"
         ]
       },
       "bonds": {
-        "direction": "중립",
+        "direction": "판단 유보",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "채권시장은 금리와 고정금리 채권가격이 통상 반대로 움직이는 가운데, 외국인의 국내 채권 순매수와 미국 고용 호조에 따른 금리 인상 탄력 우려가 혼재되어 있습니다.",
+        "summary": "외국인 순매수에 따른 국고채 금리 하락(채권가격 상승) 요인과 미국 고용 호조에 따른 금리 상승(채권가격 하락) 우려가 상충하고 있습니다. 고정금리 채권 가격과 금리는 반대로 움직입니다.",
         "bull_cases": [
-          "외국인의 韓 채권 순매수 전환",
-          "일부 기간 국고채 금리 하락 압력"
+          "외국인 한국 채권 순매수 전환 및 금리 하락(채권가격 상승)"
         ],
         "bear_cases": [
-          "미국 고용 호조 및 물가 불안에 따른 금리 상승 압력 (채권가격 하락)",
-          "채권 발행 증가 부담"
+          "미국 고용 호조로 인한 금리 인상 가능성 및 금리 상승(채권가격 하락)",
+          "미국 장기물 국채 금리 상승 부담"
         ],
         "watch": [
-          "미국 국채 금리 추이",
-          "외국인 채권 수급 동향"
+          "외국인 채권 매수 추이",
+          "미국 고용 지표 및 12월 금리 결정"
         ],
         "citation_ids": [
           "bonds-1",
@@ -841,12 +840,20 @@
         "id": "stocks_kr-2"
       },
       {
+        "title": "코스피 4%대 급반등에 5,200선 회복…외국인 매수 지속 여부 촉각",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tUjkybmNLYzNrQ1NSdXhDUk1BZmhrX240cXJQeVlZc1FfUmc3UFROMFp5aVI4Zjh3RXI4cUV3aWNHWV9FTWJrTlcxeC05bXVfallyclRZSEJSRXM2eXNEb24tTUZUb0QweXljMEd5RWbSAXRBVV95cUxOdFc4a2x2MDVOVF83VXVIOFdjOG5pc3Y3N2lsWjQ3SmFGNnkxdEhsVUU3ZFA4R216eEJibTNWWUVvc1JtMDJnZGdPY1g4T3NnOHNuM3Jwang4UkFCV2RYZmQwUG5hQW82czNpbEI3a1lJNG9LaQ?oc=5",
+        "published_at": "2026-11-10T07:52:05+00:00",
+        "summary": "코스피 4%대 급반등에 5,200선 회복…외국인 매수 지속 여부 촉각 &nbsp;&nbsp; 산경투데이",
+        "id": "stocks_kr-3"
+      },
+      {
         "title": "‘돌아온 외국인’에 코스피 4.39% 급등…AI 공포 걷혔나",
         "publisher": "시사저널",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5INDVBQWVLZW9lcWdfR2NrOGNwMHduZGZnUjNaQWJTODNaRC1KNnNpVmZxWXBJTWt4UXVCdVpNWWJSNi11TVd6YlVxMS12WkJJT3lLWjhNRlRzVkZId3ZFbUVaR3QwY0xZR25tMEs2UdIBc0FVX3lxTE8tUE1UVUZaSExsY2dKX093amdXUzlxbW5ZUzl2TGlSR1gzOHFJT2FuaHdERDFrMHk0WHZBUW5EYk12VkpUY1FGeTV2RGk4cE5ZaEVkZloyU3N5X0lwcHBCTmMyVm1rRXd5Zjhncng0bjNsOTQ?oc=5",
         "published_at": "2026-11-10T07:31:08+00:00",
         "summary": "‘돌아온 외국인’에 코스피 4.39% 급등…AI 공포 걷혔나 &nbsp;&nbsp; 시사저널",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트]",
@@ -854,7 +861,7 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84b1lPUzFWTXJBMDYwbnE1NU9QODJVelh3elp4STNSWjFpRVZqSndBLTZ5cU9ROFZDaDdnYXRVQ0dTcDE5SUxEczRCT2c5UWtTbjJuek5LNFdKTVpLZm9CelRaRUk1RjYwd2V5bg?oc=5",
         "published_at": "2026-11-10T07:18:00+00:00",
         "summary": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트] &nbsp;&nbsp; 한경매거진",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화”",
@@ -862,7 +869,7 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwV2RjNFFnOGttd2NRUEZkdXZKb2RjVHB0TDZRLUpGX1pMQ053YktDendoQ1l0ajY0UGxDMEJkb21oU1RPeWpQMkdoXzBGQXNHbDFBb1dXeGhYcWd5TVBVYkFqbTBuMXFkcTcyU9IBcEFVX3lxTE1sSmwyRjZMRFN3QU9nd0w2RTE1UzZZOUZnSjZrUWtHajh2U2ZxRUxvTVNjcWU0X3k5elpNWVJ6SjV2M1h3MzdWYkRpM1FPLURHWFYtZEN4bnBxV0lGdnAyZFAxcTZMU19GR1R5aTFPWEI?oc=5",
         "published_at": "2026-11-10T07:02:32+00:00",
         "summary": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화” &nbsp;&nbsp; 글로벌경제신문",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[마감시황] 코스피, 외인·기관 매수에 4.39% 반등…5200선 마감",
@@ -870,7 +877,7 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MM1JTaTY2azUxUXRXRzk5Uk1Hb2NTUUt0X2RHV2lEMDl5V1N2Q3htSUJkeHU2VU92QXdtOGtLZWF2SDNrVjdDWjM2TS1WY1FJdVRqYUpCcUE?oc=5",
         "published_at": "2026-11-10T06:51:28+00:00",
         "summary": "[마감시황] 코스피, 외인·기관 매수에 4.39% 반등…5200선 마감 &nbsp;&nbsp; 블록미디어",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-7"
       },
       {
         "title": "코스피·코스닥, 4%대 급등 마감…4거래일 만에 반등",
@@ -878,7 +885,7 @@
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wMGdwSUk0UVhMMGRIcEd0dXZnT29VTW41Z2x6NWw4SWNnT2JXdWpOSTd1VWU2dE5TYkNQNy1LVHpGcnpkbDU1VE03YUN2M284YzVERFVZbHpYUQ?oc=5",
         "published_at": "2026-11-10T06:40:50+00:00",
         "summary": "코스피·코스닥, 4%대 급등 마감…4거래일 만에 반등 &nbsp;&nbsp; 한국경제",
-        "id": "stocks_kr-7"
+        "id": "stocks_kr-8"
       },
       {
         "title": "코스피 4.39% 급등해 5230선 회복…외국인·기관 8500억 순매수",
@@ -886,14 +893,6 @@
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nVjFhdlNjUEd5a0FzdzF2eEN2S2o0ZThSc2JBc082U3JJWjA2UUtYbkpWdEpLakY4Q0Q4QVhHaWtKWm1IUTl0R2JXM0ZOcDJsTndZb3czd3hVTXgzMDZpX3A4dHp3Wk5J?oc=5",
         "published_at": "2026-11-10T06:36:23+00:00",
         "summary": "코스피 4.39% 급등해 5230선 회복…외국인·기관 8500억 순매수 &nbsp;&nbsp; www.ebn.co.kr",
-        "id": "stocks_kr-8"
-      },
-      {
-        "title": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\"",
-        "publisher": "파이낸셜포스트",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54dkJtSXN4NlB0SEZSdG1MWGpGbjIzbk1NcU1QMk1WVF9NS0RZY09PdmJ3Q0VKR1kwdENYb2hTRVM4R0thdmxBMm9Gc3huMklaZkl1Qm9tOXJ0eEQyMWFmdE9iaGt2SlRxUnBiZlN2aGNlbWc4?oc=5",
-        "published_at": "2026-11-10T06:04:40+00:00",
-        "summary": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\" &nbsp;&nbsp; 파이낸셜포스트",
         "id": "stocks_kr-9"
       }
     ],
@@ -1074,7 +1073,5 @@
       "status": "source_pending"
     }
   },
-  "errors": [
-    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
-  ]
+  "errors": []
 }
