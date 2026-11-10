@@ -993,18 +993,174 @@ def produce():
             "errors": errors}
 
 
+# Keep the forecast archive inside latest.json. The existing GitHub workflow already
+# commits this single file, so archival retention requires NO workflow/secrets change.
+# This is a log of what was forecast *at that time*, not a validated backtest.
+FORECAST_ARCHIVE_VERSION = 1
+FORECAST_BENCHMARKS = {
+    "stocks_kr": "KOSPI",
+    "stocks_us": "NASDAQCOM",
+    # Bond-direction language describes bond-price strength. We retain the
+    # forecast for audit, but DO NOT score its direction against a yield directly.
+    "bonds": None,
+}
+FORECAST_DIRECTIONS = {"상승 우세", "하락 우세", "중립", "판단 유보"}
+
+
+def read_previous_forecast_history(target):
+    """Read committed history; never silently destroy an archive on read error.
+
+    An older latest.json without this field is a valid migration starting point.
+    """
+    if not target.exists():
+        return []
+    try:
+        previous = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"기존 latest.json을 읽을 수 없어 기록 보존을 위해 업데이트를 중단합니다: {exc}") from exc
+    if not isinstance(previous, dict):
+        raise RuntimeError("기존 latest.json 구조가 올바르지 않아 기록 보존을 위해 중단합니다.")
+    history = previous.get("forecast_history", [])
+    if not isinstance(history, list):
+        raise RuntimeError("기존 forecast_history가 배열이 아니어서 기록 보존을 위해 중단합니다.")
+    seen = set()
+    for item in history:
+        if not isinstance(item, dict) or not isinstance(item.get("forecast_date_kst"), str) \
+                or not isinstance(item.get("forecasts"), dict):
+            raise RuntimeError("forecast_history 항목이 손상돼 원본 기록을 유지했습니다.")
+        day = item["forecast_date_kst"]
+        try:
+            if datetime.strptime(day, "%Y-%m-%d").date().isoformat() != day:
+                raise ValueError("noncanonical date")
+        except ValueError as exc:
+            raise RuntimeError(f"forecast_history 날짜가 올바르지 않습니다: {day}") from exc
+        if day in seen:
+            raise RuntimeError(f"forecast_history 중복 기록이 있어 업데이트를 중단합니다: {day}")
+        seen.add(day)
+    return history
+
+
+def snapshot_forecast(report):
+    """Return an immutable dated snapshot, or None if no validated AI report.
+
+    No later market outcome is available to this method: it reads just the
+    already-produced report. In particular, an error or placeholder is NOT a
+    bullish/bearish forecast and will never be logged as one.
+    """
+    ai = report.get("ai")
+    if not isinstance(ai, dict) or ai.get("status") != "ok":
+        return None
+    analysis = ai.get("analysis")
+    if not isinstance(analysis, dict):
+        return None
+    try:
+        stamp = datetime.fromisoformat(report["generated_at"])
+        if stamp.tzinfo is None:
+            return None
+        stamp = stamp.astimezone(KST)
+    except (TypeError, KeyError, ValueError):
+        return None
+    # No references to mutable news excerpts or model-generated essay are kept.
+    data_by_id = {m.get("id"): m for m in report.get("market", []) if isinstance(m, dict)}
+    forecasts = {}
+    for topic, benchmark_id in FORECAST_BENCHMARKS.items():
+        entry = analysis.get(topic)
+        if not isinstance(entry, dict) or entry.get("direction") not in FORECAST_DIRECTIONS:
+            continue
+        if entry.get("confidence") not in ("낮음", "보통", "높음"):
+            continue
+        forecast = {
+            "direction": entry["direction"],
+            "confidence": entry["confidence"],
+            "original_horizon": str(entry.get("horizon") or "미지정")[:80],
+            "benchmark_id": benchmark_id,
+            "benchmark_as_of": None,
+            "benchmark_value": None,
+            "benchmark_source": None,
+            "baseline_status": "not_scored" if topic == "bonds" else "missing",
+            "eligible_for_direction_check": False,
+        }
+        if benchmark_id:
+            market = data_by_id.get(benchmark_id, {})
+            value = market.get("value")
+            basis_date = market.get("as_of")
+            status = market.get("data_status")
+            forecast["benchmark_as_of"] = basis_date if isinstance(basis_date, str) else None
+            forecast["benchmark_source"] = market.get("source")
+            if isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value > 0:
+                forecast["benchmark_value"] = round(float(value), 6)
+                forecast["baseline_status"] = "unverified"
+                try:
+                    observed_day = datetime.strptime(basis_date, "%Y-%m-%d").date()
+                    expected_day = expected_observation_day(benchmark_id, at=stamp)
+                    age = _business_days_between(observed_day, expected_day)
+                    # Prevent stale/future prices from being used for scoring.
+                    if 0 <= age <= 1 and status == "current_or_provider_lag":
+                        forecast["baseline_status"] = "recent_observation"
+                        forecast["eligible_for_direction_check"] = entry["direction"] in ("상승 우세", "하락 우세")
+                    elif age > 1 or status == "delayed":
+                        forecast["baseline_status"] = "delayed"
+                    else:
+                        forecast["baseline_status"] = "date_or_status_check"
+                except (ValueError, TypeError):
+                    forecast["baseline_status"] = "date_or_status_check"
+        forecasts[topic] = forecast
+    if not forecasts:
+        return None
+    return {
+        "forecast_date_kst": stamp.date().isoformat(),
+        "captured_at": stamp.isoformat(),
+        "ai_model": ai.get("model"),
+        "review_status": ai.get("review_status"),
+        "evaluation_horizon_trading_sessions": 5,
+        "horizon_note": "기록 기준 5거래일(약 1주)은 향후 비교를 위한 운영상 정의이며 원문 분석 기간은 별도 보존함",
+        "forecasts": forecasts,
+    }
+
+
+def update_forecast_archive(report, previous_history):
+    """Add only the FIRST successful forecast of each KST date, preserving all old entries.
+
+    Same-day retries never rewrite the original forecast, preventing hindsight
+    edits after a price move. Defer comparisons to a later separate step.
+    """
+    history = list(previous_history)
+    snapshot = snapshot_forecast(report)
+    if snapshot and snapshot["forecast_date_kst"] not in {h["forecast_date_kst"] for h in history}:
+        if history and snapshot["forecast_date_kst"] < max(h["forecast_date_kst"] for h in history):
+            # Never backdate a newly created forecast. Example: a stale clock
+            # or a user running test with an old timestamp.
+            raise RuntimeError("기록 타임스탬프가 기존 최신 기록보다 이전입니다. 과거 예측으로 소급 저장하지 않습니다.")
+        history.append(snapshot)
+    report["forecast_archive_version"] = FORECAST_ARCHIVE_VERSION
+    report["forecast_history"] = history
+    report["forecast_archive_summary"] = {
+        "saved_days": len(history),
+        "latest_saved_date": history[-1]["forecast_date_kst"] if history else None,
+        "current_run_archived": bool(snapshot and history and history[-1] is snapshot),
+        "note": "AI 예측 시점의 원본 기록. 실제 결과·예측 적중률 검증은 아직 미구현입니다. 동일 한국 날짜 재실행 시 최초 기록을 유지합니다.",
+    }
+    return report
+
+
 def main():
     parser = argparse.ArgumentParser(description="Refresh market dashboard JSON")
     parser.add_argument("--output", default=str(BASE / "site/data/latest.json"))
     args = parser.parse_args()
-    report = produce()
     target = Path(args.output)
+    # Read BEFORE making API requests; refuse to overwrite corrupted history.
+    # The archive lives inside latest.json so the existing workflow's git add
+    # already includes all saved snapshots.
+    history = read_previous_forecast_history(target)
+    report = produce()
+    report = update_forecast_archive(report, history)
     target.parent.mkdir(parents=True, exist_ok=True)
     pending = target.with_suffix(target.suffix + ".tmp")
     pending.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pending.replace(target)
     print(f"Updated: {target} | news={sum(len(v) for v in report['news'].values())} | "
-          f"market={sum(v['value'] is not None for v in report['market'])} | ai={report['ai']['status']}")
+          f"market={sum(v['value'] is not None for v in report['market'])} | ai={report['ai']['status']} | "
+          f"saved_forecast_days={report['forecast_archive_summary']['saved_days']}")
     if report['errors']:
         print("Partial sources unavailable:", ", ".join(report['errors']), file=sys.stderr)
 
