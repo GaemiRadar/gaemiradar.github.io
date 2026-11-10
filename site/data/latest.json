@@ -1,83 +1,83 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-10T17:57:07.021855+09:00",
+  "generated_at": "2026-11-10T20:06:39.454961+09:00",
   "source_note": "Google 뉴스 RSS 제목/요약 + FRED/Yahoo 데이터. 원문 전체를 읽은 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.6-flash → gemini-3.5-flash",
-    "draft_model": "gemini-3.6-flash",
+    "model": "gemini-3.5-flash-lite → gemini-3.5-flash",
+    "draft_model": "gemini-3.5-flash-lite",
     "review_model": "gemini-3.5-flash",
     "review_status": "completed",
-    "headline": "코스피 5200선 회복 및 뉴욕증시 반등 속 금리·부동산 변동성 주시",
-    "overview": "국내 증시는 코스피가 5200선을 회복하며 급등했고 미국 증시도 나스닥을 중심으로 반등했습니다. 부동산 시장은 입주전망 지표 혼조와 실제 집값 통계 부재로 방향성 판단을 유보합니다. 채권 시장은 외국인 순매수와 금리 상승·하락 보도가 상충하는 가운데 채권 금리와 고정금리 채권 가격은 반대로 움직입니다.",
+    "headline": "반도체주 반등 속 증시 상승세, 부동산·채권 시장은 금리 우려에 혼조",
+    "overview": "한국 코스피와 미국 나스닥 지수가 반도체주 반등 영향으로 상승세를 보였습니다. 부동산 시장은 입주전망 지표 발표에도 실제 집값 데이터 부재와 금리 및 대출 부담으로 판단을 유보하며, 채권 시장은 외국인 순매수와 미국 금리 인상 가능성이 대립하고 금리와 고정금리 채권 가격 간 반대 방향 움직임 속에 관망세를 보이고 있습니다.",
     "analysis": {
       "stocks": {
         "direction": "상승 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "한국 증시는 코스피가 4%대 급등하며 5200선을 회복했고, 미국 증시는 나스닥 지수가 2.74% 상승하며 반등했습니다. 한국과 미국 증시 모두 상승세를 보였으나 엔비디아 급락 및 미국 물가지표 발표를 앞둔 변동성 위험이 공존합니다.",
+        "summary": "한국 코스피가 5,200선을 회복하고 미국 나스닥 지수가 반도체주 회복으로 반등했으나 미국 물가지표 발표를 앞두고 변동성 우려가 공존합니다.",
         "bull_cases": [
-          "한국 코스피 지수 4%대 급등 및 5200선 회복",
-          "미국 나스닥 지수 2.74% 상승 반등"
+          "코스피 4%대 급등 및 5,200선 회복",
+          "미국 나스닥 지수 반등 및 반도체 업종 회복세"
         ],
         "bear_cases": [
-          "엔비디아 급락에 따른 AI 주식 변동성 우려",
-          "미국 물가지표 발표를 앞둔 시장 경계감"
+          "미국 물가지표 발표를 앞둔 변동성 확대 가능성",
+          "엔비디아 등 일부 대형 기술주 시가총액 변동에 따른 불확실성"
         ],
         "watch": [
-          "한국 코스피 및 코스닥 지수 동향",
-          "미국 주요 증시 지수 및 VIX 변동성 지수"
+          "미국 소비자물가지수 등 주요 물가지표 발표",
+          "외국인 투자자 매수세 지속 여부 및 반도체 실적"
         ],
         "citation_ids": [
-          "stocks-0",
-          "stocks-3",
+          "stocks-1",
+          "stocks-4",
           "stocks-6"
         ]
       },
       "housing": {
         "direction": "판단 유보",
         "confidence": "낮음",
-        "horizon": "중기",
-        "summary": "11월 전국 아파트 입주전망지수는 소폭 상승한 반면 수도권과 서울은 금리 및 잔금대출 부담으로 하락했습니다. 실제 매매 가격 통계가 제시되지 않아 전국 집값 방향은 판단을 유보합니다.",
+        "horizon": "단기",
+        "summary": "전국 아파트 입주전망지수는 소폭 반등했으나 수도권은 금리와 잔금대출 부담으로 하락세를 나타냈습니다. 실제 집값 통계가 없어 방향성 판단을 유보합니다.",
         "bull_cases": [
-          "전국 아파트 입주전망지수 4개월 만에 소폭 상승",
-          "일부 1기 신도시 지역 거래 및 가격 상승 보도"
+          "전국 아파트 입주전망지수 4개월 만에 소폭 반등",
+          "일부 1기 신도시 지역의 거래 증가 및 가격 상승 보도"
         ],
         "bear_cases": [
-          "금리 인상 우려로 인한 수도권 아파트 입주전망지수 하락",
-          "서울 아파트 매물 증가 및 거래 감소"
+          "수도권 아파트 입주전망지수 하락 및 잔금대출 부담",
+          "서울 지역 매물 누적 대비 거래 위축 현상"
         ],
         "watch": [
-          "수도권 아파트 입주전망지수 변화",
-          "기준금리 및 대출금리 동향"
+          "기준금리 및 잔금대출 등 금융 규제 동향",
+          "수도권 아파트 입주율 및 매물 소진 추이"
         ],
         "citation_ids": [
           "housing-0",
           "housing-1",
-          "housing-4"
+          "housing-5"
         ]
       },
       "bonds": {
-        "direction": "판단 유보",
+        "direction": "중립",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "외국인 한국 채권 순매수 및 국고채 금리 하락 보도와 미국 고용 호조로 인한 금리 상승 보도가 상충합니다. 채권 금리와 고정금리 채권 가격은 반대로 움직입니다.",
+        "summary": "외국인 순매수세로 국내 국고채 금리가 하락(채권 가격 상승)한 반면, 미국 고용 호조에 따른 금리 인상 우려로 금리 상승(채권 가격 하락) 가능성이 맞서고 있습니다.",
         "bull_cases": [
-          "외국인 한국 채권 8.5조원 순매수 및 금리 하락 시 고정금리 채권 가격 상승 요인",
-          "안전자산 선호 심리 유입"
+          "외국인 10월 국내 채권 8.5조원 순매수로 인한 금리 하락(채권 가격 상승) 압력",
+          "미국 중간선거 이후 채권시장 강세 전환 기대"
         ],
         "bear_cases": [
-          "미국 고용 호조에 따른 국고채 금리 상승 및 채권 가격 하락 압력",
-          "미국 국채 금리 상승 등 해외 금리 부담"
+          "미국 고용 호조에 따른 12월 기준금리 인상 가능성 및 금리 상승(채권 가격 하락) 우려",
+          "10월 채권 발행량 증가에 따른 공급 부담"
         ],
         "watch": [
-          "미국 국채 10년물 및 2년물 금리 추이",
-          "한국 국고채 금리 변동 및 외국인 수급"
+          "미국 고용 및 물가 지표 발표 결과",
+          "국고채 발행 물량 및 외국인 채권 매매 동향"
         ],
         "citation_ids": [
           "bonds-0",
           "bonds-2",
-          "bonds-5"
+          "bonds-4"
         ]
       }
     }
@@ -767,12 +767,20 @@
   "news": {
     "stocks": [
       {
+        "title": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트]",
+        "publisher": "한경매거진",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84b1lPUzFWTXJBMDYwbnE1NU9QODJVelh3elp4STNSWjFpRVZqSndBLTZ5cU9ROFZDaDdnYXRVQ0dTcDE5SUxEczRCT2c5UWtTbjJuek5LNFdKTVpLZm9CelRaRUk1RjYwd2V5bg?oc=5",
+        "published_at": "2026-11-10T07:18:00+00:00",
+        "summary": "‘블루 웨이브’에 출렁인 코스피…반등 열쇠는 외국인과 반도체 실적[전예진의 마켓 인사이트] &nbsp;&nbsp; 한경매거진",
+        "id": "stocks-0"
+      },
+      {
         "title": "코스피 5200선 회복 4%대 급등 [시황종합]",
         "publisher": "https://www.2news.co.kr/",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3U2xUMktINkVGRDBoLS1aQWNzQWVUUndxUVJIRFBxanUtMWdZY2NNSUtxMXNqWDVjNEo2clhWTHRXN0ZPSHJRcUoxZ3Mta2tUUmNyeFg1MjV2aEVvTHBnV1B3R29BYV9S?oc=5",
         "published_at": "2026-11-10T07:08:00+00:00",
         "summary": "코스피 5200선 회복 4%대 급등 [시황종합] &nbsp;&nbsp; https://www.2news.co.kr/",
-        "id": "stocks-0"
+        "id": "stocks-1"
       },
       {
         "title": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화”",
@@ -780,7 +788,7 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwV2RjNFFnOGttd2NRUEZkdXZKb2RjVHB0TDZRLUpGX1pMQ053YktDendoQ1l0ajY0UGxDMEJkb21oU1RPeWpQMkdoXzBGQXNHbDFBb1dXeGhYcWd5TVBVYkFqbTBuMXFkcTcyU9IBcEFVX3lxTE1sSmwyRjZMRFN3QU9nd0w2RTE1UzZZOUZnSjZrUWtHajh2U2ZxRUxvTVNjcWU0X3k5elpNWVJ6SjV2M1h3MzdWYkRpM1FPLURHWFYtZEN4bnBxV0lGdnAyZFAxcTZMU19GR1R5aTFPWEI?oc=5",
         "published_at": "2026-11-10T07:02:32+00:00",
         "summary": "금융연 “내년 주식시장, 반도체·금리 등 불확실성 해소 후 하반기 안정화” &nbsp;&nbsp; 글로벌경제신문",
-        "id": "stocks-1"
+        "id": "stocks-2"
       },
       {
         "title": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\"",
@@ -788,7 +796,7 @@
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54dkJtSXN4NlB0SEZSdG1MWGpGbjIzbk1NcU1QMk1WVF9NS0RZY09PdmJ3Q0VKR1kwdENYb2hTRVM4R0thdmxBMm9Gc3huMklaZkl1Qm9tOXJ0eEQyMWFmdE9iaGt2SlRxUnBiZlN2aGNlbWc4?oc=5",
         "published_at": "2026-11-10T06:04:40+00:00",
         "summary": "[2027 경제·금융 전망] 반도체 넘어 상승 업종 확대 기대…이진우 \"내년 코스피 8700 가능\" &nbsp;&nbsp; 파이낸셜포스트",
-        "id": "stocks-2"
+        "id": "stocks-3"
       },
       {
         "title": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송]",
@@ -796,7 +804,7 @@
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNlZVTmRCTFlsMms2bUwxc3kwbWxKU2RSZldPbk12bVFCN2xnMjRXOXk4aWhKdXNMeS15VW1tbjlCX2RDaDFvRTRJNEF0UGQtTnFoY3lTelNxLXpIcUNXM2xsemNFX3pTcGdQbUJyUk5VYV9RMUxlRTJmU3B0UVU3Nw?oc=5",
         "published_at": "2026-11-09T23:08:50+00:00",
         "summary": "반도체주 반등에 뉴욕증시 급등…엔비디아만 258조 증발[뉴스새벽배송] &nbsp;&nbsp; 이데일리",
-        "id": "stocks-3"
+        "id": "stocks-4"
       },
       {
         "title": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목",
@@ -804,7 +812,7 @@
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZMnBVQW1ibmpUd2FERzVmazhWcUoyNlIwNGlKeGhxSTRmclJJQThZU0UwY2trTEVYVDZPdWJuVi1iMlNJM3lvTXE0SHVidlUtSzl4TjN6R0JoeVBZV2ZZVDlLYW0zQXk4T3YwRjNQNA?oc=5",
         "published_at": "2026-11-09T22:58:14+00:00",
         "summary": "[오늘 증시 ] 뉴욕증시 3대 지수 동반 반등…코스피 5,000선 방어 여부 주목 &nbsp;&nbsp; 톱뉴스",
-        "id": "stocks-4"
+        "id": "stocks-5"
       },
       {
         "title": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의",
@@ -812,7 +820,23 @@
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85YjBLZmNUdXh5elNsd0ExbE91WmozVjM0b214Vk5oSXhjel9iTEVOSjlveVJETFBmX1RLQ2xtQmZKcW1uVEYweXV5Wm91YzZLampKSV80enA4LXA5N1J0UG95Mmt0enBoTTFTN1F3?oc=5",
         "published_at": "2026-11-09T22:26:39+00:00",
         "summary": "[오늘 증시 전망] 뉴욕증시 2%대 반등에 코스피 5,000선 지킬까…미국 물가지표 발표 앞두고 변동성 주의 &nbsp;&nbsp; 업코리아",
-        "id": "stocks-5"
+        "id": "stocks-6"
+      },
+      {
+        "title": "증시 옥죄던 고금리, 꺾여도 호재 아니다?",
+        "publisher": "데일리안",
+        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMVRsZnh1eUFOSmdzQU5sTE5UZkRMNk0waUQzazdtekJfMFE3UXpfNnZnOERnVEhOZi0weWFwMUtoWGxjMTM5WEE3ZExEazdYbmhFWTgxaU55Y0gwRG5jcUhYS0VwaGFkNG41VmJzT1owRUpaS3h4bmNGZDVwOFBFcDNDVllkSmpvUWozMGdQaVZXdE1ja25TTzUzQmd4YkZkLTlaYjJ4VzFNNHlKclpMeXBzVjE5Q0hnUWhJSllHbkR1cl81U2ZpclAwb2hsdFdsUWpPTFpuR3NJRmswcHJfUG9Pcllrb0pmM1NYa1pOWjc1MUMtNG00TmZjOEVBcFBJYnZXdjNUbGdjeUhfSjRveVQtdGRNQ3R2?oc=5",
+        "published_at": "2026-11-09T22:04:00+00:00",
+        "summary": "증시 옥죄던 고금리, 꺾여도 호재 아니다? &nbsp;&nbsp; 데일리안",
+        "id": "stocks-7"
+      },
+      {
+        "title": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승",
+        "publisher": "증권일보",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qY3dKeC11OW12WW84SEF6WUh1eDZSRG9DeS1CM1BzYVJQcmhsYnJ1RkV1V2NzX2tsQlR0ZFREenRBWld5MDdKcElGMkJEc1dEdkdSUEhGQkstTFhlWnBHSA?oc=5",
+        "published_at": "2026-11-09T22:03:00+00:00",
+        "summary": "뉴욕증시, 유가 급락에 기술주 반등…나스닥 2.74% 상승 &nbsp;&nbsp; 증권일보",
+        "id": "stocks-8"
       },
       {
         "title": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합]",
@@ -820,30 +844,6 @@
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xZzZObHo2U1lUYU96OEx4MzRKYm5rLXFvR29YU1ZsUkVKem1TRUdSXzl3azZNajU1NGZ5M3V1QTdNT1NlR2UwR3FocnFZeGMwX2N0eA?oc=5",
         "published_at": "2026-11-09T21:57:00+00:00",
         "summary": "뉴욕증시, 엔비디아 급락에도 ‘활짝’…나스닥 2.74%↑ [종합] &nbsp;&nbsp; 이투데이",
-        "id": "stocks-6"
-      },
-      {
-        "title": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락",
-        "publisher": "중앙신문",
-        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOQ09mV3BVbTEzd0ZUVDNWeVFXUzFJcU9jcVJuNkMwMHVXdVByS1FiR3ZwOWhpNm1NaWJSOFozMVoxYlFNT3kzcUhqTnpad0wwX2Itb1pqbHpBZEY1dlQ5MlB5emdxdmgxVjFSTFExSFhFRzE1cGl4YktFN0lBd3JPT08teUgzMmdjOEo2bkV0NTh6UF9Mb1NtU003aXNwYzlvMEtmMmpOZUtKenRHbkpRTWFrNGQwX25nT2lCOThnYjNFTFdHNUJIa1o0OFd2MzdrV0psMElGSEM0QS1PZmpJZXd4a1R6Szh3YjM4ai12a1JiVkFqRXM3dFB1MUtMNVhjTmQ4VVUzUTFGaDVtblRMVzRTOHZ0eVFPVmtESE81OFhMN0tQNW1QbjhMTTl6MFZkRFh2Y2Q2ejE4b1dERFJtanlIanUzYmVMTm9nQUtwd2poTjlNclFkbTF2dE1ONENXSE5Wb3hiQnBQYWRvTFE?oc=5",
-        "published_at": "2026-11-09T21:52:21+00:00",
-        "summary": "[뉴욕증시] AI주 급락 충격 딛고 일제히 반등 마감…엔비디아 급락 &nbsp;&nbsp; 중앙신문",
-        "id": "stocks-7"
-      },
-      {
-        "title": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pc09NSkJqTGxZV1htTndNX2dGZzkyNHg4aDBjT0kzcHYwWk9lU3hFUjVaRm94a1g0MlBzWEcwVEVCMG53cE81QTczZmNoaUFUM21XOHNTc3lLekIyazFkWFlwMURhN2s?oc=5",
-        "published_at": "2026-11-09T08:00:00+00:00",
-        "summary": "[마감시황] 외국인 6586억 매도 코스피 사흘째 하락 &nbsp;&nbsp; 자본시장뉴스",
-        "id": "stocks-8"
-      },
-      {
-        "title": "코스피, 반도체주 반등에도 5010선 약세 마감···한화M&S 10% 급등",
-        "publisher": "서울파이낸스",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WVmdWQlIweUF0clNQYzd2QnYweE9LeXZoTUZMWERPdWh1M3g0VjBPSnhfbFlPcndRaVZXbHhTaE9BVUs4dVhfa2UyVS1mLWRUcXY3eFF0QnlPYk5zenFPRlRNTDlXY3hlRnc?oc=5",
-        "published_at": "2026-11-09T07:42:08+00:00",
-        "summary": "코스피, 반도체주 반등에도 5010선 약세 마감···한화M&S 10% 급등 &nbsp;&nbsp; 서울파이낸스",
         "id": "stocks-9"
       }
     ],
@@ -939,12 +939,28 @@
         "id": "bonds-0"
       },
       {
+        "title": "외국인, 10월 채권 8.5조 순매수…국고채 금리 일제히 하락",
+        "publisher": "코리아리포트",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NdzJLNFppYXZDVTkxUlZzd0EyNkNwdWIwY2dWTmEzVUtrMnRydkxJeFQ1cTNHcmkyMnhBSGVUcjI3NU1zcU13RE13RWFsZnRid3RIMF8wQXJybTI4Z3p5TnV2eWNWa3p0Wm9udE8wNmE?oc=5",
+        "published_at": "2026-11-10T08:41:44+00:00",
+        "summary": "외국인, 10월 채권 8.5조 순매수…국고채 금리 일제히 하락 &nbsp;&nbsp; 코리아리포트",
+        "id": "bonds-1"
+      },
+      {
+        "title": "물가불안 속 고용 선방 … 美 12월 금리인상 탄력",
+        "publisher": "매일경제",
+        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5pelFuZDZ2dmF4ZWpNbEFEel9EbjgzR0o2NUdGUi16Y0VWVjBSZ0RWc0dBY3ZVNllkUGRhcHlVd003Tjgzc3c?oc=5",
+        "published_at": "2026-11-10T08:32:34+00:00",
+        "summary": "물가불안 속 고용 선방 … 美 12월 금리인상 탄력 &nbsp;&nbsp; 매일경제",
+        "id": "bonds-2"
+      },
+      {
         "title": "美 중간선거 이후 채권시장 강세···수익률 개선 여력은",
         "publisher": "서울파이낸스",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYR3VhREttUEtsUTVITHh6ZHhJT1hGVVhzV0p0VE14bXo0MnZaOFBxc1BHdFJWVFdIWkZUZTJ6ZjNVWFE1aVJRcWNVUFpHSkpJTy1WTHZpMXRESXYzYTcySU1CWTJMWUhrZ2c?oc=5",
         "published_at": "2026-11-10T07:21:21+00:00",
         "summary": "美 중간선거 이후 채권시장 강세···수익률 개선 여력은 &nbsp;&nbsp; 서울파이낸스",
-        "id": "bonds-1"
+        "id": "bonds-3"
       },
       {
         "title": "미국 고용 호조에 국고채 금리 일제히 상승…3년물 연 3.639%",
@@ -952,7 +968,7 @@
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IQzRaVDhqUUYwY1JQaVNmSTFqTXYxazhkR1NvV2JPUF9DRm4xME9lYklPdS1kWU11WW5TRzI2TzZXSHVjblk5RzBCN1d4QUg1MUJoVWNQMXplMjYweGMzNmlhVFhXWDk2eDhlekhR?oc=5",
         "published_at": "2026-11-10T06:54:01+00:00",
         "summary": "미국 고용 호조에 국고채 금리 일제히 상승…3년물 연 3.639% &nbsp;&nbsp; 폴리뉴스 Polinews",
-        "id": "bonds-2"
+        "id": "bonds-4"
       },
       {
         "title": "외국인, 韓채권 8.5조 순매수 전환…국고채 금리 '뚝'",
@@ -960,7 +976,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Eb21DRUVrQWZRazJGbW9UR0pYTmhFMmU4ZjlyYk0xTFJ5aE1jV3BmNjM0UzdjWHZzNUFwcjVsYkNIZ0IybmVvVmx3M0J5SE80LWJtQ3owTmx1X0ZTNGlrRlluWEYzSmtUQzJTOW1xdTJDQVk?oc=5",
         "published_at": "2026-11-10T04:45:49+00:00",
         "summary": "외국인, 韓채권 8.5조 순매수 전환…국고채 금리 '뚝' &nbsp;&nbsp; 마켓인",
-        "id": "bonds-3"
+        "id": "bonds-5"
       },
       {
         "title": "금융투자협회, '2026년 10월 장외채권시장 동향' 발표...채권 발행 91조원",
@@ -968,7 +984,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5FdmxIdzNKSGszNE1KZHdrWS1jZUdDVFlRUlZCZTJjY1libkhOeFJ4R0VxSDh3UFh4dXpmb0tVWGxDNVBZYkNyZDlQbUhMZDEwRGpsZElDdmc0YWFZQzN4WmdxZ1dMcl9iT3VSdFVfVUpkVFXSAXdBVV95cUxNZWtnZGsyczY5R1ZxamZpdUw2cWxRN0RnVm9scWRXYkhpNy1wR0ZJU3NaMFFkcFZDcVpVcE1uQlJqYVRLNlNvZUZGaVpfZm5NQ0RTdG55am5zS3RRdzZ2N2s1Z0Q5OTZzYnhJYTZPeDVSdVlZOTk0Zw?oc=5",
         "published_at": "2026-11-10T04:43:53+00:00",
         "summary": "금융투자협회, '2026년 10월 장외채권시장 동향' 발표...채권 발행 91조원 &nbsp;&nbsp; 핀포인트뉴스",
-        "id": "bonds-4"
+        "id": "bonds-6"
       },
       {
         "title": "美 30년물 24년 만에 최고인데…국고채 금리는 전 구간 하락, 외국인 8.5조 ‘사자’",
@@ -976,15 +992,7 @@
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nZlBWelAtdjNSNDNhd0Fhd1dNb0xtWGN0eWtfeW9MRVFkLU5KaUhnRXRFdllFb2Z1QTZpbmVJZE16SWRPX0NTOUFUaWFfTjJTMW5LSmlsNDFUdlp4TlRYRXhCbnE?oc=5",
         "published_at": "2026-11-10T04:17:05+00:00",
         "summary": "美 30년물 24년 만에 최고인데…국고채 금리는 전 구간 하락, 외국인 8.5조 ‘사자’ &nbsp;&nbsp; https://www.ppss.kr/",
-        "id": "bonds-5"
-      },
-      {
-        "title": "[미리보기] 11월 2주차 금융시장 전망",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Cd0FZbWlpT1M0UTFiYk16VEpudDhfVjVYVngzLXB6SV9YWFFBSEIyRHJ3V2VjU1RZSnJHZ25YaGR2Q2FfeExYM0xnZ3pCalpKbmNUcEk0T2o0aXFHQnlvWENoVjAySkpTa3A0UA?oc=5",
-        "published_at": "2026-11-10T04:08:03+00:00",
-        "summary": "[미리보기] 11월 2주차 금융시장 전망 &nbsp;&nbsp; KB Think",
-        "id": "bonds-6"
+        "id": "bonds-7"
       },
       {
         "title": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이",
@@ -992,7 +1000,7 @@
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNNIBe0FVX3lxTFBGN2E5ZHphb1VKSUZIdG0wMFlqUjhUeldqQTdOeVB3MDRmd1JjdWwya21obVV0ZnZSd3FfM0piT2Z6bFgwRF9wU1lEZTFnTkxTLVJ1a2k5R0hXaHpmZUo4Wmt1cVphdy0tbmplZFRGVzlJWng5Yzg2UkJjNA?oc=5",
         "published_at": "2026-11-10T01:59:21+00:00",
         "summary": "10월 국고채 전 구간 하락… 외인 선물 매수·안전자산 선호 심리 영향 - 머니투데이 &nbsp;&nbsp; 머니투데이",
-        "id": "bonds-7"
+        "id": "bonds-8"
       },
       {
         "title": "외국인 8.5조원 채권 순매수···10월 국고채 금리 일제히 하락",
@@ -1000,17 +1008,11 @@
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NRU44S0JLM3h4WW0zLWlPNTQ3Ny1XTlNtNmhMbEQzT0MyTE5MRHJPclNpb3FKRnJJb2puamF4WE5CN0N3eGhxTUI4cG00ODZZMFI4SVI0dHpNcFRaWkd3eWdaMGtJcENZbmc?oc=5",
         "published_at": "2026-11-10T01:45:31+00:00",
         "summary": "외국인 8.5조원 채권 순매수···10월 국고채 금리 일제히 하락 &nbsp;&nbsp; 서울파이낸스",
-        "id": "bonds-8"
-      },
-      {
-        "title": "10월 채권 발행 91조…금융채·특수채 늘며 전월 대비 4.5조↑",
-        "publisher": "뉴시스",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3blZtWWNPV1QyeldIcW5xTTNRSnpyVGhKVndhel9iSmhBc1NUMzJ6YW9qc3lJbDVJUVBwdG9xdEtpb1Q3LS03SUF3aVFjellqRDJZdGE0cGo5Yjh4cHVpNtIBeEFVX3lxTFA1Vk1LTURyTHlGWEYtQmtaREhBdDZJcEVkU2VRQTFMeDF5Z2tEUVBSVlZmS3BWRmV4U0o0RmphdDBLVlNGR3NPY242b1R4YktOc1N5Nk14QWJlc2tYUFBBbTg5c21mTW95QVVlcjlnOHJGM1VWemFhbQ?oc=5",
-        "published_at": "2026-11-10T01:36:14+00:00",
-        "summary": "10월 채권 발행 91조…금융채·특수채 늘며 전월 대비 4.5조↑ &nbsp;&nbsp; 뉴시스",
         "id": "bonds-9"
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "Flash 모델 gemini-3.6-flash 실패: ClientError (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quo"
+  ]
 }
