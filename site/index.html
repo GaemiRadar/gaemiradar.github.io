@@ -58,6 +58,9 @@
     .metric-value{font-size:24px;letter-spacing:-.9px;font-weight:850;margin:12px 0 9px;font-variant-numeric:tabular-nums;white-space:nowrap}
     .metric-value.empty{font-size:15px;color:#9aa5b5;letter-spacing:-.2px;margin-top:20px}
     .metric-foot{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:11px;color:#a5afbc}
+    .metric-freshness{margin-top:9px;color:#8693a6;font-size:10px;line-height:1.5;word-break:keep-all}
+    .metric-freshness.old{color:#a36c3b}
+    .metric-freshness.unknown{color:#9ca7b7}
     .delta{font-size:12px;font-weight:850}.delta.up{color:var(--up)}.delta.down{color:var(--down)}.delta.neutral{color:#8692a4}
     .view-tabs{display:flex;gap:7px;background:#ebeff5;border-radius:12px;padding:4px;width:max-content;max-width:100%;flex-wrap:wrap}
     .tab{border:0;background:transparent;color:#8694a7;padding:8px 18px;border-radius:9px;font-weight:750;font-size:12px}
@@ -181,7 +184,42 @@ function fmtNumber(v,precision){return Number(v).toLocaleString('ko-KR',{minimum
 function formatDelta(m){if(!Number.isFinite(Number(m.change))||m.change===null)return {cls:'neutral',text:'변동률 없음'};const val=Number(m.change);const prefix=val>0?'+':'';return {cls:val>0?'up':val<0?'down':'neutral',text:`${prefix}${fmtNumber(val,2)}${m.change_unit==='pp'?'%p':'%'}`}}
 function directionClass(dir){if(dir==='상승 우세')return 'up';if(dir==='하락 우세')return 'down';if(dir==='중립')return 'flat';return ''}
 function setNodeText(id,val){$(id).textContent=val}
-function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=Array.isArray(state.data.market)?state.data.market:[];for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'))}
+// Data freshness labels describe the timestamp present in latest.json, not real-time quotes.
+// Business-day counts skip weekends only. Exchange-specific holidays and publisher
+// schedules cannot be inferred from this file, so age is an advisory, not proof of outage.
+function kstDateParts(dateString){
+  const d=new Date(dateString);
+  if(Number.isNaN(d.getTime()))return null;
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(d);
+  const p=Object.fromEntries(parts.map(x=>[x.type,x.value]));
+  return {day:`${p.year}-${p.month}-${p.day}`,hour:Number(p.hour),minute:Number(p.minute)};
+}
+function weekdayGap(startYmd,endYmd){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(startYmd||'') || !/^\d{4}-\d{2}-\d{2}$/.test(endYmd||''))return null;
+  let t=Date.parse(startYmd+'T00:00:00Z'),end=Date.parse(endYmd+'T00:00:00Z');
+  if(!Number.isFinite(t)||!Number.isFinite(end)||t>end)return null;
+  let n=0;
+  for(t+=86400000;t<=end && n<366;t+=86400000){const day=new Date(t).getUTCDay();if(day!==0&&day!==6)n++}
+  return n;
+}
+function metricFreshness(m){
+  if(m.value===null||m.value===undefined||!m.as_of)return {text:'수집 실패 또는 자료 미제공',cls:'unknown'};
+  const gen=kstDateParts(state.data.generated_at);
+  const viewed=kstDateParts(new Date().toISOString());
+  const lag=viewed?weekdayGap(m.as_of,viewed.day):null;
+  const id=m.id;
+  let type='일별 관측값';
+  if(id==='KOSPI'||id==='KOSDAQ'){
+    const intraday=gen && gen.day===m.as_of && gen.hour>=9 && (gen.hour<15||(gen.hour===15&&gen.minute<40));
+    type=intraday?'장중 수치 가능 · 지연 시세 주의':'일별 지수 · 종가 여부 제공처 확인';
+  }else if(id==='SP500'||id==='NASDAQCOM')type='미국 일별 지수 종가';
+  else if(id==='DGS10'||id==='DGS2')type='일별 국채금리 관측값';
+  else if(id==='DEXKOUS')type='일별 환율 관측값';
+  else if(id==='VIXCLS')type='일별 변동성지수';
+  const lagLabel=lag===null?'발표 시차 미확인':lag===0?'당일 자료':lag===1?'전 영업일 자료':`기준일 ${lag}평일 경과`;
+  return {text:`${type} · ${lagLabel}`,cls:lag!==null&&lag>=3?'old':''};
+}
+function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=Array.isArray(state.data.market)?state.data.market:[];for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);const freshness=metricFreshness(m);item.append(create('div',`metric-freshness ${freshness.cls}`,freshness.text));if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'))}
 function makeList(items){const ul=create('ul','prop-list');(Array.isArray(items)?items:[]).slice(0,3).forEach(s=>ul.append(create('li','',s)));if(!ul.children.length)ul.append(create('li','','확인 가능한 근거가 없습니다.'));return ul}
 function refMap(){const m={};for(const [cat,arr] of Object.entries(state.data.news||{})){if(!Array.isArray(arr))continue;for(const a of arr){if(a.id)m[a.id]=a}}return m}
 function renderOutlooks(){const parent=$('outlooks');parent.replaceChildren();const analyses=state.data.ai?.analysis||{};const refs=refMap();const cats=state.tab==='all'?Object.keys(CATS):state.tab==='stocks'?[state.stockMarket==='KR'?'stocks_kr':'stocks_us']:[state.tab];for(const cat of cats){const data=analyses[cat]||{};const card=create('article','outlook');const top=create('div','outlook-top');top.append(create('div',`round-icon ${cat}`,CATS[cat].icon));const heading=create('div');heading.append(create('div','outlook-name',CATS[cat].name),create('div','outlook-kind',CATS[cat].subtitle));top.append(heading);top.append(create('span',`direction ${directionClass(data.direction)}`,data.direction||'판단 유보'));card.append(top,create('div','outlook-summary',data.summary||'검증된 자료를 수집하는 중입니다.'));const meta=create('div','outlook-meta');meta.append(create('span','',`분석 기간: ${data.horizon||'―'}`));const c=create('span','','·  신뢰도: ');c.append(create('b','',data.confidence||'―'));meta.append(c);card.append(meta);const proscons=create('div','proscons');for(const [kind,title,key] of [['pro','상승 요인','bull_cases'],['con','하락 요인','bear_cases']]){const section=create('div');section.append(create('div',`prop-title ${kind}`,(kind==='pro'?'↑ ':'↓ ')+title),makeList(data[key]));proscons.append(section)}card.append(proscons);const w=create('div','watch');w.append(create('b','','관찰 지표  '));w.append(document.createTextNode((data.watch||[]).join(' · ')||'데이터 연결 후 표시'));card.append(w);const links=create('div','refs');(data.citation_ids||[]).slice(0,3).forEach(id=>{const a=refs[id];if(!a||!externalURL(a.url))return;const link=create('a','',a.publisher||'근거 기사');link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.title=a.title||'';links.append(link)});if(links.childElementCount)card.append(links);parent.append(card)}}
