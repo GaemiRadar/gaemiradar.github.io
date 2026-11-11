@@ -1,15 +1,11 @@
 name: Daily Dual-AI Finance Briefing
 
+# Only the daily schedule or an explicit manual trigger can call Gemini.
+# Updating the website HTML, code, or other workflow files no longer
+# launches an extra paid/quota-consuming AI report run.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'site/index.html'
-      - 'scripts/**'
-      - 'requirements.txt'
-      - '.github/workflows/daily.yml'
   schedule:
-    # 09:07 Korean time = 00:07 UTC. Actual GitHub execution may be delayed.
+    # 09:07 KST = 00:07 UTC; actual GitHub start may be delayed.
     - cron: '7 0 * * *'
   workflow_dispatch:
 
