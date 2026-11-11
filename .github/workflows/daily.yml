@@ -21,6 +21,7 @@ permissions:
 concurrency:
   group: market-pulse-pages
   cancel-in-progress: false
+  queue: max
 
 jobs:
   build:
