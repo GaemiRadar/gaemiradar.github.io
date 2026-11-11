@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-11T18:22:44.716724+09:00",
+  "data_updated_at": "2026-11-11T19:43:43.210380+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.17,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-11T18:22:44.716724+09:00",
+      "fetched_at": "2026-11-11T19:43:43.210380+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.1,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-11T18:22:44.716724+09:00",
+      "fetched_at": "2026-11-11T19:43:43.210380+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -55,38 +55,38 @@
         "id": "stocks_kr-2"
       },
       {
+        "title": "[증시 인사이트] 국내증시 동반 상승…코스닥 700선 회복 성공",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5meDVleUR4RU8zQWxqQVZxNWVZUmszT0NuZ19sWk1RcnNPZUtKT2xhWnRMT1NUY3k1SG9LNGs2bmx4Zmk5UFJXZ29YMncxZXJhdVBV0gFYQVVfeXFMT3dCYW1aYTVwcE1FWFE3WXVQY2xHT2JidEdHZXlGOV8wZ0NJemZNd1pmNWh1Wjd6M3VkbkIzamxZSEVoN0k0ZTMzRVFNaEsxRHBSTkY4ZFpaSA?oc=5",
+        "published_at": "2026-11-11T07:19:00+00:00",
+        "id": "stocks_kr-3"
+      },
+      {
         "title": "미국 빅스텝 우려에도 코스피 2.6% 상승, 외국인 순매수 6,587억 원",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzNUZVRGRvM1ptYXBENjYxLUY2bFBkZ183NnZUNlVaZk5VSzBNYWJSYmhjMmpzOTltdDJFVDc2UUtzcGRyRHFJdnZYcDdvMWVLNGs4MVBHNDNyVUNVbU1iWnZkU0cxTHBXd3M5UUlJblBQQQ?oc=5",
         "published_at": "2026-11-11T07:18:20+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[오늘의 시황] 코스닥 5.62% 급등·매수 사이드카 발동…코스피도 2.60% 상승",
         "publisher": "nbn 시사경제",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40Z2FPNVZRejBBSExQOWVuVDdHYXg1UmdTQXRHbnZKLUJaeUY5WVRzZHg0YjdRNXlONnhNSHVSTEZUS2pJSmY5bGhma095clZtM01JNkxaRU9IbVNvYWdhX3AyY1l5ZzZxZ0E?oc=5",
         "published_at": "2026-11-11T07:12:09+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "美빅스텝 우려에도 급등‥코스피 2.6%·코스닥 5.6%↑",
         "publisher": "MBC 뉴스",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56QUxuYTVvNEFqXzlNdjJGa0xpbHVGSHVoMk9sNlhKaDRvOHE1S0xnd1pMWFpIS3BidlN6UTNEYlBkYllFRDNLZGJMWVRBWW40eTgyZkpmU2pXdExqSE9INjVmcWRwWjZoemNacG9fb204R3Zm0gF0QVVfeXFMTkpGSWJQX0VXY085YkRWQ1VpaFpWM2Z0RVpHd2I1M0c4T0RBMUN3QVQyVUw3V25pdE5pVk5TSjUxTlJ5cW5vM2xGMm5DVnJjMURucGhmU2M1OG9uT2c1Z1R1d2IwWXgtSmxhRXRkd25xYXFOMl8?oc=5",
         "published_at": "2026-11-11T06:55:08+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "오늘은 '매수' 사이드카...미국 반도체 훈풍, 코스피·코스닥 동반 상승 - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05N2pqaVU0a1hsRXJQRThDS1N1czJTQkM1NDRTZVNTeDRCaDFfbkRjcUMtNFZGTlJoWVFwVTdsWGVMaDRBMWZqYkc3NzBPN24xZU1JSkJ3ZjIxUkhKT2dmejVsZFk4SW9J0gFuQVVfeXFMTWp4UTJkRHYxTE8tU0lUck1Panp2ZTUtQXRWUWJVRVBzTll2M1FrckY1VFNDN2NNa1Z2bjJXYlRZX1Jpb3dGVnpJTFl5eU9PTkRjdG5ULXVrRzl2T0M1RXNTd2g2MDZfY0c2eDdkTGc?oc=5",
         "published_at": "2026-11-11T05:49:08+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[오늘증시] 美금리·엔비디아發 악재에도 코스피 선방…코스닥도 강세",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1YS1p2MjBUaTd2U0Q0dUxOWURiS2RBbGNlNXVsSDVJOUloZjdJLUQxN3VjWnFBQlBrOXRYczdsR1VGNU9JS2NCQ0pUMFlYV0pfNEotS0J0TGpyblEwYzBBRFJFZGV0aHZTckJ1b0poZGpoRjQ?oc=5",
-        "published_at": "2026-11-11T01:38:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -157,52 +157,52 @@
         "id": "bonds-0"
       },
       {
+        "title": "[채권마감] 악재 쓰나미…10년금리 10bp 급등 ‘2개월만 최대폭’",
+        "publisher": "이투데이",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wbExqczNRVEFtaDZLcFBQWmlnRzV2cU9NUzNjb3BIankwM25QUTN6OXd0UHR3TDhWWm9OWl9PNzBLcGMwNW8tbVNVR1BpekVQajZtWWNoVzJZd2d3UnpzUC1vaUZqZ2VZYUt6VmoyQzlidw?oc=5",
+        "published_at": "2026-11-11T08:41:00+00:00",
+        "id": "bonds-1"
+      },
+      {
         "title": "[채권-마감] 美 금리 급등·공정위 PD 담합 제재 여파…3년물 9.6bp↑",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Ub3BTR0R5ZTByOURGcVloTjR0N0ZxODdfMEtFOUtMeG9NMXRLencweEhjQUYxNlBTSnEtT3pxNzhTb3JWRWFwNDcwb0J3M281Z0hfTGxwQTdhVWcwUnRmVTZRdGpybmp3ZEdXQUlRbkgxUQ?oc=5",
         "published_at": "2026-11-11T08:08:08+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "미국 빅스텝 우려에 한국 국고채 금리 급등",
         "publisher": "스페셜타임스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LU2pzdFhQNTRCVDVIa1ZwZGx0RXVza1BqUmpfSlllcFpNRnRzbGc1dFJMVTExMHNtTVZ2LUxtZ0V3bERZZDhFUS1pTmJwUDN2V2RpWkRfbHpHM0p3VldsVjZwMXRZMFdaNC14V0s4S045Zw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5cjFBYXl1U1lZVmdKZmcwSFdsSDRBZV95NmszVXFnM0ozdTZzallPMk9sdXBTOXRuNkNYXzlqTFhJcW5oaThQYUtBZGFIMXpHNUxhQ1pQdEZsT0VtM01MVzBzOGR1OFJRbWk2TFVJcXE0azA?oc=5",
         "published_at": "2026-11-11T08:07:19+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "美 '빅스텝' 가능성에 국고채 금리 일제히 상승…3년물 연 3.729%",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vRm9fSEQzTEpBUFMyLVZLbFJwQVd6TVFvaW9JZEx1TW1OLVI2RGhBbGJNUEE1bWViWlUwNDBzMWxmZEZkZV9YQTA3X1EtTkYyR0tr?oc=5",
         "published_at": "2026-11-11T07:51:00+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "국고채 담합 1.6조 과징금…국채시장 흔드나 - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1PMEN0SXgwRUdYT2x3YmlvdnpIMVBaSl9TRUdzZTZmbi1IWWdlMjJVT3BTTHFMVmdENy1iODl3YlR1bUktSHhUbjRGN3Zzb2MyeVNfaUkxY2M5N0FqOFlGa2tBSGhJZ3Nm0gFuQVVfeXFMT1dJRjd0NXJBWE9QakFmMWZzekcxa05FY2x1VjQ4T1JnbVFORnZpTlhSaTlia3VQaVRrZmV2SXdxeTA4OXBiVFp4X25rR0VTa3ZIa3VwQ1V1a3NCUldNcEFYXzRFcVN4YmloT3Z0bUE?oc=5",
         "published_at": "2026-11-11T07:14:06+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "미국 인플레이션으로 채권 압박, 10년 만기 국채 수익률 5% 돌파",
         "publisher": "IDNFinancials",
         "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNSUoyYTlPYlp5TVhXLUI2bkNsNXUySi1mcGVtTC1lZzlIQzEtYUVtdTBTUmp2bzhLYVRhemYycHlhY01QXzdQeE9lcXRmSkVvUjkzNHJkRm5UVHdOTmR4ZlZwVkFoTFRDeXJSOTlwQXBFRHA5WmpyX0x5UGhHTkptcXBzMWJyLVc0bkFMNkpCenZpVW9EZGV5OUlLZTFCY0txOGdRbGhYYWZabWlvVWlsX3E2YVo3RHpuaUUxbjhoWk56eU5rd3JYSXF1Q3psZjY5WjBVZUYyYlp3b1pVdERWcW5vYzUwaTFSMENZSHhVT2VDZlVTbW53dU8xaEg4V09Nal9aQ3dOMm40NEFCUU00STlSWnRDUE10QTlIQ2xRTzd2U3gwRlcwMWFvSTY3anh1TmtlNDV4dDYwOWxQY2hCT0VXRGFFMTN3S3NKR0RWQU1YU19iUTdKNVROTWRQeVZ2QzJkRHpWVDk2OVFOM1ZwWTJfRXFQd0FrR3JJ?oc=5",
         "published_at": "2026-11-11T05:00:00+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "국고채 입찰 1.6조 제재…\"국채 인수 위축 땐 투자자도 영향\" - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GWUthQWpqTVRNczRmdTAtVTg0TUowYjNISmpQeVJWREZXRks4enJ2WERwZ2ZnS3NCNWMxM3d6LVNOaVFIcnpVVnItaGhfQjBrWjZUT1F2dmE2STZQV0tCVkd3blAwM3Z30gFuQVVfeXFMTXQxd09adFFHRHVLOHRGWGVSZ0hpSmRocXgwZnEyRzFxTnozakNsWWQ0cFFEMVRMZnBpeFk1MXEzVXVSX1VURjF1N1d5Ukd3bUNhTHY2SnJEWDAtUXdGeXV6V0pSc1V2SVduWFJCOHc?oc=5",
         "published_at": "2026-11-11T03:11:13+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "11월 11일 오전, 베트남 중앙은행은 기준환율을 25,611 VND로 발표했습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTE43M05iOTE0MnZNajViQzl1NGczeFVOVFJxeWNJU0t3akF4aU1lOFBTZ2cxU05uS2FnUFN2Zmw5MkJEWC1PRkkzZUtNZXI5NTJxd1h1cGlPd1VhM085RmlGY1V5LUtPel9Zd2RXTFdWaTI3dEtXQXRxem9JbzNGX2xETExaQlJoNXhkbFV3?oc=5",
-        "published_at": "2026-11-11T03:04:47+00:00",
         "id": "bonds-7"
       }
     ]
