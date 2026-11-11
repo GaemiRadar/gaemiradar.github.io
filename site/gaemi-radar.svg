@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">개미레이더 로고</title>
+  <desc id="desc">청보라색 사각형 속 레이더 원형 탐지선과 민트색 신호점</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5369dd"/>
+      <stop offset="1" stop-color="#344a9c"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#8edbd0" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#a8fff1" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#tile)"/>
+  <circle cx="31" cy="33" r="21" fill="none" stroke="#fff" stroke-width="1.6" opacity=".43"/>
+  <circle cx="31" cy="33" r="13.2" fill="none" stroke="#fff" stroke-width="1.6" opacity=".43"/>
+  <path d="M31 33 L31 12 A21 21 0 0 1 48.5 21.4 Z" fill="url(#beam)" opacity=".88"/>
+  <path d="M31 33 L46 18" fill="none" stroke="#eefbf8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M31 10v5M31 51v5M8 33h5M49 33h5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".47"/>
+  <circle cx="31" cy="33" r="3" fill="#fff"/>
+  <circle cx="46" cy="18" r="4.5" fill="#65edca" stroke="#f8fffd" stroke-width="1.5"/>
+</svg>
