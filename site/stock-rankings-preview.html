@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#111b2d">
+  <meta name="description" content="개미레이더 주식 TOP 15 UI 시제품. 실제 시세 및 실제 순위 데이터가 아닙니다.">
+  <title>개미레이더 | TOP 15 순위표 디자인 미리보기</title>
+  <link rel="icon" href="./gaemi-radar.svg" type="image/svg+xml">
+  <style>
+    :root{--navy:#111b2d;--ink:#1b2b41;--muted:#78869a;--border:#e6eaf0;--primary:#4f63e9;--up:#d34e58;--down:#247faf}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f6f8fb;font-size:14px}
+    button{font:inherit;cursor:pointer} a{color:inherit} button:focus-visible,a:focus-visible{outline:3px solid #95a2ff;outline-offset:3px}
+    .app{display:flex;min-height:100vh}
+    .sidebar{width:242px;flex-shrink:0;position:sticky;top:0;height:100vh;background:var(--navy);color:#9cacc2;padding:32px 17px;display:flex;flex-direction:column;gap:24px}
+    .brand{display:flex;gap:11px;align-items:center;padding:0 10px;color:white;text-decoration:none}
+    .brand-icon{width:39px;height:39px;flex-shrink:0;display:grid;place-items:center;border-radius:13px;background:#6371e8}
+    .brand-icon img{width:39px;height:39px}
+    .brand-name{font-size:18px;font-weight:850;letter-spacing:-.8px;white-space:nowrap}.brand-sub{font-size:10px;color:#93a3bd;letter-spacing:1.5px;margin-top:3px;font-weight:700}
+    .nav-label{font-size:10px;letter-spacing:1.9px;font-weight:800;color:#64748e;padding:8px 14px 0}.nav-item{border-radius:10px;padding:13px 14px;background:#3d4c74;color:#fff;font-weight:700;font-size:13px}
+    .sidebar-bottom{margin-top:auto;border-top:1px solid #29364b;padding:20px 13px;color:#a4b0c3;font-size:12px;line-height:1.9}
+    main{min-width:0;max-width:1500px;flex:1;margin:0 auto;padding:34px clamp(18px,4vw,58px) 70px}
+    .crumb{font-size:12px;color:#91a0b3;margin-bottom:24px}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+    .eyebrow{color:#5669d9;font-size:11px;letter-spacing:1.4px;font-weight:850;margin-bottom:10px}
+    h1{font-size:clamp(26px,3vw,37px);letter-spacing:-1.6px;line-height:1.25;margin:0;font-weight:850}
+    .lead{color:#8290a3;line-height:1.75;margin:11px 0 23px}
+    .warning{background:#fff9e9;border:1px solid #f2ddb5;color:#775923;padding:16px 19px;border-radius:13px;line-height:1.8;margin-bottom:22px}
+    .warning strong{display:block;font-size:13px}.warning span{font-size:12px}
+    .panel{background:#fff;border:1px solid var(--border);border-radius:18px;padding:23px;box-shadow:0 4px 19px #354b6c08}
+    .panel-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:19px}
+    h2{font-size:20px;letter-spacing:-.6px;margin:0}.sub{font-size:12px;color:#8a98ab;line-height:1.6;margin-top:7px}.tag{border-radius:100px;font-size:11px;background:#e8effc;color:#46619f;padding:7px 11px;font-weight:700}
+    .switch-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:4px 0 17px}
+    .control-label{font-weight:750;font-size:12px;color:#65758c;min-width:44px}
+    .segment{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+    .seg-btn{padding:10px 15px;border:1px solid #e0e6f0;background:#f5f7fc;border-radius:10px;color:#53637c;font-size:12px;font-weight:750;transition:.15s}
+    .seg-btn:hover{background:#ebeff9}.seg-btn[aria-pressed="true"]{background:#455cca;color:white;border-color:#455cca}
+    .data-note{font-size:11px;color:#8493a8;line-height:1.7;margin:15px 0}
+    .table-wrap{width:100%;overflow-x:auto;border:1px solid var(--border);border-radius:12px}
+    table{border-collapse:collapse;width:100%;min-width:630px;font-variant-numeric:tabular-nums}
+    thead{background:#f5f7fc;color:#64738a}th{text-align:left;font-size:11px;letter-spacing:.1px;font-weight:780;padding:14px 16px;white-space:nowrap}
+    tbody tr{border-top:1px solid #edf1f7}tbody tr:hover{background:#fbfcff}
+    td{padding:13px 16px;font-size:12px;color:#40526c;white-space:nowrap}.num{text-align:right}.rank{font-weight:850;color:#7e8da4}
+    .name{font-size:13px;color:#25374f;font-weight:800}.symbol{display:block;color:#a0acbc;font-size:11px;margin-top:4px}
+    .delta{font-weight:800}.delta.up{color:var(--up)}.delta.down{color:var(--down)}
+    .foot{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;font-size:11px;color:#8a98a9;margin-top:14px;line-height:1.6}
+    .next{background:#fff;border:1px solid var(--border);border-radius:13px;margin-top:17px;padding:20px;line-height:1.7}
+    .next h3{margin:0 0 8px;font-size:14px}.next p{margin:0;color:#697c93;font-size:12px}
+    @media(max-width:990px){.sidebar{width:74px;padding:23px 10px}.brand{padding:0}.brand-text,.nav-label,.nav-item span,.sidebar-bottom{display:none}.nav-item{text-align:center}.nav-item::after{content:'◉'}main{padding:26px 23px 55px}}
+    @media(max-width:690px){.sidebar{width:61px;padding:18px 7px}.brand-icon,.brand-icon img{width:36px;height:36px}.nav-item{padding:13px 10px}main{padding:24px 12px 40px}.panel{padding:16px}.warning{padding:13px}.seg-btn{padding:9px 11px}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" aria-label="개미레이더 메뉴 미리보기">
+    <a class="brand" href="./index.html" aria-label="개미레이더 홈으로">
+      <div class="brand-icon" aria-hidden="true"><img src="./gaemi-radar.svg" width="39" height="39" alt=""></div>
+      <div class="brand-text"><div class="brand-name">개미레이더</div><div class="brand-sub">GAEMI RADAR</div></div>
+    </a>
+    <div class="nav-label">MARKETS</div>
+    <div class="nav-item" aria-current="page"><span>주식 시장 · 시제품</span></div>
+    <div class="sidebar-bottom">개미레이더 · GAEMI RADAR<br>디자인 시제품 · 실제 시세 아님</div>
+  </aside>
+  <main>
+    <div class="crumb"><a href="./index.html">개미레이더</a> / 주식 시장 / TOP 15 미리보기</div>
+    <div class="eyebrow">STOCK MARKET · DESIGN PREVIEW</div>
+    <h1>오늘의 주목 종목 TOP 15</h1>
+    <p class="lead">거래 활발 · 상승률 상위 · 하락률 상위 종목을 한 화면에서 비교하기 위한 화면 구성 시제품입니다.</p>
+    <div class="warning" role="status"><strong>디자인 미리보기 — 실제 금융 데이터가 아닙니다.</strong><span>아래의 모든 종목명·종목코드·가격·거래량·등락률은 화면 테스트용 가상 데이터입니다. 실제 투자 판단에 이용하지 마세요. 정식 데이터 연결은 제공처의 공개 게시 허가를 받은 뒤 진행합니다.</span></div>
+    <section class="panel" aria-labelledby="ranking-title">
+      <div class="panel-head"><div><h2 id="ranking-title">종목 순위 1–15위</h2><div class="sub">시장 및 순위 유형별 15개 종목 표시 · 데스크톱·모바일 대응</div></div><span class="tag">샘플 데이터 15 / 15</span></div>
+      <div class="switch-row"><span class="control-label">시장</span><div class="segment" role="group" aria-label="시장 선택"><button type="button" class="seg-btn" data-market="KR" aria-pressed="true">국내주식 (국장)</button><button type="button" class="seg-btn" data-market="US" aria-pressed="false">미국주식 (미장)</button></div></div>
+      <div class="switch-row"><span class="control-label">순위</span><div class="segment" role="group" aria-label="순위 종류"><button type="button" class="seg-btn" data-sort="volume" aria-pressed="true">거래 활발</button><button type="button" class="seg-btn" data-sort="gainers" aria-pressed="false">상승률 상위</button><button type="button" class="seg-btn" data-sort="losers" aria-pressed="false">하락률 상위</button></div></div>
+      <p class="data-note" id="table-caption">국내주식 · 거래 활발 · 가상 시세 (예시)</p>
+      <div class="table-wrap"><table aria-describedby="table-caption"><thead><tr><th scope="col">순위</th><th scope="col">종목명</th><th scope="col" class="num">가격</th><th scope="col" class="num">등락률</th><th scope="col" class="num">거래량</th><th scope="col" class="num">거래대금</th></tr></thead><tbody id="rank-body"></tbody></table></div>
+      <div class="foot"><span>시연 데이터 · 실제 거래소 순위 아님</span><span id="updated-label">갱신 시각: 정식 데이터 연결 후 표시 예정</span></div>
+    </section>
+    <div class="next"><h3>정식 적용 단계</h3><p>국내·미국 시장별 데이터 공개 게시 권한을 확보한 뒤 정식 JSON 데이터와 연결합니다. 그전에는 메인 홈페이지의 기존 TOP 5/TOP 10 및 AI 종목 이슈를 그대로 운영합니다.</p></div>
+  </main>
+</div>
+<script>
+'use strict';
+const state={market:'KR',sort:'volume'};
+const SORT_LABEL={volume:'거래 활발',gainers:'상승률 상위',losers:'하락률 상위'};
+const MARKET_LABEL={KR:'국내주식',US:'미국주식'};
+function makeRows(market,kind){
+  return Array.from({length:15},(_,idx)=>{
+    const rank=idx+1;
+    const diff=kind==='losers'?-1:1;
+    const change=diff*(Math.max(0.13,(kind==='volume'?4.6:11.5)-idx*(kind==='volume'?.25:.62)));
+    const price=market==='KR'?(15300+idx*4270):(48.35+idx*13.4);
+    const volume=3100000-idx*174000+(kind==='gainers'?38000:0);
+    return {rank,name:`가상종목 ${market}-${String(rank).padStart(2,'0')}`,symbol:`TEST-${market}-${String(rank).padStart(2,'0')}`,price,change,volume,value:price*volume};
+  });
+}
+function formatNumber(n){return Number(n).toLocaleString('ko-KR')}
+function render(){
+  document.querySelectorAll('[data-market]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.market===state.market)));
+  document.querySelectorAll('[data-sort]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.sort===state.sort)));
+  document.getElementById('table-caption').textContent=`${MARKET_LABEL[state.market]} · ${SORT_LABEL[state.sort]} · 가상 시세 (예시)`;
+  const rows=makeRows(state.market,state.sort);
+  const tbody=document.getElementById('rank-body');
+  tbody.replaceChildren();
+  for(const r of rows){
+    const tr=document.createElement('tr');
+    const c1=document.createElement('td');c1.className='rank';c1.textContent=String(r.rank);
+    const c2=document.createElement('td');const label=document.createElement('span');label.className='name';label.textContent=r.name;const code=document.createElement('span');code.className='symbol';code.textContent=r.symbol;c2.append(label,code);
+    const c3=document.createElement('td');c3.className='num';c3.textContent=state.market==='KR'?formatNumber(r.price)+'원':'$'+r.price.toFixed(2);
+    const c4=document.createElement('td');c4.className='num delta '+(r.change>=0?'up':'down');c4.textContent=(r.change>=0?'+':'')+r.change.toFixed(2)+'%';
+    const c5=document.createElement('td');c5.className='num';c5.textContent=formatNumber(r.volume);
+    const c6=document.createElement('td');c6.className='num';c6.textContent=state.market==='KR'?Math.round(r.value/1e8).toLocaleString('ko-KR')+'억원':'$'+(r.value/1e6).toFixed(1)+'M';
+    tr.append(c1,c2,c3,c4,c5,c6);tbody.append(tr);
+  }
+}
+document.querySelectorAll('[data-market]').forEach(b=>b.addEventListener('click',()=>{state.market=b.dataset.market;render()}));
+document.querySelectorAll('[data-sort]').forEach(b=>b.addEventListener('click',()=>{state.sort=b.dataset.sort;render()}));
+render();
+</script>
+</body>
+</html>
