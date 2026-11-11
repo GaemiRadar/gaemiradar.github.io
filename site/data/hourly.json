@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-11T22:14:21.177624+09:00",
+  "data_updated_at": "2026-11-11T23:24:52.329728+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.17,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-11T22:14:21.177624+09:00",
+      "fetched_at": "2026-11-11T23:24:52.329728+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.1,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-11T22:14:21.177624+09:00",
+      "fetched_at": "2026-11-11T23:24:52.329728+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[마감시황] 외국인 7760억 사자에 반도체 날았다",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51QUkxTm80SVl2UHNRY3VpMUhRam9rQnQ5ZkxtTnVLNkM3aXhtMFdoRGpmNjE0eE85SmVZU3VFaXNRbERPZ1ZsWC0xTXRtYmtacW8wcm5iWVJUckYxLU1LNzloa0x1LW8?oc=5",
-        "published_at": "2026-11-11T13:00:12+00:00",
-        "id": "stocks_kr-0"
-      },
-      {
         "title": "코어위브 실적에 반도체 기판주 폭등! 지금 살 종목은?",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUFJmYzd6VmpCRlFsWTZNdXdUamNkWGJkeW80VXdYd3YwaWFJclN0VzBWa1B0SGNWU1NHZ2xyX3dwQmlxdlFyd0dxVDYxYVEzdUtjT2lOVWdkY2FRLWxKbmZkZWhreHFLaEd2WHozcXZDZ2V1UEtxeUFRclNMdXNBb1JFc18tZkZvcWc?oc=5",
         "published_at": "2026-11-11T08:07:00+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-0"
       },
       {
-        "title": "[오늘증시] 코스피 2.6% 급등, 5370선 회복…반도체·AI 훈풍에 코스닥도 700선 탈환",
-        "publisher": "Queen 이코노미퀸",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJLWJqaGwxRUE0cVFFY0Faa25NRFNKYmVFbFZObWJEWkRxdG5ocFIxSTgtT2lnTXd2X2F1cnNTV1lQaG1rY3Y4UzlrbkZkeE5laV9uNHdiblVoUTBGa19tQzd6Y0oyRjFV?oc=5",
-        "published_at": "2026-11-11T08:06:53+00:00",
-        "id": "stocks_kr-2"
+        "title": "[마감시황] 외국인 7760억 사자에 반도체 날았다",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51QUkxTm80SVl2UHNRY3VpMUhRam9rQnQ5ZkxtTnVLNkM3aXhtMFdoRGpmNjE0eE85SmVZU3VFaXNRbERPZ1ZsWC0xTXRtYmtacW8wcm5iWVJUckYxLU1LNzloa0x1LW8?oc=5",
+        "published_at": "2026-11-11T08:00:00+00:00",
+        "id": "stocks_kr-1"
       },
       {
         "title": "[증시 인사이트] 국내증시 동반 상승…코스닥 700선 회복 성공",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5meDVleUR4RU8zQWxqQVZxNWVZUmszT0NuZ19sWk1RcnNPZUtKT2xhWnRMT1NUY3k1SG9LNGs2bmx4Zmk5UFJXZ29YMncxZXJhdVBV0gFYQVVfeXFMT3dCYW1aYTVwcE1FWFE3WXVQY2xHT2JidEdHZXlGOV8wZ0NJemZNd1pmNWh1Wjd6M3VkbkIzamxZSEVoN0k0ZTMzRVFNaEsxRHBSTkY4ZFpaSA?oc=5",
         "published_at": "2026-11-11T07:19:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-2"
       },
       {
         "title": "미국 빅스텝 우려에도 코스피 2.6% 상승, 외국인 순매수 6,587억 원",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzNUZVRGRvM1ptYXBENjYxLUY2bFBkZ183NnZUNlVaZk5VSzBNYWJSYmhjMmpzOTltdDJFVDc2UUtzcGRyRHFJdnZYcDdvMWVLNGs4MVBHNDNyVUNVbU1iWnZkU0cxTHBXd3M5UUlJblBQQQ?oc=5",
         "published_at": "2026-11-11T07:18:20+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[오늘의 시황] 코스닥 5.62% 급등·매수 사이드카 발동…코스피도 2.60% 상승",
         "publisher": "nbn 시사경제",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40Z2FPNVZRejBBSExQOWVuVDdHYXg1UmdTQXRHbnZKLUJaeUY5WVRzZHg0YjdRNXlONnhNSHVSTEZUS2pJSmY5bGhma095clZtM01JNkxaRU9IbVNvYWdhX3AyY1l5ZzZxZ0E?oc=5",
         "published_at": "2026-11-11T07:12:09+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "[오늘의 증시] 코스피 5,300선 회복…외국인 매수에 반도체주 강세",
-        "publisher": "내외뉴스통신",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Qb1hIVXVxT2F5MTN6YVJzaEtma2p5cVhCR0NxTnVBeXpKWUFFTmx0TXdoTnF4SG9RY1o4VlViOEVvaUhaX1RkYkQtVlI4Wm9fYURmVTktVU9SMWFVX1BGS1JwRnZ5QVJSUUxMb9IBcEFVX3lxTFBtVWVzeGhYN1hVb1dVbmxFZVh4amlGcThDX25fODZ5NFlTckJfYW5UU1lTb3N6enVpWm81bVJsR09GaWkxNEk0clBMVXRXYkhlYS1TSGxacEJtZFA4RzhWVHI1QnVKUXk5YS03Y1NCcGs?oc=5",
-        "published_at": "2026-11-11T07:06:17+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-4"
       },
       {
         "title": "美빅스텝 우려에도 급등‥코스피 2.6%·코스닥 5.6%↑",
         "publisher": "MBC 뉴스",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56QUxuYTVvNEFqXzlNdjJGa0xpbHVGSHVoMk9sNlhKaDRvOHE1S0xnd1pMWFpIS3BidlN6UTNEYlBkYllFRDNLZGJMWVRBWW40eTgyZkpmU2pXdExqSE9INjVmcWRwWjZoemNacG9fb204R3Zm0gF0QVVfeXFMTkpGSWJQX0VXY085YkRWQ1VpaFpWM2Z0RVpHd2I1M0c4T0RBMUN3QVQyVUw3V25pdE5pVk5TSjUxTlJ5cW5vM2xGMm5DVnJjMURucGhmU2M1OG9uT2c1Z1R1d2IwWXgtSmxhRXRkd25xYXFOMl8?oc=5",
         "published_at": "2026-11-11T06:55:08+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "오늘은 '매수' 사이드카...미국 반도체 훈풍, 코스피·코스닥 동반 상승 - 머니투데이",
+        "publisher": "머니투데이",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05N2pqaVU0a1hsRXJQRThDS1N1czJTQkM1NDRTZVNTeDRCaDFfbkRjcUMtNFZGTlJoWVFwVTdsWGVMaDRBMWZqYkc3NzBPN24xZU1JSkJ3ZjIxUkhKT2dmejVsZFk4SW9J0gFuQVVfeXFMTWp4UTJkRHYxTE8tU0lUck1Panp2ZTUtQXRWUWJVRVBzTll2M1FrckY1VFNDN2NNa1Z2bjJXYlRZX1Jpb3dGVnpJTFl5eU9PTkRjdG5ULXVrRzl2T0M1RXNTd2g2MDZfY0c2eDdkTGc?oc=5",
+        "published_at": "2026-11-11T05:49:08+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[오늘증시] 美금리·엔비디아發 악재에도 코스피 선방…코스닥도 강세",
+        "publisher": "오늘경제",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1YS1p2MjBUaTd2U0Q0dUxOWURiS2RBbGNlNXVsSDVJOUloZjdJLUQxN3VjWnFBQlBrOXRYczdsR1VGNU9JS2NCQ0pUMFlYV0pfNEotS0J0TGpyblEwYzBBRFJFZGV0aHZTckJ1b0poZGpoRjQ?oc=5",
+        "published_at": "2026-11-11T01:38:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
