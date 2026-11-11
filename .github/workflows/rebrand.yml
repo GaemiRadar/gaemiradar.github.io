@@ -1,0 +1,115 @@
+name: Apply Gaemi Radar Branding
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout current main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply branding safely
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import difflib
+
+          html_path=Path('site/index.html')
+          logo_path=Path('site/gaemi-radar.svg')
+          if not html_path.is_file():
+              raise SystemExit('site/index.html을 찾지 못했습니다. GitHub 저장소 구성을 확인하세요.')
+          page=html_path.read_text(encoding='utf-8')
+          original=page
+
+          changes=[
+              ('<title>마켓 인사이트 | 일간 금융시장 브리핑</title>',
+               '<title>개미레이더 | 국내·미국 주식·채권 AI 시황</title>'),
+              ('<meta name="description" content="매일 갱신되는 국내·미국 주식 및 채권·금리 시장의 최신 뉴스와 근거 기반 AI 분석 대시보드" />',
+               '<meta name="description" content="개미레이더는 국내·미국 주식, 채권·금리, 경제지표와 최신 금융뉴스를 모아 보여주는 AI 금융시장 브리핑 대시보드입니다." />'),
+              ('<div class="brand"><div class="brand-icon" aria-hidden="true">↗</div><div class="brand-text"><div class="brand-name">MARKET PULSE</div><div class="brand-sub">FINANCIAL INTELLIGENCE</div></div></div>',
+               '<div class="brand"><div class="brand-icon" aria-hidden="true"><img src="./gaemi-radar.svg" width="39" height="39" alt=""></div><div class="brand-text"><div class="brand-name">개미레이더</div><div class="brand-sub">GAEMI RADAR</div></div></div>'),
+              ('© MARKET PULSE · AI-ASSISTED FINANCIAL BRIEFING',
+               '© 개미레이더 · AI-ASSISTED FINANCIAL BRIEFING'),
+          ]
+          for old,new in changes:
+              if page.count(old)==1:
+                  page=page.replace(old,new,1)
+              elif page.count(new)==1:
+                  print('이미 브랜드 문구가 적용됨:',new[:45])
+              else:
+                  raise SystemExit('브랜드 교체 위치가 예상과 다릅니다: '+old[:80]+' (파일 수정하지 않음)')
+
+          # Favicon, social-sharing meta. No changes to the data-fetching JS.
+          marker='  <title>개미레이더 | 국내·미국 주식·채권 AI 시황</title>'
+          head_add='\n  <link rel="icon" type="image/svg+xml" href="./gaemi-radar.svg" />\n  <meta property="og:type" content="website" />\n  <meta property="og:locale" content="ko_KR" />\n  <meta property="og:title" content="개미레이더 | AI 금융시장 브리핑" />\n  <meta property="og:description" content="국내·미국 주식, 채권·금리, 최신 금융뉴스와 AI 시장 분석을 한곳에서." />'
+          if 'href="./gaemi-radar.svg"' not in page:
+              assert page.count(marker)==1
+              page=page.replace(marker,marker+head_add,1)
+
+          # Styling is scoped exclusively to the branding icon, leaving layout intact.
+          style_add='\n    .brand-icon{background:transparent;box-shadow:none}\n    .brand-icon img{display:block;width:100%;height:100%;border-radius:13px}\n'
+          if '    .brand-icon img{display:block;width:100%;height:100%;border-radius:13px}' not in page:
+              assert page.count('  </style>')==1
+              page=page.replace('  </style>',style_add+'  </style>',1)
+
+          # Safety: render/data functions must remain byte-for-byte identical.
+          assert page.count('개미레이더')>=3
+          assert page.count('MARKET PULSE')==0
+          if '<script>' in original:
+              assert original.split('<script>',1)[1]==page.split('<script>',1)[1], '자바스크립트가 변경되었습니다.'
+          if 'hourly.json' in original:
+              assert 'hourly.json' in page
+          if 'latest.json' in original:
+              assert 'latest.json' in page
+
+          html_path.write_text(page,encoding='utf-8')
+          logo_path.write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">\n  <title id="title">개미레이더 로고</title>\n  <desc id="desc">청보라색 사각형 속 레이더 원형 탐지선과 민트색 신호점</desc>\n  <defs>\n    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">\n      <stop offset="0" stop-color="#5369dd"/>\n      <stop offset="1" stop-color="#344a9c"/>\n    </linearGradient>\n    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0">\n      <stop offset="0" stop-color="#8edbd0" stop-opacity=".05"/>\n      <stop offset="1" stop-color="#a8fff1" stop-opacity=".7"/>\n    </linearGradient>\n  </defs>\n  <rect width="64" height="64" rx="18" fill="url(#tile)"/>\n  <circle cx="31" cy="33" r="21" fill="none" stroke="#fff" stroke-width="1.6" opacity=".43"/>\n  <circle cx="31" cy="33" r="13.2" fill="none" stroke="#fff" stroke-width="1.6" opacity=".43"/>\n  <path d="M31 33 L31 12 A21 21 0 0 1 48.5 21.4 Z" fill="url(#beam)" opacity=".88"/>\n  <path d="M31 33 L46 18" fill="none" stroke="#eefbf8" stroke-width="2.5" stroke-linecap="round"/>\n  <path d="M31 10v5M31 51v5M8 33h5M49 33h5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".47"/>\n  <circle cx="31" cy="33" r="3" fill="#fff"/>\n  <circle cx="46" cy="18" r="4.5" fill="#65edca" stroke="#f8fffd" stroke-width="1.5"/>\n</svg>\n',encoding='utf-8')
+          print('브랜드 변경 완료: title, SEO, sidebar, footer, icon; data/AI/JS code unchanged')
+          PY
+      - name: Commit only branding files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/index.html site/gaemi-radar.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "brand: rename MARKET PULSE to Gaemi Radar"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload full website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy branding
+        id: deployment
+        uses: actions/deploy-pages@v4
