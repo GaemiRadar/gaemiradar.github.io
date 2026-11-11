@@ -1138,7 +1138,210 @@ def update_forecast_archive(report, previous_history):
         "saved_days": len(history),
         "latest_saved_date": history[-1]["forecast_date_kst"] if history else None,
         "current_run_archived": bool(snapshot and history and history[-1] is snapshot),
-        "note": "AI 예측 시점의 원본 기록. 실제 결과·예측 적중률 검증은 아직 미구현입니다. 동일 한국 날짜 재실행 시 최초 기록을 유지합니다.",
+        "note": "AI 예측 시점의 최초 기록을 유지합니다. 실제 결과·적중률은 forecast_accuracy_summary에 별도로 계산합니다.",
+    }
+    return report
+
+
+# Step 9: deterministic, append-only forecast evaluation. No Gemini inference is
+# used for scoring; only the frozen historical forecast and observed closes.
+FORECAST_EVALUATION_VERSION = 1
+EVALUATION_TOPICS = {"stocks_kr": ("KOSPI", "KR"), "stocks_us": ("NASDAQCOM", "US")}
+EVALUATION_SESSIONS = 5
+NEUTRAL_RETURN_BAND_PCT = 0.1
+
+
+def read_previous_forecast_evaluations(target):
+    """Preserve all previously completed scores, or fail instead of deleting them."""
+    if not target.exists():
+        return []
+    try:
+        old = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"기존 평가 기록 파일을 읽지 못했습니다: {type(exc).__name__}") from exc
+    results = old.get("forecast_evaluations", [])
+    if not isinstance(results, list):
+        raise RuntimeError("forecast_evaluations 구조가 손상됐습니다. 덮어쓰지 않습니다.")
+    seen = set()
+    for item in results:
+        if not isinstance(item, dict) or not isinstance(item.get("forecast_date_kst"), str) \
+                or item.get("topic") not in EVALUATION_TOPICS or not isinstance(item.get("hit"), bool):
+            raise RuntimeError("forecast_evaluations 항목이 손상됐습니다. 덮어쓰지 않습니다.")
+        key = (item["forecast_date_kst"], item["topic"])
+        if key in seen:
+            raise RuntimeError("forecast_evaluations 중복 항목이 있습니다. 덮어쓰지 않습니다.")
+        seen.add(key)
+    return results
+
+
+def _parse_day(value):
+    if not isinstance(value, str):
+        return None
+    try:
+        day = datetime.strptime(value, "%Y-%m-%d").date()
+        return day if day.isoformat() == value else None
+    except ValueError:
+        return None
+
+
+def _parse_timestamp(value):
+    try:
+        stamp = datetime.fromisoformat(value)
+        return stamp if stamp.tzinfo is not None else None
+    except (ValueError, TypeError):
+        return None
+
+
+def _expected_last_closed_session(benchmark_id, stamp):
+    """Conservative calendar boundary; skips weekends (not full exchange holidays).
+
+    Same-day data before market close+buffer is NOT a settled close. Requiring
+    the frozen baseline to equal the latest presumed closed day prevents stale
+    US FRED observations and intraday Korean daily bars from earning a score.
+    """
+    if benchmark_id == "KOSPI":
+        zone, closing_minute = KST, 15 * 60 + 45
+    elif benchmark_id == "NASDAQCOM":
+        zone, closing_minute = ZoneInfo("America/New_York"), 16 * 60 + 30
+    else:
+        return None
+    local = stamp.astimezone(zone)
+    closing = local.hour * 60 + local.minute >= closing_minute
+    if local.weekday() < 5 and closing:
+        return local.date()
+    return _previous_weekday(local.date() - timedelta(days=1))
+
+
+def _baseline_validation(snapshot, forecast):
+    benchmark_id = forecast.get("benchmark_id")
+    observed_day = _parse_day(forecast.get("benchmark_as_of"))
+    captured = _parse_timestamp(snapshot.get("captured_at"))
+    if not captured or not observed_day:
+        return False, "기록 시각이나 시작 관측일 확인 불가"
+    if forecast.get("eligible_for_direction_check") is not True:
+        return False, "기준 관측값이 원래 평가 대상에서 제외됨"
+    if forecast.get("direction") not in ("상승 우세", "하락 우세"):
+        return False, "방향성 예측이 아니어서 적중률 계산에서 제외"
+    v = forecast.get("benchmark_value")
+    if not isinstance(v, (float, int)) or isinstance(v, bool) or not math.isfinite(v) or v <= 0:
+        return False, "기준 지수 수치 없음"
+    expected_day = _expected_last_closed_session(benchmark_id, captured)
+    if expected_day is None or observed_day != expected_day:
+        return False, "예측 시점의 직전 확정 종가와 날짜가 일치하지 않음(장중 또는 지연 자료)"
+    return True, None
+
+
+def _observed_close_history(market):
+    """Only non-duplicate, finite, date-tagged reported closing observations."""
+    if not isinstance(market, dict):
+        return []
+    rows = {}
+    for row in market.get("history", []):
+        if not isinstance(row, dict):
+            continue
+        day = _parse_day(row.get("date"))
+        value = row.get("value")
+        if day and isinstance(value, (float, int)) and not isinstance(value, bool) \
+                and math.isfinite(value) and value > 0:
+            rows[day] = float(value)
+    return sorted(rows.items())
+
+
+def _evaluate_one(snapshot, topic, forecast, market, now):
+    """Evaluate EXACTLY the fifth recorded trading session after the baseline.
+
+    Never use current intraday bars or extrapolate missing future observations.
+    """
+    ok, reason = _baseline_validation(snapshot, forecast)
+    if not ok:
+        return None, "excluded", reason
+    baseline_day = _parse_day(forecast["benchmark_as_of"])
+    rows = _observed_close_history(market)
+    if not any(day == baseline_day for day, _ in rows):
+        return None, "pending", "과거 기준일 종가가 현재 조회 이력에 없음; 추측하지 않음"
+    latest_closed = _expected_last_closed_session(forecast["benchmark_id"], now)
+    later = [(day, value) for day, value in rows if day > baseline_day and day <= latest_closed]
+    if len(later) < EVALUATION_SESSIONS:
+        return None, "pending", f"5거래일 미도달 ({len(later)}/{EVALUATION_SESSIONS}거래일 관측)"
+    result_day, result_value = later[EVALUATION_SESSIONS - 1]
+    # Must be a completed session at evaluation time, not a Yahoo intraday bar.
+    if latest_closed is None or result_day > latest_closed:
+        return None, "pending", "5번째 관측일이 아직 종가 확정 전"
+    baseline_value = float(forecast["benchmark_value"])
+    pct = (result_value / baseline_value - 1) * 100
+    actual = "상승" if pct > NEUTRAL_RETURN_BAND_PCT else "하락" if pct < -NEUTRAL_RETURN_BAND_PCT else "보합"
+    predicted = forecast["direction"]
+    hit = (predicted == "상승 우세" and actual == "상승") or (predicted == "하락 우세" and actual == "하락")
+    return {
+        "forecast_date_kst": snapshot["forecast_date_kst"],
+        "captured_at": snapshot["captured_at"],
+        "topic": topic,
+        "benchmark_id": forecast["benchmark_id"],
+        "prediction": predicted,
+        "confidence": forecast.get("confidence"),
+        "baseline_date": baseline_day.isoformat(),
+        "baseline_value": baseline_value,
+        "result_date": result_day.isoformat(),
+        "result_value": round(result_value, 6),
+        "return_pct": round(pct, 4),
+        "realized_direction": actual,
+        "hit": bool(hit),
+        "evaluated_at": now.isoformat(),
+        "horizon_trading_sessions": EVALUATION_SESSIONS,
+        "score_note": "기록 시점의 종가 대비 다음 5개 실제 관측 거래일 후 종가. ±0.1% 이내는 보합 처리.",
+    }, "evaluated", None
+
+
+def update_forecast_evaluations(report, saved_evaluations):
+    """Append results once; never rewrite a scored result on repeated runs."""
+    evaluations = list(saved_evaluations)
+    seen = {(x["forecast_date_kst"], x["topic"]) for x in evaluations}
+    try:
+        now = datetime.fromisoformat(report["generated_at"])
+        if now.tzinfo is None:
+            raise ValueError("naive datetime")
+    except (KeyError, ValueError, TypeError) as exc:
+        raise RuntimeError("보고서 생성 시각이 올바르지 않아 평가를 건너뜁니다.") from exc
+    markets = {x.get("id"): x for x in report.get("market", []) if isinstance(x, dict)}
+    snapshots = report.get("forecast_history", [])
+    rows = []
+    for snapshot in snapshots:
+        for topic, (benchmark_id, region) in EVALUATION_TOPICS.items():
+            forecast = snapshot.get("forecasts", {}).get(topic)
+            if not isinstance(forecast, dict):
+                continue
+            key = (snapshot["forecast_date_kst"], topic)
+            # Previous completed results are immutable even if provider revises data.
+            if key in seen:
+                old = next(x for x in evaluations if (x["forecast_date_kst"], x["topic"]) == key)
+                rows.append({"forecast_date_kst": key[0], "topic": topic,
+                             "status": "evaluated", "evaluation": old})
+                continue
+            item, status, reason = _evaluate_one(snapshot, topic, forecast, markets.get(benchmark_id), now)
+            if item:
+                evaluations.append(item)
+                seen.add(key)
+            rows.append({"forecast_date_kst": key[0], "topic": topic, "status": status,
+                         "reason": reason, "evaluation": item})
+    by_market = {}
+    for topic, (_, region) in EVALUATION_TOPICS.items():
+        scored = [x for x in evaluations if x.get("topic") == topic]
+        hits = sum(1 for x in scored if x.get("hit") is True)
+        statuses = [r for r in rows if r["topic"] == topic]
+        by_market[region] = {
+            "scored": len(scored), "hits": hits,
+            "accuracy_pct": round(100.0 * hits / len(scored), 1) if scored else None,
+            "pending": sum(r["status"] == "pending" for r in statuses),
+            "excluded": sum(r["status"] == "excluded" for r in statuses),
+        }
+    report["forecast_evaluation_version"] = FORECAST_EVALUATION_VERSION
+    report["forecast_evaluations"] = evaluations
+    report["forecast_accuracy_summary"] = {
+        "horizon_trading_sessions": EVALUATION_SESSIONS,
+        "neutral_band_pct": NEUTRAL_RETURN_BAND_PCT,
+        "by_market": by_market,
+        "recent": sorted(rows, key=lambda r: (r["forecast_date_kst"], r["topic"]), reverse=True)[:12],
+        "note": "아카이브에 기록된 최초 전망만 채점. 거래소별 종가 확정 확인·기준일 검증 후 5개 실제 거래일 뒤 평가. 초기 표본은 신뢰할 만한 예측 성능을 의미하지 않습니다.",
     }
     return report
 
@@ -1152,15 +1355,18 @@ def main():
     # The archive lives inside latest.json so the existing workflow's git add
     # already includes all saved snapshots.
     history = read_previous_forecast_history(target)
+    evaluations = read_previous_forecast_evaluations(target)
     report = produce()
     report = update_forecast_archive(report, history)
+    report = update_forecast_evaluations(report, evaluations)
     target.parent.mkdir(parents=True, exist_ok=True)
     pending = target.with_suffix(target.suffix + ".tmp")
     pending.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pending.replace(target)
     print(f"Updated: {target} | news={sum(len(v) for v in report['news'].values())} | "
           f"market={sum(v['value'] is not None for v in report['market'])} | ai={report['ai']['status']} | "
-          f"saved_forecast_days={report['forecast_archive_summary']['saved_days']}")
+          f"saved_forecast_days={report['forecast_archive_summary']['saved_days']} | "
+          f"scored_forecasts={len(report['forecast_evaluations'])}")
     if report['errors']:
         print("Partial sources unavailable:", ", ".join(report['errors']), file=sys.stderr)
 
