@@ -1,0 +1,203 @@
+name: Install Data Freshness Status
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Add freshness status to homepage
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          
+          path = Path("site/index.html")
+          source = path.read_text(encoding="utf-8")
+          if 'id="freshness-panel"' in source:
+              print("Data freshness panel is already installed; nothing to duplicate.")
+              raise SystemExit(0)
+          
+          # Guard rails: abort instead of guessing if the production layout changed.
+          required = [
+              '<div class="alert" id="state-alert" role="status">',
+              '  </style>',
+              'function render(){renderHeader();renderHourlyLabels();',
+              "async function reload(){",
+              "  let dailyError=false;",
+              "state.hourly=json?.mode==='hourly_public_data'&&Array.isArray(json.market)&&json.news?json:null;",
+              "}catch(e){state.hourly=null;}",
+              "}else state.hourly=null;",
+              "    render();\n    if(dailyError&&state.data===DEMO)",
+              "}catch(e){\n    render();\n    setNodeText('state-alert','데이터 재조회에 문제가 발생했습니다."
+          ]
+          for marker in required:
+              if source.count(marker)!=1:
+                  raise SystemExit("Production layout differs; stopping safely. Marker: "+marker[:110])
+          
+          panel = """    <section id="freshness-panel" class="freshness-panel" aria-label="자동 갱신 상태" role="status" aria-live="polite">
+                <div class="freshness-heading"><strong>데이터 갱신 상태</strong><span>자료 기준시각을 확인하세요. 시장 관측일은 수집 시각과 다를 수 있습니다.</span></div>
+                <div class="freshness-grid">
+                  <div class="freshness-entry" id="freshness-hourly-box">
+                    <span class="freshness-label">시간별 뉴스·금리 수집</span>
+                    <strong id="freshness-hourly-state">조회 중…</strong>
+                    <span class="freshness-detail" id="freshness-hourly-detail">자료 상태를 확인하고 있습니다.</span>
+                  </div>
+                  <div class="freshness-entry" id="freshness-daily-box">
+                    <span class="freshness-label">일간 AI 시장 분석</span>
+                    <strong id="freshness-daily-state">조회 중…</strong>
+                    <span class="freshness-detail" id="freshness-daily-detail">자료 상태를 확인하고 있습니다.</span>
+                  </div>
+                </div>
+                <div class="freshness-footer">갱신이 지연돼도 기존 자료는 표시될 수 있습니다. <a href="https://github.com/MarketPulse100/marketpulse100.github.io/actions" target="_blank" rel="noopener noreferrer">자동 실행 기록 확인 ↗</a></div>
+              </section>
+          """
+          anchor = '<div class="alert" id="state-alert" role="status">[^<]*</div>'
+          source, n = re.subn(anchor,lambda m:m.group(0)+"\n"+panel.rstrip(),source,count=1)
+          if n!=1:
+              raise SystemExit("Cannot locate state alert for insertion")
+          
+          css = """    /* Data freshness monitor: display-only. Never alters underlying records. */
+              .freshness-panel{margin-top:13px;padding:15px 18px;border:1px solid #e5eaf2;border-radius:14px;background:#fff;box-shadow:0 5px 18px #354b6c05}
+              .freshness-heading{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+              .freshness-heading strong{font-size:13px;font-weight:850;color:#33465f}
+              .freshness-heading span,.freshness-footer{font-size:11px;color:#8492a6;line-height:1.6}
+              .freshness-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+              .freshness-entry{display:flex;flex-direction:column;gap:5px;border:1px solid #e9edf4;border-radius:10px;padding:12px 14px;background:#fbfcff;min-width:0}
+              .freshness-entry.is-warning{border-color:#e8d6b8;background:#fffbf5}
+              .freshness-entry.is-ok{border-color:#deeee8;background:#fafdfa}
+              .freshness-label{font-size:11px;color:#74849b;font-weight:750}
+              .freshness-entry strong{font-size:13px;color:#33485f;font-weight:850}
+              .freshness-entry.is-warning strong{color:#94612c}
+              .freshness-entry.is-ok strong{color:#26765f}
+              .freshness-detail{font-size:11px;color:#7d8ca1;line-height:1.6;overflow-wrap:anywhere}
+              .freshness-footer{margin-top:9px}.freshness-footer a{color:#536ac6;font-weight:750}
+              @media(max-width:690px){.freshness-panel{padding:13px}.freshness-grid{grid-template-columns:1fr}.freshness-entry{padding:11px 12px}}
+          """
+          source=source.replace("  </style>",css+"  </style>",1)
+          
+          monitor = """// Display-only data freshness monitor: no AI or upstream API calls.
+          let freshnessFetchStatus={daily:'pending',hourly:'pending'};
+          function renderFreshnessStatus(){
+            if(!$('freshness-panel'))return;
+            const msPerHour=60*60*1000;
+            function ageStatus(raw,hours){
+              const t=Date.parse(raw||'');
+              const elapsed=Date.now()-t;
+              if(!Number.isFinite(elapsed)||elapsed<-(15*60*1000))return 'missing';
+              return elapsed>hours*msPerHour?'stale':'ok';
+            }
+            function show(kind,status,raw,note){
+              const container=$('freshness-'+kind+'-box');
+              const title=$('freshness-'+kind+'-state');
+              const detail=$('freshness-'+kind+'-detail');
+              const labels={pending:'조회 중…',ok:'최근 갱신 확인',stale:'갱신 지연 · 확인 필요',
+                            missing:'갱신 기록 없음',error:'자료 불러오기 실패',ai_error:'AI 분석 확인 필요',demo:'예시 화면'};
+              container.className='freshness-entry'+(status==='ok'?' is-ok':status!=='pending'?' is-warning':'');
+              title.textContent=labels[status]||'상태 확인 필요';
+              const at=raw?'마지막 생성·수집: '+fmtDate(raw,{year:'numeric',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'생성·수집 시각 없음';
+              detail.textContent=(status==='pending'?'저장된 데이터 확인 중':at)+(note?' · '+note:'');
+            }
+            const h=state.hourly, d=state.data;
+            const hourlyTime=h?.data_updated_at, dailyTime=d?.generated_at;
+            let hs=freshnessFetchStatus.hourly==='pending'?'pending':
+                   freshnessFetchStatus.hourly==='error'?'error':ageStatus(hourlyTime,3);
+            let ds=freshnessFetchStatus.daily==='pending'?'pending':
+                   freshnessFetchStatus.daily==='error'?'error':
+                   d?.mode==='demo'?'demo':ageStatus(dailyTime,36);
+            if(ds==='ok'&&d?.ai?.status!=='ok')ds='ai_error';
+            show('hourly',hs,hourlyTime,'3시간 초과 시 지연 표시 · 국채금리는 공식 일별 관측값');
+            show('daily',ds,dailyTime,'36시간 초과 시 지연 표시 · 매일 오전 9:07(KST) 예약');
+          }
+          """
+          source=source.replace("function render(){renderHeader();renderHourlyLabels();","function render(){renderHeader();renderHourlyLabels();renderFreshnessStatus();",1)
+          source=source.replace("function render(){renderHeader();",monitor+"\nfunction render(){renderHeader();",1)
+          
+          source=source.replace("  let dailyError=false;\n  try{","  let dailyError=false;\n  let hourlyError=false;\n  try{",1)
+          source=source.replace("state.hourly=json?.mode==='hourly_public_data'&&Array.isArray(json.market)&&json.news?json:null;",
+                                "state.hourly=json?.mode==='hourly_public_data'&&Array.isArray(json.market)&&json.news?json:null;\n          if(!state.hourly)hourlyError=true;",1)
+          source=source.replace("}catch(e){state.hourly=null;}","}catch(e){state.hourly=null;hourlyError=true;}",1)
+          source=source.replace("}else state.hourly=null;","}else{state.hourly=null;hourlyError=true;}",1)
+          source=source.replace("    render();\n    if(dailyError&&state.data===DEMO)",
+                                "    freshnessFetchStatus={daily:dailyError?'error':'ok',hourly:hourlyError?'error':'ok'};\n    render();\n    if(dailyError&&state.data===DEMO)",1)
+          source=source.replace("}catch(e){\n    render();\n    setNodeText('state-alert','데이터 재조회에 문제가 발생했습니다.",
+                                "}catch(e){\n    freshnessFetchStatus={daily:'error',hourly:'error'};\n    render();\n    setNodeText('state-alert','데이터 재조회에 문제가 발생했습니다.",1)
+          
+          # Sanity checks. The initial auto-run is unchanged.
+          assert source.count('id="freshness-panel"')==1
+          assert source.count('function renderFreshnessStatus(){')==1
+          assert source.count('renderFreshnessStatus();')==1
+          assert "setInterval(()=>{if(document.visibilityState==='visible'&&!document.hidden)reload()},10*60*1000);" in source
+          assert "embed-widget-hotlists.js" in source
+          assert "quotelinks.com/widgets/movers.js" in source
+          assert "TOP 15 화면 미리보기" in source
+          assert "forecast_history" in source
+          path.write_text(source,encoding="utf-8")
+          print("Freshness status installed. Daily/hourly collectors and forecast history untouched.")
+          
+          PY
+
+      - name: Check HTML script syntax and existing services
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          s=Path('site/index.html').read_text(encoding='utf-8')
+          for v in ('id="freshness-panel"', 'function renderFreshnessStatus(){',
+                    "embed-widget-hotlists.js", "quotelinks.com/widgets/movers.js",
+                    "TOP 15 화면 미리보기", "function renderForecastAccuracy()"):
+              assert v in s, v
+          assert s.count('id="freshness-panel"')==1
+          print('Existing market widgets, AI accuracy, and preview link remain present.')
+          PY
+
+      - name: Commit homepage only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "feat: show data freshness on dashboard [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Already installed; no content changed."
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
