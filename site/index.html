@@ -229,24 +229,15 @@
       </div>
     </section>
     <section class="section stock-spotlight" id="stock-spotlight" aria-label="국내·미국 주목 종목">
-      <div class="section-header"><div><h2 class="section-title">오늘의 주목 종목 TOP 15 탐색</h2><div class="section-sub">거래 활발 · 상승률 상위 · 하락률 상위 종목을 TradingView 확장 스크리너에서 확인하세요.</div></div></div>
+      <div class="section-header"><div><h2 class="section-title">오늘의 주목 종목 TOP 5</h2><div class="section-sub">국내·미국 시장의 거래 활발 · 상승률 상위 · 하락률 상위 종목을 각각 5개씩 홈페이지에서 확인할 수 있습니다.</div></div></div>
       <div class="panel stock-panel">
         <div class="stock-panel-header">
           <div class="view-tabs" role="group" aria-label="주식시장 구분"><button type="button" class="tab active" data-stock-market="KR" aria-pressed="true">국내주식 (국장)</button><button type="button" class="tab" data-stock-market="US" aria-pressed="false">미국주식 (미장)</button></div>
           <span id="stock-asof" class="stock-panel-caption">TradingView 제공 · 시세는 지연될 수 있음</span>
         </div>
-        <div class="stock-rank-toolbar">
-          <div class="stock-rank-tabs" role="group" aria-label="종목 순위 분류">
-            <button type="button" class="stock-rank-btn active" data-stock-rank="volume_leaders" aria-pressed="true">거래 활발</button>
-            <button type="button" class="stock-rank-btn" data-stock-rank="top_gainers" aria-pressed="false">상승률 상위</button>
-            <button type="button" class="stock-rank-btn" data-stock-rank="top_losers" aria-pressed="false">하락률 상위</button>
-          </div>
-          <a class="stock-rank-more" id="stock-rank-full" href="https://www.tradingview.com/markets/stocks-korea/market-movers-active/" target="_blank" rel="noopener noreferrer">TradingView 전체 순위 보기 ↗</a>
-        </div>
-        <div class="stock-rank-tip">주식 스크리너에서 상위 15위권까지 탐색할 수 있습니다. 화면에 보이는 행 수·페이지는 TradingView 위젯에서 관리합니다.</div>
         <div class="tv-widget-holder" id="tv-widget-kr" aria-label="국내주식 거래 활발, 상승률, 하락률 종목"></div>
         <div class="tv-widget-holder" id="tv-widget-us" aria-label="미국주식 거래 활발, 상승률, 하락률 종목" hidden></div>
-        <div class="stock-panel-caption" id="stock-source" style="margin-top:12px">출처: TradingView 주식 스크리너 · 순위/정렬 및 표시 행 수는 제공처 관리 · 투자 추천이 아닙니다. 시세는 지연될 수 있습니다.</div>
+        <div class="stock-panel-caption" id="stock-source" style="margin-top:12px">출처: TradingView 시장 핫리스트 · 거래 활발/상승/하락 각 TOP 5 · 투자 추천이 아닙니다. 시세는 지연될 수 있습니다.</div>
       </div>
       <div class="panel stock-ai-panel" id="stock-ai-panel" aria-label="최근 뉴스 기반 종목 AI 이슈 분석">
         <div class="stock-ai-top"><div><h3>AI 종목 이슈 TOP 5</h3><p>최근 72시간 뉴스 언급량 상위 · 지정된 주요 기업 후보 중 선정 · 위 TradingView 거래 순위와 별개</p></div><span class="stock-panel-caption" id="stock-ai-asof">자동 갱신 대기</span></div>
@@ -413,38 +404,32 @@ function stockRankUrl(market,rank){
 }
 function mountTradingView(market){
   const host=$('tv-widget-'+market.toLowerCase());
-  if(!host)return;
-  const screen=state.stockRank||'volume_leaders';
-  const mountKey=market+':'+screen;
-  if(host.dataset.mounted===mountKey)return;
+  if(!host || host.dataset.mounted==='hotlists')return;
   host.replaceChildren();
-  host.dataset.mounted=mountKey;
-  const outer=create('div','tradingview-widget-container stock-ranking-embed');
+  host.dataset.mounted='hotlists';
+  const outer=create('div','tradingview-widget-container');
   const inner=create('div','tradingview-widget-container__widget');
   const source=create('div','tradingview-widget-copyright');
-  const link=create('a','',market==='KR'?'한국 주식 확장 순위':'미국 주식 확장 순위');
-  link.href=stockRankUrl(market,screen);
+  const link=create('a','',market==='KR'?'한국 주식 시장':'미국 주식 시장');
+  link.href=market==='KR'?'https://www.tradingview.com/markets/stocks-korea/':'https://www.tradingview.com/markets/stocks-usa/';
   link.target='_blank';link.rel='noopener noreferrer nofollow';
   source.append(link,document.createTextNode(' by TradingView'));
   outer.append(inner,source);
   const script=document.createElement('script');
   script.type='text/javascript';
   script.async=true;
-  script.src='https://s3.tradingview.com/external-embedding/embed-widget-screener.js';
+  script.src='https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js';
   script.textContent=JSON.stringify({
-    width:'100%',height:865,
-    defaultColumn:'overview',defaultScreen:screen,
-    showToolbar:true,locale:'kr',
-    market:market==='KR'?'korea':'us',
-    colorTheme:'light',isTransparent:true
+    colorTheme:'light',dateRange:'1D',exchange:market==='KR'?'KRX':'US',
+    showChart:false,locale:'kr',width:'100%',height:'460',
+    largeChartUrl:'',isTransparent:true,showSymbolLogo:true,showFloatingTooltip:true
   });
   script.onerror=()=>{
-    inner.replaceChildren(create('div','stock-empty','스크리너를 표시하지 못했습니다. 아래 TradingView 출처 링크에서 전체 순위를 확인하세요.'));
+    inner.replaceChildren(create('div','stock-empty','TradingView 핫리스트를 불러오지 못했습니다. 아래 출처에서 확인하세요.'));
   };
   outer.append(script);
   host.append(outer);
 }
-
 function renderStockSpotlight(){
   const section=$('stock-spotlight');
   section.classList.toggle('is-visible',state.tab==='stocks');
@@ -455,9 +440,6 @@ function renderStockSpotlight(){
     b.setAttribute('aria-pressed',String(active));
   });
   const kr=state.stockMarket==='KR';
-  const rank=state.stockRank||'volume_leaders';
-  document.querySelectorAll('[data-stock-rank]').forEach(b=>{const active=b.dataset.stockRank===rank;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
-  const rankLink=$('stock-rank-full');if(rankLink)rankLink.href=stockRankUrl(state.stockMarket,rank);
   $('tv-widget-kr').hidden=!kr;
   $('tv-widget-us').hidden=kr;
   $('stock-asof').textContent=kr?'국내 주식 · TradingView 제공':'미국 주식 · TradingView 제공';
@@ -595,7 +577,6 @@ async function reload(){
 }
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.tab;render();if(b.classList.contains('nav-btn')){if(state.tab==='all')window.scrollTo({top:0,behavior:'smooth'});else $(state.tab==='stocks'?'stock-spotlight':'outlook-section').scrollIntoView({behavior:'smooth',block:'start'})}}));
 document.querySelectorAll('[data-stock-market]').forEach(b=>b.addEventListener('click',()=>{state.stockMarket=b.dataset.stockMarket;renderStockSpotlight();renderOutlooks();renderForecastAccuracy();renderNews()}));
-document.querySelectorAll('[data-stock-rank]').forEach(b=>b.addEventListener('click',()=>{state.stockRank=b.dataset.stockRank;renderStockSpotlight()}));
 $('news-search').addEventListener('input',e=>{state.search=e.target.value.trim();renderNews()});
 $('refresh').addEventListener('click',reload);
 $('go-news').addEventListener('click',()=>$('news-section').scrollIntoView({behavior:'smooth'}));
