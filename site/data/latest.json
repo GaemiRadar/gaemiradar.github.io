@@ -1,60 +1,60 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-11T19:22:32.440331+09:00",
+  "generated_at": "2026-11-11T19:41:31.552581+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
-    "model": "gemini-3.5-flash-lite → gemini-3.5-flash",
-    "draft_model": "gemini-3.5-flash-lite",
+    "model": "gemini-3.6-flash → gemini-3.5-flash",
+    "draft_model": "gemini-3.6-flash",
     "review_model": "gemini-3.5-flash",
     "review_status": "completed",
     "review_note": null,
-    "headline": "미국 물가 충격과 긴축 우려 속 국내외 증시 및 채권시장 동향",
-    "overview": "미국 인플레이션 지표 충격으로 연방준비제도의 '빅스텝' 우려가 부각되며 뉴욕증시와 미 국채 가격이 하락했으나, 국내 증시는 반도체 관련 호재 등에 힘입어 동반 급등세를 기록했습니다.",
+    "headline": "미국 물가 우려 속 뉴욕증시 하락 및 국내 증시 반도체주 강세 반등",
+    "overview": "미국 CPI 관련 물가 불안감으로 연준의 긴축 우려가 커지며 미국 증시와 국채 가격이 약세를 보였습니다. 반면 국내 증시는 삼성전자와 SK하이닉스 등 주요 반도체 종목의 강세에 힘입어 상승 마감했습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "상승 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "미국의 긴축 우려에도 불구하고 삼성전자와 SK하이닉스 등 대형 반도체주의 강세와 코어위브 실적 모멘텀에 힘입어 코스피와 코스닥이 큰 폭으로 반등했습니다.",
+        "summary": "미국 긴축 우려에도 불구하고 반도체 대형주 및 기판주의 강세로 코스피와 코스닥 지수가 급등했습니다. 다만 지수 상승 과정에서 개인 투자자의 매도세가 관측되어 상방 압력을 일부 제한할 수 있습니다.",
         "bull_cases": [
-          "반도체 섹터의 강한 반등세와 기판주 호조",
-          "미국 증시 하락세와 디커플링을 보이며 외국인 등 수급 유입 및 지수 급등"
+          "삼성전자 및 SK하이닉스 등 반도체 대형주 반등",
+          "코스피 2.60% 상승 및 코스닥 5.62% 급등"
         ],
         "bear_cases": [
-          "미국 물가 쇼크에 따른 글로벌 긴축 우려",
-          "개인투자자의 순매도세 지속"
+          "미국 인플레이션 및 연준 긴축 우려 지속",
+          "지수 상승에 따른 개인 투자자의 매도 양상"
         ],
         "watch": [
-          "국내외 반도체 실적 및 관련 모멘텀 지속 여부",
-          "미국 금리 및 환율 변동성"
+          "코스피 5,300선 및 코스닥 700선 안착 여부",
+          "반도체 업종 중심의 수급 흐름"
         ],
         "citation_ids": [
           "stocks_kr-1",
-          "stocks_kr-3",
-          "stocks_kr-7"
+          "stocks_kr-2",
+          "stocks_kr-5"
         ]
       },
       "stocks_us": {
         "direction": "하락 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "예상을 웃돈 미국 물가 지표에 따른 '빅스텝' 우려와 엔비디아 등 대형 기술주 악재가 겹치면서 뉴욕증시가 하락 압력을 받았습니다.",
+        "summary": "미국 CPI 물가 상승에 따른 연준 빅스텝 우려로 나스닥을 비롯한 뉴욕 주요 지수가 하락했습니다. 엔비디아 등 대형 기술주가 약세를 보였으나 브로드컴 등 일부 반도체 종목은 상승하며 종목별 차별화를 나타냈습니다.",
         "bull_cases": [
-          "브로드컴 및 일부 AI 관련 종목의 개별 상승",
-          "견조한 개별 기업의 실적 전망 기대감"
+          "브로드컴(+3.91%), AMD, 아마존 등 일부 대형주의 상승세",
+          "코어위브 실적 관련 이슈 존재"
         ],
         "bear_cases": [
-          "인플레이션 충격으로 인한 연준의 추가 금리 인상 공포",
-          "엔비디아 등 대형주 급락 및 규제 리스크"
+          "CPI 충격에 따른 인플레이션 및 연준 빅스텝 우려",
+          "엔비디아(-5.47%), 마이크로소프트, 인텔 등 대형 기술주 약세"
         ],
         "watch": [
-          "추가 인플레이션 및 고용 지표 발표",
-          "주요 빅테크 기업들의 주가 변동성"
+          "미국 10년물 국채금리의 5% 돌파 여부",
+          "연준 통화정책 방향성 및 주요 기술주 이슈"
         ],
         "citation_ids": [
           "stocks_us-0",
-          "stocks_us-1",
+          "stocks_us-3",
           "stocks_us-6"
         ]
       },
@@ -62,22 +62,23 @@
         "direction": "하락 우세",
         "confidence": "보통",
         "horizon": "단기",
-        "summary": "미국 물가 지표가 예상을 웃돌며 연준의 금리 인상 가능성이 제기됨에 따라 국채 금리가 급등하고 고정금리 채권 가격은 하락세를 보였습니다.",
+        "summary": "미국 인플레이션 우려로 국채금리가 상승하면서 고정금리 채권 가격은 급락세를 보였습니다. 채권 금리와 고정금리 채권 가격은 통상 반대로 움직입니다.",
         "bull_cases": [
-          "일부 국내 국고채 시장에서의 외국인 매수 유입 등 제한적 강세 시도"
+          "국고채 시장에 대한 외국인 순매수세",
+          "원/달러 환율의 1,330원대 하락 흐름"
         ],
         "bear_cases": [
-          "미국 물가 불안에 따른 연준 금리 인상 우려로 인한 국채 금리 폭등 및 채권 가격 하락",
-          "한국은행 최종금리 인상 압박 가능성"
+          "미국 CPI 예상을 상회함에 따른 연준 12월 빅스텝 우려",
+          "미국 국채금리 상승에 따른 국채 가격 급락 압력"
         ],
         "watch": [
-          "미국 국채 10년물 및 2년물 금리 추이",
-          "연준 위원들의 통화정책 관련 발언"
+          "미국 10년물 및 2년물 국채금리 변동 추이",
+          "연준의 금리 인상 전망 및 최종금리 영향"
         ],
         "citation_ids": [
           "bonds-0",
           "bonds-3",
-          "bonds-7"
+          "bonds-4"
         ]
       }
     },
@@ -86,53 +87,90 @@
         {
           "symbol": "000660",
           "signal": "긍정 이슈",
-          "summary": "SK하이닉스가 나란히 급등세를 보이며 주가 상승 흐름을 나타냈습니다.",
+          "summary": "SK하이닉스 주가가 급등세를 나타낸 가운데 내년 국내 주식과 ADR 가격차 축소 방안에 대한 기대감이 보도되었습니다.",
           "citation_ids": [
-            "sn-kr-000660-0"
+            "sn-kr-000660-0",
+            "sn-kr-000660-1"
           ]
         },
         {
           "symbol": "005930",
           "signal": "혼재",
-          "summary": "배당 및 지배구조 관련 이슈와 함께 해외 토큰 거래 과제 등이 보도되었습니다.",
+          "summary": "삼성전자 주가가 반등을 나타낸 가운데 증여세 관련 이슈 및 ETF 특별배당 소식이 함께 전해졌습니다.",
           "citation_ids": [
             "sn-kr-005930-0",
-            "sn-kr-005930-1"
+            "sn-kr-005930-2"
+          ]
+        },
+        {
+          "symbol": "068270",
+          "signal": "혼재",
+          "summary": "셀트리온의 중소사업장 나눔 활동 소식과 함께 투자자들의 순매도 보도가 교차했습니다.",
+          "citation_ids": [
+            "sn-kr-068270-0",
+            "sn-kr-068270-2"
           ]
         },
         {
           "symbol": "005380",
           "signal": "부정 이슈",
-          "summary": "행정소송 관련 매도 압력 지속으로 장중 약세 흐름이 나타났습니다.",
+          "summary": "행정소송 여파로 매도 압력이 지속되며 주가가 장중 소폭 하락세를 기록했습니다.",
           "citation_ids": [
             "sn-kr-005380-0",
             "sn-kr-005380-1"
+          ]
+        },
+        {
+          "symbol": "035420",
+          "signal": "긍정 이슈",
+          "summary": "합병 승인에 따른 규제 해소 기대감과 함께 주가가 3.6% 상승세를 보였습니다.",
+          "citation_ids": [
+            "sn-kr-035420-0",
+            "sn-kr-035420-2"
           ]
         }
       ],
       "US": [
         {
+          "symbol": "AVGO",
+          "signal": "긍정 이슈",
+          "summary": "뉴욕증시 전반의 하락 및 엔비디아 급락 속에서도 브로드컴 주가는 상승세를 기록했습니다.",
+          "citation_ids": [
+            "sn-us-AVGO-1",
+            "sn-us-AVGO-2"
+          ]
+        },
+        {
           "symbol": "NVDA",
           "signal": "부정 이슈",
-          "summary": "주주 소송 및 규제 압박, 최고경영자 관련 악재가 겹치며 주가가 급락했습니다.",
+          "summary": "인플레이션 충격 및 법적·규제 이슈 속에서 주가가 5% 이상 하락했습니다.",
           "citation_ids": [
             "sn-us-NVDA-0",
             "sn-us-NVDA-2"
           ]
         },
         {
-          "symbol": "AVGO",
+          "symbol": "PLTR",
           "signal": "긍정 이슈",
-          "summary": "엔비디아 약세 속에서 반도체 패권 경쟁 수혜로 주가가 상승했습니다.",
+          "summary": "AI 수요 확대에 따른 실적 전망 상향과 단기 기술적 강세 흐름이 언급되었습니다.",
           "citation_ids": [
-            "sn-us-AVGO-0",
-            "sn-us-AVGO-2"
+            "sn-us-PLTR-0",
+            "sn-us-PLTR-1"
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "signal": "혼재",
+          "summary": "로보택시 사업 확대 호재 소식과 서학개미의 자금 이동 보도가 공존했습니다.",
+          "citation_ids": [
+            "sn-us-TSLA-0",
+            "sn-us-TSLA-2"
           ]
         },
         {
           "symbol": "MSFT",
           "signal": "부정 이슈",
-          "summary": "임원의 주식 매도 및 경쟁사 신제품 공개 소식 등으로 장중 하락 압력을 받았습니다.",
+          "summary": "경쟁사 신규 서비스 발표 및 경영진의 주식 매도 소식이 전해지며 주가가 약세를 보였습니다.",
           "citation_ids": [
             "sn-us-MSFT-0",
             "sn-us-MSFT-2"
@@ -1403,43 +1441,43 @@
           ]
         },
         {
-          "symbol": "035720",
-          "name": "카카오",
-          "article_count": 8,
-          "publisher_count": 2,
+          "symbol": "035420",
+          "name": "NAVER",
+          "article_count": 6,
+          "publisher_count": 5,
           "articles": [
             {
-              "title": "주가 맞히면 포인트…카카오페이 '오늘의 예감'에 폴리마켓 유사 지적",
-              "publisher": "연합뉴스",
-              "published_at": "2026-11-11T08:41:38+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iUEltdW51cHRHRi1iS0VraS1TVEJUUlduNFA2SFlXWXBuNndDWV82a0ZOODRwdGJGU2Q4bElHak53c0dlSWhyMmhGUEJJWjkxZlFhdGpPbDFXQ1JMTzFEctIBYEFVX3lxTE1iUEltdW51cHRHRi1iS0VraS1TVEJUUlduNFA2SFlXWXBuNndDWV82a0ZOODRwdGJGU2Q4bElHak53c0dlSWhyMmhGUEJJWjkxZlFhdGpPbDFXQ1JMTzFEcg?oc=5",
-              "id": "sn-kr-035720-0"
+              "title": "FTC의 합병 승인으로 규제 불확실성이 해소되면 네이버 주가에 도움이 될까요?",
+              "publisher": "Traders Union",
+              "published_at": "2026-11-11T02:52:25+00:00",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXBqZEw1OWpSUjR5M3h6eWhqbkJVMmRaRWZKUERDd2FYYzhORWZ4b0xZOWM0U2VVcW9XZ29SV1FoVGZ6Z3hPRUU5ZWNRQ2I1Q2F2RXRTY1QzVFhRZm9tS18xNGtDTm10dDNfS0E0TVc5UnJZZnp3Ty1LanZveXVpcjFDTGRCYkc1aE05RTZTMHpBemNf?oc=5",
+              "id": "sn-kr-035420-0"
             },
             {
-              "title": "카카오 주가 50원 하락 후 장마감",
-              "publisher": "아시아뉴스통신",
-              "published_at": "2026-11-11T06:50:23+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xNnhzNTh3YUNnZ1dSOHlBeEtDXzlwZzdHd1ljZ29UamxYYkNHRUswT3RUQUYyd3laejB0MEJIQ0Q2TlhUT3l0dm5FTllIUFI1MTZSRzJoZVJOZWl6?oc=5",
-              "id": "sn-kr-035720-1"
+              "title": "데이터센터 못 지으면 한국으로 오세요…랠리 펼친 네이버, 시총 20위 ‘각축’",
+              "publisher": "매일경제 마켓",
+              "published_at": "2026-11-11T02:06:02+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kWmotTDdlcjE3Rng3Mk1hX0M5anhiazU5RE1lZzE4VFhNUVFQUDdYeFZqTlRXNWxJVThhemZISHNlT3d2NnBvcFhDU0kwMWNVWlE?oc=5",
+              "id": "sn-kr-035420-1"
             },
             {
-              "title": "카카오뱅크 주가 250원 하락 후 장마감",
-              "publisher": "아시아뉴스통신",
-              "published_at": "2026-11-11T06:44:13+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rQTZMRFBVMjVKX2R6MzdsQ1VMY3B0aHdiR2gwbTdWZjlmYjg0OWR4aW1QWTFkdVNfaTNLdkNKXzdkNmlGZnhaZWRvYXNZd25razJFTWZNeXZLUjZv?oc=5",
-              "id": "sn-kr-035720-2"
+              "title": "오늘 네이버 주가가 3.6% 오른 이유는 무엇인가요?",
+              "publisher": "Traders Union",
+              "published_at": "2026-11-10T02:07:26+00:00",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdURJaEJmSlQyYXBaV010emhNZi1qbXBTX2VKMi1mY3FLSUtFejNDVllZVGItM0RuUGxXdE5NWE5BcF9tT2pnOGpVR29JWmdFUXNGUkhqSzVEa0RlbXJ3NmRQOU5yT2poanJuMGJOOWZuTlppYzd1c2h0MmR5MzhJV3U3RUlzRFdYeF9LNXFlcXU?oc=5",
+              "id": "sn-kr-035420-2"
             },
             {
-              "title": "카카오페이 주가 500원 상승 후 장마감",
-              "publisher": "아시아뉴스통신",
-              "published_at": "2026-11-11T06:42:28+00:00",
-              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WTTZvSXlpRlU0Ylo2cDVnVWI5V0ZJRHNJYVlnamktRXdLeV8zaUFhQVl0TDBZdk1XSEFDVXlsVmE4Rm5ldzA5ZzRmeEhWY0JzbXdreDl4ZnE4QW9GT2E0SDZBTFpPZWNFNFBMMm1jdHNld3di?oc=5",
-              "id": "sn-kr-035720-3"
+              "title": "네이버 주가, 11월 10일 장중 193,100원 3.21% 상승",
+              "publisher": "중앙이코노미뉴스",
+              "published_at": "2026-11-10T00:59:17+00:00",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBrWXZiVl90ZE5DZ2xFYWZlX0xqWFFoM0owWkthRGVSNnNpX0tIS09UUk9BUGI4cm55eUQzRFZfVUI2SmZvdTkxdUxzSU9XTVJVSmthMDBodGhhQ2U5U0h5aklmbEVqaVhCNFROYTFVSERLUQ?oc=5",
+              "id": "sn-kr-035420-3"
             }
           ]
         }
       ],
-      "as_of": "2026-11-11T19:21:11.622192+09:00",
+      "as_of": "2026-11-11T19:40:05.034325+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
@@ -1511,10 +1549,10 @@
               "id": "sn-us-NVDA-2"
             },
             {
-              "title": "‘불륜女’ 인정, 젠슨황에 달린 엔비디아 주가 흐름…“축출되면 폭락” 전망도",
-              "publisher": "헤럴드경제",
-              "published_at": "2026-11-11T08:00:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9nbjBRMlo5YmpJVEFqVUY4d05LanU3ckQyRExBaWtfa2x4NkNUcGtuQWQ1Mm9IM0VjeVNvVkszcFFtQkVybm1MdHNGUGxqOUJTekJVODR3?oc=5",
+              "title": "댄 아이브스 “젠슨 황 CEO 물러나면 엔비디아 주가 30% 추가 하락 가능”",
+              "publisher": "Benzinga",
+              "published_at": "2026-11-11T07:40:32+00:00",
+              "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQaHJLWmlfQVNEdGFYdWVFcW9KOElXd1FESG0zd3FKaXN1NlFpZTNDQnY5MHFHYlVpaXpkTDBtcWdoTWQyZTlORDlRYkdaZXFObE45c05CUFlOYm1aMzEwNTZDM0RnUGJBOTU3LWtqa0RhUThCSnAzYUljTHUyV24xaldZOTFsOGNlWnNneGtmYURNb1p6TTdmS05tMlZlWWZadjhtNEZTRHhXMFdLckVCZVFsYjMxWlVFV0pyVEtjNlQwSXlzbE02M2VrT1hDNzhOSHFEdV9lc1dHMzZfa3E5dTdxY2VGdGp2ajJ5QlQzWVBoUi1reG5OSEtVdTBZbXFBdVJGU2wxVUdDcHlYMFY1bUdESlZOVnpCOUVtQjdDdllYcDV2S3NENG9qTU1SdHJtU2hieU5LeUFESXRfdG5Pd1JTMnZmVmNvaU91LXg3bU14ZFlJ?oc=5",
               "id": "sn-us-NVDA-3"
             }
           ]
@@ -1628,7 +1666,7 @@
           ]
         }
       ],
-      "as_of": "2026-11-11T19:21:11.622192+09:00",
+      "as_of": "2026-11-11T19:40:05.034325+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
@@ -1647,9 +1685,7 @@
       "status": "source_pending"
     }
   },
-  "errors": [
-    "Flash 모델 gemini-3.6-flash 실패: ServerError (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
-  ],
+  "errors": [],
   "forecast_archive_version": 1,
   "forecast_history": [
     {
