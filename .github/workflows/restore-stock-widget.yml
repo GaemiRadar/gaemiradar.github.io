@@ -1,0 +1,142 @@
+name: Restore Embedded Stock Hotlists
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current site
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore supported embedded market movers widget
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path=Path('site/index.html')
+          src=path.read_text(encoding='utf-8')
+          if '오늘의 주목 종목 TOP 15 탐색' not in src:
+              raise SystemExit('현재 TOP 15 화면과 다른 버전입니다. 파일을 수정하지 않았습니다.')
+          if 'function mountTradingView(market){' not in src:
+              raise SystemExit('TradingView 위젯 함수를 찾지 못했습니다. 수정을 중단합니다.')
+          if 'function renderStockSpotlight(){' not in src:
+              raise SystemExit('종목 탭 렌더링 함수를 찾지 못했습니다. 수정을 중단합니다.')
+
+          def replace_one(old,new,label):
+              global src
+              count=src.count(old)
+              if count!=1:
+                  raise SystemExit(f'{label}: 기대한 위치 1곳이 아니라 {count}곳입니다. 수정 중단')
+              src=src.replace(old,new,1)
+
+          replace_one('오늘의 주목 종목 TOP 15 탐색','오늘의 주목 종목 TOP 5','heading')
+          replace_one('거래 활발 · 상승률 상위 · 하락률 상위 종목을 TradingView 확장 스크리너에서 확인하세요.',
+                      '국내·미국 시장의 거래 활발 · 상승률 상위 · 하락률 상위 종목을 각각 5개씩 홈페이지에서 확인할 수 있습니다.', 'description')
+          # The old Top-15 filter controls were tied to a restricted screener;
+          # the supported hotlists widget shows all three categories itself.
+          src, n=re.subn(
+              r'(?s)        <div class="stock-rank-toolbar">.*?</div>\s*<div class="stock-rank-tip">.*?</div>\s*',
+              '        ',src,count=1)
+          if n!=1:
+              raise SystemExit('기존 스크리너 버튼 영역을 찾지 못했습니다. 수정 중단')
+          replace_one('출처: TradingView 주식 스크리너 · 순위/정렬 및 표시 행 수는 제공처 관리 · 투자 추천이 아닙니다. 시세는 지연될 수 있습니다.',
+                      '출처: TradingView 시장 핫리스트 · 거래 활발/상승/하락 각 TOP 5 · 투자 추천이 아닙니다. 시세는 지연될 수 있습니다.', 'source-note')
+
+          new_mount='''function mountTradingView(market){
+            const host=$('tv-widget-'+market.toLowerCase());
+            if(!host || host.dataset.mounted==='hotlists')return;
+            host.replaceChildren();
+            host.dataset.mounted='hotlists';
+            const outer=create('div','tradingview-widget-container');
+            const inner=create('div','tradingview-widget-container__widget');
+            const source=create('div','tradingview-widget-copyright');
+            const link=create('a','',market==='KR'?'한국 주식 시장':'미국 주식 시장');
+            link.href=market==='KR'?'https://www.tradingview.com/markets/stocks-korea/':'https://www.tradingview.com/markets/stocks-usa/';
+            link.target='_blank';link.rel='noopener noreferrer nofollow';
+            source.append(link,document.createTextNode(' by TradingView'));
+            outer.append(inner,source);
+            const script=document.createElement('script');
+            script.type='text/javascript';
+            script.async=true;
+            script.src='https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js';
+            script.textContent=JSON.stringify({
+              colorTheme:'light',dateRange:'1D',exchange:market==='KR'?'KRX':'US',
+              showChart:false,locale:'kr',width:'100%',height:'460',
+              largeChartUrl:'',isTransparent:true,showSymbolLogo:true,showFloatingTooltip:true
+            });
+            script.onerror=()=>{
+              inner.replaceChildren(create('div','stock-empty','TradingView 핫리스트를 불러오지 못했습니다. 아래 출처에서 확인하세요.'));
+            };
+            outer.append(script);
+            host.append(outer);
+          }
+          '''
+          # Indent fix: heredoc is removed from the YAML run block by the runner.
+          # The inserted JS whitespace has no semantic effect.
+          begin=src.index('function mountTradingView(market){')
+          end=src.index('\nfunction renderStockSpotlight(){',begin)
+          src=src[:begin]+new_mount.rstrip()+src[end:]
+          old="""  const rank=state.stockRank||'volume_leaders';
+            document.querySelectorAll('[data-stock-rank]').forEach(b=>{const active=b.dataset.stockRank===rank;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+            const rankLink=$('stock-rank-full');if(rankLink)rankLink.href=stockRankUrl(state.stockMarket,rank);
+          """
+          # Match exact statements regardless of indentation (current branch version).
+          src,count=re.subn(r"(?m)^\s*const rank=state\.stockRank\|\|'volume_leaders';\n\s*document\.querySelectorAll\('\[data-stock-rank\]'\)\.forEach\(b=>\{const active=b\.dataset\.stockRank===rank;.*?\}\);\n\s*const rankLink=\$\('stock-rank-full'\);if\(rankLink\)rankLink\.href=stockRankUrl\(state\.stockMarket,rank\);\n",'',src,count=1)
+          if count!=1:
+              raise SystemExit('기존 순위 버튼 렌더링을 찾지 못했습니다. 수정 중단')
+          src,count=re.subn(r"(?m)^document\.querySelectorAll\('\[data-stock-rank\]'\)\.forEach\(b=>b\.addEventListener\('click',.*?\)\);\n",'',src,count=1)
+          if count!=1:
+              raise SystemExit('기존 순위 버튼 이벤트를 찾지 못했습니다. 수정 중단')
+          # Do not change the AI TOP 5 section or any market data code.
+          if '<h3>AI 종목 이슈 TOP 5</h3>' not in src:
+              raise SystemExit('AI 종목 분석이 누락된 HTML입니다. 수정 중단')
+          if '오늘의 주목 종목 TOP 15 탐색' in src or 'embed-widget-screener.js' in src:
+              raise SystemExit('기존 스크리너 코드가 남아 있습니다. 수정 중단')
+          path.write_text(src, encoding='utf-8')
+          print('Replaced restricted embedded screener with supported hotlists TOP 5.')
+          PY
+      - name: Commit only the repaired HTML
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: restore embedded market hotlists"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
