@@ -1,0 +1,105 @@
+name: Add Top 15 Preview Link
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Add a clearly labeled TOP 15 design preview link
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          home = Path('site/index.html')
+          preview = Path('site/stock-rankings-preview.html')
+          if not preview.is_file():
+              raise SystemExit('Missing site/stock-rankings-preview.html. Upload the preview page first.')
+          original = home.read_text(encoding='utf-8')
+          if 'stock-preview-actions' in original and 'stock-preview-link' in original:
+              print('Preview link already installed. No duplicate changes.')
+              raise SystemExit(0)
+
+          section = '<section class="section stock-spotlight" id="stock-spotlight"'
+          panel = '      <div class="panel stock-panel">'
+          section_at = original.find(section)
+          panel_at = original.find(panel, section_at if section_at >= 0 else 0)
+          if section_at < 0 or panel_at < section_at:
+              raise SystemExit('Stock section layout has changed. No file modified.')
+
+          html = '''      <div class="stock-preview-actions" aria-label="TOP 15 화면 시제품">
+                  <a class="stock-preview-link" href="./stock-rankings-preview.html" target="_blank" rel="noopener noreferrer">TOP 15 화면 미리보기 ↗</a>
+                  <span class="stock-preview-note">가상 데이터로 제작한 디자인 시제품입니다. 실제 시세·종목 순위가 아닙니다.</span>
+                </div>
+          '''
+          updated = original[:panel_at] + html + original[panel_at:]
+
+          css = '''    /* TOP 15 mock-up link: not real financial data */
+              .stock-preview-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 16px}
+              .stock-preview-link{display:inline-flex;align-items:center;justify-content:center;border-radius:11px;padding:10px 15px;border:1px solid #cbd5ff;background:#eef1ff;color:#3c50bb;font-size:12px;font-weight:800;text-decoration:none}
+              .stock-preview-link:hover{background:#dfe5ff;text-decoration:none}
+              .stock-preview-link:focus-visible{outline:3px solid #94a3ff;outline-offset:3px}
+              .stock-preview-note{color:#7a899e;font-size:11px;line-height:1.65}
+              @media(max-width:690px){.stock-preview-actions{align-items:flex-start;flex-direction:column;gap:7px}.stock-preview-link{width:100%}}
+          '''
+          closing = '  </style>'
+          if updated.count(closing) != 1:
+              raise SystemExit('Unexpected number of stylesheet endings. No file modified.')
+          updated = updated.replace(closing, css + closing, 1)
+          assert updated.count('href="./stock-rankings-preview.html"') == 1
+          assert 'quotelinks10' in updated, 'Expected existing US TOP 10 feature'
+          assert 'embed-widget-hotlists.js' in updated, 'Expected existing KR TOP 5 feature'
+          assert 'AI 종목 이슈 TOP 5' in updated, 'Expected original AI feature'
+          home.write_text(updated, encoding='utf-8')
+          print('Added one preview button and responsive styles; no market data modified.')
+          PY
+
+      - name: Commit only the homepage change
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'ui: link to clearly labeled TOP 15 design preview [skip ci]'
+            git push origin HEAD:main
+          else
+            echo 'No homepage changes to commit.'
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
