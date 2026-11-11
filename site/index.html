@@ -61,6 +61,10 @@
     .metric-freshness{margin-top:9px;color:#8693a6;font-size:10px;line-height:1.5;word-break:keep-all}
     .metric-freshness.old{color:#a36c3b}
     .metric-freshness.unknown{color:#9ca7b7}
+    .hourly-stamp{display:block;color:#5a7087;font-size:11px;line-height:1.6;margin-top:7px;word-break:keep-all}
+    .hourly-stamp.is-stale{color:#a17844}
+    .news-freshness{font-size:11px;color:#647890;line-height:1.5;text-align:right}
+    @media(max-width:690px){.news-freshness{text-align:left}}
     /* Provider-hosted recent S&P 500 quote (only visible when FRED observation is delayed). */
     .sp500-quote[hidden]{display:none!important}
     .sp500-quote{margin-top:13px;padding:19px 21px;background:#fff;border:1px solid var(--border);border-radius:17px;box-shadow:0 5px 19px #354b6c05}
@@ -197,7 +201,7 @@
     <div class="page-heading"><div><div class="eyebrow">● DAILY MARKET INTELLIGENCE</div><h1>오늘의 금융시장 인사이트</h1><div class="lead">국내·미국 주식과 채권·금리 중심 · Gemini AI 1차 분석 및 2차 검토</div></div><span id="mode-status" class="status-badge demo">예시 화면</span></div>
     <section class="hero" aria-label="시장 전체 요약"><div class="hero-content"><div class="hero-kicker"><span style="font-size:15px">✦</span> AI MARKET BRIEFING <span style="color:#97a9c4;font-size:10px;letter-spacing:0" id="hero-asof"></span></div><h2 id="hero-title">오늘의 시장을 움직이는 핵심 변수를 한눈에</h2><p id="hero-description">최신 뉴스 수집과 AI 분석을 연결하면 매일 새로운 상승·하락 시나리오가 여기에 표시됩니다.</p></div><div class="hero-side"><span class="small">리포트 작성 시점</span><strong id="hero-time">자동 갱신 전</strong></div></section>
     <div class="alert" id="state-alert" role="status">현재 예시 화면입니다. 자동 갱신을 설정한 후 실제 기사와 AI 분석이 표시됩니다.</div>
-    <section class="section" id="markets"><div class="section-header"><div><h2 class="section-title">핵심 시장 지표</h2><div class="section-sub">수치는 각 데이터 제공처의 최근 관측값이며 실시간 체결가는 아닙니다.</div></div><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="small-link">데이터 제공처 보기 ↗</a></div><div class="metrics" id="metrics"></div>
+    <section class="section" id="markets"><div class="section-header"><div><h2 class="section-title">핵심 시장 지표</h2><div class="section-sub">수치는 각 데이터 제공처의 최근 관측값이며 실시간 체결가는 아닙니다.<span id="market-hourly-asof" class="hourly-stamp">시간별 자료 연결 대기 · 일간 지표 표시</span></div></div><a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer" class="small-link">데이터 제공처 보기 ↗</a></div><div class="metrics" id="metrics"></div>
       <div id="sp500-latest" class="sp500-quote" hidden aria-label="S&P 500 추가 시세 확인">
         <div class="sp500-quote-heading">S&P 500 · 최근 시세 별도 확인</div>
         <div class="sp500-quote-desc" id="sp500-latest-explainer">FRED 종가 자료가 지연됐습니다. 아래 TradingView 제공 시세를 참고하세요. 두 데이터의 갱신 주기는 다를 수 있습니다.</div>
@@ -229,7 +233,7 @@
       <div class="panel" style="margin-top:15px;overflow:hidden"><div style="padding:18px 21px 10px;font-size:13px;font-weight:850;color:#405168">최근 예측 기록</div><div style="overflow-x:auto"><table class="forecast-table" aria-label="AI 전망 평가 상세"><thead><tr><th>예측일</th><th>시장</th><th>AI 예측</th><th>5거래일 결과</th><th>상태</th></tr></thead><tbody id="forecast-evaluation-rows"></tbody></table></div></div>
       <p class="forecast-score-foot">종가가 확정된 거래일만 비교하며, 예측 이후 실제 관측된 5개 거래일의 변화를 계산합니다. 절대 변동률이 0.1% 이하라면 보합으로 간주합니다. 평가 제외·대기 기록은 적중률 분모에 포함하지 않습니다. 적은 표본은 예측 능력을 입증하지 않습니다.</p>
     </section>
-    <section class="section" id="news-section"><div class="section-header"><div><h2 class="section-title">오늘의 주요 뉴스</h2><div class="section-sub">발행 시각과 출처를 함께 확인하세요. 기사 제목을 누르면 원문으로 이동합니다.</div></div><span class="small-link" id="news-count">기사 0건</span></div><div class="news-layout"><div class="panel"><div class="news-toolbar"><div style="font-weight:820;font-size:14px">최신 금융 이슈</div><label><span class="sr-only">기사 검색</span><input class="search" id="news-search" type="search" placeholder="뉴스 제목 검색" autocomplete="off" /></label></div><ul class="news-list" id="news-list"></ul></div><aside class="panel insight-panel" id="sources-section"><div><div class="eyebrow" style="font-size:10px">TRUSTED SOURCES</div><h3>데이터와 분석의 출처</h3><p class="explain">AI는 수집한 뉴스 제목·RSS 요약 및 관측된 가격 지표를 분석합니다. 기사 본문을 모두 읽는 방식은 아닙니다.</p></div><div class="source-list"><a class="source-item" href="https://news.google.com/?hl=ko&gl=KR&ceid=KR:ko" target="_blank" rel="noopener noreferrer"><span class="source-icon">N</span>Google 뉴스 RSS <span class="external">↗</span></a><a class="source-item" href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer"><span class="source-icon">F</span>FRED 경제지표<span class="external">↗</span></a><a class="source-item" href="https://ecos.bok.or.kr/" target="_blank" rel="noopener noreferrer"><span class="source-icon">₩</span>한국은행 ECOS<span class="external">↗</span></a></div><p class="fineprint">AI 전망은 투자 권유나 수익을 보장하는 예측이 아니며, 뉴스가 부족하면 판단을 유보합니다.</p></aside></div></section>
+    <section class="section" id="news-section"><div class="section-header"><div><h2 class="section-title">오늘의 주요 뉴스</h2><div class="section-sub">발행 시각과 출처를 함께 확인하세요. 기사 제목을 누르면 원문으로 이동합니다.</div></div><div><span class="small-link" id="news-count">기사 0건</span><div id="news-hourly-asof" class="news-freshness">일간 뉴스 표시</div></div></div><div class="news-layout"><div class="panel"><div class="news-toolbar"><div style="font-weight:820;font-size:14px">최신 금융 이슈</div><label><span class="sr-only">기사 검색</span><input class="search" id="news-search" type="search" placeholder="뉴스 제목 검색" autocomplete="off" /></label></div><ul class="news-list" id="news-list"></ul></div><aside class="panel insight-panel" id="sources-section"><div><div class="eyebrow" style="font-size:10px">TRUSTED SOURCES</div><h3>데이터와 분석의 출처</h3><p class="explain">AI는 수집한 뉴스 제목·RSS 요약 및 관측된 가격 지표를 분석합니다. 기사 본문을 모두 읽는 방식은 아닙니다.</p></div><div class="source-list"><a class="source-item" href="https://news.google.com/?hl=ko&gl=KR&ceid=KR:ko" target="_blank" rel="noopener noreferrer"><span class="source-icon">N</span>Google 뉴스 RSS <span class="external">↗</span></a><a class="source-item" href="https://fred.stlouisfed.org/" target="_blank" rel="noopener noreferrer"><span class="source-icon">F</span>FRED 경제지표<span class="external">↗</span></a><a class="source-item" href="https://ecos.bok.or.kr/" target="_blank" rel="noopener noreferrer"><span class="source-icon">₩</span>한국은행 ECOS<span class="external">↗</span></a><a class="source-item" href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve" target="_blank" rel="noopener noreferrer"><span class="source-icon">T</span>미국 재무부 · 일별 국채금리<span class="external">↗</span></a></div><p class="fineprint">AI 전망은 투자 권유나 수익을 보장하는 예측이 아니며, 뉴스가 부족하면 판단을 유보합니다.</p></aside></div></section>
     <footer class="footer"><span>© MARKET PULSE · AI-ASSISTED FINANCIAL BRIEFING</span><span>모든 시각은 한국시간(KST) · 정보 제공 목적 · 투자 책임은 투자자 본인에게 있습니다.</span></footer>
   </main>
 </div>
@@ -237,7 +241,7 @@
 'use strict';
 const CATS={stocks_kr:{name:'국내주식',subtitle:'KOREAN STOCK MARKET',icon:'↗'},stocks_us:{name:'미국주식',subtitle:'U.S. STOCK MARKET',icon:'↗'},bonds:{name:'채권',subtitle:'BOND & RATES',icon:'▥'}};
 const DEMO={mode:'demo',generated_at:null,ai:{status:'demo',model:null,headline:'오늘의 시장을 움직이는 핵심 변수를 한눈에',overview:'첫 번째 자동 갱신이 완료되면 최신 금융 뉴스와 실제 데이터에 기반한 시장 브리핑을 제공합니다.',analysis:{stocks_kr:{direction:'판단 유보',confidence:'낮음',horizon:'향후 1주',summary:'국내 증시 뉴스와 코스피·코스닥 지수가 연결되면 근거 기반 전망을 표시합니다.',bull_cases:['기업 실적과 외국인 수급 개선 여부'],bear_cases:['경기·환율 불안과 실적 하향 가능성'],watch:['코스피·코스닥 지수','외국인 수급'],citation_ids:[]},stocks_us:{direction:'판단 유보',confidence:'낮음',horizon:'향후 1주',summary:'미국 증시와 기업실적, 연준 정책을 바탕으로 전망을 표시합니다.',bull_cases:['기업 실적 개선과 물가 안정 가능성'],bear_cases:['국채금리 상승 및 기술주 변동성'],watch:['S&P500·나스닥','미국 CPI'],citation_ids:[]},bonds:{direction:'판단 유보',confidence:'낮음',horizon:'향후 1주',summary:'국채 수익률과 통화정책 뉴스를 바탕으로 금리와 채권가격의 상반된 방향을 구분해 보여줍니다.',bull_cases:['경기 둔화로 금리 하락 시 채권가격 상승','물가 진정으로 인하 기대 확대'],bear_cases:['물가 재상승으로 금리 상승 시 가격 하락','장기채 공급 증가 및 기간프리미엄 확대'],watch:['미국 국채 10년물 금리','중앙은행 발언'],citation_ids:[]}}},market:[{id:'KOSPI',name:'코스피',value:null,unit:'pt',change:null,change_unit:'pct',as_of:null,source:'Yahoo Finance',source_url:'https://finance.yahoo.com/quote/%5EKS11/'},{id:'SP500',name:'S&P 500',value:null,unit:'pt',change:null,change_unit:'pct',as_of:null,source:'FRED',source_url:'https://fred.stlouisfed.org/series/SP500'},{id:'DGS10',name:'미국 국채 10년',value:null,unit:'%',change:null,change_unit:'pp',as_of:null,source:'FRED',source_url:'https://fred.stlouisfed.org/series/DGS10'},{id:'DEXKOUS',name:'달러 / 원',value:null,unit:'원',change:null,change_unit:'pct',as_of:null,source:'FRED',source_url:'https://fred.stlouisfed.org/series/DEXKOUS'}],news:{stocks_kr:[],stocks_us:[],bonds:[]},errors:[]};
-let state={data:DEMO,tab:'all',stockMarket:'KR',search:''};
+let state={data:DEMO,hourly:null,tab:'all',stockMarket:'KR',search:''};
 const $=id=>document.getElementById(id);
 const safeText=v=>typeof v==='string'?v:'';
 function externalURL(url){try{const u=new URL(url);return u.protocol==='https:'?u.href:null}catch{return null}}
@@ -264,6 +268,59 @@ function weekdayGap(startYmd,endYmd){
   let n=0;
   for(t+=86400000;t<=end && n<366;t+=86400000){const day=new Date(t).getUTCDay();if(day!==0&&day!==6)n++}
   return n;
+}
+// hourly.json updates the NEWS DISPLAY and published Treasury yields only.
+// It never changes saved AI inputs, evidence, market forecast archives or scorecards.
+// Treat snapshots older than three hours (or unexpectedly in the future) as stale.
+function currentHourly(){
+  const h=state.hourly;
+  if(!h||h.mode!=='hourly_public_data'||!Array.isArray(h.market)||!h.news||typeof h.news!=='object')return null;
+  const t=Date.parse(h.data_updated_at||'');
+  const age=Date.now()-t;
+  if(!Number.isFinite(age)||age<-(15*60*1000)||age>3*60*60*1000)return null;
+  return h;
+}
+function publishedRates(){
+  const h=currentHourly();
+  const result=new Map();
+  if(!h)return result;
+  for(const m of h.market){
+    const canonical=m?.id==='UST2Y'?'DGS2':m?.id==='UST10Y'?'DGS10':null;
+    if(!canonical||m?.data_status==='previous_snapshot')continue;
+    const numeric=Number(m.value);
+    if(m.value===null||m.value===undefined||!Number.isFinite(numeric)||!/^\d{4}-\d{2}-\d{2}$/.test(m.as_of||''))continue;
+    const old=(Array.isArray(state.data.market)?state.data.market:[]).find(x=>x.id===canonical);
+    if(old?.as_of && m.as_of<old.as_of)continue; // never downgrade an observation
+    result.set(canonical,{...m,id:canonical,name:canonical==='DGS2'?'미국 국채 2년':'미국 국채 10년',_hourly_overlay:true});
+  }
+  return result;
+}
+function displayedMarkets(){
+  const rates=publishedRates();
+  return (Array.isArray(state.data.market)?state.data.market:[]).map(m=>rates.get(m.id)||m);
+}
+function displayedNews(){
+  const h=currentHourly();
+  const out={};
+  for(const category of Object.keys(CATS)){
+    const recent=h?.news_status?.[category]==='ok' && Array.isArray(h.news?.[category]) && h.news[category].length>0;
+    out[category]=recent?h.news[category]:(Array.isArray(state.data.news?.[category])?state.data.news[category]:[]);
+  }
+  return out;
+}
+function renderHourlyLabels(){
+  const h=currentHourly();
+  const rates=publishedRates();
+  const collected=h?fmtDate(h.data_updated_at,{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):null;
+  const m=$('market-hourly-asof');
+  if(rates.size){m.className='hourly-stamp';m.textContent=`미 재무부 국채금리 ${rates.size}개 · 최근 확인 ${collected} · 공식 일별 공시(실시간 아님)`;}
+  else if(state.hourly){m.className='hourly-stamp is-stale';m.textContent='시간별 국채금리 자료가 없거나 오래되어 일간 지표를 표시합니다.';}
+  else{m.className='hourly-stamp';m.textContent='시간별 자료 연결 대기 · 일간 지표 표시';}
+  const okCategories=h?Object.keys(CATS).filter(c=>h.news_status?.[c]==='ok'&&Array.isArray(h.news?.[c])&&h.news[c].length):[];
+  const n=$('news-hourly-asof');
+  if(okCategories.length){n.className='news-freshness';n.textContent=`시간별 뉴스 ${collected} 수집 · 일간 AI 분석과 별도`;}
+  else if(state.hourly){n.className='news-freshness';n.textContent='시간별 뉴스 갱신 지연 · 일간 뉴스 표시';}
+  else{n.className='news-freshness';n.textContent='일간 뉴스 표시 · 시간별 자료 연결 대기';}
 }
 function metricFreshness(m){
   if(m.value===null||m.value===undefined||!m.as_of)return {text:'수집 실패 또는 자료 미제공',cls:'unknown'};
@@ -312,11 +369,11 @@ function renderSP500Latest(){
   outer.append(script);
   host.append(outer);
 }
-function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=Array.isArray(state.data.market)?state.data.market:[];for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);const freshness=metricFreshness(m);item.append(create('div',`metric-freshness ${freshness.cls}`,freshness.text));if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'));renderSP500Latest()}
+function renderMetrics(){const parent=$('metrics');parent.replaceChildren();const list=displayedMarkets();for(const m of list.slice(0,8)){const item=create('div','metric');const top=create('div','metric-label');top.append(create('span','',m.name||m.id||'지표'),create('span','metric-icon',m.id==='DGS10'||m.id==='DGS2'?'%':'◈'));item.append(top);let has=Number.isFinite(Number(m.value)) && m.value!==null;const val=create('div',has?'metric-value':'metric-value empty',has?fmtNumber(Number(m.value),m.unit==='%'?2:2)+(m.unit==='%'?'%':m.unit==='원'?'원':''):'데이터 확인 중');item.append(val);const foot=create('div','metric-foot'),delta=formatDelta(m);foot.append(create('span',`delta ${delta.cls}`,delta.text));const info=create('span','',m.as_of?fmtDate(m.as_of,{month:'numeric',day:'numeric'})+' 기준':'연결 대기');foot.append(info);item.append(foot);const freshness=metricFreshness(m);item.append(create('div',`metric-freshness ${freshness.cls}`,m._hourly_overlay?'미 재무부 공식 일별 공시 수익률 · 실시간 아님':freshness.text));if(m._hourly_overlay)item.append(create('div','hourly-stamp',`자료 기준 ${m.as_of} · 수집 ${fmtDate(state.hourly.data_updated_at,{hour:'2-digit',minute:'2-digit'})}`));if(externalURL(m.source_url)){item.title=m.source+' · '+m.source_url;item.style.cursor='pointer';item.setAttribute('tabindex','0');item.setAttribute('role','link');item.setAttribute('aria-label',(m.name||m.id)+' 원본 데이터 열기');item.onclick=()=>window.open(m.source_url,'_blank','noopener,noreferrer');item.onkeydown=e=>{if(e.key==='Enter')item.click()}}parent.append(item)}if(!list.length)parent.append(create('div','empty','사용할 수 있는 시장 데이터가 없습니다.'));renderSP500Latest()}
 function makeList(items){const ul=create('ul','prop-list');(Array.isArray(items)?items:[]).slice(0,3).forEach(s=>ul.append(create('li','',s)));if(!ul.children.length)ul.append(create('li','','확인 가능한 근거가 없습니다.'));return ul}
 function refMap(){const m={};for(const [cat,arr] of Object.entries(state.data.news||{})){if(!Array.isArray(arr))continue;for(const a of arr){if(a.id)m[a.id]=a}}return m}
 function renderOutlooks(){const parent=$('outlooks');parent.replaceChildren();const analyses=state.data.ai?.analysis||{};const refs=refMap();const cats=state.tab==='all'?Object.keys(CATS):state.tab==='stocks'?[state.stockMarket==='KR'?'stocks_kr':'stocks_us']:[state.tab];for(const cat of cats){const data=analyses[cat]||{};const card=create('article','outlook');const top=create('div','outlook-top');top.append(create('div',`round-icon ${cat}`,CATS[cat].icon));const heading=create('div');heading.append(create('div','outlook-name',CATS[cat].name),create('div','outlook-kind',CATS[cat].subtitle));top.append(heading);top.append(create('span',`direction ${directionClass(data.direction)}`,data.direction||'판단 유보'));card.append(top,create('div','outlook-summary',data.summary||'검증된 자료를 수집하는 중입니다.'));const meta=create('div','outlook-meta');meta.append(create('span','',`분석 기간: ${data.horizon||'―'}`));const c=create('span','','·  신뢰도: ');c.append(create('b','',data.confidence||'―'));meta.append(c);card.append(meta);const proscons=create('div','proscons');for(const [kind,title,key] of [['pro','상승 요인','bull_cases'],['con','하락 요인','bear_cases']]){const section=create('div');section.append(create('div',`prop-title ${kind}`,(kind==='pro'?'↑ ':'↓ ')+title),makeList(data[key]));proscons.append(section)}card.append(proscons);const w=create('div','watch');w.append(create('b','','관찰 지표  '));w.append(document.createTextNode((data.watch||[]).join(' · ')||'데이터 연결 후 표시'));card.append(w);const links=create('div','refs');(data.citation_ids||[]).slice(0,3).forEach(id=>{const a=refs[id];if(!a||!externalURL(a.url))return;const link=create('a','',a.publisher||'근거 기사');link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.title=a.title||'';links.append(link)});if(links.childElementCount)card.append(links);parent.append(card)}}
-function validNews(){const list=[];for(const cat of Object.keys(CATS)){for(const n of state.data.news?.[cat]||[]){if(n&&typeof n==='object')list.push({...n,cat})}}return list.sort((a,b)=>(Date.parse(b.published_at)||0)-(Date.parse(a.published_at)||0))}
+function validNews(){const list=[];for(const cat of Object.keys(CATS)){for(const n of displayedNews()[cat]||[]){if(n&&typeof n==='object')list.push({...n,cat})}}return list.sort((a,b)=>(Date.parse(b.published_at)||0)-(Date.parse(a.published_at)||0))}
 function renderNews(){const parent=$('news-list');parent.replaceChildren();const all=validNews();const selected=all.filter(n=>(state.tab==='all'||(state.tab==='stocks'?n.cat===(state.stockMarket==='KR'?'stocks_kr':'stocks_us'):n.cat===state.tab))&&(!state.search||`${n.title||''} ${n.publisher||''}`.toLocaleLowerCase('ko-KR').includes(state.search.toLocaleLowerCase('ko-KR'))));setNodeText('news-count',`기사 ${selected.length}건`);if(!selected.length){const item=create('li','empty',all.length?'검색 조건에 맞는 기사가 없습니다.':'새로운 기사 수집 전입니다. 첫 자동 갱신 이후 실제 기사와 원문 링크가 표시됩니다.');parent.append(item);return}for(const n of selected.slice(0,20)){const li=create('li','news-item');li.append(create('span',`news-tag ${n.cat}`,CATS[n.cat].name));const body=create('div','news-body');let title;if(externalURL(n.url)){title=create('a','news-title',n.title||'제목 없음');title.href=n.url;title.target='_blank';title.rel='noopener noreferrer'}else{title=create('div','news-title',n.title||'제목 없음')}body.append(title);body.append(create('div','news-date',`${n.publisher||'출처 미상'} · ${fmtDate(n.published_at,{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}`));li.append(body);parent.append(li)}}
 // Embed official TradingView hotlists as supplied by the provider. Do not scrape or republish quotes.
 // The provider displays separate top-five lists for most active, gainers and losers.
@@ -450,8 +507,50 @@ function renderForecastAccuracy(){
 }
 
 function renderHeader(){const d=state.data;const stale=Boolean(d.generated_at && (Date.now()-Date.parse(d.generated_at)>36*60*60*1000));setNodeText('today',fmtDate(new Date(),{year:'numeric',month:'long',day:'numeric',weekday:'short'}));setNodeText('hero-title',safeText(d.ai?.headline)||DEMO.ai.headline);setNodeText('hero-description',safeText(d.ai?.overview)||DEMO.ai.overview);setNodeText('hero-asof',d.generated_at?`/ ${fmtDate(d.generated_at,{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}`:'/ SAMPLE VIEW');setNodeText('hero-time',d.generated_at?fmtDate(d.generated_at,{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}):'자동 갱신 전');const badge=$('mode-status');badge.className=`status-badge ${d.mode==='demo'?'demo':d.ai?.status==='ok'?'live':''}`;badge.textContent=d.mode==='demo'?'미리보기 · 예시':stale?'갱신 지연 · 확인 필요':d.ai?.status==='ok'?'AI 분석 갱신됨':'뉴스·지표만 갱신됨';const msg=$('state-alert');msg.className=`alert ${d.mode==='live'&&d.ai?.status==='ok'?'live':''}`;if(stale&&d.mode==='live')msg.textContent='보고서 갱신이 지연되고 있습니다. 아래의 작성 시점을 확인하고 최신 가격·뉴스와 혼동하지 마세요. GitHub Actions 실행 상태를 확인해 주세요.';else if(d.mode==='demo')msg.textContent='현재 화면은 기능과 디자인을 확인하는 예시입니다. 숫자와 전망은 실제 투자 정보가 아닙니다. GitHub 자동 갱신을 설정하면 실제 데이터를 불러옵니다.';else if(d.ai?.status==='ok')msg.textContent=(d.ai?.review_status==='completed'?'AI 1차 분석과 2차 검토를 완료했습니다. ':d.ai?.review_status==='failed'?'AI 1차 분석만 완료했습니다. 2차 검토는 오류로 실패했습니다. ':d.ai?.review_status==='skipped_quota'?'AI 1차 분석은 완료했으며, API 사용량 제한으로 2차 검토를 생략했습니다. ':'AI가 수집한 자료를 분석했습니다. ')+'분석은 RSS 기사 제목·요약과 공개 시장 지표를 기준으로 작성되며, 전망은 불확실합니다.';else msg.textContent='뉴스·시장 데이터 갱신은 완료되었지만 Gemini 분석은 아직 완료되지 않았습니다. 저장소의 GEMINI_API_KEY, 무료 사용 한도, Actions 실행 기록을 확인하세요.';}
-function render(){renderHeader();renderMetrics();renderOutlooks();renderStockSpotlight();renderForecastAccuracy();renderNews();document.querySelectorAll('[data-tab]').forEach(b=>{const active=b.dataset.tab===state.tab;b.classList.toggle('active',active);if(b.classList.contains('nav-btn')){if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')}});setNodeText('crumb-current',state.tab==='all'?'종합 시장 현황':state.tab==='stocks'?'주식 시장 전망':`${CATS[state.tab].name} 시장 전망`)}
-async function reload(){const button=$('refresh');button.disabled=true;button.textContent='데이터 확인 중…';try{if(location.protocol==='file:'){state.data=DEMO}else{const r=await fetch('./data/latest.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('데이터 응답 실패');const json=await r.json();if(!json||!json.news||!json.market||!json.ai)throw new Error('잘못된 데이터 형식');state.data=json.mode==='demo'?DEMO:json}render()}catch(e){state.data=DEMO;render();setNodeText('state-alert','데이터 파일을 불러올 수 없습니다. 배포 설정을 확인해 주세요. 현재는 예시 화면을 표시합니다.')}finally{button.disabled=false;button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M5.8 9a7 7 0 0 1 12-2L20 12M4 12l2.2 3a7 7 0 0 0 12 0"/></svg>최신 데이터 확인'}}
+function render(){renderHeader();renderHourlyLabels();renderMetrics();renderOutlooks();renderStockSpotlight();renderForecastAccuracy();renderNews();document.querySelectorAll('[data-tab]').forEach(b=>{const active=b.dataset.tab===state.tab;b.classList.toggle('active',active);if(b.classList.contains('nav-btn')){if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')}});setNodeText('crumb-current',state.tab==='all'?'종합 시장 현황':state.tab==='stocks'?'주식 시장 전망':`${CATS[state.tab].name} 시장 전망`)}
+async function reload(){
+  const button=$('refresh');
+  button.disabled=true;
+  button.textContent='데이터 확인 중…';
+  let dailyError=false;
+  try{
+    if(location.protocol==='file:'){
+      state.data=DEMO;
+      state.hourly=null;
+    }else{
+      const cacheBuster='?ts='+Date.now();
+      // Run both reads in parallel. A missing or malformed hourly snapshot must
+      // never cause the daily AI report to disappear.
+      const responses=await Promise.allSettled([
+        fetch('./data/latest.json'+cacheBuster,{cache:'no-store'}),
+        fetch('./data/hourly.json'+cacheBuster,{cache:'no-store'})
+      ]);
+      const daily=responses[0], hourly=responses[1];
+      if(daily.status==='fulfilled'&&daily.value.ok){
+        try{
+          const json=await daily.value.json();
+          if(!json||!json.news||!Array.isArray(json.market)||!json.ai)throw new Error('잘못된 daily JSON');
+          state.data=json.mode==='demo'?DEMO:json;
+        }catch(e){dailyError=true;}
+      }else dailyError=true;
+      if(hourly.status==='fulfilled'&&hourly.value.ok){
+        try{
+          const json=await hourly.value.json();
+          state.hourly=json?.mode==='hourly_public_data'&&Array.isArray(json.market)&&json.news?json:null;
+        }catch(e){state.hourly=null;}
+      }else state.hourly=null;
+    }
+    render();
+    if(dailyError&&state.data===DEMO)setNodeText('state-alert','일간 보고서를 불러오지 못했습니다. 현재 예시 화면입니다. GitHub Pages 배포 상태를 확인하세요.');
+    else if(dailyError)setNodeText('state-alert','일간 보고서 재조회에 실패했습니다. 이전에 불러온 AI 분석을 유지합니다. 새로고침해 확인하세요.');
+  }catch(e){
+    render();
+    setNodeText('state-alert','데이터 재조회에 문제가 발생했습니다. 이전 자료가 표시될 수 있습니다.');
+  }finally{
+    button.disabled=false;
+    button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M5.8 9a7 7 0 0 1 12-2L20 12M4 12l2.2 3a7 7 0 0 0 12 0"/></svg>최신 데이터 확인';
+  }
+}
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.tab;render();if(b.classList.contains('nav-btn')){if(state.tab==='all')window.scrollTo({top:0,behavior:'smooth'});else $(state.tab==='stocks'?'stock-spotlight':'outlook-section').scrollIntoView({behavior:'smooth',block:'start'})}}));
 document.querySelectorAll('[data-stock-market]').forEach(b=>b.addEventListener('click',()=>{state.stockMarket=b.dataset.stockMarket;renderStockSpotlight();renderOutlooks();renderForecastAccuracy();renderNews()}));
 $('news-search').addEventListener('input',e=>{state.search=e.target.value.trim();renderNews()});
@@ -459,6 +558,9 @@ $('refresh').addEventListener('click',reload);
 $('go-news').addEventListener('click',()=>$('news-section').scrollIntoView({behavior:'smooth'}));
 $('go-sources').addEventListener('click',()=>$('sources-section').scrollIntoView({behavior:'smooth'}));
 render();reload();
+// Keep an already-open tab in sync with newly deployed hourly.json.
+// GitHub Actions controls source generation; this simply refreshes displayed data.
+setInterval(()=>{if(document.visibilityState==='visible'&&!document.hidden)reload()},10*60*1000);
 </script>
 </body>
 </html>
