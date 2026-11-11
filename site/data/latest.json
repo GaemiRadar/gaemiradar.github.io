@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-11T12:15:16.064676+09:00",
+  "generated_at": "2026-11-11T12:21:28.910076+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
@@ -9,25 +9,26 @@
     "review_model": null,
     "review_status": "skipped_quota",
     "review_note": "1차 모델의 API 사용량 제한으로 2차 검토를 이번 실행에서 생략했습니다.",
-    "headline": "미국 물가 충격과 긴축 우려 속 국내외 증시 및 채권시장 동향",
-    "overview": "미국 물가 상승에 따른 인플레이션 우려와 연준의 빅스텝 가능성이 부각되면서 뉴욕증시가 하락하고 국채 금리가 급등하였습니다. 국내 증시는 미국 악재 속에서도 코스닥이 급반등하고 코스피가 보합세를 보이는 등 업종별 차별화 흐름이 나타나고 있습니다.",
+    "headline": "美 물가 충격과 긴축 우려 속 국내외 증시 및 채권시장 동향",
+    "overview": "미국 소비자물가 상승세와 인플레이션 충격 여파로 연방준비제도의 추가 긴축 및 금리 인상 우려가 부각되면서 뉴욕증시가 하락하고 국채 수익률이 급등했습니다. 국내 증시는 미국 악재의 영향을 받았으나 코스닥이 반등하고 코스피가 보합세를 보이는 등 업종별 차별화가 나타나고 있습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "중립",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "미국 물가 충격과 뉴욕증시 하락의 영향으로 코스피가 숨고르기 양상을 보였으나 코스닥은 반등하며 업종별 차별화가 진행되고 있습니다.",
+        "summary": "미국 물가 충격과 뉴욕증시 하락에 따른 경계감 속에서도 국내 증시는 업종별 차별화와 외국인 수급에 주목하며 숨고르기 장세를 보이고 있습니다.",
         "bull_cases": [
-          "코스닥 시장의 단기 급반등세 유입",
-          "반도체 및 AI 사이클에 대한 기대감 유지"
+          "코스닥 시장의 급반등 시도",
+          "반도체 등 주요 업종의 개별 반등 모멘텀"
         ],
         "bear_cases": [
-          "미국 인플레이션 및 긴축 우려에 따른 뉴욕증시 하락 여파",
-          "외국인 수급 불확실성과 반도체주 변동성 확대"
+          "미국 CPI 및 긴축 우려에 따른 뉴욕증시 하락 영향",
+          "외국인 수급 불확실성 및 반도체주 변동성"
         ],
         "watch": [
-          "외국인 및 기관 수급 동향",
-          "SK하이닉스 등 대형 반도체주 주가 변동성"
+          "외국인 수급 동향",
+          "SK하이닉스 등 대형 반도체주 변동성",
+          "미국 물가 지표 후속 반응"
         ],
         "citation_ids": [
           "stocks_kr-0",
@@ -39,18 +40,19 @@
         "direction": "하락 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "미국 CPI 충격과 인플레이션 우려로 연준의 금리 인상 압박이 커지며 엔비디아 등 대형 기술주를 중심으로 뉴욕증시가 하락 압력을 받았습니다.",
+        "summary": "미국 물가 상승에 따른 인플레이션 충격과 금리 빅스텝 우려가 커지며 엔비디아 등 대형 기술주를 중심으로 뉴욕증시가 하락 압력을 받고 있습니다.",
         "bull_cases": [
           "브로드컴 및 일부 반도체·기술주의 개별 상승세",
-          "AI 인프라 수요 회복에 대한 기대"
+          "일부 종목의 AI 수요 관련 기대감 유지"
         ],
         "bear_cases": [
-          "미국 물가 상승에 따른 연준 빅스텝 및 추가 긴축 우려",
-          "엔비디아 관련 악재 및 기술주 매도세 확대"
+          "소비자물가 상승에 따른 연준의 공격적 긴축 및 빅스텝 우려",
+          "엔비디아 관련 악재 및 대형 기술주 급락"
         ],
         "watch": [
-          "미국 국채 금리 추이",
-          "주요 기술주 및 인공지능 관련 종목 실적 및 이슈"
+          "미국 국채 금리 움직임",
+          "연준 통화정책 관련 발언 및 추가 물가 지표",
+          "주요 빅테크 기업 주가 변동성"
         ],
         "citation_ids": [
           "stocks_us-0",
@@ -62,22 +64,22 @@
         "direction": "하락 우세",
         "confidence": "낮음",
         "horizon": "단기",
-        "summary": "미국 물가 쇼크로 인해 연방준비제도의 빅스텝 등 추가 긴축 우려가 커지면서 미국 국채 수익률이 급등하고 국채 가격은 하락했습니다.",
+        "summary": "미국 물가 쇼크로 연준의 추가 긴축 및 금리 인상 압박이 커지면서 미국 국채 수익률이 급등하고 고정금리 채권 가격은 하락세를 보이고 있습니다.",
         "bull_cases": [
-          "일부 국내 국채 시장에서의 강세 시도 및 외국인 매수 유입 가능성"
+          "국내 국고채 시장 일부 강세 및 외국인 매수 유입 가능성"
         ],
         "bear_cases": [
-          "미국 인플레이션 지표 악화에 따른 국채 금리 급등 및 가격 급락",
-          "추가 금리 인상 압박 심화"
+          "미국 CPI 상승세 지속에 따른 연준의 공격적 긴축 및 금리 인상 전망 강화",
+          "미국 국채 수익률 급등에 따른 국채 가격 하락"
         ],
         "watch": [
-          "미국 10년물 및 2년물 국채 금리 변동",
-          "연준 통화정책 관련 발언 및 물가 지표"
+          "미국 국채 10년물 및 2년물 금리 추이",
+          "연준의 12월 금리 인상 가능성 관련 지표"
         ],
         "citation_ids": [
+          "bonds-0",
           "bonds-1",
-          "bonds-5",
-          "bonds-6"
+          "bonds-7"
         ]
       }
     },
@@ -86,16 +88,15 @@
         {
           "symbol": "000660",
           "signal": "혼재",
-          "summary": "외국인의 주식 이탈 우려와 ADR 구매 쏠림 현상 등 변동성이 주목받고 있습니다.",
+          "summary": "SK하이닉스 본주와 ADR 간의 거래 및 수급 이슈와 더불어 주가 변동성이 주목받고 있습니다.",
           "citation_ids": [
-            "sn-kr-000660-1",
-            "sn-kr-000660-2"
+            "sn-kr-000660-1"
           ]
         },
         {
           "symbol": "005930",
           "signal": "긍정 이슈",
-          "summary": "월배당 ETF 특별배당 지급과 책임경영 강화를 위한 지분 관련 소식이 전해졌습니다.",
+          "summary": "책임경영 강화 및 월배당 ETF 관련 특별배당 소식이 전해졌습니다.",
           "citation_ids": [
             "sn-kr-005930-0",
             "sn-kr-005930-1"
@@ -104,7 +105,7 @@
         {
           "symbol": "068270",
           "signal": "긍정 이슈",
-          "summary": "증권사 목표가 상향 조정 소식과 함께 주가가 강세를 보였습니다.",
+          "summary": "증권사의 목표가 상향 조정 소식과 함께 주가가 강세를 보였습니다.",
           "citation_ids": [
             "sn-kr-068270-2"
           ]
@@ -112,9 +113,19 @@
         {
           "symbol": "005380",
           "signal": "부정 이슈",
-          "summary": "사내하청 사용자성 인정 결정에 대한 행정소송 제기 등의 이슈가 있었습니다.",
+          "summary": "사내하청 사용자성 인정 관련 행정소송 제기 및 소폭의 주가 하락세가 관측되었습니다.",
           "citation_ids": [
+            "sn-kr-005380-0",
             "sn-kr-005380-2"
+          ]
+        },
+        {
+          "symbol": "035720",
+          "signal": "긍정 이슈",
+          "summary": "카카오 계열사들의 주가 상승 관련 보도가 이어졌습니다.",
+          "citation_ids": [
+            "sn-kr-035720-0",
+            "sn-kr-035720-1"
           ]
         }
       ],
@@ -122,25 +133,23 @@
         {
           "symbol": "AVGO",
           "signal": "긍정 이슈",
-          "summary": "AI 인프라 수요 회복 기대감으로 주가가 상승세를 보였습니다.",
+          "summary": "엔비디아 약세 속에서 AI 반도체 관련 기대감으로 상승세를 기록했습니다.",
           "citation_ids": [
-            "sn-us-AVGO-1",
-            "sn-us-AVGO-2"
+            "sn-us-AVGO-0"
           ]
         },
         {
           "symbol": "NVDA",
           "signal": "부정 이슈",
-          "summary": "인플레이션 충격 및 대형 악재가 겹치며 주가가 급락했습니다.",
+          "summary": "인플레이션 충격 및 CEO 관련 악재 의혹이 겹치며 주가가 급락했습니다.",
           "citation_ids": [
-            "sn-us-NVDA-1",
-            "sn-us-NVDA-2"
+            "sn-us-NVDA-1"
           ]
         },
         {
           "symbol": "TSLA",
           "signal": "긍정 이슈",
-          "summary": "로보택시 서비스 확대 및 주문 증가 소식이 전해졌습니다.",
+          "summary": "로보택시 확대 및 주문 증가 기대감으로 강세를 보였습니다.",
           "citation_ids": [
             "sn-us-TSLA-0",
             "sn-us-TSLA-2"
@@ -149,7 +158,7 @@
         {
           "symbol": "PLTR",
           "signal": "긍정 이슈",
-          "summary": "AI 수요 증가에 따른 실적 전망 상향 및 단기 강세 흐름이 나타났습니다.",
+          "summary": "AI 수요 증가에 따른 실적 전망 상향 조정과 기술적 강세 흐름이 나타났습니다.",
           "citation_ids": [
             "sn-us-PLTR-0",
             "sn-us-PLTR-1"
@@ -158,7 +167,7 @@
         {
           "symbol": "AMZN",
           "signal": "혼재",
-          "summary": "앤트로픽 관련 IPO 언급 및 관세 관련 기소 위기 등 여러 이슈가 교차했습니다.",
+          "summary": "Anthropic 관련 IPO 이슈가 언급된 한편, 규제 관련 기소 위기 보도도 함께 전해졌습니다.",
           "citation_ids": [
             "sn-us-AMZN-0",
             "sn-us-AMZN-2"
@@ -173,8 +182,8 @@
       "name": "코스피",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 5317.92,
-      "change": 1.504,
+      "value": 5307.21,
+      "change": 1.299,
       "as_of": "2026-11-11",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKS11",
@@ -249,7 +258,7 @@
         },
         {
           "date": "2026-11-11",
-          "value": 5317.92
+          "value": 5307.21
         }
       ],
       "data_status": "date_check",
@@ -262,8 +271,8 @@
       "name": "코스닥",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 699.0,
-      "change": 4.702,
+      "value": 697.42,
+      "change": 4.465,
       "as_of": "2026-11-11",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKQ11",
@@ -338,7 +347,7 @@
         },
         {
           "date": "2026-11-11",
-          "value": 699.0
+          "value": 697.42
         }
       ],
       "data_status": "date_check",
@@ -1215,12 +1224,20 @@
         "id": "bonds-3"
       },
       {
+        "title": "\"美 CPI 상승세 지속시 연준 긴축 더 공격적…내년 금리 인상 사이클 전망\" |",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFU0FhcnlLRGhQT1pYdG9kSW11bXZYRWN3VnItMHBrYmxSTkpqSUcySWVYMjZNSDhaclZFcHEtVnVzVloyeld1SGlGZ3VTa1l3UlZNMVlDVUFwbkZ2NXFjWnBXUFJvVW00QlhCbTRveUxzNXZM?oc=5",
+        "published_at": "2026-11-11T01:09:50+00:00",
+        "summary": "\"美 CPI 상승세 지속시 연준 긴축 더 공격적…내년 금리 인상 사이클 전망\" | &nbsp;&nbsp; 연합인포맥스",
+        "id": "bonds-4"
+      },
+      {
         "title": "환율, 1330원대 후반에서 등락…美 물가 충격에 달러 반등",
         "publisher": "뉴스투데이",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0tRU9QNFZuR0xNalN6TmR2VFg0YmtlZ3dkM0FCNWtNay1nMlhCRWxUVmNlMFZwQnFuRWZFSXBSd0ZaVVBMVmZlWDR5MlRudTVGbW1Jd2tvY1ZuZVY3U1E?oc=5",
         "published_at": "2026-11-11T00:46:00+00:00",
         "summary": "환율, 1330원대 후반에서 등락…美 물가 충격에 달러 반등 &nbsp;&nbsp; 뉴스투데이",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "미국 국채금리 5% 육박에 비트코인 휘청…연준 긴축 우려에 매도세 확대",
@@ -1228,7 +1245,7 @@
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9PT1Z3TzRtVUpjRGk2ZWhCeklPeVNaNk9sUDJvNkFxQ0d5elotWjlFeEZMaDI0Q1ZGNDM5Ym9ReVItYlR3bGxRNkVR?oc=5",
         "published_at": "2026-11-11T00:45:00+00:00",
         "summary": "미국 국채금리 5% 육박에 비트코인 휘청…연준 긴축 우려에 매도세 확대 &nbsp;&nbsp; 코인리더스",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "인플레이션 보고서 발표 후 미국 국채 수익률이 급등했다.",
@@ -1236,7 +1253,7 @@
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZjhYZGFJR002Ni1PT29kYldEcTFWbXF0NXl3M1ZLR04xYmdaTG5uVktjcEVwVlFVMTRUajJYQUFPN0FWMVF5ZWVfZWtVMGZOX3ptZVY1N0diVllSaWhoUXJESWl4MGtxa3pzaEZhNlctRHBJWGJ5R0o4R3NFdWtubzQ4SmFfbHRTZk1JaDJNcw?oc=5",
         "published_at": "2026-11-11T00:30:09+00:00",
         "summary": "인플레이션 보고서 발표 후 미국 국채 수익률이 급등했다. &nbsp;&nbsp; Vietnam.vn",
-        "id": "bonds-6"
+        "id": "bonds-7"
       },
       {
         "title": "[오늘 금시세]美 물가 충격에 금값 ‘급락’…국내 금 2.50% ↓",
@@ -1244,7 +1261,7 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuWlY1Nkc1R0hxNGtLQkRzSk9xNmlVVDNvU3lJTndqT0VyZGRZQWdfRFQzeW14MzF1NmJLY0k2WGFEM2VxYllZREVoeHlQQmUtLUlhSnplbXhYUWdDTmh0U29KV1VsaTlERXNNXw?oc=5",
         "published_at": "2026-11-11T00:15:00+00:00",
         "summary": "[오늘 금시세]美 물가 충격에 금값 ‘급락’…국내 금 2.50% ↓ &nbsp;&nbsp; 남도일보",
-        "id": "bonds-7"
+        "id": "bonds-8"
       },
       {
         "title": "미국 10월 물가 예상 웃돌아…연준 '빅스텝' 가능성에 국채금리 5% 돌파",
@@ -1252,14 +1269,6 @@
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyQUFLWXZDN3dJQkc3Q0hVX0I5U3ZLOW9RNkVCY2gza1ZfT1ZoWG1nbzlRaUd3NTBrRHRUZHB3bFRrb2RpQy16YXhvWVIxc0FZOGNlRlJhY3RTdk42Ujlhb0V5RVJ5M2VG?oc=5",
         "published_at": "2026-11-10T23:27:00+00:00",
         "summary": "미국 10월 물가 예상 웃돌아…연준 '빅스텝' 가능성에 국채금리 5% 돌파 &nbsp;&nbsp; 시사프리즘",
-        "id": "bonds-8"
-      },
-      {
-        "title": "美물가 충격과 빅스텝 우려…환율 1340원대로 반등[외환브리핑]",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc1hFczQ3S3pvYTFwSkdSRXVXVEpaenNwZVBycVI1TnVEbFBnNDZQd051enlpZlFCSjJ5RjR2eHdMY0tmd0tvTlQ4Zy1WbkN3SURiTGFydWlTckxzUGpvMExPQ1c4eG00YkxDdjRVVFNmUE9YZW9LeGRpRWxqQ2xEVw?oc=5",
-        "published_at": "2026-11-10T23:12:54+00:00",
-        "summary": "美물가 충격과 빅스텝 우려…환율 1340원대로 반등[외환브리핑] &nbsp;&nbsp; 이데일리",
         "id": "bonds-9"
       }
     ]
@@ -1448,7 +1457,7 @@
           ]
         }
       ],
-      "as_of": "2026-11-11T12:15:04.608234+09:00",
+      "as_of": "2026-11-11T12:21:12.663214+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
@@ -1463,31 +1472,31 @@
           "publisher_count": 8,
           "articles": [
             {
+              "title": "[로드픽] 엔비디아 흔들리자 AMD·브로드컴 웃었다…AI 반도체 패권 경쟁 새 국면",
+              "publisher": "뉴스로드",
+              "published_at": "2026-11-10T23:53:38+00:00",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE43aFUxUlBMa2hnOExhMTRyTUd3OHgzMk84TnloUnlRdng0WW1EMTB6QzBsMU1EX0NhMVcxelJlNHp1OFVTbGdCNjZ5VUxTeUlhNFlaYlJibi03U0Ixb3ZpRWt4MEE5dVNnbWFrbtIBb0FVX3lxTE8tS2M2a1FGSHJIUUF3aFpMN01ldE0wUmV1YWJ3WElVWVRWeUljNDN5VDkycXg0U3VCcENxUUhhRjZLQTJLN2djNWRRbkJRanJ3N0tUNzV0US02dmRVVHQ0cFhfNzRfaEZJbW9kWlo1dw?oc=5",
+              "id": "sn-us-AVGO-0"
+            },
+            {
               "title": "미국증시 하락 마감…CPI 충격에 나스닥 0.74%↓·엔비디아 5.47% 급락, 브로드컴은 상승",
               "publisher": "톱스타뉴스",
               "published_at": "2026-11-10T22:06:47+00:00",
               "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YOV9ZQmx1WTNuLWZCcDE1ZnFwTUxINmd2WTZZVXlJakdsRDRUVjhlclNCZElOY1JuWVFKM0xQQWRObU9IWFo3SS1QVFV0QjZFU25TYTE4ODZ4RTVDVDhRYzBlaVlieXJZQ0FXYWEzNWhaZw?oc=5",
-              "id": "sn-us-AVGO-0"
+              "id": "sn-us-AVGO-1"
             },
             {
               "title": "금리인상 공포에 AI주 엇갈려…엔비디아 급락, 브로드컴 3.9% 올라",
               "publisher": "디지털데일리",
               "published_at": "2026-11-10T21:40:43+00:00",
               "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fc1dSRkg1QUxMQ0d0S3RDYzdQWmxuNWIwR1BQNGNkZ0JzTUk0c0x3a3IzdWlZeTBMb0ZPaXRYV09pclFmQmViX2FVU1dWWl9fNm9rZkViV0ZOMUJiTUZBdUlJcVg?oc=5",
-              "id": "sn-us-AVGO-1"
+              "id": "sn-us-AVGO-2"
             },
             {
               "title": "AI 인프라 수요 회복에 투자자 관심 되살아나며 브로드컴 주가 4% 넘게 급등",
               "publisher": "Traders Union",
               "published_at": "2026-11-10T20:38:51+00:00",
               "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRlNwWHZmUy14NURQMWs3Rjd4ZDdrMUl3dG5Kc2VWOExyMGNJeUd4VlUwNlJEb2UySWNQaXZIUzRXWEl6OHZ1SzNMRXNBdnVCYnhadXFTeE9XbVRnQ0RFZUxhMkJLalVnS0EwM245U0xKT05VU1VzZDNGdzJ3MWgxaURzRjdVcDRCaXd4VGp4eGVoclFn?oc=5",
-              "id": "sn-us-AVGO-2"
-            },
-            {
-              "title": "[美증시 특징주] 반도체, 황 스캔들·인플레 악화에 '조정'…브로드컴만 급등",
-              "publisher": "미디어펜",
-              "published_at": "2026-11-10T19:53:22+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5zX3otbVlkeEM1R20yakRzLUxtRWRRbENDNEp6cjhTUjJyQkFRLWJPUDlmWTIzOGI3ZFhON29yc3FFaU5tWGw0d3E4Q3FlYlRIZGNlLQ?oc=5",
               "id": "sn-us-AVGO-3"
             }
           ]
@@ -1637,7 +1646,7 @@
           ]
         }
       ],
-      "as_of": "2026-11-11T12:15:04.608234+09:00",
+      "as_of": "2026-11-11T12:21:12.663214+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
