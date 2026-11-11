@@ -16,6 +16,7 @@ permissions:
 concurrency:
   group: market-pulse-pages
   cancel-in-progress: false
+  queue: max
 
 jobs:
   build:
@@ -33,6 +34,8 @@ jobs:
           python-version: '3.12'
       - name: Collect hourly public information (no Gemini)
         run: python hourly/update_hourly.py
+      - name: Protect daily AI forecast and website
+        run: git diff --exit-code -- site/data/latest.json site/index.html
       - name: Commit hourly snapshot only
         run: |
           git config user.name "github-actions[bot]"
