@@ -200,6 +200,13 @@
     .ql-movers-holder{display:flex;justify-content:center;min-height:620px;padding:12px 8px}
     .ql-movers-holder .ql-movers{width:100%;max-width:480px;min-width:0}
     @media(max-width:690px){.ql-movers-holder{min-height:580px;padding:10px 0}}
+    /* TOP 15 mock-up link: not real financial data */
+    .stock-preview-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 16px}
+    .stock-preview-link{display:inline-flex;align-items:center;justify-content:center;border-radius:11px;padding:10px 15px;border:1px solid #cbd5ff;background:#eef1ff;color:#3c50bb;font-size:12px;font-weight:800;text-decoration:none}
+    .stock-preview-link:hover{background:#dfe5ff;text-decoration:none}
+    .stock-preview-link:focus-visible{outline:3px solid #94a3ff;outline-offset:3px}
+    .stock-preview-note{color:#7a899e;font-size:11px;line-height:1.65}
+    @media(max-width:690px){.stock-preview-actions{align-items:flex-start;flex-direction:column;gap:7px}.stock-preview-link{width:100%}}
   </style>
 </head>
 <body>
@@ -234,6 +241,10 @@
     </section>
     <section class="section stock-spotlight" id="stock-spotlight" aria-label="국내·미국 주목 종목">
       <div class="section-header"><div><h2 class="section-title" id="stock-main-title">오늘의 주목 종목 TOP 5</h2><div class="section-sub"><span id="stock-main-summary">국내주식의 거래 활발 · 상승률 상위 · 하락률 상위 종목 각 5개를 표시합니다.</span></div></div></div>
+      <div class="stock-preview-actions" aria-label="TOP 15 화면 시제품">
+        <a class="stock-preview-link" href="./stock-rankings-preview.html" target="_blank" rel="noopener noreferrer">TOP 15 화면 미리보기 ↗</a>
+        <span class="stock-preview-note">가상 데이터로 제작한 디자인 시제품입니다. 실제 시세·종목 순위가 아닙니다.</span>
+      </div>
       <div class="panel stock-panel">
         <div class="stock-panel-header">
           <div class="view-tabs" role="group" aria-label="주식시장 구분"><button type="button" class="tab active" data-stock-market="KR" aria-pressed="true">국내주식 (국장)</button><button type="button" class="tab" data-stock-market="US" aria-pressed="false">미국주식 (미장)</button></div>
