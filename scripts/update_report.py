@@ -49,8 +49,10 @@ SERIES = [
 # These observations are fed to Gemini as evidence, not treated as trading signals.
 # Period dates are observation months, NOT the dates statistics were released.
 ECONOMIC_US = [
-    {"id": "US_CPI_YOY", "fred_id": "CPIAUCSL", "name": "미국 소비자물가(CPI) 전년동월비",
+    {"id": "US_CPI_YOY", "fred_id": "CPIAUCNS", "name": "미국 소비자물가(CPI) 전년동월비",
      "method": "year_over_year", "unit": "%", "frequency": "monthly"},
+    {"id": "US_CPI_MOM", "fred_id": "CPIAUCSL", "name": "미국 소비자물가(CPI) 전월비(계절조정)",
+     "method": "month_over_month", "unit": "%", "frequency": "monthly"},
     {"id": "US_CORE_PCE_YOY", "fred_id": "PCEPILFE", "name": "미국 근원 PCE 물가 전년동월비",
      "method": "year_over_year", "unit": "%", "frequency": "monthly"},
     {"id": "US_UNEMPLOYMENT", "fred_id": "UNRATE", "name": "미국 실업률",
@@ -563,18 +565,46 @@ def _summarize_economic_series(cfg, rows, region, source, source_url, at=None):
                       if cfg["frequency"] == "monthly" else
                       "관측일 기준의 지표입니다. 실제 발표 시점과 다를 수 있습니다.")
     if cfg["method"] == "year_over_year":
-        target_month = f"{int(date_text[:4])-1:04d}-{date_text[5:7]}"
-        prior = next((v for d, v in clean if d[:7] == target_month), None)
-        if prior is None or prior == 0:
-            result["note"] = "전년 동월 관측값이 없어 전년동월비를 계산할 수 없습니다."
+        # A matching prior-year month must actually exist. 2025-10 CPI was not
+        # published due to the U.S. federal shutdown; therefore BLS publishes
+        # no official October 2026 12-month CPI change. Never fill/interpolate.
+        month_values = {day[:7]: value for day, value in clean}
+        comparable = []
+        for observed_day, observed_value in clean:
+            year_ago_month = f"{int(observed_day[:4])-1:04d}-{observed_day[5:7]}"
+            year_ago_value = month_values.get(year_ago_month)
+            if year_ago_value is not None and year_ago_value != 0:
+                comparable.append((observed_day, (observed_value / year_ago_value - 1) * 100))
+        if not comparable:
+            result["note"] = "전년 동월 공식 관측값이 없어 전년동월비를 계산할 수 없습니다. 대체값을 생성하지 않습니다."
             return result
-        value = (latest / prior - 1) * 100
-        prior_month = clean[-2][0][:7] if len(clean) >= 2 else None
-        if prior_month:
-            prev_target = f"{int(prior_month[:4])-1:04d}-{prior_month[5:7]}"
-            previous = next((v for d, v in clean if d[:7] == prev_target), None)
-            if previous not in (None, 0):
-                result["previous_value"] = round((clean[-2][1] / previous - 1) * 100, 3)
+        selected_day, value = comparable[-1]
+        result["as_of"] = selected_day[:7]
+        if len(comparable) > 1:
+            result["previous_value"] = round(comparable[-2][1], 3)
+        if selected_day[:7] != date_text[:7]:
+            result["latest_observation_period"] = date_text[:7]
+            result["uses_previous_comparable_period"] = True
+            result["note"] = (
+                f"{date_text[:7]}월 전년동월비는 비교 대상 연도에 공식 관측값이 없어 계산 불가. "
+                f"마지막으로 계산 가능한 {selected_day[:7]}월 전년동월비를 표시합니다. "
+                "관측월을 현재 월로 오인하지 마세요."
+            )
+            if cfg["id"] == "US_CPI_YOY" and date_text[:7] == "2026-10":
+                result["note"] += " (BLS: 2025-10월 셧다운에 따른 비교자료 미발표)"
+                result["data_limitation_url"] = "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm"
+    elif cfg["method"] == "month_over_month":
+        if len(clean) < 2:
+            result["note"] = "직전월 CPI 관측값이 없습니다."
+            return result
+        prior_day, prior_value = clean[-2]
+        current_month_number = int(date_text[:4]) * 12 + int(date_text[5:7])
+        prior_month_number = int(prior_day[:4]) * 12 + int(prior_day[5:7])
+        if current_month_number - prior_month_number != 1 or prior_value == 0:
+            result["note"] = "전월 공식 관측값이 없어 전월비를 계산할 수 없습니다."
+            return result
+        value = (latest / prior_value - 1) * 100
+        result["note"] = "계절조정 CPIAUCSL 원지수의 연속된 두 달 관측값으로 계산한 전월비입니다."
     elif cfg["method"] == "month_difference":
         if len(clean) < 2:
             result["note"] = "전월 고용 관측값이 없습니다."
@@ -603,6 +633,8 @@ def _summarize_economic_series(cfg, rows, region, source, source_url, at=None):
 def fetch_us_economic_indicators(errors):
     key = os.environ.get("FRED_API_KEY", "").strip()
     indicators = []
+    # Cache each official series if referenced by multiple derived indicators.
+    series_cache = {}
     for cfg in ECONOMIC_US:
         source_url = f"https://fred.stlouisfed.org/series/{cfg['fred_id']}"
         blank = _summarize_economic_series(cfg, [], "US", "FRED / Federal Reserve Bank of St. Louis", source_url)
@@ -612,7 +644,18 @@ def fetch_us_economic_indicators(errors):
             continue
         try:
             lookback_days = 550 if cfg["frequency"] == "monthly" else 60
-            rows = fetch_fred_api_rows(cfg["fred_id"], key, lookback_days=lookback_days)
+            # Even if a source fails, avoid duplicate API requests for the same
+            # indicator series. Each derived item still reports its own status.
+            if cfg["fred_id"] not in series_cache:
+                try:
+                    series_cache[cfg["fred_id"]] = fetch_fred_api_rows(
+                        cfg["fred_id"], key, lookback_days=lookback_days
+                    )
+                except (requests.RequestException, ValueError, TypeError) as exc:
+                    series_cache[cfg["fred_id"]] = exc
+            rows = series_cache[cfg["fred_id"]]
+            if isinstance(rows, Exception):
+                raise rows
             indicators.append(_summarize_economic_series(cfg, rows, "US", "FRED / Federal Reserve Bank of St. Louis", source_url))
         except (requests.RequestException, ValueError, TypeError) as exc:
             blank.update(status="error", note="데이터 수집 실패; 시장 분석에는 사용하지 않습니다.")
@@ -869,6 +912,8 @@ def analyze(news, market, errors, economic_indicators=None, stock_spotlight=None
         "기사 근거가 있으면 해당 자산군에 속하는 기사 id를 최대 3개만 citation_ids에 적어라. "
         "뉴스 발행일과 시장 관측일을 혼동하지 마라. 지연 또는 누락된 지표의 최신 추세를 단정하지 마라. "
         "official_macroeconomic_observations의 데이터는 별도 공식 지표이며 관측월은 발표일이 아니다. "
+        "전년동월비와 전월비는 서로 다른 변화율이다. 데이터에 최신 비교가능월 표시가 있으면 "
+        "그 월을 정확히 명시하고, 결측된 최근월의 전년동월비를 지어내지 마라. "
         "전년동월비와 전월 증감, 금리 수준을 혼동하지 마라. 과거 수치가 최신 발표값이라고 추정하지 마라. "
         "국내주식에는 KR 공식 경제지표가 있을 때만 한국 기준금리·물가를 언급하라. "
         "미국주식에는 US 공식 물가·고용·정책금리를 근거로 사용할 수 있지만 시장방향에 대한 인과관계를 단정하지 마라. "
@@ -887,7 +932,8 @@ def analyze(news, market, errors, economic_indicators=None, stock_spotlight=None
     econ = economic_indicators or {}
     economic_context = {
         region: [{k: item.get(k) for k in ("name", "value", "previous_value", "unit", "measurement",
-                                             "as_of", "frequency", "source", "source_url")}
+                                             "as_of", "frequency", "source", "source_url", "note",
+                                             "uses_previous_comparable_period", "latest_observation_period")}
                  for item in econ.get(region, {}).get("items", []) if item.get("status") == "ok"]
         for region in ("KR", "US")
     }
