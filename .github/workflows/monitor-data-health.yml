@@ -1,0 +1,191 @@
+name: Gaemi Radar Data Health Monitor
+
+on:
+  schedule:
+    # Every two hours at minute 47 UTC (KST has the same minute).
+    # GitHub's scheduled Actions can be delayed or skipped.
+    - cron: '47 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      test_alert:
+        description: 'Create a test alert (no real data is modified). Run again without checking this to clear it.'
+        type: boolean
+        default: false
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+# Separate from site deploys: monitoring never changes or deploys site content.
+concurrency:
+  group: gaemi-radar-health-monitor
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  check:
+    name: Check hourly and daily snapshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Detect stale data and manage one GitHub Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          TEST_ALERT: ${{ inputs.test_alert }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          UTC = dt.timezone.utc
+          NOW = dt.datetime.now(UTC)
+          THREE_HOURS = dt.timedelta(hours=3)
+          THIRTY_SIX_HOURS = dt.timedelta(hours=36)
+          FUTURE_TOLERANCE = dt.timedelta(minutes=15)
+          TITLE = '[개미레이더] 자동 갱신 점검 경고'
+          MARKER = '<!-- GAEMI_RADAR_HEALTH_MONITOR_V1 -->'
+          REPO = os.environ.get('REPO', 'MarketPulse100/marketpulse100.github.io')
+          TOKEN = os.environ.get('GH_TOKEN', '')
+          TEST = os.environ.get('TEST_ALERT', '').lower() == 'true'
+          problems = []
+          details = []
+
+          def read_json(path, name):
+              try:
+                  data = json.loads(Path(path).read_text(encoding='utf-8'))
+                  if not isinstance(data, dict):
+                      raise ValueError('expected JSON object')
+                  return data
+              except (OSError, ValueError, json.JSONDecodeError) as exc:
+                  problems.append(f'{name}: 파일 확인 실패 ({type(exc).__name__})')
+                  return None
+
+          def check_time(data, field, name, limit):
+              raw = data.get(field)
+              if not isinstance(raw, str):
+                  problems.append(f'{name}: 갱신 시각 누락')
+                  return
+              try:
+                  stamp = dt.datetime.fromisoformat(raw.replace('Z', '+00:00'))
+                  if stamp.tzinfo is None:
+                      raise ValueError('timezone absent')
+                  elapsed = NOW - stamp.astimezone(UTC)
+              except (ValueError, TypeError, OverflowError):
+                  problems.append(f'{name}: 갱신 시각 형식 오류')
+                  return
+              details.append(f'{name}: {raw} (현재 기준 {elapsed.total_seconds() / 3600:.1f}시간 경과)')
+              if elapsed < -FUTURE_TOLERANCE:
+                  problems.append(f'{name}: 생성 시각이 현재보다 15분 이상 미래임')
+              elif elapsed > limit:
+                  problems.append(f'{name}: 마지막 갱신 후 {limit.total_seconds()/3600:g}시간 초과')
+
+          hourly = read_json('site/data/hourly.json', '시간별 뉴스·금리')
+          if hourly is not None:
+              if hourly.get('mode') != 'hourly_public_data':
+                  problems.append('시간별 뉴스·금리: 데이터 형식 불일치')
+              check_time(hourly, 'data_updated_at', '시간별 뉴스·금리', THREE_HOURS)
+              news = hourly.get('news', {})
+              if not isinstance(news, dict) or sum(len(news.get(k, [])) for k in ('stocks_kr', 'stocks_us', 'bonds') if isinstance(news.get(k), list)) == 0:
+                  problems.append('시간별 뉴스·금리: 표시 가능한 뉴스가 없음')
+          daily = read_json('site/data/latest.json', '일간 AI 분석')
+          if daily is not None:
+              if daily.get('mode') != 'live':
+                  problems.append('일간 AI 분석: 실데이터 모드가 아님')
+              check_time(daily, 'generated_at', '일간 AI 분석', THIRTY_SIX_HOURS)
+              if (daily.get('ai') or {}).get('status') != 'ok':
+                  problems.append('일간 AI 분석: AI 상태가 ok가 아님')
+
+          if TEST:
+              problems.append('사용자가 선택한 알림 시험 (실제 수집 장애가 아님)')
+
+          print('검사 시각 (UTC):', NOW.isoformat())
+          for item in details:
+              print('-', item)
+          for item in problems:
+              print('ALERT:', item)
+
+          # Allows offline verification of the inspection logic without API access.
+          if os.environ.get('MONITOR_LOCAL_TEST') == '1':
+              print('LOCAL_TEST problems=', len(problems))
+              sys.exit(2 if problems else 0)
+
+          if not TOKEN or not REPO or '/' not in REPO:
+              raise SystemExit('GitHub repository or GITHUB_TOKEN is missing.')
+          base = 'https://api.github.com/repos/' + REPO
+          headers = {
+              'Authorization': 'Bearer ' + TOKEN,
+              'Accept': 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28',
+              'User-Agent': 'gaemi-radar-health-monitor',
+          }
+          def api(method, path, body=None):
+              payload = None if body is None else json.dumps(body, ensure_ascii=False).encode('utf-8')
+              req = urllib.request.Request(base+path, data=payload, headers=headers, method=method)
+              if payload is not None:
+                  req.add_header('Content-Type', 'application/json; charset=utf-8')
+              try:
+                  with urllib.request.urlopen(req, timeout=25) as response:
+                      raw = response.read().decode('utf-8')
+                      return json.loads(raw) if raw else {}
+              except urllib.error.HTTPError as exc:
+                  message = exc.read(500).decode('utf-8', 'replace')
+                  raise RuntimeError(f'GitHub Issues API HTTP {exc.code}: {message}') from exc
+
+          # At most one monitor issue exists; paginate a few pages to avoid accidental duplicates.
+          issue = None
+          for page in range(1, 6):
+              batch = api('GET', f'/issues?state=open&per_page=100&page={page}')
+              for item in batch:
+                  if 'pull_request' not in item and item.get('title') == TITLE and MARKER in (item.get('body') or ''):
+                      issue = item
+                      break
+              if issue or len(batch) < 100:
+                  break
+
+          if problems:
+              if issue:
+                  print(f'이미 알림 이슈가 열려 있습니다: {issue.get("html_url")}. 중복 생성하지 않습니다.')
+                  sys.exit(0)
+              body = (MARKER + '\n'
+                      + '## 자동 데이터 갱신 경고\n\n'
+                      + '다음 항목이 기준을 만족하지 않습니다. 사이트의 자료가 최신 정보가 아닐 수 있습니다.\n\n'
+                      + '\n'.join('- ' + p for p in problems)
+                      + '\n\n**검사 시각(UTC)**: ' + NOW.isoformat()
+                      + '\n\n**갱신 기록**\n'
+                      + '\n'.join('- ' + v for v in details)
+                      + '\n\n**점검할 작업**\n'
+                      + f'- [시간별 갱신](https://github.com/{REPO}/actions/workflows/hourly.yml)\n'
+                      + f'- [일간 AI 분석](https://github.com/{REPO}/actions/workflows/daily.yml)\n'
+                      + '\n이 문제는 정상화 후 다음 점검에서 자동으로 닫힙니다. '
+                      + '시험 알림이면 수동 실행에서 test_alert 옵션을 끄고 다시 실행하세요.\n')
+              owner = REPO.split('/')[0]
+              result = api('POST', '/issues', {'title': TITLE, 'body': body, 'assignees': [owner]})
+              print('ALERT ISSUE CREATED:', result.get('html_url'))
+              # Mark the FIRST detection red, allowing opt-in GitHub Actions failure notifications.
+              sys.exit(1)
+
+          if issue:
+              number = issue['number']
+              api('POST', f'/issues/{number}/comments', {
+                  'body': '✅ 수집 기록이 정상 범위로 돌아와 이슈를 자동 종료합니다.\n\n확인 시각(UTC): ' + NOW.isoformat()
+              })
+              api('PATCH', f'/issues/{number}', {'state': 'closed', 'state_reason': 'completed'})
+              print('RECOVERED: closed issue #' + str(number))
+          else:
+              print('HEALTHY: all freshness checks passed; no alert issue open.')
+          PY
