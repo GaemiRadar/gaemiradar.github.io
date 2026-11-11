@@ -1,0 +1,61 @@
+name: Hourly Market Data Refresh
+
+on:
+  schedule:
+    # Runs once per hour at minute 17 (UTC and KST share the same minute).
+    # GitHub may delay or occasionally skip scheduled runs.
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Match the existing daily.yml concurrency group to serialize writes/deploys.
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout current site
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect hourly public information (no Gemini)
+        run: python hourly/update_hourly.py
+      - name: Commit hourly snapshot only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/hourly.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh hourly public information"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload full site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
