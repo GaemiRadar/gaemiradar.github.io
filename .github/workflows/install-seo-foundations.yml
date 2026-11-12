@@ -1,0 +1,130 @@
+name: Install Search SEO Foundations
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    name: Repair sitemap, robots, canonical
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Repair SEO settings without touching data
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+          
+          base = 'https://marketpulse100.github.io/'
+          site = Path('site')
+          index = site / 'index.html'
+          preview = site / 'stock-rankings-preview.html'
+          if not index.is_file():
+              raise SystemExit('site/index.html missing: site was not modified')
+          if not preview.is_file() or 'name="robots" content="noindex' not in preview.read_text(encoding='utf-8'):
+              raise SystemExit('Preview noindex missing or preview file absent; no changes applied')
+          html = index.read_text(encoding='utf-8')
+          if '개미레이더' not in html or html.count('</head>') != 1:
+              raise SystemExit('Homepage HTML unexpectedly changed; no changes applied')
+          head = html.split('</head>', 1)[0]
+          canonical = '<link rel="canonical" href="' + base + '" />'
+          og_url = '<meta property="og:url" content="' + base + '" />'
+          if re.search(r'<link\b[^>]*\brel=[\"\']canonical[\"\']', head, flags=re.I):
+              if canonical not in head:
+                  raise SystemExit('Different canonical exists; refusing to overwrite')
+          else:
+              html = html.replace('  </head>', canonical + '\n  </head>') if False else html.replace('</head>', '  ' + canonical + '\n</head>', 1)
+          if re.search(r'<meta\b[^>]*\bproperty=[\"\']og:url[\"\']', html.split('</head>', 1)[0], flags=re.I):
+              if og_url not in html.split('</head>', 1)[0]:
+                  raise SystemExit('Different og:url exists; refusing to overwrite')
+          else:
+              html = html.replace('</head>', '  ' + og_url + '\n</head>', 1)
+          if html.count(canonical) != 1 or html.count(og_url) != 1:
+              raise SystemExit('Canonical or OpenGraph URL validation failed')
+          
+          sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <url>
+              <loc>https://marketpulse100.github.io/</loc>
+            </url>
+          </urlset>
+          '''
+          robots = '''User-agent: *
+          Allow: /
+          
+          Sitemap: https://marketpulse100.github.io/sitemap.xml
+          '''
+          root = ET.fromstring(sitemap)
+          assert root.tag == '{http://www.sitemaps.org/schemas/sitemap/0.9}urlset'
+          assert len(root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url')) == 1
+          assert 'stock-rankings-preview' not in sitemap
+          # Write only after every layout/data guard has succeeded.
+          index.write_text(html, encoding='utf-8')
+          (site/'sitemap.xml').write_text(sitemap, encoding='utf-8')
+          (site/'robots.txt').write_text(robots, encoding='utf-8')
+          print('SEO foundations ready: canonical, og:url, root sitemap, robots.txt')
+          
+          PY
+      - name: Confirm required files and XML format
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          src=Path('site/index.html').read_text(encoding='utf-8')
+          sitemap=Path('site/sitemap.xml').read_bytes()
+          robots=Path('site/robots.txt').read_text(encoding='utf-8')
+          assert sitemap.startswith(b'<?xml version="1.0"')
+          assert 'https://marketpulse100.github.io/' in ET.fromstring(sitemap.decode('utf-8'))[0][0].text
+          assert 'Sitemap: https://marketpulse100.github.io/sitemap.xml' in robots
+          assert src.count('rel="canonical"')==1
+          assert src.count('property="og:url"')==1
+          assert Path('site/stock-rankings-preview.html').exists()
+          assert 'noindex' in Path('site/stock-rankings-preview.html').read_text(encoding='utf-8')
+          print('SEO setup validated; TOP15 mockup stays noindex.')
+          PY
+      - name: Commit SEO files only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/index.html site/sitemap.xml site/robots.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: sitemap, robots, canonical metadata [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "SEO already installed: no duplicate changes"
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload full site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
