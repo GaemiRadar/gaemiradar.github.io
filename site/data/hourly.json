@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-12T20:34:33.419212+09:00",
+  "data_updated_at": "2026-11-12T21:03:08.012542+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.17,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-12T20:34:33.419212+09:00",
+      "fetched_at": "2026-11-12T21:03:08.012542+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.1,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-12T20:34:33.419212+09:00",
+      "fetched_at": "2026-11-12T21:03:08.012542+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "국채금리 급등세 주춤…美 긴축 우려에 상승 압력 여전",
+        "publisher": "아주경제",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5sVk1nYmctTkpSZlJNelBLVEZCQmhUbFFWcXNZeUNEVUlzREhXQThQYnJNTUpCLUJRemU4SVdxU0dvYmNVZmxYUmRHTW0tQmJhRy1zSC1xRDnSAVhBVV95cUxObFZNZ2JnLU5KUmZSTXpQS1RGQkJoVGxRVnFzWXlDRFVJc0RIV0E4UGJyTU1KQi1CUXplOElXcVNHb2JjVWZsWFJkR01tLUJiYUctc0gtcUQ5?oc=5",
+        "published_at": "2026-11-12T08:10:46+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "국고채 금리 혼조 마감…전일 급등 되돌림 vs 빅스텝 경계(종합)",
         "publisher": "연합뉴스",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE14RXRjODhQSmh2ZmNXcDl4UE5YeFdWZG0xMUI5b0JabTRtazRVREgxSTk5RUxkRG5Lb3lfeFRpSjZiZlBUaGZoRUR2VmtieTNLZWs0WTZveGN4azQ?oc=5",
         "published_at": "2026-11-12T07:47:43+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "오늘(11월 12일) 금 가격: SJC 금 가격 급락, 전문가들은 어떤 경고를 내놓았을까?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZnlpejRRaUlWWC11SXY3ODFwTEZvdFppM012LXUxdDRJSWVEclJfVWprMXlBWXF0NmRST205cV8xU1FFTElJWDd2SFZKQlNBMjIwMWJDWnlEbGY0bXI2N2Q4S0pxYmJieC1QYTZ6UkRYWW1kRTFjMnNNOGtCa1B3UER1QlpNZWFMRjd5TDRwcmdHMlU?oc=5",
         "published_at": "2026-11-12T06:32:11+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "[서학개미 레이더] SK하이닉스 127만 원, 외국인 이틀간 6,700억 순매수",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAxRVg4d1o5YWJYN2VNRERDeHJDM2FzOGJYM2Q5cVR6dV9wY3RTZEdUU0J0al93Q1JQSUpaaVFCRXdUeEtUZk1xVDBR?oc=5",
         "published_at": "2026-11-12T06:02:16+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "2026년 11월 12일 오늘 은 가격: 연준의 금리 결정 발표를 앞두고 주의가 필요합니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQazJOZVpqbFp6YjlPZ1VVWk0wZ0NoWlpoanBLUmltSVpYOTlzWWdacVUyaTQtTXlRY1NWeFlJMHhiQWZPUTVtbWtyVUxHZW1udEdjN2NyeXlMZVZ6RzJuTUdHZTRaX0FFeEZ5WmZEdzlHQjhRZEoxdUZ6MzBjbzZJN2p6T0Zwa1BwUlROdVpXZ2wzVHdfakU2cg?oc=5",
         "published_at": "2026-11-12T05:51:44+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "금 가격이 주요 지지선을 무너뜨리며 계속 하락하고 있다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrMkkwZ1hYQWtCcU8tSlVYeDRsSzhaSmhsM1RsSmlabTRKVTQ2R2lsNVdSelpKZTBqbHkxMUI2NmsxNW9Ud2wwYXpQQ3lOZUtFOU1pWnNrMk8zMjZQWTVpblV0T2RZRXRDU3hlcHo4ZVJRRmZBVVl0U0d0ckZZajA?oc=5",
         "published_at": "2026-11-12T03:48:26+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "[채권 브리핑] \"미 국채 금리 연 5% 재돌파\"… 국내 채권시장 강한 하방 압력",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fR3JtSFQyNnRPbUhQRTNYT25MaEZZWjFPaFV2MXZiWFNpcE9tYlRRR3MwY1ZQVUpXLWNrSW1KOXNEN2tyS3pWbnlhSjU4eTBackExaVRQb3hGZDZjclJGOXNNV0xUTnRv?oc=5",
         "published_at": "2026-11-12T01:00:00+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "공정위 과징금·외인 선물 매도 겹친 채권시장…약세로 돌아설까",
         "publisher": "매일경제 마켓",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PMkUtRWhqNFB6YjJ4R2luaVNsZG9GeGtpc2dXYklNUE5UQUF6SHlQdzBERno2OVc4TjBhRjI0eEw0SWJjWGpBWllaMVRzVlpXbFE?oc=5",
         "published_at": "2026-11-12T00:52:02+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[오늘 금시세] 금 한돈 64만1063원 2.3%↓…美 물가 충격에 4000달러선 흔들",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9xMkVhTlo1WjhPRV9oRHhNLWZOSW1oVmMxUXEzdEZnWXMwcHNaUy1RNFhzY0dhUlBoSkVTUnJfWkI1VVFfb19SalhOc1pYMDZMeWdPZ0I2SFExZDAxMV9oUUxuSFhVWlVMdGZiV2hQeUE1UQ?oc=5",
-        "published_at": "2026-11-12T00:29:06+00:00",
         "id": "bonds-7"
       }
     ]
