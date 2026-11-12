@@ -1,0 +1,128 @@
+name: Install GA4 Visitor Analytics (Consent First)
+
+on:
+  workflow_dispatch:
+    inputs:
+      measurement_id:
+        description: "GA4 Measurement ID (example G-ABC123DE45)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Install GA4 only in site files
+        env:
+          GA4_MEASUREMENT_ID: ${{ inputs.measurement_id }}
+        shell: bash
+        run: |
+          python3 - <<'PYINSTALL'
+          from pathlib import Path
+          import os, re, json, base64
+
+          measurement_id = (os.environ.get('GA4_MEASUREMENT_ID') or '').strip().upper()
+          if not re.fullmatch(r'G-[A-Z0-9]{6,20}', measurement_id):
+              raise SystemExit('Invalid GA4 measurement ID. Enter a value like G-ABC123DE45.')
+          site = Path('site')
+          index_path = site / 'index.html'
+          if not index_path.is_file():
+              raise SystemExit('Missing site/index.html. This installer is specific to GAEMI RADAR.')
+          html = index_path.read_text(encoding='utf-8')
+          for marker in ('<head>', '</head>', '<footer class="footer">', 'data-tab="stocks"', 'data-stock-market="KR"', 'id="freshness-panel"'):
+              if marker not in html:
+                  raise SystemExit('Dashboard structure differs, refusing to overwrite: ' + marker)
+          if 'googletagmanager.com/gtag/js' in html or 'GAEMI_GA4_MEASUREMENT_ID' in html:
+              raise SystemExit('Another GA4 integration found in the homepage. Check it before installing twice.')
+
+          scripts = '  <script src="./ga4-config.js" defer></script>\n  <script src="./ga4-analytics.js" defer></script>\n'
+          if 'src="./ga4-analytics.js"' not in html:
+              html = html.replace('</head>', scripts + '</head>', 1)
+          footer_button = '<span><a class="ga4-footer-link" href="./privacy.html">방문 통계 안내</a> · <button class="ga4-footer-button" type="button" id="ga4-manage-consent">통계 수집 설정</button></span>'
+          if 'id="ga4-manage-consent"' not in html:
+              html = html.replace('<footer class="footer">', '<footer class="footer">' + footer_button, 1)
+          if html.count('src="./ga4-analytics.js"') != 1 or html.count('id="ga4-manage-consent"') != 1:
+              raise SystemExit('Duplicate or missing GA4 integration marker in homepage.')
+
+          config = '// GA4 Measurement ID (public site identifier, not a secret)\nwindow.GAEMI_GA4_MEASUREMENT_ID = ' + json.dumps(measurement_id) + ';\n'
+          # The asset text is bundled in the installer so only one YAML needs uploading.
+          analytics_js = base64.b64decode('LyogR0FFTUkgUkFEQVIg4oCUIGNvbnNlbnQtZmlyc3QgR29vZ2xlIEFuYWx5dGljcyA0LCBubyBHb29nbGUgdGFnIGJlZm9yZSBjb25zZW50LiAqLwooZnVuY3Rpb24gKCkgewogICd1c2Ugc3RyaWN0JzsKICBjb25zdCBtZWFzdXJlbWVudElkID0gd2luZG93LkdBRU1JX0dBNF9NRUFTVVJFTUVOVF9JRDsKICBpZiAoIS9eRy1bQS1aMC05XXs2LDIwfSQvLnRlc3QobWVhc3VyZW1lbnRJZCB8fCAnJykpIHJldHVybjsKICBjb25zdCBrZXkgPSAnZ2FlbWlfYW5hbHl0aWNzX2NvbnNlbnRfdjEnOwogIGxldCB0cmFja2luZyA9IGZhbHNlOwogIGxldCBiYW5uZXI7CgogIGZ1bmN0aW9uIGdldENob2ljZSgpIHsKICAgIHRyeSB7IHJldHVybiB3aW5kb3cubG9jYWxTdG9yYWdlLmdldEl0ZW0oa2V5KTsgfQogICAgY2F0Y2ggKF9lcnJvcikgeyByZXR1cm4gbnVsbDsgfQogIH0KICBmdW5jdGlvbiBzZXRDaG9pY2UodmFsdWUpIHsKICAgIHRyeSB7IHdpbmRvdy5sb2NhbFN0b3JhZ2Uuc2V0SXRlbShrZXksIHZhbHVlKTsgfQogICAgY2F0Y2ggKF9lcnJvcikgeyAvKiBQcml2YXRlIGJyb3dzaW5nOiBjb25zZW50IGFwcGxpZXMgb25seSB0byB0aGlzIHBhZ2Ugdmlldy4gKi8gfQogIH0KICBmdW5jdGlvbiBzZW5kRXZlbnQobmFtZSwgcGFyYW1zKSB7CiAgICBpZiAodHJhY2tpbmcgJiYgdHlwZW9mIHdpbmRvdy5ndGFnID09PSAnZnVuY3Rpb24nKSB7CiAgICAgIHdpbmRvdy5ndGFnKCdldmVudCcsIG5hbWUsIHBhcmFtcyk7CiAgICB9CiAgfQogIGZ1bmN0aW9uIHN0YXJ0VHJhY2tpbmcoKSB7CiAgICBpZiAodHJhY2tpbmcpIHJldHVybjsKICAgIHRyYWNraW5nID0gdHJ1ZTsKICAgIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOwogICAgd2luZG93Lmd0YWcgPSBmdW5jdGlvbiAoKSB7IHdpbmRvdy5kYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpOyB9OwogICAgd2luZG93Lmd0YWcoJ2NvbnNlbnQnLCAnZGVmYXVsdCcsIHsKICAgICAgYW5hbHl0aWNzX3N0b3JhZ2U6ICdkZW5pZWQnLAogICAgICBhZF9zdG9yYWdlOiAnZGVuaWVkJywKICAgICAgYWRfdXNlcl9kYXRhOiAnZGVuaWVkJywKICAgICAgYWRfcGVyc29uYWxpemF0aW9uOiAnZGVuaWVkJwogICAgfSk7CiAgICB3aW5kb3cuZ3RhZygnY29uc2VudCcsICd1cGRhdGUnLCB7CiAgICAgIGFuYWx5dGljc19zdG9yYWdlOiAnZ3JhbnRlZCcsCiAgICAgIGFkX3N0b3JhZ2U6ICdkZW5pZWQnLAogICAgICBhZF91c2VyX2RhdGE6ICdkZW5pZWQnLAogICAgICBhZF9wZXJzb25hbGl6YXRpb246ICdkZW5pZWQnCiAgICB9KTsKICAgIHdpbmRvdy5ndGFnKCdqcycsIG5ldyBEYXRlKCkpOwogICAgd2luZG93Lmd0YWcoJ2NvbmZpZycsIG1lYXN1cmVtZW50SWQsIHsgc2VuZF9wYWdlX3ZpZXc6IHRydWUgfSk7CiAgICBjb25zdCBzY3JpcHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgIHNjcmlwdC5hc3luYyA9IHRydWU7CiAgICBzY3JpcHQuc3JjID0gJ2h0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChtZWFzdXJlbWVudElkKTsKICAgIGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoc2NyaXB0KTsKICB9CiAgZnVuY3Rpb24gZXJhc2VBbmFseXRpY3NDb29raWVzKCkgewogICAgZG9jdW1lbnQuY29va2llLnNwbGl0KCc7JykuZm9yRWFjaChmdW5jdGlvbiAocGFydCkgewogICAgICBjb25zdCBuYW1lID0gcGFydC5zcGxpdCgnPScpWzBdLnRyaW0oKTsKICAgICAgaWYgKG5hbWUgPT09ICdfZ2EnIHx8IG5hbWUuaW5kZXhPZignX2dhXycpID09PSAwKSB7CiAgICAgICAgZG9jdW1lbnQuY29va2llID0gbmFtZSArICc9OyBQYXRoPS87IE1heC1BZ2U9MDsgU2FtZVNpdGU9TGF4JzsKICAgICAgfQogICAgfSk7CiAgfQogIGZ1bmN0aW9uIGhpZGVCYW5uZXIoKSB7CiAgICBpZiAoYmFubmVyKSBiYW5uZXIuaGlkZGVuID0gdHJ1ZTsKICB9CiAgZnVuY3Rpb24gYWNjZXB0KCkgewogICAgc2V0Q2hvaWNlKCdncmFudGVkJyk7CiAgICBoaWRlQmFubmVyKCk7CiAgICBzdGFydFRyYWNraW5nKCk7CiAgfQogIGZ1bmN0aW9uIHJlamVjdCgpIHsKICAgIHNldENob2ljZSgnZGVuaWVkJyk7CiAgICBoaWRlQmFubmVyKCk7CiAgICBlcmFzZUFuYWx5dGljc0Nvb2tpZXMoKTsKICAgIGlmICh0cmFja2luZykgewogICAgICBpZiAodHlwZW9mIHdpbmRvdy5ndGFnID09PSAnZnVuY3Rpb24nKSB7CiAgICAgICAgd2luZG93Lmd0YWcoJ2NvbnNlbnQnLCAndXBkYXRlJywgewogICAgICAgICAgYW5hbHl0aWNzX3N0b3JhZ2U6ICdkZW5pZWQnLCBhZF9zdG9yYWdlOiAnZGVuaWVkJywKICAgICAgICAgIGFkX3VzZXJfZGF0YTogJ2RlbmllZCcsIGFkX3BlcnNvbmFsaXphdGlvbjogJ2RlbmllZCcKICAgICAgICB9KTsKICAgICAgfQogICAgICB3aW5kb3cubG9jYXRpb24ucmVsb2FkKCk7IC8vIEVuc3VyZSBwcmV2aW91c2x5IGxvYWRlZCBHb29nbGUgc2NyaXB0cyBzdG9wIG9uIHRoZSBuZXcgcGFnZS4KICAgIH0KICB9CiAgZnVuY3Rpb24gYnVpbGRVSSgpIHsKICAgIGNvbnN0IGNzcyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3N0eWxlJyk7CiAgICBjc3MudGV4dENvbnRlbnQgPQogICAgICAnI2dhNC1jb25zZW50LWJhbm5lcntwb3NpdGlvbjpmaXhlZDt6LWluZGV4Ojk5OTk7bGVmdDoxNnB4O3JpZ2h0OjE2cHg7Ym90dG9tOjE2cHg7bWF4LXdpZHRoOjc4MHB4O21hcmdpbjphdXRvOycgKwogICAgICAncGFkZGluZzoxOXB4IDIwcHg7YmFja2dyb3VuZDojMTAxYjMwO2NvbG9yOiNmNWY3ZmU7Ym9yZGVyOjFweCBzb2xpZCAjNTI2MTdiO2JvcmRlci1yYWRpdXM6MTZweDsnICsKICAgICAgJ2JveC1zaGFkb3c6MCAxNHB4IDQwcHggcmdiYSgwLDAsMCwuMjQpO2ZvbnQ6MTRweC8xLjYgc3lzdGVtLXVpLHNhbnMtc2VyaWZ9JyArCiAgICAgICcjZ2E0LWNvbnNlbnQtYmFubmVyW2hpZGRlbl17ZGlzcGxheTpub25lIWltcG9ydGFudH0nICsKICAgICAgJyNnYTQtY29uc2VudC1iYW5uZXIgc3Ryb25ne2ZvbnQtc2l6ZToxNnB4fScgKwogICAgICAnI2dhNC1jb25zZW50LWJhbm5lciBwe21hcmdpbjo3cHggMCAxNHB4O2NvbG9yOiNkOGUxZWR9JyArCiAgICAgICcjZ2E0LWNvbnNlbnQtYmFubmVyIGF7Y29sb3I6I2I3Y2NmZjt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lfScgKwogICAgICAnI2dhNC1jb25zZW50LWJhbm5lciAuZ2E0LWJ1dHRvbnN7ZGlzcGxheTpmbGV4O2ZsZXgtd3JhcDp3cmFwO2dhcDoxMHB4fScgKwogICAgICAnI2dhNC1jb25zZW50LWJhbm5lciBidXR0b257Ym9yZGVyOjFweCBzb2xpZCAjOTlhOGM2O2JvcmRlci1yYWRpdXM6OXB4O3BhZGRpbmc6OXB4IDE2cHg7JyArCiAgICAgICdiYWNrZ3JvdW5kOiMyNTM1NTA7Y29sb3I6I2ZmZjtmb250LXdlaWdodDo3MDA7Y3Vyc29yOnBvaW50ZXJ9JyArCiAgICAgICcjZ2E0LWNvbnNlbnQtYmFubmVyIGJ1dHRvbi5nYTQtYWxsb3d7YmFja2dyb3VuZDojNGY2M2U5O2JvcmRlci1jb2xvcjojNGY2M2U5fScgKwogICAgICAnLmdhNC1mb290ZXItbGluaywuZ2E0LWZvb3Rlci1idXR0b257Y29sb3I6aW5oZXJpdDtmb250OmluaGVyaXQ7Zm9udC1zaXplOjEycHh9JyArCiAgICAgICcuZ2E0LWZvb3Rlci1idXR0b257YmFja2dyb3VuZDpub25lO2JvcmRlcjowO3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmU7Y3Vyc29yOnBvaW50ZXI7cGFkZGluZzowIDZweH0nOwogICAgZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChjc3MpOwoKICAgIGJhbm5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NlY3Rpb24nKTsKICAgIGJhbm5lci5pZCA9ICdnYTQtY29uc2VudC1iYW5uZXInOwogICAgYmFubmVyLnNldEF0dHJpYnV0ZSgncm9sZScsICdyZWdpb24nKTsKICAgIGJhbm5lci5zZXRBdHRyaWJ1dGUoJ2FyaWEtbGFiZWwnLCAn67Cp66y4IO2GteqzhCDsiJjsp5Eg7ISg7YOdJyk7CiAgICBiYW5uZXIuaGlkZGVuID0gdHJ1ZTsKICAgIGJhbm5lci5pbm5lckhUTUwgPSAnPHN0cm9uZz7rsKnrrLgg7Ya16rOEIOyImOynkSDshKDtg508L3N0cm9uZz4nICsKICAgICAgJzxwPuqwnOuvuOugiOydtOuNlOuKlCDrsKnrrLjsnpAg7IiYwrfrsKnrrLgg6rWt6rCAwrfsnKDsnoUg6rK966GcwrfrqZTribQg7YG066at7J2EIOu2hOyEne2VmOq4sCDsnITtlbQgR29vZ2xlIEFuYWx5dGljcyA066W8IOyCrOyaqe2VqeuLiOuLpC4gJyArCiAgICAgICfrj5nsnZjtlZwg6rK97Jqw7JeQ66eMIEdvb2dsZSDthrXqs4Qg7YOc6re46rCAIOuhnOuTnOuQqeuLiOuLpC4g6rGw67aA7ZW064+EIOyCrOydtO2KuOulvCDsnbTsmqntlaAg7IiYIOyeiOyKteuLiOuLpC4gJyArCiAgICAgICc8YSBocmVmPSIuL3ByaXZhY3kuaHRtbCI+6rCc7J247KCV67O0IOyymOumrCDslYjrgrQ8L2E+PC9wPicgKwogICAgICAnPGRpdiBjbGFzcz0iZ2E0LWJ1dHRvbnMiPjxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0iZ2E0LWFsbG93IiBpZD0iZ2E0LWFjY2VwdCI+7Ya16rOEIOyImOynkSDrj5nsnZg8L2J1dHRvbj4nICsKICAgICAgJzxidXR0b24gdHlwZT0iYnV0dG9uIiBpZD0iZ2E0LXJlamVjdCI+64+Z7J2Y7ZWY7KeAIOyViuydjDwvYnV0dG9uPjwvZGl2Pic7CiAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGJhbm5lcik7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZ2E0LWFjY2VwdCcpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgYWNjZXB0KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdnYTQtcmVqZWN0JykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCByZWplY3QpOwoKICAgIGNvbnN0IG1hbmFnZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdnYTQtbWFuYWdlLWNvbnNlbnQnKTsKICAgIGlmIChtYW5hZ2UpIHsKICAgICAgbWFuYWdlLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgZnVuY3Rpb24gKCkgewogICAgICAgIGJhbm5lci5oaWRkZW4gPSBmYWxzZTsKICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZ2E0LWFjY2VwdCcpLmZvY3VzKCk7CiAgICAgIH0pOwogICAgfQogIH0KCiAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbiAoZXZlbnQpIHsKICAgIGlmICghdHJhY2tpbmcgfHwgIShldmVudC50YXJnZXQgaW5zdGFuY2VvZiBFbGVtZW50KSkgcmV0dXJuOwogICAgY29uc3QgbWVudSA9IGV2ZW50LnRhcmdldC5jbG9zZXN0KCdbZGF0YS10YWJdJyk7CiAgICBpZiAobWVudSkgewogICAgICBzZW5kRXZlbnQoJ21lbnVfc2VsZWN0JywgewogICAgICAgIG1lbnVfaWQ6IG1lbnUuZ2V0QXR0cmlidXRlKCdkYXRhLXRhYicpLAogICAgICAgIG1lbnVfbGFiZWw6IG1lbnUuZ2V0QXR0cmlidXRlKCd0aXRsZScpIHx8IG1lbnUudGV4dENvbnRlbnQudHJpbSgpLnNsaWNlKDAsIDYwKQogICAgICB9KTsKICAgIH0KICAgIGNvbnN0IG1hcmtldCA9IGV2ZW50LnRhcmdldC5jbG9zZXN0KCdbZGF0YS1zdG9jay1tYXJrZXRdJyk7CiAgICBpZiAobWFya2V0KSB7CiAgICAgIHNlbmRFdmVudCgnbWFya2V0X3NlbGVjdCcsIHsgbWFya2V0X2lkOiBtYXJrZXQuZ2V0QXR0cmlidXRlKCdkYXRhLXN0b2NrLW1hcmtldCcpIH0pOwogICAgfQogIH0sIHRydWUpOwoKICBpZiAoZG9jdW1lbnQucmVhZHlTdGF0ZSA9PT0gJ2xvYWRpbmcnKSB7CiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdET01Db250ZW50TG9hZGVkJywgaW5pdGlhbGl6ZSwgeyBvbmNlOiB0cnVlIH0pOwogIH0gZWxzZSB7CiAgICBpbml0aWFsaXplKCk7CiAgfQogIGZ1bmN0aW9uIGluaXRpYWxpemUoKSB7CiAgICBidWlsZFVJKCk7CiAgICBjb25zdCBjaG9pY2UgPSBnZXRDaG9pY2UoKTsKICAgIGlmIChjaG9pY2UgPT09ICdncmFudGVkJykgc3RhcnRUcmFja2luZygpOwogICAgZWxzZSBpZiAoY2hvaWNlICE9PSAnZGVuaWVkJykgYmFubmVyLmhpZGRlbiA9IGZhbHNlOwogIH0KfSkoKTsK').decode('utf-8')
+          privacy_html = base64.b64decode('PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImtvIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIiAvPgogIDxtZXRhIG5hbWU9InRoZW1lLWNvbG9yIiBjb250ZW50PSIjMTExYTJiIiAvPgogIDx0aXRsZT7rsKnrrLgg7Ya16rOEIOuwjyDqsJzsnbjsoJXrs7Qg7JWI64K0IHwg6rCc66+466CI7J20642UPC90aXRsZT4KICA8bGluayByZWw9Imljb24iIGhyZWY9Ii4vZ2FlbWktcmFkYXIuc3ZnIiB0eXBlPSJpbWFnZS9zdmcreG1sIiAvPgogIDxzdHlsZT4KICAgIGJvZHl7bWFyZ2luOjA7YmFja2dyb3VuZDojZjZmOGZiO2NvbG9yOiMxYjJiNDE7Zm9udDoxNnB4LzEuNzUgc3lzdGVtLXVpLCdBcHBsZSBTRCBHb3RoaWMgTmVvJyxzYW5zLXNlcmlmfQogICAgbWFpbnttYXgtd2lkdGg6NzgwcHg7bWFyZ2luOjUycHggYXV0bztwYWRkaW5nOjMycHg7YmFja2dyb3VuZDp3aGl0ZTtib3JkZXI6MXB4IHNvbGlkICNlNmVhZjA7Ym9yZGVyLXJhZGl1czoyMHB4fQogICAgaDF7Zm9udC1zaXplOjI3cHg7bGluZS1oZWlnaHQ6MS4zfWgye2ZvbnQtc2l6ZToxOXB4O21hcmdpbi10b3A6MzRweH1wLGxpe2NvbG9yOiMzNDQ0NWF9CiAgICBhe2NvbG9yOiMzODU0Yzh9YnV0dG9ue3BhZGRpbmc6MTBweCAxNnB4O2JhY2tncm91bmQ6IzI1MzU1MDtjb2xvcjojZmZmO2JvcmRlcjowO2JvcmRlci1yYWRpdXM6OXB4O2N1cnNvcjpwb2ludGVyfQogICAgLmZpbmV7Zm9udC1zaXplOjEzcHg7Y29sb3I6IzcxODA5Nn0gQG1lZGlhKG1heC13aWR0aDo4MjBweCl7bWFpbnttYXJnaW46MTRweDtwYWRkaW5nOjIycHh9fQogIDwvc3R5bGU+CiAgPHNjcmlwdCBzcmM9Ii4vZ2E0LWNvbmZpZy5qcyIgZGVmZXI+PC9zY3JpcHQ+CiAgPHNjcmlwdCBzcmM9Ii4vZ2E0LWFuYWx5dGljcy5qcyIgZGVmZXI+PC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHk+CjxtYWluPgogIDxwPjxhIGhyZWY9Ii4vIj7ihpAg6rCc66+466CI7J20642UIO2ZiO2OmOydtOyngDwvYT48L3A+CiAgPGgxPuuwqeusuCDthrXqs4Qg67CPIOqwnOyduOygleuztCDslYjrgrQ8L2gxPgogIDxwPuqwnOuvuOugiOydtOuNlChHQUVNSSBSQURBUinripQg67Cp66y4IO2GteqzhOulvCDtmZXsnbjtlZjqs6Ag7IKs7J207Yq47J2YIOydtOyaqSDtjrjsnZjrpbwg6rCc7ISg7ZWY6riwIOychO2VtCBHb29nbGUgQW5hbHl0aWNzIDQoR0E0KeulvCDsgqzsmqntlanri4jri6QuPC9wPgogIDxoMj4xLiDthrXqs4Qg7IiY7KeRIOuqqeyggTwvaDI+CiAgPHA+67Cp66y47J6QIOq3nOuqqMK367Cp66y4IOq1reqwgMK37Jyg7J6FIOqyveuhnMK37Y6Y7J207KeAIOyXtOuejMK37KO87IudIOuwjyDssYTqtowg66mU64m0IO2BtOumrSDthrXqs4Trpbwg67aE7ISd7ZWY7JesIOyCrOydtO2KuOulvCDqsJzshKDtlanri4jri6QuPC9wPgogIDxoMj4yLiDthrXqs4Qg7ZWt66qpIOuwjyDsoJzqs7Xsspg8L2gyPgogIDxwPuuwqeusuOyXkCDqtIDtlZwg6riw7Iig7KCBIOygleuztCjsgqzsmqkg6riw6riw7JmAIOu4jOudvOyasOyggOydmCDsooXrpZgsIOuMgOueteyggeyduCDsp4Dsl60sIOuwqeusuCDtjpjsnbTsp4AsIOycoOyehSDqsr3roZwsIOuplOuJtCDshKDtg50g7J2067Kk7Yq4IOuTsSnqsIAgR29vZ2xlIEFuYWx5dGljcyA066W8IO2Gte2VtCDsspjrpqzrkKAg7IiYIOyeiOyKteuLiOuLpC4gR0E064qUIEdvb2dsZeydtCDsoJzqs7XtlZjripQg7ISc67mE7Iqk7J2066mwLCDrj5nsnZjtlZwg6rK97Jqw7JeQ66eMIEdvb2dsZSDthrXqs4Qg7YOc6re46rCAIOuhnOuTnOuQqeuLiOuLpC4gR29vZ2xl7JeQ7ISc7J2YIOuNsOydtO2EsCDsspjrpqzsmYAg67O06rSA7J2AIO2VtOuLuSDshJzruYTsiqQg7KCV7LGFIOuwjyDsgqzsnbTtirjsnZggR0E0IOyEpOygleyXkCDrlLDrpoXri4jri6QuPC9wPgogIDxoMj4zLiDsv6DtgqQg67CPIOuPmeydmCDshKDtg508L2gyPgogIDxwPuuwqeusuCDthrXqs4Qg7IiY7KeR7J2AIOyEoO2DnSDsgqztla3snoXri4jri6QuIOuPmeydmO2VmOyngCDslYrslYTrj4Qg6rCc66+466CI7J20642U66W8IOydtOyaqe2VoCDsiJgg7J6I7Iq164uI64ukLiDshKDtg50g6rKw6rO864qUIO2YhOyerCDruIzrnbzsmrDsoIDsnZgg66Gc7LusIOyggOyepeyGjOyXkCDquLDroZ3rkKnri4jri6QuIO2GteqzhCDsiJjsp5Hsl5Ag64+Z7J2Y7ZWY66m0IEdBNOqwgCDthrXqs4Tsmqkg7L+g7YKk66W8IOyCrOyaqe2VoCDsiJgg7J6I7Iq164uI64ukLjwvcD4KICA8aDI+NC4g64+Z7J2YIOyyoO2ajDwvaDI+CiAgPHA+7JWE656YICfthrXqs4Qg7IiY7KeRIOyEpOyglSDrs4Dqsr0n7JeQ7IScIOyWuOygnOuToCDrj5nsnZjrpbwg7LKg7ZqM7ZWgIOyImCDsnojsirXri4jri6QuIOyyoO2ajCDtm4Tsl5DripQg7IOI66Gc7Jq0IEdBNCDthrXqs4Qg7IiY7KeR7J2EIOykkeuLqO2VmOuPhOuhnSDtjpjsnbTsp4DqsIAg7IOI66Gc6rOg7Lmo65Cp64uI64ukLiDsnbTrr7gg7KCE7Iah65CcIOqzvOqxsCDthrXqs4Qg642w7J207YSw6rCAIOyekOuPmSDsgq3soJzrkJjripQg6rKD7J2AIOyVhOuLmeuLiOuLpC48L3A+CiAgPGJ1dHRvbiBpZD0iZ2E0LW1hbmFnZS1jb25zZW50IiB0eXBlPSJidXR0b24iPu2GteqzhCDsiJjsp5Eg7ISk7KCVIOuzgOqyvTwvYnV0dG9uPgogIDxoMj41LiDssLjqs6Ag7J6Q66OMPC9oMj4KICA8cD48YSBocmVmPSJodHRwczovL3BvbGljaWVzLmdvb2dsZS5jb20vcHJpdmFjeT9obD1rbyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciI+R29vZ2xlIOqwnOyduOygleuztOyymOumrOuwqey5qDwvYT4g67CPIDxhIGhyZWY9Imh0dHBzOi8vc3VwcG9ydC5nb29nbGUuY29tL2FuYWx5dGljcy9hbnN3ZXIvNjAwNDI0NT9obD1rbyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciI+R29vZ2xlIEFuYWx5dGljcyDrjbDsnbTthLAg67O07Zi4IOyViOuCtDwvYT7rpbwg7LC46rOg7ZWY7IS47JqULjwvcD4KICA8cCBjbGFzcz0iZmluZSI+7J20IO2OmOydtOyngOuKlCDrsKnrrLgg7Ya16rOEIOyEpOy5mOyZgCDtlajqu5gg7IOd7ISx65CcIOq4sOuzuCDslYjrgrTrrLjsnoXri4jri6QuIOyatOyYgeyekOuKlCDsi6TsoJwg642w7J207YSwIOyymOumrMK367O06rSAIOyEpOygleqzvCDsoIHsmqkg67KV66C57J2EIO2ZleyduO2VmOqzoCwg7ZWE7JqU7ZWcIOyatOyYgeyekCDsoJXrs7Qg67CPIOusuOydmCDrsKnrspXsnYQg67OE64+E66GcIOuztOyZhO2VtOyVvCDtlanri4jri6QuPC9wPgo8L21haW4+CjwvYm9keT4KPC9odG1sPgo=').decode('utf-8')
+          if 'privacy.html' not in html or 'menu_select' not in analytics_js:
+              raise SystemExit('Installer integrity check failed.')
+
+          for dest, content in ((index_path, html), (site / 'ga4-config.js', config),
+                                (site / 'ga4-analytics.js', analytics_js), (site / 'privacy.html', privacy_html)):
+              if dest.exists() and dest.name == 'privacy.html' and '방문 통계 및 개인정보 안내' not in dest.read_text(encoding='utf-8'):
+                  raise SystemExit('Existing unrelated privacy.html detected. Stopping without overwrite.')
+              dest.write_text(content, encoding='utf-8')
+              print('Updated:', dest)
+          print('GA4 installed into the site directory. Google tag is blocked until consent.')
+          PYINSTALL
+
+      - name: Validate installed JavaScript and site files
+        shell: bash
+        run: |
+          node --check site/ga4-config.js
+          node --check site/ga4-analytics.js
+          python3 - <<'PYCHECK'
+          from pathlib import Path
+          h=Path('site/index.html').read_text(encoding='utf-8')
+          js=Path('site/ga4-analytics.js').read_text(encoding='utf-8')
+          assert h.count('src="./ga4-analytics.js"') == 1
+          assert h.count('src="./ga4-config.js"') == 1
+          assert h.count('id="ga4-manage-consent"') == 1
+          assert 'https://gaemiradar.github.io/' in h
+          assert all(x in js for x in ('menu_select', 'market_select', 'analytics_storage', 'ga4-consent-banner'))
+          assert Path('site/privacy.html').is_file()
+          print('GA4 site validation passed.')
+          PYCHECK
+
+      - name: Commit site files only (never modify workflows)
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- site/index.html site/ga4-config.js site/ga4-analytics.js site/privacy.html
+          if ! git diff --cached --quiet; then
+            git commit -m "feat: install consent-first GA4 visitor analytics [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "GA4 already installed with same measurement ID."
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload full website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: install
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GA4 website
+        id: deployment
+        uses: actions/deploy-pages@v4
