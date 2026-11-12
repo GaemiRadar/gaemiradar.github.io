@@ -1,0 +1,154 @@
+name: Migrate GaemiRadar to new domain
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  update:
+    name: Update canonical URLs and monitoring targets
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout production main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Replace old address in selected files only
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          NEW_ROOT = 'https://gaemiradar.github.io/'
+          OLD_DOMAIN = 'marketpulse100.github.io'
+          NEW_DOMAIN = 'gaemiradar.github.io'
+          OLD_REPO = 'MarketPulse100/marketpulse100.github.io'
+          NEW_REPO = 'GaemiRadar/gaemiradar.github.io'
+
+          files = [
+              Path('site/index.html'),
+              Path('site/sitemap.xml'),
+              Path('site/robots.txt'),
+              Path('.github/workflows/monitor-site-health.yml'),
+              Path('.github/workflows/monitor-data-health.yml'),
+          ]
+
+          # Fail safely when files have been moved: we do not recreate or overwrite
+          # files with unknown structures or make unrelated site changes.
+          for path in files:
+              if not path.is_file():
+                  raise SystemExit(f'Missing expected file: {path}')
+
+          changes = {}
+          for path in files:
+              old = path.read_text(encoding='utf-8')
+              new = old.replace(OLD_REPO, NEW_REPO).replace(OLD_DOMAIN, NEW_DOMAIN)
+              if path.name == 'index.html':
+                  if 'rel="canonical" href="' + NEW_ROOT + '"' not in new:
+                      raise SystemExit('Unexpected canonical metadata; refusing to change homepage')
+                  if 'property="og:url" content="' + NEW_ROOT + '"' not in new:
+                      raise SystemExit('Unexpected Open Graph URL; refusing to change homepage')
+                  if 'id="freshness-panel"' not in new or 'TOP 15 화면 미리보기' not in new:
+                      raise SystemExit('Existing dashboard features missing; refusing to change homepage')
+              elif path.name == 'sitemap.xml':
+                  parsed = ET.fromstring(new)
+                  ns = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+                  urls = [x.text for x in parsed.findall('.//' + ns + 'loc')]
+                  if urls != [NEW_ROOT]:
+                      raise SystemExit('Unexpected sitemap entries: ' + repr(urls))
+                  new = new.lstrip('\ufeff\n\r\t ')
+              elif path.name == 'robots.txt':
+                  if 'Sitemap: ' + NEW_ROOT + 'sitemap.xml' not in new:
+                      raise SystemExit('Sitemap URL missing from robots.txt')
+              elif path.name == 'monitor-site-health.yml':
+                  if 'SITE = "https://gaemiradar.github.io"' not in new:
+                      raise SystemExit('Public-site monitor URL not updated')
+              elif path.name == 'monitor-data-health.yml':
+                  if NEW_REPO not in new:
+                      raise SystemExit('Data monitor fallback repository not updated')
+              if OLD_DOMAIN in new or OLD_REPO in new:
+                  raise SystemExit('Old address remains in ' + str(path))
+              changes[path] = new
+
+          for path, new in changes.items():
+              old = path.read_text(encoding='utf-8')
+              if old != new:
+                  path.write_text(new, encoding='utf-8')
+                  print('Updated:', path)
+              else:
+                  print('Already correct:', path)
+          print('Site domain migration check completed safely.')
+          PY
+
+      - name: Validate final URLs and XML
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          expected = ('site/index.html', 'site/sitemap.xml', 'site/robots.txt',
+                      '.github/workflows/monitor-site-health.yml',
+                      '.github/workflows/monitor-data-health.yml')
+          for path in expected:
+              s = Path(path).read_text(encoding='utf-8')
+              assert 'marketpulse100.github.io' not in s, path
+              assert 'MarketPulse100/marketpulse100.github.io' not in s, path
+          ET.parse('site/sitemap.xml')
+          assert 'https://gaemiradar.github.io/' in Path('site/sitemap.xml').read_text()
+          assert 'Sitemap: https://gaemiradar.github.io/sitemap.xml' in Path('site/robots.txt').read_text()
+          assert 'https://gaemiradar.github.io' in Path('.github/workflows/monitor-site-health.yml').read_text()
+          html=Path('site/index.html').read_text()
+          for marker in ('quotelinks.com/widgets/movers.js', 'embed-widget-hotlists.js',
+                         'TOP 15 화면 미리보기', 'function renderForecastAccuracy()',
+                         'id="freshness-panel"'):
+              assert marker in html, marker
+          print('New address and existing dashboard feature checks passed.')
+          PY
+
+      - name: Commit selected files if modified
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- site/index.html site/sitemap.xml site/robots.txt \
+            .github/workflows/monitor-site-health.yml \
+            .github/workflows/monitor-data-health.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: migrate website SEO and monitors to gaemiradar.github.io [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Migration already applied, no file changes needed."
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload current site directory
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    name: Deploy updated site
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
