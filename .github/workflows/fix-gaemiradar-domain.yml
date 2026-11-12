@@ -1,0 +1,108 @@
+name: Fix GaemiRadar Domain (Site Files Only)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-pulse-pages
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Update only website files (never workflow files)
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          old = 'marketpulse100.github.io'
+          new = 'gaemiradar.github.io'
+          old_repo = 'MarketPulse100/marketpulse100.github.io'
+          new_repo = 'GaemiRadar/gaemiradar.github.io'
+          paths = [Path('site/index.html'), Path('site/sitemap.xml'), Path('site/robots.txt')]
+          for p in paths:
+              if not p.is_file():
+                  raise SystemExit(f'Required file missing: {p}')
+
+          changes = {}
+          for p in paths:
+              before = p.read_text(encoding='utf-8')
+              after = before.replace(old_repo, new_repo).replace(old, new)
+              if p.name == 'index.html':
+                  if '<link rel="canonical" href="https://gaemiradar.github.io/"' not in after:
+                      raise SystemExit('Unexpected index.html canonical metadata; stopping without modifying files.')
+                  if '<meta property="og:url" content="https://gaemiradar.github.io/"' not in after:
+                      raise SystemExit('Unexpected index.html og:url metadata; stopping.')
+                  if 'id="freshness-panel"' not in after or 'TOP 15 화면 미리보기' not in after:
+                      raise SystemExit('Expected dashboard feature missing; stopping.')
+              elif p.name == 'sitemap.xml':
+                  after = after.lstrip('\ufeff\n\r\t ')
+                  doc = ET.fromstring(after)
+                  ns = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+                  entries = [el.text for el in doc.findall('.//' + ns + 'loc')]
+                  if entries != ['https://gaemiradar.github.io/']:
+                      raise SystemExit('Unexpected sitemap entries; stopping: ' + repr(entries))
+              elif p.name == 'robots.txt':
+                  if 'Sitemap: https://gaemiradar.github.io/sitemap.xml' not in after:
+                      raise SystemExit('Unexpected robots.txt Sitemap reference; stopping.')
+              if old in after or old_repo in after:
+                  raise SystemExit('Old domain remains in ' + str(p))
+              changes[p] = after
+
+          for p, after in changes.items():
+              before = p.read_text(encoding='utf-8')
+              if before != after:
+                  p.write_text(after, encoding='utf-8')
+                  print('Updated', p)
+              else:
+                  print('Already correct', p)
+          print('Domain migration of website files validated.')
+          PY
+
+      - name: Commit only website files
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- site/index.html site/sitemap.xml site/robots.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'fix: use gaemiradar.github.io in site metadata [skip ci]'
+            git push origin HEAD:main
+          else
+            echo 'No changes needed.'
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload full site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy full website
+        id: deployment
+        uses: actions/deploy-pages@v4
