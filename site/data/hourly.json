@@ -1,16 +1,16 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T04:59:00.631081+09:00",
+  "data_updated_at": "2026-11-13T05:55:20.605062+09:00",
   "market": [
     {
       "id": "UST2Y",
       "name": "미국 국채 2년",
-      "value": 4.73,
+      "value": 4.86,
       "unit": "%",
-      "change": 0.17,
+      "change": 0.13,
       "change_unit": "pp",
-      "as_of": "2026-11-10",
-      "fetched_at": "2026-11-13T04:59:00.631081+09:00",
+      "as_of": "2026-11-12",
+      "fetched_at": "2026-11-13T05:55:20.605062+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -19,12 +19,12 @@
     {
       "id": "UST10Y",
       "name": "미국 국채 10년",
-      "value": 4.98,
+      "value": 5.1,
       "unit": "%",
-      "change": 0.1,
+      "change": 0.12,
       "change_unit": "pp",
-      "as_of": "2026-11-10",
-      "fetched_at": "2026-11-13T04:59:00.631081+09:00",
+      "as_of": "2026-11-12",
+      "fetched_at": "2026-11-13T05:55:20.605062+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -106,45 +106,45 @@
         "id": "stocks_us-1"
       },
       {
-        "title": "젠슨 황 결국 사임, 엔비디아 -12%",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUpVOFpqU2RZR2ZDRFY5NzkydExLZEpPUTFMV0NwR0FNR1ptRGpmM1AtXzdFcFYzS3J1eFNGemRlanhBYmVJS01pWDRhbDZ5TE9GWWdkY1plZnVYMUVhckU0ODd5Z1hwR2xVcWxQOHpDQ3FhenRhMk1CVHZSZG56enRRWWRaY0EzWUY4?oc=5",
-        "published_at": "2026-11-12T14:21:00+00:00",
-        "id": "stocks_us-2"
-      },
-      {
         "title": "외국인, 삼성전자 순매수·SK하이닉스 순매도…코스피 AI 주도 상승",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83SHkzSlBRM2JibkVybjhzTkdWX00tVXl2MkdRNTJOTnRqYmg0UnBHY0RuV01OQ3lqajVlY2NQNFU1aGFERUkzdnkyMl9NU2VDdXRsaURHS2NWb0lGaXZsOGYzdXMtQzloUTBhaGFkam90dw?oc=5",
         "published_at": "2026-11-12T06:58:29+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-2"
       },
       {
         "title": "[서학개미 레이더] SK하이닉스 127만 원, 외국인 이틀간 6,700억 순매수",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAxRVg4d1o5YWJYN2VNRERDeHJDM2FzOGJYM2Q5cVR6dV9wY3RTZEdUU0J0al93Q1JQSUpaaVFCRXdUeEtUZk1xVDBR?oc=5",
         "published_at": "2026-11-12T06:02:16+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
         "title": "미국 증시 하락 이유 알아보기: 나스닥 하락 요인 총정리",
         "publisher": "VT Markets",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjMGtyZnBDY0VMN2gyY3Z6VjBHbTVwd1B2WWpSRVNEc2pBYmR6VTZiTHZYazU4dFp1RkhRTEhySVQ4b1ZZVjBYcWRsLVBzS3hJbmlmd1JCSEx6YVY4ak04bVAyTHdVanRid0RIc3ZCTQ?oc=5",
         "published_at": "2026-11-12T02:44:09+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-4"
       },
       {
         "title": "다우존스 나스닥 차이: 다우·나스닥·S&P500 지수 비교",
         "publisher": "VT Markets",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5XdkpoRmlyM2JKRVFicVVYUmJiTERoWVFZS05FdE1UcFpJYlRsR2xpOWdOZVpueTJpM3NpZFFZWWhOM0RGaVUwQUdTUFZIZ3FteVhSSXVnUFQ4dWIzUmVjaWFnelFBOTNJaTBtSGs3enZoRnlm?oc=5",
         "published_at": "2026-11-12T02:42:09+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-5"
       },
       {
         "title": "[특징주] 美반도체 강세에 삼전, 2%대 상승…하이닉스 강보합",
         "publisher": "연합뉴스",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyeFVwazlJUEZYekIzYjFaT2htZzItNWpPQ1VnYUZQdlhSYXo2emIzZHNlT0R0bF85bXFzbWEzaW5ZQnpQV1d0UUltakcxeERuVWJwSDBoTEVjZE1UQ1YwVNIBYEFVX3lxTFAyeFVwazlJUEZYekIzYjFaT2htZzItNWpPQ1VnYUZQdlhSYXo2emIzZHNlT0R0bF85bXFzbWEzaW5ZQnpQV1d0UUltakcxeERuVWJwSDBoTEVjZE1UQ1YwVA?oc=5",
         "published_at": "2026-11-12T00:34:05+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "12월 11일 속보: 나스닥과 S&P 500 지수 1% 이상 상승, 또 다른 디지털 자산 기업이 10조 달러 규모의 자본 조달에 성공.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS0d2N3M1OWR3cTQxOUN0NURYdy04eTBWY1lYZGxGem4tYnBGNjB6SjNoTVgyYm5mcG9KWGVfUmlBYTR4YUVHWnV4aWhHWWZZN1lUM3JmSjUzam01YmE0QW4yMjkyNVZ4d2ZLc0xQSllMTjRiMTFKUkVjckczelpCVFpSeGU0NlozbEJmYmtCdkpJalJ4bmJhZW1ZZ01oRXVLVnU0bVR2ZXBkVXNJbVJfRXlBR25OcFVHaE5XTDN3?oc=5",
+        "published_at": "2026-11-12T00:32:36+00:00",
         "id": "stocks_us-7"
       }
     ],
