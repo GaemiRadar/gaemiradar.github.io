@@ -59,7 +59,7 @@ jobs:
           FUTURE_TOLERANCE = dt.timedelta(minutes=15)
           TITLE = '[개미레이더] 자동 갱신 점검 경고'
           MARKER = '<!-- GAEMI_RADAR_HEALTH_MONITOR_V1 -->'
-          REPO = os.environ.get('REPO', 'MarketPulse100/marketpulse100.github.io')
+          REPO = os.environ.get('REPO', 'GaemiRadar/gaemiradar.github.io')
           TOKEN = os.environ.get('GH_TOKEN', '')
           TEST = os.environ.get('TEST_ALERT', '').lower() == 'true'
           problems = []
