@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-12T12:58:35.636059+09:00",
+  "data_updated_at": "2026-11-12T14:05:25.895448+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.17,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-12T12:58:35.636059+09:00",
+      "fetched_at": "2026-11-12T14:05:25.895448+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.1,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-12T12:58:35.636059+09:00",
+      "fetched_at": "2026-11-12T14:05:25.895448+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,24 +41,24 @@
         "id": "stocks_kr-0"
       },
       {
+        "title": "美 반도체 훈풍에도 코스피 주춤…젠슨 황 해임설에 증시 출렁",
+        "publisher": "진일보 | 전남일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Ga0c4ZTZSRml5UkNTN285OTRsX08xTGx6UlJ6TG1BN1hBaXRhT003blFyVFp4Qm5mcEVHMmZHVjZSRl9sV01hYzVZT2UxNkVHQWZ2d1VOMnBBaXFGTmxQMFg0cnpLN1V2Ykh4T2s4bw?oc=5",
+        "published_at": "2026-11-12T00:57:10+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "[개장시황] 반도체 훈풍에도 코스피 5360선 공방",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yTGgtTTl6Vy1aNENFbzZvOFo4dGlja1BsdW5mYmx6N21VdlMzSUlyRjZWUEdZSVNUbnpBZVBGT05FM05ldWw1ck5NMnptMjF0Q1pGQnFkc0RsN1Y1anJ4UGt5TDZPUVE?oc=5",
         "published_at": "2026-11-12T00:48:42+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "코스피 이틀 연속 상승, 엔비디아 CEO 해임 논란 속 보합세",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40ek43Mnh5d1FMRDE5WUgxQW02WG1yYWpTNDlaSTN2a2FzeHJqVlAwS19WV0VLTEVWMlE4UUhWdDU2a0J3QUotUVcxR0xDZy1sRTd2UDlNNmlvSDNkWFlxWlkzN3M4d3p3UHBZckkyaTdGZjQ?oc=5",
         "published_at": "2026-11-12T00:48:06+00:00",
-        "id": "stocks_kr-2"
-      },
-      {
-        "title": "이틀연속 오른 코스피, '젠슨황 해임 준비' 악재속 보합권 등락(종합)",
-        "publisher": "연합뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBaSTlaLWF0QzBweWliRGxWRnJwcHhGVjMwcFpTZHZkZDRFTFdGbEtmMHduWVdMZXNxN253VEFXRnAtWW9JdUtCbXY5WWhReTRHNFFTck1vYlJrNnZyN2psRdIBYEFVX3lxTFBaSTlaLWF0QzBweWliRGxWRnJwcHhGVjMwcFpTZHZkZDRFTFdGbEtmMHduWVdMZXNxN253VEFXRnAtWW9JdUtCbXY5WWhReTRHNFFTck1vYlJrNnZyN2psRQ?oc=5",
-        "published_at": "2026-11-12T00:39:55+00:00",
         "id": "stocks_kr-3"
       },
       {
