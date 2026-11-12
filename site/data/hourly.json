@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T02:08:11.407586+09:00",
+  "data_updated_at": "2026-11-13T02:57:30.057777+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.17,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-13T02:08:11.407586+09:00",
+      "fetched_at": "2026-11-13T02:57:30.057777+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.1,
       "change_unit": "pp",
       "as_of": "2026-11-10",
-      "fetched_at": "2026-11-13T02:08:11.407586+09:00",
+      "fetched_at": "2026-11-13T02:57:30.057777+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -83,10 +83,10 @@
         "id": "stocks_kr-6"
       },
       {
-        "title": "[오늘 증시 전망] 미국 AI 기술주 반등에 반도체 투자심리 회복…12일 국내 성장주 향방 주목",
-        "publisher": "톱뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qa0dQUGdfR1c5bHFQVFo3a2VOQmNmbHQxOXZWUFdkb0E2SGlkaGJpTF95R3dJbFYyWjdoQTNvYlVicnJvcng2NTE3LXBFOFVONFloUnVhOFYtSjRfeEJ3MHdjS2xobmVBQ3hmTDZWbw?oc=5",
-        "published_at": "2026-11-11T22:55:12+00:00",
+        "title": "오늘의 국내 증시",
+        "publisher": "뉴스핌",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VTDN2WXVKX2V5Ny1ZY0ZvRUw4UHpwYlZiR0o1NDQzZG1CdW5aSGxoSzBWcExfQTM2dlQ4eFJ3eUVyTHZQWTRHS0ZvdENUVndKcHpacXZubVBGYklo?oc=5",
+        "published_at": "2026-11-12T00:30:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
