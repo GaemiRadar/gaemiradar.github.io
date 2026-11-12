@@ -52,10 +52,10 @@ jobs:
           from pathlib import Path
           
           NOW = dt.datetime.now(dt.timezone.utc)
-          SITE = "https://marketpulse100.github.io"
+          SITE = "https://gaemiradar.github.io"
           TITLE = "[개미레이더] 공개 홈페이지·배포 상태 경고"
           MARKER = "<!-- GAEMI_RADAR_PUBLIC_SITE_MONITOR_V1 -->"
-          REPO = os.environ.get("REPO", "MarketPulse100/marketpulse100.github.io")
+          REPO = os.environ.get("REPO", "GaemiRadar/gaemiradar.github.io")
           TOKEN = os.environ.get("GH_TOKEN", "")
           TEST_ALERT = os.environ.get("TEST_ALERT", "").strip().lower() == "true"
           LOCAL_TEST = os.environ.get("SITE_MONITOR_LOCAL_TEST") == "1"
