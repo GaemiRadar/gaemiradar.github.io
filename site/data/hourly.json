@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T11:53:27.834921+09:00",
+  "data_updated_at": "2026-11-13T12:57:50.223611+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T11:53:27.834921+09:00",
+      "fetched_at": "2026-11-13T12:57:50.223611+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T11:53:27.834921+09:00",
+      "fetched_at": "2026-11-13T12:57:50.223611+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[시황] 젠슨 황 사임 충격에도 코스피 5,400선 회복…외국인 ‘사자’",
+        "publisher": "남도일보",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQLWxwQS01VW1OQ09zVmNKT05JUndaa0F3QzlBdHVrNVg3N0RvQlVzdGhvR3VvOURHM2RlQnE0LTh6Q2VTYTNTZE5DNU11aVJJT3dHQUJKNFFhaFctekhpcUtxajh4QWliSWpiRNIBcEFVX3lxTE1YUGNNcVVPMEFuQVZzc2dDM2p4VHl4LTc2X2Q1LW5PRWFYaUdYR1RQQy00WUNvVVgteXFCSmItTzJmR1BZQW1Pd2VrZk5kX2JQZXhvZWtVQUE3SzFxOEJDYzJBaEhZcUZrM05RZ2t3U3U?oc=5",
+        "published_at": "2026-11-13T02:25:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[오늘증시] 외국인·기관 '쌍끌이'에 코스피 2%대 상승…5500선 눈앞",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4NzNNNWszV3FhbHJVRlh3enJvWnlGTHdQLTY4WlNpdFlnXzcxNWZlNXdTcnBDNjlXNVVTR05FU2o0a3VnSTNfeVA0VkNicWpUR3JScTEyOUdYTmxNVWNRRDVJN3V6a3ZHbVVKVU9KanotZHM?oc=5",
         "published_at": "2026-11-13T01:59:20+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "[증시 오늘(13일) 주요 특징주] 코스피·코스닥 동반 급등세 이끄는 주요 특징주…반도체·바이오 집중 조명",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5CV0gxNXBuMTRmb3dFQUFWZzdtYmlMUTVtNEctQ0tpdVZqbDFpZDlzYUxBWWlGU2lQaUNTQzdmMC0zRXdzWnlXWHlqc1pRV3l0X1J2UWkwV1NwOE15TGhwNTBSOHdMTFg1cU5lb3Vpc0zSAXRBVV95cUxPckFMTVdDRnVVbzREdWxRaHRwLXBTOTBPZ3RCYk90UWNWQVZ0aklUS3hURFh1TTBhMlVhdUZfZFZWMklhaHFTZjcxTjI0b2NLZTQtaFF2VnBmc1pnZzlha3N1R2YxQ0dmYk04UzJXMFJ5RHFlMg?oc=5",
+        "published_at": "2026-11-13T01:41:01+00:00",
+        "id": "stocks_kr-2"
       },
       {
         "title": "[개장시황] 젠슨 황 사임에도 코스피 5480선 회복",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjWTlMbkZ3c0JsX3pWU18tZTdnRzRuYkIzYzNmX0tudkVDNmZTRFI4UHQ1eGthYXNvSWNJeXc5V0JhYzUwXzRXY0I0dmUyZ0ExUkM2R3NKaDBCdXlVUkdzZk5oWl8zZU0?oc=5",
         "published_at": "2026-11-13T00:46:03+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[이 시각 시황] 코스피·코스닥 2%대 동반 급등…반도체·증권주 강세 주도",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OTWdKS2JXQWN1NklIc3p0THlBZkV5ZUVJQ2pMOUpyTS04MWFrekVvb0hsQzRnVUpiODZKUHRDNE5tU1pGUnBlcGNoemlXZU8ycGNN0gFYQVVfeXFMUGZkNUxMSWk0c3o4bHp4S3phZGk4SVFPRjZIWkhSMHhnT2preERURWF4bnNsX3dYSXR6cUFzUzI1RXV2bm9reEtWUWNQY1ZFZ0w3MnFTUk1yLQ?oc=5",
         "published_at": "2026-11-13T00:45:00+00:00",
-        "id": "stocks_kr-2"
-      },
-      {
-        "title": "코스피, 반도체 강세에 5480선 상승 출발…삼성전자·SK하이닉스 3~4%대↑",
-        "publisher": "오피니언뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GVEswenZBQ3V2Z2RlVzBrLVc0bVJzWlZ4Mi1pRE55QW1PMm5ULXFOUjdSMy1Xd3VHQ2ZmYXEyRXlXb0dwMWU4SVR1OTEyNEg2WDRCS3dVdVRORmdnV2p1QTNlSXJTU3plRnJvVjdRbGo3QQ?oc=5",
-        "published_at": "2026-11-13T00:23:49+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[AI MY 증시전망] 엔비디아發 투심 위축…코스피 반등 제한",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIUDE2QkZsMkZJNjZqdTB5Qy1fdHF5Wi1zV1RPSm9FT2RDbmFQZU9PWUFGOWZ0TzlmRkxWdGJHVm8ycTVmcXVaRW5uM0FTYzA1Y2dTbHI3TW9SUVFK?oc=5",
         "published_at": "2026-11-12T22:58:00+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,340선 후퇴…뉴욕증시 약세에 13일 외국인 수급 주목",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuTTUtT2FPMVpOLVdhTGJrdUpPa25JRDAzYll3cFFfRVZqQTVHMVJlXzhENFAtdWZ3SlRlQ3RKd2xNUG80YjJLREFmNVZiX25BS1g4SWw0Zl9TZVpKUEt5ZXJMb3lhbFo4S0d3MGR3?oc=5",
         "published_at": "2026-11-12T22:14:05+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[e마켓클로징] 코스피 5340선으로 후퇴···기관 6910억 순매도 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5VSjNuNW9ncmxxX2lXdllFaGJsazZ2MHEwdVA4TFdOVFdFLS1SQzN6X1dBSTJWUExoY2hGUWNMcDFjV05FUXMxWENrS05ZTDVQbmptNmxLQUYyWXM2STBEMzhGeGFzM3liLVZITkk3LW80RF9pVHc?oc=5",
         "published_at": "2026-11-12T12:04:25+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[오늘증시] 코스피, 장중 5450선 돌파 후 하락 전환…엔비디아 불확실성·옵션 만기 부담에 5340선 마감",
-        "publisher": "Queen 이코노미퀸",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxaWZnNFVxZ3ZOTE1qeGV2OUpWZ2Frb2tFeS11aExfTFhHMXlZY01DZUtWVFFLTUxSTUlMbVZUX2E2d2tXV0E5Nl80QVlYcm5YXzV3bDV2QmlrZ1F3U1o4WEN3bTZOTnNB?oc=5",
-        "published_at": "2026-11-12T08:37:24+00:00",
         "id": "stocks_kr-7"
       }
     ],
