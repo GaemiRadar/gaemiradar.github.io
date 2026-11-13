@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T20:05:40.990229+09:00",
+  "data_updated_at": "2026-11-13T20:59:40.774729+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T20:05:40.990229+09:00",
+      "fetched_at": "2026-11-13T20:59:40.774729+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T20:05:40.990229+09:00",
+      "fetched_at": "2026-11-13T20:59:40.774729+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -152,7 +152,7 @@
       {
         "title": "국고채 금리 상승…유가 상승·美국채 약세",
         "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9oQVFYRVJLTmhzeFlKcUtRdzhQVnRrdEJfUW00RGM4R1ZVdXNtRzhrMVo4aG9LUHVBaGx1YnphVWVyM280ZVBPR3AtZmF2YWtGamRZ0gFYQVVfeXFMTWNJUVU1c3o2eUtyRnFOMWpwSXVMZ3lOemtLckxYWG5YeEZ0MXg0R1ltWXNMakZYTGRFU2NtU2ZiZnFCS29QSjRSNXBRTFVLYm54UWVCcGhtaA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jSVFVNXN6NnlLckZxTjFqcEl1TGd5TnprS3JMWFhuWHhGdDF4NEdZbVlzTGpGWExkRVNjbVNmYmZxQktvUEo0UjVwUUxVS2JueFFlQnBobWjSAVhBVV95cUxNY0lRVTVzejZ5S3JGcU4xanBJdUxneU56a0tyTFhYblh4RnQxeDRHWW1Zc0xqRlhMZEVTY21TZmJmcUJLb1BKNFI1cFFMVUtibnhRZUJwaG1o?oc=5",
         "published_at": "2026-11-13T08:10:00+00:00",
         "id": "bonds-0"
       },
