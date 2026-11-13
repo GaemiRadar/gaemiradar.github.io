@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T01:58:43.770369+09:00",
+  "data_updated_at": "2026-11-14T02:55:51.051237+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-14T01:58:43.770369+09:00",
+      "fetched_at": "2026-11-14T02:55:51.051237+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-14T01:58:43.770369+09:00",
+      "fetched_at": "2026-11-14T02:55:51.051237+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,31 +34,31 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[마감시황] 외국인 7032억 팔자 코스피 하락 전환",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMWhQTHVPMmVvcl9yaW1OYy1JN0tjUFNNMkJKaURkYk5RREdFZjFfWlczS3FmMG9sMXltNmtxT20xYjFTQWFmOFppT1dsQVJhY2NTdVNBNTktbVFlY1VoSDJEeDZic1k?oc=5",
-        "published_at": "2026-11-13T13:19:36+00:00",
-        "id": "stocks_kr-0"
-      },
-      {
         "title": "[오늘의 키워드] 한국–사우디 오늘 밤 11시 30분…2027학년도 수능 D-6",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85Z0psZGg0dzE5MVE4b1hXZXpJU21kcmpCcEJLQXRkVS1tUXdfQ1g3UjJ2TGptM2lDbjJXWW9obkhtckNYSG1WYV9haExVWHhEQXYyb25nMXNJV096QllQc2UwSlYwaXhkX00zSnBMUQ?oc=5",
         "published_at": "2026-11-13T09:39:54+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-0"
       },
       {
         "title": "젠슨 황 사임에도 정책 수혜로 오른 반도체 관련 종목들 분석",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQmsyYnh3M002OVFoWDgwbC1uZlBFazlSYTVVZGtodWtOUDJNbG1Oblg0QzB0d1p0dDkyTGowMjV6VE53WXNXTGdiMDBsYThuYkFFempmaUpqdURFWnpYSFdrSFJkNU1kY0dhcF91WTRuY1AwaTRQM3lyTkdENzBQUFZmOXVQZV92VWc?oc=5",
         "published_at": "2026-11-13T08:13:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[오늘의 주목주] '금융주 강세' 신한지주 주가 5%대 상승, 코스피 외국인 순매도에 5290선 하락 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lbE1mTUtKcDZLUzVHRnZCeU41ODIyVXUya3VNelVBbnRKbzhPam5YQ29CSnlQY09FMEl5UzFBeUJVdlQ4Z083SXFGSnhPNGdFdURnZm1pQlJnVXhENWFSeG5sdUZoeFNKWVQ3R1VtdjVLVnM?oc=5",
         "published_at": "2026-11-13T08:09:28+00:00",
+        "id": "stocks_kr-2"
+      },
+      {
+        "title": "[마감시황] 외국인 7032억 팔자 코스피 하락 전환",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMWhQTHVPMmVvcl9yaW1OYy1JN0tjUFNNMkJKaURkYk5RREdFZjFfWlczS3FmMG9sMXltNmtxT20xYjFTQWFmOFppT1dsQVJhY2NTdVNBNTktbVFlY1VoSDJEeDZic1k?oc=5",
+        "published_at": "2026-11-13T08:00:00+00:00",
         "id": "stocks_kr-3"
       },
       {
@@ -83,10 +83,10 @@
         "id": "stocks_kr-6"
       },
       {
-        "title": "전강후약 장세, 코스피 5,300 하회",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jSlpqUDUxazNPOEd6dEhheFU5VndIUlRBajE1T0FNQV9wak5XWGxYb1JfUHVTaUJZYU5fWE1NZFp2ZmYtWm5GUE1jSjVLbVhFenQtZDgyNE5ZUl9Bb192VThNRTlaSlphM1ZlWg?oc=5",
-        "published_at": "2026-11-13T07:00:56+00:00",
+        "title": "젠슨 황 사임 악재에도 코스피 2%대 상승…코스닥도 1%대↑",
+        "publisher": "이슈밸리",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XMjFuTmJyTm9zSmFCdXQtTmloc1gtS1dYS3ItdmJfOXIzeFFDS3RXUUo0XzB0OV9DazNsRnpVMFJuWGFfdEdzSUg5Ry1TZFY1UXdINklQX0V3S2pXbDl2S0VLdHctMWlyMDlQbGZB?oc=5",
+        "published_at": "2026-11-13T04:58:57+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -157,10 +157,10 @@
         "id": "bonds-0"
       },
       {
-        "title": "[채권마감] 10년 금리 10일만 4%대 재진입, 유가·미 금리 급등",
-        "publisher": "이투데이",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GNDNoSGk2QnNRX0FGTWFmTmFEU3loRmlpQ01uNGVUd2d0THcxZGw4SWZtRHJmNFY5eHEzSnNjeHNrUG1saU0zVllUQzFjN2h5eXJMVVMxZ2lUV2ZWRGRSTlZXWHlIclhtcWZFNTd6dmdiejFO?oc=5",
-        "published_at": "2026-11-13T08:14:00+00:00",
+        "title": "비트코인, 연준 금리 인상 전망 속 지지선 붕괴... 시장 심리는? (+BTC, 연준, 금리인상, 시장심리)",
+        "publisher": "민심뉴스",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95dHhoZ1NBQlBZMUlGOGFFSkxReXlqcHBEMVVXOXh0RGw0WjRUdDA2WURvcUFlMmprUFBBVFJZeXE0YUFRaW1IZlZyclNXZ29mY3BoMjlUd3JGaTd6Tmg5bkk2eGpPOTNra081SEJ3?oc=5",
+        "published_at": "2026-11-13T11:26:49+00:00",
         "id": "bonds-1"
       },
       {
