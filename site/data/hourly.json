@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T06:52:02.988799+09:00",
+  "data_updated_at": "2026-11-14T07:50:00.435177+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T06:52:02.988799+09:00",
+      "fetched_at": "2026-11-14T07:50:00.435177+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T06:52:02.988799+09:00",
+      "fetched_at": "2026-11-14T07:50:00.435177+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "[뉴욕마켓워치] 美 물가 경계 속 엔비디아 후폭풍…주식·채권 혼조·달러↑",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YYlY5T3ZoVDlPYjF1aWdfRnRTVjBSUV9YR1R5VmRFTnhfeUZHTFZycEtNQlZ1Q01NcEpiZFBjMTJsR3BlNksxeEozLUFaVjJHTWE3dVdxNmpXc3A3N0FrdGowWFI4dEZTa0NYc2REQWNxdw?oc=5",
+        "published_at": "2026-11-13T22:06:50+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "[11.14(토) 한국장 전망] 미 국채 급등·KORU -5.5% 코스피 하락 압력",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZSnl3TlZFUVRORDJCNWNPVFo1TUNtcTBYNE9SSzYzXzlnUTdJSGVabWdTYlNSVHpjOUdoZEp0MW9lTjFrbjMwMU9HWERIc09xT2IwWXZ1MWtNeGZCWHpvSmdHN3FOM0IyRjFDcGNvNjdMd3JtN1E?oc=5",
         "published_at": "2026-11-13T21:10:28+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "美 국채가, 여전히 높은 PPI에 낙폭 확대…'베어 스팁'",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rNTlLU2hQd1V2V2phel9nSEwxV2Mza1o3N3l2R2YxTFRBT2tVa19PWWNubmhwY0pIX0pQZVFQaWZrUHBYVFdNZ051NjZaNng1cEt3TXc3bUVtWmFkT3NQbm9Dak5rV1k2a09QWWtVbzA?oc=5",
         "published_at": "2026-11-13T16:56:27+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "엔비디아에 정신 팔린 새…美 국채금리 5% 넘었음ㅇㅇ [11/13 G브닝]｜Global Money Club",
         "publisher": "중앙일보",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiTWR4aWRuR3dZV3o4dXhBWWNMYnlKZVllcVVKYzJTLTdlRGlnTTA5SHBPYkZTbFBVQ2JKWWpvSno5bDg5eGIxdXVsblF2SjZxNlVoaUhaMW0zems?oc=5",
         "published_at": "2026-11-13T12:20:10+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "비트코인, 연준 금리 인상 전망 속 지지선 붕괴... 시장 심리는? (+BTC, 연준, 금리인상, 시장심리)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95dHhoZ1NBQlBZMUlGOGFFSkxReXlqcHBEMVVXOXh0RGw0WjRUdDA2WURvcUFlMmprUFBBVFJZeXE0YUFRaW1IZlZyclNXZ29mY3BoMjlUd3JGaTd6Tmg5bkk2eGpPOTNra081SEJ3?oc=5",
         "published_at": "2026-11-13T11:26:49+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "국고채 금리 상승…유가 상승·美국채 약세",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jSVFVNXN6NnlLckZxTjFqcEl1TGd5TnprS3JMWFhuWHhGdDF4NEdZbVlzTGpGWExkRVNjbVNmYmZxQktvUEo0UjVwUUxVS2JueFFlQnBobWjSAVhBVV95cUxNY0lRVTVzejZ5S3JGcU4xanBJdUxneU56a0tyTFhYblh4RnQxeDRHWW1Zc0xqRlhMZEVTY21TZmJmcUJLb1BKNFI1cFFMVUtibnhRZUJwaG1o?oc=5",
         "published_at": "2026-11-13T08:10:00+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "엔비디아 젠슨 황 사임 파장 제한적...미 국채금리는 부담",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SX2lUYXFaRTVCWWctMmFtMkVwNUYtdzd4YmFXbzdnTzhHcVg1SzhfczhReGZuZTNxMHI2MnlWTDQ5cWVQcVp0bVNKR0RubEdpTzFydng2aGFHdw?oc=5",
         "published_at": "2026-11-13T05:06:19+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "국고채 금리 상승폭 축소…코스피 상승에도 外人 매수세 유지",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sakRualVzZXliNVJJTkFqN0tLZTBsRUlGTFk2N1lvYmZablQzeE5kX1NST2xXMDhSRlAwQk5KdjdnVHhUWjU1UllMMF9VazhQaDdZZ1h6cGgyX3hSNVdSMDN6UWhEa2FFaHkwcGZfdG8?oc=5",
         "published_at": "2026-11-13T04:08:38+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "日 국채금리, 전 구간 상승…10년물 7bp 넘게 올라 2.86%(상보)",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZTWNUa09UTXh3SDFNeTI2a0VSRnpjZDVaLTlXU2RYZDNFalpzVmljX2NfdTFrdVg1NWV6d0Y2U0h5eXpEYUV1U3NIWWdJT1VtLTEtSFZ0ckttR2JaaW5jQ2JOWmNVaXdVYmNGekhQUVhrdw?oc=5",
-        "published_at": "2026-11-13T01:02:18+00:00",
         "id": "bonds-7"
       }
     ]
