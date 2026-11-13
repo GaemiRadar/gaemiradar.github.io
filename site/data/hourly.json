@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T20:59:40.774729+09:00",
+  "data_updated_at": "2026-11-13T22:13:36.993774+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T20:59:40.774729+09:00",
+      "fetched_at": "2026-11-13T22:13:36.993774+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T20:59:40.774729+09:00",
+      "fetched_at": "2026-11-13T22:13:36.993774+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,126 +69,126 @@
         "id": "stocks_kr-4"
       },
       {
+        "title": "[11.13(금) 한국장 마감] 혼조 마감 (코스피 -0.98%, 코스닥 +0.45%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PTloyYnBmbDV1X3NrZHRaV1VEWW5yMTMyNzRlQnZxcTBmUFdoRl9TRVBOa1hjbU1QQlRiV25aYUFPY1dTZk82YkRlandBU0l3RDl6NFlCblpyQmhLNndQbWZrV3NOaU82UjY5Y0lfMzRQTnlYZVE?oc=5",
+        "published_at": "2026-11-13T07:01:01+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
         "title": "젠슨 황 사임 악재에도 코스피 2%대 상승…코스닥도 1%대↑",
         "publisher": "이슈밸리",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XMjFuTmJyTm9zSmFCdXQtTmloc1gtS1dYS3ItdmJfOXIzeFFDS3RXUUo0XzB0OV9DazNsRnpVMFJuWGFfdEdzSUg5Ry1TZFY1UXdINklQX0V3S2pXbDl2S0VLdHctMWlyMDlQbGZB?oc=5",
         "published_at": "2026-11-13T04:58:57+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[시황] 젠슨 황 사임 충격에도 코스피 5,400선 회복…외국인 ‘사자’",
         "publisher": "남도일보",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQLWxwQS01VW1OQ09zVmNKT05JUndaa0F3QzlBdHVrNVg3N0RvQlVzdGhvR3VvOURHM2RlQnE0LTh6Q2VTYTNTZE5DNU11aVJJT3dHQUJKNFFhaFctekhpcUtxajh4QWliSWpiRNIBcEFVX3lxTE1YUGNNcVVPMEFuQVZzc2dDM2p4VHl4LTc2X2Q1LW5PRWFYaUdYR1RQQy00WUNvVVgteXFCSmItTzJmR1BZQW1Pd2VrZk5kX2JQZXhvZWtVQUE3SzFxOEJDYzJBaEhZcUZrM05RZ2t3U3U?oc=5",
         "published_at": "2026-11-13T02:25:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[오늘증시] 외국인·기관 쌍끌이 '코스피 2%대' 상승…5500선 눈앞",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4NzNNNWszV3FhbHJVRlh3enJvWnlGTHdQLTY4WlNpdFlnXzcxNWZlNXdTcnBDNjlXNVVTR05FU2o0a3VnSTNfeVA0VkNicWpUR3JScTEyOUdYTmxNVWNRRDVJN3V6a3ZHbVVKVU9KanotZHM?oc=5",
-        "published_at": "2026-11-13T01:59:20+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
+        "title": "미국증시 전망, 10년물 5.1%·PPI가 승부처…나스닥 선물 약세",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Sd2xMZG1Xdlk1bFJoMDFKV01YN2x5VjZBbmVqSWgyZmZCQnJIUDlBczl1Q1JwYXFwVDF4UXQ3czM4UGZGU2VISjg1SmFVR3VKckJKQTE3cUd2VllMa1p2ZWZ4dF9CcEFmOTJUNE0tVlE5dw?oc=5",
+        "published_at": "2026-11-13T12:35:22+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "엔비디아 젠슨 황 전격 사퇴, 시장 파장 주목",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqcUlQQ251STE0ZzFaSGJIV09ZWm9SbXJNdkU2T1BBUHJfa0NXX2ZJSlA0TnV6bWNvenh5NTk2QXA0Tm4tWlVMUmFPbHotemtVUFUycENvNUVRUQ?oc=5",
         "published_at": "2026-11-13T02:37:06+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-1"
       },
       {
         "title": "[오늘증시] 외국인·기관 쌍끌이 '코스피 2%대' 상승…5500선 눈앞",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4NzNNNWszV3FhbHJVRlh3enJvWnlGTHdQLTY4WlNpdFlnXzcxNWZlNXdTcnBDNjlXNVVTR05FU2o0a3VnSTNfeVA0VkNicWpUR3JScTEyOUdYTmxNVWNRRDVJN3V6a3ZHbVVKVU9KanotZHM?oc=5",
         "published_at": "2026-11-13T01:59:20+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-2"
       },
       {
         "title": "[서학개미 생존공식] 엔비디아(NVDA) 젠슨 황 사임에도 나스닥 -0.4%… 금리 5% 변수",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9GWkJKd3A3c243cTVlQlMwc2VzaUp2T2plekRtR3NHdWFGTkhzd01Lb1BCYUtrTXdfc18yQkVsRV84NjVpZDI2RnR3?oc=5",
         "published_at": "2026-11-12T23:49:59+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-3"
       },
       {
         "title": "[속보] 미국 뉴욕증시 3대 주요 지수 하락...향후 흐름 주시",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YUmpwOUx1U0hUTHdDZjZoZWtBRjg1MHpmb0Z6a0JVZkxtLVZNU3JicmFsVXR4YVFiNDhmRU9xQm40aHJZVlA3LTdzdFJWUWtwZUZoejJTdm5RdU5ZWkUtelNFcjdEVWh4?oc=5",
         "published_at": "2026-11-12T21:53:44+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
       },
       {
         "title": "[속보] 유가에 젠슨 황까지 뉴욕증시 일제히 하락…나스닥 0.4%↓",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wUnVLLVpYWUprRVYxNGlrdEt5eXhQUHF6bUxpQU1nbGY4Y2V0NTdxZkdGX2hzSldIWHNSUmEzVzItMnU1MXpsamFJdjEyQU5RU0pR0gFYQVVfeXFMT1FCc3hSOHlpVFoxSkhreHhBbFMxSU1PaUZNMlpGS1h2MS1TenVtTUxXMXZqeW1tMmU3a2lrVzRSVzN0N2lCd3ZoeDVEclpiNzZiUzk2N3Q0TA?oc=5",
         "published_at": "2026-11-12T21:21:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "미국 증시, 개장 후 하락폭 줄이며 반등...나스닥 0.38% 하락세 좁혀 (+BTC, 미국 증시, 나스닥)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MZmtTOXNNVWZJTjNuaFl3MXRialhVb2hOVWxzdXJJelJ4NkR4WDh2SGFKQ2xfclZXczhuck0wRnZfS19LQWo4cEFYeHhFbEVmR2M3NHUyWTUwQVljTERKM0JnaFFXTjhCTzh6OGtB?oc=5",
         "published_at": "2026-11-12T15:18:47+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[속보]미국 뉴욕증시 혼조세…다우 상승·나스닥 하락, 엔비디아 젠슨 황 사임 충격",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zMk90ckZaVFRkaEdGcE1UYklBVFlZSWtpa0ViWExjMjl6dWdjQVd3MGowdC1uLUNkNHp6cDExVVFESXV0WW9KNnhsNm9nSlZEQmRPSHZpWnpxeG92OWY5THlQUDFfREpN?oc=5",
         "published_at": "2026-11-12T15:00:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "젠슨 황 결국 사임, 엔비디아 -12%",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUpVOFpqU2RZR2ZDRFY5NzkydExLZEpPUTFMV0NwR0FNR1ptRGpmM1AtXzdFcFYzS3J1eFNGemRlanhBYmVJS01pWDRhbDZ5TE9GWWdkY1plZnVYMUVhckU0ODd5Z1hwR2xVcWxQOHpDQ3FhenRhMk1CVHZSZG56enRRWWRaY0EzWUY4?oc=5",
-        "published_at": "2026-11-12T14:21:00+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "엔비디아에 정신 팔린 새…美 국채금리 5% 넘었음ㅇㅇ [11/13 G브닝]｜Global Money Club",
+        "publisher": "중앙일보",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiTWR4aWRuR3dZV3o4dXhBWWNMYnlKZVllcVVKYzJTLTdlRGlnTTA5SHBPYkZTbFBVQ2JKWWpvSno5bDg5eGIxdXVsblF2SjZxNlVoaUhaMW0zems?oc=5",
+        "published_at": "2026-11-13T12:20:10+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "국고채 금리 상승…유가 상승·美국채 약세",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jSVFVNXN6NnlLckZxTjFqcEl1TGd5TnprS3JMWFhuWHhGdDF4NEdZbVlzTGpGWExkRVNjbVNmYmZxQktvUEo0UjVwUUxVS2JueFFlQnBobWjSAVhBVV95cUxNY0lRVTVzejZ5S3JGcU4xanBJdUxneU56a0tyTFhYblh4RnQxeDRHWW1Zc0xqRlhMZEVTY21TZmJmcUJLb1BKNFI1cFFMVUtibnhRZUJwaG1o?oc=5",
         "published_at": "2026-11-13T08:10:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "엔비디아 젠슨 황 사임 파장 제한적...미 국채금리는 부담",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9SX2lUYXFaRTVCWWctMmFtMkVwNUYtdzd4YmFXbzdnTzhHcVg1SzhfczhReGZuZTNxMHI2MnlWTDQ5cWVQcVp0bVNKR0RubEdpTzFydng2aGFHdw?oc=5",
         "published_at": "2026-11-13T05:06:19+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "국고채 금리 상승폭 축소…코스피 상승에도 外人 매수세 유지",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sakRualVzZXliNVJJTkFqN0tLZTBsRUlGTFk2N1lvYmZablQzeE5kX1NST2xXMDhSRlAwQk5KdjdnVHhUWjU1UllMMF9VazhQaDdZZ1h6cGgyX3hSNVdSMDN6UWhEa2FFaHkwcGZfdG8?oc=5",
         "published_at": "2026-11-13T04:08:38+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "日 국채금리, 전 구간 상승…10년물 7bp 넘게 올라 2.86%(상보)",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZTWNUa09UTXh3SDFNeTI2a0VSRnpjZDVaLTlXU2RYZDNFalpzVmljX2NfdTFrdVg1NWV6d0Y2U0h5eXpEYUV1U3NIWWdJT1VtLTEtSFZ0ckttR2JaaW5jQ2JOWmNVaXdVYmNGekhQUVhrdw?oc=5",
         "published_at": "2026-11-13T01:02:18+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[뉴욕채권] 국채가 급락…'이란 기대↓' 유가 급등에 10년물 5%대 안착",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KVWZNd3dpRkhTR2pGcXNQVlpUc0dfN2JadkZaN21XQUpCU3MtNnFUbjFZbTlmQVp5eFc5RVJ2eEQ5ajZERzk0MnVXX0VvWEtsdlVJcW13akp1MGtuZEdVdVhWV2l4ZlNTNnlKZzhvQjY?oc=5",
         "published_at": "2026-11-12T23:17:59+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "[채권/외환] 미 국채금리 급등·달러 19개월 만에 최고…트럼프 \"이란과 합의 필요 없어\"",
-        "publisher": "뉴스핌",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWeTFxcnBjNGxubGtReHVKQXk0LU8xb2hqTDZ1anlLZVN6T2VnZ1M5bXBKaHh5OXdmX1J0NVhQR1djMWlnbHRvb3lpajdjU05QTTBnRDhSQ3M0TWNp?oc=5",
-        "published_at": "2026-11-12T22:21:00+00:00",
         "id": "bonds-5"
       },
       {
