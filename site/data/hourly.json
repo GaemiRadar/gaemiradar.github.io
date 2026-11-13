@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T14:03:36.229941+09:00",
+  "data_updated_at": "2026-11-13T15:04:58.752263+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T14:03:36.229941+09:00",
+      "fetched_at": "2026-11-13T15:04:58.752263+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T14:03:36.229941+09:00",
+      "fetched_at": "2026-11-13T15:04:58.752263+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,24 +69,24 @@
         "id": "stocks_kr-4"
       },
       {
-        "title": "코스피, 반도체 강세에 5480선 상승 출발…삼성전자·SK하이닉스 3~4%대↑",
-        "publisher": "오피니언뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GVEswenZBQ3V2Z2RlVzBrLVc0bVJzWlZ4Mi1pRE55QW1PMm5ULXFOUjdSMy1Xd3VHQ2ZmYXEyRXlXb0dwMWU4SVR1OTEyNEg2WDRCS3dVdVRORmdnV2p1QTNlSXJTU3plRnJvVjdRbGo3QQ?oc=5",
-        "published_at": "2026-11-13T00:23:49+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
         "title": "'젠슨 황 사임'에 엔비디아 급락...오늘 증시는?",
         "publisher": "YTN",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtWGxjOHh0VXRGY1h1dTNfWDVwdjFxbkw0V1VyREc4Y1FHNkVMUVd4QW84TVBOc1lSb2k1VGNCZkhIRnlrQm9BdUg0YTRrYXpOTG85SU5GeHlDaEJVaXc?oc=5",
         "published_at": "2026-11-13T00:03:00+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[AI MY 증시전망] 엔비디아發 투심 위축…코스피 반등 제한",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIUDE2QkZsMkZJNjZqdTB5Qy1fdHF5Wi1zV1RPSm9FT2RDbmFQZU9PWUFGOWZ0TzlmRkxWdGJHVm8ycTVmcXVaRW5uM0FTYzA1Y2dTbHI3TW9SUVFK?oc=5",
         "published_at": "2026-11-12T22:58:00+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[오늘 증시 전망] 코스피 5,340선 후퇴…뉴욕증시 약세에 13일 외국인 수급 주목",
+        "publisher": "업코리아",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuTTUtT2FPMVpOLVdhTGJrdUpPa25JRDAzYll3cFFfRVZqQTVHMVJlXzhENFAtdWZ3SlRlQ3RKd2xNUG80YjJLREFmNVZiX25BS1g4SWw0Zl9TZVpKUEt5ZXJMb3lhbFo4S0d3MGR3?oc=5",
+        "published_at": "2026-11-12T22:14:05+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -106,45 +106,45 @@
         "id": "stocks_us-1"
       },
       {
-        "title": "뉴욕증시,젠슨 황 사임 충격에 동반 하락…나스닥 0.4%↓",
-        "publisher": "스페셜경제",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02bGxrR1c4aHlxOWhfRG1yLXhYek90aWhXQUEySEFVaXc0MG9fRE1CdjFQSnI1TDJGRlZaRlg3WlV3eG9aQ1p2N1dseGxaNk5Db2ZwRHdELURtOERKVVhIdEktTWZJR3hpYW5iQQ?oc=5",
-        "published_at": "2026-11-12T23:51:39+00:00",
-        "id": "stocks_us-2"
-      },
-      {
         "title": "[서학개미 생존공식] 엔비디아(NVDA) 젠슨 황 사임에도 나스닥 -0.4%… 금리 5% 변수",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9GWkJKd3A3c243cTVlQlMwc2VzaUp2T2plekRtR3NHdWFGTkhzd01Lb1BCYUtrTXdfc18yQkVsRV84NjVpZDI2RnR3?oc=5",
         "published_at": "2026-11-12T23:49:59+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-2"
       },
       {
         "title": "[속보] 미국 뉴욕증시 3대 주요 지수 하락...향후 흐름 주시",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YUmpwOUx1U0hUTHdDZjZoZWtBRjg1MHpmb0Z6a0JVZkxtLVZNU3JicmFsVXR4YVFiNDhmRU9xQm40aHJZVlA3LTdzdFJWUWtwZUZoejJTdm5RdU5ZWkUtelNFcjdEVWh4?oc=5",
         "published_at": "2026-11-12T21:53:44+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
         "title": "[속보] 유가에 젠슨 황까지 뉴욕증시 일제히 하락…나스닥 0.4%↓",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wUnVLLVpYWUprRVYxNGlrdEt5eXhQUHF6bUxpQU1nbGY4Y2V0NTdxZkdGX2hzSldIWHNSUmEzVzItMnU1MXpsamFJdjEyQU5RU0pR0gFYQVVfeXFMT1FCc3hSOHlpVFoxSkhreHhBbFMxSU1PaUZNMlpGS1h2MS1TenVtTUxXMXZqeW1tMmU3a2lrVzRSVzN0N2lCd3ZoeDVEclpiNzZiUzk2N3Q0TA?oc=5",
         "published_at": "2026-11-12T21:21:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-4"
       },
       {
         "title": "미국 증시, 개장 후 하락폭 줄이며 반등...나스닥 0.38% 하락세 좁혀 (+BTC, 미국 증시, 나스닥)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MZmtTOXNNVWZJTjNuaFl3MXRialhVb2hOVWxzdXJJelJ4NkR4WDh2SGFKQ2xfclZXczhuck0wRnZfS19LQWo4cEFYeHhFbEVmR2M3NHUyWTUwQVljTERKM0JnaFFXTjhCTzh6OGtB?oc=5",
         "published_at": "2026-11-12T15:18:47+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-5"
       },
       {
         "title": "[속보]미국 뉴욕증시 혼조세…다우 상승·나스닥 하락, 엔비디아 젠슨 황 사임 충격",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zMk90ckZaVFRkaEdGcE1UYklBVFlZSWtpa0ViWExjMjl6dWdjQVd3MGowdC1uLUNkNHp6cDExVVFESXV0WW9KNnhsNm9nSlZEQmRPSHZpWnpxeG92OWY5THlQUDFfREpN?oc=5",
         "published_at": "2026-11-12T15:00:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "미국증시 전망, 엔비디아 충격 재점화…나스닥 선물 약세",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBpd0w1UnVTYklKX0E4N1d5S2d5Z1B6OVVVdm9RNXNJOEd1aEVKWE85MENVMmxiRlByeUVROGdpRUFwbFZuXzVfSDhCczZvcHdhTExWZ01NYVk0UWpuaDVYdUlORm0yR05pSWVPaDQxdHVGUQ?oc=5",
+        "published_at": "2026-11-12T11:56:37+00:00",
         "id": "stocks_us-7"
       }
     ],
