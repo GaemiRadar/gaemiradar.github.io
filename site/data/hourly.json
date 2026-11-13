@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-13T11:12:10.772033+09:00",
+  "data_updated_at": "2026-11-13T11:53:27.834921+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.13,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T11:12:10.772033+09:00",
+      "fetched_at": "2026-11-13T11:53:27.834921+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.12,
       "change_unit": "pp",
       "as_of": "2026-11-12",
-      "fetched_at": "2026-11-13T11:12:10.772033+09:00",
+      "fetched_at": "2026-11-13T11:53:27.834921+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,52 +41,52 @@
         "id": "stocks_kr-0"
       },
       {
+        "title": "[개장시황] 젠슨 황 사임에도 코스피 5480선 회복",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjWTlMbkZ3c0JsX3pWU18tZTdnRzRuYkIzYzNmX0tudkVDNmZTRFI4UHQ1eGthYXNvSWNJeXc5V0JhYzUwXzRXY0I0dmUyZ0ExUkM2R3NKaDBCdXlVUkdzZk5oWl8zZU0?oc=5",
+        "published_at": "2026-11-13T00:46:03+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "[이 시각 시황] 코스피·코스닥 2%대 동반 급등…반도체·증권주 강세 주도",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OTWdKS2JXQWN1NklIc3p0THlBZkV5ZUVJQ2pMOUpyTS04MWFrekVvb0hsQzRnVUpiODZKUHRDNE5tU1pGUnBlcGNoemlXZU8ycGNN0gFYQVVfeXFMUGZkNUxMSWk0c3o4bHp4S3phZGk4SVFPRjZIWkhSMHhnT2preERURWF4bnNsX3dYSXR6cUFzUzI1RXV2bm9reEtWUWNQY1ZFZ0w3MnFTUk1yLQ?oc=5",
         "published_at": "2026-11-13T00:45:00+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
+      },
+      {
+        "title": "코스피, 반도체 강세에 5480선 상승 출발…삼성전자·SK하이닉스 3~4%대↑",
+        "publisher": "오피니언뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GVEswenZBQ3V2Z2RlVzBrLVc0bVJzWlZ4Mi1pRE55QW1PMm5ULXFOUjdSMy1Xd3VHQ2ZmYXEyRXlXb0dwMWU4SVR1OTEyNEg2WDRCS3dVdVRORmdnV2p1QTNlSXJTU3plRnJvVjdRbGo3QQ?oc=5",
+        "published_at": "2026-11-13T00:23:49+00:00",
+        "id": "stocks_kr-3"
       },
       {
         "title": "[AI MY 증시전망] 엔비디아發 투심 위축…코스피 반등 제한",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIUDE2QkZsMkZJNjZqdTB5Qy1fdHF5Wi1zV1RPSm9FT2RDbmFQZU9PWUFGOWZ0TzlmRkxWdGJHVm8ycTVmcXVaRW5uM0FTYzA1Y2dTbHI3TW9SUVFK?oc=5",
         "published_at": "2026-11-12T22:58:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,340선 후퇴…뉴욕증시 약세에 13일 외국인 수급 주목",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuTTUtT2FPMVpOLVdhTGJrdUpPa25JRDAzYll3cFFfRVZqQTVHMVJlXzhENFAtdWZ3SlRlQ3RKd2xNUG80YjJLREFmNVZiX25BS1g4SWw0Zl9TZVpKUEt5ZXJMb3lhbFo4S0d3MGR3?oc=5",
         "published_at": "2026-11-12T22:14:05+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[e마켓클로징] 코스피 5340선으로 후퇴···기관 6910억 순매도 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5VSjNuNW9ncmxxX2lXdllFaGJsazZ2MHEwdVA4TFdOVFdFLS1SQzN6X1dBSTJWUExoY2hGUWNMcDFjV05FUXMxWENrS05ZTDVQbmptNmxLQUYyWXM2STBEMzhGeGFzM3liLVZITkk3LW80RF9pVHc?oc=5",
         "published_at": "2026-11-12T12:04:25+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[오늘증시] 코스피, 장중 5450선 돌파 후 하락 전환…엔비디아 불확실성·옵션 만기 부담에 5340선 마감",
         "publisher": "Queen 이코노미퀸",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxaWZnNFVxZ3ZOTE1qeGV2OUpWZ2Frb2tFeS11aExfTFhHMXlZY01DZUtWVFFLTUxSTUlMbVZUX2E2d2tXV0E5Nl80QVlYcm5YXzV3bDV2QmlrZ1F3U1o4WEN3bTZOTnNB?oc=5",
         "published_at": "2026-11-12T08:37:24+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "11/12(목), 장마감 브리핑",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1QS0FfaEhmVEFlYTlrZHNNQWFPWU9DbC1ZY0pmMVdYSm10dWo2YVV5WWJjYUI4SHpTcmU4eHpyMGVpakdudWhKajkySmJyRG1vaXFNaC1iNlZrNWI1WGM2SnpIQ1NTVGNFbkxmd3piZXg0X1llaV9GUGpxNEJTUQ?oc=5",
-        "published_at": "2026-11-12T06:40:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "이틀 연속 오른 코스피 오늘은 ‘잠잠’…美 반도체 급등에도 소폭 상승 [투자360]",
-        "publisher": "헤럴드경제",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81NUsxdGdGZXN6UGlPZjgwb1FYTmFKNWhxWW0yejRXRTdROEtlcVZySUhycUJ4NDRkZzN5YXBneGdyZmtlbDQtY041RjlyZ2pISDZFNUxR?oc=5",
-        "published_at": "2026-11-12T01:00:11+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -141,10 +141,10 @@
         "id": "stocks_us-6"
       },
       {
-        "title": "미국증시 전망, 엔비디아 충격 재점화…나스닥 선물 약세",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBpd0w1UnVTYklKX0E4N1d5S2d5Z1B6OVVVdm9RNXNJOEd1aEVKWE85MENVMmxiRlByeUVROGdpRUFwbFZuXzVfSDhCczZvcHdhTExWZ01NYVk0UWpuaDVYdUlORm0yR05pSWVPaDQxdHVGUQ?oc=5",
-        "published_at": "2026-11-12T11:56:37+00:00",
+        "title": "[서학개미 레이더] SK하이닉스 127만 원, 외국인 이틀간 6,700억 순매수",
+        "publisher": "코인리더스",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAxRVg4d1o5YWJYN2VNRERDeHJDM2FzOGJYM2Q5cVR6dV9wY3RTZEdUU0J0al93Q1JQSUpaaVFCRXdUeEtUZk1xVDBR?oc=5",
+        "published_at": "2026-11-12T06:02:16+00:00",
         "id": "stocks_us-7"
       }
     ],
