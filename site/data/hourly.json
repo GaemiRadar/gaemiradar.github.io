@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T16:04:41.427571+09:00",
+  "data_updated_at": "2026-11-14T17:07:43.158166+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T16:04:41.427571+09:00",
+      "fetched_at": "2026-11-14T17:07:43.158166+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T16:04:41.427571+09:00",
+      "fetched_at": "2026-11-14T17:07:43.158166+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,33 +69,33 @@
         "id": "stocks_kr-4"
       },
       {
+        "title": "젠슨 황 퇴임과 코스피 하락, 외국인 매도와 정책 기대감",
+        "publisher": "스페셜타임스",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LcjE4ZzVWRGVXNEFjclozclRwNUZ3bkRPcTlUTTkzWHRQV01tQTZWM2p1ODZsY2VWaXpjN0FoakJ6ZjNOTTRGdWhMajN2UkxHOHpIN05WeVpDZjh5aXdCOUYtNmRzOENTTEJnT05vNnktSXc?oc=5",
+        "published_at": "2026-11-13T07:32:46+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
         "title": "[증시 인사이트] 국내증시, '젠슨 황 퇴진'에도 오늘 상승 출발",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTZndPLVJ4SVAyNG1HU2gzM2RSRHBHcl92VnY2dDQ3UzNlc2ROZnY4Nm9QcS16MnUzZWw1RnBHS0RYZkZBa2hzZVdRazVFeVlVNDdBZkdaTmnSAVhBVV95cUxQU2Z3Ty1SeElQMjRtR1NoMzNkUkRwR3JfdlZ2NnQ0N1MzZXNkTmZ2ODZvUHEtejJ1M2VsNUZwR0tEWGZGQWtoc2VXUWs1RXlZVTQ3QWZHWk5p?oc=5",
         "published_at": "2026-11-13T07:06:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[11.13(금) 한국장 마감] 혼조 마감 (코스피 -0.98%, 코스닥 +0.45%)",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PTloyYnBmbDV1X3NrZHRaV1VEWW5yMTMyNzRlQnZxcTBmUFdoRl9TRVBOa1hjbU1QQlRiV25aYUFPY1dTZk82YkRlandBU0l3RDl6NFlCblpyQmhLNndQbWZrV3NOaU82UjY5Y0lfMzRQTnlYZVE?oc=5",
         "published_at": "2026-11-13T07:01:01+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "젠슨 황 사임 악재에도 코스피 2%대 상승…코스닥도 1%대↑",
-        "publisher": "이슈밸리",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XMjFuTmJyTm9zSmFCdXQtTmloc1gtS1dYS3ItdmJfOXIzeFFDS3RXUUo0XzB0OV9DazNsRnpVMFJuWGFfdEdzSUg5Ry1TZFY1UXdINklQX0V3S2pXbDl2S0VLdHctMWlyMDlQbGZB?oc=5",
-        "published_at": "2026-11-13T04:58:57+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
-        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
+        "title": "이더리움, 8천 ETH 매도 후 1만 ETH 재매수로 3966만 달러 수익 (ETH, 58bro.eth, Hyperliquid, 3966만 달러)",
         "publisher": "민심뉴스",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
-        "published_at": "2026-11-14T01:29:21+00:00",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92dTk1S29GSHR0R1F3ZzZSU2M2LWhyb1ZSa2xXTGsza1ltRXcxQ1RlZ0pUMkEyY2ZTa0lxaGxDOW5hbTNvNW5uMHRYakNGaVhwenlwY0lxOWF6cVA3VnNrV2xWc2xVVjNwQndvS2Nn?oc=5",
+        "published_at": "2026-11-14T07:07:14+00:00",
         "id": "stocks_us-0"
       },
       {
