@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T11:08:14.126960+09:00",
+  "data_updated_at": "2026-11-14T11:56:05.546898+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T11:08:14.126960+09:00",
+      "fetched_at": "2026-11-14T11:56:05.546898+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T11:08:14.126960+09:00",
+      "fetched_at": "2026-11-14T11:56:05.546898+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -185,24 +185,24 @@
         "id": "bonds-4"
       },
       {
-        "title": "미국 달러는 약 19개월 만에 최고 수준을 기록했습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GNFhVQkxBbVR2YVRXSExKbEZ4dndmaWxod0kwM0JtSjZ5NUt4b3EyNGJCQ1A3S0F4MHJacTdWLXp5MTdFcWlCaTJ3MHU5eDdBYW1mLUNfdm1FTWlPaUFhbGtFeE10UkJw?oc=5",
-        "published_at": "2026-11-13T13:06:06+00:00",
-        "id": "bonds-5"
-      },
-      {
         "title": "엔비디아에 정신 팔린 새…美 국채금리 5% 넘었음ㅇㅇ [11/13 G브닝]｜Global Money Club",
         "publisher": "중앙일보",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiTWR4aWRuR3dZV3o4dXhBWWNMYnlKZVllcVVKYzJTLTdlRGlnTTA5SHBPYkZTbFBVQ2JKWWpvSno5bDg5eGIxdXVsblF2SjZxNlVoaUhaMW0zems?oc=5",
         "published_at": "2026-11-13T12:20:10+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "비트코인, 연준 금리 인상 전망 속 지지선 붕괴... 시장 심리는? (+BTC, 연준, 금리인상, 시장심리)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95dHhoZ1NBQlBZMUlGOGFFSkxReXlqcHBEMVVXOXh0RGw0WjRUdDA2WURvcUFlMmprUFBBVFJZeXE0YUFRaW1IZlZyclNXZ29mY3BoMjlUd3JGaTd6Tmg5bkk2eGpPOTNra081SEJ3?oc=5",
         "published_at": "2026-11-13T11:26:49+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "일본 엔화, 다카이치 총리의 시장 개입 경고에 달러당 160.00엔에서 소폭 강세",
+        "publisher": "www.tmgm.com",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQWF0VzYyMmVkWnRJTGNncWl5ZzE5Q0RoZmZXMzRtVU12QzBqMkRQQ2V2R08wMXpTYm5sb2pTSXJLTkdGWHM0N0lvMDFKVHJUb0NiUVdFenhjX3pzMzQ2UnFmWVYtZ2pHMXF0ZVhwenRFWFhvbUpZdHY1czk5RW94bUF3RUo0cVlqLUR2OFY3WVB6UVdseG5BS3hhVmhnSE5MTEpOSGRnUVA2b3Ywdl84TF9mV0Nib0hEXzBfOE1UUDUyWHF3R1NuQUNhMTVwUmpv?oc=5",
+        "published_at": "2026-11-13T08:23:54+00:00",
         "id": "bonds-7"
       }
     ]
