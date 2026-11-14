@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T17:55:50.946147+09:00",
+  "data_updated_at": "2026-11-14T18:52:00.254102+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T17:55:50.946147+09:00",
+      "fetched_at": "2026-11-14T18:52:00.254102+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T17:55:50.946147+09:00",
+      "fetched_at": "2026-11-14T18:52:00.254102+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -99,10 +99,10 @@
         "id": "stocks_us-0"
       },
       {
-        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
-        "publisher": "민심뉴스",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
-        "published_at": "2026-11-14T01:29:21+00:00",
+        "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
+        "published_at": "2026-11-14T03:58:59+00:00",
         "id": "stocks_us-1"
       },
       {
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
+        "published_at": "2026-11-14T03:58:59+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "2026년 11월 14일 오늘 은 가격: 급격한 하락세를 이어가고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FY0R4dk9ZbkgtRW1XRG5CLXFicHczYUJDUHV0cE1ZM3FabWw2SWtuODRPVWZBUHlteERoalpNT0FDZXQybHZWQ2tGbzEtVGhYTVhTbUpkNjloRzctMGxRZHc4Z1BLU3dNc2c1RFVBalZRTFVvdm5sVw?oc=5",
         "published_at": "2026-11-13T23:51:58+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "[서학개미 생존공식] 비트코인(BTC) 6만 8,760달러로 밀렸다… 국채금리 5.15%에 나스닥 1.24%↓",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4zQmJVd2hOUERhZEt0ZXpnb09yRDVSbGNEdXhjUnJXZUFBaFdIQmVTbHVlRWJwUzMtLTBlb3BBUFpOZExDbE1ZbVhR?oc=5",
         "published_at": "2026-11-13T23:47:22+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 되돌림",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04ejJCclF5NzhHWWtwWkRmMGVKelNka1A4bWNua3pWemgzSkpEUUJYS0RSOGhweDFCdVA5REFaVU9kYTBsX1VwdHVQbUctbnVvaDk5NWZYTC00Z3k2N2N0QlFaMHA1c2xrOGw4cDNLNzQ?oc=5",
         "published_at": "2026-11-13T23:19:52+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "[뉴욕마켓워치] 美 물가 경계 속 엔비디아 후폭풍…주식·채권 혼조·달러↑",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YYlY5T3ZoVDlPYjF1aWdfRnRTVjBSUV9YR1R5VmRFTnhfeUZHTFZycEtNQlZ1Q01NcEpiZFBjMTJsR3BlNksxeEozLUFaVjJHTWE3dVdxNmpXc3A3N0FrdGowWFI4dEZTa0NYc2REQWNxdw?oc=5",
         "published_at": "2026-11-13T22:06:50+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[11.14(토) 한국장 전망] 미 국채 급등·KORU -5.5% 코스피 하락 압력",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZSnl3TlZFUVRORDJCNWNPVFo1TUNtcTBYNE9SSzYzXzlnUTdJSGVabWdTYlNSVHpjOUdoZEp0MW9lTjFrbjMwMU9HWERIc09xT2IwWXZ1MWtNeGZCWHpvSmdHN3FOM0IyRjFDcGNvNjdMd3JtN1E?oc=5",
         "published_at": "2026-11-13T21:10:28+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "美 국채가, 여전히 높은 PPI에 낙폭 확대…'베어 스팁'",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rNTlLU2hQd1V2V2phel9nSEwxV2Mza1o3N3l2R2YxTFRBT2tVa19PWWNubmhwY0pIX0pQZVFQaWZrUHBYVFdNZ051NjZaNng1cEt3TXc3bUVtWmFkT3NQbm9Dak5rV1k2a09QWWtVbzA?oc=5",
         "published_at": "2026-11-13T16:56:27+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "엔비디아에 정신 팔린 새…美 국채금리 5% 넘었음ㅇㅇ [11/13 G브닝]｜Global Money Club",
         "publisher": "중앙일보",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiTWR4aWRuR3dZV3o4dXhBWWNMYnlKZVllcVVKYzJTLTdlRGlnTTA5SHBPYkZTbFBVQ2JKWWpvSno5bDg5eGIxdXVsblF2SjZxNlVoaUhaMW0zems?oc=5",
         "published_at": "2026-11-13T12:20:10+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "비트코인, 연준 금리 인상 전망 속 지지선 붕괴... 시장 심리는? (+BTC, 연준, 금리인상, 시장심리)",
-        "publisher": "민심뉴스",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95dHhoZ1NBQlBZMUlGOGFFSkxReXlqcHBEMVVXOXh0RGw0WjRUdDA2WURvcUFlMmprUFBBVFJZeXE0YUFRaW1IZlZyclNXZ29mY3BoMjlUd3JGaTd6Tmg5bkk2eGpPOTNra081SEJ3?oc=5",
-        "published_at": "2026-11-13T11:26:49+00:00",
         "id": "bonds-7"
       }
     ]
