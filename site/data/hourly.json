@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-14T14:55:10.363139+09:00",
+  "data_updated_at": "2026-11-14T16:04:41.427571+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T14:55:10.363139+09:00",
+      "fetched_at": "2026-11-14T16:04:41.427571+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-14T14:55:10.363139+09:00",
+      "fetched_at": "2026-11-14T16:04:41.427571+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,17 +92,17 @@
     ],
     "stocks_us": [
       {
+        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
+        "publisher": "민심뉴스",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
+        "published_at": "2026-11-14T01:29:21+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "[숏폼뉴스] 2026년 11월 둘째 주, 주요 경제지표",
         "publisher": "기호일보",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1LSFQzTml1NDdiUXlaV0kxZDhIUXZoeUdHUDQxeV81S1VBZzdXakN4R2NjNC1jODd1eDhoUDJIN1BBdmlUMThkRGY3UVVzUHE3bXl5elczRVpkRkw0eVFhT3dPN2dNQnpYdWZGNXo2SQ?oc=5",
         "published_at": "2026-11-14T00:28:27+00:00",
-        "id": "stocks_us-0"
-      },
-      {
-        "title": "뉴욕증시,엔비디아 주가 급락에 혼조…나스닥 0.91% 하락",
-        "publisher": "스페셜경제",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0WGlTcnY0YUt3WnY1LXVZbTJGYURZX1VXZ0xNdEVBNS1RS2RWNlVPNXhpSTJLSVdWYXROT2NHTWJLX05jb1VWZUlVRHVWVU9sdXlNMGhES1RqYTFIbV9IQXk0YlBvSkhUNUpGSA?oc=5",
-        "published_at": "2026-11-13T23:50:17+00:00",
         "id": "stocks_us-1"
       },
       {
