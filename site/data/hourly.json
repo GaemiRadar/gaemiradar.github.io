@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-16T02:43:51.863725+09:00",
+  "data_updated_at": "2026-11-16T03:50:37.769991+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T02:43:51.863725+09:00",
+      "fetched_at": "2026-11-16T03:50:37.769991+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T02:43:51.863725+09:00",
+      "fetched_at": "2026-11-16T03:50:37.769991+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -99,52 +99,52 @@
         "id": "stocks_us-0"
       },
       {
+        "title": "연준 AI 투자 과열 경고…부채·보증 3조 달러 넘나",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THNYMVRxbXE1NUcza2tBSHBTUG9sMTVoNXRwYjJJMEFUaTh2bms4cVhCc2Q5UDhZUnhQRXp3NGlrcGUtdE1YTzJzWGJmUk93RG9GaXBnb1YxODJfRlpFLXFXY1pGLVk?oc=5",
+        "published_at": "2026-11-15T05:32:38+00:00",
+        "id": "stocks_us-1"
+      },
+      {
         "title": "미국증시 주간 전망, 엔비디아 실적보다 중요한 ‘투자 지속성’",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9uT3RmQ0c1eS1wWjczd1ZFbjZUX21lTzRGZ2ktZ2cwZlRjLW9oOGhUN1BrOTktS2ZBaFo0RVVRLWtibVVxQXh6RUswZzRqS0ljRGt1WmRfeW9uSkhlUDZJV1ZsOWJqZDJvNm1jNWQ0SVlqUQ?oc=5",
         "published_at": "2026-11-14T22:56:34+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-2"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-14T18:15:58+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-3"
       },
       {
         "title": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvVDRNVEd5enh2a1E2dURSbjR4blBsZDBPNDg2R0xaY3VXYzIwR2lIVXRCVUdMUnRRY3IwZHl1UXJJS0pDLWR1b1UzenNtWmJtYjdhOVJVRFlrNl9jRlR1MlItOW1qWlJsYWxKWkFhS1jSAXRBVV95cUxPZ1c1SHB1WlZtaFZYeldPNl9zbW9JbzhkcFVYZ2x5OU5aODVURUtveUIybGFBMmtpLWMzWVM4RkE4RjF3NDVwRXpDX1RQQkplUTlrbU11ZDVkNFZxRHE0dUhEUUUtVGdpWmdCSDItcmNfc2J5Zg?oc=5",
         "published_at": "2026-11-14T15:00:00+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
       },
       {
         "title": "이더리움, 8천 ETH 매도 후 1만 ETH 재매수로 3966만 달러 수익 (ETH, 58bro.eth, Hyperliquid, 3966만 달러)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92dTk1S29GSHR0R1F3ZzZSU2M2LWhyb1ZSa2xXTGsza1ltRXcxQ1RlZ0pUMkEyY2ZTa0lxaGxDOW5hbTNvNW5uMHRYakNGaVhwenlwY0lxOWF6cVA3VnNrV2xWc2xVVjNwQndvS2Nn?oc=5",
         "published_at": "2026-11-14T07:07:14+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "S&P 500과 나스닥 지수는 4주 연속 하락세를 마감했다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOTVjdXpBU3FWRFg5QVBtSGxfZkF3MW5Ia2Y5OUZIVkFQcVhPU3hDYUZvUFhHdnBpU1U4VWRpbFJDekpMNHEtOV9SYXBxRktvbC1PYkR6TmtHQTg5YkFxZklfOXh1OTR2SHZTdWNmNFNCWEtGQTExelBvUFRXczdIQlZUY2tvQQ?oc=5",
         "published_at": "2026-11-14T05:08:26+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "오늘의 SPX500 지수 | 실시간 US500 시세 및 뉴스",
         "publisher": "Mitrade",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPQ0VNTkR1VGl3Uy1mQ3RoaGppcF9heUdoZ0FYczJjVWNpNHRfQnMwSl9KSXR6Q2lPWUlvWVlocGIybXM1UmNkWXlaS255clpEcVlyNWoyYWdXX1ZONGdyQU5KUy1vR2Vx?oc=5",
         "published_at": "2026-11-14T04:16:09+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
-        "publisher": "민심뉴스",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
-        "published_at": "2026-11-14T01:29:21+00:00",
         "id": "stocks_us-7"
       }
     ],
