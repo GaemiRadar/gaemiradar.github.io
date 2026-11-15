@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-15T11:10:50.781868+09:00",
+  "data_updated_at": "2026-11-15T11:55:08.827000+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T11:10:50.781868+09:00",
+      "fetched_at": "2026-11-15T11:55:08.827000+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T11:10:50.781868+09:00",
+      "fetched_at": "2026-11-15T11:55:08.827000+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -120,89 +120,89 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "오늘의 NAS100 지수 | 실시간 NAS100 시세 및 뉴스",
+        "publisher": "Mitrade",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WbmozZHNvdmtxNC1pNjd0STVpQXRxOUkwMDRhMU02ODRTekFURHZ4bi1oc1ZVMEdBZDYyYzNSSTJoMWt3aWVUX2tBQURSUjhFQWZHaUZ6Vm1rTnJILW45X2FGSXJ4cTdTQUE?oc=5",
+        "published_at": "2026-11-14T02:49:27+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "엔비디아 시총 4조달러 밑으로…나스닥 0.9% 하락…AMD도 8.75% 급락 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pNTNyZmpGQTFpQ0djdU85eUJ4SmhXazJiQS1vWUpFVHZIejZSZVYzcDJ3YUFmWmhwZkYwbThtM0tCcDQzaWNReXcwVQ?oc=5",
         "published_at": "2026-11-14T00:54:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[숏폼뉴스] 2026년 11월 둘째 주, 주요 경제지표",
         "publisher": "기호일보",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1LSFQzTml1NDdiUXlaV0kxZDhIUXZoeUdHUDQxeV81S1VBZzdXakN4R2NjNC1jODd1eDhoUDJIN1BBdmlUMThkRGY3UVVzUHE3bXl5elczRVpkRkw0eVFhT3dPN2dNQnpYdWZGNXo2SQ?oc=5",
         "published_at": "2026-11-14T00:28:27+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[서학개미 생존공식] 비트코인(BTC) 6만 8,760달러로 밀렸다… 국채금리 5.15%에 나스닥 1.24%↓",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4zQmJVd2hOUERhZEt0ZXpnb09yRDVSbGNEdXhjUnJXZUFBaFdIQmVTbHVlRWJwUzMtLTBlb3BBUFpOZExDbE1ZbVhR?oc=5",
         "published_at": "2026-11-13T23:47:22+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[뉴욕증시 주간] 3대 지수 2%대 동반 상승…엔비디아는 CEO 사임에 13% 가까이 급락",
-        "publisher": "더페어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCYlAxOHgtSVZpM0Zaa2tQRl9UZ0N4Y05Vd0NhZkczcm15cnNrTG4zNHgtMnRjdHNDVXF2SDRXZmU4ZzlUMkl2UFJIZ0NxNk1Od0lRaDAxWFQxRWZXcXZPUFRFakE4MUJtYnlLMUJYcUbSAXRBVV95cUxObVdKcWJyaVJoQ21FNGJxQnYtVmtrcjhFVEdpT1QycGRwbTFmNzNjek54WlJaTlJFcXJRLWZVWXJwNWlsbzBOalk0SEpEU3U4MWowREcwaWhCTWkxd0hHcmo2aE1xS3oxWkRJZjJQZldhZFk4VQ?oc=5",
-        "published_at": "2026-11-13T23:22:16+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "\"코로나·금융위기 때보다 예측 어렵다\"…다시 치솟는 美국채금리",
+        "publisher": "이데일리",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkV5QlUyYklVTzhkTWdQYTBMbzA2RGRpR0VfUmZvOUlOeERpaTBXX3lYdW82V0dIR2NXRm1tajlxOFphRUN1RU9kZW1lYjBWb1V5VWFYM3FlaGNTWTFXZlFxNHJRUUsxMVRzUTkwcW1qRmNHeUJ5SGhFdFZ0Mnk1aw?oc=5",
+        "published_at": "2026-11-15T01:08:29+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "오늘(11월 15일) 금 시세: 국제 금 가격 급락, SJC 금 가격 온스당 350만 VND 하락.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkNkVTJseGZhaFJhUGlBaHdjUGdQWmRGX1prUnF5cEg2WGxlRGhOUm1adG8ybGZUQ1dWQi1zMVE0enZSQVZUQTIyYXQ3dFJwekhFQi1RTTBzUE8yWHVzazhWVERhSlhJUmZuY1R5RFBMWWthUHhjcjQ5RG9Pck5xYlJBc0gyVlljUFhzNmQ1ZThSLUZ4TS04X0ptcVBjR2ZHMGc?oc=5",
         "published_at": "2026-11-15T00:44:20+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-14T18:15:58+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "다음 주 금 가격을 형성하는 중요한 경제 데이터 시리즈",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR1FldlFwc1U1ZzVMZlZGeVpCVTZXNkVyZGlVODI2cmhzZ1ZOZHBLakRJTzRXdVh2VUxsUzUxMnIyQ19fa1d2MXFQS3RJVU9lMjN4eTVGSmlBRzlkc0t6RjNTdVFkeTMyeHdMdkN4bEIteDZmY3VraEs2Tmk0SWdDRUNZTWhFX0RCRUZ2b1VvcE5LZTJiZmVuQUdiNzBLRGQtMTUzSTlZbw?oc=5",
         "published_at": "2026-11-14T06:00:30+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "2026년 11월 14일 오늘 은 가격: 급격한 하락세를 이어가고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FY0R4dk9ZbkgtRW1XRG5CLXFicHczYUJDUHV0cE1ZM3FabWw2SWtuODRPVWZBUHlteERoalpNT0FDZXQybHZWQ2tGbzEtVGhYTVhTbUpkNjloRzctMGxRZHc4Z1BLU3dNc2c1RFVBalZRTFVvdm5sVw?oc=5",
         "published_at": "2026-11-13T23:51:58+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[서학개미 생존공식] 비트코인(BTC) 6만 8,760달러로 밀렸다… 국채금리 5.15%에 나스닥 1.24%↓",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4zQmJVd2hOUERhZEt0ZXpnb09yRDVSbGNEdXhjUnJXZUFBaFdIQmVTbHVlRWJwUzMtLTBlb3BBUFpOZExDbE1ZbVhR?oc=5",
         "published_at": "2026-11-13T23:47:22+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 되돌림",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04ejJCclF5NzhHWWtwWkRmMGVKelNka1A4bWNua3pWemgzSkpEUUJYS0RSOGhweDFCdVA5REFaVU9kYTBsX1VwdHVQbUctbnVvaDk5NWZYTC00Z3k2N2N0QlFaMHA1c2xrOGw4cDNLNzQ?oc=5",
         "published_at": "2026-11-13T23:19:52+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "\"국고채 금리, 연내 저점 찍고 반등…추격 매수 신중해야\"",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wSGNja2FhMWwzQ0REaHQ0a0Fqb1pTaU5LRVFnYXRKU0RtekxoN0Yxc2locHNuMlpxTEtaX0pxTnBKQVA5c3dSaDZ2X29aYlhraDVZcU0ydmtaeHdCUzZlbnV6ckpORmlrSmtPOVhHaG3SAXRBVV95cUxOU0pyaFZ3TEFqX3RZejU1enlMLTNFOFFvUXAwU3pTQ1U3V0dzd3VrcTh3dUI4Tl9XbVNrVzc2TURNdjB4UDhrU1E1UkhDMmhvazE4cEhzTVpSeVgwekdiUzFwekRabng4LWJYYkxDcEp6WEZ3OA?oc=5",
         "published_at": "2026-11-13T22:20:05+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[뉴욕마켓워치] 美 물가 경계 속 엔비디아 후폭풍…주식·채권 혼조·달러↑",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YYlY5T3ZoVDlPYjF1aWdfRnRTVjBSUV9YR1R5VmRFTnhfeUZHTFZycEtNQlZ1Q01NcEpiZFBjMTJsR3BlNksxeEozLUFaVjJHTWE3dVdxNmpXc3A3N0FrdGowWFI4dEZTa0NYc2REQWNxdw?oc=5",
-        "published_at": "2026-11-13T22:06:50+00:00",
         "id": "bonds-7"
       }
     ]
