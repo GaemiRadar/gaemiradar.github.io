@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-15T16:07:38.736859+09:00",
+  "data_updated_at": "2026-11-15T17:12:48.839381+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T16:07:38.736859+09:00",
+      "fetched_at": "2026-11-15T17:12:48.839381+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T16:07:38.736859+09:00",
+      "fetched_at": "2026-11-15T17:12:48.839381+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -127,24 +127,24 @@
         "id": "stocks_us-4"
       },
       {
+        "title": "S&P 500과 나스닥 지수는 4주 연속 하락세를 마감했다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOTVjdXpBU3FWRFg5QVBtSGxfZkF3MW5Ia2Y5OUZIVkFQcVhPU3hDYUZvUFhHdnBpU1U4VWRpbFJDekpMNHEtOV9SYXBxRktvbC1PYkR6TmtHQTg5YkFxZklfOXh1OTR2SHZTdWNmNFNCWEtGQTExelBvUFRXczdIQlZUY2tvQQ?oc=5",
+        "published_at": "2026-11-14T05:08:26+00:00",
+        "id": "stocks_us-5"
+      },
+      {
         "title": "오늘의 NAS100 지수 | 실시간 NAS100 시세 및 뉴스",
         "publisher": "Mitrade",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WbmozZHNvdmtxNC1pNjd0STVpQXRxOUkwMDRhMU02ODRTekFURHZ4bi1oc1ZVMEdBZDYyYzNSSTJoMWt3aWVUX2tBQURSUjhFQWZHaUZ6Vm1rTnJILW45X2FGSXJ4cTdTQUE?oc=5",
         "published_at": "2026-11-14T02:49:27+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
         "published_at": "2026-11-14T01:29:21+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "엔비디아 시총 4조달러 밑으로…나스닥 0.9% 하락…AMD도 8.75% 급락 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pNTNyZmpGQTFpQ0djdU85eUJ4SmhXazJiQS1vWUpFVHZIejZSZVYzcDJ3YUFmWmhwZkYwbThtM0tCcDQzaWNReXcwVQ?oc=5",
-        "published_at": "2026-11-14T00:54:00+00:00",
         "id": "stocks_us-7"
       }
     ],
