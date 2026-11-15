@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-16T06:44:50.521319+09:00",
+  "data_updated_at": "2026-11-16T07:45:19.814081+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T06:44:50.521319+09:00",
+      "fetched_at": "2026-11-16T07:45:19.814081+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T06:44:50.521319+09:00",
+      "fetched_at": "2026-11-16T07:45:19.814081+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,52 +41,52 @@
         "id": "stocks_kr-0"
       },
       {
+        "title": "[퇴근길머니] 33년 공든 탑 '와르르'…AI 제국서 쫓겨난 황제",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE11R0ZldHRpb0pSM2p5YnprUlB5NGxQWVRTLTNJMTRNa3BwemNtUUtVWDRVT2V3anZETjJiZjRKR0JRS0xhRm85THlXSGhwcDBLQk5kdDVtS2hWQXVETTdTZtIBYEFVX3lxTE11R0ZldHRpb0pSM2p5YnprUlB5NGxQWVRTLTNJMTRNa3BwemNtUUtVWDRVT2V3anZETjJiZjRKR0JRS0xhRm85THlXSGhwcDBLQk5kdDVtS2hWQXVETTdTZg?oc=5",
+        "published_at": "2026-11-13T08:20:32+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "젠슨 황 사임에도 정책 수혜로 오른 반도체 관련 종목들 분석",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQmsyYnh3M002OVFoWDgwbC1uZlBFazlSYTVVZGtodWtOUDJNbG1Oblg0QzB0d1p0dDkyTGowMjV6VE53WXNXTGdiMDBsYThuYkFFempmaUpqdURFWnpYSFdrSFJkNU1kY0dhcF91WTRuY1AwaTRQM3lyTkdENzBQUFZmOXVQZV92VWc?oc=5",
         "published_at": "2026-11-13T08:13:00+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[오늘의 주목주] '금융주 강세' 신한지주 주가 5%대 상승, 코스피 외국인 순매도에 5290선 하락 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lbE1mTUtKcDZLUzVHRnZCeU41ODIyVXUya3VNelVBbnRKbzhPam5YQ29CSnlQY09FMEl5UzFBeUJVdlQ4Z083SXFGSnhPNGdFdURnZm1pQlJnVXhENWFSeG5sdUZoeFNKWVQ3R1VtdjVLVnM?oc=5",
         "published_at": "2026-11-13T08:09:28+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[마감시황] 외국인 7032억 팔자 코스피 하락 전환",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMWhQTHVPMmVvcl9yaW1OYy1JN0tjUFNNMkJKaURkYk5RREdFZjFfWlczS3FmMG9sMXltNmtxT20xYjFTQWFmOFppT1dsQVJhY2NTdVNBNTktbVFlY1VoSDJEeDZic1k?oc=5",
         "published_at": "2026-11-13T08:00:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "이 대통령 \"국내 증시 저평가는 비정상\"…자본시장 개혁 의지 강조",
         "publisher": "매일경제 마켓",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00RzZLM0ZZYUVRb2ExT3k0U3R2U1lCWUZDWVJoOS1GRURBcFVWTzltNUdTSzVMMlh4ZU5mYXp0MmdGQnk5QjE2OE9HY2pQWmpKdmc?oc=5",
         "published_at": "2026-11-13T07:56:50+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[e마켓클로징] 코스피 5290 후퇴···젠슨 황 퇴진에 외인 7천억 매도 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMRzBaR25GX0hKaDVxYUp0ZDVGZkNBaVdzdHVDZlZhaS1zNHE0Ml81V19kMW8yVkJKLXR3M1FkVWNKRFBKY0pad3JuR0t3OWtRUDhsVVZIUnROZmFiR2VycDVoT180ZE5yWnBqeDVoVHR5Wjd3SUE?oc=5",
         "published_at": "2026-11-13T07:56:43+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "젠슨 황 퇴임과 코스피 하락, 외국인 매도와 정책 기대감",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LcjE4ZzVWRGVXNEFjclozclRwNUZ3bkRPcTlUTTkzWHRQV01tQTZWM2p1ODZsY2VWaXpjN0FoakJ6ZjNOTTRGdWhMajN2UkxHOHpIN05WeVpDZjh5aXdCOUYtNmRzOENTTEJnT05vNnktSXc?oc=5",
         "published_at": "2026-11-13T07:32:46+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[증시 인사이트] 국내증시, '젠슨 황 퇴진'에도 오늘 상승 출발",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTZndPLVJ4SVAyNG1HU2gzM2RSRHBHcl92VnY2dDQ3UzNlc2ROZnY4Nm9QcS16MnUzZWw1RnBHS0RYZkZBa2hzZVdRazVFeVlVNDdBZkdaTmnSAVhBVV95cUxQU2Z3Ty1SeElQMjRtR1NoMzNkUkRwR3JfdlZ2NnQ0N1MzZXNkTmZ2ODZvUHEtejJ1M2VsNUZwR0tEWGZGQWtoc2VXUWs1RXlZVTQ3QWZHWk5p?oc=5",
-        "published_at": "2026-11-13T07:06:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -150,31 +150,31 @@
     ],
     "bonds": [
       {
-        "title": "[APEC 정상회의] 통상·휴전 논의에 글로벌 자금 향방 촉각…환율·증시 변곡점 맞나",
-        "publisher": "아주경제",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EYTdmemJiMy1xdzc3US1JQWstWVlpTWFldHZESVZUbW90a3ZCdl82TGtlSlI3OElpcVg0cUNUT1pKY2d6YjEyajRuY0g2dWVoekNESnhpRmPSAVhBVV95cUxNRGE3ZnpiYjMtcXc3N1EtSUFrLVlZaU1hZXR2RElWVG1vdGt2QnZfNkxrZUpSNzhJaXFYNHFDVE9aSmNnemIxMmo0bmNINnVlaHpDREp4aUZj?oc=5",
-        "published_at": "2026-11-15T08:41:41+00:00",
-        "id": "bonds-0"
-      },
-      {
         "title": "[채권-주간] 11월 금통위 직전 글로벌·외국인·주가 주시",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zd3Rnb3U3dVZPV0F4VVQyOGRTVVA1eS1EYUVBZ0s0NXllclNLNXp4YllkWVF6OFN1UFY1eVo2aGx1Q3RfdGk1ZTgxQlJlYUhmam9hYmZXUnBzUU1kYUpvUzFyRXR2UXIyc0hOTm9aVy1iUQ?oc=5",
         "published_at": "2026-11-15T04:00:01+00:00",
-        "id": "bonds-1"
+        "id": "bonds-0"
       },
       {
         "title": "\"코로나·금융위기 때보다 예측 어렵다\"…다시 치솟는 美국채금리",
         "publisher": "이데일리",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkV5QlUyYklVTzhkTWdQYTBMbzA2RGRpR0VfUmZvOUlOeERpaTBXX3lYdW82V0dIR2NXRm1tajlxOFphRUN1RU9kZW1lYjBWb1V5VWFYM3FlaGNTWTFXZlFxNHJRUUsxMVRzUTkwcW1qRmNHeUJ5SGhFdFZ0Mnk1aw?oc=5",
         "published_at": "2026-11-15T01:08:29+00:00",
-        "id": "bonds-2"
+        "id": "bonds-1"
       },
       {
         "title": "오늘(11월 15일) 금 시세: 국제 금 가격 급락, SJC 금 가격 온스당 350만 VND 하락.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkNkVTJseGZhaFJhUGlBaHdjUGdQWmRGX1prUnF5cEg2WGxlRGhOUm1adG8ybGZUQ1dWQi1zMVE0enZSQVZUQTIyYXQ3dFJwekhFQi1RTTBzUE8yWHVzazhWVERhSlhJUmZuY1R5RFBMWWthUHhjcjQ5RG9Pck5xYlJBc0gyVlljUFhzNmQ1ZThSLUZ4TS04X0ptcVBjR2ZHMGc?oc=5",
         "published_at": "2026-11-15T00:44:20+00:00",
+        "id": "bonds-2"
+      },
+      {
+        "title": "2026년 11월 15일 오늘 은 가격: 지속적인 하락세.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5NYmFWdWpKbDlWbUhWQWpBekNacjI5UFNmOWtVNUFOcWNtVHd3QVBJOUl2ejhGWnlGcU1xdnJFNFJ6Xzd6X0Ryd3VpQ0c0Zk1PZW9ySHF5ZUtGdzI5UjY4VU9seDJwbW56cWVMY2dzMl9tSnV1VEVhZWVn?oc=5",
+        "published_at": "2026-11-15T00:13:39+00:00",
         "id": "bonds-3"
       },
       {
