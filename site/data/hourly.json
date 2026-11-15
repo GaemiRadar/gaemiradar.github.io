@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-15T14:56:57.528142+09:00",
+  "data_updated_at": "2026-11-15T16:07:38.736859+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T14:56:57.528142+09:00",
+      "fetched_at": "2026-11-15T16:07:38.736859+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T14:56:57.528142+09:00",
+      "fetched_at": "2026-11-15T16:07:38.736859+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -178,31 +178,31 @@
         "id": "bonds-3"
       },
       {
-        "title": "엔비디아 실적에 앤트로픽 상장까지…이번 주 증시 ＇진짜 변수＇는 [주식R]",
-        "publisher": "한국경제TV",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA1Q3ZMSEZ2ZlRSSGt1RDNqTHZOQ0lXVU1tNTYxZ0o3dlJzdlpMU29hRXJUVmpCaDlOemh4alR4ZFBwYnZtM2NieWpGWWJvRVEwR3BERDd1WUNBMVU3cnlWUkdWUmhjY0NzZi03VnRlUF9OQzg?oc=5",
-        "published_at": "2026-11-14T15:02:00+00:00",
-        "id": "bonds-4"
-      },
-      {
         "title": "다음 주 금 가격을 형성하는 중요한 경제 데이터 시리즈",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR1FldlFwc1U1ZzVMZlZGeVpCVTZXNkVyZGlVODI2cmhzZ1ZOZHBLakRJTzRXdVh2VUxsUzUxMnIyQ19fa1d2MXFQS3RJVU9lMjN4eTVGSmlBRzlkc0t6RjNTdVFkeTMyeHdMdkN4bEIteDZmY3VraEs2Tmk0SWdDRUNZTWhFX0RCRUZ2b1VvcE5LZTJiZmVuQUdiNzBLRGQtMTUzSTlZbw?oc=5",
         "published_at": "2026-11-14T06:00:30+00:00",
-        "id": "bonds-5"
+        "id": "bonds-4"
       },
       {
         "title": "2026년 11월 14일 오늘 은 가격: 급격한 하락세를 이어가고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FY0R4dk9ZbkgtRW1XRG5CLXFicHczYUJDUHV0cE1ZM3FabWw2SWtuODRPVWZBUHlteERoalpNT0FDZXQybHZWQ2tGbzEtVGhYTVhTbUpkNjloRzctMGxRZHc4Z1BLU3dNc2c1RFVBalZRTFVvdm5sVw?oc=5",
         "published_at": "2026-11-13T23:51:58+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "[서학개미 생존공식] 비트코인(BTC) 6만 8,760달러로 밀렸다… 국채금리 5.15%에 나스닥 1.24%↓",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4zQmJVd2hOUERhZEt0ZXpnb09yRDVSbGNEdXhjUnJXZUFBaFdIQmVTbHVlRWJwUzMtLTBlb3BBUFpOZExDbE1ZbVhR?oc=5",
         "published_at": "2026-11-13T23:47:22+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 되돌림",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04ejJCclF5NzhHWWtwWkRmMGVKelNka1A4bWNua3pWemgzSkpEUUJYS0RSOGhweDFCdVA5REFaVU9kYTBsX1VwdHVQbUctbnVvaDk5NWZYTC00Z3k2N2N0QlFaMHA1c2xrOGw4cDNLNzQ?oc=5",
+        "published_at": "2026-11-13T23:19:52+00:00",
         "id": "bonds-7"
       }
     ]
