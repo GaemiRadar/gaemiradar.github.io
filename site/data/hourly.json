@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-15T17:56:59.854690+09:00",
+  "data_updated_at": "2026-11-15T18:52:34.874331+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T17:56:59.854690+09:00",
+      "fetched_at": "2026-11-15T18:52:34.874331+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T17:56:59.854690+09:00",
+      "fetched_at": "2026-11-15T18:52:34.874331+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[오늘의 키워드] 한국–사우디 오늘 밤 11시 30분…2027학년도 수능 D-6",
-        "publisher": "강릉뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85Z0psZGg0dzE5MVE4b1hXZXpJU21kcmpCcEJLQXRkVS1tUXdfQ1g3UjJ2TGptM2lDbjJXWW9obkhtckNYSG1WYV9haExVWHhEQXYyb25nMXNJV096QllQc2UwSlYwaXhkX00zSnBMUQ?oc=5",
-        "published_at": "2026-11-13T09:39:54+00:00",
-        "id": "stocks_kr-0"
-      },
-      {
         "title": "젠슨 황 사임에도 정책 수혜로 오른 반도체 관련 종목들 분석",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQmsyYnh3M002OVFoWDgwbC1uZlBFazlSYTVVZGtodWtOUDJNbG1Oblg0QzB0d1p0dDkyTGowMjV6VE53WXNXTGdiMDBsYThuYkFFempmaUpqdURFWnpYSFdrSFJkNU1kY0dhcF91WTRuY1AwaTRQM3lyTkdENzBQUFZmOXVQZV92VWc?oc=5",
         "published_at": "2026-11-13T08:13:00+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-0"
       },
       {
         "title": "[오늘의 주목주] '금융주 강세' 신한지주 주가 5%대 상승, 코스피 외국인 순매도에 5290선 하락 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lbE1mTUtKcDZLUzVHRnZCeU41ODIyVXUya3VNelVBbnRKbzhPam5YQ29CSnlQY09FMEl5UzFBeUJVdlQ4Z083SXFGSnhPNGdFdURnZm1pQlJnVXhENWFSeG5sdUZoeFNKWVQ3R1VtdjVLVnM?oc=5",
         "published_at": "2026-11-13T08:09:28+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[마감시황] 외국인 7032억 팔자 코스피 하락 전환",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMWhQTHVPMmVvcl9yaW1OYy1JN0tjUFNNMkJKaURkYk5RREdFZjFfWlczS3FmMG9sMXltNmtxT20xYjFTQWFmOFppT1dsQVJhY2NTdVNBNTktbVFlY1VoSDJEeDZic1k?oc=5",
         "published_at": "2026-11-13T08:00:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-2"
       },
       {
         "title": "이 대통령 \"국내 증시 저평가는 비정상\"…자본시장 개혁 의지 강조",
         "publisher": "매일경제 마켓",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00RzZLM0ZZYUVRb2ExT3k0U3R2U1lCWUZDWVJoOS1GRURBcFVWTzltNUdTSzVMMlh4ZU5mYXp0MmdGQnk5QjE2OE9HY2pQWmpKdmc?oc=5",
         "published_at": "2026-11-13T07:56:50+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[e마켓클로징] 코스피 5290 후퇴···젠슨 황 퇴진에 외인 7천억 매도 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMRzBaR25GX0hKaDVxYUp0ZDVGZkNBaVdzdHVDZlZhaS1zNHE0Ml81V19kMW8yVkJKLXR3M1FkVWNKRFBKY0pad3JuR0t3OWtRUDhsVVZIUnROZmFiR2VycDVoT180ZE5yWnBqeDVoVHR5Wjd3SUE?oc=5",
         "published_at": "2026-11-13T07:56:43+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-4"
       },
       {
         "title": "젠슨 황 퇴임과 코스피 하락, 외국인 매도와 정책 기대감",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LcjE4ZzVWRGVXNEFjclozclRwNUZ3bkRPcTlUTTkzWHRQV01tQTZWM2p1ODZsY2VWaXpjN0FoakJ6ZjNOTTRGdWhMajN2UkxHOHpIN05WeVpDZjh5aXdCOUYtNmRzOENTTEJnT05vNnktSXc?oc=5",
         "published_at": "2026-11-13T07:32:46+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[증시 인사이트] 국내증시, '젠슨 황 퇴진'에도 오늘 상승 출발",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTZndPLVJ4SVAyNG1HU2gzM2RSRHBHcl92VnY2dDQ3UzNlc2ROZnY4Nm9QcS16MnUzZWw1RnBHS0RYZkZBa2hzZVdRazVFeVlVNDdBZkdaTmnSAVhBVV95cUxQU2Z3Ty1SeElQMjRtR1NoMzNkUkRwR3JfdlZ2NnQ0N1MzZXNkTmZ2ODZvUHEtejJ1M2VsNUZwR0tEWGZGQWtoc2VXUWs1RXlZVTQ3QWZHWk5p?oc=5",
         "published_at": "2026-11-13T07:06:00+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[11.13(금) 한국장 마감] 혼조 마감 (코스피 -0.98%, 코스닥 +0.45%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PTloyYnBmbDV1X3NrZHRaV1VEWW5yMTMyNzRlQnZxcTBmUFdoRl9TRVBOa1hjbU1QQlRiV25aYUFPY1dTZk82YkRlandBU0l3RDl6NFlCblpyQmhLNndQbWZrV3NOaU82UjY5Y0lfMzRQTnlYZVE?oc=5",
+        "published_at": "2026-11-13T07:01:01+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -134,17 +134,17 @@
         "id": "stocks_us-5"
       },
       {
-        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
-        "publisher": "민심뉴스",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
-        "published_at": "2026-11-14T01:29:21+00:00",
-        "id": "stocks_us-6"
-      },
-      {
         "title": "엔비디아 시총 4조달러 밑으로…나스닥 0.9% 하락…AMD도 8.75% 급락 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pNTNyZmpGQTFpQ0djdU85eUJ4SmhXazJiQS1vWUpFVHZIejZSZVYzcDJ3YUFmWmhwZkYwbThtM0tCcDQzaWNReXcwVQ?oc=5",
         "published_at": "2026-11-14T00:54:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "[숏폼뉴스] 2026년 11월 둘째 주, 주요 경제지표",
+        "publisher": "기호일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1LSFQzTml1NDdiUXlaV0kxZDhIUXZoeUdHUDQxeV81S1VBZzdXakN4R2NjNC1jODd1eDhoUDJIN1BBdmlUMThkRGY3UVVzUHE3bXl5elczRVpkRkw0eVFhT3dPN2dNQnpYdWZGNXo2SQ?oc=5",
+        "published_at": "2026-11-14T00:28:27+00:00",
         "id": "stocks_us-7"
       }
     ],
