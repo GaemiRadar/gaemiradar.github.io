@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-11-14T09:59:19.307049+09:00",
+  "generated_at": "2026-11-15T10:01:01.049489+09:00",
   "source_note": "국내·미국 주식 및 채권 뉴스 RSS 제목/요약 + FRED/Yahoo 시장지표 + FRED/한국은행 ECOS 경제지표(연결된 경우). 원문 전체 분석은 아닙니다.",
   "ai": {
     "status": "ok",
@@ -9,120 +9,127 @@
     "review_model": "gemini-3.5-flash",
     "review_status": "completed",
     "review_note": null,
-    "headline": "엔비디아 악재 및 미 국채금리 상승 속 증시·채권 시장 약세 흐름",
-    "overview": "국내외 증시는 엔비디아 관련 이슈와 외국인 매도세, 기술주 약세의 영향으로 조정을 받았습니다. 미 국채금리가 상승세를 보이며 채권 시장도 금리 상승에 따른 고정금리 채권 가격 하락 압력을 받고 있습니다.",
+    "headline": "AI 반도체 변동성 확대 및 미 국채 금리 상승 속 금융시장 약세 흐름",
+    "overview": "국내외 증시는 엔비디아 경영진 이슈와 AI 투자 불확실성으로 반도체주 중심의 하락세를 나타냈습니다. 미국 국채 금리 상승 속에 채권 가격이 하락하는 등 자산 시장 전반의 변동성이 이어지고 있습니다.",
     "analysis": {
       "stocks_kr": {
         "direction": "하락 우세",
         "confidence": "보통",
-        "horizon": "단기",
-        "summary": "엔비디아 후폭풍 및 외국인 매도세의 영향으로 코스피 지수가 약세를 보였습니다. 코스닥은 강보합을 나타내는 등 지수별로 차별화된 흐름을 보였습니다.",
+        "horizon": "1주일",
+        "summary": "코스피는 외국인 매도세와 AI 반도체 불확실성 속에 5,300선 회복에 실패하며 약세를 보였습니다.",
         "bull_cases": [
-          "코스닥 지수의 상대적 강보합 유지 및 장초반 상승 출발 시도",
-          "저평가 해소를 위한 주주권 강화 및 코스닥 구조개편 추진 기대감"
+          "코스닥 지수 소폭 상승(0.449%) 및 일부 화장품 관련 종목 상승세",
+          "엔비디아 실적 발표 및 앤트로픽 상장 이슈에 따른 반등 기대감"
         ],
         "bear_cases": [
-          "엔비디아 관련 여파 및 미국 반도체주 급락에 따른 심리 위축",
-          "외국인 투자자의 순매도세 지속 및 코스피 지수 하락 압력"
+          "코스피 지수 0.977% 하락 및 5,300선 회복 실패",
+          "외국인 주식 매도 보도 및 엔비디아 변수에 따른 AI주 불확실성 확대",
+          "삼성전자·SK하이닉스 등 주요 종목으로의 신용 자금 집중으로 인한 변동성 심화"
         ],
         "watch": [
-          "외국인 수급 변화 및 국내 반도체 대표주 흐름",
-          "글로벌 기술주 동향 및 코스닥 구조개편 진행 상황"
+          "엔비디아 실적 발표 결과",
+          "앤트로픽 IPO 진행 상황",
+          "코스피 5,300선 지지 여부"
         ],
         "citation_ids": [
           "stocks_kr-0",
-          "stocks_kr-2",
-          "stocks_kr-6"
+          "stocks_kr-1",
+          "stocks_kr-4"
         ]
       },
       "stocks_us": {
         "direction": "하락 우세",
         "confidence": "보통",
-        "horizon": "단기",
-        "summary": "엔비디아 시가총액 하락 및 젠슨 황 관련 이슈로 주요 기술주와 나스닥 지수가 하락했습니다. 물가 둔화 신호에도 불구하고 반도체주 전반으로 매도세가 확산되었습니다.",
+        "horizon": "1주일",
+        "summary": "뉴욕증시는 엔비디아 시가총액 감소와 반도체주 약세로 나스닥과 S&P 500 지수가 하락했습니다.",
         "bull_cases": [
-          "미국 10월 계절조정 CPI 전월비 0.35% 기록 등 물가 지표 동향 및 다우 지수 강보합",
-          "S&P 500 장기 이익 성장 및 밸류에이션 매력에 대한 일부 긍정적 전망"
+          "AMD 및 브로드컴 등 반도체 시장 변화에 따른 일부 기업 반사이익 기대",
+          "10월 비농업 고용 증가(165천 명) 및 실업률 4.1% 등 견조한 고용 지표"
         ],
         "bear_cases": [
-          "엔비디아 시가총액 4조 달러 붕괴 및 주요 반도체·기술주 급락",
-          "VIX 변동성 지수 상승 및 기술주 투심 냉각"
+          "나스닥 종합지수 0.906% 하락 및 S&P 500 0.405% 하락",
+          "엔비디아 관련 경영진 리스크 및 반도체 업종 급락세",
+          "미국 10년물 국채 금리 5.1% 돌파에 따른 증시 부담"
         ],
         "watch": [
-          "미 연준 통화정책 향방 및 연방기금금리 목표범위 추이",
-          "대형 기술주 실적 및 투자심리 회복 여부"
+          "엔비디아 실적 및 AI 투자 지속성",
+          "연방기금금리 목표범위(4.0%)와 연준 통화정책 향방",
+          "미 국채 금리 변동 추이"
         ],
         "citation_ids": [
           "stocks_us-0",
           "stocks_us-4",
-          "stocks_us-6"
+          "stocks_us-7"
         ]
       },
       "bonds": {
         "direction": "하락 우세",
         "confidence": "보통",
-        "horizon": "단기",
-        "summary": "미국 국채 10년물 및 2년물 금리가 상승세를 기록하면서 고정금리 채권 가격은 하락 압력을 받았습니다. 채권 금리와 고정금리 채권 가격은 통상 반대로 움직입니다.",
+        "horizon": "1주일",
+        "summary": "미국 국채 금리가 상승함에 따라 고정금리 채권 가격은 반대로 하락 압력을 받았습니다.",
         "bull_cases": [
-          "미 중간선거 결과 등에 따른 일각의 금리 하락 기대감"
+          "국고채 금리의 연내 저점 진입 분석에 따른 관심 가능성",
+          "회사채 시장에 미치는 단기 영향은 제한적이라는 평가"
         ],
         "bear_cases": [
-          "연준 인사의 매파적 발언 및 연준 금리 인상·빅스텝 가능성 우려",
-          "미국 국채 10년물 금리 5%대 진입 및 채권 금리 상승세"
+          "미국 10년물 국채 금리 5.1% 돌파(+0.12%p) 및 2년물 금리 상승(4.86%)으로 인한 채권 가격 하락",
+          "연준 인사의 발언 및 금리 관련 변수에 따른 금리 상승 압력",
+          "국고채 담합 과징금 부과 관련 시장 반발 이슈"
         ],
         "watch": [
-          "미국 국채 10년물 및 2년물 금리 변동 추이",
-          "연준 정책위원 발언 및 주요 물가·고용 지표 발표"
+          "미국 10년물 및 2년물 국채 금리 추이",
+          "연준 위원들의 통화정책 발언",
+          "국채 시장 과징금 관련 경과"
         ],
         "citation_ids": [
-          "bonds-1",
-          "bonds-2",
-          "bonds-5"
+          "bonds-0",
+          "bonds-3",
+          "bonds-7"
         ]
       }
     },
     "stock_insights": {
       "KR": [
         {
-          "symbol": "000660",
-          "signal": "부정 이슈",
-          "summary": "외국인 매도세와 엔비디아 여파로 주가 약세가 언급되었습니다. 파생상품 레버리지 손실 위험 등에 대한 경고 소식도 전해졌습니다.",
-          "citation_ids": [
-            "sn-kr-000660-1",
-            "sn-kr-000660-2"
-          ]
-        },
-        {
-          "symbol": "005380",
+          "symbol": "005930",
           "signal": "혼재",
-          "summary": "과매도 지표에 따른 매도세 소진 가능성과 함께 주가 상승 흐름이 관측되었습니다. 한편 정몽구 재단 이사장 별세 소식이 전해졌습니다.",
+          "summary": "대주주 지분 증여 소식이 전해졌으나 빚투 자금 집중으로 주가 변동성 우려가 지속되고 있습니다.",
           "citation_ids": [
-            "sn-kr-005380-0",
-            "sn-kr-005380-1"
+            "sn-kr-005930-0",
+            "sn-kr-005930-1"
           ]
         },
         {
           "symbol": "035420",
           "signal": "부정 이슈",
-          "summary": "3분기 잉여현금흐름 음수 기록과 AI 투자 확대에 따른 영업이익 감소로 목표주가가 하향 조정되었습니다. 수익성 우려 속에 주가도 하락세를 나타냈습니다.",
+          "summary": "엔비디아 관련 불확실성 여파로 주가 약세를 보였으며 수익성 확보가 핵심 과제로 제시되었습니다.",
           "citation_ids": [
             "sn-kr-035420-0",
             "sn-kr-035420-1"
           ]
         },
         {
-          "symbol": "005930",
-          "signal": "혼재",
-          "summary": "이재용 회장의 주식 증여 완료 및 이에 따른 대규모 증여세 부담 이슈가 전해졌습니다. 자사주 소각 여부에 따른 지분율 변화 가능성이 주목받았습니다.",
+          "symbol": "000660",
+          "signal": "부정 이슈",
+          "summary": "신용융자 자금 집중 우려와 시장 변동성 확대 속에서 정규장 대비 할인 거래 이슈가 부각되었습니다.",
           "citation_ids": [
-            "sn-kr-005930-0",
-            "sn-kr-005930-2"
+            "sn-kr-000660-0",
+            "sn-kr-000660-1"
+          ]
+        },
+        {
+          "symbol": "005380",
+          "signal": "긍정 이슈",
+          "summary": "법원 판결을 통해 지분을 유지했으며 로봇 관련 ETF 신상품 출시 등 관심이 이어졌습니다.",
+          "citation_ids": [
+            "sn-kr-005380-0",
+            "sn-kr-005380-2"
           ]
         },
         {
           "symbol": "034020",
-          "signal": "혼재",
-          "summary": "발전기 모니터링 시스템 실증 착수 및 수상 소식에도 불구하고 장초반 강세를 지키지 못하고 주가가 하락했습니다. 향후 주가 방향성에 대해 관망세가 이어지고 있습니다.",
+          "signal": "긍정 이슈",
+          "summary": "AI 기반 발전설비 고장 감지 및 운영 고도화 추진 소식이 전해졌습니다.",
           "citation_ids": [
             "sn-kr-034020-0",
             "sn-kr-034020-2"
@@ -131,47 +138,47 @@
       ],
       "US": [
         {
-          "symbol": "AVGO",
-          "signal": "부정 이슈",
-          "summary": "엔비디아 이슈에 따른 반사이익 기대감이 언급되었으나 AI 자금 조달 우려로 목표주가가 하향 조정되며 주가가 하락했습니다.",
+          "symbol": "AMD",
+          "signal": "혼재",
+          "summary": "엔비디아 독점 균열에 따른 수혜 기대와 반도체 업종 전반의 약세 영향이 공존하고 있습니다.",
           "citation_ids": [
-            "sn-us-AVGO-0",
-            "sn-us-AVGO-1"
+            "sn-us-AMD-0",
+            "sn-us-AMD-2"
+          ]
+        },
+        {
+          "symbol": "AVGO",
+          "signal": "긍정 이슈",
+          "summary": "엔비디아 경영진 변수 속에서 AI 반도체 시장의 대체 후보로 시장의 주목을 받았습니다.",
+          "citation_ids": [
+            "sn-us-AVGO-1",
+            "sn-us-AVGO-2"
           ]
         },
         {
           "symbol": "NVDA",
           "signal": "부정 이슈",
-          "summary": "경영진 및 스캔들 여파로 시가총액 4조 달러 선이 무너지는 등 기술주 투심 냉각과 함께 주가 하락세가 지속되었습니다.",
+          "summary": "경영진 이탈 이슈와 시가총액 4조 달러 하회 속에서 향후 실적 발표가 주요 분수령으로 꼽힙니다.",
           "citation_ids": [
-            "sn-us-NVDA-1",
+            "sn-us-NVDA-0",
             "sn-us-NVDA-2"
-          ]
-        },
-        {
-          "symbol": "AMZN",
-          "signal": "혼재",
-          "summary": "AI 기반 현금 흐름 창출 기대로 주가 회복 흐름이 유지되고 있으나 특정 저항선에 막혀 추가 상승이 제한되는 모습을 보였습니다.",
-          "citation_ids": [
-            "sn-us-AMZN-0",
-            "sn-us-AMZN-1"
           ]
         },
         {
           "symbol": "GOOGL",
           "signal": "혼재",
-          "summary": "주가가 300달러 선을 회복하며 다른 기술주 대비 양호한 모습을 나타냈으나 320달러 저항선 극복이 과제로 남아있습니다.",
+          "summary": "채권 발행을 통한 유동성 확보와 주가 회복 시도가 진행되는 가운데 저항선 대응이 과제로 남아있습니다.",
           "citation_ids": [
-            "sn-us-GOOGL-0",
+            "sn-us-GOOGL-1",
             "sn-us-GOOGL-2"
           ]
         },
         {
           "symbol": "MSFT",
           "signal": "부정 이슈",
-          "summary": "대규모 서비스 장애 발생으로 업무 차질이 발생했으며 주가가 박스권에 머무르거나 추가 하락할 위험이 언급되었습니다.",
+          "summary": "글로벌 서비스 장애 발생 영향으로 주가가 박스권에 머물며 추가 하락 위험이 언급되었습니다.",
           "citation_ids": [
-            "sn-us-MSFT-1",
+            "sn-us-MSFT-0",
             "sn-us-MSFT-2"
           ]
         }
@@ -184,16 +191,12 @@
       "name": "코스피",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 5342.73,
-      "change": -0.607,
-      "as_of": "2026-11-12",
+      "value": 5290.53,
+      "change": -0.977,
+      "as_of": "2026-11-13",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKS11",
       "history": [
-        {
-          "date": "2026-10-20",
-          "value": 5552.74
-        },
         {
           "date": "2026-10-21",
           "value": 5735.66
@@ -261,10 +264,14 @@
         {
           "date": "2026-11-12",
           "value": 5342.73
+        },
+        {
+          "date": "2026-11-13",
+          "value": 5290.53
         }
       ],
       "data_status": "current_or_provider_lag",
-      "lag_business_days": 1,
+      "lag_business_days": 0,
       "price_type": "daily_observation",
       "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
@@ -273,16 +280,12 @@
       "name": "코스닥",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 696.53,
-      "change": -1.215,
-      "as_of": "2026-11-12",
+      "value": 699.66,
+      "change": 0.449,
+      "as_of": "2026-11-13",
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/quote/%5EKQ11",
       "history": [
-        {
-          "date": "2026-10-20",
-          "value": 781.97
-        },
         {
           "date": "2026-10-21",
           "value": 792.76
@@ -350,10 +353,14 @@
         {
           "date": "2026-11-12",
           "value": 696.53
+        },
+        {
+          "date": "2026-11-13",
+          "value": 699.66
         }
       ],
       "data_status": "current_or_provider_lag",
-      "lag_business_days": 1,
+      "lag_business_days": 0,
       "price_type": "daily_observation",
       "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
@@ -362,16 +369,12 @@
       "name": "S&P 500",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 7592.4,
-      "change": -0.354,
-      "as_of": "2026-11-12",
+      "value": 7561.67,
+      "change": -0.405,
+      "as_of": "2026-11-13",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/SP500",
       "history": [
-        {
-          "date": "2026-10-20",
-          "value": 7712.57
-        },
         {
           "date": "2026-10-21",
           "value": 7757.17
@@ -439,10 +442,14 @@
         {
           "date": "2026-11-12",
           "value": 7592.4
+        },
+        {
+          "date": "2026-11-13",
+          "value": 7561.67
         }
       ],
       "data_status": "current_or_provider_lag",
-      "lag_business_days": 1,
+      "lag_business_days": 0,
       "price_type": "daily_observation",
       "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
@@ -451,16 +458,12 @@
       "name": "나스닥 종합",
       "unit": "pt",
       "change_unit": "pct",
-      "value": 25366.09,
-      "change": -0.393,
-      "as_of": "2026-11-12",
+      "value": 25136.27,
+      "change": -0.906,
+      "as_of": "2026-11-13",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "source_url": "https://fred.stlouisfed.org/series/NASDAQCOM",
       "history": [
-        {
-          "date": "2026-10-20",
-          "value": 26424.82
-        },
         {
           "date": "2026-10-21",
           "value": 26702.86
@@ -528,10 +531,14 @@
         {
           "date": "2026-11-12",
           "value": 25366.09
+        },
+        {
+          "date": "2026-11-13",
+          "value": 25136.27
         }
       ],
       "data_status": "current_or_provider_lag",
-      "lag_business_days": 1,
+      "lag_business_days": 0,
       "price_type": "daily_observation",
       "freshness_note": "최근 관측값입니다. 실시간 시세가 아니라 제공처 발표 자료입니다."
     },
@@ -962,7 +969,7 @@
           "measurement": "level",
           "value": 4.0,
           "previous_value": 4.0,
-          "as_of": "2026-11-13",
+          "as_of": "2026-11-14",
           "status": "ok",
           "source": "FRED / Federal Reserve Bank of St. Louis",
           "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -975,94 +982,126 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "엔비디아 후폭풍에 美반도체 6% 급락…외국인 7000억 매도, 코스피 5300선 붕괴",
-        "publisher": "녹색경제신문",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zcGw3UXA3ZzNuQTMwbGEwUGkyQlliMFNzYXdaakkyN24ySkRodjcxUnlyblVkVkxBMGl3Q0xWbmM0YzdQaGYtbU5kV1NZbFdqQlVWOGZkdUlrVWNfNW5WUTNjYl9nRDRQ?oc=5",
-        "published_at": "2026-11-13T18:25:28+00:00",
-        "summary": "엔비디아 후폭풍에 美반도체 6% 급락…외국인 7000억 매도, 코스피 5300선 붕괴 &nbsp;&nbsp; 녹색경제신문",
+        "title": "코스피 5300선 회복 실패…엔비디아 변수에 AI주 불확실성 확대",
+        "publisher": "위키리크스한국",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94cDc5YlluRTNpMWt6ZFk0THUyaG5HRHJVUzdFRkZDOHpVMXphU1ZRbkpObWRoR2k5bXV0NHJPTWFhZmFEUWdtb0FRUUpiQy1YNTN6aXRZa2NscjkxU0lQelRWclNBM2Nkdko3ZEYzaFo?oc=5",
+        "published_at": "2026-11-15T00:36:40+00:00",
+        "summary": "코스피 5300선 회복 실패…엔비디아 변수에 AI주 불확실성 확대 &nbsp;&nbsp; 위키리크스한국",
         "id": "stocks_kr-0"
       },
       {
-        "title": "SK하이닉스 외국인 4,700억 원 순매도! 수급이 엇갈린 이유와 주목할 종목 (11.13)",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbFBzY2lzV0JsZ3p2bld5X3d3QnZsZWFfSnUxUTdvN2s2cjh2QklqOUNJdnZTaG5ueDNXOWZwaHJ5VXpBODhCcWwzenNLUjBTRE45QUd1ZVVfR3dGRTRFV3U2TFlxTmE2TEpaZGgxcGEzTG95UWVLWC1icWJvY29FaFg2MlQ1WTdacXc?oc=5",
-        "published_at": "2026-11-13T10:01:00+00:00",
-        "summary": "SK하이닉스 외국인 4,700억 원 순매도! 수급이 엇갈린 이유와 주목할 종목 (11.13) &nbsp;&nbsp; 네이버 프리미엄콘텐츠",
+        "title": "외국인, 한국 주식 193억 달러 팔았다…AI 투자 불안에 흔들리는 코스피",
+        "publisher": "진주인터넷뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ETGZZQllKelgxeXpvc0VjUVIwTnRfSGlSZUtQdVpvaU45cGNiT3N3VDJZWllnOHYycTczMndyWlNkTnM0dmRKVzZmRzZmWi03WVRLOFk2ekVOVFVEM2RURU5hV3NoLTJ0aFdCQ2VoZjFGUQ?oc=5",
+        "published_at": "2026-11-14T23:58:53+00:00",
+        "summary": "외국인, 한국 주식 193억 달러 팔았다…AI 투자 불안에 흔들리는 코스피 &nbsp;&nbsp; 진주인터넷뉴스",
         "id": "stocks_kr-1"
       },
       {
-        "title": "[1113마감체크] 코스피 지수, 외국인 매도 속 하락…코스닥은 강보합 마감",
-        "publisher": "인포스탁데일리",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qM3RkeGcwYzF0OTVBdDE0MnAxS05vZ3hIR1JKbUctVmhXUW9keDJLMXRxMmRyNDFaNmsyMjJaRGZNY29Na29scUFVdmRGc0dTWkdXU05mcExwbGlsT0hTZjk5Z0g1OExqZGJKNTFUQmY4Ulotb1E?oc=5",
-        "published_at": "2026-11-13T08:09:50+00:00",
-        "summary": "[1113마감체크] 코스피 지수, 외국인 매도 속 하락…코스닥은 강보합 마감 &nbsp;&nbsp; 인포스탁데일리",
+        "title": "[증시전망] 젠슨 황 없는 엔비디아 실적은...앤트로픽 IPO도 주목",
+        "publisher": "디지털투데이",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBVSkFoNldiS3V0NVVaUHhJN3F5YThoTHlCSjdEZmtlTGtBWGkyUkF4aHpONkkxMjJCZE1aU1VVSWxJOHV2NTdtU1ZmLV9uMjl0T0xrYnhUTmUzX3FjTGM1S0JaNmgzNk5kM0xOa3A0djhsSzg?oc=5",
+        "published_at": "2026-11-14T23:30:00+00:00",
+        "summary": "[증시전망] 젠슨 황 없는 엔비디아 실적은...앤트로픽 IPO도 주목 &nbsp;&nbsp; 디지털투데이",
         "id": "stocks_kr-2"
       },
       {
-        "title": "[증시 인사이트] 국내증시, '젠슨 황 퇴진'에도 오늘 상승 출발",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LOUlETngwVUtybjNsbXNabjRFLUF3R0ViejN5ZG9TRVExR3k3d1RMZ00zaGQ4c3E4WmtReGp2TXZNV1NuUzhLTFVLUVhQS09nd2RF0gFYQVVfeXFMUFNmd08tUnhJUDI0bUdTaDMzZFJEcEdyX3ZWdjZ0NDdTM2VzZE5mdjg2b1BxLXoydTNlbDVGcEdLRFhmRkFraHNlV1FrNUV5WVU0N0FmR1pOaQ?oc=5",
-        "published_at": "2026-11-13T07:06:00+00:00",
-        "summary": "[증시 인사이트] 국내증시, '젠슨 황 퇴진'에도 오늘 상승 출발 &nbsp;&nbsp; SBS Biz",
+        "title": "젠슨 황 퇴진 후폭풍에 증시 출렁…엔비디아 실적이 분수령",
+        "publisher": "진일보 | 전남일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iVUl4MDhKb2FVak5ycERweEo2VHpuQTA2ZkZFbnFaeDhYZTl1cE1xZG9LRGZ5LUUtc2Zoci1WZ0E1RmI5dmFPc2JKTG5ZbENqRjBfckpJeFdmelNxeXg3bjlYTHdtQjBoQmdCYkpYNA?oc=5",
+        "published_at": "2026-11-14T23:17:04+00:00",
+        "summary": "젠슨 황 퇴진 후폭풍에 증시 출렁…엔비디아 실적이 분수령 &nbsp;&nbsp; 진일보 | 전남일보",
         "id": "stocks_kr-3"
       },
       {
-        "title": "'엔비디아 쇼크' 국내 증시…코스피 5300선 내줬다",
-        "publisher": "경제타임스",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KOW1EUFh1QTVMYlJCWHNyNVRILXpram5DS3ZhbEdIQV9qdDFBeVBnbGlabGVDT29CQXhER0lpQmpkdTZrNFdUamVsb2lXWDhxZzhR?oc=5",
-        "published_at": "2026-11-13T07:05:22+00:00",
-        "summary": "'엔비디아 쇼크' 국내 증시…코스피 5300선 내줬다 &nbsp;&nbsp; 경제타임스",
+        "title": "'빚투' 자금 30%가 삼전·닉스에 집중…변동성 더 키웠다",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tazVyZS1uR21uVzN3Mnd6eGktTDZlNWdCVE8zb1JzS3FJd2hHM0hzdDc1SzdWbkdaNzg5YkFTam51azFqcjhXN3hxQVoyU2RVZGJBVS1TMkNoTzVNOXJwZtIBYEFVX3lxTE8tazVyZS1uR21uVzN3Mnd6eGktTDZlNWdCVE8zb1JzS3FJd2hHM0hzdDc1SzdWbkdaNzg5YkFTam51azFqcjhXN3hxQVoyU2RVZGJBVS1TMkNoTzVNOXJwZg?oc=5",
+        "published_at": "2026-11-14T21:10:00+00:00",
+        "summary": "'빚투' 자금 30%가 삼전·닉스에 집중…변동성 더 키웠다 &nbsp;&nbsp; 연합뉴스",
         "id": "stocks_kr-4"
       },
       {
-        "title": "코스피·코스닥 반전 드라마.. 삼성전자·SK하이닉스 동반 질주 > 뉴스",
-        "publisher": "지데일리",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1TnVSMS1aWmRYUlhZekFZS0ZjSGt0dlBvbmRSZnZCS3VMMm9xQVc3VmxpTDNqbGwxbXBCY2J5azdtSVZjZGpzekd4SDBzUG9wZXhiTGZxQVFCOTRncGpxcmhyX3kzMnhjNjJpSA?oc=5",
-        "published_at": "2026-11-13T02:27:00+00:00",
-        "summary": "코스피·코스닥 반전 드라마.. 삼성전자·SK하이닉스 동반 질주 > 뉴스 &nbsp;&nbsp; 지데일리",
+        "title": "'젠슨황 스캔들'에 짓눌린 증시…엔비디아 실적·앤트로픽 상장 주시",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nR0p4Y2pYLVk2R3BIak9qbGxBY2NpNWFSY0cwUG85TjFGR0hycl94WjJYTXJZTUt4Nnd2WEVjektXMjRyalYyVDE3MVFZUjl3YVVqTmlOQjl2Y0XSAWBBVV95cUxPMEFvZkx4dXNTVkhiX2RfZkV3V3ZXQzFieDlaQlFvQWExaWY3RkVFUE9UTDcwcllsMW5QeEF1LVphMzVJX0dsLVRPVjdQdlY1elczSVlMbVZjVUtJWWs4bnE?oc=5",
+        "published_at": "2026-11-14T21:00:05+00:00",
+        "summary": "'젠슨황 스캔들'에 짓눌린 증시…엔비디아 실적·앤트로픽 상장 주시 &nbsp;&nbsp; 연합뉴스",
         "id": "stocks_kr-5"
       },
       {
-        "title": "\"저평가 기업 해소 못하면 코스피 상승 어렵다\"…주주권 강화·코스닥 구조개편 속도",
-        "publisher": "www.ebn.co.kr",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDMzZXMkVVZTIxUEI2TDFqaTNha0pENE82LTVhOFNzX1hGUVZCekhpc1lCclpRU1VUX19JR1BhbzdmdVZNN25pbUZCSVlLX3ZoWXIzQ1NlNHRuTDFIc2tQWDhxd3BGd0FY?oc=5",
-        "published_at": "2026-11-13T00:30:00+00:00",
-        "summary": "\"저평가 기업 해소 못하면 코스피 상승 어렵다\"…주주권 강화·코스닥 구조개편 속도 &nbsp;&nbsp; www.ebn.co.kr",
+        "title": "[주간증시분석] 코스피 5,500 찍고 5,290 마감…엔비디아 실적에 달린 반등의 지속력",
+        "publisher": "강릉뉴스",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SdEZsRDRxeTI0bDB2NWNxdEVKYXMzLUlSWklGZzBtNXR4X3AwcDBISG9KR1ktQVVaT2RUcWpPVjc3ZURLcHEycUh0ZmFQOG5oRXBLVWV3ZUZKUF9Fc015SEh1d0RIZ3JlMURvSUtZVQ?oc=5",
+        "published_at": "2026-11-14T14:35:36+00:00",
+        "summary": "[주간증시분석] 코스피 5,500 찍고 5,290 마감…엔비디아 실적에 달린 반등의 지속력 &nbsp;&nbsp; 강릉뉴스",
         "id": "stocks_kr-6"
       },
       {
-        "title": "코스피·코스닥 가뿐한 출발...삼성전자·SK하이닉스 강세 > 뉴스",
-        "publisher": "지데일리",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjVlBOa1Vsd0ZkOHpLQ1pBZG52cXJ3OWlzM2xJMWFobVpvaFpzYUxmS0s0YWxUWmppM2U5Y0pMTlNpaXRUeW1pRi15OS11cWJjdU95b3NVU0wzdl9TMld4cDZQakNiOGZ6enpWVw?oc=5",
-        "published_at": "2026-11-13T00:16:00+00:00",
-        "summary": "코스피·코스닥 가뿐한 출발...삼성전자·SK하이닉스 강세 > 뉴스 &nbsp;&nbsp; 지데일리",
+        "title": "[11월 2주 화장품 주가] 코스인 선정 30대 기업 상승 13개, 하락 17개... 코스맥스 ODM 상승 주도",
+        "publisher": "코스인코리아닷컴",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5udUhWU3MxVzdsNF9lcktEczdCT3NtS3FVQWNXdjh2ejh0Q3doQ1padVpsb0Q1U1AtbXhjSElCMUF3Vi1MWjgxVl8tVnQzRHExcHhHYk1hemE1V2VHTDY1a0JGTQ?oc=5",
+        "published_at": "2026-11-14T13:20:18+00:00",
+        "summary": "[11월 2주 화장품 주가] 코스인 선정 30대 기업 상승 13개, 하락 17개... 코스맥스 ODM 상승 주도 &nbsp;&nbsp; 코스인코리아닷컴",
         "id": "stocks_kr-7"
       },
       {
-        "title": "코스피 5,300선 과매도에도 매수 신중론…美 국채금리 급등·엔비디아 CEO 교체 변수",
-        "publisher": "시사프리즘",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wOTlDNkh5Tnh0bzIxVGRuM0NSZS1YV3UzbGRUeDB3NU5aYVpLM1paNVMwYUxWZ1ROM1pjbDdhZXAteWJMeHM4UUM5cDFXWWNXeG80WDlCU2xaeXdOc3VrRjF1RDd4a0JK?oc=5",
-        "published_at": "2026-11-13T00:01:46+00:00",
-        "summary": "코스피 5,300선 과매도에도 매수 신중론…美 국채금리 급등·엔비디아 CEO 교체 변수 &nbsp;&nbsp; 시사프리즘",
+        "title": "5500선 넘보던 코스피, 하루 만에 상승분 반납…외국인 자금 이탈에 흔들리는 증시",
+        "publisher": "하이뉴스",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1jb1pSbmt4a3QzVkxwaFAyT1J6TnRwM0QyRnVxUFVfZmlyc1ZJeGRTQUhVTnVZdEMtSEhkeEVhank1UEs1LVZRTjQ2UUxiOERNYnNJT0xBeEZGUVFOMHF3T19mbnkybG5KSkF6V1NOYXozVURwbmZz?oc=5",
+        "published_at": "2026-11-14T04:54:12+00:00",
+        "summary": "5500선 넘보던 코스피, 하루 만에 상승분 반납…외국인 자금 이탈에 흔들리는 증시 &nbsp;&nbsp; 하이뉴스",
         "id": "stocks_kr-8"
       },
       {
-        "title": "[박정식의 국내 주식시황] 젠슨 황 사임에 이란 악재까지…코스피 5442선 앞 숨 고르기",
-        "publisher": "뉴스퀘스트",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0teHRmcXdHTVU5d21CMWNUNXdncDVvMC10QWRTSWVmcDZaZ1lmSTJwZ0p4N3JnaWJhYU1ONUZVUERSUEJPd09pZ0ZHaDkyWGRTWTV6UVA3RDQtWHVqb0h6bVF4a044aG9EYXFXUm44dw?oc=5",
-        "published_at": "2026-11-12T23:12:07+00:00",
-        "summary": "[박정식의 국내 주식시황] 젠슨 황 사임에 이란 악재까지…코스피 5442선 앞 숨 고르기 &nbsp;&nbsp; 뉴스퀘스트",
+        "title": "글로벌 기관 韓 주식 비중 축소…환시 달러 매수는 잠잠 |",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kNjQ4eFFRWG1iRF9xS0VNTWFQUnhMQnljVHBUaTcyT04ybzdERHZ4d1B6NnVkSTh6RjhNUEdUWTY2NXRXSkNQYkxMRzF6TTR0aWNoX3lNMXdYX2tFM1ZoQUhJYzlDLXlhN29GSV9TQ2lDeE1y?oc=5",
+        "published_at": "2026-11-14T00:13:21+00:00",
+        "summary": "글로벌 기관 韓 주식 비중 축소…환시 달러 매수는 잠잠 | &nbsp;&nbsp; 연합인포맥스",
         "id": "stocks_kr-9"
       }
     ],
     "stocks_us": [
+      {
+        "title": "미국증시 주간 전망, 엔비디아 실적보다 중요한 ‘투자 지속성’",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9uT3RmQ0c1eS1wWjczd1ZFbjZUX21lTzRGZ2ktZ2cwZlRjLW9oOGhUN1BrOTktS2ZBaFo0RVVRLWtibVVxQXh6RUswZzRqS0ljRGt1WmRfeW9uSkhlUDZJV1ZsOWJqZDJvNm1jNWQ0SVlqUQ?oc=5",
+        "published_at": "2026-11-14T22:56:34+00:00",
+        "summary": "미국증시 주간 전망, 엔비디아 실적보다 중요한 ‘투자 지속성’ &nbsp;&nbsp; 톱스타뉴스",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "'젠슨황 스캔들'에 짓눌린 증시…엔비디아 실적·앤트로픽 상장 주시",
+        "publisher": "매일경제 마켓",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Udy1vaHZwclBHbGhpaGFhRmtBX1JpeU1KOUNjYjQzY0pkalpHaVZYRjc5ZHhqNmdpMnlfU0VNdUJrcExrZDA5cGJaNjhkazJpbUE?oc=5",
+        "published_at": "2026-11-14T21:00:05+00:00",
+        "summary": "'젠슨황 스캔들'에 짓눌린 증시…엔비디아 실적·앤트로픽 상장 주시 &nbsp;&nbsp; 매일경제 마켓",
+        "id": "stocks_us-1"
+      },
+      {
+        "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
+        "published_at": "2026-11-14T18:15:58+00:00",
+        "summary": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항 &nbsp;&nbsp; TradingKey",
+        "id": "stocks_us-2"
+      },
+      {
+        "title": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvVDRNVEd5enh2a1E2dURSbjR4blBsZDBPNDg2R0xaY3VXYzIwR2lIVXRCVUdMUnRRY3IwZHl1UXJJS0pDLWR1b1UzenNtWmJtYjdhOVJVRFlrNl9jRlR1MlItOW1qWlJsYWxKWkFhS1jSAXRBVV95cUxPZ1c1SHB1WlZtaFZYeldPNl9zbW9JbzhkcFVYZ2x5OU5aODVURUtveUIybGFBMmtpLWMzWVM4RkE4RjF3NDVwRXpDX1RQQkplUTlrbU11ZDVkNFZxRHE0dUhEUUUtVGdpWmdCSDItcmNfc2J5Zg?oc=5",
+        "published_at": "2026-11-14T15:00:00+00:00",
+        "summary": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목 &nbsp;&nbsp; 더페어",
+        "id": "stocks_us-3"
+      },
       {
         "title": "엔비디아 시총 4조달러 깨졌다…뉴욕증시 나스닥 0.91% 하락",
         "publisher": "https://www.theconnectmoney.com/",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEa3JHQ1F0SFZZcUY2NEJCQVJ5TU9NQWU1eV9TLW9VaG5Fd2VJSGtpNzJnZlhoWk5Zbm5lNXRLQ0FiUGFzZElnLTdIeGRCdWQ3Ul9fLTlFMUJrM3BmWVdGdA?oc=5",
         "published_at": "2026-11-13T23:45:00+00:00",
         "summary": "엔비디아 시총 4조달러 깨졌다…뉴욕증시 나스닥 0.91% 하락 &nbsp;&nbsp; https://www.theconnectmoney.com/",
-        "id": "stocks_us-0"
+        "id": "stocks_us-4"
       },
       {
         "title": "머스크의 성지글 논란과 경영진 안보 리스크 팩트 체크 - 엔비디아 독점 균열 속 AMD·브로드컴 주주가 웃은 이유",
@@ -1070,7 +1109,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kZ1JVandZZ3ZJVUYzLW1Pb1JvNG80TG1nblhVbDNmZEpjQnBBUEV0c1F3U2FSdU82VlNmbDI5cG9iM3VrY3FGTWFMbGxqVUplT1FGUUloVFNGNUNYUUJFR1hhTUpJNm9aM3N1eTVZcXBfd2fSAXZBVV95cUxPUHlSemZISEZuTnhnWVY1dHJKb3ZhOXpxVi1RS2loeFJGOUVPbmdTZXZtMjNmc1kwUnQzZmMxM0JsRWpCR1M5VXNGUGFHT2xVLWh4bzNiMnFmNU45STdjLWJNdnNvVVhMVkdvM0VBMmExTFY3WHZR?oc=5",
         "published_at": "2026-11-13T23:38:40+00:00",
         "summary": "머스크의 성지글 논란과 경영진 안보 리스크 팩트 체크 - 엔비디아 독점 균열 속 AMD·브로드컴 주주가 웃은 이유 &nbsp;&nbsp; 데일리머니",
-        "id": "stocks_us-1"
+        "id": "stocks_us-5"
       },
       {
         "title": "엔비디아만의 문제가 아닙니다. AMD까지 급락한 이유",
@@ -1078,7 +1117,7 @@
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTHctX1ZsaVo2WU5uVFpwUGJjUzVkTW1DZGg3MGlNTXhWaHhvanVMQ19xWFdJSGV3WGNIR1AtQ1V6bTFGeldQM19waGlaMnNjaGJjOWkxcUhRMUp3VTkzTklPc2RGS0hEYTR4djdwYmJjWVFLbnVOWjMxZUFrQTc3SG9zUzJSd2FRdGFZ?oc=5",
         "published_at": "2026-11-13T23:37:00+00:00",
         "summary": "엔비디아만의 문제가 아닙니다. AMD까지 급락한 이유 &nbsp;&nbsp; 네이버 프리미엄콘텐츠",
-        "id": "stocks_us-2"
+        "id": "stocks_us-6"
       },
       {
         "title": "뉴욕증시, 엔비디아發 반도체주 급락…나스닥 0.91% 하락",
@@ -1086,7 +1125,7 @@
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WMS0wYlItYzZYZGFQcmg0UEw0MlZXOWFkZFZSUHg2R1dxd3FPekdLYnp4S2VobS1ncE9RbldPbU5pUzhaVEJ6NDlOQ3BDSlg1Q0hrUW1IZWcyME5HSFZob2d0dVlhd3BHZkI1TUhPa0vSAXRBVV95cUxNV2lQRXU5YkFLV3cwZGE0OFJyRmZYV3g2QUVWV19Gbl9SLVd2bVlDa0tQZ3NwbFFReGJqNkl0MmNZN0R3Vm80a0R2ZDFWZUNXZGNIQjY3aFVQRDhsOU1lcTdWNWdQbC1SMjVHOWdqS2daWE9mZg?oc=5",
         "published_at": "2026-11-13T23:15:03+00:00",
         "summary": "뉴욕증시, 엔비디아發 반도체주 급락…나스닥 0.91% 하락 &nbsp;&nbsp; 산경투데이",
-        "id": "stocks_us-3"
+        "id": "stocks_us-7"
       },
       {
         "title": "미국증시, 엔비디아 충격에 나스닥 0.91% 하락…반도체 매도세 확산·다우 강보합",
@@ -1094,57 +1133,41 @@
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBEUVp1MC1sY05rSjBWOUxPWDFtSzc3UnBXaDJoUDJ0c2Y0ck5YZXA1UkNaLWVXeEJOb3ZMTjlrQkRlZ0pVVHdjV01rS2toMGhXVTJ2WHJoYkl5U3lPZTVUSzlLVG5TQjRJb3l6XzdWcW1DUQ?oc=5",
         "published_at": "2026-11-13T23:02:06+00:00",
         "summary": "미국증시, 엔비디아 충격에 나스닥 0.91% 하락…반도체 매도세 확산·다우 강보합 &nbsp;&nbsp; 톱스타뉴스",
-        "id": "stocks_us-4"
-      },
-      {
-        "title": "젠슨 황 스캔들에 기술주 투심 '냉각'...AMD 8.7%↓·세레브라스 11%↑",
-        "publisher": "조세일보",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1LaGs3SGRHb2NxWjhPUzBZazhBQnRDWmdjNFJzdzlCN2JnYlAtajFWc3I0NWQ4TnFSX3NURlJqTjRoUGdNdG9jRzJreXNoYUtnSWFwSnR3M3BfRlZ6Mjkw?oc=5",
-        "published_at": "2026-11-13T22:28:23+00:00",
-        "summary": "젠슨 황 스캔들에 기술주 투심 '냉각'...AMD 8.7%↓·세레브라스 11%↑ &nbsp;&nbsp; 조세일보",
-        "id": "stocks_us-5"
-      },
-      {
-        "title": "미국증시, 물가 둔화에도 나스닥 하락…엔비디아·SK하이닉스 약세, 다우 상승",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PMnd3QjhTZGdnUUNzQUhMc2MyTjI3T3lHR3ZMRTcyRkluVUh2Y3B4Y2YycGRYM0xZRFhZQlNjbDhOcXhLXzN0TzFydGZERlJ0UGcweHgyY2NocWN5V09KWmpXSWNEX0txYzhtcE9sMlpKUQ?oc=5",
-        "published_at": "2026-11-13T14:43:40+00:00",
-        "summary": "미국증시, 물가 둔화에도 나스닥 하락…엔비디아·SK하이닉스 약세, 다우 상승 &nbsp;&nbsp; 톱스타뉴스",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[마켓톡스]내년 S&P500, 8700 전망…실적 성장 둔화에도 밸류 매력",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1NuMHNYOFAzNGUyb0J3dHlqUlYta1RUU3BWLS1FUlBBYjFiVkpuc2Jrb01NUTFpS1ZvOGc4RjFRTUduRGZGUnZxdlhoLTN5bFdDZlZsc2s5UW9HTGVPVjlLY0RKOV9HM1NNaGxZMDRlZEN4MUVRWmVsTUxoQWN6Uw?oc=5",
-        "published_at": "2026-11-13T13:12:06+00:00",
-        "summary": "[마켓톡스]내년 S&P500, 8700 전망…실적 성장 둔화에도 밸류 매력 &nbsp;&nbsp; 이데일리",
-        "id": "stocks_us-7"
-      },
-      {
-        "title": "[빅테크 베팅] 젠슨 황 사임에 엔비디아 연말 시총 1위 확률 12%…하루 새 7%p 급락",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5MZ1BES2RjYlY4WWc4UWdwSk9qaHp6X3Ezanl3VVhjUy12UllLOWs5Q2dZQVg4TGlFYWxqTHJmek5XajdyenU5emd3?oc=5",
-        "published_at": "2026-11-13T10:03:53+00:00",
-        "summary": "[빅테크 베팅] 젠슨 황 사임에 엔비디아 연말 시총 1위 확률 12%…하루 새 7%p 급락 &nbsp;&nbsp; 코인리더스",
         "id": "stocks_us-8"
       },
       {
-        "title": "국민연금 미국주식 평가액 증가…M7 늘고 반도체 줄고",
-        "publisher": "매일경제TV",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Ncm5PMG11U3lQeHY5cHRhbE9vZ2dyRF9PSUJueWJBYmp3UFRvQjFYYVdINS01TnlYTEhybDRiWU1pTnZUU2NYU0s5SzM3dm0xSk4tRnRRNG40U2d1YzhJRTk1bVZwTG5L?oc=5",
-        "published_at": "2026-11-13T07:39:00+00:00",
-        "summary": "국민연금 미국주식 평가액 증가…M7 늘고 반도체 줄고 &nbsp;&nbsp; 매일경제TV",
+        "title": "골드만삭스, AI 불확실성에도 美 증시 낙관...S&P500 상승",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EeUg4Smc3aTBWRVBmelpjcjhaQkhhb3o3c2h5OHBOWWtsY3JkYTNHVld2UnZWaC1DMWh0NEZsUWlmSHRmNjBIbF9kUkVjNHlkQ3RDY1NPNHpnU29EamhSUjg0bHZseFMyVVExUi1sZTPSAXRBVV95cUxQQVVwMDY0cldPWGlzWVpPSU4zQzBTTVJ0TVJaeFY2VjllZldmZjZtczZYX0Y2WkVUcnJ5SFU4MnltU21lUlRRbVA0aUVPVmRXQ2RXYkQwLTg2bWQxUTFLbUYxSGVYYWl4WktpalI2SE5kY2NzSQ?oc=5",
+        "published_at": "2026-11-13T22:44:31+00:00",
+        "summary": "골드만삭스, AI 불확실성에도 美 증시 낙관...S&P500 상승 &nbsp;&nbsp; 더페어",
         "id": "stocks_us-9"
       }
     ],
     "bonds": [
+      {
+        "title": "美 금리 상승 압력에 국채 금리 반등 가능성…회사채 시장 단기 영향은 제한적",
+        "publisher": "에너지경제신문",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5XcGlNMWFQOF9hVkVoN0tCcVNib0ZTS1hoaXhZcy1Hd3ZScUxHZEVFSlVfS3lZNmRHVGF0NjdXSUlNNVVyRjI4WVd6Wlg3Y0xkbDRmQ0pBUjZmblU?oc=5",
+        "published_at": "2026-11-14T06:00:00+00:00",
+        "summary": "美 금리 상승 압력에 국채 금리 반등 가능성…회사채 시장 단기 영향은 제한적 &nbsp;&nbsp; 에너지경제신문",
+        "id": "bonds-0"
+      },
       {
         "title": "오늘(11월 14일) 금 가격: 13개월 만에 최저치를 기록한 후 회복세.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQX09laVFTR0U4VU04a0N6TFJ0Y29YTG5vbXFSTXEyMDVHZ2U5VGZvdzhCWUxjS1RQVXFRWVh2THZPRW5Edjk4S2NVb1lTczNHZ1UxYVRadUJxUWN1NElva1E1THBVY3REaUpUeF94WkVkNGI1NFpOaEYwX05mS1l0eF9xbW4tLXh5UGJSQUhEM2xqSXk3SHNfUQ?oc=5",
         "published_at": "2026-11-13T23:52:01+00:00",
         "summary": "오늘(11월 14일) 금 가격: 13개월 만에 최저치를 기록한 후 회복세. &nbsp;&nbsp; Vietnam.vn",
-        "id": "bonds-0"
+        "id": "bonds-1"
+      },
+      {
+        "title": "\"국고채 금리, 연내 저점 찍고 반등…추격 매수 신중해야\"",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5rSGQyYXFkckR3djFWSUpHTzRjXzJRa3c2RmRmMm04Q0tYMVFOa3BVb2tjSWFKUkFiaVpfVXI3TTJnOTZPSkQ2OHhfTUVyYWVjdENaTXlHQUsxSHlmR1BQcjZyMm5OYVBPWV9lWlAxakdyQQ?oc=5",
+        "published_at": "2026-11-13T22:20:01+00:00",
+        "summary": "\"국고채 금리, 연내 저점 찍고 반등…추격 매수 신중해야\" &nbsp;&nbsp; KB Think",
+        "id": "bonds-2"
       },
       {
         "title": "[뉴욕 금·채권·달러] 미 국채금리 5.15% 상승·달러 강세…금값, 4개월내 최대 주간 낙폭",
@@ -1152,7 +1175,7 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1MWGM4NEtjc2Y5cDJVNjlaX2IwVk42ODlFR3dyenNmYmt5ZmxzSHgteWFpUEpkSHcyUmgtcTBZb0ZkVWFTbjN6TktXNmQyNDgyRUYzQW9xZjk?oc=5",
         "published_at": "2026-11-13T21:51:09+00:00",
         "summary": "[뉴욕 금·채권·달러] 미 국채금리 5.15% 상승·달러 강세…금값, 4개월내 최대 주간 낙폭 &nbsp;&nbsp; 블록미디어",
-        "id": "bonds-1"
+        "id": "bonds-3"
       },
       {
         "title": "젠슨황 아닌 연준 월러가 문제…국채금리 급등에 비트코인 직격탄",
@@ -1160,7 +1183,7 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00TWl4bXFTajRlbUw4MmExa2p6dV9rVVU3NXdGd2dhQ0x0bFhUUkdJLUVuQkVwbTBvUHdvZkdXTVBaRTlKRVJoRlg0M1NsRXBxUlVPcVJmTDU?oc=5",
         "published_at": "2026-11-13T11:48:07+00:00",
         "summary": "젠슨황 아닌 연준 월러가 문제…국채금리 급등에 비트코인 직격탄 &nbsp;&nbsp; 블록미디어",
-        "id": "bonds-2"
+        "id": "bonds-4"
       },
       {
         "title": "[공동락의 금리산책] 美 중간선거 결과에 따른 금리하락은 '과도'",
@@ -1168,15 +1191,15 @@
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8tV01HSFJVSGkxVXp3WlJpQkpnamdMVHlVRFhsUmxSVlJvb09OdkZDeUNQbmNMS3BTYkxiTzNlRGJkUGdEYzRJUnByOWNoOXhsZ0dkVWxNX0cyLXNFNjJHcHQ3aGhqd2lUOC1MTl8zLW9WSHh30gF0QVVfeXFMTy1XTUdIUlVIaTFVendaUmlCSmdqZ0xUeVVEWGxSbFJWUm9vT052RkN5Q1BuY0xLcFNiTGJPM2VEYmRQZ0RjNElScHI5Y2g5eGxnR2RVbE1fRzItc0U2MkdwdDdoaGp3aVQ4LUxOXzMtb1ZIeHc?oc=5",
         "published_at": "2026-11-13T08:55:02+00:00",
         "summary": "[공동락의 금리산책] 美 중간선거 결과에 따른 금리하락은 '과도' &nbsp;&nbsp; 주간한국",
-        "id": "bonds-3"
+        "id": "bonds-5"
       },
       {
-        "title": "[채권마감] 10년 금리 10일만 4%대 재진입, 유가·미 금리 급등",
-        "publisher": "이투데이",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GNDNoSGk2QnNRX0FGTWFmTmFEU3loRmlpQ01uNGVUd2d0THcxZGw4SWZtRHJmNFY5eHEzSnNjeHNrUG1saU0zVllUQzFjN2h5eXJMVVMxZ2lUV2ZWRGRSTlZXWHlIclhtcWZFNTd6dmdiejFO?oc=5",
-        "published_at": "2026-11-13T08:14:00+00:00",
-        "summary": "[채권마감] 10년 금리 10일만 4%대 재진입, 유가·미 금리 급등 &nbsp;&nbsp; 이투데이",
-        "id": "bonds-4"
+        "title": "국고채 담합 과징금 1.6조에 증권노조 반발…\"징벌적 제재 철회해야\"",
+        "publisher": "www.ebn.co.kr",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53WUozSWtFSkJFczhTNkRSLXdNRlQ4NnIwV0tHNXFHbThYNFBCSWswbWx2OWh5Qm43SS1TWHVHaDN1WEY5aFk0VHhHQWJFNnlEQlc3Sk1QanlfLUFtdTJjQzRRZHNBNVZ4?oc=5",
+        "published_at": "2026-11-13T05:39:15+00:00",
+        "summary": "국고채 담합 과징금 1.6조에 증권노조 반발…\"징벌적 제재 철회해야\" &nbsp;&nbsp; www.ebn.co.kr",
+        "id": "bonds-6"
       },
       {
         "title": "美 10년물 국채 금리 5% 돌파...연준 인상 가능성에 주택시장 '찬바람'",
@@ -1184,7 +1207,7 @@
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1fS1lIanh5dmJtNzFYaU9FUEFhMXV5aDRWdHlOX3V1MHFJcTc4SHYwb01ubThwV2ZTVlp2NXdzbjZ5OVhQT213cGV3?oc=5",
         "published_at": "2026-11-13T04:20:00+00:00",
         "summary": "美 10년물 국채 금리 5% 돌파...연준 인상 가능성에 주택시장 '찬바람' &nbsp;&nbsp; 코인리더스",
-        "id": "bonds-5"
+        "id": "bonds-7"
       },
       {
         "title": "연준 빅스텝 전망에 단기 국채금리 4년래 최대 상승 : 금융",
@@ -1192,7 +1215,7 @@
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1iRzNJUEJmWUctNlcySWYyQWY4Qm10bFQ2UzF1R0liMHN1TDhiRV9icUh0aU5IRUxwaEF0c3h1N3BXU1drVWRTSW5qQQ?oc=5",
         "published_at": "2026-11-13T02:05:43+00:00",
         "summary": "연준 빅스텝 전망에 단기 국채금리 4년래 최대 상승 : 금융 &nbsp;&nbsp; 재경일보",
-        "id": "bonds-6"
+        "id": "bonds-8"
       },
       {
         "title": "[오늘 금시세]미국 물가 충격에 금값 ‘뚝’…국내 금값 3%대 급락",
@@ -1200,22 +1223,6 @@
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zTjZiVHExSlNMM0xRRjhnUEQwWVFoajVLOGRGaEJCcnowQjhwR29nclFPdXJzRnhXSU5oOFJIUWJpdnBtaXgxa09TamNUbWxLWjdqajZBdzdDdHlsQnJYYzlpVTdpY05uZlZWYdIBcEFVX3lxTE1CaXVmMVpDbmRxWmJTVExWaTluSWczNlQwWXRCUXpyWEc4WGZDaGhXQjVzNTJ1STBaWUxSZ2I1UTJYeEFEU2FFX0szSkpxUUdKWllwdUZtQzNNeDJ0QzVNcDBtOFdUR21UN2FtYU11MzU?oc=5",
         "published_at": "2026-11-13T00:15:00+00:00",
         "summary": "[오늘 금시세]미국 물가 충격에 금값 ‘뚝’…국내 금값 3%대 급락 &nbsp;&nbsp; 남도일보",
-        "id": "bonds-7"
-      },
-      {
-        "title": "[채권/외환] 미 국채금리 급등·달러 19개월 만에 최고…트럼프 \"이란과 합의 필요 없어\"",
-        "publisher": "뉴스핌",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWeTFxcnBjNGxubGtReHVKQXk0LU8xb2hqTDZ1anlLZVN6T2VnZ1M5bXBKaHh5OXdmX1J0NVhQR1djMWlnbHRvb3lpajdjU05QTTBnRDhSQ3M0TWNp?oc=5",
-        "published_at": "2026-11-12T22:21:00+00:00",
-        "summary": "[채권/외환] 미 국채금리 급등·달러 19개월 만에 최고…트럼프 \"이란과 합의 필요 없어\" &nbsp;&nbsp; 뉴스핌",
-        "id": "bonds-8"
-      },
-      {
-        "title": "[뉴욕 금·채권·달러] 미 국채금리 5.12%·달러 19개월 최고…금값 2.88% 하락",
-        "publisher": "블록미디어",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCUzlabTBVbGs5M29OMExjemR5Y1RhSWJIREFmV1NSZDNfNW90SG16cVVuaVRBaXE4N2puNHdaVnNVTUVMRzYwZS1zSy05QUQzQWJ5ZklYbVc?oc=5",
-        "published_at": "2026-11-12T21:50:23+00:00",
-        "summary": "[뉴욕 금·채권·달러] 미 국채금리 5.12%·달러 19개월 최고…금값 2.88% 하락 &nbsp;&nbsp; 블록미디어",
         "id": "bonds-9"
       }
     ]
@@ -1224,74 +1231,38 @@
     "KR": {
       "items": [
         {
-          "symbol": "000660",
-          "name": "SK하이닉스",
+          "symbol": "005930",
+          "name": "삼성전자",
           "article_count": 8,
           "publisher_count": 8,
           "articles": [
             {
-              "title": "[온체인 주식선물] SK하이닉스, 정규장 종가보다 3.15% 할인",
-              "publisher": "토큰포스트",
-              "published_at": "2026-11-13T23:30:10+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2YmpKSnhWajJCSmd1djFDc1I3TzR3WVhYTkVVWXFnVUNZMHdkQ3Q3cm9qNlRaRjlRa3JNeldzYXBKUFUwNHZtZ2x6MzFBcEo2TU94UmI2YWRXajhIUFHSAV5BVV95cUxQNmJqSkp4VmoyQkpndXYxQ3NSN080d1lYWE5FVVlxZ1VDWTB3ZEN0N3JvajZUWkY5UWtyTXpXc2FwSlBVMDR2bWdsejMxQXBKNk1PeFJiNmFkV2o4SFBR?oc=5",
-              "id": "sn-kr-000660-0"
+              "title": "이재용, 모친 홍라희로부터 삼성전자 주식 2조6천억원 증여…증여세 1조6천억원 육박",
+              "publisher": "www.ppss.kr",
+              "published_at": "2026-11-14T12:43:03+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02NTRjVVFDMW0xb3NKd05HNTR6UTBpZmJvS1pOM3puUTV3QmlGRTktc2FUR3diWkZOX1U5S2FyME5oTFZjNHJGWEVacnpmOWZkUE5wdmthRGx3ZXBxbVFQRkV4Mk8?oc=5",
+              "id": "sn-kr-005930-0"
             },
             {
-              "title": "SK하이닉스 레버리지 투자 손실 사례, 개인자산 급감 경고",
-              "publisher": "Traders Union",
-              "published_at": "2026-11-13T16:28:28+00:00",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQM3FfWXV4a2NtMVQxZjMzUGpMQXpmSVlBVEdVdHk5UHR5YlNsQ1FxaTI0S29xOU11UFZrdm9WT1JQdlV5elRxYWNqT0JSR2RLRG1qS2lqcHJFaWNieTN3TDQzTVJ5WkU2ZDJfa29GVlotZEY5WllyOVA0NUFoakVFa3FENG8tMWx6N3M5M29pc3I?oc=5",
-              "id": "sn-kr-000660-1"
+              "title": "11월 2주차 삼성전자 주가 18만원대에서 20만원대 안착",
+              "publisher": "중앙이코노미뉴스",
+              "published_at": "2026-11-14T01:44:44+00:00",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZUGdxUlo4MHc5Zjd4RFlEVFZna3puZC1qckwzblAtMTJEa1BMemJuYlNiYWVyZFpxTXRJOEdBT3lSY2RkTFh0aFJOVFFWSGJ0Y1plNHFEejJsbVBPTEtPTTBHQ2hwc09OeW9ZY1VGc0RLQQ?oc=5",
+              "id": "sn-kr-005930-1"
             },
             {
-              "title": "[증시마감] SK하이닉스 3%·삼성전자 1% 하락 마감… 젠슨 황 스캔들·중국 연루 의혹 여파 지속",
-              "publisher": "CBC뉴스",
-              "published_at": "2026-11-13T15:15:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xTkFLTXRyZ2N2VUtyQ2dXNzlvYWl2VTlkcHJMdkd5aTV3VkdMMHlaRmlvZlRTbXBBcFd4R2h3V0pqMnllWmd0N0tESTFETXp4dm16bUFHbk43Z0lwQVpzaWRNSjQzX0Vs?oc=5",
-              "id": "sn-kr-000660-2"
+              "title": "이재용, 삼성전자 지분 1.99%…'2% 돌파' 변수는 자사주 소각",
+              "publisher": "조세일보",
+              "published_at": "2026-11-14T00:03:05+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KeXd5U09hNHBnRUp1SnhyeGlWazI4Y2g0R2xYUjc2eUs3TC1mUTY5WHMtUm5XbGZUSmFaUmVhSk9jQzJtTXg3X1RUaVg3Zk1DVzhwRmpCXzFTVS1zUVNN?oc=5",
+              "id": "sn-kr-005930-2"
             },
             {
-              "title": "SK하이닉스, 외국인 4700억 매도 폭탄에 3% 급락…반도체주 동반 약세",
-              "publisher": "산경투데이",
-              "published_at": "2026-11-13T08:08:30+00:00",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GSU9McjRVdi00TmsyY2hKOGl4SlYxVzJ3WEcyNndPS3lkd2MxcmJhZU0zSFRDdGZJUFR1SEdidkR1UmpTTnM0OVpMUWxCdkpRNVNYMDFTc0FOUFNmV0h6T1V5ZUhzWEoyYjA2a2FxMHXSAXRBVV95cUxNd0VzUm1LUXM3c1o0bHZ5aWhqNW94QkI5bXRMUmdZejdCNWg2MU1VVUxZSXcxUzJUcXpPbDBKX3luUERoRnBqcDREQnpWS0dWc3NuYndpbTIwNVhsWFM2aVBfZkxMbUVEZkVXQ0dFXy1Fd3RuUw?oc=5",
-              "id": "sn-kr-000660-3"
-            }
-          ]
-        },
-        {
-          "symbol": "005380",
-          "name": "현대차",
-          "article_count": 8,
-          "publisher_count": 8,
-          "articles": [
-            {
-              "title": "정무성 현대차 정몽구 재단 이사장 별세",
-              "publisher": "한국경제TV",
-              "published_at": "2026-11-13T07:48:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE14UUwzRWdmY19UTjNmUUZ2aWZTbHpsODN1aXE3QUU2Sm04VC1FRXVPcEhTN0VoT2wtbDJHTXF6ek44V2FtODIzUnVRY1U3YUJ1Y241cF9vd09UX0lGTURab0V0X1kwNkY4X0JzcDZPdzViMmVXYUFZ?oc=5",
-              "id": "sn-kr-005380-0"
-            },
-            {
-              "title": "현대차 주가 상승, 과매도 CCI는 매도세 소진 시사",
-              "publisher": "Traders Union",
-              "published_at": "2026-11-13T02:18:20+00:00",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPX2hHOE94Mk1QMDJJaFFIYmVnM2ZSMEpQZDhYa1NrWC1nbUhOTzluckRsT0gzYTgwTXRzMkVwMlBVekc5a3BTdmp3RVVWakZmQ2x6aU5sZ2ItVi14a3R4YWNjbzA2Z1JPV3l5ejJ0SjFMU09aeVF4RGNtTkNZX3hHVE5JZFl4a2FiSEMxZlZDUC1Zdw?oc=5",
-              "id": "sn-kr-005380-1"
-            },
-            {
-              "title": "[모닝 리포트] 현대차증권 \"삼성증권, 상대적으로 높은 이익 방어력\"…최선호주",
-              "publisher": "뉴스핌",
-              "published_at": "2026-11-12T23:21:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HOW52TnE1T0xyczBhejVTbFdSYUhua0dNODNDMUs5WXd3ZWlYZFhGZlhzdFFkektiTnR5cWFEOERrMGg2Zi1hRjJRSUJEX1BWTTZPdEp2cFJ5S19O?oc=5",
-              "id": "sn-kr-005380-2"
-            },
-            {
-              "title": "IBK자산운용, '현대차로보틱스채권혼합50 ETF' 11월 10일 신규 상장",
-              "publisher": "금융계",
-              "published_at": "2026-11-12T21:31:03+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BZVRRUEVZX0JaWHM3eHY3X05hRUNDNzdLeFRoMjdjV1pVdXhGODFQRDFhNWZjQmFNTFZVSGQ3cE9vTzd0QUlVSFFPdmpOWFpBQWZSU0tmcnduRUlyTDd1Qi1IbTNoajjSAWtBVV95cUxPUGxaY0tjcC1wZ0xhc2pMS01DdkVJVmJvTlk4Vy1uUUxZSjQtc0dsMllpcjBUNHFmdTc4d0UyWG14TlZNMWllc1N1OTIxaGhQazVpb0lQa2lXdXEtVm91MlVFSlpnSUJtalhtYw?oc=5",
-              "id": "sn-kr-005380-3"
+              "title": "“어머니에게 삼성전자 주식 2조6000억 받았다”…이재용, 증여세만 1조6000억?",
+              "publisher": "데일리25",
+              "published_at": "2026-11-13T13:41:56+00:00",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wc25DUkdkdThqTlhuTXVCZ1MyNlo0ZEtzQkR1Ny1HOWNLVnYwVnFLTy02QUc0czZiS3VEVGc2QU1Ick43WWpxOThsWVhrSFEtYkd5U000NGRYRkpxSlIzXzRUeHV3ZE9wMWFnUw?oc=5",
+              "id": "sn-kr-005930-3"
             }
           ]
         },
@@ -1302,68 +1273,104 @@
           "publisher_count": 8,
           "articles": [
             {
-              "title": "네이버, 3분기 잉여현금흐름 -1510억원…증권사 목표주가 줄하향",
-              "publisher": "디일렉",
-              "published_at": "2026-11-13T08:34:06+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12SkdsZ0t3M3BlMEdJVHlZV3lrMkFSRWhGLWFCUjh5MkRHeV9NNUtBZ3IxNEdVaTFtbEVRTmJYYUNXZXNzNG14eWlXZFNnUDl1RzFMY3J0TUdFbmQxdjhUZkZ1MXoxZw?oc=5",
+              "title": "젠슨황 깐부 잃은 네이버…이틀새 주가 -11% ‘와르르’ [투자360]",
+              "publisher": "헤럴드경제",
+              "published_at": "2026-11-14T09:40:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NZmtOSEFvamNoMjY2d0xnemphMTBVOXZOdHpRb2FpSTY1Z2lORkxCZEFNQUl6QnRMZ29QcFBFS0ZCeWFUX2t6TGptbFE1MjloNjZERkFn?oc=5",
               "id": "sn-kr-035420-0"
             },
             {
-              "title": "네이버 주가, AI 투자 확대 속 영업이익 감소에 3% 넘게 하락",
-              "publisher": "Traders Union",
-              "published_at": "2026-11-13T05:24:18+00:00",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSjA3Qkk2LWV1MndrNVYzeFFZLUNTNHZGMW9URmRvYnlGT0Y4M2FZblRPcWZMNzJkT1BYbk5hTERJUEtQaHB3U3JJMDZ0TW9hbVVDUVJyYUhsTGswOTl6dTF2cm5rMHBTQVdxdVRpVFMwUnFBTWVFd3RJWDlfd2p5ZG5GX1k0SzQyMEl1QzNQemI?oc=5",
+              "title": "[증시다트] 네이버, 엔비디아 AI 팩토리에도 주가 키워드는 ‘수주·자금·수익성’",
+              "publisher": ":: 위즈경제 ::",
+              "published_at": "2026-11-14T08:14:56+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43UTFfTjY5SWlLUXRwM2FZVUk0MVZEOEdQdVdpQm5OSmFCa19WOS1lZ2hxUmRodnZ2RUstVG05YnJQVFhmc0w2M3RDeE9ULU5rRzdzcA?oc=5",
               "id": "sn-kr-035420-1"
             },
             {
-              "title": "네이버 목표주가 줄하향…AI 성장 기대에도 수익성 우려",
-              "publisher": "미디어펜",
-              "published_at": "2026-11-13T04:36:24+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ER242bHBSOEhCakFVZmEweWFGT1hQNTFVNG9BdVg2cDlwalhkUDBURjhnUE1iMTVtdXlBVzZWWUxlYW1jdy1tdWxhakh3MDdZcEVTMNIBWEFVX3lxTE1EVG9hQkRuZktrdmFTOW5xNDIwbzFJNnZYUW5kM2Q1M3p1aldjZlk1RHdFaXFrenVGeWRoY0ZqN3QyT3JSZm5WN2I1QUZlcEpaWkVHV1QxdVc?oc=5",
+              "title": "11월 2주차 네이버 주가, 17만원대 하락 마감",
+              "publisher": "중앙이코노미뉴스",
+              "published_at": "2026-11-14T01:47:11+00:00",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1sWWlqOEpnbllGRXR3d2JZZ1ktR3dwb2NBNGdQaWo4OWhBQ0lPeVlROVA1VG9hRWV6cVJ2U0JyY0wyeURxT2lKM3RTbTE4SWxMdHZCdGR6cDhwVmktRGpFb2lFLWhUNXc4R0t1NG01Vmtndw?oc=5",
               "id": "sn-kr-035420-2"
             },
             {
-              "title": "메리츠證, 네이버 목표가 27만원로 하향 \"투자비용, 이익하락으로 나타나\"",
-              "publisher": "매일일보",
-              "published_at": "2026-11-13T01:57:38+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1wNnJtbnNyNGJUdHdFVWJESzNJdWs1dVg0eVh5ZktLVmtraW9BdWR1MnBLandPcUFSbmJOT2VtQXU0QW9GVWtfNGtibmNuUno2UXBsSG1NRkJ2OGJhS3ZHVzB2YUE?oc=5",
+              "title": "[증시분석] 네이버 목표주가 28만 원 유지… \"플랫폼 본업 수익성 둔화 우려\"",
+              "publisher": "CBC뉴스",
+              "published_at": "2026-11-13T22:30:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zMFhLQkNJdVFmaVpDWnZtUVJ6NmlhT3dBTDYyM0tnWWtOTmd0N0pyVFBuVmdGb1ZSZy1wTk00RlI3TWNCeEtucDVnQ1c3cTlwNWFrNUVDXzZZN3laZ1ZsNjR1UUlCYkdk?oc=5",
               "id": "sn-kr-035420-3"
             }
           ]
         },
         {
-          "symbol": "005930",
-          "name": "삼성전자",
+          "symbol": "000660",
+          "name": "SK하이닉스",
           "article_count": 8,
           "publisher_count": 7,
           "articles": [
             {
-              "title": "이재용, 삼성전자 지분 1.99%…'2% 돌파' 변수는 자사주 소각",
-              "publisher": "조세일보",
-              "published_at": "2026-11-14T00:03:05+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KeXd5U09hNHBnRUp1SnhyeGlWazI4Y2g0R2xYUjc2eUs3TC1mUTY5WHMtUm5XbGZUSmFaUmVhSk9jQzJtTXg3X1RUaVg3Zk1DVzhwRmpCXzFTVS1zUVNN?oc=5",
-              "id": "sn-kr-005930-0"
+              "title": "[온체인 주식선물] SK하이닉스, 정규장 종가보다 5.09% 할인",
+              "publisher": "토큰포스트",
+              "published_at": "2026-11-14T23:30:14+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nNVJzM2oxcW5wV2pJX1FlUXNiS281VzJ2Z2JhSkMtcWYwRGxSZGR3M2Ruc2Z5c0paZlV3dEFNeWpWa1Z5SGZXdHM2QUt2dS1URC1ZdmxhN3TSAV5BVV95cUxOcE1HR05jdWcwSURabUNOV19kTFFjYnNFUjljRFpqZDNHY1RxMmUySnZtV09XUHFITjNXYW5XVENwLUVKRzBPcFduN0JfWlE3ZDZmaV9QcVVaUlRRdXhn?oc=5",
+              "id": "sn-kr-000660-0"
             },
             {
-              "title": "“어머니에게 삼성전자 주식 2조6000억 받았다”…이재용, 증여세만 1조6000억?",
+              "title": "삼성전자·SK하이닉스에 몰린 빚투…과거 평균의 4배 넘는 위험 신호",
+              "publisher": "핀포인트뉴스",
+              "published_at": "2026-11-14T22:39:41+00:00",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9oWjdRelpjNzFFTXBPN3hsMUdhdG1weTFWbkMxVTE1WDVzckFjQWtRSXZhdG5vR3Yza0E0WEZnNWx6dTBwVXItZlZjX016UDRmem1kdWVKaXJmWEtaaFVESXFMY1VJSHVjdGM3X3p4WjlWR05FS0pF0gF3QVVfeXFMT2haN1F6WmM3MUVNcE83eGwxR2F0bXB5MVZuQzFVMTVYNXNyQWNBa1FJdmF0bm9HdjNrQTRYRmc1bHp1MHBVci1mVmNfTXpQNGZ6bWR1ZUppcmZYS1poVURJcUxjVUlIdWN0YzdfenhaOVZHTkVLSkU?oc=5",
+              "id": "sn-kr-000660-1"
+            },
+            {
+              "title": "“10년 모은 4억이 1억 됐다”…SK하이닉스에 베팅한 30대의 눈물",
               "publisher": "데일리25",
-              "published_at": "2026-11-13T13:41:56+00:00",
-              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wc25DUkdkdThqTlhuTXVCZ1MyNlo0ZEtzQkR1Ny1HOWNLVnYwVnFLTy02QUc0czZiS3VEVGc2QU1Ick43WWpxOThsWVhrSFEtYkd5U000NGRYRkpxSlIzXzRUeHV3ZE9wMWFnUw?oc=5",
-              "id": "sn-kr-005930-1"
+              "published_at": "2026-11-14T16:30:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5tU0VDMkxIMkxGYmFZMWdqQ2s0djlxc3F5VUQtZW93YWtFMlI0Zm9RSkpmOFlhc2RwM0J6Rm01c0V3OGJ4ZWx6ZVZ0ZWdQN3hWVlllQVhzM0tpNElIQTlwczNnYUNOTVdNVHo0Rw?oc=5",
+              "id": "sn-kr-000660-2"
             },
             {
-              "title": "이재용, 삼성전자 주식 1,115만8,000주 증여 완료… 증여세 1조6,000억 육박할 듯",
-              "publisher": "한국일보",
-              "published_at": "2026-11-13T09:06:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1tM0ZweTBmaWEwaXNnU1F2OVRRYkF5U1dKN3V2a04zeDI5YjVnY1EwT0w5Q0pDWGhxZGNBVmpHcTdBOWVma1hoSEEtY0xuVUFna3BhRFRJZTlYXzNYbTBtcklXYzRqZzgwcVdoQkp1cGhIczDSAXNBVV95cUxNbTNGcHkwZmlhMGlzZ1NRdjlUUWJBeVNXSjd1dmtOM3gyOWI1Z2NRME9MOUNKQ1hocWRjQVZqR3E3QTllZmtYaEhBLWNMblVBZ2twYURUSWU5WF8zWG0wbXJJV2M0amc4MHFXaEJKdXBoSHMw?oc=5",
-              "id": "sn-kr-005930-2"
+              "title": "SK하이닉스, 52주 고점에서 59% 하락…121만 원대는 기회일까요?",
+              "publisher": "네이버 프리미엄콘텐츠",
+              "published_at": "2026-11-14T02:49:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRlRKU3RFbWtnclJpQTUyX2ViOHVvSHVMTUhRVXVJNlpzSHN5Qk55Z1I2cHh2WmRkbDg1Z1ZLdl9OT0MtMXQzV203VEJtSE5uSC1JR2gtOV9mSk9iNWNZSHA1cU01Ny15SU1FUmdjNDhsTDlPTDZHdjgyNVphMFpmSXo4LS1CbjIxUUI3NUNUbmdvOTQy?oc=5",
+              "id": "sn-kr-000660-3"
+            }
+          ]
+        },
+        {
+          "symbol": "005380",
+          "name": "현대차",
+          "article_count": 8,
+          "publisher_count": 6,
+          "articles": [
+            {
+              "title": "고려아연 2심 역전승…현대차 측 신주 5% 지켰다",
+              "publisher": "자본시장뉴스",
+              "published_at": "2026-11-14T03:30:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13b2owY0VzUWVjOTB5Tzc3LUFiRHk5T25rVl9MOUJRcUs1eWhydHV4V1VrQmFGUm85MGpvTzFRNG5Ya3lKU2xnVnVINWFyMDBia3NpQlA0c2xhZld3blNBWFJNYU9DalE?oc=5",
+              "id": "sn-kr-005380-0"
             },
             {
-              "title": "이재용 회장, 삼성전자 지분 1.75% 증가…홍라희 여사증여",
-              "publisher": "매일일보",
-              "published_at": "2026-11-13T09:04:29+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JYWZKZlB3ZEU3OXU2eER5ZXlDcjNsSWdMaEhPaUpGbE5HUUExak1neURaRnJCakMyNUE3TGJDamtGQVFhOGZ3MV9SVmhUVG1OcU1ONWh4eG1UaWk0THEzcGRZWko?oc=5",
-              "id": "sn-kr-005930-3"
+              "title": "최근 5거래일 현대차 주가 27만원선서 변동성 확대",
+              "publisher": "중앙이코노미뉴스",
+              "published_at": "2026-11-14T01:50:58+00:00",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE04LWttQkdKUVBlLWF0a2xsTFFVT0h2aXh4SVhxRjZvR2wwNXR1SGdKRkZHYVozNzUtV2ctOS1md0NENGJaTDJuSVJJMS1oNGFYOWlKaXp5b0JzZnN2dlF1U18tTEotUENNNk4xc0lwYUZDdw?oc=5",
+              "id": "sn-kr-005380-1"
+            },
+            {
+              "title": "삼성전기·현대차 로봇에 월배당까지…ETF 신상품 6종 뜯어보니",
+              "publisher": "더구루",
+              "published_at": "2026-11-13T15:00:51+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5IRzUzcDlJMDVWQk84TGNTTVBsMnE5Tm5XRHNTcDFlczlaR1gtblNWU2NIRGlPUmFuOXdxRDgxandWUUZzcjh5TXZQc3FNaFVtbFl3eUJBMXlLRE50RV9iUHFGcw?oc=5",
+              "id": "sn-kr-005380-2"
+            },
+            {
+              "title": "고려아연, 현대차그룹 지분 연계 신주 발행 적법 판결로 경영권 분쟁 우위 확보",
+              "publisher": "Traders Union",
+              "published_at": "2026-11-13T08:53:26+00:00",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONjh0MFBvSk9iRmpXNTBRN0V5cnZTcjVrajF3bEhMWkFjTUJnMTFLak1NQ1FBbG9Ya1hqMHd6T1RmOGFJX0dVaUdncUdIY1J3MHVBZm1Cb2cxczhBWWlPemZjTFZnbEpjLTB2c2JieWhOQlFCam56aHZsSWQ3TF9sZUN1T1o1ck1JaUtESDhKWWJMUQ?oc=5",
+              "id": "sn-kr-005380-3"
             }
           ]
         },
@@ -1371,40 +1378,40 @@
           "symbol": "034020",
           "name": "두산에너빌리티",
           "article_count": 8,
-          "publisher_count": 5,
+          "publisher_count": 6,
           "articles": [
+            {
+              "title": "두산에너빌리티, AI로 발전설비 고장 징후 감지…운영·정비 고도화 - 머니투데이",
+              "publisher": "머니투데이",
+              "published_at": "2026-11-15T00:52:56+00:00",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtdkI2REdudUZSa0lyX3pXazl2WTRfc2FQS2pUVnFlLUdJSElpUTdXeFlQaDlXUDJJNE00a0h3SGFfRk9NbUVNVERpYkhwUFFqUHhzLXkyWVFqTDdNUGhFZnFTemJiZnRYRDVzZtIBckFVX3lxTE5jbVdZeWNHdmJ3N1FYemYwY05QNDVPSWVELUFqdkRWdVBFSFczaXBsc2F1cW5QSkE3NjVNMG5GNlhtN1o3b3l6aUF4RmJEM3JQWEJOdndXSzBIZ1JaWTFJOFlZRVh0aEpCc0J0c1Z3WnR6Zw?oc=5",
+              "id": "sn-kr-034020-0"
+            },
+            {
+              "title": "국내 원전주 엇갈려…금화피에스시 4%대 상승·두산에너빌리티 소폭 약세·한국전력 9.9% 급락",
+              "publisher": "CBC뉴스",
+              "published_at": "2026-11-14T15:15:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1OYUE4b3AtemV6Vy03M0RJMXB1RWFzdU1meFNkSWI5bVNZaVBWVEF1VEJBalpxaVlGY1Q2Z19PRlowNldoclRpcnhPMGFzdFg3UUpGX3VPWWVXVThwUmZVOEZTSlp2Wl9o?oc=5",
+              "id": "sn-kr-034020-1"
+            },
+            {
+              "title": "두산에너빌리티 주가 최근 5거래일 52주 최저점서 반등",
+              "publisher": "중앙이코노미뉴스",
+              "published_at": "2026-11-14T01:49:59+00:00",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5vZUdlQW9fTXJtdGQtN3VjeFEwQmxxSTFZMTc2ZnFkMFNpczE3V1dRS1JRakJFV1dzdkxCQnFQYWZJSmhQZWFnOEF5UjVVY2ZOVl9nc0tsZEtRN3hjaHBhOHU5eTdUY2NCMWNJZVVBSS1QQQ?oc=5",
+              "id": "sn-kr-034020-2"
+            },
             {
               "title": "두산에너빌리티 주가, 장초반 강세 지키지 못하고 하락…주말 이후 흐름은?",
               "publisher": "CBC뉴스",
               "published_at": "2026-11-13T15:03:00+00:00",
               "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1WU3VCRm9TeURPTDRpVF9WM3I3T3hTTy1Va1M4RHdaaUM5NWp2Y0ZiZWxJWjhDd1dYNFNjNjA0c04wWFlTZmdMYVFDc1ZkdnpJdXNnSnMybjJoNHZjNF9CQmtDbzg5dEFW?oc=5",
-              "id": "sn-kr-034020-0"
-            },
-            {
-              "title": "공개적인 수상이 두산에너빌리티 주가를 뒷받침할 수 있을까?",
-              "publisher": "Traders Union",
-              "published_at": "2026-11-13T04:04:31+00:00",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUXRqSEtsY2Y0ek1MQmJRY1Nkc0JWMzd3QUYxX2ItcUVHX2VrQVM2OUNLOWdxNGRtbVJFX1hYZVRyQ1B6NWxZTlZwVGQxUld1aGRlbF8zNmlyVHhjZlJIVmczd3QtU0xzS1pyNXdPTmlEM05TQWFmQUgzdTVqLVBUbGx1eVFkanh3Z0tKSWtnek9SeEJXcFdj?oc=5",
-              "id": "sn-kr-034020-1"
-            },
-            {
-              "title": "“예측 정비 체계 고도화”…남부발전, 두산에너빌리티와 국산 발전기 모니터링 시스템 실증 착수",
-              "publisher": "매일경제",
-              "published_at": "2026-11-13T01:50:54+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vWFFoTzhnTmg0dE5Jd2xDLUtVNlhPbzMwQTEySzhTVllEendXcDhWZ2wtZ1pweUFaUk1Fc0dlZmUxd29VMFpnRTJWRndYaG44SWhFNFB3?oc=5",
-              "id": "sn-kr-034020-2"
-            },
-            {
-              "title": "890억 동반성장펀드 운영하는 두산에너빌리티…231개사 평가서에서 최우스 등급… : 기업·산업",
-              "publisher": "재경일보",
-              "published_at": "2026-11-13T01:49:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE95WlZaQ2Y5N2tKSDJCVFNZeElYYkQxSDFBLTBvVk9KUVBrWk1UYnIwcWFRRHFqSEszQjVMOWdmLVdHa19SckhBbjdqcw?oc=5",
               "id": "sn-kr-034020-3"
             }
           ]
         }
       ],
-      "as_of": "2026-11-14T09:57:28.142256+09:00",
+      "as_of": "2026-11-15T09:59:53.814608+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
@@ -1413,37 +1420,73 @@
     "US": {
       "items": [
         {
-          "symbol": "AVGO",
-          "name": "브로드컴",
+          "symbol": "AMD",
+          "name": "AMD",
           "article_count": 8,
           "publisher_count": 8,
           "articles": [
             {
-              "title": "젠슨 황 사임에 웃은 AMD·브로드컴, 하루 만에 주가 급락… AMD·브로드컴이 반사이익 봤다…엔비디아 사임 파장 지속",
-              "publisher": "재경일보",
-              "published_at": "2026-11-14T00:42:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBpMDVCcFdWS2YxMDRFekRwRF9fbXV0VTJRYlp0ekVDUXgyTjFzRlVYaTdVTDIzVEpRQmlGanZ6a3NRWlJud2M2dXZZWQ?oc=5",
+              "title": "AMD, 엔비디아와 격차 상장 이래 최대…실적이 분수령",
+              "publisher": "블록미디어",
+              "published_at": "2026-11-14T23:43:50+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnaWJpZThXcVhXZmFZNGFZUkl6RmhSS2pUUGZvVFN2aDZhRG4tN0NxdUdUUnpRMzRENFI0cnhlUUk5VTh3ejV0ZDlIaWVmTUZOQTg4QkFyLWE?oc=5",
+              "id": "sn-us-AMD-0"
+            },
+            {
+              "title": "2026년, 2027년, 2028~2030년 및 향후 AMD 주가 전망·예측",
+              "publisher": "LiteFinance",
+              "published_at": "2026-11-14T20:06:05+00:00",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80eWZFRnNSOWlqenpPSzBOemZldVE5emFwdDFxdk9mTkptdVE0QTczdjI1NTVsdjdqQzZ1dmZnSTZxTEk5X2NGRTdEWkFqa1JEeEpDdjFtTXhfcjZrdUhVY0UzSkR1OHpHSzhjTV93eE1OVk5lbHZHTElqREo?oc=5",
+              "id": "sn-us-AMD-1"
+            },
+            {
+              "title": "젠슨 황 몰락이 기회…“AMD·브로드컴 주목”[투자360]",
+              "publisher": "헤럴드경제",
+              "published_at": "2026-11-14T13:40:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83Yl9Nb25nM1VteGVfY3Z1dW9xRWlfTmdJa1lKdEZqTExuTk0tX0RabDFWd3ZySUJnRDlJQzBMdFpiZXoybGgtM0pBMHZKTGRqbWo3LXlR?oc=5",
+              "id": "sn-us-AMD-2"
+            },
+            {
+              "title": "주간 월가: 젠슨 황 퇴진에 AI 반도체 투자 판도 변화···AMD·브로드컴이 빈자리 노린다",
+              "publisher": "Benzinga",
+              "published_at": "2026-11-14T02:51:13+00:00",
+              "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPRkRzclpWZVdBdDlSNHZXRVppaTVmbGpfaXh1emFEZjdTRWozM2E3WS12QmRrdUdnMFF2dDRpM3Zld094ZEVXLXVyQ1UzSmY4UFRXckpYRXlERWpnR1hGUmU3cnhYRkhjaWNNcWlLRmVYNFh0RFZqQzVReG1hWEdxMzZia1pKajFSNFctSXlHOWdRTHFXTC03MkhIOWNlaTNwVEdKUlVIdkF4WHZJeUlwNVZXU21zX1dVbWRUbzB6R1FROUl0RGRiSXZycVdCenJoczRpZUYtT2JBSF9IYWVDSkV1TlJBQVdxQXFld1QySmFhMWpNYTVoaEsxWTBLbi1iYV9UcGF1bUk0MWVPWVh0QXhaYUpEM2poRnZqak5CdHlIUENSUXZHT05TNndBZm1YeWp0LU1YSzN3bGFhcy1QRXpVSXBoU0U?oc=5",
+              "id": "sn-us-AMD-3"
+            }
+          ]
+        },
+        {
+          "symbol": "AVGO",
+          "name": "브로드컴",
+          "article_count": 8,
+          "publisher_count": 7,
+          "articles": [
+            {
+              "title": "브로드컴 뛰자 같이 뛰었다…기판株 코리아써키트, 51% 반등 [이주의 Bull기둥]",
+              "publisher": "매일경제",
+              "published_at": "2026-11-14T13:53:51+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QNXdlc0c3WGlZc25WYW8wR0I2NGhVMlh1b2U5eEhGWWFLU2NNbXdaTHZmTldvNDBrOU5wRjdtSkN4dkNYYzFyWjJob01MY2JIbEE?oc=5",
               "id": "sn-us-AVGO-0"
             },
             {
-              "title": "브로드컴(AVGO) 목표가 595→398달러…AI 자금 조달 우려",
-              "publisher": "코인리더스",
-              "published_at": "2026-11-14T00:03:30+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBzSG1XWWQzTzU2T2QxbjFkR0RnQ0NfM3BMQnc3ZXBDcFJrMFM1YjVBZXAyZlJONGo2Z0xoV1FKYUE4eWNGalJIaDB3?oc=5",
+              "title": "젠슨 황 몰락이 기회…“AMD·브로드컴 주목”[투자360]",
+              "publisher": "헤럴드경제",
+              "published_at": "2026-11-14T13:40:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83Yl9Nb25nM1VteGVfY3Z1dW9xRWlfTmdJa1lKdEZqTExuTk0tX0RabDFWd3ZySUJnRDlJQzBMdFpiZXoybGgtM0pBMHZKTGRqbWo3LXlR?oc=5",
               "id": "sn-us-AVGO-1"
             },
             {
-              "title": "엔비디아, 젠슨 황 사임 여파에 1조달러 증발…브로드컴 5% 하락",
-              "publisher": "블루밍비트",
-              "published_at": "2026-11-13T23:28:31+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE41NGVfN1VMOVB1MS13UUdSQThBeHgzU0FYcldSVXJzaFVmRmNwdmVOQmdsVm52MkZlY01zUVNRdmY0eXc0X0QyNmZPNXJHcU94?oc=5",
+              "title": "주간 월가: 젠슨 황 퇴진에 AI 반도체 투자 판도 변화···AMD·브로드컴이 빈자리 노린다",
+              "publisher": "Benzinga",
+              "published_at": "2026-11-14T02:51:13+00:00",
+              "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPRkRzclpWZVdBdDlSNHZXRVppaTVmbGpfaXh1emFEZjdTRWozM2E3WS12QmRrdUdnMFF2dDRpM3Zld094ZEVXLXVyQ1UzSmY4UFRXckpYRXlERWpnR1hGUmU3cnhYRkhjaWNNcWlLRmVYNFh0RFZqQzVReG1hWEdxMzZia1pKajFSNFctSXlHOWdRTHFXTC03MkhIOWNlaTNwVEdKUlVIdkF4WHZJeUlwNVZXU21zX1dVbWRUbzB6R1FROUl0RGRiSXZycVdCenJoczRpZUYtT2JBSF9IYWVDSkV1TlJBQVdxQXFld1QySmFhMWpNYTVoaEsxWTBLbi1iYV9UcGF1bUk0MWVPWVh0QXhaYUpEM2poRnZqak5CdHlIUENSUXZHT05TNndBZm1YeWp0LU1YSzN3bGFhcy1QRXpVSXBoU0U?oc=5",
               "id": "sn-us-AVGO-2"
             },
             {
-              "title": "엔비디아, 델타항공, 브로드컴 外",
-              "publisher": "마켓인",
-              "published_at": "2026-11-13T22:36:50+00:00",
-              "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5PMzRLVmVWeHVOcEwwd1lRN1B2Y25la1VPRDhCQ2ttTXIwZl82ZGhybzRkQ0JLNFgyN2JzT1ZRX0U1cWZwWTRMZFkySl9BMnVaV21fc1hrT3FrWGFmelhjQXZFWVJ3dlFSUE92bGVsblhYcHM?oc=5",
+              "title": "엔비디아발 충격 확산…AMD 8.75%·브로드컴 4.76% 급락 : 금융",
+              "publisher": "재경일보",
+              "published_at": "2026-11-14T01:17:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9iaXU0VjdtLUNDTGdFZWV4QVM1NFk2SFVpWFZ0QzF6MEJaY2FJUnF0ZmdsZDJlMkhLWEtlb00xdDJiSUNrSGh1U2ZWZw?oc=5",
               "id": "sn-us-AVGO-3"
             }
           ]
@@ -1452,71 +1495,35 @@
           "symbol": "NVDA",
           "name": "엔비디아",
           "article_count": 8,
-          "publisher_count": 8,
-          "articles": [
-            {
-              "title": "엔비디아 실적·앤트로픽 상장·연준 긴축 신호 한 주에 몰렸다…코스피 5200~6000 전망",
-              "publisher": "마켓잉크",
-              "published_at": "2026-11-14T00:43:28+00:00",
-              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XNkhreXZxeVJFaWdQQi1RTHhseEs3dWl1Nzl0eTZuaTFCVTRrMTNfRHFQdm1ZTzNmU3IxQm9TblFFaXJVNTVGb1g3MkpyX2dFb0twaUZMUHRTTkJTRDJnODZtUkFQZGVwUlJXMHY1bw?oc=5",
-              "id": "sn-us-NVDA-0"
-            },
-            {
-              "title": "뉴욕증시 혼조 마감…엔비디아 2% 하락·반도체주 약세",
-              "publisher": "KBC광주방송",
-              "published_at": "2026-11-14T00:32:01+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xWXlaeGgyQnNYeVh0X3VOZVhRZERmRGoyd2pjUXRrVmp5SlkzT2VDdHU1ZWdCQlc1R2NOUXlWZVNjODZuLUhwMmkyOGdQbWJJZW9wZldIcjR3Qi1uVlJwbw?oc=5",
-              "id": "sn-us-NVDA-1"
-            },
-            {
-              "title": "흔들리는 AI 중앙은행, 엔비디아 [박상현의 경제수다]",
-              "publisher": "한겨레",
-              "published_at": "2026-11-14T00:30:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHWTZFckI3ZU5jcjhUOUdZNExUc215YjRJdllJR011VVNEdzQ4YWw0c1BKcnBOU3Y1MzJmeWFHdUFDRXZTbHk4R0oydXRCaHlIeDh5R0puNUtzXzBfYUVwVFZRSFUxclk?oc=5",
-              "id": "sn-us-NVDA-2"
-            },
-            {
-              "title": "'젠슨 황 쇼크'에도…서학개미, 사흘간 엔비디아 6489만달러 순매수",
-              "publisher": "블루밍비트",
-              "published_at": "2026-11-14T00:05:11+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE80eVVLa1d0MXFGZXk1b0JacVg4UWRqOXNuT3AzSTJvVm04cTNyREJHUWxrc0dDNlU2eEhqbm9WMkdHQlEwN0x1aGVMN214dXBT?oc=5",
-              "id": "sn-us-NVDA-3"
-            }
-          ]
-        },
-        {
-          "symbol": "AMZN",
-          "name": "아마존",
-          "article_count": 8,
           "publisher_count": 7,
           "articles": [
             {
-              "title": "아마존닷컴(AMZN)은 AI를 통한 현금 흐름을 바탕으로 주가를 계속 정당화할 수 있을까?",
-              "publisher": "Simply Wall St",
-              "published_at": "2026-11-13T13:21:37+00:00",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZnA2bWxDaUM0WGVUeEhwTTZFQzdxZnlLQ1RsTzNNZ1l5ZW5ROGFrS2x6QU5INDhySElRWjI1ZGRBNjI5ZE1uQ0kyWldaN1ExMmx1UjhMVlplZkF5ZlN2eGpiYW5KUWpBblFtUVFhSVZPVFJBZW1VYmpnSmdIek1SNUhXTmJzMzhmblh3akhB0gGTAUFVX3lxTE5WQXMxeDBJNG5POFZqZmV5ZGd1QnJab2MyWkVrNmpkWmFVVTZJa3NrSnFCQ0x1dkhsS0tIZ1BoMFpuemFQdE5KVUtMSVdkd3FCVjUzOHJaRllEOHNhWmNlSTJHbFlxRE5YTGdRNmd2M1VUVXpwQXlxMHhPNzdGUng4WEhXZWt2Qnp4QTdLbXN2RjBuaw?oc=5",
-              "id": "sn-us-AMZN-0"
+              "title": "[김이코의 기업분석]젠슨 황 빠진 엔비디아, 어디로 가나",
+              "publisher": "미디어펜",
+              "published_at": "2026-11-15T00:34:31+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Zd3RKSkJ0Z09XQkhjLUtxLWhkN2Nzc0d2Y3U4R0RZdmtVY2ZqY3lqNEdpd21IbURtT01hSS04enpOLVduZHVZdmhkSGdNWkUxcHkzRw?oc=5",
+              "id": "sn-us-NVDA-0"
             },
             {
-              "title": "아마존 주간 주가 전망: $273.35 저항선에 막혀 추가 상승 제한, 회복 흐름은 유지",
-              "publisher": "Traders Union",
-              "published_at": "2026-11-12T14:19:31+00:00",
-              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPV3FRS3luZE1tZTVBQmxrU0FDWEJTNTUxTHdVMDZudjBsZUZQQ2dJTEh3dFJSVHFkLXRZcDFQMWMtYTRvdFFwenFGbWJfdFRtYW9mWU05bkIzTncyLXdfSXdiNm5qWHRYWlg4V1ZnNkp1STljSWJQUWRPUWhGazZRblBZMFU3MUR0QXFCV2dBWVk?oc=5",
-              "id": "sn-us-AMZN-1"
+              "title": "[서학개미 생존공식] 엔비디아(NVDA) 1,000억 순매수… 코인 급락 속 실적 시험대",
+              "publisher": "코인리더스",
+              "published_at": "2026-11-14T23:47:43+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1udi1nSlgtbC00a2hxTURyNnM2SHhBanhCU0hWaWh6ckt2X1NIZi1mdEZyM3ZicUhUX3ZPN0g0Z3E0VEd5OHVmWU9R?oc=5",
+              "id": "sn-us-NVDA-1"
             },
             {
-              "title": "DoorDash Sinks 10% in a Week as Amazon Gives Prime Members Free Uber Eats Delivery",
-              "publisher": "TIKR.com",
-              "published_at": "2026-11-12T13:52:30+00:00",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObjd1eElJRHJWSGhvOVJacWExZGpQby01OEtsTkltZjhCM183NTlOU1BKeDVMb25OV25LaHNXYXUyM2NxVEJpQ2JZRFhoTFhjaFVvb09XdF90SGxNRlNXcElYMlhyNmVDRFMzNDJ1X2V2V3Bnd1k5N05UMUhKNFRLUVluZlZ2Uk1KZk5rTU9vVTRVQlBjZzlNZ2xjdTFIV0JqZnpCT2ZEUmNrZ3QxVG1z?oc=5",
-              "id": "sn-us-AMZN-2"
+              "title": "[젠슨황 퇴진] 트럼프, 반도체 수출통제 풀어주고 엔비디아 '주식 매집' 뒷말",
+              "publisher": "파이낸셜포스트",
+              "published_at": "2026-11-14T23:21:01+00:00",
+              "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zbW5DRmhyNEgyYUNtUy1KcEN3cXRlaUlEZS1XaTlfTFZDdlNXZHY1WWduZ1BVQ1U3VHZRNkNhYVFIV2E5N0xRLVY1YjEtVTk0R3IwazlWdjMxNl9STmU0SWZlQUkxTDNpYzJpSlIxWWl3d1g4?oc=5",
+              "id": "sn-us-NVDA-2"
             },
             {
-              "title": "아마존 주가 전망 2026: AWS와 AI가 이끄는 상승 여력 분석",
-              "publisher": "Mitrade",
-              "published_at": "2026-11-12T08:00:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU0FTdkI5VGhpSGlVNXhnbWhwZXk3SW9JREtsZ1U1ZElFOVplcHBTMG4xejIxUzk2NDVseEZMeUk2S09Qc3NNQ2dpMXRiTjl5Z3ZjQlByQU5JTXhPR2U2bDU2aGxETUQyaXVFTjFsSjRNQktWMFg3OFJUaWFtbEpQMzFtSE01QQ?oc=5",
-              "id": "sn-us-AMZN-3"
+              "title": "젠슨 황 엔비디아 복귀하나…머스크도 서명한 11만 명 청원, 이사회 움직일까?",
+              "publisher": "코인리더스",
+              "published_at": "2026-11-14T23:06:00+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9PWmJqX09NRDdqYlVIVVJDYWRWS2dHdGZhOFM2YXV5MmEzaGtRaF9vS3Azd3E2U1hJVmUybTB3MGxyNW9aUGpKdlRR?oc=5",
+              "id": "sn-us-NVDA-3"
             }
           ]
         },
@@ -1524,34 +1531,34 @@
           "symbol": "GOOGL",
           "name": "알파벳(구글)",
           "article_count": 8,
-          "publisher_count": 7,
+          "publisher_count": 6,
           "articles": [
+            {
+              "title": "엔비디아, 애플·구글·우버와 다른 33년의 승계 위기",
+              "publisher": "OBC 뉴스",
+              "published_at": "2026-11-14T02:15:42+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Xb080WmtmTVBtTVZ0SFMzbDBTdTdGYlBEN2FZOE5adFhWVlJqd1YzLWpVVHI1YUZQT3cwaWxWUTdfUTgzdGxPcUpFZm5ZaWJmR0Q0czdKOTJ1WVRxaE9jbEhBaHJyd3lHd3c?oc=5",
+              "id": "sn-us-GOOGL-0"
+            },
+            {
+              "title": "알파벳은 아시아 채권 발행으로 확보한 신규 유동성을 바탕으로 글로벌 시장 변화에 대응할 수 있을까요?",
+              "publisher": "Traders Union",
+              "published_at": "2026-11-13T18:04:26+00:00",
+              "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVjdEZkhiQ2dfNE1qY0Q3VEl0aHZFS3M3ZFFwSHlla2JpMVF3TFRMOHhaaVVCVC1idzhhNTk5SmNtQWtjcGtNQzd5bVN0RjFPX0lEUnd0LThmd0tpYnBaVEduQ3NDdUpib2Q4QW4zNXB1RklMbkhvS3BsbVlEY3lIOXBuVU0zQkZZQUE?oc=5",
+              "id": "sn-us-GOOGL-1"
+            },
             {
               "title": "구글 주가 300달러 회복…320달러 저항선은 여전한 과제",
               "publisher": "Traders Union",
               "published_at": "2026-11-13T14:38:25+00:00",
               "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRkNWdnJKckVMMG1OWW52UE9pcUFsYmpIcHBjclRJMmFoM29KZUZhalphZEdiZHN6WUNEN3hCOXVDU21ySlhkUk5UYmtROUs4ci1XVG5Wd3BWdXJ6cnNCRzliOFpHeV9XZUNkYV9iamFYYWRyVzhhaFQ0b2d2TkE5dkdTaElWUQ?oc=5",
-              "id": "sn-us-GOOGL-0"
-            },
-            {
-              "title": "AMD·브로드컴·구글…제2의 엔비디아는?",
-              "publisher": "채널A",
-              "published_at": "2026-11-13T10:17:00+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CbWxoZkE3T3BLekdqYzQtSHdKSklCaWVUSHpkYjV5TjBIZ2pKdE9WMFk2dVFPd0pKOXlzdm9nYllWWGdXc2N2SDRSUzd1SGtfYjgtNHNWUDRUYm11SVHSAWNBVV95cUxQYy1uSzg0d2x4RnY0QjJob3cwNFBnMGJSREZRbHlXcVJicWYxWGRNQ2VTMVZ6S0hCbGE5QU94UExnaE1uVk55cHpNUklKbzI0Z3Uyb0JQeDhWOW1vR3RjeUNBZHM?oc=5",
-              "id": "sn-us-GOOGL-1"
-            },
-            {
-              "title": "구글만 웃고 나머지는 무너졌다…알리바바 레딧도 급락",
-              "publisher": "핀포인트뉴스",
-              "published_at": "2026-11-12T23:58:23+00:00",
-              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wM1IyQlBGVWJKa1MzR1JSaWhKOXM3c3RpdjJ3ZTZfLU1aUktGRnc5RktqSlJickxZTG1VTGZzbzVaQXNGVjVWbnAwTW9ZdE5OdGIxalI3WlQtR2JFREg2cGQwM2ZCRE90S2h2X25EdS1La3hKV3BJ0gF3QVVfeXFMTTAzUjJCUEZVYkprUzNHUlJpaEo5czdzdGl2MndlNl8tTVpSS0ZGdzlGS2pKUmJyTFlMbVVMZnNvNVpBc0ZWNVZucDBNb1l0Tk50YjFqUjdaVC1HYkVESDZwZDAzZkJET3RLaHZfbkR1LUtreEpXcEk?oc=5",
               "id": "sn-us-GOOGL-2"
             },
             {
-              "title": "[美증시 특징주] 조정장서 구글 알파벳 돋보인 강세…엔비디아 혼란땐 수혜 기대",
-              "publisher": "미디어펜",
-              "published_at": "2026-11-12T20:40:14+00:00",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4OEFSeDhtMnFXRDR6bE4wczRzWVN2NzhtUzh3X1RSQ20xcE1pTkhscHNFTHhwZFpsN1BCUExXSzZScmNfLUN6Q3dQZHl6S1o3cGREZFBtdXrSAVhBVV95cUxQODhBUng4bTJxV0Q0emxOMHM0c1lTdjc4bVM4d19UUkNtMXBNaU5IbHBzRUx4cGRabDdQQlBMV0s2UnJjXy1DekN3UGR5ektaN3BkRGRQbXV6?oc=5",
+              "title": "알파벳 주가 전망: 상승 모멘텀 속 $307.95 저항선까지 상승 목표",
+              "publisher": "Traders Union",
+              "published_at": "2026-11-13T14:35:52+00:00",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYUEya3UtTWpKcTlwMExPcEU2bFRJc2tqaTd5QkxrNUVsblFnbnI1VGIza05Ob25XQ012Q1l0MWlucUtqa2QzcFZwYlBjN2FCNXFOUzJpc0Zzcy1lTE5zTXJsNjBCZk0zS2JSX3dwcDVIMXptaFhfWFpGRzVUb0IwZEtHRjdfRHA2N2M1X0VlM0tPQ05vUEJSZw?oc=5",
               "id": "sn-us-GOOGL-3"
             }
           ]
@@ -1560,7 +1567,7 @@
           "symbol": "MSFT",
           "name": "마이크로소프트",
           "article_count": 8,
-          "publisher_count": 7,
+          "publisher_count": 6,
           "articles": [
             {
               "title": "[美특징주]마이크로소프트, 전 세계 70여개국 서비스 장애에도 강보합 마감",
@@ -1593,7 +1600,7 @@
           ]
         }
       ],
-      "as_of": "2026-11-14T09:57:28.142256+09:00",
+      "as_of": "2026-11-15T09:59:53.814608+09:00",
       "status": "ok",
       "method": "최근 72시간 기사 수·서로 다른 발행처 수; 지정된 후보 9개 내 비교",
       "candidate_count": 9,
@@ -1831,11 +1838,54 @@
           "eligible_for_direction_check": false
         }
       }
+    },
+    {
+      "forecast_date_kst": "2026-11-15",
+      "captured_at": "2026-11-15T10:01:01.049489+09:00",
+      "ai_model": "gemini-3.6-flash → gemini-3.5-flash",
+      "review_status": "completed",
+      "evaluation_horizon_trading_sessions": 5,
+      "horizon_note": "기록 기준 5거래일(약 1주)은 향후 비교를 위한 운영상 정의이며 원문 분석 기간은 별도 보존함",
+      "forecasts": {
+        "stocks_kr": {
+          "direction": "하락 우세",
+          "confidence": "보통",
+          "original_horizon": "1주일",
+          "benchmark_id": "KOSPI",
+          "benchmark_as_of": "2026-11-13",
+          "benchmark_value": 5290.53,
+          "benchmark_source": "Yahoo Finance",
+          "baseline_status": "recent_observation",
+          "eligible_for_direction_check": true
+        },
+        "stocks_us": {
+          "direction": "하락 우세",
+          "confidence": "보통",
+          "original_horizon": "1주일",
+          "benchmark_id": "NASDAQCOM",
+          "benchmark_as_of": "2026-11-13",
+          "benchmark_value": 25136.27,
+          "benchmark_source": "FRED / Federal Reserve Bank of St. Louis",
+          "baseline_status": "recent_observation",
+          "eligible_for_direction_check": true
+        },
+        "bonds": {
+          "direction": "하락 우세",
+          "confidence": "보통",
+          "original_horizon": "1주일",
+          "benchmark_id": null,
+          "benchmark_as_of": null,
+          "benchmark_value": null,
+          "benchmark_source": null,
+          "baseline_status": "not_scored",
+          "eligible_for_direction_check": false
+        }
+      }
     }
   ],
   "forecast_archive_summary": {
-    "saved_days": 5,
-    "latest_saved_date": "2026-11-14",
+    "saved_days": 6,
+    "latest_saved_date": "2026-11-15",
     "current_run_archived": true,
     "note": "AI 예측 시점의 최초 기록을 유지합니다. 실제 결과·적중률은 forecast_accuracy_summary에 별도로 계산합니다."
   },
@@ -1849,19 +1899,33 @@
         "scored": 0,
         "hits": 0,
         "accuracy_pct": null,
-        "pending": 1,
+        "pending": 2,
         "excluded": 4
       },
       "US": {
         "scored": 0,
         "hits": 0,
         "accuracy_pct": null,
-        "pending": 1,
+        "pending": 2,
         "excluded": 4
       }
     },
     "recent": [
       {
+        "forecast_date_kst": "2026-11-15",
+        "topic": "stocks_us",
+        "status": "pending",
+        "reason": "5거래일 미도달 (0/5거래일 관측)",
+        "evaluation": null
+      },
+      {
+        "forecast_date_kst": "2026-11-15",
+        "topic": "stocks_kr",
+        "status": "pending",
+        "reason": "5거래일 미도달 (0/5거래일 관측)",
+        "evaluation": null
+      },
+      {
         "forecast_date_kst": "2026-11-14",
         "topic": "stocks_us",
         "status": "excluded",
@@ -1920,15 +1984,15 @@
       {
         "forecast_date_kst": "2026-11-10",
         "topic": "stocks_us",
+        "status": "pending",
+        "reason": "5거래일 미도달 (4/5거래일 관측)",
+        "evaluation": null
+      },
+      {
+        "forecast_date_kst": "2026-11-10",
+        "topic": "stocks_kr",
         "status": "pending",
         "reason": "5거래일 미도달 (3/5거래일 관측)",
-        "evaluation": null
-      },
-      {
-        "forecast_date_kst": "2026-11-10",
-        "topic": "stocks_kr",
-        "status": "pending",
-        "reason": "5거래일 미도달 (2/5거래일 관측)",
         "evaluation": null
       }
     ],
