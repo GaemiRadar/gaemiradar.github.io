@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-15T22:57:37.446081+09:00",
+  "data_updated_at": "2026-11-15T23:49:35.547172+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T22:57:37.446081+09:00",
+      "fetched_at": "2026-11-15T23:49:35.547172+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-15T22:57:37.446081+09:00",
+      "fetched_at": "2026-11-15T23:49:35.547172+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -99,45 +99,45 @@
         "id": "stocks_us-0"
       },
       {
-        "title": "연준 AI 투자 과열 경고…부채·보증 3조 달러 넘나",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THNYMVRxbXE1NUcza2tBSHBTUG9sMTVoNXRwYjJJMEFUaTh2bms4cVhCc2Q5UDhZUnhQRXp3NGlrcGUtdE1YTzJzWGJmUk93RG9GaXBnb1YxODJfRlpFLXFXY1pGLVk?oc=5",
-        "published_at": "2026-11-15T05:32:38+00:00",
-        "id": "stocks_us-1"
-      },
-      {
         "title": "미국증시 주간 전망, 엔비디아 실적보다 중요한 ‘투자 지속성’",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9uT3RmQ0c1eS1wWjczd1ZFbjZUX21lTzRGZ2ktZ2cwZlRjLW9oOGhUN1BrOTktS2ZBaFo0RVVRLWtibVVxQXh6RUswZzRqS0ljRGt1WmRfeW9uSkhlUDZJV1ZsOWJqZDJvNm1jNWQ0SVlqUQ?oc=5",
         "published_at": "2026-11-14T22:56:34+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-1"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-14T18:15:58+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-2"
       },
       {
         "title": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvVDRNVEd5enh2a1E2dURSbjR4blBsZDBPNDg2R0xaY3VXYzIwR2lIVXRCVUdMUnRRY3IwZHl1UXJJS0pDLWR1b1UzenNtWmJtYjdhOVJVRFlrNl9jRlR1MlItOW1qWlJsYWxKWkFhS1jSAXRBVV95cUxPZ1c1SHB1WlZtaFZYeldPNl9zbW9JbzhkcFVYZ2x5OU5aODVURUtveUIybGFBMmtpLWMzWVM4RkE4RjF3NDVwRXpDX1RQQkplUTlrbU11ZDVkNFZxRHE0dUhEUUUtVGdpWmdCSDItcmNfc2J5Zg?oc=5",
         "published_at": "2026-11-14T15:00:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
         "title": "이더리움, 8천 ETH 매도 후 1만 ETH 재매수로 3966만 달러 수익 (ETH, 58bro.eth, Hyperliquid, 3966만 달러)",
         "publisher": "민심뉴스",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92dTk1S29GSHR0R1F3ZzZSU2M2LWhyb1ZSa2xXTGsza1ltRXcxQ1RlZ0pUMkEyY2ZTa0lxaGxDOW5hbTNvNW5uMHRYakNGaVhwenlwY0lxOWF6cVA3VnNrV2xWc2xVVjNwQndvS2Nn?oc=5",
         "published_at": "2026-11-14T07:07:14+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-4"
       },
       {
         "title": "S&P 500과 나스닥 지수는 4주 연속 하락세를 마감했다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOTVjdXpBU3FWRFg5QVBtSGxfZkF3MW5Ia2Y5OUZIVkFQcVhPU3hDYUZvUFhHdnBpU1U4VWRpbFJDekpMNHEtOV9SYXBxRktvbC1PYkR6TmtHQTg5YkFxZklfOXh1OTR2SHZTdWNmNFNCWEtGQTExelBvUFRXczdIQlZUY2tvQQ?oc=5",
         "published_at": "2026-11-14T05:08:26+00:00",
+        "id": "stocks_us-5"
+      },
+      {
+        "title": "비트코인, 미국 증시 하락 속 투자 심리 위축 가능성은? (BTC, 나스닥, 금리인상, 증시)",
+        "publisher": "민심뉴스",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iX2Zzd3pRcF94RUxHTTRac2JXTUdpQzFodnAyeXlyM0cxOGNfRjFjVG5XYjRZbUxNblltUEc5TGQ5OUt2MHEzdjNLdFZMenFQRjdCN3prbG9fb2NDNnVmSllzQm9aZDBta1ZHX1lR?oc=5",
+        "published_at": "2026-11-14T01:29:21+00:00",
         "id": "stocks_us-6"
       },
       {
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "[APEC 정상회의] 통상·휴전 논의에 글로벌 자금 향방 촉각…환율·증시 변곡점 맞나",
+        "publisher": "아주경제",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EYTdmemJiMy1xdzc3US1JQWstWVlpTWFldHZESVZUbW90a3ZCdl82TGtlSlI3OElpcVg0cUNUT1pKY2d6YjEyajRuY0g2dWVoekNESnhpRmPSAVhBVV95cUxNRGE3ZnpiYjMtcXc3N1EtSUFrLVlZaU1hZXR2RElWVG1vdGt2QnZfNkxrZUpSNzhJaXFYNHFDVE9aSmNnemIxMmo0bmNINnVlaHpDREp4aUZj?oc=5",
+        "published_at": "2026-11-15T08:41:41+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "[채권-주간] 11월 금통위 직전 글로벌·외국인·주가 주시",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zd3Rnb3U3dVZPV0F4VVQyOGRTVVA1eS1EYUVBZ0s0NXllclNLNXp4YllkWVF6OFN1UFY1eVo2aGx1Q3RfdGk1ZTgxQlJlYUhmam9hYmZXUnBzUU1kYUpvUzFyRXR2UXIyc0hOTm9aVy1iUQ?oc=5",
         "published_at": "2026-11-15T04:00:01+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "\"코로나·금융위기 때보다 예측 어렵다\"…다시 치솟는 美국채금리",
         "publisher": "이데일리",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkV5QlUyYklVTzhkTWdQYTBMbzA2RGRpR0VfUmZvOUlOeERpaTBXX3lYdW82V0dIR2NXRm1tajlxOFphRUN1RU9kZW1lYjBWb1V5VWFYM3FlaGNTWTFXZlFxNHJRUUsxMVRzUTkwcW1qRmNHeUJ5SGhFdFZ0Mnk1aw?oc=5",
         "published_at": "2026-11-15T01:08:29+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "오늘(11월 15일) 금 시세: 국제 금 가격 급락, SJC 금 가격 온스당 350만 VND 하락.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkNkVTJseGZhaFJhUGlBaHdjUGdQWmRGX1prUnF5cEg2WGxlRGhOUm1adG8ybGZUQ1dWQi1zMVE0enZSQVZUQTIyYXQ3dFJwekhFQi1RTTBzUE8yWHVzazhWVERhSlhJUmZuY1R5RFBMWWthUHhjcjQ5RG9Pck5xYlJBc0gyVlljUFhzNmQ1ZThSLUZ4TS04X0ptcVBjR2ZHMGc?oc=5",
         "published_at": "2026-11-15T00:44:20+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-14T18:15:58+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "2026년 11월 14일 오늘 은 가격: 급격한 하락세를 이어가고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FY0R4dk9ZbkgtRW1XRG5CLXFicHczYUJDUHV0cE1ZM3FabWw2SWtuODRPVWZBUHlteERoalpNT0FDZXQybHZWQ2tGbzEtVGhYTVhTbUpkNjloRzctMGxRZHc4Z1BLU3dNc2c1RFVBalZRTFVvdm5sVw?oc=5",
         "published_at": "2026-11-13T23:51:58+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "[서학개미 생존공식] 비트코인(BTC) 6만 8,760달러로 밀렸다… 국채금리 5.15%에 나스닥 1.24%↓",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4zQmJVd2hOUERhZEt0ZXpnb09yRDVSbGNEdXhjUnJXZUFBaFdIQmVTbHVlRWJwUzMtLTBlb3BBUFpOZExDbE1ZbVhR?oc=5",
         "published_at": "2026-11-13T23:47:22+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "[뉴욕채권] 장기물 약세 속 베어 스팁…'깜놀' 없었던 PPI 효과 되돌림",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04ejJCclF5NzhHWWtwWkRmMGVKelNka1A4bWNua3pWemgzSkpEUUJYS0RSOGhweDFCdVA5REFaVU9kYTBsX1VwdHVQbUctbnVvaDk5NWZYTC00Z3k2N2N0QlFaMHA1c2xrOGw4cDNLNzQ?oc=5",
         "published_at": "2026-11-13T23:19:52+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[뉴욕마켓워치] 美 물가 경계 속 엔비디아 후폭풍…주식·채권 혼조·달러↑",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YYlY5T3ZoVDlPYjF1aWdfRnRTVjBSUV9YR1R5VmRFTnhfeUZHTFZycEtNQlZ1Q01NcEpiZFBjMTJsR3BlNksxeEozLUFaVjJHTWE3dVdxNmpXc3A3N0FrdGowWFI4dEZTa0NYc2REQWNxdw?oc=5",
-        "published_at": "2026-11-13T22:06:50+00:00",
         "id": "bonds-7"
       }
     ]
