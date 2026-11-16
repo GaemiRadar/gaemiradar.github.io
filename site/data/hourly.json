@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T00:10:45.599719+09:00",
+  "data_updated_at": "2026-11-17T01:45:20.476449+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T00:10:45.599719+09:00",
+      "fetched_at": "2026-11-17T01:45:20.476449+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T00:10:45.599719+09:00",
+      "fetched_at": "2026-11-17T01:45:20.476449+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -55,38 +55,38 @@
         "id": "stocks_kr-2"
       },
       {
+        "title": "외국인·기관 '쌍끌이' 매도 폭탄…코스피·코스닥 급락",
+        "publisher": "프리진뉴스",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JM0N3QmJvTVJhRFRCN0lLclJYNWdwNnJjSlZjMVpfckd6UHhYemdWR0FITXNaMEpjeWxwelp6cFZrMF96alViLUpVRFoySWxkblVCajlYd1lYX01TQlZTZkpZUWk2YlhBbHBRNkZiNA?oc=5",
+        "published_at": "2026-11-16T10:36:42+00:00",
+        "id": "stocks_kr-3"
+      },
+      {
         "title": "[오늘의 주목주] '반도체주 약세' SK스퀘어 주가 8%대 내려, 코스피 3%대 하락 마감 5100선",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZR2JDUGJrV25LaHVmT3NfOExMVWp5SEtCZDd3M29xWlVMMERMSmgxbXdNSGIwcHBnSjZudExEVW05VjUzVVF4bmpPdm1GbnVWZU82bnNDWFZxdWVhOFp3cnpYYzl1TXU1SGx4U1hYRmxEMHM?oc=5",
         "published_at": "2026-11-16T08:56:38+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[증시 오늘] 외국인 매도세에 코스피·코스닥 급락",
         "publisher": "빅터뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SdUNwQkw0YzJlRS1KUnJoZFdaOExNNTlzcHZxd0MxRzJBUEUzSlBEV3FRRDZJRTNLY3BSYmpBS0h4N1FXTV84N1RUQVBDM2xZVkJyOUIyaDBnUl9DN0tDcWdDRGFPcFk?oc=5",
         "published_at": "2026-11-16T08:40:09+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[마감시황] 외국인 1조 넘게 팔자 반도체 투톱 급락",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBmU0J6TVdGTEQ5eF9GZlFxVmRrLXhpTG5wUW9PazRIVjVjVnU0M1Q3UzR3d2Y1SDFvVm9qU3JZWVM1LTI0dHBjQnZreWliYU5yblJMc0lMQ0xBZkJFdDNHXzBhN21fTkE?oc=5",
         "published_at": "2026-11-16T08:00:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[오늘의 키워드] 정부, 수능 긴급 대응팀 구성…외국인·기관 동반 매도에 코스피 3.59% 하락",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xZ1BRU0dfOXhSZGxhOGk5LXFBRnNxTGlqWTlxVHNZdjZUSW5mbmZ5WGR1XzBiYW1ITUZhcU55OWJQNDQ0QzlqTmRrUC0xTm16TGtaMS13YVc5ZmZxdW5uT3lQSjFvWVNlcDkwY19pYw?oc=5",
         "published_at": "2026-11-16T07:54:12+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 16일)",
-        "publisher": "한국경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYajlCbHM2VVFaOUt4UFpsNTBjTkNDLVRTVTZWeE5kMXlrX1BBVnFyd1IxbGVXTG94cHhLb0Y1ZHpqZjlkQ2RDQi1SRGQydTdQYnZMaWhoUGtxZw?oc=5",
-        "published_at": "2026-11-16T07:52:01+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -134,17 +134,17 @@
         "id": "stocks_us-5"
       },
       {
+        "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
+        "published_at": "2026-11-16T01:35:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
         "title": "미국 S&P500·나스닥100 채권혼합 ETF, 올해 1조원 유입 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QUmtGUENCVTlHM0VxQUl0bGQ0R2tNZGJmUzN2b1VxdkgtcXZZZEdHTG1Ha2JYWmd6YXhYT2dPMEFDZ2IwOVpqNlJDOA?oc=5",
         "published_at": "2026-11-16T00:16:07+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "한투운용 '미국채혼합 ETF 2종', 올해 유입액 1조원 돌파",
-        "publisher": "뉴시스",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fdVFVWUd6WUFvdWo5RVlPbUdveGpRTC1EV0pxWmFCd1c1dmlZcXVVLXRObVEyaFFCR2ktY0pRWW5oMEhobWRNbTluRzJsN1h4WVQ0NWJKbVYwa0pMZ3ZSeVQxMmkxdFg5UXpab3Uwb2ppMTFJbjRWc9IBeEFVX3lxTE9fdVFVWUd6WUFvdWo5RVlPbUdveGpRTC1EV0pxWmFCd1c1dmlZcXVVLXRObVEyaFFCR2ktY0pRWW5oMEhobWRNbTluRzJsN1h4WVQ0NWJKbVYwa0pMZ3ZSeVQxMmkxdFg5UXpab3Uwb2ppMTFJbjRWcw?oc=5",
-        "published_at": "2026-11-16T00:00:33+00:00",
         "id": "stocks_us-7"
       }
     ],
