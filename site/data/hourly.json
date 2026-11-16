@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T06:54:07.624740+09:00",
+  "data_updated_at": "2026-11-17T07:52:53.628557+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T06:54:07.624740+09:00",
+      "fetched_at": "2026-11-17T07:52:53.628557+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T06:54:07.624740+09:00",
+      "fetched_at": "2026-11-17T07:52:53.628557+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,103 +92,117 @@
     ],
     "stocks_us": [
       {
-        "title": "[아침뉴스] 11/16 KB證 “삼성전자, 脫엔비디아 시대 최대 수혜주… AI 생태계 확장",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWk8zMGZzSFZYWEtaTlUzR2pNSHR3RlYzMVU2N2FlWHhWd2xmaUhJRGlvT0lnTlJWX2Z3bzBFSTdtSzJQLXhNVFUyV0NhSnFBUTdCZ1hPQmNiLTh3RXM4M0ludGN4c1dtZlluMHNLQUUyVjZ0OFVHX1R6aktEMDFlcTk4eGZqVEJwd0RwbXRkaWk?oc=5",
-        "published_at": "2026-11-15T23:24:00+00:00",
+        "title": "[오늘장특징주]엔비디아, 코스트코, 유나이티드 에어라인스",
+        "publisher": "이데일리",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcmZxSVN3VExpTjN6OUtZMHJNcnZlZEFSZjVpTzVVU1hfc0ZCaE1xb01MWGNQWTQzV1N4R0FlOXhBLXJpM2FCT2FLYVN3Tl93VzVCTnRVRl9iQ2RSVjJaTkRJNEVsYXZwMC16aDJrcURRaFVmQWdwNzdTbHNPWWVLSA?oc=5",
+        "published_at": "2026-11-16T22:31:49+00:00",
         "id": "stocks_us-0"
       },
       {
-        "title": "[증시전략] 엔비디아 실적·앤트로픽 상장에 촉각…뉴욕증시 향방은?",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1T29oQWtlWkxCd1VmZ0tkelVBb2RpNDllbkVncUdYLWdCS3hOVWtmWlgxM1RsTURIOG9JSGZXTmkxd25ibjJFQzJuVjJMVXJxYW1iZ2QxLTLSAVhBVV95cUxQNU9vaEFrZVpMQndVZmdLZHpVQW9kaTQ5ZW5FZ3FHWC1nQkt4TlVrZlpYMTNUbE1ESDhvSUhmV05pMXduYm4yRUMyblYyTFVycWFtYmdkMS0y?oc=5",
-        "published_at": "2026-11-15T21:01:00+00:00",
+        "title": "[속보]뉴욕증시 3대 지수 일제히 급락…나스닥 626포인트 폭락, 다우 5만2000선 붕괴",
+        "publisher": "CBC뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE52WU5WYlVOTGVoQnk1c1R0VFgwV29XNzZ5QkhFOENpMFp1aEJ2MkhJdk5MNkZEQ3RjTlpRaG11WGQyYm1OX1BiSTduLXIxNjZXbUFNNGVrbDBZbUZUMVJfRHNXYl96cmpB?oc=5",
+        "published_at": "2026-11-16T22:15:00+00:00",
         "id": "stocks_us-1"
       },
       {
-        "title": "[월가 영수증] 워시 연설 앞둔 월가, 근원 물가 연율 3.7%에 국채금리 5.15%",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XNVZSX0tNRm9qY3VfZVR4Q3d5RFZGSFJiaHV2Vlpxd25saGFHSHdXQ0gzRUNiOUZGb2tsNmEyNG9NZzFLV19PWDFR?oc=5",
-        "published_at": "2026-11-15T11:17:31+00:00",
+        "title": "미국증시 나스닥 2.49% 급락…엔비디아 실적 앞두고 반도체 5.28%↓, SK하이닉스 ADR 7%대 하락",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBmd2lUYVNkem93cnpscVVkX3VVaFRvbmY0Y19jM01yUjJxakZNbmNGMTRDd2R0VzI0WnhzYmdDeUloSk84ekw4M09RMUZHei1OMEV3eTg0RVdXMGJDajBwNXljZzF4dldvTkR5Vk93QmNBUQ?oc=5",
+        "published_at": "2026-11-16T22:03:17+00:00",
         "id": "stocks_us-2"
       },
       {
-        "title": "연준 AI 투자 과열 경고…부채·보증 3조 달러 넘나",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THNYMVRxbXE1NUcza2tBSHBTUG9sMTVoNXRwYjJJMEFUaTh2bms4cVhCc2Q5UDhZUnhQRXp3NGlrcGUtdE1YTzJzWGJmUk93RG9GaXBnb1YxODJfRlpFLXFXY1pGLVk?oc=5",
-        "published_at": "2026-11-15T05:32:38+00:00",
+        "title": "[11.17(화) 한국장 전망] 미 증시 전반 급락·코스피 -2% 내외 하락 예상",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5GcHRud2pXWkgwTk1IRmJLaENucmlXR2ZJSS0wc0tkNzRsTTdMcURmZzItemRZWjg2c0ZoODM0b2NpVzBkbGNNM01JZ2dUZEstMTJncXBIWFNDRThGUGVRa2IydUs0ZWNNSFZESGFLUEpONlozSVdaWg?oc=5",
+        "published_at": "2026-11-16T21:10:27+00:00",
         "id": "stocks_us-3"
       },
       {
-        "title": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목",
-        "publisher": "더페어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvVDRNVEd5enh2a1E2dURSbjR4blBsZDBPNDg2R0xaY3VXYzIwR2lIVXRCVUdMUnRRY3IwZHl1UXJJS0pDLWR1b1UzenNtWmJtYjdhOVJVRFlrNl9jRlR1MlItOW1qWlJsYWxKWkFhS1jSAXRBVV95cUxPZ1c1SHB1WlZtaFZYeldPNl9zbW9JbzhkcFVYZ2x5OU5aODVURUtveUIybGFBMmtpLWMzWVM4RkE4RjF3NDVwRXpDX1RQQkplUTlrbU11ZDVkNFZxRHE0dUhEUUUtVGdpWmdCSDItcmNfc2J5Zg?oc=5",
-        "published_at": "2026-11-14T15:00:00+00:00",
+        "title": "[속보]미국증시 나스닥 1.42% 급락…다우·S&P500 동반 하락, 엔비디아 실적 앞두고 기술주 압박",
+        "publisher": "CBC뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtOXpqb3VROGpRUmx6NUZEWTNBUzgzVWFYU0dvZWRiOXpFbk85Z2VuNkFoSjZ6eFNCX0lYTTZoVnN4SGZxMV9lVHIzNnlUVndZTEhrcVVjYzZzdnl2cE0wNWlWNkUxVTBf?oc=5",
+        "published_at": "2026-11-16T15:00:00+00:00",
         "id": "stocks_us-4"
       },
       {
-        "title": "물가 약발도 안 통했다…반도체 3.4% 급락 [11/14 G모닝]｜Global Money Club",
-        "publisher": "중앙일보",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WTDBVRW1JbHozOE4wUWZZYmtlU04ydnhEbGF6c0EzNmk3UldiTWZxNHk0am1Sc1QtaXVZdk1Ba0tsNl83X2R4QUpOODllQTZLNmtvclh0QWstekk?oc=5",
-        "published_at": "2026-11-13T22:30:54+00:00",
-        "id": "stocks_us-5"
-      }
-    ],
-    "bonds": [
-      {
-        "title": "인베스코QQQ 트러스트 ETF, 오늘 하락하는 이유는? By Investing.com",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZlNvT1lQOGdkNm9DQlNhRTZFT2kxVlRGbkVSNE9TODAtY1VNWmNkc291YUNwWWdaRFRHU0tYODNVMUtOQUFscmtlRzZXY2RlazZ5ZHludzVVQ2U0TEQzNXhWcnNHLVkzNFdsczRnUHdvTVp2RHZV?oc=5",
-        "published_at": "2026-11-16T19:50:00+00:00",
-        "id": "bonds-0"
-      },
-      {
-        "title": "미국 국채 수익률 상승으로 암호화폐 보유 기회비용이 커지면서 비트코인 하락 압력 지속",
+        "title": "엔비디아 실적·앤트로픽 데뷔 앞두고 나스닥 선물 하락",
         "publisher": "Traders Union",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQa3VHeEZzZVFPQ0lvSk1FX3lSemcyQ1gxRHFqQkFSQUduWVhpZ0tuaUdiUG5xcFBhd1dmRlpXLXVvQThXZ2ZWdjZhSUpIcmFvOUcxcjVEckY0Q0cwRHBXQXc4WHF4TWpwSV9Pa2xsem5seWtqTE54OHR0NkJPdzd2cHQ5dEpJaS1FaGpmcUR6YjRNN3pMOHc?oc=5",
-        "published_at": "2026-11-16T16:33:01+00:00",
-        "id": "bonds-1"
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9DTW1UcGlhUTdlY2N3OUNiY2poVG1NcEEwOFFoLUU1bVNRX25hdFNWZjNkUzhCT3o0TFFhbFRuRHc1RVU1U0trQW9TODlwRkdvbElXNDVjRnd6RE9VWG5rYW9fRmUtU2ZJZjBDNmFDTHp6bnJkOTRvZm5hN3JZQQ?oc=5",
+        "published_at": "2026-11-16T12:59:55+00:00",
+        "id": "stocks_us-5"
       },
       {
-        "title": "웨스턴 디지털 주가가 오늘 하락하는 이유는? By Investing.com",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZl9nakkwY1ZtZGZxMTU3T3hPT2pIT2UtbXhIMFFJT0pybTlJNVhpVTl4UFVQN2dZbWNZUGFmNUNsa0gtT0FCTmVqVDJvRXh2bmhJMVcwQlpmbGlHd0RJbTlxbklDc2U2ZmRrZ2VINlh2dFluY1NN?oc=5",
-        "published_at": "2026-11-16T15:04:00+00:00",
-        "id": "bonds-2"
-      },
-      {
-        "title": "미 국채가 강세…유가 하락 속 기술주 약세發 안전자산 선호",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsN21GSmlnVEtIYWdNcDUxcUNpRnZQXzFIT2VERDh2RUprQ2xPT1dQcVFYWTFjdmVaUjlobDd3REhzbm0yZW5HOGNhZFVybjN2ZUxKZEZwLWlvYjM2N3J3Rm9pNkxLNmQxOE9UZFNkSG0?oc=5",
-        "published_at": "2026-11-16T14:38:23+00:00",
-        "id": "bonds-3"
-      },
-      {
-        "title": "골드만삭스, 미국 10년물 국채 수익률 내년 말 4.6% 전망",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VNkNBMzd1S3lXUWpIRFE4YnllaHROYnRXNE84ZTNoS08wZFcta0pmVy1IWGMwd2d2QjdvT3BWd3lnSU43cDRBbkZYOU5DZWVRYXl6MEhsd19qVWtBZURhT05ILTFNRFBWVWc?oc=5",
-        "published_at": "2026-11-16T12:52:00+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "유로/달러, 미 국채금리 급등에 2026년 최저치로 하락",
-        "publisher": "VT Markets",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOHBDbWlxTEtta2VZdTVyRk9TSjJsMmVwdFBPNk1rMFZyVmdQdDRyNGtWYXZoZTNhZ0hOVGZtTjZzRU14T2J6a3pyV3NIejNHM1U0VG41TjlXY0hyaFd0SGFuM0dqXzdyQ0hoLWZ6UjhLLWh4WUphNXlsMVczTk5NajlMcFZueC10T0tvc2xGUUh1NHRSZi1hM2VQVHQ?oc=5",
-        "published_at": "2026-11-16T12:18:01+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "글로벌 금융 시장의 변동성이 클 때 '안전 자산'이란 무엇일까요?",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOHdqV1RoY1JaaHlGNVY4VjhCUnNOUVQ5LWRnZzdfbjg2OHl5NDJwSm85Y3VWYnhmQmsxMHhZcU9XcGhGVGFHczNUUTdTanJMTldqRGF5WkcwSnRvaExJTkZRU0xZaS1VYWdQMVFpNFR6OVh5WXpqOTdjeWQ4WUZ5ZWlGZTdWcWY1dGdFUF94V1RTWjZYcW5F?oc=5",
-        "published_at": "2026-11-16T09:37:20+00:00",
-        "id": "bonds-6"
+        "title": "젠슨 황 없는 엔비디아 실적+앤트로픽 상장…‘AI 슈퍼위크’ 개막 [11/16 G브닝]｜Global Money Club",
+        "publisher": "중앙일보",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NZWZNZ1JZQU0tWjI3WENRUV9lYXB6Z1dyUk5jYmJOVzBWcjZMZWpkc3h6SlhKaG9jdTZFSkw2alpOZGhPWmU5Rk1zSVhiQW1UVk8xdTlvaFlzS3M?oc=5",
+        "published_at": "2026-11-16T12:23:33+00:00",
+        "id": "stocks_us-6"
       },
       {
         "title": "아시아 증시 하락, 젠슨 황 엔비디아 CEO 복귀 가능성 언급.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMDdUZ1FXdWlEemFHaS1rS0xNMURybmVhV1dWblltR3pHZGdhZ0RMYmNDQVdkNDhqWE9rRVVVX29iM1gyc21xUTNVWU1DZ240N1BiREZTMG82S1hBNlRkVUN1ZDVBcENwYUlEMXRYeTE3SjBZOTBXTFJFLTdHc1NmdkZJNndWTFpKWk1kMVNDaFNVa05Ua3ZHQ21BWG54UGw5bkoyLUU2R2NKc1pCZXllUG5LQURqUQ?oc=5",
         "published_at": "2026-11-16T09:11:57+00:00",
+        "id": "stocks_us-7"
+      }
+    ],
+    "bonds": [
+      {
+        "title": "[뉴욕마켓워치] 젠슨 황 복귀 기대 꺾이자 반도체株 투매…채권·달러↑주식↓",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jYTdUaXFwamp0RzY5NE01aFlUY2ZfUmNQd2sxNk9ncXVSU1BTSDVCaC1VOHhhZHVkdC1GS2pEQngweUZEYkZQalpmNGJVMUdhTDlXMndUWVBPMmdsTUt6dTUyVFBzbmNCNVpnMzh5VFlZUQ?oc=5",
+        "published_at": "2026-11-16T21:53:58+00:00",
+        "id": "bonds-0"
+      },
+      {
+        "title": "인베스코QQQ 트러스트 ETF, 오늘 하락하는 이유는? By Investing.com",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZlNvT1lQOGdkNm9DQlNhRTZFT2kxVlRGbkVSNE9TODAtY1VNWmNkc291YUNwWWdaRFRHU0tYODNVMUtOQUFscmtlRzZXY2RlazZ5ZHludzVVQ2U0TEQzNXhWcnNHLVkzNFdsczRnUHdvTVp2RHZV?oc=5",
+        "published_at": "2026-11-16T19:50:00+00:00",
+        "id": "bonds-1"
+      },
+      {
+        "title": "미국 국채 수익률 상승으로 암호화폐 보유 기회비용이 커지면서 비트코인 하락 압력 지속",
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQa3VHeEZzZVFPQ0lvSk1FX3lSemcyQ1gxRHFqQkFSQUduWVhpZ0tuaUdiUG5xcFBhd1dmRlpXLXVvQThXZ2ZWdjZhSUpIcmFvOUcxcjVEckY0Q0cwRHBXQXc4WHF4TWpwSV9Pa2xsem5seWtqTE54OHR0NkJPdzd2cHQ5dEpJaS1FaGpmcUR6YjRNN3pMOHc?oc=5",
+        "published_at": "2026-11-16T16:33:01+00:00",
+        "id": "bonds-2"
+      },
+      {
+        "title": "웨스턴 디지털 주가가 오늘 하락하는 이유는? By Investing.com",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZl9nakkwY1ZtZGZxMTU3T3hPT2pIT2UtbXhIMFFJT0pybTlJNVhpVTl4UFVQN2dZbWNZUGFmNUNsa0gtT0FCTmVqVDJvRXh2bmhJMVcwQlpmbGlHd0RJbTlxbklDc2U2ZmRrZ2VINlh2dFluY1NN?oc=5",
+        "published_at": "2026-11-16T15:04:00+00:00",
+        "id": "bonds-3"
+      },
+      {
+        "title": "미 국채가 강세…유가 하락 속 기술주 약세發 안전자산 선호",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsN21GSmlnVEtIYWdNcDUxcUNpRnZQXzFIT2VERDh2RUprQ2xPT1dQcVFYWTFjdmVaUjlobDd3REhzbm0yZW5HOGNhZFVybjN2ZUxKZEZwLWlvYjM2N3J3Rm9pNkxLNmQxOE9UZFNkSG0?oc=5",
+        "published_at": "2026-11-16T14:38:23+00:00",
+        "id": "bonds-4"
+      },
+      {
+        "title": "골드만삭스, 미국 10년물 국채 수익률 내년 말 4.6% 전망",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VNkNBMzd1S3lXUWpIRFE4YnllaHROYnRXNE84ZTNoS08wZFcta0pmVy1IWGMwd2d2QjdvT3BWd3lnSU43cDRBbkZYOU5DZWVRYXl6MEhsd19qVWtBZURhT05ILTFNRFBWVWc?oc=5",
+        "published_at": "2026-11-16T12:52:00+00:00",
+        "id": "bonds-5"
+      },
+      {
+        "title": "유로/달러, 미 국채금리 급등에 2026년 최저치로 하락",
+        "publisher": "VT Markets",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOHBDbWlxTEtta2VZdTVyRk9TSjJsMmVwdFBPNk1rMFZyVmdQdDRyNGtWYXZoZTNhZ0hOVGZtTjZzRU14T2J6a3pyV3NIejNHM1U0VG41TjlXY0hyaFd0SGFuM0dqXzdyQ0hoLWZ6UjhLLWh4WUphNXlsMVczTk5NajlMcFZueC10T0tvc2xGUUh1NHRSZi1hM2VQVHQ?oc=5",
+        "published_at": "2026-11-16T12:18:01+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "글로벌 금융 시장의 변동성이 클 때 '안전 자산'이란 무엇일까요?",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOHdqV1RoY1JaaHlGNVY4VjhCUnNOUVQ5LWRnZzdfbjg2OHl5NDJwSm85Y3VWYnhmQmsxMHhZcU9XcGhGVGFHczNUUTdTanJMTldqRGF5WkcwSnRvaExJTkZRU0xZaS1VYWdQMVFpNFR6OVh5WXpqOTdjeWQ4WUZ5ZWlGZTdWcWY1dGdFUF94V1RTWjZYcW5F?oc=5",
+        "published_at": "2026-11-16T09:37:20+00:00",
         "id": "bonds-7"
       }
     ]
@@ -200,9 +214,9 @@
   },
   "refresh_summary": {
     "fresh_market_items": 2,
-    "fresh_news_items": 22,
+    "fresh_news_items": 24,
     "market_items_visible": 2,
-    "news_items_visible": 22,
+    "news_items_visible": 24,
     "gemini_called": false,
     "market_source_note": "미 국채 2·10년: 미국 재무부 일별 공시. 국내외 주가지수: 기존 TradingView 위젯 사용(본 파일에서 재게시하지 않음)."
   },
