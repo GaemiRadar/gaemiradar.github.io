@@ -1,16 +1,16 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T05:00:16.786603+09:00",
+  "data_updated_at": "2026-11-17T05:55:31.473718+09:00",
   "market": [
     {
       "id": "UST2Y",
       "name": "미국 국채 2년",
-      "value": 4.88,
+      "value": 4.83,
       "unit": "%",
-      "change": 0.02,
+      "change": -0.05,
       "change_unit": "pp",
-      "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T05:00:16.786603+09:00",
+      "as_of": "2026-11-16",
+      "fetched_at": "2026-11-17T05:55:31.473718+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -19,12 +19,12 @@
     {
       "id": "UST10Y",
       "name": "미국 국채 10년",
-      "value": 5.15,
+      "value": 5.12,
       "unit": "%",
-      "change": 0.05,
+      "change": -0.03,
       "change_unit": "pp",
-      "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T05:00:16.786603+09:00",
+      "as_of": "2026-11-16",
+      "fetched_at": "2026-11-17T05:55:31.473718+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -127,24 +127,24 @@
         "id": "stocks_us-4"
       },
       {
+        "title": "간략 뉴스 16-11: 월가에서 소폭 변동이 나타났으며, PNJ 회장 일가는 현재 7.09%의 지분만 보유하고 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR0hseHpEbUNHZEdIcFY1TzJ2Rk9rQ2JWcDYzbEZpdmhVQkY3bTVtNlRjNkNYUEVmdllfSE9rNEN4aWhtLVpPMTlPR0VyWnNCWUhiLTZRT3lfUFE3NmthaGhtRkNxeWxXTzNIU1BOc0tuTFZkUEY0c1kxTUxXOGJ2b04xTUtab3pYeVIwc3Zwd3NFU1ktSHFFMU1ZVGZwNTZlYml5S2NPWTNiZkU?oc=5",
+        "published_at": "2026-11-16T02:41:52+00:00",
+        "id": "stocks_us-5"
+      },
+      {
         "title": "[오늘증시] 엔비디아發 불안에 코스피 5100선…반도체주 '추풍낙엽'",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sWmU0S21VaGVpYk4wQXFSMWQzSk44OVpJVWpxcng2Vy16WnRQMnBTV0VIdTA5VWVsNlZKaFhiR3h1clotSDRFczhjUGdOZFVHc3NCLVJCOWVsdzhvRDZwcDhYTkJFMG9XaDRaZVJvclJibE0?oc=5",
         "published_at": "2026-11-16T01:36:48+00:00",
-        "id": "stocks_us-5"
-      },
-      {
-        "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
-        "published_at": "2026-11-16T01:35:00+00:00",
         "id": "stocks_us-6"
       },
       {
-        "title": "미국 S&P500·나스닥100 채권혼합 ETF, 올해 1조원 유입 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QUmtGUENCVTlHM0VxQUl0bGQ0R2tNZGJmUzN2b1VxdkgtcXZZZEdHTG1Ha2JYWmd6YXhYT2dPMEFDZ2IwOVpqNlJDOA?oc=5",
-        "published_at": "2026-11-16T00:16:07+00:00",
+        "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목 By Investing.com",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
+        "published_at": "2026-11-16T01:35:00+00:00",
         "id": "stocks_us-7"
       }
     ],
@@ -220,8 +220,6 @@
     "gemini_called": false,
     "market_source_note": "미 국채 2·10년: 미국 재무부 일별 공시. 국내외 주가지수: 기존 TradingView 위젯 사용(본 파일에서 재게시하지 않음)."
   },
-  "errors": [
-    "뉴스 bonds: 일부 RSS 피드 조회 실패"
-  ],
+  "errors": [],
   "source_note": "뉴스: Google 뉴스 RSS 기사 제목·발행처·링크, 원문 분석 아님. 금리: 미국 재무부 공시."
 }
