@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T03:06:45.573966+09:00",
+  "data_updated_at": "2026-11-17T03:59:45.702075+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T03:06:45.573966+09:00",
+      "fetched_at": "2026-11-17T03:59:45.702075+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T03:06:45.573966+09:00",
+      "fetched_at": "2026-11-17T03:59:45.702075+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -127,82 +127,82 @@
         "id": "stocks_us-4"
       },
       {
-        "title": "간략 뉴스 16-11: 월가에서 소폭 변동이 나타났으며, PNJ 회장 일가는 현재 7.09%의 지분만 보유하고 있습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR0hseHpEbUNHZEdIcFY1TzJ2Rk9rQ2JWcDYzbEZpdmhVQkY3bTVtNlRjNkNYUEVmdllfSE9rNEN4aWhtLVpPMTlPR0VyWnNCWUhiLTZRT3lfUFE3NmthaGhtRkNxeWxXTzNIU1BOc0tuTFZkUEY0c1kxTUxXOGJ2b04xTUtab3pYeVIwc3Zwd3NFU1ktSHFFMU1ZVGZwNTZlYml5S2NPWTNiZkU?oc=5",
-        "published_at": "2026-11-16T02:41:52+00:00",
-        "id": "stocks_us-5"
-      },
-      {
         "title": "[오늘증시] 엔비디아發 불안에 코스피 5100선…반도체주 '추풍낙엽'",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sWmU0S21VaGVpYk4wQXFSMWQzSk44OVpJVWpxcng2Vy16WnRQMnBTV0VIdTA5VWVsNlZKaFhiR3h1clotSDRFczhjUGdOZFVHc3NCLVJCOWVsdzhvRDZwcDhYTkJFMG9XaDRaZVJvclJibE0?oc=5",
         "published_at": "2026-11-16T01:36:48+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-5"
       },
       {
         "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
         "published_at": "2026-11-16T01:35:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "미국 S&P500·나스닥100 채권혼합 ETF, 올해 1조원 유입 : 금융",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QUmtGUENCVTlHM0VxQUl0bGQ0R2tNZGJmUzN2b1VxdkgtcXZZZEdHTG1Ha2JYWmd6YXhYT2dPMEFDZ2IwOVpqNlJDOA?oc=5",
+        "published_at": "2026-11-16T00:16:07+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "2026년 11월 17일 현재 금 가격은 아직 바닥을 치지 않고 주요 지지선을 지속적으로 하락하고 있으며, 최악의 시나리오는 3,800달러 선까지 떨어질 수 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONnQwWkNjcU82cm0yVjhkVl92M0dGVHVJNVNmWWdQSFd6bWJzZzUwbU1YR0xKS0d6RGpZOWFmLU1tN0hQQU5vNTJtV3czOWpmdlhpWVF5MVFKSTgxZXJpOFZoOHFhWkJWVDFxZUJPaEp3eDViSFNyUXVaT01MTmNyTkhjcDhjU2I2dDl5OW0xNVZ2U1VVQzBmLUhDQzZNSXpKeFNtYU03dTBDRFdIdHV6VjJ3WFFxLTVNZlNhMDBYdXlyMnM2cnlVSkk0Z29zS3p6Q21V?oc=5",
+        "published_at": "2026-11-16T16:03:54+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "웨스턴 디지털 주가가 오늘 하락하는 이유는?",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZl9nakkwY1ZtZGZxMTU3T3hPT2pIT2UtbXhIMFFJT0pybTlJNVhpVTl4UFVQN2dZbWNZUGFmNUNsa0gtT0FCTmVqVDJvRXh2bmhJMVcwQlpmbGlHd0RJbTlxbklDc2U2ZmRrZ2VINlh2dFluY1NN?oc=5",
         "published_at": "2026-11-16T15:04:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "미 국채가 강세…유가 하락 속 기술주 약세發 안전자산 선호",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsN21GSmlnVEtIYWdNcDUxcUNpRnZQXzFIT2VERDh2RUprQ2xPT1dQcVFYWTFjdmVaUjlobDd3REhzbm0yZW5HOGNhZFVybjN2ZUxKZEZwLWlvYjM2N3J3Rm9pNkxLNmQxOE9UZFNkSG0?oc=5",
         "published_at": "2026-11-16T14:38:23+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "골드만삭스, 미국 10년물 국채 수익률 내년 말 4.6% 전망",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VNkNBMzd1S3lXUWpIRFE4YnllaHROYnRXNE84ZTNoS08wZFcta0pmVy1IWGMwd2d2QjdvT3BWd3lnSU43cDRBbkZYOU5DZWVRYXl6MEhsd19qVWtBZURhT05ILTFNRFBWVWc?oc=5",
         "published_at": "2026-11-16T12:52:00+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "유로/달러, 미 국채금리 급등에 2026년 최저치로 하락",
         "publisher": "VT Markets",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOHBDbWlxTEtta2VZdTVyRk9TSjJsMmVwdFBPNk1rMFZyVmdQdDRyNGtWYXZoZTNhZ0hOVGZtTjZzRU14T2J6a3pyV3NIejNHM1U0VG41TjlXY0hyaFd0SGFuM0dqXzdyQ0hoLWZ6UjhLLWh4WUphNXlsMVczTk5NajlMcFZueC10T0tvc2xGUUh1NHRSZi1hM2VQVHQ?oc=5",
         "published_at": "2026-11-16T12:18:01+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "글로벌 금융 시장의 변동성이 클 때 '안전 자산'이란 무엇일까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOHdqV1RoY1JaaHlGNVY4VjhCUnNOUVQ5LWRnZzdfbjg2OHl5NDJwSm85Y3VWYnhmQmsxMHhZcU9XcGhGVGFHczNUUTdTanJMTldqRGF5WkcwSnRvaExJTkZRU0xZaS1VYWdQMVFpNFR6OVh5WXpqOTdjeWQ4WUZ5ZWlGZTdWcWY1dGdFUF94V1RTWjZYcW5F?oc=5",
         "published_at": "2026-11-16T09:37:20+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "아시아 증시 하락, 젠슨 황 엔비디아 CEO 복귀 가능성 언급.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMDdUZ1FXdWlEemFHaS1rS0xNMURybmVhV1dWblltR3pHZGdhZ0RMYmNDQVdkNDhqWE9rRVVVX29iM1gyc21xUTNVWU1DZ240N1BiREZTMG82S1hBNlRkVUN1ZDVBcENwYUlEMXRYeTE3SjBZOTBXTFJFLTdHc1NmdkZJNndWTFpKWk1kMVNDaFNVa05Ua3ZHQ21BWG54UGw5bkoyLUU2R2NKc1pCZXllUG5LQURqUQ?oc=5",
         "published_at": "2026-11-16T09:11:57+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "국제 금값 폭등, 미국 달러 강세 압박",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNU2ZQbndrN0dWczd4Q2pndWo3cGdMNG5pUTFEZzBIc2t0TnBKX29aRDVMbW5OWnNUcVZ2T1RxUTNZNC1IaGV6eVRPZzJvRDZ5WDlKVzFCUkowdjkzSUQ2cWpPaEJ4Z2NzSGZfWmtUT2EzREVYSmotS29xSG53X2ZTSkI3TFhmLTVCQ1JBRjQxQmNUa1BuZngzeWItWnc1LXVXbERHWQ?oc=5",
         "published_at": "2026-11-16T09:11:01+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "미 국채 금리, 1개월 최고치 부근서 숨 고르기…연준 신호 주시",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XYjhMWTZNaHRUZXpNdENfVUhMaTJ4dHlFdlg1LTNDZEFDa2hwYUYyTEZYM3NrdWpnaDJWWmVrS201YWpFNWV1anRDendkcko5STJNOFlZM0N2VTN6cDdZMUg5bG01T2s?oc=5",
-        "published_at": "2026-11-16T09:00:00+00:00",
         "id": "bonds-7"
       }
     ]
