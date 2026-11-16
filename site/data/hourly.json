@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T05:55:31.473718+09:00",
+  "data_updated_at": "2026-11-17T06:54:07.624740+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T05:55:31.473718+09:00",
+      "fetched_at": "2026-11-17T06:54:07.624740+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T05:55:31.473718+09:00",
+      "fetched_at": "2026-11-17T06:54:07.624740+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,118 +34,104 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[11.17(화) 한국장 전망] 미 증시 전반 급락·코스피 -2% 내외 하락 예상",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TZy05WnN2MkdzTDU1ZGtJNDViejVIY1UtdFMwTG55TTM5R3dBWVh0MjFNRUJsZGNHTjg5aHhOR3psWTRUX25qZ3UzQ1dzbHpnQ3l5M0ZuZkE3b1ViMmZOblNQcUlpYnVFYml0bUZ6V2xCOTRBT2c?oc=5",
+        "published_at": "2026-11-16T21:10:27+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[심층분석] 코스피 5100선 붕괴에 코스닥 4%대 급락…검은 월요일 직격탄 맞은 국내 증시",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEckRVZk1QT2h2SmliVl93ZE1WYkt5clhTbnVuaEp3TThFOTN6Tlc3VW5iLUoxbjcwNWt6NXV5aXVoTVQwNGZUR0JKMEh2REdXbXA3MmIwckc3TWpPQlFlcy12M3hVLVJqMHFlN0JnZS3SAXRBVV95cUxQWG9BbmdKM01INDRXbkg2NGpsYTBTT3AzSm11dkFrMlVNM210SWRFQmhhSE15SnFtVHNvaF9qalRTT3JhVUVydkxYdnRoeGRDMWxYZUxQeDB6ZEZKMVJRMW4tYUh4a2xsWjMyQVprMVZkdzhQVw?oc=5",
         "published_at": "2026-11-16T15:00:00+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[EBN 오늘(16일) 이슈 종합] [단독] 현대차, 하이브리드 승부수...열효율 45% '린번 엔진' 꺼냈다 등",
         "publisher": "www.ebn.co.kr",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xMGdKdF8xazJvZ0lOemhSMjRRTUMyb3BuSlN5TlhQRU1hbkZZVVZJRW9VMnJYdkRySklfWlI2RmxsamhGWVFrVERJMWpRTTFHNVYzMmszU1E0YVMtWVlrOTlVTGZaUlJE?oc=5",
         "published_at": "2026-11-16T14:26:26+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[e마켓클로징] 엔비디아發 반도체 쇼크···코스피 3.6% 급락·5100선 턱걸이 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01LVpKaU1zSlhxTEw2ZDVpMnBSM1FMLVo5TDJwTm55UmZBYzFZUzBDZk5aMm5TMTBPdU5OQmtpaU5TSU9UX1c3cU8yaE5YU3pyZ1lJY3FQTmZxMUtTVl9KdWotY2l0Um1hQjc2a1lCRzE0eENZVVE?oc=5",
         "published_at": "2026-11-16T12:08:06+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "“코스피 8300 간다는데 오늘은 5100”…하루 190포인트 폭락, 증권사가 반등 점치는 이유",
         "publisher": "데일리25",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JOHlOeXlaRHBzWlRFeHc1cHZSdzBtcHZldkFLRVlJUXVCSGlRSEFTSDM4QW05TjFNZldOYnJEX1FKdWdrRlhqSC1CRERlOWtnQ0tqVlBYbS1mbWNiakZTZWxGZ0dHNHd2aFhaNQ?oc=5",
         "published_at": "2026-11-16T11:29:18+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "외국인·기관 '쌍끌이' 매도 폭탄…코스피·코스닥 급락",
         "publisher": "프리진뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JM0N3QmJvTVJhRFRCN0lLclJYNWdwNnJjSlZjMVpfckd6UHhYemdWR0FITXNaMEpjeWxwelp6cFZrMF96alViLUpVRFoySWxkblVCajlYd1lYX01TQlZTZkpZUWk2YlhBbHBRNkZiNA?oc=5",
         "published_at": "2026-11-16T10:36:42+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "연기금마저 하이닉스 5,900억 던졌다! 삼성전자도 외국인 대량 매도! 오늘 수급이 말해주는 것 (11.16)",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWW1KNExhQ3ZndDlWOU94Uzg4OURaSmdOYTBOWGpOMF9BU0lvajhnVDhEblNUX3hONHRDa1E4MG92QlpRenBuaVVUanVYS0xYd1Q2V3Jxc18zRk43WVpReUxqQXBlQXZrR1ZrbkNWSmV1X3F1MHNocUN2OC1CSnZlQmVzOHdsY29EZFE?oc=5",
         "published_at": "2026-11-16T09:11:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[오늘의 주목주] '반도체주 약세' SK스퀘어 주가 8%대 내려, 코스피 3%대 하락 마감 5100선",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZR2JDUGJrV25LaHVmT3NfOExMVWp5SEtCZDd3M29xWlVMMERMSmgxbXdNSGIwcHBnSjZudExEVW05VjUzVVF4bmpPdm1GbnVWZU82bnNDWFZxdWVhOFp3cnpYYzl1TXU1SGx4U1hYRmxEMHM?oc=5",
         "published_at": "2026-11-16T08:56:38+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[증시 오늘] 외국인 매도세에 코스피·코스닥 급락",
-        "publisher": "빅터뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SdUNwQkw0YzJlRS1KUnJoZFdaOExNNTlzcHZxd0MxRzJBUEUzSlBEV3FRRDZJRTNLY3BSYmpBS0h4N1FXTV84N1RUQVBDM2xZVkJyOUIyaDBnUl9DN0tDcWdDRGFPcFk?oc=5",
-        "published_at": "2026-11-16T08:40:09+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
-        "title": "[속보]미국증시 나스닥 1.42% 급락…다우·S&P500 동반 하락, 엔비디아 실적 앞두고 기술주 압박",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtOXpqb3VROGpRUmx6NUZEWTNBUzgzVWFYU0dvZWRiOXpFbk85Z2VuNkFoSjZ6eFNCX0lYTTZoVnN4SGZxMV9lVHIzNnlUVndZTEhrcVVjYzZzdnl2cE0wNWlWNkUxVTBf?oc=5",
-        "published_at": "2026-11-16T15:00:00+00:00",
+        "title": "[아침뉴스] 11/16 KB證 “삼성전자, 脫엔비디아 시대 최대 수혜주… AI 생태계 확장",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWk8zMGZzSFZYWEtaTlUzR2pNSHR3RlYzMVU2N2FlWHhWd2xmaUhJRGlvT0lnTlJWX2Z3bzBFSTdtSzJQLXhNVFUyV0NhSnFBUTdCZ1hPQmNiLTh3RXM4M0ludGN4c1dtZlluMHNLQUUyVjZ0OFVHX1R6aktEMDFlcTk4eGZqVEJwd0RwbXRkaWk?oc=5",
+        "published_at": "2026-11-15T23:24:00+00:00",
         "id": "stocks_us-0"
       },
       {
-        "title": "엔비디아 실적·앤트로픽 데뷔 앞두고 나스닥 선물 하락",
-        "publisher": "Traders Union",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9DTW1UcGlhUTdlY2N3OUNiY2poVG1NcEEwOFFoLUU1bVNRX25hdFNWZjNkUzhCT3o0TFFhbFRuRHc1RVU1U0trQW9TODlwRkdvbElXNDVjRnd6RE9VWG5rYW9fRmUtU2ZJZjBDNmFDTHp6bnJkOTRvZm5hN3JZQQ?oc=5",
-        "published_at": "2026-11-16T12:59:55+00:00",
+        "title": "[증시전략] 엔비디아 실적·앤트로픽 상장에 촉각…뉴욕증시 향방은?",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1T29oQWtlWkxCd1VmZ0tkelVBb2RpNDllbkVncUdYLWdCS3hOVWtmWlgxM1RsTURIOG9JSGZXTmkxd25ibjJFQzJuVjJMVXJxYW1iZ2QxLTLSAVhBVV95cUxQNU9vaEFrZVpMQndVZmdLZHpVQW9kaTQ5ZW5FZ3FHWC1nQkt4TlVrZlpYMTNUbE1ESDhvSUhmV05pMXduYm4yRUMyblYyTFVycWFtYmdkMS0y?oc=5",
+        "published_at": "2026-11-15T21:01:00+00:00",
         "id": "stocks_us-1"
       },
       {
-        "title": "젠슨 황 없는 엔비디아 실적+앤트로픽 상장…‘AI 슈퍼위크’ 개막 [11/16 G브닝]｜Global Money Club",
-        "publisher": "중앙일보",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NZWZNZ1JZQU0tWjI3WENRUV9lYXB6Z1dyUk5jYmJOVzBWcjZMZWpkc3h6SlhKaG9jdTZFSkw2alpOZGhPWmU5Rk1zSVhiQW1UVk8xdTlvaFlzS3M?oc=5",
-        "published_at": "2026-11-16T12:23:33+00:00",
+        "title": "[월가 영수증] 워시 연설 앞둔 월가, 근원 물가 연율 3.7%에 국채금리 5.15%",
+        "publisher": "코인리더스",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XNVZSX0tNRm9qY3VfZVR4Q3d5RFZGSFJiaHV2Vlpxd25saGFHSHdXQ0gzRUNiOUZGb2tsNmEyNG9NZzFLV19PWDFR?oc=5",
+        "published_at": "2026-11-15T11:17:31+00:00",
         "id": "stocks_us-2"
       },
       {
-        "title": "아시아 증시 하락, 젠슨 황 엔비디아 CEO 복귀 가능성 언급.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMDdUZ1FXdWlEemFHaS1rS0xNMURybmVhV1dWblltR3pHZGdhZ0RMYmNDQVdkNDhqWE9rRVVVX29iM1gyc21xUTNVWU1DZ240N1BiREZTMG82S1hBNlRkVUN1ZDVBcENwYUlEMXRYeTE3SjBZOTBXTFJFLTdHc1NmdkZJNndWTFpKWk1kMVNDaFNVa05Ua3ZHQ21BWG54UGw5bkoyLUU2R2NKc1pCZXllUG5LQURqUQ?oc=5",
-        "published_at": "2026-11-16T09:11:57+00:00",
+        "title": "연준 AI 투자 과열 경고…부채·보증 3조 달러 넘나",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THNYMVRxbXE1NUcza2tBSHBTUG9sMTVoNXRwYjJJMEFUaTh2bms4cVhCc2Q5UDhZUnhQRXp3NGlrcGUtdE1YTzJzWGJmUk93RG9GaXBnb1YxODJfRlpFLXFXY1pGLVk?oc=5",
+        "published_at": "2026-11-15T05:32:38+00:00",
         "id": "stocks_us-3"
       },
       {
-        "title": "[11.16(월) 한국장 마감] 동반 하락 (코스피 -3.59%, 코스닥 -4.86%)",
-        "publisher": "주달",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ya0h2bXFyLVU5djVEdVZLM2dEOWpvRWU2WnNaVjlKdm9vaWpzUm9KdUEyVlNRYkM5N0JOYzNDejE3b3FnbzUxNFFiOWtnLXVNLS1HSUc2c29nY3MtWHhGXzAwaHVRbS1HNi1aSGEteHlTSHI0V1E?oc=5",
-        "published_at": "2026-11-16T07:00:52+00:00",
+        "title": "[뉴욕증시 전망] AI 실적·연준 금리 변수...엔비디아 실적 전망 주목",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvVDRNVEd5enh2a1E2dURSbjR4blBsZDBPNDg2R0xaY3VXYzIwR2lIVXRCVUdMUnRRY3IwZHl1UXJJS0pDLWR1b1UzenNtWmJtYjdhOVJVRFlrNl9jRlR1MlItOW1qWlJsYWxKWkFhS1jSAXRBVV95cUxPZ1c1SHB1WlZtaFZYeldPNl9zbW9JbzhkcFVYZ2x5OU5aODVURUtveUIybGFBMmtpLWMzWVM4RkE4RjF3NDVwRXpDX1RQQkplUTlrbU11ZDVkNFZxRHE0dUhEUUUtVGdpWmdCSDItcmNfc2J5Zg?oc=5",
+        "published_at": "2026-11-14T15:00:00+00:00",
         "id": "stocks_us-4"
       },
       {
-        "title": "간략 뉴스 16-11: 월가에서 소폭 변동이 나타났으며, PNJ 회장 일가는 현재 7.09%의 지분만 보유하고 있습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR0hseHpEbUNHZEdIcFY1TzJ2Rk9rQ2JWcDYzbEZpdmhVQkY3bTVtNlRjNkNYUEVmdllfSE9rNEN4aWhtLVpPMTlPR0VyWnNCWUhiLTZRT3lfUFE3NmthaGhtRkNxeWxXTzNIU1BOc0tuTFZkUEY0c1kxTUxXOGJ2b04xTUtab3pYeVIwc3Zwd3NFU1ktSHFFMU1ZVGZwNTZlYml5S2NPWTNiZkU?oc=5",
-        "published_at": "2026-11-16T02:41:52+00:00",
+        "title": "물가 약발도 안 통했다…반도체 3.4% 급락 [11/14 G모닝]｜Global Money Club",
+        "publisher": "중앙일보",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WTDBVRW1JbHozOE4wUWZZYmtlU04ydnhEbGF6c0EzNmk3UldiTWZxNHk0am1Sc1QtaXVZdk1Ba0tsNl83X2R4QUpOODllQTZLNmtvclh0QWstekk?oc=5",
+        "published_at": "2026-11-13T22:30:54+00:00",
         "id": "stocks_us-5"
-      },
-      {
-        "title": "[오늘증시] 엔비디아發 불안에 코스피 5100선…반도체주 '추풍낙엽'",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sWmU0S21VaGVpYk4wQXFSMWQzSk44OVpJVWpxcng2Vy16WnRQMnBTV0VIdTA5VWVsNlZKaFhiR3h1clotSDRFczhjUGdOZFVHc3NCLVJCOWVsdzhvRDZwcDhYTkJFMG9XaDRaZVJvclJibE0?oc=5",
-        "published_at": "2026-11-16T01:36:48+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목 By Investing.com",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
-        "published_at": "2026-11-16T01:35:00+00:00",
-        "id": "stocks_us-7"
       }
     ],
     "bonds": [
@@ -164,7 +150,7 @@
         "id": "bonds-1"
       },
       {
-        "title": "웨스턴 디지털 주가가 오늘 하락하는 이유는?",
+        "title": "웨스턴 디지털 주가가 오늘 하락하는 이유는? By Investing.com",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFZl9nakkwY1ZtZGZxMTU3T3hPT2pIT2UtbXhIMFFJT0pybTlJNVhpVTl4UFVQN2dZbWNZUGFmNUNsa0gtT0FCTmVqVDJvRXh2bmhJMVcwQlpmbGlHd0RJbTlxbklDc2U2ZmRrZ2VINlh2dFluY1NN?oc=5",
         "published_at": "2026-11-16T15:04:00+00:00",
@@ -214,12 +200,14 @@
   },
   "refresh_summary": {
     "fresh_market_items": 2,
-    "fresh_news_items": 24,
+    "fresh_news_items": 22,
     "market_items_visible": 2,
-    "news_items_visible": 24,
+    "news_items_visible": 22,
     "gemini_called": false,
     "market_source_note": "미 국채 2·10년: 미국 재무부 일별 공시. 국내외 주가지수: 기존 TradingView 위젯 사용(본 파일에서 재게시하지 않음)."
   },
-  "errors": [],
+  "errors": [
+    "뉴스 stocks_us: 일부 RSS 피드 조회 실패"
+  ],
   "source_note": "뉴스: Google 뉴스 RSS 기사 제목·발행처·링크, 원문 분석 아님. 금리: 미국 재무부 공시."
 }
