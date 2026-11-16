@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T01:45:20.476449+09:00",
+  "data_updated_at": "2026-11-17T03:06:45.573966+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T01:45:20.476449+09:00",
+      "fetched_at": "2026-11-17T03:06:45.573966+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-17T01:45:20.476449+09:00",
+      "fetched_at": "2026-11-17T03:06:45.573966+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[심층분석] 코스피 5100선 붕괴에 코스닥 4%대 급락…검은 월요일 직격탄 맞은 국내 증시",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEckRVZk1QT2h2SmliVl93ZE1WYkt5clhTbnVuaEp3TThFOTN6Tlc3VW5iLUoxbjcwNWt6NXV5aXVoTVQwNGZUR0JKMEh2REdXbXA3MmIwckc3TWpPQlFlcy12M3hVLVJqMHFlN0JnZS3SAXRBVV95cUxQWG9BbmdKM01INDRXbkg2NGpsYTBTT3AzSm11dkFrMlVNM210SWRFQmhhSE15SnFtVHNvaF9qalRTT3JhVUVydkxYdnRoeGRDMWxYZUxQeDB6ZEZKMVJRMW4tYUh4a2xsWjMyQVprMVZkdzhQVw?oc=5",
+        "published_at": "2026-11-16T15:00:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[EBN 오늘(16일) 이슈 종합] [단독] 현대차, 하이브리드 승부수...열효율 45% '린번 엔진' 꺼냈다 등",
         "publisher": "www.ebn.co.kr",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xMGdKdF8xazJvZ0lOemhSMjRRTUMyb3BuSlN5TlhQRU1hbkZZVVZJRW9VMnJYdkRySklfWlI2RmxsamhGWVFrVERJMWpRTTFHNVYzMmszU1E0YVMtWVlrOTlVTGZaUlJE?oc=5",
         "published_at": "2026-11-16T14:26:26+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[e마켓클로징] 엔비디아發 반도체 쇼크···코스피 3.6% 급락·5100선 턱걸이 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01LVpKaU1zSlhxTEw2ZDVpMnBSM1FMLVo5TDJwTm55UmZBYzFZUzBDZk5aMm5TMTBPdU5OQmtpaU5TSU9UX1c3cU8yaE5YU3pyZ1lJY3FQTmZxMUtTVl9KdWotY2l0Um1hQjc2a1lCRzE0eENZVVE?oc=5",
         "published_at": "2026-11-16T12:08:06+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "“코스피 8300 간다는데 오늘은 5100”…하루 190포인트 폭락, 증권사가 반등 점치는 이유",
         "publisher": "데일리25",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JOHlOeXlaRHBzWlRFeHc1cHZSdzBtcHZldkFLRVlJUXVCSGlRSEFTSDM4QW05TjFNZldOYnJEX1FKdWdrRlhqSC1CRERlOWtnQ0tqVlBYbS1mbWNiakZTZWxGZ0dHNHd2aFhaNQ?oc=5",
         "published_at": "2026-11-16T11:29:18+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "외국인·기관 '쌍끌이' 매도 폭탄…코스피·코스닥 급락",
         "publisher": "프리진뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JM0N3QmJvTVJhRFRCN0lLclJYNWdwNnJjSlZjMVpfckd6UHhYemdWR0FITXNaMEpjeWxwelp6cFZrMF96alViLUpVRFoySWxkblVCajlYd1lYX01TQlZTZkpZUWk2YlhBbHBRNkZiNA?oc=5",
         "published_at": "2026-11-16T10:36:42+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[오늘의 주목주] '반도체주 약세' SK스퀘어 주가 8%대 내려, 코스피 3%대 하락 마감 5100선",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZR2JDUGJrV25LaHVmT3NfOExMVWp5SEtCZDd3M29xWlVMMERMSmgxbXdNSGIwcHBnSjZudExEVW05VjUzVVF4bmpPdm1GbnVWZU82bnNDWFZxdWVhOFp3cnpYYzl1TXU1SGx4U1hYRmxEMHM?oc=5",
         "published_at": "2026-11-16T08:56:38+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[증시 오늘] 외국인 매도세에 코스피·코스닥 급락",
         "publisher": "빅터뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SdUNwQkw0YzJlRS1KUnJoZFdaOExNNTlzcHZxd0MxRzJBUEUzSlBEV3FRRDZJRTNLY3BSYmpBS0h4N1FXTV84N1RUQVBDM2xZVkJyOUIyaDBnUl9DN0tDcWdDRGFPcFk?oc=5",
         "published_at": "2026-11-16T08:40:09+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[마감시황] 외국인 1조 넘게 팔자 반도체 투톱 급락",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBmU0J6TVdGTEQ5eF9GZlFxVmRrLXhpTG5wUW9PazRIVjVjVnU0M1Q3UzR3d2Y1SDFvVm9qU3JZWVM1LTI0dHBjQnZreWliYU5yblJMc0lMQ0xBZkJFdDNHXzBhN21fTkE?oc=5",
         "published_at": "2026-11-16T08:00:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[오늘의 키워드] 정부, 수능 긴급 대응팀 구성…외국인·기관 동반 매도에 코스피 3.59% 하락",
-        "publisher": "강릉뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xZ1BRU0dfOXhSZGxhOGk5LXFBRnNxTGlqWTlxVHNZdjZUSW5mbmZ5WGR1XzBiYW1ITUZhcU55OWJQNDQ0QzlqTmRrUC0xTm16TGtaMS13YVc5ZmZxdW5uT3lQSjFvWVNlcDkwY19pYw?oc=5",
-        "published_at": "2026-11-16T07:54:12+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -127,24 +127,24 @@
         "id": "stocks_us-4"
       },
       {
+        "title": "간략 뉴스 16-11: 월가에서 소폭 변동이 나타났으며, PNJ 회장 일가는 현재 7.09%의 지분만 보유하고 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR0hseHpEbUNHZEdIcFY1TzJ2Rk9rQ2JWcDYzbEZpdmhVQkY3bTVtNlRjNkNYUEVmdllfSE9rNEN4aWhtLVpPMTlPR0VyWnNCWUhiLTZRT3lfUFE3NmthaGhtRkNxeWxXTzNIU1BOc0tuTFZkUEY0c1kxTUxXOGJ2b04xTUtab3pYeVIwc3Zwd3NFU1ktSHFFMU1ZVGZwNTZlYml5S2NPWTNiZkU?oc=5",
+        "published_at": "2026-11-16T02:41:52+00:00",
+        "id": "stocks_us-5"
+      },
+      {
         "title": "[오늘증시] 엔비디아發 불안에 코스피 5100선…반도체주 '추풍낙엽'",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sWmU0S21VaGVpYk4wQXFSMWQzSk44OVpJVWpxcng2Vy16WnRQMnBTV0VIdTA5VWVsNlZKaFhiR3h1clotSDRFczhjUGdOZFVHc3NCLVJCOWVsdzhvRDZwcDhYTkJFMG9XaDRaZVJvclJibE0?oc=5",
         "published_at": "2026-11-16T01:36:48+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "Nasdaq·S&P 500 선물 하락…Nvidia 실적·Anthropic 상장 주목",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TSkZGaGJXRnYtTF9NWWxGS0dGNk5sMlRlbXYzVzJNWFBPSzFEcjhHYk1FQTFKSFVVMU9fczBzWW1tVGlwelF5MnZBOUZiSC1jdmlyVHBMZ1MzNnhiM1B0OWVwenJ4eE52VkxXUDNIQUQ?oc=5",
         "published_at": "2026-11-16T01:35:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "미국 S&P500·나스닥100 채권혼합 ETF, 올해 1조원 유입 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QUmtGUENCVTlHM0VxQUl0bGQ0R2tNZGJmUzN2b1VxdkgtcXZZZEdHTG1Ha2JYWmd6YXhYT2dPMEFDZ2IwOVpqNlJDOA?oc=5",
-        "published_at": "2026-11-16T00:16:07+00:00",
         "id": "stocks_us-7"
       }
     ],
