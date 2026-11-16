@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-16T12:00:47.310546+09:00",
+  "data_updated_at": "2026-11-16T13:19:49.191006+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.02,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T12:00:47.310546+09:00",
+      "fetched_at": "2026-11-16T13:19:49.191006+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.05,
       "change_unit": "pp",
       "as_of": "2026-11-13",
-      "fetched_at": "2026-11-16T12:00:47.310546+09:00",
+      "fetched_at": "2026-11-16T13:19:49.191006+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "엔비디아發 불확실성 확산…코스피·코스닥 2~3% '급락'",
+        "publisher": "뉴스핌",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55bWVzaHo5VG82b0oxb01EMkdaTXFMX01kQkpaYzlhdjV4S0w4YUl4eDBZNTN5clB3QklhamF1WFdwMlhlZmh4d19HTmp4Qzhma2ZBOXRWMWNCVVhH?oc=5",
+        "published_at": "2026-11-16T02:38:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[오늘증시] 엔비디아發 불안에 코스피 5100선…반도체주 '추풍낙엽'",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sWmU0S21VaGVpYk4wQXFSMWQzSk44OVpJVWpxcng2Vy16WnRQMnBTV0VIdTA5VWVsNlZKaFhiR3h1clotSDRFczhjUGdOZFVHc3NCLVJCOWVsdzhvRDZwcDhYTkJFMG9XaDRaZVJvclJibE0?oc=5",
         "published_at": "2026-11-16T01:36:48+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "코스피, 젠슨 황 파장 속 보합권 등락…외국인 '팔자'",
+        "publisher": "SBS 뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WRWN0b2dPZE4zN0ExOEZ4M2xiQ0NPRWk5Uk9vSW9oRV9pckRTV2cyTENKU0FXb2hnMkdiWkJseGFpTGdtLUNZSGo0UXA0YllqTndpQnJQTFNTSU9qTkVmSFZtN0kyV1hSMFE?oc=5",
+        "published_at": "2026-11-16T01:28:48+00:00",
+        "id": "stocks_kr-2"
       },
       {
         "title": "코스피·코스닥 동반 상승 출발...장중 하락세 전환",
         "publisher": "YTN",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9DbzhpS3pVWFdsMmtveXI5cjdUcU04TnF5VWpqSmc5T1h4U3BDYzh0V21odDh3SG93Z05PZFBrWmQ3SFRyOFk4ODNZazJxS2pCbWtsZllUWVhCMHVtUThDT3pPY2V4OFJIbXFoRWQ5V3RBVHJidnc?oc=5",
         "published_at": "2026-11-16T01:13:00+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[개장시황] 젠슨황없는 엔비디아, 실적 발표 앞두고 반도체주 '눈치보기'",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UU2hZQU5zaER2aDFaM29LQzY0emQ3RmVpd3VzNmgwWmloRmpIT1FDRF9fZUNNTHhkXzNfejlxRWl2bGhHWUttakp1OTRJYzM3cEU0eXp2VlVUUHFHQjhtNXdHLTRzZjA?oc=5",
         "published_at": "2026-11-16T01:11:32+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-4"
       },
       {
         "title": "코스피·코스닥 동반 상승 출발…개인 매수세에 반등 시도 By EBN",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xbE9kSjkxRFhpeW9EM0NZZ19XYmFJZUZkYVlFdTc4MkZNVnJ2dVJ2bUZsWVluSzBWUzRFOWFSaVN4b2VhSzVaenFZR1ZtbE5zY3BSMDFGRmpzSk5jZUZlQTdTVlNZQ29EN3lCbDdPUnk?oc=5",
         "published_at": "2026-11-16T01:04:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피 5300선 안착 실패…AI 투심 흔들리며 코스닥도 700선 반납[fn오전시황]",
         "publisher": "파이낸셜뉴스",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQQUU1T1d3bWpyV1V3VWF3X2NLcWgyeGxJUmVfUVNqbEFHVk1mZ2QzYy0tMTJMYWZQS0otLWZyZ2pNeG9uczU1ZTliSmlJX3dRWDBncl9KVTdxUQ?oc=5",
         "published_at": "2026-11-16T00:54:17+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[개장시황]외국인·기관 눈치보기에 삼전·하닉 보합…5200선서 치열한 눈치싸움",
-        "publisher": "아주경제",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QX1htRWl1d0NJRFlZdnlvTjRDVnpzaHFIMVI2YUFiYTNDejdOMFpjOWFQNFpWTy1lcXE1OVFKaUFXc2VRZGNmeVpJY3RVNVpTMjVFVERKVk_SAVhBVV95cUxOUF9YbUVpdXdDSURZWXZ5b040Q1Z6c2hxSDFSNmFBYmEzQ3o3TjBaYzlhUDRaVk8tZXFxNTlRSmlBV3NlUWRjZnlaSWN0VTVaUzI1RVRESlZP?oc=5",
-        "published_at": "2026-11-16T00:40:45+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "방향 잃은 코스피, 개인 홀로 '사자'…5,300선 반짝 회복 |",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xQkpza0loVWlzTzVJSF9JRHdPU05UU0xZMzJjdy1iRVJiTUloYmZPb0U0eURyQkNLYjMzNEp3eldaakg4MEQwYUxWMUQtN1RzNmF2aHpGLU5OUjduSEtZUjQ0SFQ2My03NmJ1cDN5ckFMSG9F?oc=5",
-        "published_at": "2026-11-16T00:35:05+00:00",
         "id": "stocks_kr-6"
       },
       {
-        "title": "코스피, 5300선 회복은 '반짝'…외인·기관 '팔자'에 약세",
-        "publisher": "nbn 시사경제",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NSU5jOUgyNUkyNkliYWxIZndIV3lRUFpLU0QtQTZlRXFMT3FDOU9JOXhxLWtVMGNZWGNNWGZMZnFKX0xpa00zZk1iQ1ZtUEJlV2tpSUxfWjc0bnNGMlZZNldaSDVPN1k4b1E?oc=5",
-        "published_at": "2026-11-16T00:32:52+00:00",
+        "title": "코스피, 외국인·기관 매도에 5,300선 이탈…반도체주 동반 약세",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ueDlxZy1CTFNDZkUtZXhoU0dzSjBfb2RFSXh5RnozWGxudWJiNmIzUGRhQjdLWWlYS2lBMEk1RnpfeU9KTmVqaVdYU0NtaHBFODYzT3VBUVBIX2JyWDg0bWdaRkpEVDE1dWpqS2p6aTjSAXRBVV95cUxNOFc4c1N1WjBsM0tZLS1qY2FnQzFDQmVqaHJuTktUc0p3NFR2YnpkNUd2S2tZTl8tU3MydDM3MUNVUUtOWlFZdERQX1NXTzVnU3g3NTI4eHg4cjVpZlk1NUpQRlMxM3ZzOThWc05tZC16eGljWg?oc=5",
+        "published_at": "2026-11-16T00:50:28+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "11월 16일 은 가격: 미국 실질 수익률이 급등하면서 국제 은 가격은 지지선을 잃었지만, 국내 은 가격은 안정세를 유지했습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLTJqREhoZk93MUlKMHpYSXpqT3NUenpWVkU5bE94QzZlSG5OY0JPSWVwZ19BeWFoNml3SVBFY0kyS2tSd21yM1IxanRqR1Q3MmI2RW9qa2ZURWExNzhNLXNkVk9ReUExQ3c3YlFXNDI5TFRoM0JnQ1Z3ajh6cTVPb3o4NmVLdGcxWE9oQjk4eXo4TEZJb2NPaENUYzV4MEZRZXpxMG54MVEzanpOYzlXQXFSQmp2enEwY3JLNmVRTQ?oc=5",
+        "published_at": "2026-11-16T03:58:42+00:00",
+        "id": "bonds-0"
+      },
+      {
+        "title": "금 가격 3,900달러 미만, 연준의 금리 신호 기다려",
+        "publisher": "Laodong.vn",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSlhpb1ZxTk5UYWJtMFB4dHFwa0l3NUVuR284R01uakJVODN3MHBrX1JOZldBa3RHUWZYWUo2M3F2TDNub0Z1cEFKRDl1ak5nOGR6blM0S09zYm5BSGM3a3d4VnNEN3FNSTNYZlBLcmx5ZDUzQzJOX1VDZEZpems0ckVHRkR2cWh5aUxVUU5qSTlpek5CaTBBQVpBdE5SMWN2NXc?oc=5",
+        "published_at": "2026-11-16T03:54:56+00:00",
+        "id": "bonds-1"
+      },
+      {
         "title": "[오늘 금시세] 금 한돈 62만8천원대…1년 최저가와 3.5% 차이",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qV1BLWVNYQTUyMjdodlo5U1lQNS1YNGNnVXlTSzRmLW5nZXFGbm5vUGdCU0dRcUotQVRTMjBleTkzazJJU0Vpb1Z0dHJqc29UWktQTzA5QXhZTmVNUmlBdXhjbDlQNDFTVFA4dGpmbm9OUQ?oc=5",
         "published_at": "2026-11-16T00:40:22+00:00",
-        "id": "bonds-0"
+        "id": "bonds-2"
       },
       {
         "title": "[모닝 리포트] \"美 물가 상승에 국고채 금리 급등, 투자심리 위축\"",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zajVyanVOUW9ZcU1McFRvY0hUWWRqMHZDM0R3SThDbzhiTXlWeHNOeVNBbzZUYjR6bGg5TGFfY25lUEVKMTZib1dWRy14MkhnUEVfaUsySlZzcVJR?oc=5",
         "published_at": "2026-11-15T23:31:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-3"
+      },
+      {
+        "title": "[APEC 정상회의] 통상·휴전 논의에 글로벌 자금 향방 촉각…환율·증시 변곡점 맞나",
+        "publisher": "아주경제",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EYTdmemJiMy1xdzc3US1JQWstWVlpTWFldHZESVZUbW90a3ZCdl82TGtlSlI3OElpcVg0cUNUT1pKY2d6YjEyajRuY0g2dWVoekNESnhpRmPSAVhBVV95cUxNRGE3ZnpiYjMtcXc3N1EtSUFrLVlZaU1hZXR2RElWVG1vdGt2QnZfNkxrZUpSNzhJaXFYNHFDVE9aSmNnemIxMmo0bmNINnVlaHpDREp4aUZj?oc=5",
+        "published_at": "2026-11-15T08:41:41+00:00",
+        "id": "bonds-4"
       },
       {
         "title": "[뉴욕채권-주간] 인플레 위기감 짙어진 연준…'AI 테마' 향방도 주목",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzY19RM0d0ZkZJWk05bk1JbTlIN1VTSHNfaFdyVEdiUlBTUGsxLXBNX1MxbThQaGRneXp0czJrVWZ6N2VDZll2UHdLLVo2emNFNVNkRldxTW5QczVfZW9FbnJaU25wWHk3c2daTXlCX3M?oc=5",
         "published_at": "2026-11-15T08:40:09+00:00",
-        "id": "bonds-2"
+        "id": "bonds-5"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-15T06:17:57+00:00",
-        "id": "bonds-3"
-      },
-      {
-        "title": "하나증권, 미국 금리 상승을 증시 핵심 변수로 지목",
-        "publisher": "Traders Union",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYm9nQUV4S3BleVE3eFFwd2tOYm5FbTlkbk5jcmxSSWdQckNKMlhjZkpkVUNFQjdZN1AxX3dFXzZPUlU0SXVVUnp3UDhWQ0pGV2dsQmh6Rm0tSjVtRmF5amxBcEdfendoRGRHWmJ2QmRuMHJvcTAydmthMXBxR3dzU0hsellCd25vZk95TTVnOA?oc=5",
-        "published_at": "2026-11-15T06:11:22+00:00",
-        "id": "bonds-4"
+        "id": "bonds-6"
       },
       {
         "title": "[채권-주간] 11월 금통위 직전 글로벌·외국인·주가 주시",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zd3Rnb3U3dVZPV0F4VVQyOGRTVVA1eS1EYUVBZ0s0NXllclNLNXp4YllkWVF6OFN1UFY1eVo2aGx1Q3RfdGk1ZTgxQlJlYUhmam9hYmZXUnBzUU1kYUpvUzFyRXR2UXIyc0hOTm9aVy1iUQ?oc=5",
         "published_at": "2026-11-15T04:00:01+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "\"코로나·금융위기 때보다 예측 어렵다\"…다시 치솟는 美국채금리",
-        "publisher": "이데일리",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkV5QlUyYklVTzhkTWdQYTBMbzA2RGRpR0VfUmZvOUlOeERpaTBXX3lYdW82V0dIR2NXRm1tajlxOFphRUN1RU9kZW1lYjBWb1V5VWFYM3FlaGNTWTFXZlFxNHJRUUsxMVRzUTkwcW1qRmNHeUJ5SGhFdFZ0Mnk1aw?oc=5",
-        "published_at": "2026-11-15T01:08:29+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "오늘(11월 15일) 금 시세: 국제 금 가격 급락, SJC 금 가격 온스당 350만 VND 하락.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkNkVTJseGZhaFJhUGlBaHdjUGdQWmRGX1prUnF5cEg2WGxlRGhOUm1adG8ybGZUQ1dWQi1zMVE0enZSQVZUQTIyYXQ3dFJwekhFQi1RTTBzUE8yWHVzazhWVERhSlhJUmZuY1R5RFBMWWthUHhjcjQ5RG9Pck5xYlJBc0gyVlljUFhzNmQ1ZThSLUZ4TS04X0ptcVBjR2ZHMGc?oc=5",
-        "published_at": "2026-11-15T00:44:20+00:00",
         "id": "bonds-7"
       }
     ]
