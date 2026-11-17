@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T01:00:22.473128+09:00",
+  "data_updated_at": "2026-11-18T02:10:17.693776+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-18T01:00:22.473128+09:00",
+      "fetched_at": "2026-11-18T02:10:17.693776+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-18T01:00:22.473128+09:00",
+      "fetched_at": "2026-11-18T02:10:17.693776+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -106,7 +106,7 @@
         "id": "stocks_us-1"
       },
       {
-        "title": "Amer Sports A 주가, 오늘 왜 오르나?",
+        "title": "Amer Sports A 주가, 오늘 왜 오르나? By Investing.com",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LVWdWVlBlaUduM3dTMDRPbGlQZzZfUGdmc0FUUGhneGo5OGMwWHVncmN1cmYtZ1UxY2dBaXFmNnRURkNRa1lwWUFsQmJ3TEVzMWg0T0szaGRUVi02clN6cTF5R0NZTWsyaHdxRmFYMmt4d3pucW1r?oc=5",
         "published_at": "2026-11-17T13:19:00+00:00",
@@ -120,31 +120,31 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "[오늘 증시 전망] 코스피 5,100선까지 급락…뉴욕 나스닥 2.49% 하락에 국내 증시 긴장",
+        "publisher": "업코리아",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JQkxEOFhiWlhvMldwMkdJdHhEdnlSSDFtbS1iNTBZMThfTW9KZzVRdkdDM0RiQ1Q3SS1kLVUzM21XZ2xCbTVYcm0yMXA3bll4ZUQxTEZpY1JLaFJyZkZ5X0ZqcElfVTducnFTZ1pB?oc=5",
+        "published_at": "2026-11-17T00:52:20+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "[뉴욕 증시] 젠슨 황 사임 여파에 AI주 매도세… 3대 지수 일제히 하락",
         "publisher": "한양경제",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JXzBwR0lULUx5LVY2N2U5OWFMS3g2eGdsOFN3cDE1Nnc1OW1RbU1DWG03cWVjUnZlMHhiR1Q5ZFJ1MFVxMmRaMEIzNnprOVpaV2lSWmlDREpyWmpETjJvTVRDcWlfYWRoRi1iN3diWVpFUQ?oc=5",
         "published_at": "2026-11-17T00:36:55+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "뉴욕증시 일제히 급락-나스닥 2.49%↓·반도체주 약세",
         "publisher": "미디어파인",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5NSkYzTTU2UktvLWJiWEdfUTBvQWpCSlRLOEFBWFE5REl6SXg2RVpTd0pxS0lYZ2xsYU1UMHY0aV9tQU9oYThKUTJqRlI5Wnk1azdUWUpBNXE2azFzZ1E4bDg4eHZWU2FOYk0zaXhB?oc=5",
         "published_at": "2026-11-17T00:27:44+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "나스닥 -2.49%, SOX -5.28%. 엔비디아 CEO 공백과 중국 원격접속 차단이 겹친 AI 인프라 매도",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGtnemNQLWwxUnNhSWxVUGpydHJ5UGp6cXVTVTlzUzlqMElpN1p0YlljNmVSaXkzMVplREtVaHlUSkRjM01xNTMtZkMtYTR6MHBDb1RzT3ZoLXI0YTZOTFU2bmtwZTBieDh4Zk9HVjdsODJyYkNmdWJHSktwb3NMOFdB?oc=5",
         "published_at": "2026-11-16T23:49:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "엔비디아 젠슨 황 복귀 무산 속 미 증시 일제히 하락",
-        "publisher": "네이버페이 머니스토리",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50VTBjNUhlaGNqTTdVYnp2Rnd3c211dlZ6R09tX3dWeF9ZMmFmMmdoSEhGTTREUFRlM1YwTmZHX2g4SzhlOFdaaHNNZ0VlSUVkNW5XcjFQRVF0QQ?oc=5",
-        "published_at": "2026-11-16T23:41:18+00:00",
         "id": "stocks_us-7"
       }
     ],
