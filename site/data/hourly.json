@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T05:58:25.811122+09:00",
+  "data_updated_at": "2026-11-18T06:57:45.921466+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T05:58:25.811122+09:00",
+      "fetched_at": "2026-11-18T06:57:45.921466+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T05:58:25.811122+09:00",
+      "fetched_at": "2026-11-18T06:57:45.921466+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,82 +69,82 @@
         "id": "stocks_kr-4"
       },
       {
+        "title": "[증시 오늘] 코스피 5000 붕괴",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83eTJ5cWJ4a0tmQUp2a2hSa2U3MWxuZzMzVkpNUkFYYzdRUU9sVll1aVFEbEE2NnZLa3pNcldFQTQ0QUhjNVVNZEFSbmRYSldGeENvc0xFVGMyWWU1eW9fTkZuTEtyc3c?oc=5",
+        "published_at": "2026-11-17T08:18:20+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
         "title": "[마감시황] 외국인 1.4조 팔자…코스피 5000 붕괴",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DdG5kUDFEMjVtUlhxUXJjLTJURlJpYXI3SW5iMXJlWERCOWFCb2VHX1FMNUtfVU9wQTc0dExHalQwQmJHbzdqRTlrbm5MWlY0cWkwQXJObFFIRTRMYnRXRzE0ZHVhMGc?oc=5",
         "published_at": "2026-11-17T08:10:50+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "11월 17일 오후 브리핑",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUlZOY2thSkkzOGFaUC1qVkxaYmpsOTE2Mm5aUFUtQXhhYkZMNVhwTlRyLWtyX1FjMXdzUDZSVDhNel9VeG9MemJTLXNTYlpTVUN1ZlZoN3FOakYxUGQ1SUpmaUlrT2hKRmF0dktwWUlFVVU5azNEVmVjaDJQSG5iOTZR?oc=5",
         "published_at": "2026-11-17T07:57:08+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[e마켓클로징] 코스피 9개월 만에 5000선 붕괴···외국인 매도 공세",
-        "publisher": "시사저널e",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xSTlmLWgtcl9ETUhETVY2TGtEYloxdWlwSmFRNmR1TUI1c3lUS1JIZy1ydkl6ckhzR293YW0tQWFYUFV1SnRBNlZ6eGRYcG5lWU5EYWtBd284ajd0THY5YkJnMTBacWdBSHZoSWs5MDRaZw?oc=5",
-        "published_at": "2026-11-17T07:52:16+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
+        "title": "[뉴욕증시] 美 잇따른 전산장애에 S&P 500·나스닥 4일째↓",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hSHR1LTh6RjJNQ19LMGhqVWlwT3Z2Y3dzeGFxdGlBWkJWdl9YcTctZG50ZW5pdE1CR3VHRzFSUlBJTF9SR2NKTWpCQ2M2eDZTanVra0tmSjNRWS1ZUTA3ekhqQ3YtbFJ5TGJ6emlmNC0?oc=5",
+        "published_at": "2026-11-17T21:34:31+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "연준의장 직접 경고한 ‘AI 폭망 시나리오’…4000조 공든 탑 흔들린다",
+        "publisher": "매일경제",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hYzZ2RUcxMTBjN2tkcXZyZDdpYllWYUxoXzZLUlRuTkY5WUdzRTJ5emQ0T2VTUVVpUUpXcnU0a1NfUGN0RUpORlZjRW5SUkMyeUhTZg?oc=5",
+        "published_at": "2026-11-17T21:00:49+00:00",
+        "id": "stocks_us-1"
+      },
+      {
         "title": "미국증시 장초반 하락…수입물가 1.1%·엔비디아 실적 경계, 다우 0.66%↓",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aSGttbVNJOUFUeW5mdFJpYjVJbXBNaHhOaGphNUtTM1k0YjhiSEwzZ3EwekE4QXNkUFhzTzNkYWxSbkZDeC1OcExBOExubm9fQnpFWFJjS1ZldGdvei1CSWphR0xNX21uUWNJSGdiWUo2UQ?oc=5",
         "published_at": "2026-11-17T14:41:03+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-2"
       },
       {
         "title": "미국증시 전망, 나스닥 2.49% 급락 뒤 반등 시도…엔비디아 실적·10년물 금리 5.14%가 변수",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xYnJoX1lMMXNYdGJHOFBPa1p0LUVuT3VIR1dsMk9YX2FHTTdVWHdpVHBKc25uZlBtVUN2WmZ5bFZRRTRnMkx1bWpxTmVMaGFVaXFNUVNIcGUyN2o2c3VXZ1lUS0ZNSTlZak1ITVl3d0NFZw?oc=5",
         "published_at": "2026-11-17T14:04:38+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-3"
       },
       {
         "title": "Amer Sports A 주가, 오늘 왜 오르나? By Investing.com",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LVWdWVlBlaUduM3dTMDRPbGlQZzZfUGdmc0FUUGhneGo5OGMwWHVncmN1cmYtZ1UxY2dBaXFmNnRURkNRa1lwWUFsQmJ3TEVzMWg0T0szaGRUVi02clN6cTF5R0NZTWsyaHdxRmFYMmt4d3pucW1r?oc=5",
         "published_at": "2026-11-17T13:19:00+00:00",
-        "id": "stocks_us-2"
-      },
-      {
-        "title": "\"AI 기대수익 꺾이면 주가·고용 무너진다\"",
-        "publisher": "매일경제",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBZaHB3cGstMHQ5UmFHY0dpaEN3c2Z1M3ItTFpRZDZkbEgzOUdDR2NRU0oyLWFJSDMtNVlOUUhOanJCU1NoSnB5VzBhYWlsVmNOeVE?oc=5",
-        "published_at": "2026-11-17T08:29:46+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
       },
       {
         "title": "속보 (11월 17일): 나스닥 지수 2.5% 하락, 억만장자 팜 낫 부옹 소유의 빈홈즈에 호재 발생.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYkNDTGI1RDlna0NRdmdWVFNoQm5NanpQTlp5eTZjak0yMmE3QUJyRTA2UWZnOUNYMVBhY2VKUUVGeDBwck9RVFZ5M2hnRExEbWJhQjVQUlRFMVZSbmM1bnNNc1BwS29OZms4OVowN1ZsWmJ2NS1hUEJxck14cW82TlJHTXZCRFNhN1c0UlNOY3NvbThOMHFQNjE2VkpTRllZMXFFZDAyWlk?oc=5",
         "published_at": "2026-11-17T04:13:22+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,100선까지 급락…뉴욕 나스닥 2.49% 하락에 국내 증시 긴장",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JQkxEOFhiWlhvMldwMkdJdHhEdnlSSDFtbS1iNTBZMThfTW9KZzVRdkdDM0RiQ1Q3SS1kLVUzM21XZ2xCbTVYcm0yMXA3bll4ZUQxTEZpY1JLaFJyZkZ5X0ZqcElfVTducnFTZ1pB?oc=5",
         "published_at": "2026-11-17T00:52:20+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[뉴욕 증시] 젠슨 황 사임 여파에 AI주 매도세… 3대 지수 일제히 하락",
         "publisher": "한양경제",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JXzBwR0lULUx5LVY2N2U5OWFMS3g2eGdsOFN3cDE1Nnc1OW1RbU1DWG03cWVjUnZlMHhiR1Q5ZFJ1MFVxMmRaMEIzNnprOVpaV2lSWmlDREpyWmpETjJvTVRDcWlfYWRoRi1iN3diWVpFUQ?oc=5",
         "published_at": "2026-11-17T00:36:55+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "뉴욕증시 일제히 급락-나스닥 2.49%↓·반도체주 약세",
-        "publisher": "미디어파인",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5NSkYzTTU2UktvLWJiWEdfUTBvQWpCSlRLOEFBWFE5REl6SXg2RVpTd0pxS0lYZ2xsYU1UMHY0aV9tQU9oYThKUTJqRlI5Wnk1azdUWUpBNXE2azFzZ1E4bDg4eHZWU2FOYk0zaXhB?oc=5",
-        "published_at": "2026-11-17T00:27:44+00:00",
         "id": "stocks_us-7"
       }
     ],
