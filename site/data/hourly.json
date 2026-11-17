@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T07:59:20.506800+09:00",
+  "data_updated_at": "2026-11-18T08:55:17.290335+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T07:59:20.506800+09:00",
+      "fetched_at": "2026-11-18T08:55:17.290335+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T07:59:20.506800+09:00",
+      "fetched_at": "2026-11-18T08:55:17.290335+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,10 +92,10 @@
     ],
     "stocks_us": [
       {
-        "title": "[글로벗 마켓시황] '기밀 통신망 장애' 투자 위축…3거래일째 약세",
-        "publisher": "SBS 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sdFk1VHhyOU5va2xtU2lUdTVSb1pYaHJtWXgzNW5vTm5tRVR2TTQ0NE1kdWVlRGZOZ2l2MnpqbHlrTng5YVU5NHpNU0RTQkVJTjBTMTFmZmJzb1NmX2pCWVEwUUVIM1lNV3c?oc=5",
-        "published_at": "2026-11-17T22:40:07+00:00",
+        "title": "이틀 만에 1700포인트가 증발했다…좋은 실적에도 미국 증시가 움츠러든 이유",
+        "publisher": "테크42",
+        "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNeHVzTHRYbDZNRG1Jcmw3SndWcnpMRmZVajJyaU94bzBTdWZaMlFqTUxnRm1waEwyS3h0WWFRWnFJNS14OU5vZ042b3JuYW1icXk0TmJDdDIwSkVQbEEwbEF2YUJWcktkZUtzVDJQZllGeUFObGV5RTE0Y2MxSHlSWl9aMzBscG44X1Z5WTJrZzhoWjVaZk13a0lmMjI5eG10OGxoeU10b01RTmpHbnl4cUlqdDFvQ1VFalFiamtocV9ac2pMSWJrdU1qRUpWQ3RDeGg4Uk9RVnRLZXdOT19MNTlXa21SVzdhT3Y4MS16VUQ0Vjdvc2NUU3ZXOUxXdjI3cW1BeTVkUnJZNy1Pb1VFVmxYOGpzaTBqU3VkWlkyMVJoeW1TS2I1LWVleEpmVzdVM0VNZXlsOFg5N0E?oc=5",
+        "published_at": "2026-11-17T23:48:45+00:00",
         "id": "stocks_us-0"
       },
       {
@@ -120,31 +120,31 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "[뉴욕증시 마감] 엔비디아 실적 앞두고 일제히 하락…다우 1.64%↓",
+        "publisher": "아주경제",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SYnpEOF9BbHJUNHRfZ0puRTB5VVZQbmZPbWlWQkZLdldfYzJzWHBqS0taM2dxY3VOOXFnYndqM3hEYnVjbkNYLWtVWlFsWTJjcGFULVJ4SmbSAVhBVV95cUxNUmJ6RDhfQWxyVDR0X2dKbkUweVVWUG5mT21pVkJGS3ZXX2Myc1hwaktLWjNncWN1TjlxZ2J3ajN4RGJ1Y25DWC1rVVpRbFkyY3BhVC1SeEpm?oc=5",
+        "published_at": "2026-11-17T22:00:02+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "[뉴욕증시] 美 잇따른 전산장애에 S&P 500·나스닥 4일째↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hSHR1LTh6RjJNQ19LMGhqVWlwT3Z2Y3dzeGFxdGlBWkJWdl9YcTctZG50ZW5pdE1CR3VHRzFSUlBJTF9SR2NKTWpCQ2M2eDZTanVra0tmSjNRWS1ZUTA3ekhqQ3YtbFJ5TGJ6emlmNC0?oc=5",
         "published_at": "2026-11-17T21:34:31+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[뉴욕증시-1보] 美 잇따른 전산장애에 S&P 500·나스닥 4일째↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBNdzNQZjB3cXY5WFExNkQzSlNoS2s4TUxBT2NlT3VJam90eG9HU1lTSTlhT0RaWk9WTVBoZ3hDLVFIa1NJU0ZGSDdRVllmd1NYT2Zyc3pLNnZVVTRZZklQOEdvOTF1Qm5qbEFPQzVZblA?oc=5",
         "published_at": "2026-11-17T21:10:09+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "연준의장 직접 경고한 ‘AI 폭망 시나리오’…4000조 공든 탑 흔들린다",
         "publisher": "매일경제",
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hYzZ2RUcxMTBjN2tkcXZyZDdpYllWYUxoXzZLUlRuTkY5WUdzRTJ5emQ0T2VTUVVpUUpXcnU0a1NfUGN0RUpORlZjRW5SUkMyeUhTZg?oc=5",
         "published_at": "2026-11-17T21:00:49+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "미국증시 장초반 하락…수입물가 1.1%·엔비디아 실적 경계, 다우 0.66%↓",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aSGttbVNJOUFUeW5mdFJpYjVJbXBNaHhOaGphNUtTM1k0YjhiSEwzZ3EwekE4QXNkUFhzTzNkYWxSbkZDeC1OcExBOExubm9fQnpFWFJjS1ZldGdvei1CSWphR0xNX21uUWNJSGdiWUo2UQ?oc=5",
-        "published_at": "2026-11-17T14:41:03+00:00",
         "id": "stocks_us-7"
       }
     ],
