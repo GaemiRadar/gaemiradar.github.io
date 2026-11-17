@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T18:08:21.795105+09:00",
+  "data_updated_at": "2026-11-17T19:13:18.982758+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T18:08:21.795105+09:00",
+      "fetched_at": "2026-11-17T19:13:18.982758+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T18:08:21.795105+09:00",
+      "fetched_at": "2026-11-17T19:13:18.982758+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "코스피 5000선 붕괴 속 대한항공, 루닛만 동반 매수! 의미 있는 신호일까? (11.17)",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZnc0c3FlcXZOVm1seGVPT0c0RXNPTTEzODhmTk1DR1drMlh6SEFfckpnNGRFclRua09KZzdOV2pMSDNZZDNZWFQyS0dCTFhwWEp2cmlLWko2STNTYzU3TlNRRW9rUjE0QUFlV2pObU1pTUU5MjgyQVJQcHltQmhDV3EzcHlaSUsyNFE?oc=5",
+        "published_at": "2026-11-17T09:23:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[오늘증시] 코스피, AI 불확실성·외국인 1.4조 투매에 5000선 붕괴…9개월여 만에 최저치 마감",
         "publisher": "Queen 이코노미퀸",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aYVZOQ0Yxa0pjN29ZVzJIZDQxZTRna2d2N3kzSDA5SU9od05YLW9UVW82RFp4eW8tWEpoZ2RvUmdKZWxnTHNzOThKdlU0WVByRThVSWFFd1Z5UVpGYVBNamJIVGtpeE1y?oc=5",
         "published_at": "2026-11-17T09:00:56+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[오늘의 주목주] '반도체 투심 위축' 삼성전자우 주가 5%대 내려, 코스피 외국인 순매도에 4960선 하락 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5vOGItYnB3dU0tRklNWl95U0R5V2VBaUt2ZmE1ZzlBREY5ZnYzZF9aczFlcXpiV1lLVU1zY1JCbTRaZnBhbXpKX0ZlZjFoVVZtSHVLRng1LUpFZzJaMlRxOHlPYnI3NE9MNjVkUm9lTG50YTg?oc=5",
         "published_at": "2026-11-17T08:27:13+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[마감시황] 외국인 1.4조 팔자…코스피 5000 붕괴",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DdG5kUDFEMjVtUlhxUXJjLTJURlJpYXI3SW5iMXJlWERCOWFCb2VHX1FMNUtfVU9wQTc0dExHalQwQmJHbzdqRTlrbm5MWlY0cWkwQXJObFFIRTRMYnRXRzE0ZHVhMGc?oc=5",
         "published_at": "2026-11-17T08:10:50+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "11월 17일 오후 브리핑",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUlZOY2thSkkzOGFaUC1qVkxaYmpsOTE2Mm5aUFUtQXhhYkZMNVhwTlRyLWtyX1FjMXdzUDZSVDhNel9VeG9MemJTLXNTYlpTVUN1ZlZoN3FOakYxUGQ1SUpmaUlrT2hKRmF0dktwWUlFVVU5azNEVmVjaDJQSG5iOTZR?oc=5",
         "published_at": "2026-11-17T07:57:08+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[e마켓클로징] 코스피 9개월 만에 5000선 붕괴···외국인 매도 공세",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xSTlmLWgtcl9ETUhETVY2TGtEYloxdWlwSmFRNmR1TUI1c3lUS1JIZy1ydkl6ckhzR293YW0tQWFYUFV1SnRBNlZ6eGRYcG5lWU5EYWtBd284ajd0THY5YkJnMTBacWdBSHZoSWs5MDRaZw?oc=5",
         "published_at": "2026-11-17T07:52:16+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "양 지수 동반 -2%대 하락",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40TE8zM3hBZGMtRmRaUVBOWUxNM1N0SlhRTjVaVDBTU0NTekEtMVpqeV8yYy1aWnF2NmpFeXFoREZKOGdUM0M0aDNiWXJIWUY1bEFOVVAtTE1sNW1kRnRJRTdfOW43eVctb1NhNg?oc=5",
         "published_at": "2026-11-17T07:11:43+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[마감시황] 코스피 9개월 만에 4000선 추락…외국인 1.5조 '팔자'",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YMGVVTURabWctWUdtMjJqNHlkb21hOEpMOUt3T0tva0FNUnhXLVdxM0Yzai1iQmJmUUYyckF1T0h2aTd3dG9Ud290Y3BxR1JtY3hIbXdKVEhwZTFV?oc=5",
         "published_at": "2026-11-17T06:49:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[마감시황] 코스피 2.59% 하락해 5000선 붕괴…반도체 이어 금융·조선주도 약세",
-        "publisher": "한국경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JQ3l4RmxRTkYyVE9JazA5azZCU3gyZW1sOXdFLWVnR1RkT216NlJNUGRYWlJNaDRHbHN0dG5HRzRxYmVrd3hnOWE4WlAwX1lzSUl3VGJrQXhvdw?oc=5",
-        "published_at": "2026-11-17T06:47:32+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "[채권-마감] 금리 하락…코스피 4천선 후퇴에 안전자산 선호",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XNU9TdXloODFJdlFVVVkwMTdkVVdCVndKWEJmMzRBNWRNRThVNW1YTjVTaUpFWXJwOXlRc1ZGWHZKOE1nSG12NXBGQWpTbjZuY1F4dHN4Ry0wNWxOMzVPQlVaQUIyOGt0c2dsYkNMWjc?oc=5",
+        "published_at": "2026-11-17T09:58:05+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "유로존 국채 금리, 미국 국채 강세에 이끌려 1개월 최고치 근접 유지",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84al9SMnBqUFR3ZVc1NXJZa0JhWGJPWFl6RXlOU0R6VHpTSld6Y1FpVFNEcVNMdE5RTGdXZWIzY0UtWFc0ZE5Od0tIT1NZWG5qaGZqZVpncm1EZG5VUkN6SkFabzJMOUE?oc=5",
         "published_at": "2026-11-17T09:00:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
+      },
+      {
+        "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 17일)",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEaUhFc1FlV0daaXVuczlfVUlZNlV3OXpMZXhIZVFQREktbE1HaTViSGFlQzgtMVFFVkVJX2VMa0h5RkNJV21IQmxHb2xMNENmcGVfVG1PM2JNQQ?oc=5",
+        "published_at": "2026-11-17T08:36:00+00:00",
+        "id": "bonds-2"
+      },
+      {
+        "title": "코스피 5000선 붕괴에 국고채 금리 혼조…중단기물 하락",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnVlJKQ2FkNWNYeHVzM2s2cUE1YnUtUzNSY1lTaTRhbl9Ka2dwVTBMVWR5SkFRUG9kXzVRYnNPOXlqeUhBdDJYV01oVU1qYTJaRjBZQXVNTVDSAVhBVV95cUxQZ1ZSSkNhZDVjWHh1czNrNnFBNWJ1LVMzUmNZU2k0YW5fSmtncFUwTFVkeUpBUVBvZF81UWJzTzl5anlIQXQyWFdNaFVNamEyWkYwWUF1TU1Q?oc=5",
+        "published_at": "2026-11-17T08:13:00+00:00",
+        "id": "bonds-3"
       },
       {
         "title": "오늘 BIDV 금리, 4억 동 예금 시 2,700만 동 이상 이자 수령",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMktQZzRGVWpwb0wxSG5jSnJaZWRkQUU3Q3JnUEFQV0FFeW95YjFDUHQ4bDFsRlJDcUF0ejRqblpaSmpXWHh3VFgtMHhTbFRFUDZCMnI2Mms0RXhzTk1vd3F1YUFSZlFGbUE4R2ZtVkNnRGdIQUVMMzFVT1Nib3V1ZlBpWC1QRmtaSzlKN0t4eWdxQ0NVbGFFUWJ4b1pLSDJydDJPNkhUTzJjX2hCN1VyQllRT0loc2s?oc=5",
         "published_at": "2026-11-17T06:36:39+00:00",
-        "id": "bonds-1"
+        "id": "bonds-4"
       },
       {
         "title": "세계 금 가격이 급락 후 소폭 상승했다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vRFpwaFJKSVY2MWViWDJ3cDhwRUx4ZGtYVXlrUWpRc0JsYkotWnlfZS1HckloTXFBQ1JGS01YV1BmMWdRek04eERZandkZ2ZjNXd6ZGM5UTZGYm9tTzlGSEt2VjdyZTl5dEI1Tm5HRGZOdHdqcWQtY1ZxTQ?oc=5",
         "published_at": "2026-11-17T05:13:32+00:00",
-        "id": "bonds-2"
+        "id": "bonds-5"
       },
       {
         "title": "국고채 일제히 약세…外人 10선 순매도·성장률 상향 우려",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uZ002WFo4T1FVel9wZ2NFRkl0S1R3MFVZVS1nLWxKLUpSdE53YW5TdVVjSXBGaWZfWjNDV3hnWUI3U01kUUdtb0JBdUNXQmlUWWFIZjMxXzhRcTFmQkJMelJWcDJHTmVwZE01YngzOHg?oc=5",
         "published_at": "2026-11-17T04:22:31+00:00",
-        "id": "bonds-3"
+        "id": "bonds-6"
       },
       {
         "title": "채권시장 약세 전환…3년물 금리 연 3.757% : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mNnQ1ZUpZUEdkNjBZMkVhcnVtQl9KaFBXcE1mdVVTemtlVmpkcDNnR2o1MDZSdFVCQnRrbHhDTG82QzE2RnY3VXJ1WQ?oc=5",
         "published_at": "2026-11-17T02:54:56+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "\"美국채 수익률, AI주 급락에도 오르면 스트레스 원천된다\"",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE10TFQ4ZWIzU2t3NzIxRzhKZWlkU1NrUkFjWmVwdHo5V3RjSV8yMVZ2OTE3ZGZzcHRQRlpQd3luVWp3Z1dMRVF0SDlzQmEtd0FVUmRDVjRZbDctSWRVYjZ5N05OUlZXaWNpSDVQWkdOQWE?oc=5",
-        "published_at": "2026-11-17T02:41:25+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "2026년 11월 17일 오늘 금 가격: 세계 금 가격은 하락했고, 국내 가격은 변동이 없습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmRJaG9seW5zX2NiVm9zaEdXSURabkxwSF80NXZ4UDNScGxQOVhsblgxVVhPLU50Wld0ZmFYR1E2WFpIOFU3aFNmdmk5YWhyZ1lUSnZEemtVTElyTUt4YkFvMjktdEVIQjdtUkRyYWFRV1VzR2ZVRWZMcXYzY2pFUzliSVRJcjNoS05GVGgxM2FFS2pYZHZN?oc=5",
-        "published_at": "2026-11-17T01:50:48+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[오늘 금시세] 금 한돈 62만3천원대 소폭 반등…국제 금값 1년 최저, 추가 하락 변수는",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lbUZLeDE3cjZybE9TdkktM0duNXF5ajRJV2hIRHZRa0Juc3ZlNGhUTTByS0hJSFNhdHVjVW4yMFE1Ty1jdTdaN3J4N3RfZ0tXcWtvZkYtYXNZeDRBM0JrcXlSQlRDNndRYWNIMlp2R0c2Zw?oc=5",
-        "published_at": "2026-11-17T00:26:19+00:00",
         "id": "bonds-7"
       }
     ]
