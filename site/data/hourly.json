@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T22:14:29.235066+09:00",
+  "data_updated_at": "2026-11-17T23:26:24.367844+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T22:14:29.235066+09:00",
+      "fetched_at": "2026-11-17T23:26:24.367844+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T22:14:29.235066+09:00",
+      "fetched_at": "2026-11-17T23:26:24.367844+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,24 +92,24 @@
     ],
     "stocks_us": [
       {
+        "title": "미국증시 전망, 나스닥 2.49% 급락 뒤 반등 시도…엔비디아 실적·10년물 금리 5.14%가 변수",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xYnJoX1lMMXNYdGJHOFBPa1p0LUVuT3VIR1dsMk9YX2FHTTdVWHdpVHBKc25uZlBtVUN2WmZ5bFZRRTRnMkx1bWpxTmVMaGFVaXFNUVNIcGUyN2o2c3VXZ1lUS0ZNSTlZak1ITVl3d0NFZw?oc=5",
+        "published_at": "2026-11-17T14:04:38+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "Amer Sports A 주가, 오늘 왜 오르나?",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LVWdWVlBlaUduM3dTMDRPbGlQZzZfUGdmc0FUUGhneGo5OGMwWHVncmN1cmYtZ1UxY2dBaXFmNnRURkNRa1lwWUFsQmJ3TEVzMWg0T0szaGRUVi02clN6cTF5R0NZTWsyaHdxRmFYMmt4d3pucW1r?oc=5",
+        "published_at": "2026-11-17T13:19:00+00:00",
+        "id": "stocks_us-1"
+      },
+      {
         "title": "속보 (11월 17일): 나스닥 지수 2.5% 하락, 억만장자 팜 낫 부옹 소유의 빈홈즈에 호재 발생.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYkNDTGI1RDlna0NRdmdWVFNoQm5NanpQTlp5eTZjak0yMmE3QUJyRTA2UWZnOUNYMVBhY2VKUUVGeDBwck9RVFZ5M2hnRExEbWJhQjVQUlRFMVZSbmM1bnNNc1BwS29OZms4OVowN1ZsWmJ2NS1hUEJxck14cW82TlJHTXZCRFNhN1c0UlNOY3NvbThOMHFQNjE2VkpTRllZMXFFZDAyWlk?oc=5",
         "published_at": "2026-11-17T04:13:22+00:00",
-        "id": "stocks_us-0"
-      },
-      {
-        "title": "삼성전자, 스페이스X 스타링크 위성용 반도체 미국 오스틴 공장서 생산 추진…2030년 가동 목표 - 와우넷 오늘장전략",
-        "publisher": "한국경제TV",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9yaEdXNVZranBsdWtjWEVKdkZFa2gxYzBsTUZCUm93MlM1emc5djRDS25ESW9IRlBualhUYVJpSjJyRkRRd1dycWFiMllQcW1yek53R2FLaE1xcDQxbHRIc0QtWWJXNXZvT1Iwcy1vLTRid0tBTlpN?oc=5",
-        "published_at": "2026-11-17T02:35:01+00:00",
-        "id": "stocks_us-1"
-      },
-      {
-        "title": "금(금값, 금시세) 11월 17일, 오늘 18K 14K 등 얼마?",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5STnNxTDZLRFl0NzliaWw2cHUxTVRqa3dOV2F3WTJCd19ZVUxOQnBrUkkwNWNUaEhHT1dqNHBSVldZakFuaHEwbG1nUWxSLWw4NFRfYjEwZFBrMC1wSnpwYmp0WG91eC14?oc=5",
-        "published_at": "2026-11-17T01:10:21+00:00",
         "id": "stocks_us-2"
       },
       {
