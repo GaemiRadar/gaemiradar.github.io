@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T20:56:46.495219+09:00",
+  "data_updated_at": "2026-11-17T22:14:29.235066+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T20:56:46.495219+09:00",
+      "fetched_at": "2026-11-17T22:14:29.235066+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T20:56:46.495219+09:00",
+      "fetched_at": "2026-11-17T22:14:29.235066+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,75 +69,75 @@
         "id": "stocks_kr-4"
       },
       {
+        "title": "[증시 오늘] 코스피 5000 붕괴",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83eTJ5cWJ4a0tmQUp2a2hSa2U3MWxuZzMzVkpNUkFYYzdRUU9sVll1aVFEbEE2NnZLa3pNcldFQTQ0QUhjNVVNZEFSbmRYSldGeENvc0xFVGMyWWU1eW9fTkZuTEtyc3c?oc=5",
+        "published_at": "2026-11-17T08:18:20+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
         "title": "[마감시황] 외국인 1.4조 팔자…코스피 5000 붕괴",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DdG5kUDFEMjVtUlhxUXJjLTJURlJpYXI3SW5iMXJlWERCOWFCb2VHX1FMNUtfVU9wQTc0dExHalQwQmJHbzdqRTlrbm5MWlY0cWkwQXJObFFIRTRMYnRXRzE0ZHVhMGc?oc=5",
         "published_at": "2026-11-17T08:10:50+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "11월 17일 오후 브리핑",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUlZOY2thSkkzOGFaUC1qVkxaYmpsOTE2Mm5aUFUtQXhhYkZMNVhwTlRyLWtyX1FjMXdzUDZSVDhNel9VeG9MemJTLXNTYlpTVUN1ZlZoN3FOakYxUGQ1SUpmaUlrT2hKRmF0dktwWUlFVVU5azNEVmVjaDJQSG5iOTZR?oc=5",
         "published_at": "2026-11-17T07:57:08+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[e마켓클로징] 코스피 9개월 만에 5000선 붕괴···외국인 매도 공세",
-        "publisher": "시사저널e",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xSTlmLWgtcl9ETUhETVY2TGtEYloxdWlwSmFRNmR1TUI1c3lUS1JIZy1ydkl6ckhzR293YW0tQWFYUFV1SnRBNlZ6eGRYcG5lWU5EYWtBd284ajd0THY5YkJnMTBacWdBSHZoSWs5MDRaZw?oc=5",
-        "published_at": "2026-11-17T07:52:16+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
-        "title": "(뉴욕증시) 3대 지수 동반 하락...나스닥 2.49%↓ - 경제",
-        "publisher": "koreadailytimes.com",
-        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5HOHkwclJmWkFGd1dBcDVSaWEzd3NUNUxXZnFjRHJLNFBnTGlNZ1ZuRVU0am9YWTdLNGMwV2owUnRXT3p4ZjVaSQ?oc=5",
-        "published_at": "2026-11-17T06:21:46+00:00",
-        "id": "stocks_us-0"
-      },
-      {
         "title": "속보 (11월 17일): 나스닥 지수 2.5% 하락, 억만장자 팜 낫 부옹 소유의 빈홈즈에 호재 발생.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYkNDTGI1RDlna0NRdmdWVFNoQm5NanpQTlp5eTZjak0yMmE3QUJyRTA2UWZnOUNYMVBhY2VKUUVGeDBwck9RVFZ5M2hnRExEbWJhQjVQUlRFMVZSbmM1bnNNc1BwS29OZms4OVowN1ZsWmJ2NS1hUEJxck14cW82TlJHTXZCRFNhN1c0UlNOY3NvbThOMHFQNjE2VkpTRllZMXFFZDAyWlk?oc=5",
         "published_at": "2026-11-17T04:13:22+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-0"
       },
       {
         "title": "삼성전자, 스페이스X 스타링크 위성용 반도체 미국 오스틴 공장서 생산 추진…2030년 가동 목표 - 와우넷 오늘장전략",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9yaEdXNVZranBsdWtjWEVKdkZFa2gxYzBsTUZCUm93MlM1emc5djRDS25ESW9IRlBualhUYVJpSjJyRkRRd1dycWFiMllQcW1yek53R2FLaE1xcDQxbHRIc0QtWWJXNXZvT1Iwcy1vLTRid0tBTlpN?oc=5",
         "published_at": "2026-11-17T02:35:01+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-1"
       },
       {
         "title": "금(금값, 금시세) 11월 17일, 오늘 18K 14K 등 얼마?",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5STnNxTDZLRFl0NzliaWw2cHUxTVRqa3dOV2F3WTJCd19ZVUxOQnBrUkkwNWNUaEhHT1dqNHBSVldZakFuaHEwbG1nUWxSLWw4NFRfYjEwZFBrMC1wSnpwYmp0WG91eC14?oc=5",
         "published_at": "2026-11-17T01:10:21+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-2"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,100선까지 급락…뉴욕 나스닥 2.49% 하락에 국내 증시 긴장",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JQkxEOFhiWlhvMldwMkdJdHhEdnlSSDFtbS1iNTBZMThfTW9KZzVRdkdDM0RiQ1Q3SS1kLVUzM21XZ2xCbTVYcm0yMXA3bll4ZUQxTEZpY1JLaFJyZkZ5X0ZqcElfVTducnFTZ1pB?oc=5",
         "published_at": "2026-11-17T00:52:20+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
         "title": "[뉴욕 증시] 젠슨 황 사임 여파에 AI주 매도세… 3대 지수 일제히 하락",
         "publisher": "한양경제",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JXzBwR0lULUx5LVY2N2U5OWFMS3g2eGdsOFN3cDE1Nnc1OW1RbU1DWG03cWVjUnZlMHhiR1Q5ZFJ1MFVxMmRaMEIzNnprOVpaV2lSWmlDREpyWmpETjJvTVRDcWlfYWRoRi1iN3diWVpFUQ?oc=5",
         "published_at": "2026-11-17T00:36:55+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-4"
       },
       {
         "title": "뉴욕증시 일제히 급락-나스닥 2.49%↓·반도체주 약세",
         "publisher": "미디어파인",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5NSkYzTTU2UktvLWJiWEdfUTBvQWpCSlRLOEFBWFE5REl6SXg2RVpTd0pxS0lYZ2xsYU1UMHY0aV9tQU9oYThKUTJqRlI5Wnk1azdUWUpBNXE2azFzZ1E4bDg4eHZWU2FOYk0zaXhB?oc=5",
         "published_at": "2026-11-17T00:27:44+00:00",
+        "id": "stocks_us-5"
+      },
+      {
+        "title": "나스닥 -2.49%, SOX -5.28%. 엔비디아 CEO 공백과 중국 원격접속 차단이 겹친 AI 인프라 매도",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGtnemNQLWwxUnNhSWxVUGpydHJ5UGp6cXVTVTlzUzlqMElpN1p0YlljNmVSaXkzMVplREtVaHlUSkRjM01xNTMtZkMtYTR6MHBDb1RzT3ZoLXI0YTZOTFU2bmtwZTBieDh4Zk9HVjdsODJyYkNmdWJHSktwb3NMOFdB?oc=5",
+        "published_at": "2026-11-16T23:49:00+00:00",
         "id": "stocks_us-6"
       },
       {
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "미국 10년물 5.12%와 실질금리",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcXQ3YUJoRDNqVnVNbEROTUNNUkhlaHVHR000blhsWVYyN1A4Q1FQUnhsQ2FMUTZYS2FpU09VV2FlWUIzT0pfNTlDMmdqVlctUVkwNGlXZ0h4RUxNZTg3Y0ZkcmxTTDRIcThBbHNfTGVZUWlCSk1zVjlQbmkxd3hKU1BKTUR2STNwbUVSMVpGOFM?oc=5",
+        "published_at": "2026-11-17T12:39:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "[채권-마감] 금리 하락…코스피 4천선 후퇴에 안전자산 선호",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XNU9TdXloODFJdlFVVVkwMTdkVVdCVndKWEJmMzRBNWRNRThVNW1YTjVTaUpFWXJwOXlRc1ZGWHZKOE1nSG12NXBGQWpTbjZuY1F4dHN4Ry0wNWxOMzVPQlVaQUIyOGt0c2dsYkNMWjc?oc=5",
         "published_at": "2026-11-17T09:58:05+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "유로존 국채 금리, 미국 국채 강세에 이끌려 1개월 최고치 근접 유지",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84al9SMnBqUFR3ZVc1NXJZa0JhWGJPWFl6RXlOU0R6VHpTSld6Y1FpVFNEcVNMdE5RTGdXZWIzY0UtWFc0ZE5Od0tIT1NZWG5qaGZqZVpncm1EZG5VUkN6SkFabzJMOUE?oc=5",
         "published_at": "2026-11-17T09:00:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "코스피 5000선 붕괴에 국고채 금리 혼조…중단기물 하락",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnVlJKQ2FkNWNYeHVzM2s2cUE1YnUtUzNSY1lTaTRhbl9Ka2dwVTBMVWR5SkFRUG9kXzVRYnNPOXlqeUhBdDJYV01oVU1qYTJaRjBZQXVNTVDSAVhBVV95cUxQZ1ZSSkNhZDVjWHh1czNrNnFBNWJ1LVMzUmNZU2k0YW5fSmtncFUwTFVkeUpBUVBvZF81UWJzTzl5anlIQXQyWFdNaFVNamEyWkYwWUF1TU1Q?oc=5",
         "published_at": "2026-11-17T08:13:00+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 17일)",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEaUhFc1FlV0daaXVuczlfVUlZNlV3OXpMZXhIZVFQREktbE1HaTViSGFlQzgtMVFFVkVJX2VMa0h5RkNJV21IQmxHb2xMNENmcGVfVG1PM2JNQQ?oc=5",
         "published_at": "2026-11-17T07:20:18+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "오늘 BIDV 금리, 4억 동 예금 시 2,700만 동 이상 이자 수령",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMktQZzRGVWpwb0wxSG5jSnJaZWRkQUU3Q3JnUEFQV0FFeW95YjFDUHQ4bDFsRlJDcUF0ejRqblpaSmpXWHh3VFgtMHhTbFRFUDZCMnI2Mms0RXhzTk1vd3F1YUFSZlFGbUE4R2ZtVkNnRGdIQUVMMzFVT1Nib3V1ZlBpWC1QRmtaSzlKN0t4eWdxQ0NVbGFFUWJ4b1pLSDJydDJPNkhUTzJjX2hCN1VyQllRT0loc2s?oc=5",
         "published_at": "2026-11-17T06:36:39+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "세계 금 가격이 급락 후 소폭 상승했다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vRFpwaFJKSVY2MWViWDJ3cDhwRUx4ZGtYVXlrUWpRc0JsYkotWnlfZS1HckloTXFBQ1JGS01YV1BmMWdRek04eERZandkZ2ZjNXd6ZGM5UTZGYm9tTzlGSEt2VjdyZTl5dEI1Tm5HRGZOdHdqcWQtY1ZxTQ?oc=5",
         "published_at": "2026-11-17T05:13:32+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "국고채 일제히 약세…外人 10선 순매도·성장률 상향 우려",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uZ002WFo4T1FVel9wZ2NFRkl0S1R3MFVZVS1nLWxKLUpSdE53YW5TdVVjSXBGaWZfWjNDV3hnWUI3U01kUUdtb0JBdUNXQmlUWWFIZjMxXzhRcTFmQkJMelJWcDJHTmVwZE01YngzOHg?oc=5",
         "published_at": "2026-11-17T04:22:31+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "채권시장 약세 전환…3년물 금리 연 3.757% : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mNnQ1ZUpZUEdkNjBZMkVhcnVtQl9KaFBXcE1mdVVTemtlVmpkcDNnR2o1MDZSdFVCQnRrbHhDTG82QzE2RnY3VXJ1WQ?oc=5",
-        "published_at": "2026-11-17T02:54:56+00:00",
         "id": "bonds-7"
       }
     ]
