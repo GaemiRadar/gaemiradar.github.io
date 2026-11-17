@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T03:06:20.139313+09:00",
+  "data_updated_at": "2026-11-18T04:06:25.843282+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-18T03:06:20.139313+09:00",
+      "fetched_at": "2026-11-18T04:06:25.843282+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-18T03:06:20.139313+09:00",
+      "fetched_at": "2026-11-18T04:06:25.843282+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,24 +69,24 @@
         "id": "stocks_kr-4"
       },
       {
-        "title": "[증시 오늘] 코스피 5000 붕괴",
-        "publisher": "빅터뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83eTJ5cWJ4a0tmQUp2a2hSa2U3MWxuZzMzVkpNUkFYYzdRUU9sVll1aVFEbEE2NnZLa3pNcldFQTQ0QUhjNVVNZEFSbmRYSldGeENvc0xFVGMyWWU1eW9fTkZuTEtyc3c?oc=5",
-        "published_at": "2026-11-17T08:18:20+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
         "title": "[마감시황] 외국인 1.4조 팔자…코스피 5000 붕괴",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DdG5kUDFEMjVtUlhxUXJjLTJURlJpYXI3SW5iMXJlWERCOWFCb2VHX1FMNUtfVU9wQTc0dExHalQwQmJHbzdqRTlrbm5MWlY0cWkwQXJObFFIRTRMYnRXRzE0ZHVhMGc?oc=5",
         "published_at": "2026-11-17T08:10:50+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "11월 17일 오후 브리핑",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUlZOY2thSkkzOGFaUC1qVkxaYmpsOTE2Mm5aUFUtQXhhYkZMNVhwTlRyLWtyX1FjMXdzUDZSVDhNel9VeG9MemJTLXNTYlpTVUN1ZlZoN3FOakYxUGQ1SUpmaUlrT2hKRmF0dktwWUlFVVU5azNEVmVjaDJQSG5iOTZR?oc=5",
         "published_at": "2026-11-17T07:57:08+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[e마켓클로징] 코스피 9개월 만에 5000선 붕괴···외국인 매도 공세",
+        "publisher": "시사저널e",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xSTlmLWgtcl9ETUhETVY2TGtEYloxdWlwSmFRNmR1TUI1c3lUS1JIZy1ydkl6ckhzR293YW0tQWFYUFV1SnRBNlZ6eGRYcG5lWU5EYWtBd284ajd0THY5YkJnMTBacWdBSHZoSWs5MDRaZw?oc=5",
+        "published_at": "2026-11-17T07:52:16+00:00",
         "id": "stocks_kr-7"
       }
     ],
