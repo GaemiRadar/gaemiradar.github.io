@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-17T23:26:24.367844+09:00",
+  "data_updated_at": "2026-11-18T01:00:22.473128+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.05,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T23:26:24.367844+09:00",
+      "fetched_at": "2026-11-18T01:00:22.473128+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-16",
-      "fetched_at": "2026-11-17T23:26:24.367844+09:00",
+      "fetched_at": "2026-11-18T01:00:22.473128+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,31 +92,31 @@
     ],
     "stocks_us": [
       {
+        "title": "미국증시 장초반 하락…수입물가 1.1%·엔비디아 실적 경계, 다우 0.66%↓",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aSGttbVNJOUFUeW5mdFJpYjVJbXBNaHhOaGphNUtTM1k0YjhiSEwzZ3EwekE4QXNkUFhzTzNkYWxSbkZDeC1OcExBOExubm9fQnpFWFJjS1ZldGdvei1CSWphR0xNX21uUWNJSGdiWUo2UQ?oc=5",
+        "published_at": "2026-11-17T14:41:03+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "미국증시 전망, 나스닥 2.49% 급락 뒤 반등 시도…엔비디아 실적·10년물 금리 5.14%가 변수",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xYnJoX1lMMXNYdGJHOFBPa1p0LUVuT3VIR1dsMk9YX2FHTTdVWHdpVHBKc25uZlBtVUN2WmZ5bFZRRTRnMkx1bWpxTmVMaGFVaXFNUVNIcGUyN2o2c3VXZ1lUS0ZNSTlZak1ITVl3d0NFZw?oc=5",
         "published_at": "2026-11-17T14:04:38+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-1"
       },
       {
         "title": "Amer Sports A 주가, 오늘 왜 오르나?",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LVWdWVlBlaUduM3dTMDRPbGlQZzZfUGdmc0FUUGhneGo5OGMwWHVncmN1cmYtZ1UxY2dBaXFmNnRURkNRa1lwWUFsQmJ3TEVzMWg0T0szaGRUVi02clN6cTF5R0NZTWsyaHdxRmFYMmt4d3pucW1r?oc=5",
         "published_at": "2026-11-17T13:19:00+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-2"
       },
       {
         "title": "속보 (11월 17일): 나스닥 지수 2.5% 하락, 억만장자 팜 낫 부옹 소유의 빈홈즈에 호재 발생.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYkNDTGI1RDlna0NRdmdWVFNoQm5NanpQTlp5eTZjak0yMmE3QUJyRTA2UWZnOUNYMVBhY2VKUUVGeDBwck9RVFZ5M2hnRExEbWJhQjVQUlRFMVZSbmM1bnNNc1BwS29OZms4OVowN1ZsWmJ2NS1hUEJxck14cW82TlJHTXZCRFNhN1c0UlNOY3NvbThOMHFQNjE2VkpTRllZMXFFZDAyWlk?oc=5",
         "published_at": "2026-11-17T04:13:22+00:00",
-        "id": "stocks_us-2"
-      },
-      {
-        "title": "[오늘 증시 전망] 코스피 5,100선까지 급락…뉴욕 나스닥 2.49% 하락에 국내 증시 긴장",
-        "publisher": "업코리아",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JQkxEOFhiWlhvMldwMkdJdHhEdnlSSDFtbS1iNTBZMThfTW9KZzVRdkdDM0RiQ1Q3SS1kLVUzM21XZ2xCbTVYcm0yMXA3bll4ZUQxTEZpY1JLaFJyZkZ5X0ZqcElfVTducnFTZ1pB?oc=5",
-        "published_at": "2026-11-17T00:52:20+00:00",
         "id": "stocks_us-3"
       },
       {
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "반도체 반등 시작? 엔비디아 실적에서 이것부터 보세요",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTjdCR2xsaEQ2ZTRoNklVWmJ2YXIwSWNJUUdSV1FtVFBENFRxX2dlakpmYzVzT3FiSEdwZzdlNW5TbkZKWVZtRUpweWNFMDl6YTdMUjBtbVhqZnBHVG5GNk9QOFhEWkV4eWZOOFllRDNrenZOMEM5aG11REE5czhuN2VjSFJjRHBxN2FB?oc=5",
+        "published_at": "2026-11-17T14:25:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "미국 10년물 5.12%와 실질금리",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcXQ3YUJoRDNqVnVNbEROTUNNUkhlaHVHR000blhsWVYyN1A4Q1FQUnhsQ2FMUTZYS2FpU09VV2FlWUIzT0pfNTlDMmdqVlctUVkwNGlXZ0h4RUxNZTg3Y0ZkcmxTTDRIcThBbHNfTGVZUWlCSk1zVjlQbmkxd3hKU1BKTUR2STNwbUVSMVpGOFM?oc=5",
         "published_at": "2026-11-17T12:39:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "[채권-마감] 금리 하락…코스피 4천선 후퇴에 안전자산 선호",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XNU9TdXloODFJdlFVVVkwMTdkVVdCVndKWEJmMzRBNWRNRThVNW1YTjVTaUpFWXJwOXlRc1ZGWHZKOE1nSG12NXBGQWpTbjZuY1F4dHN4Ry0wNWxOMzVPQlVaQUIyOGt0c2dsYkNMWjc?oc=5",
         "published_at": "2026-11-17T09:58:05+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
-        "title": "유로존 국채 금리, 미국 국채 강세에 이끌려 1개월 최고치 근접 유지",
+        "title": "미 국채 수익률, 한 달 만의 최고치 부근서 숨 고르기",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84al9SMnBqUFR3ZVc1NXJZa0JhWGJPWFl6RXlOU0R6VHpTSld6Y1FpVFNEcVNMdE5RTGdXZWIzY0UtWFc0ZE5Od0tIT1NZWG5qaGZqZVpncm1EZG5VUkN6SkFabzJMOUE?oc=5",
         "published_at": "2026-11-17T09:00:00+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "코스피 5000선 붕괴에 국고채 금리 혼조…중단기물 하락",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnVlJKQ2FkNWNYeHVzM2s2cUE1YnUtUzNSY1lTaTRhbl9Ka2dwVTBMVWR5SkFRUG9kXzVRYnNPOXlqeUhBdDJYV01oVU1qYTJaRjBZQXVNTVDSAVhBVV95cUxQZ1ZSSkNhZDVjWHh1czNrNnFBNWJ1LVMzUmNZU2k0YW5fSmtncFUwTFVkeUpBUVBvZF81UWJzTzl5anlIQXQyWFdNaFVNamEyWkYwWUF1TU1Q?oc=5",
         "published_at": "2026-11-17T08:13:00+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 17일)",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEaUhFc1FlV0daaXVuczlfVUlZNlV3OXpMZXhIZVFQREktbE1HaTViSGFlQzgtMVFFVkVJX2VMa0h5RkNJV21IQmxHb2xMNENmcGVfVG1PM2JNQQ?oc=5",
         "published_at": "2026-11-17T07:20:18+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "오늘 BIDV 금리, 4억 동 예금 시 2,700만 동 이상 이자 수령",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMktQZzRGVWpwb0wxSG5jSnJaZWRkQUU3Q3JnUEFQV0FFeW95YjFDUHQ4bDFsRlJDcUF0ejRqblpaSmpXWHh3VFgtMHhTbFRFUDZCMnI2Mms0RXhzTk1vd3F1YUFSZlFGbUE4R2ZtVkNnRGdIQUVMMzFVT1Nib3V1ZlBpWC1QRmtaSzlKN0t4eWdxQ0NVbGFFUWJ4b1pLSDJydDJPNkhUTzJjX2hCN1VyQllRT0loc2s?oc=5",
         "published_at": "2026-11-17T06:36:39+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "세계 금 가격이 급락 후 소폭 상승했다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vRFpwaFJKSVY2MWViWDJ3cDhwRUx4ZGtYVXlrUWpRc0JsYkotWnlfZS1HckloTXFBQ1JGS01YV1BmMWdRek04eERZandkZ2ZjNXd6ZGM5UTZGYm9tTzlGSEt2VjdyZTl5dEI1Tm5HRGZOdHdqcWQtY1ZxTQ?oc=5",
         "published_at": "2026-11-17T05:13:32+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "국고채 일제히 약세…外人 10선 순매도·성장률 상향 우려",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uZ002WFo4T1FVel9wZ2NFRkl0S1R3MFVZVS1nLWxKLUpSdE53YW5TdVVjSXBGaWZfWjNDV3hnWUI3U01kUUdtb0JBdUNXQmlUWWFIZjMxXzhRcTFmQkJMelJWcDJHTmVwZE01YngzOHg?oc=5",
-        "published_at": "2026-11-17T04:22:31+00:00",
         "id": "bonds-7"
       }
     ]
