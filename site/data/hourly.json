@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T20:10:30.131063+09:00",
+  "data_updated_at": "2026-11-18T21:04:36.264942+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T20:10:30.131063+09:00",
+      "fetched_at": "2026-11-18T21:04:36.264942+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T20:10:30.131063+09:00",
+      "fetched_at": "2026-11-18T21:04:36.264942+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "세계 금 가격이 온스당 3,800달러 아래로 떨어지고, SJC 금 가격도 급락하면서 하락 압력이 지속되고 있다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOTRKNm10NGFUWVFVcnlwT2FrTmtPcjBHS25GcE1acFg5dEdfQ1JFZDZQSm5iUGw0ZmdQZ2Z0T1FkaWItUGZNYzV0OVhaUDhKOW1iVE1jTDRwNHhnQkhrVTRPZ1o5cnlkODVSNm9wYlRxUXpYMnlFXzlmc2V2QXhmc2ZkUnc3RUhUX3NiNjVnbVpNeHZINTdVQlpR?oc=5",
+        "published_at": "2026-11-18T09:32:03+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "유로존 국채 수익률, 끈질긴 인플레이션 우려 속 1개월 최고치 근방 유지",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4Y1Q1RktnbWRtV1dxd1otdlp4aTNENGJ4alZqTUFEcnFWNkw0bTVYTTRqcThOUl9mWVB0Q25pNzVmRzU1UUU0LUI0VlZRcURVc3E3T01GWWQ5U3ZZQVlYZXpvckJndWM?oc=5",
         "published_at": "2026-11-18T09:04:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "11월 18일 금 가격: 세계 금 가격은 온스당 3,900달러 아래에서 등락을 거듭했으며, 국내 금 가격은 변동이 없었습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTDV6TFlHNkNsMGp5M2VUM2RJVUtfTFAxM19MTUF6VW55aWJER0QwX2sxM3kxQ2VBOGR1QXI0VjhNWFJERTZfZkpKYm9IOG9LQS1vRlhjTjNhZDFJOEZBQUJSWHR0MnJvSEdDOC13MnZSTTAtYnMyV3paVjNQTUlUWjdOMDVMZGtfN1pzbW80ejBEZHZoTkx3VmxWMzJzcmxmY29nQW1FTGNXY1pISU1XUjBGM1Q?oc=5",
         "published_at": "2026-11-18T06:39:27+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "선진국 빚 늘고 금리 뛰자 개도국이 휘청…고금리·빚더미 악순환",
         "publisher": "뉴스1",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XU1dKS1dyWV9jU3BLOVNaTkdRd0hTaFgxRkdPR2FReTFkaGswZmdUdms4eVBUVnY2TWEzNDdsTGxPWGlKbEYwTkVzVm5MS2txamcyOFB6OHNNMmdpYXByYVY3YjRfeXc?oc=5",
         "published_at": "2026-11-18T06:05:41+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "국고채 금리 하락 반전…코스피 상승세 줄며 장중 5천선 하회",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40UHFKU2F1eEpWR213SkVFdWJGNmpBWERaUm1HMklObG9SYU5GVDEzTFFzWDhkTGU1YndFTUh2akxmTDU5dHJpT2dtOVRoTThMeTZxYkpPV3JPMU1hSjRlVTRlcWRKXzVHYUx2ektQdHE?oc=5",
         "published_at": "2026-11-18T04:05:10+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "한은, 11월 금리 올리고 추가 인상 시사할까…채권시장 ‘긴장’",
         "publisher": "조세일보",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MUjBjcjZCQVNCUUpTdHZnSGlaLUpQaW45ZFlKZGpBOVF5NHozMVFhM0o2aXVseUpROXkxSTk5UkZtNDU5UXgydTlsUUExazFhUXBTNHFNcUVXS3Y1OXRBeTcweFVmQU5jdGcwZThVNTEwbzcy?oc=5",
         "published_at": "2026-11-18T04:02:41+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "美 채권시장 다시 흔들…월가 \"장기채보다 단기·중기채 유망\"",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzcFJyQS1DOWRfOFVaYjlwMzhYcUVkNGpGQ2tjcThHSUxzTDlKT0N4bE4zODVnYWNsaHlOSnN3VjFBTFVBSTI0TDFxSFI4cXFCTjhrejVjZWdKMkJMbldoMjJsZUpOb0I2Vk1LZzI0Z1o?oc=5",
         "published_at": "2026-11-18T01:15:42+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "[뉴욕마켓워치] 엔비디아 실적 경계 속 美 전산장애 공포…주식·달러↓채권↑",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pcU1obElldXZ3dGNRWjM1clJUYnpEX1RYeHZ2UlJiTzNIYkpqQi1DSWZITTIxTGhteDl3TVY1Sm1UdHhQUnZ6MDB5VW8yUHlZWDhINHhCdnRLandheURockg3WElHbkFCblpYWUFOVWQ?oc=5",
         "published_at": "2026-11-17T23:58:24+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[뉴욕채권] 이틀째 불 스팁…소비 호조發 약세 압력 증시 하락에 되돌림",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZVk5pazVxRmhscVJqc2ZjbGtZNHJSdDJyYWc5cUNEWVJDREthZXN1ZzlZdjJRcmlhVmRUbFh1MDlxX2dBekhYX3BYbDloemQtOE5HTUUtU3BXNjJaRy1kUlNyS3EzX3dkWmJnQVF0QlA?oc=5",
-        "published_at": "2026-11-17T22:52:34+00:00",
         "id": "bonds-7"
       }
     ]
