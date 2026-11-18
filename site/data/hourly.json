@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-19T00:02:02.449161+09:00",
+  "data_updated_at": "2026-11-19T01:06:35.475980+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-19T00:02:02.449161+09:00",
+      "fetched_at": "2026-11-19T01:06:35.475980+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-19T00:02:02.449161+09:00",
+      "fetched_at": "2026-11-19T01:06:35.475980+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,10 +92,10 @@
     ],
     "stocks_us": [
       {
-        "title": "미국증시 장초반 혼조…엔비디아 실적에 나스닥 0.71%↑, 다우는 하락",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE96bXRYWEVMbElidTNnOV82SHR5Mzg0TEN2SHVZUHMtb0Y5UzU1dkZCNkhTTHB5QWNKdlVsZUNfZE1uX2xsRG5jbms0ZHJyNDg4YzZuUnVxRDhsQVRQempKR203TFlxWGJ3NjlJeUhyc25sQQ?oc=5",
-        "published_at": "2026-11-18T14:42:17+00:00",
+        "title": "[반도체반등] 엔비디아 실적 훈풍에 삼성전자·SK하이닉스 일제히 반등…\"젠슨 황 복귀 불발 끄떡없다\"",
+        "publisher": "CBC뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkTTF5dVJqNjNFZnAyR3FWN0Z0ZmlTNXZ2VkxrRjRBY0loWnlYWE81WDVlSHc5WVNqRmR5MXl1ME40SGxxWW80TndmZ0VIbTFuVkNVTlB5U0ZFbS1TWG1EQWM0UGNMUTBG?oc=5",
+        "published_at": "2026-11-18T15:05:00+00:00",
         "id": "stocks_us-0"
       },
       {
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
-        "title": "미국증시 장초반 혼조…엔비디아 실적에 나스닥 0.71%↑, 다우는 하락",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE96bXRYWEVMbElidTNnOV82SHR5Mzg0TEN2SHVZUHMtb0Y5UzU1dkZCNkhTTHB5QWNKdlVsZUNfZE1uX2xsRG5jbms0ZHJyNDg4YzZuUnVxRDhsQVRQempKR203TFlxWGJ3NjlJeUhyc25sQQ?oc=5",
-        "published_at": "2026-11-18T14:42:17+00:00",
-        "id": "bonds-0"
-      },
-      {
         "title": "비트코인(BTC) 가격 하락의 원인으로 앤트로픽(Anthropic)의 IPO를 탓하는 것은 '쉽게 믿을 수 있지만,' 오류가 있다",
         "publisher": "CoinDesk",
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNHV1dktxWDZCbEs3ZXItb3lfc25ValVKZXpFc1dESlg5R09oQ2x0YW9oMFVvbGFnYlpjZWdUcHIyWnpudlNicFY0T3UxYkwzSWJNdDNYRU1zZFNJT3hDbENuV2h2dlFQRzlibnFYVkowNjA3MVJIZVp6WDhGdnBJenhfWDEyTWtPZ2ZCcEpVNFBzTm9IZS1mNFIwYldEbzNtSldoS0FOdGlWS1l3OGpiVGNRelItNjRyd05VZUU1UXk4WW50ZTVxby1iem8wWjRab2c?oc=5",
         "published_at": "2026-11-18T12:22:27+00:00",
-        "id": "bonds-1"
+        "id": "bonds-0"
       },
       {
-        "title": "유로존 국채 수익률, 끈질긴 인플레이션 우려 속 1개월 최고치 근방 유지",
+        "title": "미 국채 수익률, 연준 의사록 발표 앞두고 일주일 만의 최저 수준 근접",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4Y1Q1RktnbWRtV1dxd1otdlp4aTNENGJ4alZqTUFEcnFWNkw0bTVYTTRqcThOUl9mWVB0Q25pNzVmRzU1UUU0LUI0VlZRcURVc3E3T01GWWQ5U3ZZQVlYZXpvckJndWM?oc=5",
         "published_at": "2026-11-18T09:04:00+00:00",
-        "id": "bonds-2"
+        "id": "bonds-1"
       },
       {
         "title": "11월 18일 금 가격: 세계 금 가격은 온스당 3,900달러 아래에서 등락을 거듭했으며, 국내 금 가격은 변동이 없었습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTDV6TFlHNkNsMGp5M2VUM2RJVUtfTFAxM19MTUF6VW55aWJER0QwX2sxM3kxQ2VBOGR1QXI0VjhNWFJERTZfZkpKYm9IOG9LQS1vRlhjTjNhZDFJOEZBQUJSWHR0MnJvSEdDOC13MnZSTTAtYnMyV3paVjNQTUlUWjdOMDVMZGtfN1pzbW80ejBEZHZoTkx3VmxWMzJzcmxmY29nQW1FTGNXY1pISU1XUjBGM1Q?oc=5",
         "published_at": "2026-11-18T06:39:27+00:00",
-        "id": "bonds-3"
+        "id": "bonds-2"
       },
       {
         "title": "선진국 빚 늘고 금리 뛰자 개도국이 휘청…고금리·빚더미 악순환",
         "publisher": "뉴스1",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XU1dKS1dyWV9jU3BLOVNaTkdRd0hTaFgxRkdPR2FReTFkaGswZmdUdms4eVBUVnY2TWEzNDdsTGxPWGlKbEYwTkVzVm5MS2txamcyOFB6OHNNMmdpYXByYVY3YjRfeXc?oc=5",
         "published_at": "2026-11-18T06:05:41+00:00",
-        "id": "bonds-4"
+        "id": "bonds-3"
       },
       {
         "title": "국고채 금리 하락 반전…코스피 상승세 줄며 장중 5천선 하회",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40UHFKU2F1eEpWR213SkVFdWJGNmpBWERaUm1HMklObG9SYU5GVDEzTFFzWDhkTGU1YndFTUh2akxmTDU5dHJpT2dtOVRoTThMeTZxYkpPV3JPMU1hSjRlVTRlcWRKXzVHYUx2ektQdHE?oc=5",
         "published_at": "2026-11-18T04:05:10+00:00",
-        "id": "bonds-5"
+        "id": "bonds-4"
       },
       {
         "title": "한은, 11월 금리 올리고 추가 인상 시사할까…채권시장 ‘긴장’",
         "publisher": "조세일보",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MUjBjcjZCQVNCUUpTdHZnSGlaLUpQaW45ZFlKZGpBOVF5NHozMVFhM0o2aXVseUpROXkxSTk5UkZtNDU5UXgydTlsUUExazFhUXBTNHFNcUVXS3Y1OXRBeTcweFVmQU5jdGcwZThVNTEwbzcy?oc=5",
         "published_at": "2026-11-18T04:02:41+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "美 채권시장 다시 흔들…월가 \"장기채보다 단기·중기채 유망\"",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzcFJyQS1DOWRfOFVaYjlwMzhYcUVkNGpGQ2tjcThHSUxzTDlKT0N4bE4zODVnYWNsaHlOSnN3VjFBTFVBSTI0TDFxSFI4cXFCTjhrejVjZWdKMkJMbldoMjJsZUpOb0I2Vk1LZzI0Z1o?oc=5",
         "published_at": "2026-11-18T01:15:42+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "[뉴욕마켓워치] 엔비디아 실적 경계 속 美 전산장애 공포…주식·달러↓채권↑",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pcU1obElldXZ3dGNRWjM1clJUYnpEX1RYeHZ2UlJiTzNIYkpqQi1DSWZITTIxTGhteDl3TVY1Sm1UdHhQUnZ6MDB5VW8yUHlZWDhINHhCdnRLandheURockg3WElHbkFCblpYWUFOVWQ?oc=5",
+        "published_at": "2026-11-17T23:58:24+00:00",
         "id": "bonds-7"
       }
     ]
