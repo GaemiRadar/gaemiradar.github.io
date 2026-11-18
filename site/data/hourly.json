@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-19T02:59:53.417650+09:00",
+  "data_updated_at": "2026-11-19T04:00:27.647110+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-19T02:59:53.417650+09:00",
+      "fetched_at": "2026-11-19T04:00:27.647110+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-19T02:59:53.417650+09:00",
+      "fetched_at": "2026-11-19T04:00:27.647110+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,10 +34,10 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[마감시황] 엔비디아 훈풍에 반도체 강세…코스피 5000선 탈환",
+        "title": "[마감시황] 엔비디아 훈풍에 반도체 강세…코스피 5000선 되찾았다",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96MHEzVG5vM2xQdjdqcHd1MC02NFp3cFRHZy1fU05sQ2Y2cXhHMmxfQk1pWW92X0dVdzdJNVNLeW9jSnVZY3VjRTJoSlliYlZoNjZtT1FWdEQ5bnhOY0lYdkFlemJRakE?oc=5",
-        "published_at": "2026-11-18T12:03:46+00:00",
+        "published_at": "2026-11-18T08:10:00+00:00",
         "id": "stocks_kr-0"
       },
       {
