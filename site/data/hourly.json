@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T16:23:28.435430+09:00",
+  "data_updated_at": "2026-11-18T18:10:29.444692+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T16:23:28.435430+09:00",
+      "fetched_at": "2026-11-18T18:10:29.444692+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T16:23:28.435430+09:00",
+      "fetched_at": "2026-11-18T18:10:29.444692+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "삼성·LG 휴머노이드 CES 공개 앞두고 로봇주 급등! 지금 사도 될까요?",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTmxlX1lNMVludy1Vc2liaGVVcXUxb21obE5McXA0ZlhuUndhNzQzWjQtd0lnaE9yZVlpUzc2bmt1aGRxUkdwNmltNGFIZDJENXdaTDRvTk1faTFCV2NLRFRmQUlhRDlpWEd6eExPdTNrUjBGOEF4RTNoYmhwOFVWRHN5a2F4LTR6c2c?oc=5",
+        "published_at": "2026-11-18T08:07:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "[e마켓클로징] 기관 5118억 순매수···코스피 5067로 반등 마감",
+        "publisher": "시사저널e",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ITERNY0h2X0lsUm1rbmlLaTBzUTZjNHBCaVVGRUpCeVIwbUZtcnJwTWhGUVpUVjZPQVc0X2VPN1BQcE1ZRXdtU2xBZXc2dVpJMjV6WGNuYVU3aXExeFRjRmNRQ1BJOUdLeG1ZeUxFNFg2QQ?oc=5",
+        "published_at": "2026-11-18T07:52:47+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "[오늘의 주목주] '반도체 투심 회복' 삼성전기 주가 7%대 올라, 코스피 기관 순매수에 5060선 상승 마감",
+        "publisher": "비즈니스포스트",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qX0R5QUFzWVp5UjVOWTNFY3VfU0pFclBGeVpnSXZUUXExYWFhbk5iR3ViaFNLMDRMUEpfaXQySXptWkwzUmEtQ2sxYnV2Ym1wY0NwaEZ6ZmRreFMzU21FRXpKNjZnSkhpc1dZM2ZiZ2JFYmc?oc=5",
+        "published_at": "2026-11-18T07:29:14+00:00",
+        "id": "stocks_kr-2"
+      },
+      {
+        "title": "코스피 반등하며 5,000선 재돌파",
+        "publisher": "KB Think",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWSC0wM3RWMGF5SkZqWWJqelBDQTN1RU9jWFJ6V0tRMEdlUkFhbHZvRlpNX1o5WW1VSGNMN1k1SU1uNjRwcGU1WTZTemFoOW9yV29PUmxUY1pRZ0RXNEJ2OXZicWtWdEx4bUQ3OA?oc=5",
+        "published_at": "2026-11-18T07:10:59+00:00",
+        "id": "stocks_kr-3"
+      },
+      {
         "title": "[11.18(수) 한국장 마감] 동반 상승 (코스피 +1.99%, 코스닥 +1.96%)",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50eGd5RE54bWJCcUZzbmFTS1BRZFRrc0xELTZTaEFNNWZGeTZ0R1Z3ZXZkOUZDUE45eEdISnNpMm1wWTA3czdZck5COEpUTGY5YlJGMk1OZjlmMnB1Q2I1WHlIQ1JpSERmVDVqX1lMbzJqdmxjNGc?oc=5",
         "published_at": "2026-11-18T07:00:39+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[마감시황]코스피 5000선 탈환…반도체·로봇주 강세, 바이오 대형주 약세",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRanhNNko2Vzl0b2MyVklvMVMyRDFEU2dEcHhWdGxJcUk1RVZ6TG9vekJ2YU1ySFJLbkJEb1ZlYUJxR2d1UDM3Zzl0VklxOHVfTzhleW1EeXBYZw?oc=5",
         "published_at": "2026-11-18T06:45:29+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
-        "title": "11/18(수), 장마감 브리핑",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NVZZYnQxbURPeUZOMENsYjNtX2JabHRLTktQYVVnUzlBbVQ3WVNySHpWRVZtU2s4VDhhalQ5WWE1ZU8xNVdkLWZCWnRrbllkRmRsUUF6dkNWU1hHSC03ZVNqaktDU3pabTNyRmpId2U3c1V5NjZyeVYtX3ZPZw?oc=5",
-        "published_at": "2026-11-18T06:41:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피, 다시 장중 4천 선...반도체주 상승 폭 둔화",
         "publisher": "YTN",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RT0hQa2xtcTBfMzRZMmRMRnNIaVMybEtCb0JsT0NVbGRtbFRvaDVSM1JMTG9jTTVuWHFGWW9tTFY2MVlhNWVlZkVTLVFTUkE3NXJ0bXNmZjI1b0txS05tVFJZeFJfTzJ1TGxDYW45QlJOYVdFUFE?oc=5",
         "published_at": "2026-11-18T03:14:00+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "[오전 시황] 코스피 상승폭 0.74%로 축소…반도체 초반 급등 반납",
-        "publisher": "한국경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51VVJnZDNyVk1zek5VOEJPUzc0eUdleG9jNzhiWVpOdjVIaWRLdXB6bG5jVDNPOG8xUjdJY2hNRHdROGhnS0F2cjRGLVNiZW5kMVVBSGRTSEpRUQ?oc=5",
-        "published_at": "2026-11-18T01:48:51+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[오늘증시] 엔비디아 호실적에 한숨 돌렸다…코스피 5000선 재탈환",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwTVlQdHBsa0pzQUsyelFXMkdBeU5xTnZQQ3A2cWY3R0FmQzR4SWc0UEdXVmdya0NUZ203ZjBVX3Z5Uk9ZdHpnUDFaQlQxb3R3SVdsTVBWeEdfZi1MY2EyeDFnRHFaN3o0ZU9FbWlHdjNoZ2s?oc=5",
-        "published_at": "2026-11-18T01:47:43+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "[증시 오늘(18일) 주요 특징주] 반도체 대형주 강세속 코스피 5000선 안착…이전 주도주 중심 매수세 유입",
-        "publisher": "더페어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SYnpodE1GNzR1MjBfUVN1YU1JQWowdGp4dEhLWHhyTGoxZlFHUlB1WXVMRzRTSnI5ZHhmelNhV1YxMkFWcTd3cm05ak1qY05CQWsyNzNuLXhfejhZazNYQ2lrYU9pc1FLZGhkdVZpTWjSAXRBVV95cUxNQllrZjA2NXZRM0UzN19KdEF0WGZvdkx1VjFFbDhVNzBaZ051ODd3UmtUNTB0V2ZobUJGLXBReExGVkRETkhJQ2tMc200WEMxS1RZZVNqQ1dfeGlBTkIwNTNmTmtQZGpaM3gwUFVqUldxVENBLQ?oc=5",
-        "published_at": "2026-11-18T01:43:25+00:00",
         "id": "stocks_kr-6"
       },
       {
-        "title": "[오늘의 증시] 11월 18일 코스피 5024선·코스닥 659선…양대 지수 동반 상승",
-        "publisher": "잡포스트",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YTGFuQ1NUZHZlbGp4eGF4TVpkeWdEUlowakNLWnNINUdKeXZsMldoRmZxcmdFVkdsUDg3T1lsak1Xcjg5Wk1HZVI0LUdqb0gxTHFmdFc2UThNMWZpeERDTklpWkdnM1Jsam9kXzd6ZGJwUdIBckFVX3lxTE1YTGFuQ1NUZHZlbGp4eGF4TVpkeWdEUlowakNLWnNINUdKeXZsMldoRmZxcmdFVkdsUDg3T1lsak1Xcjg5Wk1HZVI0LUdqb0gxTHFmdFc2UThNMWZpeERDTklpWkdnM1Jsam9kXzd6ZGJwUQ?oc=5",
-        "published_at": "2026-11-18T01:38:55+00:00",
+        "title": "코스피, 엔비디아 호실적에 하루 만에 5000선 회복",
+        "publisher": "이슈밸리",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRMXhFSzhLc3pPN25kSnZvRmdxOFk3eHlhV2gwVXNxMEFFT1IzSmxUNHdYV3hQRHpmbXloalByTEVyMmJoakxEdWlNcnEyRkM5MTF2bHp6VFJsRzNhWk14YjJzdE5HMXVtS3FZS1J3?oc=5",
+        "published_at": "2026-11-18T02:42:16+00:00",
         "id": "stocks_kr-7"
       }
     ],
