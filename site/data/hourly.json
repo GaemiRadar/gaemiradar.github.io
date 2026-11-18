@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-18T19:10:35.275062+09:00",
+  "data_updated_at": "2026-11-18T20:10:30.131063+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T19:10:35.275062+09:00",
+      "fetched_at": "2026-11-18T20:10:30.131063+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-17",
-      "fetched_at": "2026-11-18T19:10:35.275062+09:00",
+      "fetched_at": "2026-11-18T20:10:30.131063+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "남아 혼자 남아- 기관 혼자 남아",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLXpfaENXNmJXRy11WDhRaVpQejMzTUpCdkhUd2dXUmdLbkx1ekpJLVRMVjdTWENSUTB5MTdsLW1FalRidFYzTHdPWXdub0VQaWV1XzduN1hCcHV0eEJjZ01VUDRQU2Q2OWpVdUtQakY3LU9jcmQ2NTh0QnJfd3hncWQzY2U?oc=5",
+        "published_at": "2026-11-18T10:01:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "[e마켓클로징] 기관 5118억 순매수···코스피 5067로 반등 마감 |",
+        "publisher": "시사저널e",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE12amxxSFZ0NkRQYkRvc2wzbVc2N2VEb1g5VlpaTUdvNWtVYkZCSFRzUGlQcFV1QVVXa3VMbEFLLWRnc1lQbVhObjZrUTFOdzhRd0JPZDk4Y2xmNUVPSGZlRkRXdUI2OEluNEJFYTNWWkROQ2dNdEE?oc=5",
+        "published_at": "2026-11-18T08:09:04+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "삼성·LG 휴머노이드 CES 공개 앞두고 로봇주 급등! 지금 사도 될까요?",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTmxlX1lNMVludy1Vc2liaGVVcXUxb21obE5McXA0ZlhuUndhNzQzWjQtd0lnaE9yZVlpUzc2bmt1aGRxUkdwNmltNGFIZDJENXdaTDRvTk1faTFCV2NLRFRmQUlhRDlpWEd6eExPdTNrUjBGOEF4RTNoYmhwOFVWRHN5a2F4LTR6c2c?oc=5",
         "published_at": "2026-11-18T08:07:00+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[오늘의 주목주] '반도체 투심 회복' 삼성전기 주가 7%대 올라, 코스피 기관 순매수에 5060선 상승 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qX0R5QUFzWVp5UjVOWTNFY3VfU0pFclBGeVpnSXZUUXExYWFhbk5iR3ViaFNLMDRMUEpfaXQySXptWkwzUmEtQ2sxYnV2Ym1wY0NwaEZ6ZmRreFMzU21FRXpKNjZnSkhpc1dZM2ZiZ2JFYmc?oc=5",
         "published_at": "2026-11-18T07:29:14+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-3"
       },
       {
         "title": "코스피 반등하며 5,000선 재돌파",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWSC0wM3RWMGF5SkZqWWJqelBDQTN1RU9jWFJ6V0tRMEdlUkFhbHZvRlpNX1o5WW1VSGNMN1k1SU1uNjRwcGU1WTZTemFoOW9yV29PUmxUY1pRZ0RXNEJ2OXZicWtWdEx4bUQ3OA?oc=5",
         "published_at": "2026-11-18T07:10:59+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[11.18(수) 한국장 마감] 동반 상승 (코스피 +1.99%, 코스닥 +1.96%)",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50eGd5RE54bWJCcUZzbmFTS1BRZFRrc0xELTZTaEFNNWZGeTZ0R1Z3ZXZkOUZDUE45eEdISnNpMm1wWTA3czdZck5COEpUTGY5YlJGMk1OZjlmMnB1Q2I1WHlIQ1JpSERmVDVqX1lMbzJqdmxjNGc?oc=5",
         "published_at": "2026-11-18T07:00:39+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[마감시황]코스피 5000선 탈환…반도체·로봇주 강세, 바이오 대형주 약세",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRanhNNko2Vzl0b2MyVklvMVMyRDFEU2dEcHhWdGxJcUk1RVZ6TG9vekJ2YU1ySFJLbkJEb1ZlYUJxR2d1UDM3Zzl0VklxOHVfTzhleW1EeXBYZw?oc=5",
         "published_at": "2026-11-18T06:45:29+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "11/18(수), 장마감 브리핑",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NVZZYnQxbURPeUZOMENsYjNtX2JabHRLTktQYVVnUzlBbVQ3WVNySHpWRVZtU2s4VDhhalQ5WWE1ZU8xNVdkLWZCWnRrbllkRmRsUUF6dkNWU1hHSC03ZVNqaktDU3pabTNyRmpId2U3c1V5NjZyeVYtX3ZPZw?oc=5",
-        "published_at": "2026-11-18T06:41:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "코스피, 다시 장중 4천 선...반도체주 상승 폭 둔화",
         "publisher": "YTN",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1RT0hQa2xtcTBfMzRZMmRMRnNIaVMybEtCb0JsT0NVbGRtbFRvaDVSM1JMTG9jTTVuWHFGWW9tTFY2MVlhNWVlZkVTLVFTUkE3NXJ0bXNmZjI1b0txS05tVFJZeFJfTzJ1TGxDYW45QlJOYVdFUFE?oc=5",
         "published_at": "2026-11-18T03:14:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "코스피, 엔비디아 호실적에 하루 만에 5000선 회복",
-        "publisher": "이슈밸리",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRMXhFSzhLc3pPN25kSnZvRmdxOFk3eHlhV2gwVXNxMEFFT1IzSmxUNHdYV3hQRHpmbXloalByTEVyMmJoakxEdWlNcnEyRkM5MTF2bHp6VFJsRzNhWk14YjJzdE5HMXVtS3FZS1J3?oc=5",
-        "published_at": "2026-11-18T02:42:16+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -150,45 +150,45 @@
     ],
     "bonds": [
       {
+        "title": "유로존 국채 수익률, 끈질긴 인플레이션 우려 속 1개월 최고치 근방 유지",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4Y1Q1RktnbWRtV1dxd1otdlp4aTNENGJ4alZqTUFEcnFWNkw0bTVYTTRqcThOUl9mWVB0Q25pNzVmRzU1UUU0LUI0VlZRcURVc3E3T01GWWQ5U3ZZQVlYZXpvckJndWM?oc=5",
+        "published_at": "2026-11-18T09:04:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "11월 18일 금 가격: 세계 금 가격은 온스당 3,900달러 아래에서 등락을 거듭했으며, 국내 금 가격은 변동이 없었습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTDV6TFlHNkNsMGp5M2VUM2RJVUtfTFAxM19MTUF6VW55aWJER0QwX2sxM3kxQ2VBOGR1QXI0VjhNWFJERTZfZkpKYm9IOG9LQS1vRlhjTjNhZDFJOEZBQUJSWHR0MnJvSEdDOC13MnZSTTAtYnMyV3paVjNQTUlUWjdOMDVMZGtfN1pzbW80ejBEZHZoTkx3VmxWMzJzcmxmY29nQW1FTGNXY1pISU1XUjBGM1Q?oc=5",
         "published_at": "2026-11-18T06:39:27+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "선진국 빚 늘고 금리 뛰자 개도국이 휘청…고금리·빚더미 악순환",
         "publisher": "뉴스1",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XU1dKS1dyWV9jU3BLOVNaTkdRd0hTaFgxRkdPR2FReTFkaGswZmdUdms4eVBUVnY2TWEzNDdsTGxPWGlKbEYwTkVzVm5MS2txamcyOFB6OHNNMmdpYXByYVY3YjRfeXc?oc=5",
         "published_at": "2026-11-18T06:05:41+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "국고채 금리 하락 반전…코스피 상승세 줄며 장중 5천선 하회",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40UHFKU2F1eEpWR213SkVFdWJGNmpBWERaUm1HMklObG9SYU5GVDEzTFFzWDhkTGU1YndFTUh2akxmTDU5dHJpT2dtOVRoTThMeTZxYkpPV3JPMU1hSjRlVTRlcWRKXzVHYUx2ektQdHE?oc=5",
         "published_at": "2026-11-18T04:05:10+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "한은, 11월 금리 올리고 추가 인상 시사할까…채권시장 ‘긴장’",
         "publisher": "조세일보",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MUjBjcjZCQVNCUUpTdHZnSGlaLUpQaW45ZFlKZGpBOVF5NHozMVFhM0o2aXVseUpROXkxSTk5UkZtNDU5UXgydTlsUUExazFhUXBTNHFNcUVXS3Y1OXRBeTcweFVmQU5jdGcwZThVNTEwbzcy?oc=5",
         "published_at": "2026-11-18T04:02:41+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "美 채권시장 다시 흔들…월가 \"장기채보다 단기·중기채 유망\"",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzcFJyQS1DOWRfOFVaYjlwMzhYcUVkNGpGQ2tjcThHSUxzTDlKT0N4bE4zODVnYWNsaHlOSnN3VjFBTFVBSTI0TDFxSFI4cXFCTjhrejVjZWdKMkJMbldoMjJsZUpOb0I2Vk1LZzI0Z1o?oc=5",
         "published_at": "2026-11-18T01:15:42+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "오늘(11월 18일) 금 가격: 국내 금 가격 상승, 투자자들은 연준의 신호를 기다리고 있다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUUx2YXY1WFZ0RWdvV0JkZENiZEZqOFdRS1V6aW9GaWNEVWdvcXFtd2t4VmhzRzQ1QnVvbWNxVEpQZ2pUazV0ckxNREI5eDJRZ1NTVVJoWjZjVlRUa2wwRVV4bzdsQ1kyWklXRHRzQXM4Y2JUSmJ5d3BKVTc1N1hZNUNtQ1FYZWZnUjlGX29zdVJCaDBPemN1UnpwUGZMWmx3Rmc?oc=5",
-        "published_at": "2026-11-18T01:11:04+00:00",
         "id": "bonds-5"
       },
       {
