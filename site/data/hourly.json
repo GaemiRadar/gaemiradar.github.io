@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-20T02:13:31.488888+09:00",
+  "data_updated_at": "2026-11-20T02:59:42.082560+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-20T02:13:31.488888+09:00",
+      "fetched_at": "2026-11-20T02:59:42.082560+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-20T02:13:31.488888+09:00",
+      "fetched_at": "2026-11-20T02:59:42.082560+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "美 국채가, 전반적 하락…주가지수 강세에 안전 선호↓",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1YTkNodzdwd2lsa0Y0ZTdkT01USFdqRk9Zd0JtbnBhSHZhS2RDMGo4M0pzQWlNRUFXSnNTamhBNExuV2pzVGVYWDNRNURWMXoxa0taWTdKTG9fZ0tVRDRTYURyZmVQZ3VOYk10c011Y1U?oc=5",
+        "published_at": "2026-11-19T16:40:10+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "[심층분석] 한은 금통위 앞둔 외환·채권시장…금리 결정 시나리오별 환율·국고채 향방은",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwOVdjazN3aXp5T0JFSW1jX3JGVzRUNXh0dUw4QTBrRWhpSVRSa1ZuSHpiTmZ2dGhoRlZGNHNJOUM3cTZIQlBtZnh6VzA0VkVYNFYzVmZrTEZscE5QRUFjMzZ2QkdqS3lyMWpkWUNORjTSAXRBVV95cUxOSFVVV0c5aW1FQ2VlZkdCOG5OeDBieXdUVDNtN2lLekNYOS1VS1EtZlphQmtXMV92QlJTQTFvZlMzSjRoVWF4YV83bUlldldNbkE4RGxKZmpNWVJleDByX1lNWjZHUHRLTjBsRnBlS29WdGs3Sg?oc=5",
         "published_at": "2026-11-19T15:00:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "[증시 프리즘] 코스피 5000·코스닥 670선 공방속 거시지표 변동성 주시…환율·금리 향방에 수급 민감도 고조",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hTlJOUFRwUFhSdDE3OW43LV92NUwtU0Y0MkJfNHBKQTBCMFRRVjloaDRQemRFdUhBN21BY2NsZWdtRU85eE91Y3h2SktUeW0wazNjU3RYVUZlMEJ5eFRfeDBpQnB2WHE3ck1Iak0wUGHSAXRBVV95cUxPYjJmcFUwcDR2OFk1UWhIUzRKOU5Delg2VWRVRDhMRHhqSHp2VG8zMlhDYnlQNGdYY1V4RVR5eHlKekJ5S3Y4SE9FRDRzSE9GUVd2US1TdGlTUnd3TDZ2TWZQOWZjSnRob203XzNVUk9LLXNTXw?oc=5",
         "published_at": "2026-11-19T15:00:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "금값이 오늘(2026년 11월 20일) 급락하며 안정적인 바닥을 형성하고 있습니다. 지금이 매수 시점일까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVUlVSVBSWnZXMFlIUWE5dVpfMmRVZndmcEJRdExCcmF2X25LdnBvRURrYm9DR3Bsb0VlRHYxeGE1WXQtV0hOa1BJXzUya0loZXBnY1FKWnJGUXUyb253TlJjc1lKUjZIRWJuSzcyYmx4RFRWSGk3YlZJd3JFdUZXbHNhU1Znd3hMc2xhZTdmSjVzOWhweWwtOEJsWVVXY0pjclZHbEZfZEVWUlBQQlh3N3Z4bEhxcUI0Y0dHa3Z3cFRMUWd3RjFr?oc=5",
         "published_at": "2026-11-19T14:59:20+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "원화는 강세, 엔화는 약세··· 두 통화는 왜 갈라섰나",
         "publisher": "시사IN",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vRmhIbVlRZWQwUzRYX3ZtQklZNVFxWHNGVXFXa2F4ei1JNzJLU1M5bnk3Rk1RMVQxNDdnMDVpbkp2UEtiM1NwOWI3dUFPMmU4UVFUNVlHckt0LUtMdGs4R3hLRF9qTTJPeXc?oc=5",
         "published_at": "2026-11-19T11:20:31+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[채권-마감] 外人 순매수·호주금리 급락에 강세…3년물 2bp↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oT2xkWHItYmpfS2E2Qk4wSmNfMFpxYklPZUJabUlINlhRU3JRY3h4eEJ3M18tV1ZxS3FrdkVBM3RkbjBqYVFhWDJmV3c1TElYUW1xZG9DY3ZqSDFDX2xBNUxlTk9MN3o1NGR4UWNxWDQ?oc=5",
         "published_at": "2026-11-19T10:44:12+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "[금시세] 국제 금값 1돈 가격은?",
         "publisher": "게임톡",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBveWZXdlYtdVJidnpnTnNuREtwSDdIS055MUlnUlNvU3dDUlNXcUEzczRkSVB0ZFlOdy1kWXlKekJqdEhOTjMyTTN3SGtxUVE1RG10UlRGYUZzdXI0bU5fSHM5QlJibzZzdWMtcw?oc=5",
         "published_at": "2026-11-19T10:31:52+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "국고채 금리, 일제히 하락…유가 급락·외국인 매수(종합)",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNemc2akMyTzhRQ2RtVUYxNFNIUC1ZYnZmcXJ0eTRPdGJTY3ktRFNIM3JtQ0hWb0ExV1VsVWFPRTFSZlBDRDcwWC1XV2V0YXplaWJ0MnFTVDV0NGxJcllKY3VkVmdYNEpNR0xXQ2xodTRMR25jT1RMa1h5QzRnTEFfSQ?oc=5",
         "published_at": "2026-11-19T08:47:00+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "美 연준 ’금리 동결은 숨 고르기’…증권가 \"12월 0.25%p 인상 유력\" By EBN",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INGVRMS15VGN1U2pmR0RXR01UdDVKbWV4Nnh0emx1MzY1Q1BQdVduV2tqMi1peVZ1NmFXNnEzODJaODQwOE1vRUVrejJqSFBXakZJaVlsT3lDMW5sM0pNVGZQaU5vX2d1SGxKc0hWd2c?oc=5",
-        "published_at": "2026-11-19T06:23:00+00:00",
         "id": "bonds-7"
       }
     ]
