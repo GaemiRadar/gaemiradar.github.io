@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-20T05:58:42.218079+09:00",
+  "data_updated_at": "2026-11-20T06:56:11.907083+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.04,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-20T05:58:42.218079+09:00",
+      "fetched_at": "2026-11-20T06:56:11.907083+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-20T05:58:42.218079+09:00",
+      "fetched_at": "2026-11-20T06:56:11.907083+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[공매도 브리핑] 한미반도체 428억·60% 급증…기관 공매도 확대",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA3ZG9OSEhQNkh0UVZ2SkdGLVQ1ZUNHZ2tlaWI0RzZvS2ZaY1FmdUNER3VuYjl0bVV3b3JjVkc4OW9QYlRXa1AyTTVkSzViVkF4XzJBVmxEWXZhUDZ2ZWVfNFZsQ2F2em5PV29WaTdlZ0JVUQ?oc=5",
-        "published_at": "2026-11-19T08:58:13+00:00",
-        "id": "stocks_kr-0"
-      },
-      {
-        "title": "[마감시황] 한한령 완화 기대…코스피 5137로 올랐다",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8wNGFRWGRrMzdsM1g2NldnLXZSUHhPNjRib3VLdlh0LVN6RzZDenNhMi0yT2NRbW9PYnVkdDZkSHJ5VTFCLXUyNExtS1M5MDU5WWp5c01mbXBzNlRWNHpGbTY3V2FVazA?oc=5",
-        "published_at": "2026-11-19T08:24:03+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
         "title": "[오늘증시] 코스피, 외국인 매도 딛고 5100선 회복…반도체주 강세에 이틀째 상승",
         "publisher": "Queen 이코노미퀸",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jdnBGcXdWWVBWUEdMZHl5Z21QS1YzUUg2N2JSamYyejJvdmU5azhZNTU5Rm5tR3VVbi1Ea3J6VEU1NmdkRmZoQVd4Q0VxMlFXTWpiZGhpdHA5S3pXOTR6Wldib2xVQ3BBUWc?oc=5",
         "published_at": "2026-11-19T08:22:19+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-0"
       },
       {
         "title": "[마감시황] 코스피 1.4%·코스닥 3.3% 상승…삼전닉스 동반 반등",
         "publisher": "남도일보",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5nX2daZDRSdUs1ZWl4REFrM1RSS1JRU1dNLWZNd21CSTROcnZxVjVKeWZqdEFtTHdMOUZDc2ZVNWNLZXJ3TGRPb05pYUFhWkRGaFNDTVhFclZRWEZnZC1zV0xJZVp0c3Z4Z0NfbdIBcEFVX3lxTE0tT1lTcVJraXZfUWxYQ3JCUGZqZUFIMjRxaWhPNW1ZREJTeGRmaHJUU0VReWpPOTdWUEVoOG42OHZhRU1STHctcHpraEIzeWhGc2NSSHE0bmlVUDJhTkdtOVZuTUVJbnVobHZIb1Bnc3g?oc=5",
         "published_at": "2026-11-19T08:12:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[마감시황] 반도체 오후 반등에 코스피 5100선 회복… 삼성전기 9%↑",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Zb05TLTNVTXc0bWxhZEVoOFR6aXdjVWw1RG1hdUdIQU5jb05mVTE5VzNkZWtZRzRkbDR1ZXlyUHRMNTh1MWVlbVVQODlzbFlZNU1UaXJ1emhJZw?oc=5",
         "published_at": "2026-11-19T08:05:23+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-2"
       },
       {
         "title": "한중 훈풍·반도체 반등, 양 지수↑",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40d2hZdVh4UE84Q2ItcFQzVGhQQ1hCMXJiZmZXZGNjU2Nwa2hWc2pSdDV3ekUwVE02SG1USVEwMG1sdHl1VmlwUVpOWUs4MnFHMlV3ckhVSVNQbWtNV3c5YVlWVFZLTk1XNzcyMw?oc=5",
         "published_at": "2026-11-19T08:04:39+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "코스피 5,000선 털렸다…나스닥 선물만 283p 반등",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ZRFdZSU1tT1ZZbVdVekhZUV9JZGp2aDhyUGdPWVphRUVqTnRyV2F1c0wzbTZ5anVLZExMaEVjYkhId21rV09mcXFn?oc=5",
-        "published_at": "2026-11-19T06:17:19+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[셀럽의 한 수] 외국인 팔만큼 팔았다? 코스피 바닥은 '여기'",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qbzU2Z25jakN0U2JWbUR5aUJWUFM2UmdFcnIyLTlHcFNhWXpCa3FTbThraHhaVEJlcWNaZVpDNUUxdlIxelhVM09FWThGUnk2SFkzamhPaDLSAVhBVV95cUxNam81NmduY2pDdFNiVm1EeWlCVlBTNlJnRXJyMi05R3BTYVl6QmtxU204a2h4WlRCZXFjWmVaQzVFMXZSMXpYVTNPRVk4RlJ5NkhZM2poT2gy?oc=5",
         "published_at": "2026-11-19T04:23:00+00:00",
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "코스피 외국인 기관 매도에 5천선 버티기…앤트로픽 최대 IPO 성공",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KZ1R6cm95UFlwUUMzVjF6bHFSXzFXNmZENlM3OEpTdXRjZXN4NFV0TDlhSU8tclZOam5rTjB4UmhReGZfYTRiTGRxSHVmcV9GaXl30gFYQVVfeXFMUDBJWkdBeEVzWkc4YVpwRlIyQXNHbC05QkpITTRqYXN0bzVoSEVydnFwc2NsYk5qM0NDTWhXajVqR2J2NEtEWDNhc2NEbnFiNkFjS2ZKdEtwWA?oc=5",
+        "published_at": "2026-11-19T02:23:00+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "[오늘증시] 5000선 탈환 하루만에 외줄타기…앤트로픽, 반등 변수로",
+        "publisher": "오늘경제",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAzanlzVThQY2NsRVg0Z2ktdGtPTUhXd2xSQXJMYmdKNWI1eDE5cUphVmMtX2pXQ1FFQkZ1d2V4RXJ5TEtkOWpQYkhvUEVMS09xZ0ZicWM2b0h2RFloT3VpTW1OSExRNzc5THhuWlVIYV9ObWs?oc=5",
+        "published_at": "2026-11-19T02:04:19+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[오늘의 증시] 11월 19일 코스피 5000선 턱걸이…코스닥도 1%대 하락",
+        "publisher": "잡포스트",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDVWk4a3FNZTJWbjlhU0hWQmx1SXU0TFZERDNfTWszSkZoX0lXTXJOT1RJd1p4bHFTWFFqcmh4ajdwdXlhbWQyb3FWTUtWZldKMkVLOWtpV29mQm9ZRkw4aWh6N3lkdjl6UjREWDd30gFyQVVfeXFMTWVKQVhvZUVoQi1iY1NVSHpSTTVOWmpzbk1wcVFsRmxUZFhIclJPZkNPd0hKRi1Ndl9YNVloMkFLQ2ViUjhFQVJLN3UyWXJwS1pnUGF0LXhYTmI1UktPb3VvMmlwVEpxSTdBSkp4Y3NOXzFn?oc=5",
+        "published_at": "2026-11-19T01:25:56+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -192,17 +192,17 @@
         "id": "bonds-5"
       },
       {
+        "title": "매파적 연준·ECB 발언에 유로존 국채 금리 1개월 최고치 근접",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lM1NkOXJIa0hyVFlTWl9DNF9lc1dUY1pCQ1kxVVFDc2Nfb2ZNZHBVcUFPb21lMmhqeURpOFp4ZEtYV2xXVnZ0Y1pGY2U3Y3gxREhSQXZOZndKRExHZk5pR2xhWUZfQ2s?oc=5",
+        "published_at": "2026-11-19T09:09:00+00:00",
+        "id": "bonds-6"
+      },
+      {
         "title": "국고채 금리, 일제히 하락…유가 급락·외국인 매수(종합)",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNemc2akMyTzhRQ2RtVUYxNFNIUC1ZYnZmcXJ0eTRPdGJTY3ktRFNIM3JtQ0hWb0ExV1VsVWFPRTFSZlBDRDcwWC1XV2V0YXplaWJ0MnFTVDV0NGxJcllKY3VkVmdYNEpNR0xXQ2xodTRMR25jT1RMa1h5QzRnTEFfSQ?oc=5",
         "published_at": "2026-11-19T08:47:00+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "美 연준 ’금리 동결은 숨 고르기’…증권가 \"12월 0.25%p 인상 유력\" By EBN",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INGVRMS15VGN1U2pmR0RXR01UdDVKbWV4Nnh0emx1MzY1Q1BQdVduV2tqMi1peVZ1NmFXNnEzODJaODQwOE1vRUVrejJqSFBXakZJaVlsT3lDMW5sM0pNVGZQaU5vX2d1SGxKc0hWd2c?oc=5",
-        "published_at": "2026-11-19T06:23:00+00:00",
         "id": "bonds-7"
       }
     ]
