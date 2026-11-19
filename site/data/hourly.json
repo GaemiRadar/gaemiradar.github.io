@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-19T20:09:19.368053+09:00",
+  "data_updated_at": "2026-11-19T21:04:23.451275+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T20:09:19.368053+09:00",
+      "fetched_at": "2026-11-19T21:04:23.451275+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T20:09:19.368053+09:00",
+      "fetched_at": "2026-11-19T21:04:23.451275+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -106,45 +106,45 @@
         "id": "stocks_us-1"
       },
       {
+        "title": "미래에셋 TIGER 미국 ETF 3종, 개인 순매수 9조원 돌파…작년의 1.8배",
+        "publisher": "조세일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAwNFZzS0hQRUJEY3g1b01sZWh2Q0haSXNzUGh6MkFwX2hjWkpUakFCU1BfckozeHkycFo0U0M4WkRLMDIxQ09wcWxfRno5X1BFbVdWcy1FV25jTU5wdFAzNmtTdnVRVGs3NjNfTVVCcw?oc=5",
+        "published_at": "2026-11-19T02:12:08+00:00",
+        "id": "stocks_us-2"
+      },
+      {
         "title": "앤트로픽 오늘밤 나스닥 입성…증시 짓누르던 수급불안 풀릴까",
         "publisher": "연합뉴스",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96dXhzRThuWmdhd2RQbW1uc0cyZ2NmMWZ3Rjl0bkpzTzk5MjdKMldFNlIzWUlTVFhQS21YQlRCMVNBVHFUaS0ybUdqSFNnazRrekFCUFVXUVdUVDNBVUxDd9IBYEFVX3lxTE96dXhzRThuWmdhd2RQbW1uc0cyZ2NmMWZ3Rjl0bkpzTzk5MjdKMldFNlIzWUlTVFhQS21YQlRCMVNBVHFUaS0ybUdqSFNnazRrekFCUFVXUVdUVDNBVUxDdw?oc=5",
         "published_at": "2026-11-19T02:01:45+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-3"
       },
       {
         "title": "뉴욕증시,앤트로픽 공모가 주시 혼조세…나스닥 0.42%↑",
         "publisher": "스페셜경제",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBocWt4bkxPUGhjNktfaU5VajlTQkhXdWV3aGFRY3RCbHE4OFEzSXVqdkkxVmhRdDF5cHIwb0lBbVNNMWdtc0ZHMkhTempVZEE5UmpfZTlnY3p3ZVRpMkYtVGp1YkhXaDBleklLTw?oc=5",
         "published_at": "2026-11-18T23:50:29+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
       },
       {
         "title": "[데일리 머니마켓] 엔비디아 2.89% 하락",
         "publisher": "빅터뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoakdMM25NOGhjUmlFcUxkWHgyY0QzM3B3cm9HMEFWZjVLMGV2X1dLZFFEMEFiano3LVFHUlhYRF9qNXMwRXpXTmh6U1hnNHU0ZkJObzR5U3lzTUxVWDJEUjlYUnE4MEU?oc=5",
         "published_at": "2026-11-18T22:53:03+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "뉴욕증시, 엔비디아 호실적에도 혼조…다우 561포인트 급락",
         "publisher": "산경투데이",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vZ01jbDRiUlotSzNhdDdpU3NtVll1SlNyakJCMDh6WExnaDhtdjZ6RWxNSU9Wa2pQWmNWNjZXczE3bnpIak5wNlF2RFVqWVhuR0ZsVkNIR0YzRUN0X3lPRjVHYTAwQUF1WWRNTEx2ZWrSAXRBVV95cUxOS0I3WGVkbDVPS3U2V2VCRE45WEFrWDc5azk2SENNNnNVRDQ4ZVdqQ1dtSGFsMkJzN1dlLWJjNjh6bER3c1pQQlduSU1LX0lyQVB1dUNLSjdiaUk3eVZXQjhxTHk2UkZxbGFCcGk4X05ZZFFicg?oc=5",
         "published_at": "2026-11-18T22:47:26+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[굿모닝 오늘의 증시] 앤트로픽 IPO vs 빅스텝 공포, 주도권 가져갈 쪽은?",
         "publisher": "매일경제TV",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43a2E3bGk1MlM0M0g0LUJGTVpzWGR4MWxiZUhWamlQUlk5T2dtMTBEc0oyZDJQT2VCQ0pOM0RteHNueEVNcXRIYVl0MlRlT1F4dVpoeXhZZjVoZHRyeEVBSG9KLWxLMkRrMEhZ?oc=5",
         "published_at": "2026-11-18T22:22:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[오늘 증시 전망] 코스피 5,000선 되찾았지만 외국인 매도 지속…19일 수능일 증시 10시 개장",
-        "publisher": "업코리아",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lNVVnTGFnQVFzWERXVVltV3p3cFdSUS1pWGt3Q0pYaFZDX2NnUjJ0ejhTeExMOWp5SzAyVXRiVElYM3Vfd1NkV2E4RlBNc1lyM1g0WWVnam9yaWlSWnBiWDFnb1pRakZ5Tm1TY05R?oc=5",
-        "published_at": "2026-11-18T22:18:05+00:00",
         "id": "stocks_us-7"
       }
     ],
