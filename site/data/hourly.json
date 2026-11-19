@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-19T19:14:02.616414+09:00",
+  "data_updated_at": "2026-11-19T20:09:19.368053+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T19:14:02.616414+09:00",
+      "fetched_at": "2026-11-19T20:09:19.368053+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T19:14:02.616414+09:00",
+      "fetched_at": "2026-11-19T20:09:19.368053+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -120,61 +120,61 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "[데일리 머니마켓] 엔비디아 2.89% 하락",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoakdMM25NOGhjUmlFcUxkWHgyY0QzM3B3cm9HMEFWZjVLMGV2X1dLZFFEMEFiano3LVFHUlhYRF9qNXMwRXpXTmh6U1hnNHU0ZkJObzR5U3lzTUxVWDJEUjlYUnE4MEU?oc=5",
+        "published_at": "2026-11-18T22:53:03+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "뉴욕증시, 엔비디아 호실적에도 혼조…다우 561포인트 급락",
         "publisher": "산경투데이",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vZ01jbDRiUlotSzNhdDdpU3NtVll1SlNyakJCMDh6WExnaDhtdjZ6RWxNSU9Wa2pQWmNWNjZXczE3bnpIak5wNlF2RFVqWVhuR0ZsVkNIR0YzRUN0X3lPRjVHYTAwQUF1WWRNTEx2ZWrSAXRBVV95cUxOS0I3WGVkbDVPS3U2V2VCRE45WEFrWDc5azk2SENNNnNVRDQ4ZVdqQ1dtSGFsMkJzN1dlLWJjNjh6bER3c1pQQlduSU1LX0lyQVB1dUNLSjdiaUk3eVZXQjhxTHk2UkZxbGFCcGk4X05ZZFFicg?oc=5",
         "published_at": "2026-11-18T22:47:26+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[굿모닝 오늘의 증시] 앤트로픽 IPO vs 빅스텝 공포, 주도권 가져갈 쪽은?",
         "publisher": "매일경제TV",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43a2E3bGk1MlM0M0g0LUJGTVpzWGR4MWxiZUhWamlQUlk5T2dtMTBEc0oyZDJQT2VCQ0pOM0RteHNueEVNcXRIYVl0MlRlT1F4dVpoeXhZZjVoZHRyeEVBSG9KLWxLMkRrMEhZ?oc=5",
         "published_at": "2026-11-18T22:22:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,000선 되찾았지만 외국인 매도 지속…19일 수능일 증시 10시 개장",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lNVVnTGFnQVFzWERXVVltV3p3cFdSUS1pWGt3Q0pYaFZDX2NnUjJ0ejhTeExMOWp5SzAyVXRiVElYM3Vfd1NkV2E4RlBNc1lyM1g0WWVnam9yaWlSWnBiWDFnb1pRakZ5Tm1TY05R?oc=5",
         "published_at": "2026-11-18T22:18:05+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[속보]뉴욕증시 혼조 마감…다우 561포인트 급락, 나스닥 반등에도 S&P500 5거래일 연속 하락",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRLVY1SUtQc1pLZnZBd3BZUDlqNW44UHBTaldFajNTQV9kOUZxZjdmUXBscnUwSjNfRTFST20wRm9hZGhkdkpPd3hjVWFueE5KUTZIcmJkYnktcFhia2ViVl90TUtRa25W?oc=5",
-        "published_at": "2026-11-18T22:10:15+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "[채권-마감] 外人 순매수·호주금리 급락에 강세…3년물 2bp↓",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oT2xkWHItYmpfS2E2Qk4wSmNfMFpxYklPZUJabUlINlhRU3JRY3h4eEJ3M18tV1ZxS3FrdkVBM3RkbjBqYVFhWDJmV3c1TElYUW1xZG9DY3ZqSDFDX2xBNUxlTk9MN3o1NGR4UWNxWDQ?oc=5",
+        "published_at": "2026-11-19T10:44:12+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "국고채 금리, 일제히 하락…유가 급락·외국인 매수(종합)",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNemc2akMyTzhRQ2RtVUYxNFNIUC1ZYnZmcXJ0eTRPdGJTY3ktRFNIM3JtQ0hWb0ExV1VsVWFPRTFSZlBDRDcwWC1XV2V0YXplaWJ0MnFTVDV0NGxJcllKY3VkVmdYNEpNR0xXQ2xodTRMR25jT1RMa1h5QzRnTEFfSQ?oc=5",
         "published_at": "2026-11-19T08:47:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "美 연준 ’금리 동결은 숨 고르기’…증권가 \"12월 0.25%p 인상 유력\" By EBN",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INGVRMS15VGN1U2pmR0RXR01UdDVKbWV4Nnh0emx1MzY1Q1BQdVduV2tqMi1peVZ1NmFXNnEzODJaODQwOE1vRUVrejJqSFBXakZJaVlsT3lDMW5sM0pNVGZQaU5vX2d1SGxKc0hWd2c?oc=5",
         "published_at": "2026-11-19T06:23:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "美 연준 '금리 동결은 숨 고르기'…증권가 \"12월 0.25%p 인상 유력\"",
         "publisher": "www.ebn.co.kr",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNGV5alhkaFRTWGdvcjMyNmVWWEN0Y0REX3pWalpYYmlEUFkzMzU4UXpPWGJnLUUtSDhxczRUc0VsNDdrQ0l6czBuZXpwcFVDdmRnYnIwT2h2RUw0NnVyeVRXZnI0dWli?oc=5",
         "published_at": "2026-11-19T06:16:45+00:00",
-        "id": "bonds-2"
-      },
-      {
-        "title": "원화는 강세, 엔화는 약세··· 두 통화는 왜 갈라섰나",
-        "publisher": "시사IN",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vRmhIbVlRZWQwUzRYX3ZtQklZNVFxWHNGVXFXa2F4ei1JNzJLU1M5bnk3Rk1RMVQxNDdnMDVpbkp2UEtiM1NwOWI3dUFPMmU4UVFUNVlHckt0LUtMdGs4R3hLRF9qTTJPeXc?oc=5",
-        "published_at": "2026-11-19T05:17:18+00:00",
         "id": "bonds-3"
       },
       {
