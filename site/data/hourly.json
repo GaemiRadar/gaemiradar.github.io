@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-19T16:24:21.005669+09:00",
+  "data_updated_at": "2026-11-19T18:12:19.493924+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T16:24:21.005669+09:00",
+      "fetched_at": "2026-11-19T18:12:19.493924+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-18",
-      "fetched_at": "2026-11-19T16:24:21.005669+09:00",
+      "fetched_at": "2026-11-19T18:12:19.493924+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,75 +34,75 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[마감시황] 코스피 1.4%·코스닥 3.3% 상승…삼전닉스 동반 반등",
+        "publisher": "남도일보",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5nX2daZDRSdUs1ZWl4REFrM1RSS1JRU1dNLWZNd21CSTROcnZxVjVKeWZqdEFtTHdMOUZDc2ZVNWNLZXJ3TGRPb05pYUFhWkRGaFNDTVhFclZRWEZnZC1zV0xJZVp0c3Z4Z0NfbdIBcEFVX3lxTE0tT1lTcVJraXZfUWxYQ3JCUGZqZUFIMjRxaWhPNW1ZREJTeGRmaHJUU0VReWpPOTdWUEVoOG42OHZhRU1STHctcHpraEIzeWhGc2NSSHE0bmlVUDJhTkdtOVZuTUVJbnVobHZIb1Bnc3g?oc=5",
+        "published_at": "2026-11-19T08:12:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "[마감시황] 반도체 오후 반등에 코스피 5100선 회복… 삼성전기 9%↑",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Zb05TLTNVTXc0bWxhZEVoOFR6aXdjVWw1RG1hdUdIQU5jb05mVTE5VzNkZWtZRzRkbDR1ZXlyUHRMNTh1MWVlbVVQODlzbFlZNU1UaXJ1emhJZw?oc=5",
+        "published_at": "2026-11-19T08:05:23+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "[셀럽의 한 수] 외국인 팔만큼 팔았다? 코스피 바닥은 '여기'",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qbzU2Z25jakN0U2JWbUR5aUJWUFM2UmdFcnIyLTlHcFNhWXpCa3FTbThraHhaVEJlcWNaZVpDNUUxdlIxelhVM09FWThGUnk2SFkzamhPaDLSAVhBVV95cUxNam81NmduY2pDdFNiVm1EeWlCVlBTNlJnRXJyMi05R3BTYVl6QmtxU204a2h4WlRCZXFjWmVaQzVFMXZSMXpYVTNPRVk4RlJ5NkhZM2poT2gy?oc=5",
+        "published_at": "2026-11-19T04:23:00+00:00",
+        "id": "stocks_kr-2"
+      },
+      {
         "title": "코스피 외국인 기관 매도에 5천선 버티기…앤트로픽 최대 IPO 성공",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KZ1R6cm95UFlwUUMzVjF6bHFSXzFXNmZENlM3OEpTdXRjZXN4NFV0TDlhSU8tclZOam5rTjB4UmhReGZfYTRiTGRxSHVmcV9GaXl30gFYQVVfeXFMUDBJWkdBeEVzWkc4YVpwRlIyQXNHbC05QkpITTRqYXN0bzVoSEVydnFwc2NsYk5qM0NDTWhXajVqR2J2NEtEWDNhc2NEbnFiNkFjS2ZKdEtwWA?oc=5",
         "published_at": "2026-11-19T02:23:00+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[오늘증시] 5000선 탈환 하루만에 외줄타기…앤트로픽, 반등 변수로",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAzanlzVThQY2NsRVg0Z2ktdGtPTUhXd2xSQXJMYmdKNWI1eDE5cUphVmMtX2pXQ1FFQkZ1d2V4RXJ5TEtkOWpQYkhvUEVMS09xZ0ZicWM2b0h2RFloT3VpTW1OSExRNzc5THhuWlVIYV9ObWs?oc=5",
         "published_at": "2026-11-19T02:04:19+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[오늘의 증시] 11월 19일 코스피 5000선 턱걸이…코스닥도 1%대 하락",
+        "publisher": "잡포스트",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDVWk4a3FNZTJWbjlhU0hWQmx1SXU0TFZERDNfTWszSkZoX0lXTXJOT1RJd1p4bHFTWFFqcmh4ajdwdXlhbWQyb3FWTUtWZldKMkVLOWtpV29mQm9ZRkw4aWh6N3lkdjl6UjREWDd30gFyQVVfeXFMTWVKQVhvZUVoQi1iY1NVSHpSTTVOWmpzbk1wcVFsRmxUZFhIclJPZkNPd0hKRi1Ndl9YNVloMkFLQ2ViUjhFQVJLN3UyWXJwS1pnUGF0LXhYTmI1UktPb3VvMmlwVEpxSTdBSkp4Y3NOXzFn?oc=5",
+        "published_at": "2026-11-19T01:25:56+00:00",
+        "id": "stocks_kr-5"
       },
       {
         "title": "수능에 오전 10시 개장한 증시...코스피 상승 출발",
         "publisher": "YTN",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tSWxjWFpSRWI0VXRFUFpZazk3dlRxVms5X2lTbXZiWU5OT1Q0OVI4T1hfcWF4empZcHpIVVdTS2NWeXg2M0R0cnVOSWtqLVpnNWV1cXk3T3VudnktLU1JbFFubS1OODQ2aW9wTEdOaw?oc=5",
         "published_at": "2026-11-19T01:14:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[개장시황] 수능일 1시간 늦게 열린 증시…코스피·코스닥 약보합",
         "publisher": "남도일보",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZWU5qM0MxVExjZDVsWmhZcVlVQWRfRFVPUGRpTVRxUDA1MUljREhpNXFubnRRaUxsYVVlV1hzSWpFOXBmV3VDQk9mb2owZ0h1S0N0RmsyanpFN25NTkQxUkVpLU95MjNYZkZ6ddIBcEFVX3lxTE5XR2djcTJrVnhWQmZ3ZXFRMllFQVE1cExwVS1PdksyZzJoUGtFZ2kwc2k2YVhiMmZxN1hLVWhXZmsyS0p2V2ZCQXB6TFFHNVYzZndPNVFreVB2OGdRdmlXbE9fQ1Z5b09RdFFObjdOcUw?oc=5",
         "published_at": "2026-11-19T01:12:00+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "수능일 은행·증시 늦게 문 연다… 오늘은 '이 시간'에 개장",
-        "publisher": "위키트리",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1fVGV0S1RPV0JWcVVjZFBVUXR3N0NHVVRlWVQtbnFqMGhidWZZQ2pBODZGWVJ2bTdXTnduTFNBLUpUT19rbFVSTTVUcVp0eHZOWEFMeTB3?oc=5",
-        "published_at": "2026-11-18T23:55:00+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "오늘 주식 거래는 10시부터, 프리장도 쉰다…수능일, 증시 1시간 순연 - 머니투데이",
-        "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YWGpMZVE0OFVMcTdYZDlfS0FvLURoelR6OGZjdzdBUmctT2dISS1Qa0ZhQjc3aVJMRG1BVTZDVjg0OENwcnN6dFhzdVZXbS1xV2ZzVWZTMngwc092dkZ2ekZTQWV4dDRUNkk1RFVB0gFuQVVfeXFMTVhYakxlUTQ4VUxxN1hkOV9LQW8tRGh6VHo4ZmN3N0FSZy1PZ0hJLVBrRmFCNzdpUkxEbUFVNkNWODQ4Q3Byc3p0WHN1VldtLXFXZnNVZlMyeDBzT3Z2RnZ6RlNBZXh0NFQ2STVEVUE?oc=5",
-        "published_at": "2026-11-18T23:19:16+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "오늘 9시엔 주식 못 산다…수능에 증시 10시 개장",
-        "publisher": "한국경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkMWpKOTI3bV9CazJvRWdMT2M5MXRJVUw0NFBBQ0hoSkhTU1pVN05MdjNCckN0VG1IZ3JRaGh2aVlMbmw4QWdCYVdWTnpEVTEzZWhxR0ZxZ0d6QQ?oc=5",
-        "published_at": "2026-11-18T23:03:21+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[AI MY 증시전망] 美 반도체 약세에 코스피 하락 출발…반발 매수 주목",
-        "publisher": "뉴스핌",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE85cGVqd0w3MEp4amlpeC1Ib29vREVTek91OU5XUlp4TmM5U0lJcFpGUThybTFTRnE1V1ZNUjlXWU1heGg2NDBDblgxMDVnTHEyVE9lNzY2THZSdkNq?oc=5",
-        "published_at": "2026-11-18T23:03:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
-        "title": "코스피 5,000선 털렸다…나스닥 선물만 283p 반등",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ZRFdZSU1tT1ZZbVdVekhZUV9JZGp2aDhyUGdPWVphRUVqTnRyV2F1c0wzbTZ5anVLZExMaEVjYkhId21rV09mcXFn?oc=5",
-        "published_at": "2026-11-19T06:17:19+00:00",
-        "id": "stocks_us-0"
-      },
-      {
         "title": "나스닥, 15% 빠졌는데 바닥은 아직?...코웬 \"2018년보다 심각\"",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FSE5lcXB3eHNhUGdvWVotSks1TzlfVEFMbFZvZXRzekhCX2NsMXBQcmotS3VnbnV5ZmppRF9sZnhTRE5pNmxtOGl3?oc=5",
         "published_at": "2026-11-19T04:35:00+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "미래에셋 TIGER 미국 ETF 3종, 개인 순매수 9조원 돌파…작년의 1.8배",
+        "publisher": "조세일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAwNFZzS0hQRUJEY3g1b01sZWh2Q0haSXNzUGh6MkFwX2hjWkpUakFCU1BfckozeHkycFo0U0M4WkRLMDIxQ09wcWxfRno5X1BFbVdWcy1FV25jTU5wdFAzNmtTdnVRVGs3NjNfTVVCcw?oc=5",
+        "published_at": "2026-11-19T02:12:08+00:00",
         "id": "stocks_us-1"
       },
       {
@@ -120,89 +120,89 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "[데일리 머니마켓] 엔비디아 2.89% 하락",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoakdMM25NOGhjUmlFcUxkWHgyY0QzM3B3cm9HMEFWZjVLMGV2X1dLZFFEMEFiano3LVFHUlhYRF9qNXMwRXpXTmh6U1hnNHU0ZkJObzR5U3lzTUxVWDJEUjlYUnE4MEU?oc=5",
+        "published_at": "2026-11-18T22:53:03+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "뉴욕증시, 엔비디아 호실적에도 혼조…다우 561포인트 급락",
         "publisher": "산경투데이",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vZ01jbDRiUlotSzNhdDdpU3NtVll1SlNyakJCMDh6WExnaDhtdjZ6RWxNSU9Wa2pQWmNWNjZXczE3bnpIak5wNlF2RFVqWVhuR0ZsVkNIR0YzRUN0X3lPRjVHYTAwQUF1WWRNTEx2ZWrSAXRBVV95cUxOS0I3WGVkbDVPS3U2V2VCRE45WEFrWDc5azk2SENNNnNVRDQ4ZVdqQ1dtSGFsMkJzN1dlLWJjNjh6bER3c1pQQlduSU1LX0lyQVB1dUNLSjdiaUk3eVZXQjhxTHk2UkZxbGFCcGk4X05ZZFFicg?oc=5",
         "published_at": "2026-11-18T22:47:26+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[굿모닝 오늘의 증시] 앤트로픽 IPO vs 빅스텝 공포, 주도권 가져갈 쪽은?",
         "publisher": "매일경제TV",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43a2E3bGk1MlM0M0g0LUJGTVpzWGR4MWxiZUhWamlQUlk5T2dtMTBEc0oyZDJQT2VCQ0pOM0RteHNueEVNcXRIYVl0MlRlT1F4dVpoeXhZZjVoZHRyeEVBSG9KLWxLMkRrMEhZ?oc=5",
         "published_at": "2026-11-18T22:22:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[오늘 증시 전망] 코스피 5,000선 되찾았지만 외국인 매도 지속…19일 수능일 증시 10시 개장",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lNVVnTGFnQVFzWERXVVltV3p3cFdSUS1pWGt3Q0pYaFZDX2NnUjJ0ejhTeExMOWp5SzAyVXRiVElYM3Vfd1NkV2E4RlBNc1lyM1g0WWVnam9yaWlSWnBiWDFnb1pRakZ5Tm1TY05R?oc=5",
         "published_at": "2026-11-18T22:18:05+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[속보]뉴욕증시 혼조 마감…다우 561포인트 급락, 나스닥 반등에도 S&P500 5거래일 연속 하락",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRLVY1SUtQc1pLZnZBd3BZUDlqNW44UHBTaldFajNTQV9kOUZxZjdmUXBscnUwSjNfRTFST20wRm9hZGhkdkpPd3hjVWFueE5KUTZIcmJkYnktcFhia2ViVl90TUtRa25W?oc=5",
-        "published_at": "2026-11-18T22:10:15+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "美 연준 ’금리 동결은 숨 고르기’…증권가 \"12월 0.25%p 인상 유력\" By EBN",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9INGVRMS15VGN1U2pmR0RXR01UdDVKbWV4Nnh0emx1MzY1Q1BQdVduV2tqMi1peVZ1NmFXNnEzODJaODQwOE1vRUVrejJqSFBXakZJaVlsT3lDMW5sM0pNVGZQaU5vX2d1SGxKc0hWd2c?oc=5",
+        "published_at": "2026-11-19T06:23:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "美 연준 '금리 동결은 숨 고르기'…증권가 \"12월 0.25%p 인상 유력\"",
         "publisher": "www.ebn.co.kr",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNGV5alhkaFRTWGdvcjMyNmVWWEN0Y0REX3pWalpYYmlEUFkzMzU4UXpPWGJnLUUtSDhxczRUc0VsNDdrQ0l6czBuZXpwcFVDdmRnYnIwT2h2RUw0NnVyeVRXZnI0dWli?oc=5",
         "published_at": "2026-11-19T06:16:45+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
+      },
+      {
+        "title": "원화는 강세, 엔화는 약세··· 두 통화는 왜 갈라섰나",
+        "publisher": "시사IN",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vRmhIbVlRZWQwUzRYX3ZtQklZNVFxWHNGVXFXa2F4ei1JNzJLU1M5bnk3Rk1RMVQxNDdnMDVpbkp2UEtiM1NwOWI3dUFPMmU4UVFUNVlHckt0LUtMdGs4R3hLRF9qTTJPeXc?oc=5",
+        "published_at": "2026-11-19T05:17:18+00:00",
+        "id": "bonds-2"
       },
       {
         "title": "2026년 11월 19일 오늘 은 가격: 하락세가 지속되고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSXVzSE9BRVZ4U3JEak40Q3FwemFBOW5SR2pfS1lib25ERW05aVNCY0h3ZG1EUmF1a0t5TUd1bjlkdUQzakRkZEFpRHVzR3FuVXRZZjJla0x0MWpxcnhMVVItOU56UUdHc052RkhFa2s2VWtwaWI0bE1INjhCQ19RQnMxTEVoYmlI?oc=5",
         "published_at": "2026-11-19T04:30:30+00:00",
-        "id": "bonds-1"
+        "id": "bonds-3"
       },
       {
         "title": "채권시장 안정세…10년물 금리 1.9bp 내려 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9VRHlUT01tOUpaUXFCRzR0Qm1CZG1HTWdiUS0wWEc5Ny1MYndLbnJ0aUZ1S1UxcnFUVFBKZlZNdGVqazF3NzNvcUp3MA?oc=5",
         "published_at": "2026-11-19T03:01:33+00:00",
-        "id": "bonds-2"
+        "id": "bonds-4"
       },
       {
         "title": "중국 한한령 완화 기대, 국내 증시 수급 숨통?",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50RFZQanhFWFltbnVvZWJxbzY1bm9IU1JFdWk4NGtyRTVBb01IQU9zT01Rb25sdzdlY0NvZERDeHpRRUdpcWtZVGVsUjBLcFAycGFpazc3UnREUQ?oc=5",
         "published_at": "2026-11-19T03:00:53+00:00",
-        "id": "bonds-3"
+        "id": "bonds-5"
       },
       {
         "title": "美 추가 인상 경고에도 10년물 금리는 하락…국고채 시장 엇갈린 신호 By EBN",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHVzVsMTRvV0lRa19qdXgzbFFKT0VUX05UdmFYS0hUcXZNNHdXc3JuWWZXelJLSFprYUw3RUpvakhzamM0LUV5VG80OEY0NlczTkd4OWY2b3h0RFNYQjRxakVrS1FoLXBZMVdjTE5QWk4?oc=5",
         "published_at": "2026-11-19T02:19:00+00:00",
-        "id": "bonds-4"
+        "id": "bonds-6"
       },
       {
         "title": "[오늘 금시세] 금 한돈 60만7,838원, 1년 최저가까지 375원…Fed 추가 금리 인상 전망에 국제 금값 급락",
         "publisher": "톱스타뉴스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9yWFpWQmNZQXZrUHUzVy1UbjQ2Qmp3VjViWGg3S2VCRWhLU3ViaXlsOEtqUlh0YTZZOENldTZ5Qnc5Nmgxa3BOTkhncW5QeW8yQzc5V2ZxQXg5b096cVZ2TkkzXzlkOEN6dmpNcEY5STRvUQ?oc=5",
         "published_at": "2026-11-19T00:39:36+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "[뉴욕마켓워치] 엔비디아 호실적도 못 살린 투심…주식·채권 혼조·달러↑ |",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE43eU52ZlhadmhjTGQ0MVJFYWFOQmVsZk5BMVNUQVQtcTJ6anA2anlOUTE3NUxzeV84bTlWWlJoVmpJeVZmYnJxYUZnazlUMnlNUkI5RlZQbWRJdU5ZaGtWaS1GNmFGTkZJdnYzYlplcmhpNTlX?oc=5",
-        "published_at": "2026-11-19T00:09:42+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "오늘(11월 19일) 금 가격: 급락세 지속, 14개월 만에 최저치 기록.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQk12cW1OVDg4UWJtb3FZRzFBY3NXSHZHeFVHUnRWWXN1cmI3bkpXQVhWOU5hSF9HVC1fMU5QczVjbVhOUHpqRFJTVmpqZjBMbkM2Z0cyMC10eUxwVjZuLWxxS2JvMldtOTNDNmxJaU9YZ21ZeVEwSk1vMlI2X19jcTRORTB4NG12c1RtZQ?oc=5",
-        "published_at": "2026-11-18T23:27:02+00:00",
         "id": "bonds-7"
       }
     ]
