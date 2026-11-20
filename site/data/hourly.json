@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-21T01:01:26.711903+09:00",
+  "data_updated_at": "2026-11-21T02:03:39.980180+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.04,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-21T01:01:26.711903+09:00",
+      "fetched_at": "2026-11-21T02:03:39.980180+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-21T01:01:26.711903+09:00",
+      "fetched_at": "2026-11-21T02:03:39.980180+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,10 +41,10 @@
         "id": "stocks_kr-0"
       },
       {
-        "title": "“어제는 5100 돌파했는데 오늘 5% 폭락”…코스피 ‘20개월 하락’ 경고까지",
-        "publisher": "데일리25",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKNUNPdnVWQmV5cGNwU1dYeWRhVjZpeS0wSkFZeWFyNVpHYlVCZ3A0WXFoNUdSdVUzdldMb3pENnZ1ZUVnbXJZbW1Hcjg4SHhIa0xmbTVmN3k2cnZoUjA3VXlaUFR0WDJiNVQyNw?oc=5",
-        "published_at": "2026-11-20T10:51:48+00:00",
+        "title": "오늘의 키워드 | 코스피 5.21% 폭락·수능 AI 부정행위 파문…수출 1조 달러·빅뱅 컴백까지",
+        "publisher": "강릉뉴스",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aNUxJUDdtRjBfMTNmUV92NldjcXU3cTdQLWxpWDkxcTJmVTZSWmxEOEMwYk0xU1Z3V0J3WnhQLTNiTEtQR3ZtUjk0aHRaSURfM2FGWE5QMXRWSWluak5XUDJhck55YzM4RDhtS0phSQ?oc=5",
+        "published_at": "2026-11-20T09:55:30+00:00",
         "id": "stocks_kr-1"
       },
       {
@@ -92,117 +92,117 @@
     ],
     "stocks_us": [
       {
-        "title": "앤트로픽 90달러선 회복에도 6% 하락…S&P500 장중 0.3% 반등",
-        "publisher": "토큰포스트",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tNVpzNW9kMFRLSDl1U3BMVzRkdE8ySWRPUTBfNUpKM3VpVklxb05PSV9OcE55dWZwRVZWOEl6aUlmcWpMcjRQcXVGcmg5SXE1MHVURG5R0gFbQVVfeXFMUFFyTl9VVl9rdnRPZGNrOUV2dlFGYktUMnRRUjhKQkN1LVZDLTNPb2htVW53TlYtYlNNV3B6WF95cDRQdzlUdS1MRXJmc1AxUzNFd29sV0FOdjBsYw?oc=5",
-        "published_at": "2026-11-20T15:23:22+00:00",
-        "id": "stocks_us-0"
-      },
-      {
-        "title": "[속보] 뉴욕증시 혼조세…다우 0.50% 상승에도 나스닥 1.42% 하락",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aY29nV1YzU3ZFT3RiMUpIRGRvSDFjSEx6S0F6Q0RXLVRZQkMycTFvbWJaUUlHRTNfeWlFbmpsRlFpQUNKbm41dU1uLS04eldkcFp6d3g2QUVZTjhRejhZelRidEJEUkVT?oc=5",
-        "published_at": "2026-11-20T15:00:00+00:00",
-        "id": "stocks_us-1"
-      },
-      {
         "title": "한눈에 보는 오늘의 뉴스 (11월 20일)",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zTThNVFdvUzdBWFdsbDdTN01ZdEJjWnBVMzYzR0RJa2RJSkdUUFNOdzdiRFRnZllES2hHVXY3TkxtNnBicUpRUXJpYk5qaDQyeXNObW55cXRKcDdsa01iRGR3?oc=5",
         "published_at": "2026-11-20T14:56:12+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-0"
       },
       {
         "title": "미 증시 급락…다우·S&P500·나스닥 2% 넘게 하락",
         "publisher": "VT Markets",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSjdDVDJRUmdoc2RncF9TNGdmcy1nRkFEV0dsY04tVmRMUGtsN3VZV3QxcHRSN01WckIySmVCNGRHYzlRbm4tekNvOVpGQ3hGazVabHhzZ1dJUHZsMldWdXhDTjUzb2tqTGlxTEg3Si03OTdielR6aEdKYWlhcFhaLU5Oa2djX3hOay05MzFVOXV1NFNuVFFraURDN1hvYUpvLTRkMTUyamozT2ZTUFE?oc=5",
         "published_at": "2026-11-20T12:07:44+00:00",
-        "id": "stocks_us-3"
-      },
-      {
-        "title": "[11.20(금) 한국장 마감] 동반 하락 (코스피 -5.21%, 코스닥 -5.71%)",
-        "publisher": "주달",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fc2JmcUdGWkE2Z1JDY2ZhNXc4MFVVQTlGUW1lUS1hemluZXZLV1ZQOW5YcExjb3VTYVBvMlNzWXZTODQtTUttRnU1RVdYeGRNQkxGanl6Q000bno4TWV4YVhVcFNHR2pWbHBzYzRORHI0cm9Lcmc?oc=5",
-        "published_at": "2026-11-20T07:00:46+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-1"
       },
       {
         "title": "코스피 5% 급락, 저는 이 주식을 매수합니다.",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcGZSZlRaeHBsQWNNQkNhdEVCd05aQWgzQm1jYVNoNmU5cXZZMmZWNUw1ZmJ4RDdseWplWVR5SUFoNnYwR3g3UUV1UmN6V2pPWVIwbXp5R3VtRFotMlBHQlpjU3lDeHNlN0FEb0t3ZHRoNXJfSmM1RjFUQzZsTmgwd0xEZ0U2Q1ExeXVv?oc=5",
         "published_at": "2026-11-20T06:50:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-2"
       },
       {
         "title": "오늘의 SPX500 지수 | 실시간 US500 시세 및 뉴스",
         "publisher": "Mitrade",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPQ0VNTkR1VGl3Uy1mQ3RoaGppcF9heUdoZ0FYczJjVWNpNHRfQnMwSl9KSXR6Q2lPWUlvWVlocGIybXM1UmNkWXlaS255clpEcVlyNWoyYWdXX1ZONGdyQU5KUy1vR2Vx?oc=5",
         "published_at": "2026-11-20T05:06:41+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-3"
       },
       {
         "title": "나스닥 선물 0.74%, S&P500 선물 0.34% 하락",
         "publisher": "토큰포스트",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tUzNkbVNDQ2tVM0tFODFHSmNMVjZHeVZNY3AxbUFzSnFQVnVpeDYyS01HNmVJaC1ET1dZWkhiM3M4UzljTXlXLWVTNThWWHpEYXdDUUlR0gFbQVVfeXFMTW11VFhLUnhHNkhMeTVqYmFiazdDdUx6MXFwT2RQRG5qdzF2UXA3ZGF6NkdDNFdScHVXV0w1MnRUdzJiemg1T3p6eFlXU1JkMzg3YjFEZkZoTjdYTQ?oc=5",
         "published_at": "2026-11-20T04:53:06+00:00",
+        "id": "stocks_us-4"
+      },
+      {
+        "title": "뉴욕증시 3대 지수 2%대 급락…다우 5만선 붕괴·AI 투자 불안 확산",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzUm8xNEQ4eDFCRE05VV9BaVEwNjl1QnIwbDY5QmNjSGJmQWRrX1FPRXkyVkpJVDBNakdTcVpGdzVHSkVER3ZRUU9meW5CeWl4LVJ6Mkl2bVdiZGRmV2RrZmdDZk5lYVl6dWpCSzRyOGjSAXRBVV95cUxQaURSU2lTZnZtcmh5Wnd3WkFqSXgtLVNpT3RPYnpiSGVLa21LOUh3czk2aEdYRVdhM1BsM1F2SEpLTHFPU0xiUnlzRElneHhOM3kxS2RWd0hsbTFDbzNRYzFOWHhVMFdYeElWd0xHNUFVc3ZFaQ?oc=5",
+        "published_at": "2026-11-19T23:41:04+00:00",
+        "id": "stocks_us-5"
+      },
+      {
+        "title": "[굿모닝 오늘의 증시] 앤트로픽 화려한 데뷔전 vs '中 리스크' 직격탄 맞은 AMD",
+        "publisher": "매일경제TV",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sUG1FY0xEQ1NWMFJYWUoxVU5XTkJvNmJtNlhJU3VzNzNvOW1zN2lfaVJyRjIydE9OQjFndFUtZnR1ZnV3QlZDMlNJS2EyU21LNHhXQlc1c2FpdlhHS1RKNlY2X250RFBN?oc=5",
+        "published_at": "2026-11-19T23:31:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "[뉴욕증시] 앤트로픽 데뷔날 다우 5만선 무너졌다",
+        "publisher": "자본시장뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtaVdVOFE1aVVEck94YVJkRDczbndGMUs2eVl3T0lYVUx1dUNZczJ2bGliWnU4V0ZRc2xKVmVSUGhHTkN1RmJ3ai02ZFFwVDE0REpjenhGbVh2ZlZFaWpxeTBicE1Xekk?oc=5",
+        "published_at": "2026-11-19T23:00:00+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "[ 국고채하락 ] 증시 5%대 급락에 안전자산으로 쏠린 발길… 국고채 3년·10년물 나란히 내린 배경은?",
+        "publisher": "CBC뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50QjVVbmRfaWMyU3BTNHgwTDBkSGNIUWc5RWt0MFJHOHR5WXZ3UHhmQ1d6eFRITFBoLVF1LU56NEQ5VmNTbmJsOUliU1hIYXZDblhlQmswVnM5ZG5PUkhOV28xSXYtdkE?oc=5",
+        "published_at": "2026-11-20T16:00:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "S&P500 7% 오를 때…비트코인은 고점 대비 35% 밀렸다",
         "publisher": "코인리더스",
         "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XRUpwWmdOTzR6SV90OEprMnNFZWZZYW1CMGVIZWJOdzloTlZQVDItMnMwNjJMWnA2X0ozaHVJN1cwZEVXMnZYS3Nn?oc=5",
         "published_at": "2026-11-20T14:52:17+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "국고채 금리 일제 하락…3년물 연 3.642% : 외환.금리.유가.선물.채권",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JazdDZzdXdG95aklpa3NBLUhtbmxMd084LVVCTFBDRjJzUEo1dUd1eHQ3cDZxTnFqc0JwV3lTX2Q3QVJrRXZDNi1aOA?oc=5",
         "published_at": "2026-11-20T11:58:02+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "[채권-마감] 주가 조정에 금리 급락…국고 3년·10년 3.7%·3.9% 하회",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxeHZlMVAya2NudjhZWXF5ZTRDLUJwLXlod20zSmYyOWRBZTZDSlRKRDByRllVT2dXUjdfUTJJS2xERUNaSWJnR3NVZzE2QU1fZmVveGRBVzRUaUJnTmNUU0lKaTFaTzF6bUFoRjNzZDc?oc=5",
         "published_at": "2026-11-20T09:55:42+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "11월 20일 은 가격: 미국 달러와 채권 수익률이 국제 은 가격에 부정적인 영향을 미치는 가운데, 국내 은 가격은 계속 하락하고 있습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcmV0UFRnVlgyWURpRTR1b09WUlpIc2xfNEpuZ0p5M1lwel9KRlk5UDd3SG5VYlU5RTB2LTY1em5MYlNfODFxUlI2XzFyNG9wZUxBUzJURTJOV19DNExsVjJnMDlyS1ZsN3hhU3FLZ0lfcVJTR3JFSzdmc29vb1ZOcS1FX25DVU9yaUJsTV9rNzRXc0JlQWdlWjdHQkNLVC01bDRUaDgtLXhzamhTSjhWcVlyQjVTLUdqbXRRSmlTWDk1V2FxYXFkZmxKeVNBZw?oc=5",
         "published_at": "2026-11-20T04:48:50+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "코스피 4%대 급락·대외금리 내림세…국고 3년 4.9bp↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBnSjJCYkhRMXp0LXdFRE14N1hQSGx4Rl9SSFpPX2VUQTYyLWZnd3FDQjhtckZJSWQ5cnZwX1ZidzZUOHZYZkV4bVZzdkpRUVpnY2loMWhtZFpBVW9OejMtMWxuaFlYY3hSUjBidkxlUUI?oc=5",
         "published_at": "2026-11-20T04:22:02+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
+      },
+      {
+        "title": "11월 19일 경제 뉴스 요약입니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LSGJocFp2RXBwQjZxOWFvRmhxbzFlQ3MtaDRMeklHRlM0eHZ1NldjeVhEd083WWItVzZZQ1JEUkh4anppMU8wMEpjSTYtQXFyZVJMUFRrVThiZUpXSDRJYW5PMVA0VlFraUNLY29NeGc?oc=5",
+        "published_at": "2026-11-20T03:11:32+00:00",
+        "id": "bonds-6"
       },
       {
         "title": "채권시장 강세 이어져…3년물 금리 4.7bp 하락 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE13MUNQUFREVDYwZUlKM2FGaE5VUTY4WWtWdjdkMS10VDB3VUt6NDk1ZjlRcHkyNm14QVoxNTdUZXVHdElIMXNxSTRFQQ?oc=5",
         "published_at": "2026-11-20T03:06:06+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "오늘(11월 20일) 금 가격이 지속적으로 하락하며 안정적인 바닥을 형성하고 있는데, 지금이 매수 시점일까요?",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTlo5RU5IYXZIZk5rZTJUY181QmtBY2tIVHBpTWRoVEVjVVpNUDFuNnViUVNkUnBpeW1IaGRTU0J0TFF6SmVWTjNfUzI2V2ptY3RMQmI4azZEMlRTbzJsTmxsZWpTSWstUkF4Z28xN2tfX3RuenJiZkNqcmd1ODU0MExNNHpHSkhCRUlJY3Q2R0pzRy10TDhfVTIxSV82MDRFb3VyQy1fVVhwSXZEdlI1aFNWZi1ySmRyM0sybmF6TTc3VlZYdkxrcTMxQ29XWldrWkZZ?oc=5",
-        "published_at": "2026-11-20T02:28:14+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "'장기금리 움직임 뜯어보자'…기간프리미엄 변동 주목하는 시장",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2empUbUFlMlBKRkwzbEx6Y3dDNEZ4eXlXT25TY2M5QTdxWTNGLXY5YVJ1emNmdGR1cV9LanREWW5Td3BZSVNnTGY0Y2VKSkhGekRpMWUwRjR6NGxSbDJyWGhDb1RFbTZ4c3NGT1BXRkg?oc=5",
-        "published_at": "2026-11-20T01:42:11+00:00",
         "id": "bonds-7"
       }
     ]
