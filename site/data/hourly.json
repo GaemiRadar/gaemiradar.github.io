@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-21T00:00:20.020792+09:00",
+  "data_updated_at": "2026-11-21T01:01:26.711903+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.04,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-21T00:00:20.020792+09:00",
+      "fetched_at": "2026-11-21T01:01:26.711903+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.03,
       "change_unit": "pp",
       "as_of": "2026-11-19",
-      "fetched_at": "2026-11-21T00:00:20.020792+09:00",
+      "fetched_at": "2026-11-21T01:01:26.711903+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -55,96 +55,96 @@
         "id": "stocks_kr-2"
       },
       {
-        "title": "코스피, 5.21% 급락해 4869선 마감…외국인·기관 2조 원 넘게 순매도",
-        "publisher": "우리경제신문",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aZ2NtWnltcnBVYkFMQXAwNnhfTWhnQmZ2Z3JpNVctMERrRjlOcnFGWlhjem5UcmIyUVYyd3BFV1EtMDN3WUVTN1VwdFcwalBpekFqZkFuZWs?oc=5",
-        "published_at": "2026-11-20T07:51:39+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "[오늘의 주목주] 'AI 투심 위축' 삼성전기 주가 12%대 내려, 코스피 외인·기관 순매도에 4860선 하락 마감",
-        "publisher": "비즈니스포스트",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EeWdRQmtsWUFBVnJtcHg3SjdoZVBOc21CWDY3aHBQdzI3MzJKZUtrSlJDeU1zRUpjNl9tWndoeWRoWGI0VW5DTEIxbVdPZ2g1R3ZIcTAzM0pWcktNWHRrOUV3MVJqTmZjZ1pLeTFoTW8zNTA?oc=5",
-        "published_at": "2026-11-20T07:48:32+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
         "title": "코스피·코스닥 동반 5%대 급락…10거래일 만에 매도 사이드카",
         "publisher": "이슈밸리",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54WEJLTWVwd2JHVWRrLUYwYXc4Y3RLOTFJUV9oUU8ybHkyR01rc3FLSDk3cDJzVXNDNmI1VjVIZmNvcURLU1IxOVF0WllfVHNqaE1kVDAwQ1ZodmI4YlRtY1labjVyTndCci1aeA?oc=5",
         "published_at": "2026-11-20T07:32:54+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-3"
       },
       {
         "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 20일)",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qSXNqQlFpUHh0VUFtSy1Bbl91U19ONHpIOTFOc1J4SjNZZk9scnZZaDJWbFZYQ0NFQXRfREV2SE1zM2J1UlAxVzk3Z2MyZzN0dEJzdVhVd1hpZw?oc=5",
         "published_at": "2026-11-20T07:19:55+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[11.20(금) 폭락] 코스피·코스닥 동반 5%대 폭락, 검은 금요일",
         "publisher": "주달",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WWGlNcVpheFl2MjlnUUVIU1FHcmxzMGN2UWw4Zk5tUHpIcExQdjVxaFRiUUJ5RjRhX285MXdxSFVIY25lbnNwRkpCcWlQVFFOLTF2ekdtS3dJU1NjVU43RklJd3dxd2dPcVRQRFZCSlF1M3U5b0E?oc=5",
         "published_at": "2026-11-20T07:03:00+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "[마감시황]코스피 4869 마감…외국인 1조2682억원 순매도, 양 시장 매도 사이드카",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1rQ3pFV3dPaUplQmNuaFFGdVBlZnQzMjRHNTVORmp4cXFhNGNkY2JHU0NhSUhQcTlNc1FFaUNqcFZpNVg0NGRfeHdjdVk5SzRGV3ZTMGttRE9kZw?oc=5",
+        "published_at": "2026-11-20T07:02:44+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[11.20(금) 한국장 마감] 동반 하락 (코스피 -5.21%, 코스닥 -5.71%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fc2JmcUdGWkE2Z1JDY2ZhNXc4MFVVQTlGUW1lUS1hemluZXZLV1ZQOW5YcExjb3VTYVBvMlNzWXZTODQtTUttRnU1RVdYeGRNQkxGanl6Q000bno4TWV4YVhVcFNHR2pWbHBzYzRORHI0cm9Lcmc?oc=5",
+        "published_at": "2026-11-20T07:00:46+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
+        "title": "앤트로픽 90달러선 회복에도 6% 하락…S&P500 장중 0.3% 반등",
+        "publisher": "토큰포스트",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tNVpzNW9kMFRLSDl1U3BMVzRkdE8ySWRPUTBfNUpKM3VpVklxb05PSV9OcE55dWZwRVZWOEl6aUlmcWpMcjRQcXVGcmg5SXE1MHVURG5R0gFbQVVfeXFMUFFyTl9VVl9rdnRPZGNrOUV2dlFGYktUMnRRUjhKQkN1LVZDLTNPb2htVW53TlYtYlNNV3B6WF95cDRQdzlUdS1MRXJmc1AxUzNFd29sV0FOdjBsYw?oc=5",
+        "published_at": "2026-11-20T15:23:22+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "[속보] 뉴욕증시 혼조세…다우 0.50% 상승에도 나스닥 1.42% 하락",
+        "publisher": "CBC뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aY29nV1YzU3ZFT3RiMUpIRGRvSDFjSEx6S0F6Q0RXLVRZQkMycTFvbWJaUUlHRTNfeWlFbmpsRlFpQUNKbm41dU1uLS04eldkcFp6d3g2QUVZTjhRejhZelRidEJEUkVT?oc=5",
+        "published_at": "2026-11-20T15:00:00+00:00",
+        "id": "stocks_us-1"
+      },
+      {
         "title": "한눈에 보는 오늘의 뉴스 (11월 20일)",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zTThNVFdvUzdBWFdsbDdTN01ZdEJjWnBVMzYzR0RJa2RJSkdUUFNOdzdiRFRnZllES2hHVXY3TkxtNnBicUpRUXJpYk5qaDQyeXNObW55cXRKcDdsa01iRGR3?oc=5",
         "published_at": "2026-11-20T14:56:12+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-2"
       },
       {
         "title": "미 증시 급락…다우·S&P500·나스닥 2% 넘게 하락",
         "publisher": "VT Markets",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSjdDVDJRUmdoc2RncF9TNGdmcy1nRkFEV0dsY04tVmRMUGtsN3VZV3QxcHRSN01WckIySmVCNGRHYzlRbm4tekNvOVpGQ3hGazVabHhzZ1dJUHZsMldWdXhDTjUzb2tqTGlxTEg3Si03OTdielR6aEdKYWlhcFhaLU5Oa2djX3hOay05MzFVOXV1NFNuVFFraURDN1hvYUpvLTRkMTUyamozT2ZTUFE?oc=5",
         "published_at": "2026-11-20T12:07:44+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-3"
+      },
+      {
+        "title": "[11.20(금) 한국장 마감] 동반 하락 (코스피 -5.21%, 코스닥 -5.71%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fc2JmcUdGWkE2Z1JDY2ZhNXc4MFVVQTlGUW1lUS1hemluZXZLV1ZQOW5YcExjb3VTYVBvMlNzWXZTODQtTUttRnU1RVdYeGRNQkxGanl6Q000bno4TWV4YVhVcFNHR2pWbHBzYzRORHI0cm9Lcmc?oc=5",
+        "published_at": "2026-11-20T07:00:46+00:00",
+        "id": "stocks_us-4"
       },
       {
         "title": "코스피 5% 급락, 저는 이 주식을 매수합니다.",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcGZSZlRaeHBsQWNNQkNhdEVCd05aQWgzQm1jYVNoNmU5cXZZMmZWNUw1ZmJ4RDdseWplWVR5SUFoNnYwR3g3UUV1UmN6V2pPWVIwbXp5R3VtRFotMlBHQlpjU3lDeHNlN0FEb0t3ZHRoNXJfSmM1RjFUQzZsTmgwd0xEZ0U2Q1ExeXVv?oc=5",
         "published_at": "2026-11-20T06:50:00+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-5"
       },
       {
         "title": "오늘의 SPX500 지수 | 실시간 US500 시세 및 뉴스",
         "publisher": "Mitrade",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPQ0VNTkR1VGl3Uy1mQ3RoaGppcF9heUdoZ0FYczJjVWNpNHRfQnMwSl9KSXR6Q2lPWUlvWVlocGIybXM1UmNkWXlaS255clpEcVlyNWoyYWdXX1ZONGdyQU5KUy1vR2Vx?oc=5",
         "published_at": "2026-11-20T05:06:41+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-6"
       },
       {
         "title": "나스닥 선물 0.74%, S&P500 선물 0.34% 하락",
         "publisher": "토큰포스트",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tUzNkbVNDQ2tVM0tFODFHSmNMVjZHeVZNY3AxbUFzSnFQVnVpeDYyS01HNmVJaC1ET1dZWkhiM3M4UzljTXlXLWVTNThWWHpEYXdDUUlR0gFbQVVfeXFMTW11VFhLUnhHNkhMeTVqYmFiazdDdUx6MXFwT2RQRG5qdzF2UXA3ZGF6NkdDNFdScHVXV0w1MnRUdzJiemg1T3p6eFlXU1JkMzg3YjFEZkZoTjdYTQ?oc=5",
         "published_at": "2026-11-20T04:53:06+00:00",
-        "id": "stocks_us-4"
-      },
-      {
-        "title": "뉴욕증시 3대 지수 2%대 급락…다우 5만선 붕괴·AI 투자 불안 확산",
-        "publisher": "산경투데이",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzUm8xNEQ4eDFCRE05VV9BaVEwNjl1QnIwbDY5QmNjSGJmQWRrX1FPRXkyVkpJVDBNakdTcVpGdzVHSkVER3ZRUU9meW5CeWl4LVJ6Mkl2bVdiZGRmV2RrZmdDZk5lYVl6dWpCSzRyOGjSAXRBVV95cUxQaURSU2lTZnZtcmh5Wnd3WkFqSXgtLVNpT3RPYnpiSGVLa21LOUh3czk2aEdYRVdhM1BsM1F2SEpLTHFPU0xiUnlzRElneHhOM3kxS2RWd0hsbTFDbzNRYzFOWHhVMFdYeElWd0xHNUFVc3ZFaQ?oc=5",
-        "published_at": "2026-11-19T23:41:04+00:00",
-        "id": "stocks_us-5"
-      },
-      {
-        "title": "[굿모닝 오늘의 증시] 앤트로픽 화려한 데뷔전 vs '中 리스크' 직격탄 맞은 AMD",
-        "publisher": "매일경제TV",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBqN196OUNtQWhPUFQ1LS1pWTJCZmhUM19neTA5MklNNVdoU3NldXdaMjFiMFFsZUpuOEU3ZmJpemlQT2d2Ml9wc2p0dFI1UF9nS1ZBSDFiWHNHR0JMQ0tNZjI0dlMxN3BtNURN?oc=5",
-        "published_at": "2026-11-19T23:31:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[뉴욕증시] 앤트로픽 데뷔날 다우 5만선 무너졌다",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtaVdVOFE1aVVEck94YVJkRDczbndGMUs2eVl3T0lYVUx1dUNZczJ2bGliWnU4V0ZRc2xKVmVSUGhHTkN1RmJ3ai02ZFFwVDE0REpjenhGbVh2ZlZFaWpxeTBicE1Xekk?oc=5",
-        "published_at": "2026-11-19T23:00:00+00:00",
         "id": "stocks_us-7"
       }
     ],
