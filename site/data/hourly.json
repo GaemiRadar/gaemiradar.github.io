@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-21T12:57:21.436408+09:00",
+  "data_updated_at": "2026-11-21T13:59:52.087483+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-21T12:57:21.436408+09:00",
+      "fetched_at": "2026-11-21T13:59:52.087483+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-21T12:57:21.436408+09:00",
+      "fetched_at": "2026-11-21T13:59:52.087483+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,52 +41,52 @@
         "id": "stocks_kr-0"
       },
       {
-        "title": "[11.21(토) 한국장 전망] 나스닥 -5% 충격·코스피 급락 출발 예상",
-        "publisher": "주달",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WRk5XbnFwNWFuTE1MQTExbmQ3bkZZcXRLejdXSVNrUVdPa1ZOclVDNlRmbm5JNDFQdWl1V2pXalI1bk5xX1RqS254dHZjQlFuU0xYeDhNVURrZ0hhRUFuUjhsZ2Y5dHgyZ0NuX0ZXNXhSTmRpVFE?oc=5",
-        "published_at": "2026-11-20T21:10:29+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
         "title": "[오늘의 뉴스 종합] 美증시 급락에 코스피 5%대 하락…4900선 무너진 검은 금요일",
         "publisher": "아주경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jamI5UFYzODJody10RFVDakZ2X1JjTFZfUlkyb2ZvVUt5T1VhM3pDaHR2YlE5bmdJdm1KTUFaZndmcHZIZUUyb2NlbDRkRU5mdUJMRkNCam1BZ9IBWEFVX3lxTE9TTGJjNWZyaXRLUnBMcDF3Q194c0VEYUJtbktNLTlvdHhSNmlzeFBOSDdrcmVoN3VueFBwLXV6NEVOS1ZMVlRxXzE5MlhKVjAwT256R3NDa2o?oc=5",
         "published_at": "2026-11-20T12:50:36+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-1"
       },
       {
-        "title": "[증시분석] 코스피 5.21% 폭락, 5,000선 무너졌다…다음 주 반등할 수 있나",
-        "publisher": "강릉뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zSV9WeHJCMkEtRndUT09TX2tOTjNnWEhVSndvNXJOa2p0dEVQNF84eVhGR29VVUoxRE0xTVVVeDl4bG82ekhwSl9ZVUs5UjhPTWdRMUJIV0l2TFRwME9VdTREY1VUMWx6eDUzTHNLTQ?oc=5",
-        "published_at": "2026-11-20T11:26:32+00:00",
-        "id": "stocks_kr-3"
+        "title": "'검은 금요일' 삼전닉스 급락…잇단 손실에 \"대응 못 해\"",
+        "publisher": "SBS 뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBzNThLcE5EUzNlclRTb3dja19ZZndPWTZhTjQ4RnV2Y21zbHp5WTdFYW9UMUcwd212TGhvcmFibENGYUkySFdURTI0Z2lZTkNYejBOTkJUZ1VCS2M1RkN4UHE5RXo5Z0huQ1HSAWZBVV95cUxQREZCNFI3X1FvWlktNWdyS093VjhfLTYxdURQSWNuRktNUUtJNXNWOE4xdGVHaWh1cU5ha3duMG9zamNDZGtJOUdIXzZPazRVVkdfd0hhN0xKVncyU3JtMW1jSUp2aHc?oc=5",
+        "published_at": "2026-11-20T11:28:06+00:00",
+        "id": "stocks_kr-2"
       },
       {
         "title": "“어제는 5100 돌파했는데 오늘 5% 폭락”…코스피 ‘20개월 하락’ 경고까지",
         "publisher": "데일리25",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKNUNPdnVWQmV5cGNwU1dYeWRhVjZpeS0wSkFZeWFyNVpHYlVCZ3A0WXFoNUdSdVUzdldMb3pENnZ1ZUVnbXJZbW1Hcjg4SHhIa0xmbTVmN3k2cnZoUjA3VXlaUFR0WDJiNVQyNw?oc=5",
         "published_at": "2026-11-20T10:51:48+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-3"
       },
       {
         "title": "오늘의 키워드 | 코스피 5.21% 폭락·수능 AI 부정행위 파문…수출 1조 달러·빅뱅 컴백까지",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aNUxJUDdtRjBfMTNmUV92NldjcXU3cTdQLWxpWDkxcTJmVTZSWmxEOEMwYk0xU1Z3V0J3WnhQLTNiTEtQR3ZtUjk0aHRaSURfM2FGWE5QMXRWSWluak5XUDJhck55YzM4RDhtS0phSQ?oc=5",
         "published_at": "2026-11-20T09:55:30+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-4"
       },
       {
         "title": "코스피 5천선 이탈, 공세적 연준과 AI 악재 충격",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQW9CLUlwSk13QzhZTzhZM3Y5c3dMV24xRXJmMERFQThFWDdVMzkwRlhLUFZSamxFM3VuSVlRV0o2RXJBN2tSb2lvQnhld2pVakRscDZEem42Zw?oc=5",
         "published_at": "2026-11-20T09:51:04+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피 5.21% 급락, 10개월 만에 최저치…'검은 금요일' 된 이유는? 📉",
         "publisher": "뉴닉",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QTjBObzZpZU1ySDVjZDFwSnFkSmdtNGpTYXdCdXByNXpfM3hIQ0dMbk5VSlRFSXcwTlpkUzNxd3ByRlQ0MFZyVVpQOGJRdk5neTFR?oc=5",
         "published_at": "2026-11-20T09:06:13+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[증시 오늘] 코스피·코스닥 5%대 급락",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2a0RobDRyYUl5M1FNTGJHaG9tcC0xbm5HQ1R5Vzl5WEI1SEoyZ2ZLdmZfN09GWjBtOXBCNEVjcmFqWUVMdHV0Ykc3YTNoZF9MaWhNcVpURHc4VE9LbTlIb3RRTE5RNTQ?oc=5",
+        "published_at": "2026-11-20T08:43:23+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -99,52 +99,52 @@
         "id": "stocks_us-0"
       },
       {
-        "title": "[뉴욕증시 주간결산] 나스닥 한 주 10%↓…AI주 투매에 S&P500·다우 조정 국면",
-        "publisher": "더페어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1uOVVuY0RVLUNjNGpmRVluWjJPMndpQUZsVzA4LU5SZzJPdE1kRlBLcGdEQVE4WXBfWEFSRXpKU09QckU1WkRFZ2o4SEhHcFJScmNvWmhrQ3dlQkpCczNfemF0SFNwY0ZRU1Y0UGFadDDSAXRBVV95cUxONUhEYlM5Vk1GQjhmY0N5S0p5cmF4RWhiQXBSTWVncWVKN3NUVjJuaHhHd2RvSEliM1FEeDh2WXdZWVNDbEN3TUlXRjF2amtaOUt2amR3dGt6ZXY5TU9zZjFZRmxibTlzRWNJZjl4NlpCSHhURg?oc=5",
-        "published_at": "2026-11-21T01:08:13+00:00",
-        "id": "stocks_us-1"
-      },
-      {
         "title": "AI주 투매에 뉴욕증시 급락…S&P500 조정장 진입·나스닥 연중 하락 전환",
         "publisher": "뉴스로드",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xTjRpbjVDalNiZ1BaYmd6MXBpNTY5NDZUbi1zSGxpSUIwQk9kb0NCVjRCUVdXNEZYY0RkcU51TnhOaUxvcFBadVk1OTI0NkxaWElxSnpteXhuZjg2OGpsT3NaUlNFSGVtT09Z0gFvQVVfeXFMTVpuMjd0am5fV3JDaVh3Y0RSTEkxMzJMM0NWU3FoUVpMd01OSjhrdkpWQ0tyQ3Q0MVFzUVBPZl9CZE1HTy1KdGVDVnJvencxSnA1ZjFCbktudGNaeFZSTnZ5OUlGWG0wUm1GUXpBWTNJ?oc=5",
         "published_at": "2026-11-21T00:42:26+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-1"
       },
       {
         "title": "[뉴욕증시]나스닥 5.3% 폭락…다우·S&P500도 조정 장세 진입",
         "publisher": "아시아경제",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LTEY0dS1rVGE1Q1JFd3E4ZWRKQlZ6bnpwVWhtXzR6bldZZlljWk1nRklLbWUwWklncmRwQnJjN3Q3TmFfUzYteUhQY0JkTTV0dHNhLXNGMnE5T2YyaU5lWA?oc=5",
         "published_at": "2026-11-21T00:26:02+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-2"
       },
       {
         "title": "AI주 투매에 나스닥 5.28% 폭락…S&P500·다우 조정장 진입",
         "publisher": "우리경제신문",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5vczFBajdpM1ppSW15d3ZteTFlNnNJRDBESEhrdWZSaXRtS0JCZTBsMGxDeWVFcUN5QWt0Rk1iU28tbFdJeXZVYS1aaDdYdS0ySEkxTHcwd3M?oc=5",
         "published_at": "2026-11-20T23:49:16+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
         "title": "엔비디아 14% 추락에 나스닥 5.3% 폭락…미국 증시 덮친 'AI 쇼크'",
         "publisher": "진일보 | 전남일보",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdm5aWGdGdDd6Q3U5T3JEZ0FVTmFlSV9UaDZKWVVqXzl5VURUYUcybXRRUjNyNkFoT0dJY2o3TmIzcmJkbVlkdjBtT2E1YnZXY2N6WElPaU51cE9EUEpGQXladWozOFZfOFctUEVabw?oc=5",
         "published_at": "2026-11-20T23:30:50+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-4"
       },
       {
         "title": "뉴욕증시 'AI 투매'에 폭락…나스닥 5.28% 급락",
         "publisher": "산경투데이",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lQll1d1RRNE9GRDJhRTdUMGRRMGFMR1F5SnR6ZDktRHdhblNjYVJNdkRpZkUyNVk3WVY2enBHUlI3YjMxUml6WmZLNGFRajV1RjQtdnRPRk5oak5SMXNoeWtoR1dSQ1J0UlpvMVZiZWTSAXRBVV95cUxNLTd3N2x4eWdDYlFzM0JtUGdQMEZXYnBEaVUwTl9OamtZNl9OZ2pQQ3RVenhlbW5vYmVXalBKTlRDNGlWZGY5ZGx3d28tY3dqQ290SlFNTTByODhRM1RzTDF5Q1h5cy1QMzZMaW5tMXM4VFAzMA?oc=5",
         "published_at": "2026-11-20T23:21:48+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-5"
       },
       {
         "title": "[뉴욕증시 마감] 나스닥 5%↓·엔비디아 14%↓…S&P500·다우 조정 국면",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XS0pPeTFMV1pGVzZKZm9NcDdqcUQtdFlqREprRzBTZS1DTl8zNGJOYm82aUZhZlNrcXYyc1FjOUsyU3E0X25lQXRxZVdhUU1JUURUSjVlMWpRd2dhN0JscjZfQ0c0cjQ1VE5SZ3NzSlrSAXRBVV95cUxNRWlSSGZFdWEwUkJydUJRUDZkVjBwdmQzRTlfdzEtV0pZR0tPamoxVF9EZTR3R2lOSzFGVjZ1b3VsQVZfY0dsTkNZdmNpRDU5Vk5rQ2tIUHhyVDQyM2NZaW56S3hxLVIzbGNBSkF0SWFiMHBZbw?oc=5",
         "published_at": "2026-11-20T23:02:37+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "나스닥, 기술주 매도에 5.3% 폭락…다우·S&P500도 조정 진입(종합)",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQzFCSXkzRWx5XzNRMl9CdXZoVjlEc3RvMGhuOW9jaFVVMkw5TUlSang0NlNvZFJ2cU9jRHNFU1ZkcUtsRDRQZ3M4NVBxRGlRRklhZVB1WjRiNlVtYzVxbjFhcW5KdGhCcnFJTlRIcmxWNmNtV3JkNmIzbkF2Z3VrMQ?oc=5",
+        "published_at": "2026-11-20T22:22:00+00:00",
         "id": "stocks_us-7"
       }
     ],
