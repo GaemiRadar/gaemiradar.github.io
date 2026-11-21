@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T03:53:46.163052+09:00",
+  "data_updated_at": "2026-11-22T04:52:23.505048+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T03:53:46.163052+09:00",
+      "fetched_at": "2026-11-22T04:52:23.505048+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T03:53:46.163052+09:00",
+      "fetched_at": "2026-11-22T04:52:23.505048+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -48,45 +48,45 @@
         "id": "stocks_kr-1"
       },
       {
-        "title": "[오늘의 뉴스 종합] 美증시 급락에 코스피 5%대 하락…4900선 무너진 검은 금요일",
-        "publisher": "아주경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jamI5UFYzODJody10RFVDakZ2X1JjTFZfUlkyb2ZvVUt5T1VhM3pDaHR2YlE5bmdJdm1KTUFaZndmcHZIZUUyb2NlbDRkRU5mdUJMRkNCam1BZ9IBWEFVX3lxTE9TTGJjNWZyaXRLUnBMcDF3Q194c0VEYUJtbktNLTlvdHhSNmlzeFBOSDdrcmVoN3VueFBwLXV6NEVOS1ZMVlRxXzE5MlhKVjAwT256R3NDa2o?oc=5",
-        "published_at": "2026-11-20T12:50:36+00:00",
-        "id": "stocks_kr-2"
-      },
-      {
-        "title": "'검은 금요일' 삼전닉스 급락…잇단 손실에 \"대응 못 해\"",
-        "publisher": "SBS 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NbU9adnNfdEdWeTlVRThVSG0tZTlXWnJ1NlNZbDc3dU5pTW95Sm5JNFRTT2FPZTVNVXF0N3M1eUU3dExqdncxQkVuZ01lSlZpTGRzb2lHaDhuaG5yal9jcWl5bV93YWl2akHSAWZBVV95cUxQREZCNFI3X1FvWlktNWdyS093VjhfLTYxdURQSWNuRktNUUtJNXNWOE4xdGVHaWh1cU5ha3duMG9zamNDZGtJOUdIXzZPazRVVkdfd0hhN0xKVncyU3JtMW1jSUp2aHc?oc=5",
-        "published_at": "2026-11-20T11:28:06+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "“어제는 5100 돌파했는데 오늘 5% 폭락”…코스피 ‘20개월 하락’ 경고까지",
-        "publisher": "데일리25",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKNUNPdnVWQmV5cGNwU1dYeWRhVjZpeS0wSkFZeWFyNVpHYlVCZ3A0WXFoNUdSdVUzdldMb3pENnZ1ZUVnbXJZbW1Hcjg4SHhIa0xmbTVmN3k2cnZoUjA3VXlaUFR0WDJiNVQyNw?oc=5",
-        "published_at": "2026-11-20T10:51:48+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
         "title": "오늘의 키워드 | 코스피 5.21% 폭락·수능 AI 부정행위 파문…수출 1조 달러·빅뱅 컴백까지",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aNUxJUDdtRjBfMTNmUV92NldjcXU3cTdQLWxpWDkxcTJmVTZSWmxEOEMwYk0xU1Z3V0J3WnhQLTNiTEtQR3ZtUjk0aHRaSURfM2FGWE5QMXRWSWluak5XUDJhck55YzM4RDhtS0phSQ?oc=5",
         "published_at": "2026-11-20T09:55:30+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-2"
       },
       {
         "title": "코스피 5천선 이탈, 공세적 연준과 AI 악재 충격",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQW9CLUlwSk13QzhZTzhZM3Y5c3dMV24xRXJmMERFQThFWDdVMzkwRlhLUFZSamxFM3VuSVlRV0o2RXJBN2tSb2lvQnhld2pVakRscDZEem42Zw?oc=5",
         "published_at": "2026-11-20T09:51:04+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-3"
       },
       {
         "title": "코스피 5.21% 급락, 10개월 만에 최저치…'검은 금요일' 된 이유는? 📉",
         "publisher": "뉴닉",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QTjBObzZpZU1ySDVjZDFwSnFkSmdtNGpTYXdCdXByNXpfM3hIQ0dMbk5VSlRFSXcwTlpkUzNxd3ByRlQ0MFZyVVpQOGJRdk5neTFR?oc=5",
         "published_at": "2026-11-20T09:06:13+00:00",
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[퇴근길머니] AI 커닝 부담에 '감독관 보험' 눈길…K-주식 파는 외국인들",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9CamJaOWY1UUQ1MXJfcGhWV19RT3B3Wk9EbllXWjdMNGEzU19lT3Z3SGFudEdqTE5CRkZOMmlIRDd4cFNwY24xWG5XdFgyeGtrOExkWWF3YUJwMTFSOHA3VtIBYEFVX3lxTE9CamJaOWY1UUQ1MXJfcGhWV19RT3B3Wk9EbllXWjdMNGEzU19lT3Z3SGFudEdqTE5CRkZOMmlIRDd4cFNwY24xWG5XdFgyeGtrOExkWWF3YUJwMTFSOHA3Vg?oc=5",
+        "published_at": "2026-11-20T08:24:36+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "[오늘의 주목주] 'AI 투심 위축' 삼성전기 주가 12%대 내려, 코스피 외인·기관 순매도에 4860선 하락 마감",
+        "publisher": "비즈니스포스트",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EeWdRQmtsWUFBVnJtcHg3SjdoZVBOc21CWDY3aHBQdzI3MzJKZUtrSlJDeU1zRUpjNl9tWndoeWRoWGI0VW5DTEIxbVdPZ2g1R3ZIcTAzM0pWcktNWHRrOUV3MVJqTmZjZ1pLeTFoTW8zNTA?oc=5",
+        "published_at": "2026-11-20T07:48:32+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[e마켓클로징] 검은 금요일 코스피 5.21% 급락···4869 마감",
+        "publisher": "시사저널e",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1cXBZZzktVHU3ZWhOblNkazg0WUx6ZWJpajFhSk91MVQ4cFVHa1dqdzdMeDZ1bGY0X0lhLUpWNFg1SHpFbEdUQmNoeENmaUVqX0IzaDh2SnBjVW41Y05RQl9URjhHdjNqZ3RLdWdETkI2UQ?oc=5",
+        "published_at": "2026-11-20T07:47:24+00:00",
         "id": "stocks_kr-7"
       }
     ],
