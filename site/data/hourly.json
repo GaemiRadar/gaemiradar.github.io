@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T04:52:23.505048+09:00",
+  "data_updated_at": "2026-11-22T05:48:53.163849+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T04:52:23.505048+09:00",
+      "fetched_at": "2026-11-22T05:48:53.163849+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T04:52:23.505048+09:00",
+      "fetched_at": "2026-11-22T05:48:53.163849+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -150,59 +150,59 @@
     ],
     "bonds": [
       {
+        "title": "아르헨 국가위험도 4개월 새 급등…국채금리 美 국채보다 10%p↑",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZDllbkJmTGM0LWdjRUo0b0JtS0NNWnRkbzBDZGFFVEVISF9NVnZuaEtVSndKZ1piQ21BVHI2V1V5dUV6eWZOajlBbzVtdm4wV0NYWGpqemZxT2tTWVYyWlBfNm1NVnhvN0lzT1N2NXJHS3hSZXVlaHYtcTFhbjBncA?oc=5",
+        "published_at": "2026-11-21T19:35:00+00:00",
+        "id": "bonds-0"
+      },
+      {
+        "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
+        "publisher": "서플 뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CTE1Wb3hvTjFNVy1FRDlPVjAtSC0tXzZlRVlVV2wwc1VscFd5NHgtRk15eklhVWMwQlJjZWxOeDVrSVptbEg5ZnlGTVpHZnk4WEc3clB4TVZDMFI3?oc=5",
+        "published_at": "2026-11-21T14:00:00+00:00",
+        "id": "bonds-1"
+      },
+      {
         "title": "오늘(11월 21일) 금 가격: SJC 금 가격이 계속 하락하고 있는데, 향후 전망은 어떨까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbXpYNWhPU1RfUkdHanBjWk1wUVNlVE5xdW9UMVZsczVYNENwZ2VUMGJCSnFqNmJjVFBySzJoMk5QU1ZQWEMzek9KanNucS1FNjBzZWpGR0pKQUtzbmwxV2NNalBlZUV6SERjN09Fb0V2akJJTjV1R2Z2dVZVRjU3RUNwcFVXQzBDeDFQbWhyZ3lrMkk0eVBJN1Jjamp5QQ?oc=5",
         "published_at": "2026-11-21T07:31:46+00:00",
-        "id": "bonds-0"
+        "id": "bonds-2"
       },
       {
         "title": "\"듀레이션보다는 커브\"…노무라, 2·10년 스티프너 전략 제시",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DMlYtaWp4ZWJEZDBhaUhWdGJjSXRYZTA4a05lZHh3NDVkbkdjYldDSHFyWTFKYzlEUnF1QmhyNlhDMmlhSUhWazUyYVROalRNQTgyeDkyaHZDb3FtSjUtUFE4M3RhTkxhSTlvUWZUVV8?oc=5",
         "published_at": "2026-11-21T00:50:01+00:00",
-        "id": "bonds-1"
+        "id": "bonds-3"
       },
       {
         "title": "[뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IdEtnRk94djJMSHhRNHRZZzZzSGM2QjA4UUpRVWs3S1ZWT2NJVXNuSWlZeUNfRUMzYTdWelZIUXZONUhaMndPdWxkUGgtVnI1MWFZVE16VGhDVUs0YU9QWFBURGpGbHdhN0d1U3VOckc?oc=5",
         "published_at": "2026-11-21T00:04:58+00:00",
-        "id": "bonds-2"
+        "id": "bonds-4"
+      },
+      {
+        "title": "국채선물, 美 기술주 투매에 상승…10년물 57틱↑",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KNlZTTjZjTGM3MWVuSzdqVm9EMEV4dFVOdUhyeEVFY1pXRVB3NlYzbjM3RWhzRE5rWlhJS2NaQ1RrSWpsNzdxZjNUYWY4UXNFSzNEVHZoY1h1RnNrVGxhVC1oYkNDT0wwbVJwZlBsUjY?oc=5",
+        "published_at": "2026-11-20T23:29:09+00:00",
+        "id": "bonds-5"
       },
       {
         "title": "[뉴욕채권] 단기물 주도 초강세…美 기술주 패닉에 '내달 동결' 고개",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jeDE2eHM4cldpZVNyb2Uxc3Zxc0NOVGc5M2V2cnd6SC1ZMUdIMU1KOFY5N2dWS21kSVFQTlZVcVBjcDlGMHJyMVZMSXp2RE5SeEdNMEpfeGRVVEdsYk1tQzlITW1BaGpUdDFwbzB0MUg?oc=5",
         "published_at": "2026-11-20T23:07:22+00:00",
-        "id": "bonds-3"
+        "id": "bonds-6"
       },
       {
         "title": "나스닥, AI주 ‘패닉셀’에 5.3% 폭락...올 수익률 마이너스 전환 [데일리국제금융]",
         "publisher": "서울경제",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56bnFSbVdPbXJnVlc2R3drZlZROXRYLWRaTGtFNll4eHdpZk5yd3g5N3ppQ2l4NS03OUR1U05DZFUxNnBpcWRUY3lGblRxeGNIRnfSAVNBVV95cUxNRGZBcGZXaUlPdXpkSFBGUzJFMXllZ3NhWVB3clcxVjFJOTFYaWpuMzZJbTEySFRydHVuNl9nRHMyTjFpQzZrZk5FeEJZUDRxbVhxSQ?oc=5",
         "published_at": "2026-11-20T22:47:29+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "美 국채가, 안전 선호 쏠림에 강세 지속…10년물 6bp↓",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44YlNPY0czNUp4RUFyQmpzOGpOSmNBa1dkNXlFVkUwTk93VEJqQ3YxZXBDcHFRc0VUTk1rTzA5bTVRakNvMEFaMGNxeThtanU0SWw3bWZHVUc4NXlXTzJVOUJzR0ctREdmYnpYQnlpZlM?oc=5",
-        "published_at": "2026-11-20T17:22:24+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "[ 국고채하락 ] 증시 5%대 급락에 안전자산으로 쏠린 발길… 국고채 3년·10년물 나란히 내린 배경은?",
-        "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXTHFqcDNHWHY1N1RZU1NJTnFhZlFGaVFqSU8ybndzaDkteWxjeGtXZ2FHUTFkSFRHeUxWMGdaVXRuQ1hRV2ppZzJIRE9sNFB1YTM1TE0wX21sX2Nxd0FyS3AyMVBGWGRy?oc=5",
-        "published_at": "2026-11-20T16:00:00+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "S&P500 7% 오를 때…비트코인은 고점 대비 35% 밀렸다",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XRUpwWmdOTzR6SV90OEprMnNFZWZZYW1CMGVIZWJOdzloTlZQVDItMnMwNjJMWnA2X0ozaHVJN1cwZEVXMnZYS3Nn?oc=5",
-        "published_at": "2026-11-20T14:52:17+00:00",
         "id": "bonds-7"
       }
     ]
