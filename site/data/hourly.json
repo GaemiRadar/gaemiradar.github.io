@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T21:59:08.048430+09:00",
+  "data_updated_at": "2026-11-22T23:02:02.141235+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T21:59:08.048430+09:00",
+      "fetched_at": "2026-11-22T23:02:02.141235+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T21:59:08.048430+09:00",
+      "fetched_at": "2026-11-22T23:02:02.141235+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,24 +92,24 @@
     ],
     "stocks_us": [
       {
+        "title": "‘투매 장세’에 무너진 뉴욕증시…월요일 코스피 덮칠 충격은",
+        "publisher": "JTBC",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhT2psRG1aUjFEQlFFa0tFUDVvQXY0N0huMDFxdnBVcUZIc0tLSU1xOUNaRHhOc2NQSFg1NGhhRlJWbGJTeWp6MFlia050cnBPWUE?oc=5",
+        "published_at": "2026-11-22T04:03:43+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "[뉴욕증시 전망] AI 급락 여파 속 PCE·소비지표 주목",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE52SWlZYkhRVU1RbnFhTEZkZFdlR2NvMW4xa3A3MTdDOVQ2N0phNDJvblRQRWV0ZG1hSkQyUVhiNUI1b3VlX1puRXd5WVpRekgzLTJKeXlQMmU3VGxWZlh4UFpaZVlicnVKUkpOcG5Hbmo?oc=5",
         "published_at": "2026-11-21T15:00:00+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-1"
       },
       {
         "title": "[뉴욕증시마감] 엔비디아 14% 폭락하며 시총 4위 추락… 나스닥 5.3% 급락 속 올해 상승분 전부 반납",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtbW1SaDNWb2hPVVdBUmlGaHJhekZjQnpwcVZwZHRVU1Y1YUpJX1o1YlhSUFNLeEtBWjQxbFdWMVMtaEVaVl9HVHZaRTdLbmNHWkJnczJodzU4SzFfT1VPdTJQMVU5VnlX?oc=5",
         "published_at": "2026-11-21T11:15:00+00:00",
-        "id": "stocks_us-1"
-      },
-      {
-        "title": "‘투매 장세’에 무너진 뉴욕증시…월요일 코스피 덮칠 충격은",
-        "publisher": "JTBC",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhT2psRG1aUjFEQlFFa0tFUDVvQXY0N0huMDFxdnBVcUZIc0tLSU1xOUNaRHhOc2NQSFg1NGhhRlJWbGJTeWp6MFlia050cnBPWUE?oc=5",
-        "published_at": "2026-11-21T10:26:39+00:00",
         "id": "stocks_us-2"
       },
       {
@@ -171,38 +171,38 @@
         "id": "bonds-2"
       },
       {
+        "title": "소시에테 제네랄은 미국이 2027년 초 41조 1천억 달러의 부채 한도에 도달할 것이라고 경고하며 금 가격이 온스당 5,000달러에 이를 것으로 전망했다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQW9SU3JtY25QM0lEUGV6MHdhY19pcDFGemJJb0F1MHlWWDQwbUpfZlc2cGRpOTRsX1MxcWRJSlFjZE4wYzhwaGQ1SmtLX2NTalhvb3NXSGJIajBWT0hfQjhOSG40NlNhLS0wQk03bGFySFUxeTRJQWVaSWNBVF9WRUxqa1oxWjNoNmdkbmpZekFER3d2Rml2UWwza3dDWmFUM2JzbWNfUE93ZVlmTEFtX1QzS0FWX2pmcU8yNUZGTV9CQmRRd3JqNVlfWmhEVzlt?oc=5",
+        "published_at": "2026-11-22T06:10:06+00:00",
+        "id": "bonds-3"
+      },
+      {
         "title": "[채권-주간] 기술주 투매가 밀어붙인 강세…금통위가 브레이크 걸까",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xNnR3VzdKZXdVeFNLRmlvRjBFUHhBUDh6WTZ6ZHBsWVlnM1BJLW9EX2szY0VwWU9RRERTRmdIQWtJYTdTSjVLd0hCR28xQ0p0Vm9pYVdTb2lhZFU3YnFudjlnWmFXc1E1NVBUeHZJNDc?oc=5",
         "published_at": "2026-11-22T04:00:02+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "오늘(11월 22일) 금 가격: 하락세 지속, 전문가들은 어떤 경고를 내놓고 있는가?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHB3NHJyMGRrdGYwRXdOZ3Zma1ExakRXb2VDTS1RaUdNR3R2aWR2ZEd3YkJucmVjZVJwWXM5NXJxeklTc2RxUm1GSW5SanRhN1Z4bnNabkZGbDFISkJwYjE0SlhZcHZzX3k3NjhTQU1GOXZXV3NLYnhEaUZmR1FrcWFiNlFMamZYbmtrOE9wcllGNHM?oc=5",
         "published_at": "2026-11-22T03:50:49+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-21T23:26:11+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "아르헨 국가위험도 4개월 새 급등…국채금리 美 국채보다 10%p↑",
-        "publisher": "한국경제TV",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZDllbkJmTGM0LWdjRUo0b0JtS0NNWnRkbzBDZGFFVEVISF9NVnZuaEtVSndKZ1piQ21BVHI2V1V5dUV6eWZOajlBbzVtdm4wV0NYWGpqemZxT2tTWVYyWlBfNm1NVnhvN0lzT1N2NXJHS3hSZXVlaHYtcTFhbjBncA?oc=5",
-        "published_at": "2026-11-21T19:35:00+00:00",
         "id": "bonds-6"
       },
       {
-        "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
-        "publisher": "서플 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CTE1Wb3hvTjFNVy1FRDlPVjAtSC0tXzZlRVlVV2wwc1VscFd5NHgtRk15eklhVWMwQlJjZWxOeDVrSVptbEg5ZnlGTVpHZnk4WEc3clB4TVZDMFI3?oc=5",
-        "published_at": "2026-11-21T14:00:00+00:00",
+        "title": "아르헨티나 국가위험도 넉 달 만에 1천포인트 넘어 : 금융",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SdFN5ZUFUVnFpLVV1TW5FU01YYUxfNHl0alN3c3gzX0Jkellfb1ZWUUxFWWZzS3Z3NjQ1bXpKMlEyU3dmczAxOVMwTQ?oc=5",
+        "published_at": "2026-11-21T19:42:00+00:00",
         "id": "bonds-7"
       }
     ]
