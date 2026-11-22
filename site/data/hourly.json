@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T23:02:02.141235+09:00",
+  "data_updated_at": "2026-11-22T23:54:22.447660+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T23:02:02.141235+09:00",
+      "fetched_at": "2026-11-22T23:54:22.447660+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T23:02:02.141235+09:00",
+      "fetched_at": "2026-11-22T23:54:22.447660+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "외국인 2조 ‘순매도’…반도체 동반 하락에 코스피 6500선 ‘뚝’",
-        "publisher": "쿠키뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80Z09GUUZ0bWowMURZQ2RWN01rTllaa3J1VmNDVU1zREJlVHJFd1ptdER5R284bzhWSktReG9SWmtKZ3NySkZhSld3WHhZLWgyVlE1RTJoWjRGaVVnLURwZkdhTQ?oc=5",
-        "published_at": "2026-11-21T17:48:53+00:00",
+        "title": "한미 증시 동반 급락 반복…추가 하락과 반등 가른 변수는? - 머니투데이",
+        "publisher": "머니투데이",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTM21vczNGbkNkMFpZZ0tJTVIzY0pydlJyb2RWS2VsZUNQTlpkSUR1WjRxcjNCRnoxeHVxQmo0c0x6MTJrSDlQVXBKNkh4a3hrSXhPYXpjQk1DUzFYS25FQWo5WF96VkxGUG1ZUXFJc19kcFRVX2fSAXtBVV95cUxOWHd5Q2RBQk5sR2dXcE0wcGJReWwwbFctNmxvZi1nUEFUZGdZRzNpME1KR1UtUF85b0NIbEVienc1WVVJV0Y3anh5bGlDdjNYcWlYN3BkWFQ5MHdwcTJMaHBFcXFIbUVIcjJEQWl2R2xwMDBRSjh6aW4xQzA?oc=5",
+        "published_at": "2026-11-22T07:49:33+00:00",
         "id": "stocks_kr-0"
+      },
+      {
+        "title": "AI 투자 불안에 글로벌 증시 급락…코스피 이번 주도 약세 전망",
+        "publisher": "산경투데이",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9QSHhIbVg3bmRfMGE0R19qN3gtU0xGSGVtakpCaWlTWXh6UU5RckZxVWxEaUd1MVg0T3FsNXVzNl9iZjRKVnR2dlpuZlVma2kxWkphU1I3YkladXJGa09GVWFVNk9PcFc1TW1Oa05ldHLSAXRBVV95cUxPVWV6UHNLdElPTWVEc0dwZmFFWVlBYU5xUV80MnhEX21FMWU0ei1TY2o1VGg5dlhWaDBrVFpITERQZDE0X2xxM01fZ1ZITnBpYjFZT1J4TW5LSmFubTVibFFqTGNuOWF1TjR3c0Rhc3JidjNCSQ?oc=5",
+        "published_at": "2026-11-22T01:04:50+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "반도체 실적 기대에도 외국인 매도 지속…다음 주 코스피 반등 시험대",
+        "publisher": "미디어펜",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ncHpWQW5Nal91NEoyUlFjS2ZHM1pSYmdLSFk0RzJGanpzbnVySi1Gb0xORUhYci1aUW9fQnFiS1dneXhNcFlwV1M2SEVxSF9IN2N6M0l2al_SAVhBVV95cUxOZ3B6VkFuTWpfdTRKMlJRY0tmRzNaUmJnS0hZNEcyRmp6c251ckotRm9MTkVIWHItWlFvX0JxYktXZ3l4TXBZcFdTNkhFcUhfSDdjejNJdmpf?oc=5",
+        "published_at": "2026-11-22T00:36:30+00:00",
+        "id": "stocks_kr-2"
+      },
+      {
+        "title": "30주년 코스닥, 체질개선 기대에 ‘강세’…코스피는 반도체에 ‘발목’",
+        "publisher": "쿠키뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8yeXdIcUZIMjRFMlJFbEdoeTEwOEYxcHl3VnY3aUIwNUV2TC1rekRHUzBfWnhfZW9tWW9pSUlhNk1VY3NscUpzeWZ1U0R5Q1JodG1hUWY3NTJsVWpZVG1qd0VnUQ?oc=5",
+        "published_at": "2026-11-21T16:03:37+00:00",
+        "id": "stocks_kr-3"
+      },
+      {
+        "title": "[증시 프리즘] 외인 매도 공세에 흔들린 코스피 대형주…반도체·자동차·금융 업종 희비는",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xWVhJYVcyQXVSdEpqZmROT0d5Z1JDZUt2MWk1OU1RVEtRSjctN1dTLWxpN25DMl91Z0dUOGJTYUEzR3FsS1dYMHB1OEFScjloeFVXMkZfWTNGblo1RGJTQy1RRDd3blc3OXdlMElfT1g?oc=5",
+        "published_at": "2026-11-21T15:00:00+00:00",
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[심층분석] 5000선 안착 시험대 오른 코스피…외국인 수급 이탈과 업종별 순환매 지형은",
+        "publisher": "더페어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BZVZWaEVkeXVxd1Z3OWlRejFmOVVDYjJwamVmdUtQTDZlM0JfTVlmOWk1R3JLcG4yUGpiLXB0d2hKeXhYMnZfblhZamRsV3N3N2thRnFCbjFPc3otcGVEbm9XSXQwcWxDU1pnNFlKeHk?oc=5",
+        "published_at": "2026-11-21T15:00:00+00:00",
+        "id": "stocks_kr-5"
       },
       {
         "title": "[심층] 다음주 코스피 5000선 기로…美 물가·외인 수급에 달렸다",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ycUR3bEg5R2hPOVRIbmZJR0pPbXgyTU9NMmtIZ2czZHZ1V2ZLTVFSaVVTay1iMUhYR3lCM3NMXy16a01MT1dxZkY2eG9aTENuS0Z4eW9aRDhfMFpNYkFyT0FWNUtQNDVsNmN2bFN2N2VIV28?oc=5",
         "published_at": "2026-11-21T09:17:38+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
-        "title": "[11.21(토) 한국장 전망] 나스닥 -5% 충격·코스피 급락 출발 예상",
-        "publisher": "주달",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WRk5XbnFwNWFuTE1MQTExbmQ3bkZZcXRLejdXSVNrUVdPa1ZOclVDNlRmbm5JNDFQdWl1V2pXalI1bk5xX1RqS254dHZjQlFuU0xYeDhNVURrZ0hhRUFuUjhsZ2Y5dHgyZ0NuX0ZXNXhSTmRpVFE?oc=5",
-        "published_at": "2026-11-20T21:10:29+00:00",
-        "id": "stocks_kr-2"
-      },
-      {
-        "title": "[오늘의 뉴스 종합] 美증시 급락에 코스피 5%대 하락…4900선 무너진 검은 금요일",
-        "publisher": "아주경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jamI5UFYzODJody10RFVDakZ2X1JjTFZfUlkyb2ZvVUt5T1VhM3pDaHR2YlE5bmdJdm1KTUFaZndmcHZIZUUyb2NlbDRkRU5mdUJMRkNCam1BZ9IBWEFVX3lxTE9TTGJjNWZyaXRLUnBMcDF3Q194c0VEYUJtbktNLTlvdHhSNmlzeFBOSDdrcmVoN3VueFBwLXV6NEVOS1ZMVlRxXzE5MlhKVjAwT256R3NDa2o?oc=5",
-        "published_at": "2026-11-20T12:50:36+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "'검은 금요일' 삼전닉스 급락…잇단 손실에 \"대응 못 해\"",
-        "publisher": "SBS 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NbU9adnNfdEdWeTlVRThVSG0tZTlXWnJ1NlNZbDc3dU5pTW95Sm5JNFRTT2FPZTVNVXF0N3M1eUU3dExqdncxQkVuZ01lSlZpTGRzb2lHaDhuaG5yal9jcWl5bV93YWl2akHSAWZBVV95cUxQREZCNFI3X1FvWlktNWdyS093VjhfLTYxdURQSWNuRktNUUtJNXNWOE4xdGVHaWh1cU5ha3duMG9zamNDZGtJOUdIXzZPazRVVkdfd0hhN0xKVncyU3JtMW1jSUp2aHc?oc=5",
-        "published_at": "2026-11-20T11:28:06+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "“어제는 5100 돌파했는데 오늘 5% 폭락”…코스피 ‘20개월 하락’ 경고까지",
-        "publisher": "데일리25",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKNUNPdnVWQmV5cGNwU1dYeWRhVjZpeS0wSkFZeWFyNVpHYlVCZ3A0WXFoNUdSdVUzdldMb3pENnZ1ZUVnbXJZbW1Hcjg4SHhIa0xmbTVmN3k2cnZoUjA3VXlaUFR0WDJiNVQyNw?oc=5",
-        "published_at": "2026-11-20T10:51:48+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "코스피 5천선 이탈, 공세적 연준과 AI 악재 충격",
-        "publisher": "네이버페이 머니스토리",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQW9CLUlwSk13QzhZTzhZM3Y5c3dMV24xRXJmMERFQThFWDdVMzkwRlhLUFZSamxFM3VuSVlRV0o2RXJBN2tSb2lvQnhld2pVakRscDZEem42Zw?oc=5",
-        "published_at": "2026-11-20T09:51:04+00:00",
         "id": "stocks_kr-6"
       },
       {
-        "title": "코스피 5.21% 급락, 10개월 만에 최저치…'검은 금요일' 된 이유는? 📉",
-        "publisher": "뉴닉",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QTjBObzZpZU1ySDVjZDFwSnFkSmdtNGpTYXdCdXByNXpfM3hIQ0dMbk5VSlRFSXcwTlpkUzNxd3ByRlQ0MFZyVVpQOGJRdk5neTFR?oc=5",
-        "published_at": "2026-11-20T09:06:13+00:00",
+        "title": "4,900선 무너진 코스피...다음 주 미국 물가·금통위 주목",
+        "publisher": "YTN",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9QSGVuWDV4OEhyZVZCZVRKWnU0MVpUbjhNMXU4bThyR1E0UDBVeFdaZTBzc3FkQnVXOXUxcmhtUlFVbU5mSE1qQWI1Z1dvQjEwUklFV1JjUnRLb1Z6LVVz?oc=5",
+        "published_at": "2026-11-21T06:04:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -171,38 +171,38 @@
         "id": "bonds-2"
       },
       {
-        "title": "소시에테 제네랄은 미국이 2027년 초 41조 1천억 달러의 부채 한도에 도달할 것이라고 경고하며 금 가격이 온스당 5,000달러에 이를 것으로 전망했다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQW9SU3JtY25QM0lEUGV6MHdhY19pcDFGemJJb0F1MHlWWDQwbUpfZlc2cGRpOTRsX1MxcWRJSlFjZE4wYzhwaGQ1SmtLX2NTalhvb3NXSGJIajBWT0hfQjhOSG40NlNhLS0wQk03bGFySFUxeTRJQWVaSWNBVF9WRUxqa1oxWjNoNmdkbmpZekFER3d2Rml2UWwza3dDWmFUM2JzbWNfUE93ZVlmTEFtX1QzS0FWX2pmcU8yNUZGTV9CQmRRd3JqNVlfWmhEVzlt?oc=5",
-        "published_at": "2026-11-22T06:10:06+00:00",
-        "id": "bonds-3"
-      },
-      {
         "title": "[채권-주간] 기술주 투매가 밀어붙인 강세…금통위가 브레이크 걸까",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xNnR3VzdKZXdVeFNLRmlvRjBFUHhBUDh6WTZ6ZHBsWVlnM1BJLW9EX2szY0VwWU9RRERTRmdIQWtJYTdTSjVLd0hCR28xQ0p0Vm9pYVdTb2lhZFU3YnFudjlnWmFXc1E1NVBUeHZJNDc?oc=5",
         "published_at": "2026-11-22T04:00:02+00:00",
-        "id": "bonds-4"
+        "id": "bonds-3"
       },
       {
         "title": "오늘(11월 22일) 금 가격: 하락세 지속, 전문가들은 어떤 경고를 내놓고 있는가?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHB3NHJyMGRrdGYwRXdOZ3Zma1ExakRXb2VDTS1RaUdNR3R2aWR2ZEd3YkJucmVjZVJwWXM5NXJxeklTc2RxUm1GSW5SanRhN1Z4bnNabkZGbDFISkJwYjE0SlhZcHZzX3k3NjhTQU1GOXZXV3NLYnhEaUZmR1FrcWFiNlFMamZYbmtrOE9wcllGNHM?oc=5",
         "published_at": "2026-11-22T03:50:49+00:00",
-        "id": "bonds-5"
+        "id": "bonds-4"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-21T23:26:11+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "아르헨티나 국가위험도 넉 달 만에 1천포인트 넘어 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SdFN5ZUFUVnFpLVV1TW5FU01YYUxfNHl0alN3c3gzX0Jkellfb1ZWUUxFWWZzS3Z3NjQ1bXpKMlEyU3dmczAxOVMwTQ?oc=5",
         "published_at": "2026-11-21T19:42:00+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "아르헨 국가위험도 4개월 새 급등…국채금리 美 국채보다 10%p↑",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZDllbkJmTGM0LWdjRUo0b0JtS0NNWnRkbzBDZGFFVEVISF9NVnZuaEtVSndKZ1piQ21BVHI2V1V5dUV6eWZOajlBbzVtdm4wV0NYWGpqemZxT2tTWVYyWlBfNm1NVnhvN0lzT1N2NXJHS3hSZXVlaHYtcTFhbjBncA?oc=5",
+        "published_at": "2026-11-21T19:35:00+00:00",
         "id": "bonds-7"
       }
     ]
