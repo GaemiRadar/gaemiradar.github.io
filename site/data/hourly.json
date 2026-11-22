@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T11:15:05.061223+09:00",
+  "data_updated_at": "2026-11-22T11:59:03.062072+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T11:15:05.061223+09:00",
+      "fetched_at": "2026-11-22T11:59:03.062072+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T11:15:05.061223+09:00",
+      "fetched_at": "2026-11-22T11:59:03.062072+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,117 +92,117 @@
     ],
     "stocks_us": [
       {
+        "title": "나스닥 낙폭 절반이 금요일에 털렸다…다우는 먼저 밀렸다",
+        "publisher": "코인리더스",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5oaXNVS2llUXpZNE5ULUlDaFFJTkR3TU4wUFdvNFZNclFvOTFrQmFjdTh6NTNFQzJXZC1HaHdrUURaM2kwRFNxbzR3?oc=5",
+        "published_at": "2026-11-22T00:19:29+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "‘투매 장세’에 무너진 뉴욕증시…월요일 코스피 덮칠 충격은",
         "publisher": "JTBC",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhT2psRG1aUjFEQlFFa0tFUDVvQXY0N0huMDFxdnBVcUZIc0tLSU1xOUNaRHhOc2NQSFg1NGhhRlJWbGJTeWp6MFlia050cnBPWUE?oc=5",
         "published_at": "2026-11-21T10:26:39+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-1"
       },
       {
         "title": "한눈에 보는 오늘의 뉴스 (11월 20일)",
         "publisher": "데일리바이트(DAILY BYTE)",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zTThNVFdvUzdBWFdsbDdTN01ZdEJjWnBVMzYzR0RJa2RJSkdUUFNOdzdiRFRnZllES2hHVXY3TkxtNnBicUpRUXJpYk5qaDQyeXNObW55cXRKcDdsa01iRGR3?oc=5",
         "published_at": "2026-11-21T08:26:33+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-2"
       },
       {
         "title": "‘마이너스’ 된 美수익률, ‘AI 대탈출’ 신호탄인가 [트럼프 스톡커]",
         "publisher": "서울경제",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FeXJ6OFFIQlFaUEItYTk1cGE0R1Z4SmV6NWl1VUFTUzMzbUJscHFQUm1BUEQ5Nm5SbXZlV3hiMURtZEV2UEZ1aWZoRHFzSDlRSUHSAVNBVV95cUxOQXNzTy1KZ0dWQ0FyOVNIOHpfVl9BRjdkUlJkeEdKTFI5d2RURXBOSHpxX1NBRTc2dUFDbVpTZjByZ1JSQnl2S0NPUFZsc3lFRHRxQQ?oc=5",
         "published_at": "2026-11-21T04:54:25+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-3"
       },
       {
         "title": "뉴욕증시 나스닥 5.28% 폭락…S&P500 연속 하락",
         "publisher": "CBC뉴스",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iTGtiWGRqbVZ3eV9XYlNYREwzSXgwcllqUEctV1BCSGU0b2p1WksteHhvTVVDWVlIX1ZZMkFERnhURW1HVzBRU2QzSjg1SkExLU5NYXBKdTBWdmJpVzRFWUE3Qmltajhx?oc=5",
         "published_at": "2026-11-21T01:20:00+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
       },
       {
         "title": "AI주 투매에 뉴욕증시 급락…S&P500 조정장 진입·나스닥 연중 하락 전환",
         "publisher": "뉴스로드",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xTjRpbjVDalNiZ1BaYmd6MXBpNTY5NDZUbi1zSGxpSUIwQk9kb0NCVjRCUVdXNEZYY0RkcU51TnhOaUxvcFBadVk1OTI0NkxaWElxSnpteXhuZjg2OGpsT3NaUlNFSGVtT09Z0gFvQVVfeXFMTVpuMjd0am5fV3JDaVh3Y0RSTEkxMzJMM0NWU3FoUVpMd01OSjhrdkpWQ0tyQ3Q0MVFzUVBPZl9CZE1HTy1KdGVDVnJvencxSnA1ZjFCbktudGNaeFZSTnZ5OUlGWG0wUm1GUXpBWTNJ?oc=5",
         "published_at": "2026-11-21T00:42:26+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[뉴욕증시]나스닥 5.3% 폭락…다우·S&P500도 조정 장세 진입",
         "publisher": "아시아경제",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LTEY0dS1rVGE1Q1JFd3E4ZWRKQlZ6bnpwVWhtXzR6bldZZlljWk1nRklLbWUwWklncmRwQnJjN3Q3TmFfUzYteUhQY0JkTTV0dHNhLXNGMnE5T2YyaU5lWA?oc=5",
         "published_at": "2026-11-21T00:26:02+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "AI주 투매에 나스닥 5.28% 폭락…S&P500·다우 조정장 진입",
         "publisher": "우리경제신문",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5vczFBajdpM1ppSW15d3ZteTFlNnNJRDBESEhrdWZSaXRtS0JCZTBsMGxDeWVFcUN5QWt0Rk1iU28tbFdJeXZVYS1aaDdYdS0ySEkxTHcwd3M?oc=5",
         "published_at": "2026-11-20T23:49:16+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "엔비디아 14% 추락에 나스닥 5.3% 폭락…미국 증시 덮친 'AI 쇼크'",
-        "publisher": "진일보 | 전남일보",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdm5aWGdGdDd6Q3U5T3JEZ0FVTmFlSV9UaDZKWVVqXzl5VURUYUcybXRRUjNyNkFoT0dJY2o3TmIzcmJkbVlkdjBtT2E1YnZXY2N6WElPaU51cE9EUEpGQXladWozOFZfOFctUEVabw?oc=5",
-        "published_at": "2026-11-20T23:30:50+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
+        "publisher": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
+        "published_at": "2026-11-21T23:26:11+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "아르헨 국가위험도 4개월 새 급등…국채금리 美 국채보다 10%p↑",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZDllbkJmTGM0LWdjRUo0b0JtS0NNWnRkbzBDZGFFVEVISF9NVnZuaEtVSndKZ1piQ21BVHI2V1V5dUV6eWZOajlBbzVtdm4wV0NYWGpqemZxT2tTWVYyWlBfNm1NVnhvN0lzT1N2NXJHS3hSZXVlaHYtcTFhbjBncA?oc=5",
         "published_at": "2026-11-21T19:35:00+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
       },
       {
         "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
         "publisher": "서플 뉴스",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CTE1Wb3hvTjFNVy1FRDlPVjAtSC0tXzZlRVlVV2wwc1VscFd5NHgtRk15eklhVWMwQlJjZWxOeDVrSVptbEg5ZnlGTVpHZnk4WEc3clB4TVZDMFI3?oc=5",
         "published_at": "2026-11-21T14:00:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "오늘(11월 21일) 금 가격: SJC 금 가격이 계속 하락하고 있는데, 향후 전망은 어떨까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbXpYNWhPU1RfUkdHanBjWk1wUVNlVE5xdW9UMVZsczVYNENwZ2VUMGJCSnFqNmJjVFBySzJoMk5QU1ZQWEMzek9KanNucS1FNjBzZWpGR0pKQUtzbmwxV2NNalBlZUV6SERjN09Fb0V2akJJTjV1R2Z2dVZVRjU3RUNwcFVXQzBDeDFQbWhyZ3lrMkk0eVBJN1Jjamp5QQ?oc=5",
         "published_at": "2026-11-21T07:31:46+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "\"듀레이션보다는 커브\"…노무라, 2·10년 스티프너 전략 제시",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DMlYtaWp4ZWJEZDBhaUhWdGJjSXRYZTA4a05lZHh3NDVkbkdjYldDSHFyWTFKYzlEUnF1QmhyNlhDMmlhSUhWazUyYVROalRNQTgyeDkyaHZDb3FtSjUtUFE4M3RhTkxhSTlvUWZUVV8?oc=5",
         "published_at": "2026-11-21T00:50:01+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IdEtnRk94djJMSHhRNHRZZzZzSGM2QjA4UUpRVWs3S1ZWT2NJVXNuSWlZeUNfRUMzYTdWelZIUXZONUhaMndPdWxkUGgtVnI1MWFZVE16VGhDVUs0YU9QWFBURGpGbHdhN0d1U3VOckc?oc=5",
         "published_at": "2026-11-21T00:04:58+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "국채선물, 美 기술주 투매에 상승…10년물 57틱↑",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KNlZTTjZjTGM3MWVuSzdqVm9EMEV4dFVOdUhyeEVFY1pXRVB3NlYzbjM3RWhzRE5rWlhJS2NaQ1RrSWpsNzdxZjNUYWY4UXNFSzNEVHZoY1h1RnNrVGxhVC1oYkNDT0wwbVJwZlBsUjY?oc=5",
         "published_at": "2026-11-20T23:29:09+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "[뉴욕채권] 단기물 주도 초강세…美 기술주 패닉에 '내달 동결' 고개",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jeDE2eHM4cldpZVNyb2Uxc3Zxc0NOVGc5M2V2cnd6SC1ZMUdIMU1KOFY5N2dWS21kSVFQTlZVcVBjcDlGMHJyMVZMSXp2RE5SeEdNMEpfeGRVVEdsYk1tQzlITW1BaGpUdDFwbzB0MUg?oc=5",
         "published_at": "2026-11-20T23:07:22+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "나스닥, AI주 ‘패닉셀’에 5.3% 폭락...올 수익률 마이너스 전환 [데일리국제금융]",
-        "publisher": "서울경제",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56bnFSbVdPbXJnVlc2R3drZlZROXRYLWRaTGtFNll4eHdpZk5yd3g5N3ppQ2l4NS03OUR1U05DZFUxNnBpcWRUY3lGblRxeGNIRnfSAVNBVV95cUxNRGZBcGZXaUlPdXpkSFBGUzJFMXllZ3NhWVB3clcxVjFJOTFYaWpuMzZJbTEySFRydHVuNl9nRHMyTjFpQzZrZk5FeEJZUDRxbVhxSQ?oc=5",
-        "published_at": "2026-11-20T22:47:29+00:00",
         "id": "bonds-7"
       }
     ]
