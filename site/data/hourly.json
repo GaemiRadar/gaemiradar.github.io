@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-22T08:45:15.605506+09:00",
+  "data_updated_at": "2026-11-22T10:11:57.087180+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T08:45:15.605506+09:00",
+      "fetched_at": "2026-11-22T10:11:57.087180+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-22T08:45:15.605506+09:00",
+      "fetched_at": "2026-11-22T10:11:57.087180+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -157,31 +157,31 @@
         "id": "bonds-0"
       },
       {
-        "title": "[김남현의 채권썰] 조정장 진입한 주가 vs 인상 예고된 금통위",
-        "publisher": "서플 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CTE1Wb3hvTjFNVy1FRDlPVjAtSC0tXzZlRVlVV2wwc1VscFd5NHgtRk15eklhVWMwQlJjZWxOeDVrSVptbEg5ZnlGTVpHZnk4WEc3clB4TVZDMFI3?oc=5",
-        "published_at": "2026-11-21T14:00:00+00:00",
-        "id": "bonds-1"
-      },
-      {
         "title": "오늘(11월 21일) 금 가격: SJC 금 가격이 계속 하락하고 있는데, 향후 전망은 어떨까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbXpYNWhPU1RfUkdHanBjWk1wUVNlVE5xdW9UMVZsczVYNENwZ2VUMGJCSnFqNmJjVFBySzJoMk5QU1ZQWEMzek9KanNucS1FNjBzZWpGR0pKQUtzbmwxV2NNalBlZUV6SERjN09Fb0V2akJJTjV1R2Z2dVZVRjU3RUNwcFVXQzBDeDFQbWhyZ3lrMkk0eVBJN1Jjamp5QQ?oc=5",
         "published_at": "2026-11-21T07:31:46+00:00",
-        "id": "bonds-2"
+        "id": "bonds-1"
       },
       {
         "title": "\"듀레이션보다는 커브\"…노무라, 2·10년 스티프너 전략 제시",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DMlYtaWp4ZWJEZDBhaUhWdGJjSXRYZTA4a05lZHh3NDVkbkdjYldDSHFyWTFKYzlEUnF1QmhyNlhDMmlhSUhWazUyYVROalRNQTgyeDkyaHZDb3FtSjUtUFE4M3RhTkxhSTlvUWZUVV8?oc=5",
         "published_at": "2026-11-21T00:50:01+00:00",
-        "id": "bonds-3"
+        "id": "bonds-2"
       },
       {
         "title": "[뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IdEtnRk94djJMSHhRNHRZZzZzSGM2QjA4UUpRVWs3S1ZWT2NJVXNuSWlZeUNfRUMzYTdWelZIUXZONUhaMndPdWxkUGgtVnI1MWFZVE16VGhDVUs0YU9QWFBURGpGbHdhN0d1U3VOckc?oc=5",
         "published_at": "2026-11-21T00:04:58+00:00",
+        "id": "bonds-3"
+      },
+      {
+        "title": "국채선물, 美 기술주 투매에 상승…10년물 57틱↑",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KNlZTTjZjTGM3MWVuSzdqVm9EMEV4dFVOdUhyeEVFY1pXRVB3NlYzbjM3RWhzRE5rWlhJS2NaQ1RrSWpsNzdxZjNUYWY4UXNFSzNEVHZoY1h1RnNrVGxhVC1oYkNDT0wwbVJwZlBsUjY?oc=5",
+        "published_at": "2026-11-20T23:29:09+00:00",
         "id": "bonds-4"
       },
       {
