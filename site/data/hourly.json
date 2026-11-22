@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-23T04:54:12.581825+09:00",
+  "data_updated_at": "2026-11-23T05:50:21.491323+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T04:54:12.581825+09:00",
+      "fetched_at": "2026-11-23T05:50:21.491323+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T04:54:12.581825+09:00",
+      "fetched_at": "2026-11-23T05:50:21.491323+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -44,7 +44,7 @@
         "title": "외국인 2조 ‘순매도’…반도체 동반 하락에 코스피 6500선 ‘뚝’",
         "publisher": "쿠키뉴스",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80Z09GUUZ0bWowMURZQ2RWN01rTllaa3J1VmNDVU1zREJlVHJFd1ptdER5R284bzhWSktReG9SWmtKZ3NySkZhSld3WHhZLWgyVlE1RTJoWjRGaVVnLURwZkdhTQ?oc=5",
-        "published_at": "2026-11-21T17:48:53+00:00",
+        "published_at": "2026-11-21T18:42:37+00:00",
         "id": "stocks_kr-1"
       },
       {
@@ -62,31 +62,31 @@
         "id": "stocks_kr-3"
       },
       {
-        "title": "[오늘의 뉴스 종합] 美증시 급락에 코스피 5%대 하락…4900선 무너진 검은 금요일",
-        "publisher": "아주경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jamI5UFYzODJody10RFVDakZ2X1JjTFZfUlkyb2ZvVUt5T1VhM3pDaHR2YlE5bmdJdm1KTUFaZndmcHZIZUUyb2NlbDRkRU5mdUJMRkNCam1BZ9IBWEFVX3lxTE9TTGJjNWZyaXRLUnBMcDF3Q194c0VEYUJtbktNLTlvdHhSNmlzeFBOSDdrcmVoN3VueFBwLXV6NEVOS1ZMVlRxXzE5MlhKVjAwT256R3NDa2o?oc=5",
-        "published_at": "2026-11-20T12:50:36+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
         "title": "'검은 금요일' 삼전닉스 급락…잇단 손실에 \"대응 못 해\"",
         "publisher": "SBS 뉴스",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NbU9adnNfdEdWeTlVRThVSG0tZTlXWnJ1NlNZbDc3dU5pTW95Sm5JNFRTT2FPZTVNVXF0N3M1eUU3dExqdncxQkVuZ01lSlZpTGRzb2lHaDhuaG5yal9jcWl5bV93YWl2akHSAWZBVV95cUxQREZCNFI3X1FvWlktNWdyS093VjhfLTYxdURQSWNuRktNUUtJNXNWOE4xdGVHaWh1cU5ha3duMG9zamNDZGtJOUdIXzZPazRVVkdfd0hhN0xKVncyU3JtMW1jSUp2aHc?oc=5",
         "published_at": "2026-11-20T11:28:06+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-4"
       },
       {
         "title": "코스피 5천선 이탈, 공세적 연준과 AI 악재 충격",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQW9CLUlwSk13QzhZTzhZM3Y5c3dMV24xRXJmMERFQThFWDdVMzkwRlhLUFZSamxFM3VuSVlRV0o2RXJBN2tSb2lvQnhld2pVakRscDZEem42Zw?oc=5",
         "published_at": "2026-11-20T09:51:04+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피 5.21% 급락, 10개월 만에 최저치…'검은 금요일' 된 이유는? 📉",
         "publisher": "뉴닉",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QTjBObzZpZU1ySDVjZDFwSnFkSmdtNGpTYXdCdXByNXpfM3hIQ0dMbk5VSlRFSXcwTlpkUzNxd3ByRlQ0MFZyVVpQOGJRdk5neTFR?oc=5",
         "published_at": "2026-11-20T09:06:13+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[증시 오늘] 코스피·코스닥 5%대 급락",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2a0RobDRyYUl5M1FNTGJHaG9tcC0xbm5HQ1R5Vzl5WEI1SEoyZ2ZLdmZfN09GWjBtOXBCNEVjcmFqWUVMdHV0Ykc3YTNoZF9MaWhNcVpURHc4VE9LbTlIb3RRTE5RNTQ?oc=5",
+        "published_at": "2026-11-20T08:43:23+00:00",
         "id": "stocks_kr-7"
       }
     ],
