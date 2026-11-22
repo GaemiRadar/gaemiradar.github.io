@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-23T03:54:42.294191+09:00",
+  "data_updated_at": "2026-11-23T04:54:12.581825+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T03:54:42.294191+09:00",
+      "fetched_at": "2026-11-23T04:54:12.581825+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T03:54:42.294191+09:00",
+      "fetched_at": "2026-11-23T04:54:12.581825+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -157,52 +157,52 @@
         "id": "bonds-0"
       },
       {
-        "title": "경제 데이터 시리즈가 다음 주 금 가격에 압력을 가할 수 있습니다",
-        "publisher": "Laodong.vn",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWkJJSU1iSUlNVThsTk81UWtJU2dTN0h2OFBHS2ZIWnFtSTBLWVpEdWlRbHJFMk5YWG0wRm45c3pCUV8zOGNNUzNZd1RpaE1icmRieVNkMDZGZ2ZhMjYtbl9KUGxIaDFTVWxZTlNGaldUR3JWNmVYUGdiMUJCNkpRcFYzcmhxbEpjQ19xeGJsS3N4REtuOFBZVmV3WEZ2a2lxV3VzNmdMS2U?oc=5",
-        "published_at": "2026-11-22T09:06:20+00:00",
-        "id": "bonds-1"
-      },
-      {
         "title": "금리 고점인식·증시 불안 겹치자…카드·캐피탈채부터 매수 주문 - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE91N0Q3azZmRGVNSFBNRldCeWVyNzljTm9TRDQ2Y2Z2SFo4WU5IMlRKQXIwakZYYTlmNDR5ajFxSHhiOWJiTlk4bzJwcjJ2SkhCQ1pHT1lYdFBqaXVrYldxcldqd3JNZk1U0gFuQVVfeXFMT3BjZU1ycnpXTUtZV3BlRUwwS01DVUszZldsUk9SbnN4R1JEd0owaEwwazAwV3JjeDJmMnFPWmhIeHB0X0luZW5UWUZFMW82aHdiUnRVbWJRSTJDVGU4TDBETVhySzFCYkZjUE5vamc?oc=5",
         "published_at": "2026-11-22T07:52:26+00:00",
-        "id": "bonds-2"
+        "id": "bonds-1"
       },
       {
         "title": "[채권-주간] 기술주 투매가 밀어붙인 강세…금통위가 브레이크 걸까",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xNnR3VzdKZXdVeFNLRmlvRjBFUHhBUDh6WTZ6ZHBsWVlnM1BJLW9EX2szY0VwWU9RRERTRmdIQWtJYTdTSjVLd0hCR28xQ0p0Vm9pYVdTb2lhZFU3YnFudjlnWmFXc1E1NVBUeHZJNDc?oc=5",
         "published_at": "2026-11-22T04:00:02+00:00",
-        "id": "bonds-3"
+        "id": "bonds-2"
       },
       {
         "title": "오늘(11월 22일) 금 가격: 하락세 지속, 전문가들은 어떤 경고를 내놓고 있는가?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdHB3NHJyMGRrdGYwRXdOZ3Zma1ExakRXb2VDTS1RaUdNR3R2aWR2ZEd3YkJucmVjZVJwWXM5NXJxeklTc2RxUm1GSW5SanRhN1Z4bnNabkZGbDFISkJwYjE0SlhZcHZzX3k3NjhTQU1GOXZXV3NLYnhEaUZmR1FrcWFiNlFMamZYbmtrOE9wcllGNHM?oc=5",
         "published_at": "2026-11-22T03:50:49+00:00",
-        "id": "bonds-4"
+        "id": "bonds-3"
       },
       {
         "title": "오늘 노동절로 미국 증시 하루 종일 휴장: 투자자가 알아야 할 사항",
         "publisher": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qN1BQb1ZhWE50WjhCRlJhNGh1eDhzN20xNEZXRktYVEY5RHFITVpqbnZmNnN0STZqRjhxMlFmUEw1Ukt1eDZVOTlZRURDUDZSVmFpd2FmTHppcmctYWVoX2R2czRIZjkzaWJCbkVQSDZPaWtH?oc=5",
         "published_at": "2026-11-21T23:26:11+00:00",
-        "id": "bonds-5"
+        "id": "bonds-4"
       },
       {
         "title": "아르헨티나 국가위험도 넉 달 만에 1천포인트 넘어 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SdFN5ZUFUVnFpLVV1TW5FU01YYUxfNHl0alN3c3gzX0Jkellfb1ZWUUxFWWZzS3Z3NjQ1bXpKMlEyU3dmczAxOVMwTQ?oc=5",
         "published_at": "2026-11-21T19:42:00+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "아르헨 국가위험도 4개월 새 급등…국채금리 美 국채보다 10%p↑",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZDllbkJmTGM0LWdjRUo0b0JtS0NNWnRkbzBDZGFFVEVISF9NVnZuaEtVSndKZ1piQ21BVHI2V1V5dUV6eWZOajlBbzVtdm4wV0NYWGpqemZxT2tTWVYyWlBfNm1NVnhvN0lzT1N2NXJHS3hSZXVlaHYtcTFhbjBncA?oc=5",
         "published_at": "2026-11-21T19:35:00+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "오늘(11월 21일) 금 가격: SJC 금 가격이 계속 하락하고 있는데, 향후 전망은 어떨까요?",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbXpYNWhPU1RfUkdHanBjWk1wUVNlVE5xdW9UMVZsczVYNENwZ2VUMGJCSnFqNmJjVFBySzJoMk5QU1ZQWEMzek9KanNucS1FNjBzZWpGR0pKQUtzbmwxV2NNalBlZUV6SERjN09Fb0V2akJJTjV1R2Z2dVZVRjU3RUNwcFVXQzBDeDFQbWhyZ3lrMkk0eVBJN1Jjamp5QQ?oc=5",
+        "published_at": "2026-11-21T07:31:46+00:00",
         "id": "bonds-7"
       }
     ]
