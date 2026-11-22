@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-23T00:51:59.147729+09:00",
+  "data_updated_at": "2026-11-23T01:52:42.801468+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T00:51:59.147729+09:00",
+      "fetched_at": "2026-11-23T01:52:42.801468+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T00:51:59.147729+09:00",
+      "fetched_at": "2026-11-23T01:52:42.801468+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -69,24 +69,24 @@
         "id": "stocks_kr-4"
       },
       {
-        "title": "“어제는 5100 돌파했는데 오늘 5% 폭락”…코스피 ‘20개월 하락’ 경고까지",
-        "publisher": "데일리25",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKNUNPdnVWQmV5cGNwU1dYeWRhVjZpeS0wSkFZeWFyNVpHYlVCZ3A0WXFoNUdSdVUzdldMb3pENnZ1ZUVnbXJZbW1Hcjg4SHhIa0xmbTVmN3k2cnZoUjA3VXlaUFR0WDJiNVQyNw?oc=5",
-        "published_at": "2026-11-20T10:51:48+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
         "title": "코스피 5천선 이탈, 공세적 연준과 AI 악재 충격",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRQW9CLUlwSk13QzhZTzhZM3Y5c3dMV24xRXJmMERFQThFWDdVMzkwRlhLUFZSamxFM3VuSVlRV0o2RXJBN2tSb2lvQnhld2pVakRscDZEem42Zw?oc=5",
         "published_at": "2026-11-20T09:51:04+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피 5.21% 급락, 10개월 만에 최저치…'검은 금요일' 된 이유는? 📉",
         "publisher": "뉴닉",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QTjBObzZpZU1ySDVjZDFwSnFkSmdtNGpTYXdCdXByNXpfM3hIQ0dMbk5VSlRFSXcwTlpkUzNxd3ByRlQ0MFZyVVpQOGJRdk5neTFR?oc=5",
         "published_at": "2026-11-20T09:06:13+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "[증시 오늘] 코스피·코스닥 5%대 급락",
+        "publisher": "빅터뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2a0RobDRyYUl5M1FNTGJHaG9tcC0xbm5HQ1R5Vzl5WEI1SEoyZ2ZLdmZfN09GWjBtOXBCNEVjcmFqWUVMdHV0Ykc3YTNoZF9MaWhNcVpURHc4VE9LbTlIb3RRTE5RNTQ?oc=5",
+        "published_at": "2026-11-20T08:43:23+00:00",
         "id": "stocks_kr-7"
       }
     ],
