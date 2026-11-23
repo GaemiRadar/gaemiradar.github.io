@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-23T14:26:07.673465+09:00",
+  "data_updated_at": "2026-11-23T16:40:57.403483+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T14:26:07.673465+09:00",
+      "fetched_at": "2026-11-23T16:40:57.403483+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-23T14:26:07.673465+09:00",
+      "fetched_at": "2026-11-23T16:40:57.403483+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,175 +34,175 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "코스피 하락장에도 질주하는 '이 종목'...한중 관계 훈풍 덕?",
+        "title": "[오늘증시] 코스피 3% 급락하며 4700선 턱걸이…반도체 쇼크에 투심 얼어붙어",
+        "publisher": "Queen 이코노미퀸",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53b3JpaE9MNWdRcE5kMEpId3RvRDhkNFpLc2ZNV3B4bTdiZGZMSFNVTHZva0ZIYlhIbUZUdEliNHdqYXNNOGFkOHhpaVJFX2tObFFqb2xqRkRRLWdDOXJ5MzRuNXJTN3Vm?oc=5",
+        "published_at": "2026-11-23T07:32:24+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "AI 불신 확산에 코스피 4,708.54 마감…고점 대비 48.34% 하락",
+        "publisher": "스페셜타임스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tUmRScEZmandURDlUSWRZNE55ajVUUzV5cjFGU0R4UGtBelNreFRYOUlSOFVnNEFUOEQzZFFfanVfOXFMaWxxakJERm1zRWhfYlBNUFZfTTFWRGZhQ0lSY0FmSDNVU3F2NVNrMjAyMFgzZw?oc=5",
+        "published_at": "2026-11-23T07:14:37+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "[11.23(월) 한국장 마감] 동반 하락 (코스피 -3.31%, 코스닥 -1.58%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE01RU4yYWM1enB4REZQTnJVX1pVZHZ1ZXdBRDR4bnllMVlMMjg3b095VEhKdWdWc2d1OGdjNDJqQTJKY3NNdXNTUWUweUxMZkRjZHdmQmZZVDRRUnhBLWtZaTUxbFJ4bVFVSlZIVHB1ckFiV243MGw4bA?oc=5",
+        "published_at": "2026-11-23T07:00:41+00:00",
+        "id": "stocks_kr-2"
+      },
+      {
+        "title": "'AI 회의론' 코스피, 4700선 겨우 지켜…코스닥은 연중 최저",
+        "publisher": "한국경제",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBd3hPWFhfYnVvekgzRndhcGdGM0FrbTJNdmJtZDUwYktWVi1kVDFWa3l5c0JXMXJIbnE2Y0dHdHlKbkZYNlNoUFRJMEFvQTRmcXZHVDl3NFhxUQ?oc=5",
+        "published_at": "2026-11-23T06:48:09+00:00",
+        "id": "stocks_kr-3"
+      },
+      {
+        "title": "코스피 4600선 붕괴에 사이드카까지…美 반도체 쇼크 직격탄",
+        "publisher": "주간조선",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NUFZwcFJaSnJEYktiY3Y2WWlPdTNmNHRMVFByeFI2d3Q3RVdNY1AwajRLdDhkTDRoY05SRm1OQ1A3bFpEZU5NY0ZaUE0zTm5kQmtIbjJLSXVPMW1SVnU5R3dlNGJyWFljeVZR?oc=5",
+        "published_at": "2026-11-23T05:12:46+00:00",
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "코스피 하락장에도 질주하는 '이 종목'… 한중 관계 훈풍 덕?",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RN0gxZGZoY281bkRkUFJNZ0w4dmxCNVc1aXNyeTYzdHJhZFNUbzlIUnVNa081TzlFajRtZzdvWG9XMEhnX0JNZ3owNnkyaVB2NVRiTEk5SXBoQQ?oc=5",
         "published_at": "2026-11-23T04:54:33+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-5"
       },
       {
         "title": "2년 전 비상계엄 때와 비교하니... 상당히 충격적이라는 오늘자 코스닥 상황",
         "publisher": "위키트리",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QeFIySUczNFNpZWR6eGxmNkJteHJCTmJfeEVjRm8zd1N2NTFkdDZJMThaT2lyd3ZNNzFWUWk4enlPT3huZkdFUWh5SkUyZGNNdFFidHpB?oc=5",
         "published_at": "2026-11-23T04:25:00+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
-        "title": "국내 증시 패닉 장세…코스닥 연중 최저치 경신, 코스피 4,600선까지 추락",
-        "publisher": "한국NGO신문",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mVHdLb3hiZjllRXp2YVEyQ1ZHRXFJV2RiRUZfMzhvZVV0eTc1MndyQmxZcjF6UTRWOVcwNzIxdzRpT1VWUnpoZ1l1TG5DeXdyeV9OUXVzZ0FrWEFRZ1NMWGwxbG9ZYTY2?oc=5",
-        "published_at": "2026-11-23T02:33:38+00:00",
-        "id": "stocks_kr-2"
-      },
-      {
-        "title": "[시황] 코스피 4700선 위태…삼성전자·SK하이닉스 동반 급락",
-        "publisher": "남도일보",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJM0FUUk1ROWVSNHNwM1ozZ0N2NXl4LVoyN0ttZVdUc283cE8zTTVjT2FOdjNJRGVETkZsRGNOc0tQaE80cHlWTHpfMWxTUC1jZjU1X0tUN3c4MEFYN2lrUHRMUEVXekRjX3hfatIBcEFVX3lxTE45MWZ5R3JUcFNSYlpwZlVCZGxQc29SRjk4MFN5WTI0eGJSX0tKU2VjRzROOTJxY0VHZGVFRFAyWERuRmtTMHcwdEVXT1d6Y2owcFNoNDBnNEQ4SHJkOWxRcVhRNGtkam9nSU1VU29YUjc?oc=5",
-        "published_at": "2026-11-23T01:47:00+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "코스피 4700선 붕괴 위기…미국 반도체 쇼크에 삼성전자·SK하이닉스 동반 하락",
-        "publisher": "뉴스인",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZeUFCN1VlM3VwaWREb3RZVG9vNXVvQ0JOWGNUd0ZmT29BV1Rndk5JU0pZNUktd2JPQ2RVenlEaGJNeC0tM2RJMDhFNGRPMTlOc2xCTFU4aERPYWJudi1XaTBhSDNMNnYtc0tr?oc=5",
-        "published_at": "2026-11-23T01:29:38+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[시황발자국] 11월 23일(월) 오전 장중 시황 : 코스피 4,687선·코스닥 627선 후퇴! 하락 종목 2,400개 쏟아진 투매 장세 속 수급 변화와 대응 기준선",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTjRPMXZuUUg1aEt1WUpRWDJpUjRkdnRQZkFoS3VXVUY4WlJTQVVmYzh0WGYtS3dQVjBGZHNxTzFRWkhPSUlmN3VTZV9kRzJvUTVwWnVTN0Z6dktLT3k3X0sxdFBncGVrU2FNZlJOQTAxeHNxSHpSOVlIRkJVZUtKMG9kM3BhemQ1?oc=5",
-        "published_at": "2026-11-23T01:29:00+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "[오늘증시] 코스피 4600선까지 추락…증권가 전망치도 '뚝'",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42MXNBVHlkSk9ZZ3NnZ0h5M3EyeWUybGhOU1JTbWw4YWJaclQ4dDZlWnVhZ0Z0aERYbXk2QUlaeXdYV1ZkZ04wQzRMU0g4RVZWWkpMNUlodE83ZERvbUk1ZXhyOENCcS1oRk1xSGZGcjI2ZVU?oc=5",
-        "published_at": "2026-11-23T01:26:22+00:00",
         "id": "stocks_kr-6"
       },
       {
-        "title": "[오늘의 증시] 11월 23일 코스피 4680선 급락…코스닥도 2.89% 하락",
-        "publisher": "잡포스트",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLekhHREFlWWwxQnBGcEVDOU1rX0tYYzVxSS1xampnbDlLNHBmU3ctUl9JXzNVcEhuc21Wbk8zYVRSYW9lQldYN2FKRnRRdDBsZ2piTi0wY1ZKWk1raTBIcU42b0Myc0FJazlnVjhR0gFyQVVfeXFMTXNjaEFPV3U3R1ppOERNc2stZkFrRmlNM3dXTkh0ak5vb1d6VFk3b0hvOEcwSGljUjBGQy1NeDlUNVk4cUc2dHFsWDdzVDU5a3dQOG8xek95ZE1SNFRYVlJpYWFnOFZjdjJJNHc4UUYzOTRn?oc=5",
-        "published_at": "2026-11-23T01:21:56+00:00",
+        "title": "코스피 −5.5%, 네이버 −9.8%·카카오 −8.4%… 이틀 연속 폭락 31번, 5일 뒤엔 25번 올랐다",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUWRCUGdwTVNleXp2UVZNdUY2X1dWaUdXLUx2TlRmX1djQVJQbHlkSm5DLWs4MmxCMUs5LV9BeTYxMFJVQ1NYN1hyaW1jVThGZ3ctb2h6WTJVWEpKMUd3RVJVdEtwNUZpZmw1TThLa2M0Z2hkMl95c0Z5X0hFcURheTg5b3g3SGJaRTJ0TE9Kc29CMC1x?oc=5",
+        "published_at": "2026-11-23T03:05:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
+        "title": "[11.23(월) 한국장 마감] 동반 하락 (코스피 -3.31%, 코스닥 -1.58%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE01RU4yYWM1enB4REZQTnJVX1pVZHZ1ZXdBRDR4bnllMVlMMjg3b095VEhKdWdWc2d1OGdjNDJqQTJKY3NNdXNTUWUweUxMZkRjZHdmQmZZVDRRUnhBLWtZaTUxbFJ4bVFVSlZIVHB1ckFiV243MGw4bA?oc=5",
+        "published_at": "2026-11-23T07:00:41+00:00",
+        "id": "stocks_us-0"
+      },
+      {
         "title": "연 저점까지 400포인트 남았다… 코스피, 4600선까지 '뚝' - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yQzJ1YUl0dG4xdWNwcFNGbUN5TGpINjMyTk9INGhzSU9jcDNpdlhlRHBKME9mMGVRc0xMdEJObjZOaUE5Wldjelc3TkNmRE84dkVsZ2ZnNHRnSDlJdW5CX3pCTWlmTjlKbWw3Ti1R0gFuQVVfeXFMTTJDMnVhSXR0bjF1Y3BwU0ZtQ3lMakg2MzJOT0g0aHNJT2NwM2l2WGVEcEowT2YwZVFzTEx0Qk5uNk5pQTlaV2N6VzdOQ2ZETzh2RWxnZmc0dGdIOUl1bkJfekJNaWZOOUptbDdOLVE?oc=5",
         "published_at": "2026-11-23T02:36:48+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-1"
       },
       {
         "title": "靑, 코스피 5000선 붕괴에 美증시와 연동되는 측면 있어",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xOGQ5UVNQNkxwX2Q5aVZtMTN1bHJBSEliM0hrLTZwQTFLY3oxcDN5eFVQVS05Um55VTRnMF91SnFNZG5Mb01hQUMwNUs4WEZMTElJ0gFYQVVfeXFMTkxWSC1qbEpSSUYtM3FTUzNNeUVUT19TQ1pvdXFZNFFEVGlMVkZNaWZGd3dQU3B6WXYySElwNlhQQnBEb2IxdjdrVE1oMFJfTE1KeWV0eEJCVg?oc=5",
         "published_at": "2026-11-23T01:29:00+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-2"
       },
       {
         "title": "[오늘증시] 코스피 4600선까지 추락…증권가 전망치도 '뚝'",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42MXNBVHlkSk9ZZ3NnZ0h5M3EyeWUybGhOU1JTbWw4YWJaclQ4dDZlWnVhZ0Z0aERYbXk2QUlaeXdYV1ZkZ04wQzRMU0g4RVZWWkpMNUlodE83ZERvbUk1ZXhyOENCcS1oRk1xSGZGcjI2ZVU?oc=5",
         "published_at": "2026-11-23T01:26:22+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-3"
       },
       {
         "title": "[개장] 뉴욕증시, 기술주 투매에 나스닥 5%↓..올해 상승분 반납 By 알파경제 alphabiz",
         "publisher": "Investing.com 한국어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xYmx6bzB3czAyVXpUSVBSTWxtM0c0TUwzYzFLRlNpOVg5ODNUTWFUN3lYNFJiRGtteU1JRnFlZHBDQ0FOVDhmWnhZWXpTalN5Sy1pb1lRejdsZUstbEpGdE84cFZJZ2xrSXdmR2M4SlQ?oc=5",
         "published_at": "2026-11-22T23:39:00+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-4"
+      },
+      {
+        "title": "뉴욕증시 급락…나스닥 5.3%↓ S&P500 3.7%↓, BofA \"닷컴 붕괴기와 닮았다\" - 와우넷 오늘장전략",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpZmR3LWoweHRQblhrMkNXX2o1aWJiejN1SkdNcnFvaUFIbEVleDJBVmRWb1hXaFlsUklNOWljMnAweG5xNERZeWo3bjZtY1Q3bGtJOWR3WjBJNkhvN3VoNlRjQzg5U1NpZDFQaUE3Yk94SXpISFQ0?oc=5",
+        "published_at": "2026-11-22T23:33:32+00:00",
+        "id": "stocks_us-5"
       },
       {
         "title": "글로벌 증시 강타한 앤트로픽·엔비디아 쇼크",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qVUpKZXZwQ09WZ3J5M3FDUFZrdmoxVUozNzdTOENaTGtESG9VSVhNY3RGcEo5NmhlY0NaZW1ZdXRSV2pITDROeEJPYVk5MW5QVjZLUnpULXdZUQ?oc=5",
         "published_at": "2026-11-22T23:24:47+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-6"
       },
       {
         "title": "[미국증시] 나스닥 5.3%↓…BofA \"닷컴 붕괴와 닮았다\"",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2WDJXNkZqVHBucWpncmVheTN3Rk5JcTJESjh4eV8yOHNzRFpSNHVKMDhtaXVUR1ZzZWZCMVN5UjJ1NFJjYmtJUlp1Ul95NEU1YzBGaV82UFBfTkFhc01wZnJTczRsWDQ?oc=5",
         "published_at": "2026-11-22T23:00:00+00:00",
-        "id": "stocks_us-5"
-      },
-      {
-        "title": "[이 시각 시황] 뉴욕발 공포에 코스피 4700선 붕괴…반도체 급락 속 로봇·화장품 선방",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB5ZTlEMURfTHJIak44Mzd0OUhUUkpDV21IS1A5aWM3Y1MxU0UtOURFeU1od1JFRFNLZ2M5NFR3Tll2d1VjRzBmNG1Pd21nTzJoWThn0gFYQVVfeXFMTTg4SUhDVnE5ajJWd3dveXFmWkxOeWYyRXBKTjE3OTJCcFB6ZDNIUlltZ0xTeFMtU0xHU3c4UFJsT1Z0UEVhT1cwWDd3U0VKeUNFM2xjcElqaA?oc=5",
-        "published_at": "2026-11-22T22:50:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "[KFT 모닝 브리프] 2026.11.23 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-        "publisher": "한국금융신문",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zLXJTUkNVTkNoRWo1OXVxVDBZMXMydkF1dndISjZJclp4R3p2Q3FSMTFVZjNPNE11amhpWmZ4V1BmeEhaanpwQTVfRUhINmdaNThyU3hHcjZZRXk3TENENHBNY1JuSy1NMThGcHNnYTIzc2Y2dW1XdDUtSVM?oc=5",
-        "published_at": "2026-11-22T22:27:04+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
-        "title": "코스피 5%대 급락에 국고채 금리 하락…3년물 연 3.621%",
-        "publisher": "블루밍비트",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9US1ZEX2FTUnZrTWhGcG90c1dDWVlILU9VcjlIU2RHcGNqQktxMG80R3JSVVJFQi1IcWlBS0tqZzNkVW8xWHJ4NFVWWXFCTnpv?oc=5",
-        "published_at": "2026-11-23T04:18:30+00:00",
+        "title": "11월 23일 은 가격: 연준의 금리 인상 기대감 속에 국제 은 가격은 하락 압력을 받고 있는 반면, 국내 은 가격은 안정세를 유지하고 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUFdkUnpoRHliSmdVQU1weV9GdFBkeE1PYnZKQmtGUUFzN0VZNFRIaUFHbFpjeW9NbHdBWkJ1RXBKX3l2SGNYZlEtSk9yb0pORFJEdlREbTJjM0FkWWU0djRYU0VXbVRVVUpLZGRLcHpyblZXV1YwRU5qdEwwVjFNZmxDVl9pNTltNWFvckdlZVNjcm5XQkNLeFBQMUt1akJ2aFVJaHlaNXpudXNZNnI0TWgwVmZoQmQzdTdydmdPZjI?oc=5",
+        "published_at": "2026-11-23T06:40:05+00:00",
         "id": "bonds-0"
+      },
+      {
+        "title": "국내외 금 가격이 다시 상승했습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOFFiSUpJTzVHWWR2SmdicF80Q1JQZmRId1h3bTRuU1BCTkcwNWFEVEZpeEhYR1BLU0JLNTJvTlhER1NSVU0yd2JXb1c3Ym5TdUk1WEFfQnBHdEp1aFNQa2RwTkN2V29Nc0dXQnV0dzBZNTRyS1kzb1lrRkRVRUl2X0UwSQ?oc=5",
+        "published_at": "2026-11-23T05:51:00+00:00",
+        "id": "bonds-1"
       },
       {
         "title": "코스피 최악은 면했다 판단에 금리 일부 되돌려…국고 3년 1.9bp↓",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5GS3dSOFRyOUdEUTF6T3ZVdVlHWEtyNlVBdy1XQTFYQlBENHNHSkhqanVSaHR1a2RyRVh4emlnVGltSGJfeS1QUnZWNTVKeEVtVER2VUd4akt2ckhYRjlnb08wZ0s1WnlFMFZKeE12MkU?oc=5",
         "published_at": "2026-11-23T04:05:43+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "금값 반등세 회복, 연준 신호 보내 시장 방향 전환",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVHQxd25zX0pkeGZTbEVBNVFXczA3cjJib0ltMmFocFYxblFBVm5fVncydXlRamxRLURFandqT2hwUFBJTFllcEN0MGZ6NXFDdlZ2WmE0RzY0d2JNTm9ybk82Q0Q0bi05Vmc3d2hwMk5tUHRab21mWF9wTXRDYUozajhLTXpwTnIyNFB4OWMyMVdoOE9ZWW9xMTd0T2JFcXVhZE43eVM2T2pFemswRTFTWUZmRS03aS0xZ3dF?oc=5",
         "published_at": "2026-11-23T04:00:00+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
       },
       {
         "title": "AI 충격에 코스피 5% 급락…채권시장으로 번진 안전자산 선호 : 금융",
         "publisher": "재경일보",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE90NEZQRDRzZkxmR2J0SEhhdXZzTkNMc0JiMFdveS1yeHROQlBHVEFKMEgwTFZqNHZuNDBCNzVvSnA2VzZ4dWFNa2l0NA?oc=5",
         "published_at": "2026-11-23T03:12:13+00:00",
-        "id": "bonds-3"
+        "id": "bonds-4"
       },
       {
         "title": "[글로벌 공포장세] AI발 쇼크에 월가 큰손들 포트폴리오 '새판'",
         "publisher": "뉴스핌",
         "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fRjA0TmFxeUVtakw2M3JsTFBYN0NTYUVhSmZVZ1FUV2FoOEZCODZsWlNObHd3MHRfSnhyNXpSbXNtLWd2QXdjd0t5VUdDNFJoU0xfYm4wWG5RSGtB?oc=5",
         "published_at": "2026-11-23T02:50:00+00:00",
-        "id": "bonds-4"
+        "id": "bonds-5"
       },
       {
         "title": "11월 23일 아침 금, 은 가격 일제히 급등",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQanJsSDlUWllENlU3Rk5ya0Zxc2xqY2xfY19PR0dqVzl0Z3dEbzRkWElqd0tHV0VaUEVaa2ZoYUx3bjU5WjZMRGF4NHpVQUJXVG5FYjVhamNqRHdtOGJqX2pqRUlaNzh0WHlhTGJlU21Uak9lYmpyVUhldUJEckxabV9oTi1RWnNjVnFENkljVTBWN3hndHc?oc=5",
         "published_at": "2026-11-23T02:48:40+00:00",
-        "id": "bonds-5"
+        "id": "bonds-6"
       },
       {
         "title": "오늘(11월 23일) 금 가격: 새 주를 시작하며 거의 40달러 가까이 급등했습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNXFMTFhxXzBiZFdPWGJRMGZRU19uVTIyYTNjVkYzR28wV1FaUy16VEtJUjRwZVZldWdtRS1oWnBBNXdEMVZRdC1NTl9RYURBQmdvb0pzV3p6ZHBnRkpaZUkxOWxaRTh2S1JWOFNyQWdISGxsX2ItSEF0WmpxZ3lEQ0dPb0tmemlmV1A2Y0NlZnRRQVRIbWhFMg?oc=5",
         "published_at": "2026-11-23T01:46:01+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "금시세·금값 23일",
-        "publisher": "www.bntnews.co.kr",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xRndxVkJibF9LYjZfemtWVnB1U3hWY243ZVBvZlhlWTNsc1NLQ2s1WkNlZjR2U3Mtc2c5SXlBLUVlcDBKNjdTbUc1MjhLeExnVEdRa3JKdURsNzJrVGJ2NlptOWU?oc=5",
-        "published_at": "2026-11-23T00:15:13+00:00",
         "id": "bonds-7"
       }
     ]
