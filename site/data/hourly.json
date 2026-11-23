@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-24T01:15:40.090219+09:00",
+  "data_updated_at": "2026-11-24T02:14:35.385443+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-24T01:15:40.090219+09:00",
+      "fetched_at": "2026-11-24T02:14:35.385443+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-24T01:15:40.090219+09:00",
+      "fetched_at": "2026-11-24T02:14:35.385443+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,17 +41,17 @@
         "id": "stocks_kr-0"
       },
       {
+        "title": "코스피 4,700선 추락·한전 개인정보 152만 건 유출…오늘의 키워드",
+        "publisher": "강릉뉴스",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZT3UtYTRDeDAtbFpwVHdXTVBXeWF0bmtrbUZCdEJIRTFXMUg1YlhtWkh0eG9ZeGs1TU0xOTgxaGhEeXFkME5rS01LUmRlb3poNDdFNnBBbjA0dnhGeFNRTzlJNGViSFI0Qmh0SC1iTQ?oc=5",
+        "published_at": "2026-11-23T12:02:49+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "[마감시황] 사이드카 이틀째 코스피 4708…삼성SDS 15%↓",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WcFJOMDBWelJoNGdhZEV5dVRWVjhCMk1PV3VESUJMN3VaNHBqRlNzckhScUZPQmNfdlUzbU14SzdrSlBQT2JLcjJud0dCeEJ4SlE2ejBZZF9aV1BzNUNrZ3FJMWszQzA?oc=5",
         "published_at": "2026-11-23T11:41:35+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
-        "title": "코스피 4,708선 후퇴, 증안펀드와 반도체 이익 공방",
-        "publisher": "네이버페이 머니스토리",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tQWI5eHJvNkdGUlJ1LXpRMmpoTG85aXRIaVZCSHExSnR4aW1IZDJ3bU5nWFNnWndiaUtmNk9rNHVid1N2S0tsc3RSQ1dDUjQ2ZFFubC1qa3lKQQ?oc=5",
-        "published_at": "2026-11-23T10:36:53+00:00",
         "id": "stocks_kr-2"
       },
       {
@@ -76,17 +76,17 @@
         "id": "stocks_kr-5"
       },
       {
+        "title": "[26.11.23 증시 인싸잇] 코스피 4700선 간신히 사수... 매도 사이드카 발동, 3%대 급락",
+        "publisher": "미디어워치",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MSzI3REdtTVBiVldlMFVKNWgtc0VrT2J1UGQ1RVR0dnJIWWliVTNXWnlwdm1mMGhQTzlYSDk3VV9YN19GZXFrNW1BaVY3eDVUSnRGSVlveGlqZTdwd2hNNkNWQQ?oc=5",
+        "published_at": "2026-11-23T08:03:09+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
         "title": "[e마켓클로징] 코스피 3.3% 급락, 사이드카 속 4700선 턱걸이 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lTkZVODdNNFlPOVMtUG1tVmM0Y0Q5Wl9ySjZ2aVFUblgwRXhTM1ZvUVhuUWlDa2xXbXFiYXhoUHhuOURLSnkyUHloZFZhZjFvekwyYXk2a3VzLUJ0empfUlI1ejV5RVJETVBXc1lfR2FzNGFXVVE?oc=5",
         "published_at": "2026-11-23T07:53:37+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "코스피, 3%넘게 하락 마감…코스닥 2년 만에 최저",
-        "publisher": "KBS 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9peW4xZGlLbDMtLTFHLWg4aHNMUkxxUGhNN0RSMjNWYm8zWlV6Y3dRTjAtalNBWDM1SGE4YnFEUmp0YkYyRnVpbW04SkhxWGhmLU1qVERNdktIMkk?oc=5",
-        "published_at": "2026-11-23T07:03:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -120,31 +120,31 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "나스닥100 선물 장중 한때 3% 상승…S&P500 선물 약 2% 올라",
+        "publisher": "토큰포스트",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5faEtkd055V0c0b2FhZXdmSHhxeDlzM1plSVJvMXJyeUZ0bVV4NXpncGlUZWxyQzlrMmlsOHhnc1ROaDJpWFpNbGxCMGZvRHhPdUlRbkt30gFbQVVfeXFMT1luN3lwa09aOWZtX1NCUWN3MlRyeW9kTER4cUxmUjJYeDAzb3Fuc3dSbjN6Z3FHRTUzYnMyTFdQWkR4OFdDZTdZaHBtVy1WSDBPX1ZWR0J2QWFIMA?oc=5",
+        "published_at": "2026-11-23T07:19:42+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "글로벌 증시 급락에 환율 상승…2주만에 장중 1350원대",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qV2xLcloyR2ppTGdTdGFUZjAyYUxONjVXQTFMWWVrZ0czVGhDYWxZRjZaLVZ0NGpRVFRwMUpuZ3ItOHYzejd3ZGFuYmZlMG9Ua3JF0gFYQVVfeXFMT2otSF9BMXlQS1hQU3BpNzk2ZjNhbkVLQlFCYXdjSjVYcjluMEFhNkxxRjAwTjhSVzdLYm9jUmhFckhPUzR6ajBacXBpbzJ6dm83NnhjZURFYw?oc=5",
         "published_at": "2026-11-23T07:16:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[뉴욕증시 전략] AI 우려에 나스닥 급락…글로벌 증시 '흔들'",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SSks4UGpxWHhuYUZsSld3VHl1R2kwOFdFV05ySXFJZWktVHlXNnJuZERQVjl3QTJtYVpReWxrMlFkV19VTEhMUlVhWS1uYUd6S0RTT29MN1LSAVhBVV95cUxOUkpLOFBqcVh4bmFGbEpXd1R5dUdpMDhXRVdOcklxSWVpLVR5VzZybmREUFY5d0EybWFaUXlsazJRZFdfVUxITFJVYVktbmFHektEU09vTDdS?oc=5",
         "published_at": "2026-11-23T07:02:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "[증시 인사이트] 미국발 AI 공포에 코스피 하락…증안펀드 가동 될까",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYdmlJRWg3N0RBQk1SN1BMMzBGX0hfeDB2ZEtXRVBZV3lSMjU2SHdPZXV0cWdaZHVMbVNjMDBQLXVINzRUOUlCZThFVEtmU2Y1SGk40gFYQVVfeXFMUHNIZGl5TEJqdXdZbnY2bUpXOWcxQUNoYlprWkhQR1BFYTFqcVZkNzBuVzFQQ29jcmFmZERwb1RuT01FSXRNTGg4VG1lYzI0VXJ5LUVua3hLRw?oc=5",
         "published_at": "2026-11-23T07:02:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "연 저점까지 400포인트 남았다… 코스피, 4600선까지 '뚝' - 머니투데이",
-        "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yQzJ1YUl0dG4xdWNwcFNGbUN5TGpINjMyTk9INGhzSU9jcDNpdlhlRHBKME9mMGVRc0xMdEJObjZOaUE5Wldjelc3TkNmRE84dkVsZ2ZnNHRnSDlJdW5CX3pCTWlmTjlKbWw3Ti1R0gFuQVVfeXFMTTJDMnVhSXR0bjF1Y3BwU0ZtQ3lMakg2MzJOT0g0aHNJT2NwM2l2WGVEcEowT2YwZVFzTEx0Qk5uNk5pQTlaV2N6VzdOQ2ZETzh2RWxnZmc0dGdIOUl1bkJfekJNaWZOOUptbDdOLVE?oc=5",
-        "published_at": "2026-11-23T02:36:48+00:00",
         "id": "stocks_us-7"
       }
     ],
