@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-24T00:12:21.713061+09:00",
+  "data_updated_at": "2026-11-24T01:15:40.090219+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.13,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-24T00:12:21.713061+09:00",
+      "fetched_at": "2026-11-24T01:15:40.090219+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.12,
       "change_unit": "pp",
       "as_of": "2026-11-20",
-      "fetched_at": "2026-11-24T00:12:21.713061+09:00",
+      "fetched_at": "2026-11-24T01:15:40.090219+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -83,10 +83,10 @@
         "id": "stocks_kr-6"
       },
       {
-        "title": "11월 23일 오후 브리핑(국내 증시)",
-        "publisher": "데일리바이트(DAILY BYTE)",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPN1pzT19mRm1IQ2d1NXFWclhuQl9KQlRVNFFxQTNXcVVIeWNhVmt4bkEyeFNGWmdCMjl2aEdQblVyQVkyUG5aRy1yOGgwSDZibkl3UldQMV9UU2o4MTJMVU80RVhyUmNIbWx3Wmwxb3dZMWEtSVUxM3JuajNQUTBQbmJn?oc=5",
-        "published_at": "2026-11-23T07:46:51+00:00",
+        "title": "코스피, 3%넘게 하락 마감…코스닥 2년 만에 최저",
+        "publisher": "KBS 뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9peW4xZGlLbDMtLTFHLWg4aHNMUkxxUGhNN0RSMjNWYm8zWlV6Y3dRTjAtalNBWDM1SGE4YnFEUmp0YkYyRnVpbW04SkhxWGhmLU1qVERNdktIMkk?oc=5",
+        "published_at": "2026-11-23T07:03:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -120,31 +120,31 @@
         "id": "stocks_us-3"
       },
       {
+        "title": "글로벌 증시 급락에 환율 상승…2주만에 장중 1350원대",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qV2xLcloyR2ppTGdTdGFUZjAyYUxONjVXQTFMWWVrZ0czVGhDYWxZRjZaLVZ0NGpRVFRwMUpuZ3ItOHYzejd3ZGFuYmZlMG9Ua3JF0gFYQVVfeXFMT2otSF9BMXlQS1hQU3BpNzk2ZjNhbkVLQlFCYXdjSjVYcjluMEFhNkxxRjAwTjhSVzdLYm9jUmhFckhPUzR6ajBacXBpbzJ6dm83NnhjZURFYw?oc=5",
+        "published_at": "2026-11-23T07:16:00+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "[뉴욕증시 전략] AI 우려에 나스닥 급락…글로벌 증시 '흔들'",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SSks4UGpxWHhuYUZsSld3VHl1R2kwOFdFV05ySXFJZWktVHlXNnJuZERQVjl3QTJtYVpReWxrMlFkV19VTEhMUlVhWS1uYUd6S0RTT29MN1LSAVhBVV95cUxOUkpLOFBqcVh4bmFGbEpXd1R5dUdpMDhXRVdOcklxSWVpLVR5VzZybmREUFY5d0EybWFaUXlsazJRZFdfVUxITFJVYVktbmFHektEU09vTDdS?oc=5",
         "published_at": "2026-11-23T07:02:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-5"
       },
       {
         "title": "[증시 인사이트] 미국발 AI 공포에 코스피 하락…증안펀드 가동 될까",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYdmlJRWg3N0RBQk1SN1BMMzBGX0hfeDB2ZEtXRVBZV3lSMjU2SHdPZXV0cWdaZHVMbVNjMDBQLXVINzRUOUlCZThFVEtmU2Y1SGk40gFYQVVfeXFMUHNIZGl5TEJqdXdZbnY2bUpXOWcxQUNoYlprWkhQR1BFYTFqcVZkNzBuVzFQQ29jcmFmZERwb1RuT01FSXRNTGg4VG1lYzI0VXJ5LUVua3hLRw?oc=5",
         "published_at": "2026-11-23T07:02:00+00:00",
-        "id": "stocks_us-5"
+        "id": "stocks_us-6"
       },
       {
         "title": "연 저점까지 400포인트 남았다… 코스피, 4600선까지 '뚝' - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yQzJ1YUl0dG4xdWNwcFNGbUN5TGpINjMyTk9INGhzSU9jcDNpdlhlRHBKME9mMGVRc0xMdEJObjZOaUE5Wldjelc3TkNmRE84dkVsZ2ZnNHRnSDlJdW5CX3pCTWlmTjlKbWw3Ti1R0gFuQVVfeXFMTTJDMnVhSXR0bjF1Y3BwU0ZtQ3lMakg2MzJOT0g0aHNJT2NwM2l2WGVEcEowT2YwZVFzTEx0Qk5uNk5pQTlaV2N6VzdOQ2ZETzh2RWxnZmc0dGdIOUl1bkJfekJNaWZOOUptbDdOLVE?oc=5",
         "published_at": "2026-11-23T02:36:48+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "靑, 코스피 5000선 붕괴에 美증시와 연동되는 측면 있어",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xOGQ5UVNQNkxwX2Q5aVZtMTN1bHJBSEliM0hrLTZwQTFLY3oxcDN5eFVQVS05Um55VTRnMF91SnFNZG5Mb01hQUMwNUs4WEZMTElJ0gFYQVVfeXFMTkxWSC1qbEpSSUYtM3FTUzNNeUVUT19TQ1pvdXFZNFFEVGlMVkZNaWZGd3dQU3B6WXYySElwNlhQQnBEb2IxdjdrVE1oMFJfTE1KeWV0eEJCVg?oc=5",
-        "published_at": "2026-11-23T01:29:00+00:00",
         "id": "stocks_us-7"
       }
     ],
@@ -152,7 +152,7 @@
       {
         "title": "[국고채금리하락] '경기 둔화 경고등'… 반도체 쇼크가 흔드는 한은 금리 인상 경로",
         "publisher": "CBC뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NWExaRG5pVVY3dkdfWGVXUHVOT01XZ01xNXd2ZVNQd1pqQVkxd0Rrb1JkUml3NHhIUFBzazRYM21NaFR4QkJqTnFtd0YwWTUtbnhXaDRQMnhFY1JpdEVzekx2eVZSTmc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40Q1R0VWJJaG9NWDdwYUlIeWlnYWpSV2w5bkh1YVp6LW5EeW9JN2xpOFQxUUgzSkVLalFtOG9nVFVrZnVNVnpSLTN0SW82T2tXRXp3aGpWZUloakI5OTluSzZDcjlGLVQx?oc=5",
         "published_at": "2026-11-23T15:05:00+00:00",
         "id": "bonds-0"
       },
