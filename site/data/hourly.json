@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-24T22:23:05.060126+09:00",
+  "data_updated_at": "2026-11-25T00:08:48.904365+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-23",
-      "fetched_at": "2026-11-24T22:23:05.060126+09:00",
+      "fetched_at": "2026-11-25T00:08:48.904365+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-23",
-      "fetched_at": "2026-11-24T22:23:05.060126+09:00",
+      "fetched_at": "2026-11-25T00:08:48.904365+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,147 +41,147 @@
         "id": "stocks_kr-0"
       },
       {
-        "title": "[증시분석] 코스피 6.32% 급등, 5,000선 회복…외국인 매수 이어질까",
-        "publisher": "강릉뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQ0RtRHA3bGtuT1FjSDVTdm5KNGpBY21BMkJ2WUsySmtBeUtOVVhQQlpra3NROG5iLWN3RE5lRDBGYVctZERhRzJMYmxMUTJtempLQ0tXS1oxWjl3R1hVdHlJYkw0N0hHeEFNYjJ1NA?oc=5",
-        "published_at": "2026-11-24T12:16:48+00:00",
-        "id": "stocks_kr-1"
-      },
-      {
         "title": "[오프로]11월 24일 상한가 및 상승종목",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLTRkN0RwZGZDVzVLSHRnRWNING5wWXBCT0hNR3pZZW4wOVZSazJWZDA3eG1tRlJxbXB1dlpMV3lVZlhhNVNjZG5kTnY0dG94VlV4bnVMYTMzcWlxN013TW9wMkxrWm95cXBiQ3pHamhPUXN3elBBTW5RdUVXWk9WYmUzZjY?oc=5",
         "published_at": "2026-11-24T11:29:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-1"
       },
       {
         "title": "코스피 6%대 급등하며 5000선 회복…AI·로봇株 강세",
         "publisher": "데일리25",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJVUFrNTFrYjZWYU9XUlpNcmxrWkNKaDFsNEx1VzVzN0wtb2xURDhra21GZzRVMDE5YjktekNkbHE5TjZVVVRrMDU1Uk9iRmNidXZhQy1yY21DTE9RWHh3UWdKaUJRUDFqZGlENg?oc=5",
         "published_at": "2026-11-24T10:17:48+00:00",
-        "id": "stocks_kr-3"
-      },
-      {
-        "title": "[마감시황] 젠슨 황 귀환에 반도체 불기둥…외국인도 돌아왔다",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16cjg1b0ROdmp6RlZObGFYT0t4ak5BRGtlVVhhYUo4SkVkN0l5VmxzdkRkcE5BV25nWXBOMnF5U3hna09FSGR5SjZ5LTlZZ2plZ0hiajgxdkVkcXhSWnBLOXd5YTFlSEE?oc=5",
-        "published_at": "2026-11-24T10:12:54+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[위클리오늘] 코스피 5006.03, 하루 만에 6.32% 반등···외국인 8거래일 만에 순매수",
-        "publisher": "위클리오늘",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpM1JydnJXMTNtdEZnMnBVMzR1NWxNNF9wVmNlMUgzZ2Z1VW5NcE5sMnpTeDJ3M0NnUTZCRWItQzdWblJmWl84MXJSM2pHa3V3RVYxZVdKLWUxQndSR09lakpiQ3RyaEtHcjhaUk9yZw?oc=5",
-        "published_at": "2026-11-24T09:45:54+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[마켓뷰] 어제는 매도, 오늘은 매수 사이드카… 젠슨 황 귀환에 코스피 5000선 복귀",
         "publisher": "Chosunbiz",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOHFPUFliLTNfRlpfbjd6bUFVRlV1RFZpLVg0UjQwZ2xkTEF1NThtM3FQU19ndFJYeWdEX0tyV3g5ZGEtS1VFdkJ0ZzF6Q2JaMjJvMVJpWk1qaUNNZE8yZ1o1dDZ6ZVhGeTJnaS1oNklFZWFXLUFNTUZVNG9WR3ZwMEJWejR2bVNV0gGcAUFVX3lxTE1McnRwVE1iV3lMX3c2NmxPRGEtdEN2NlFKZ0RBVEtEdXZRYzZEcUc4X1pwVGhBYm81cENPalVJaHRvV0szZk5EVlhaN25OTFU5SXh5YzdtX0FnZGc0WW9BUW1FWTF0cHlfYkVzMmZxMTlVNUhXRmo0bUdCdlVsTFZCeERhYWlzYjJFY3Q5a1BrYTFYbEF1bF9RWElQbw?oc=5",
         "published_at": "2026-11-24T09:22:00+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-3"
       },
       {
         "title": "\"운 좋으면 따고 나쁘면 잃는 도박판\"…올해 사이드카 101회 [분석+]",
         "publisher": "한국경제",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RZjM5dC0tZnpON2FhVGJWOVlaZzk4aEpIVEVuMmNzcGRoalRocEM3d0FfTk9GUFZoeVJjU3Z1azhpRGxBN3c4Q3N3X05heGZhNWt6MWE5Tm1vQQ?oc=5",
         "published_at": "2026-11-24T09:07:25+00:00",
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[오늘의 주목주] LG전자 주가 15%대 급등, 코스피 '젠슨 황 엔비디아 복귀'에 5천 선 회복",
+        "publisher": "비즈니스포스트",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EbHFIRTRoNlJFVHU1V3E3R2F6MF9CT0VMQWhuYnhXZ3I3ci1hdU9aaklJM0h0SWN4QnVWRWZQRFQ2SzdEQzREQ1dQdGJ0LTNaUGI0UFZZbEd2dVd2MWFmOUdNZkhpMkgyMHRhclFVZGdSaHc?oc=5",
+        "published_at": "2026-11-24T08:45:29+00:00",
+        "id": "stocks_kr-5"
+      },
+      {
+        "title": "젠슨 황 복귀에 AI 투자심리 회복...코스피 6.32% 급등, 5000선 탈환",
+        "publisher": "신문고뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBUaXA3ZnEwQkI1TzlnLWtaYkpQYWE3UlhPN0lPWUNnT2ptUFRSTGtSVzlGYnVVUmhHSnFZUFpScmpDUQ?oc=5",
+        "published_at": "2026-11-24T08:41:00+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "코스피 6.32% 급등, 5000선 탈환…외국인·기관 동반 매수에 반도체주 강세",
+        "publisher": "잡포스트",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wbHZnS1NmelFFTG44RmQxRENRWEZpWGM2aUhSOC1ha3dWTThld0tPVWNGZm9MT01uWHF0SlA5SXJDLTBiQmliR0E2X042YzVkRnA2MVBTMG00R092ci16YWtQZVAtaXVMc3hUaWZxT2M2Z9IBckFVX3lxTE1wbHZnS1NmelFFTG44RmQxRENRWEZpWGM2aUhSOC1ha3dWTThld0tPVWNGZm9MT01uWHF0SlA5SXJDLTBiQmliR0E2X042YzVkRnA2MVBTMG00R092ci16YWtQZVAtaXVMc3hUaWZxT2M2Zw?oc=5",
+        "published_at": "2026-11-24T08:34:30+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
+        "title": "미국증시, 젠슨 황 효과 하루 만에 제동…엔비디아·마이크론 급락",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1a016VzVCN3JjTUF5c2J0UEZ5YWluOVNWUDZKMENZVEFBZ0w1QmxYcTZJZTNyZ2Nkc2VMT0lLMjFoeWkybVpPTTdpSmszRkh4TldrcnZoZEhQZGRBTHhaRUVibEJGRldPeTVfWnVkaC1udw?oc=5",
+        "published_at": "2026-11-24T14:40:08+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "미국증시 전망, 젠슨 황 복귀 선반영…차익실현 경계",
+        "publisher": "톱스타뉴스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4tYWdsN0pVRkhwOHFCUzJuQlFxQXhqS1Zid0RSVmtMblpfbTBIUS1iSzNHaVdFa2V4RzJDWGxFZzZSXzA1MGdSdFJPWm9PY3h1TVlXNUhqQXR4aXNlWDJyREJTRGRRWkMyTi1pOXBkNTVuQQ?oc=5",
+        "published_at": "2026-11-24T11:24:33+00:00",
+        "id": "stocks_us-1"
+      },
+      {
+        "title": "[마켓톡스]최근 미 증시 하락, 완벽한 매수 기회…바닥 다지기 뚜렷-모건스탠리",
+        "publisher": "이데일리",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS0ZwNHNNYUxhRnFxT2x1c1Y0VlZJLUIzTVRURVV3N1piOTY4MWVBZzcycjcwYVJjVmJZQndVZjgycEdEcEVmMjBKMzlQQXVST1ZNbHZISTZOOGt4SFpYT1VBUFpHQVpvY3J4cl9DUmIta0xsOGlMamd6amI4SmVFUw?oc=5",
+        "published_at": "2026-11-24T10:51:01+00:00",
+        "id": "stocks_us-2"
+      },
+      {
+        "title": "주말 美증시도 ‘패닉 투매’... 韓 “월요일 개장이 두렵다”",
+        "publisher": "조선일보",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMU52c0RGUGxhc3BKQk5YQ0ZrWWdhNGVROFJHaWQ5TFJsaTZTME5vcng1Q3dZc3NfSjh4RXpSQk52VTRpM1A5dzZFU3FycTEySjNZNzFDSEY5MzRKbmdQT3NpRVVpeDJtcS1RNWlwX2R1UlY2V2xYRGxtYXA5RHp4NnRQT2N3VFVuMFBj?oc=5",
+        "published_at": "2026-11-24T09:57:42+00:00",
+        "id": "stocks_us-3"
+      },
+      {
+        "title": "'서울 -4도' 내일 아침 전국 영하권‥체감 더 낮아",
+        "publisher": "MBC 뉴스",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fczBPWVBwN0hLSmpsR2JwMVgzWDZkNDFBY3hkYWxlSGxCWTZ6YllqRjNUQ3FNOGVyc21DOERvYUlMRkpfT1N6ZUU0ODVhNUZIdkhUSzFxYjVic2xJR0gzQ1BQb1lrZThKdTBYSkFlcHluY0t4V0I0WtIBeEFVX3lxTE5sc014bXZ5SzktTkxPNkhCSGFIaTZsbzJYd05odHE0enlpbEdMSElCR2dhQUtmQ0pJRzZHbWFtRXBjWlFEMVkyTFl1RUE4U1NCZXJNdEYyZHc0Mk0tam1wajl5cGNHS05UZFlvQ3FSMjV2a3Y4M2tXVw?oc=5",
+        "published_at": "2026-11-24T08:13:38+00:00",
+        "id": "stocks_us-4"
+      },
+      {
         "title": "'젠슨 황 귀환' 최대 상승 나스닥, S&P500 강세 지속하나?",
         "publisher": "MBC 뉴스",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBTV194SDNKX2pYWTlxc0l0V2huRXVKNnk0NnJJcld0Tmtod2F3czJRTnd4RUtUTnVrVTlSS01GenZTSk9rdW1YTElnSTM1ZHVzX1RpWFVablhUNWhwUkRnb09pM0F2aTZVcldHSm9paUdmRE9iU3g2ctIBeEFVX3lxTE13eFlyUjNCUGFtMmlkdmllTjU1YUNtREJMb2RuOEpRQnM0TElVdnNJd0lfcHRrb2NsLVRuc3ZCcEJraHh6MjhQSE9MaGU3Q0IyY1hpSGJEcC0zYy1lQXBrcV9EWnByY0pkRF9NdC1HcHZWNVJYWTI0Qw?oc=5",
         "published_at": "2026-11-24T08:11:03+00:00",
-        "id": "stocks_us-0"
-      },
-      {
-        "title": "미국 증시, 젠슨 황의 엔비디아(NVDA) 복귀에 급등...비트코인(BTC)은 상승 반납",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAtVHc1dExFd0h1d09YeUVqOWE3cWRHVnBIbzVLdFU4VjdHY2lWM2oyWDhtbHZqcjljbkdEZWFPc1FOWmMwWnhablh3?oc=5",
-        "published_at": "2026-11-24T04:30:00+00:00",
-        "id": "stocks_us-1"
-      },
-      {
-        "title": "[오늘증시] 젠슨 황 컴백, 코스피 5000 복귀...천군만마 얻다",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qX0Q3cjdNaElORy1kdXJFNFoxZ3hNckxwVjZKbF9lRFJVZFJSVVNYZGlmM2xJMFQ2czJTOEhsQU5XX0hWSkVaNFFqamotNXVxZmVpbUdla2NPZ2YtTEcwVC0tQk9zcWx2YmlaQm9pWVZJUGM?oc=5",
-        "published_at": "2026-11-24T02:00:20+00:00",
-        "id": "stocks_us-2"
-      },
-      {
-        "title": "젠슨 황 복귀에 뉴욕증시 3대 지수 급등…나스닥 6.51%↑",
-        "publisher": "서울경제TV",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TaWdtNkRjNjdoLVZmMHZRQ3pYMXBkWXJRZGNSLUFSUzgycnJyNHZTRVdPSkdoNzJQa21aZlRvYWltNGh4WnA4TlRwUnA3akNWSzNqaFhHbW9MN3NJQjVodG1pazI?oc=5",
-        "published_at": "2026-11-23T23:35:59+00:00",
-        "id": "stocks_us-3"
-      },
-      {
-        "title": "[뉴욕증시] 젠슨 황 복귀에 엔비디아 31.5%↑…23년 만 최대",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hR3luWVZVaVJOSG5pNHBWQkpxa0lxZmNmMnNXcnhBTjJyRVFrdm84cHBBN09vbkxGYXotdnRWWk1OYUFjbVQ0M21ZSzBKV3hKckZVc1E5VFFKRDVkSnJGSHZsOUZqU3M?oc=5",
-        "published_at": "2026-11-23T23:00:00+00:00",
-        "id": "stocks_us-4"
-      },
-      {
-        "title": "[오늘 증시 동향] 엔비디아 젠슨 황 복귀에 나스닥 6.51% 급등…국내 반도체주 반등 가능성 주목",
-        "publisher": "톱뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5TjJHTERwT2VFOTl2b0M5V2Zkb2V0RnFyWndUeUVZTG4wcXMzRm9HWGpxUXZtRWE3THd0MUlUTXhMd0dQZXdCeGlxNHVVRkpPcHZZQno1TXE0dEs3YUZ4TXJYbXZGTUFpYVBNckNNSQ?oc=5",
-        "published_at": "2026-11-23T22:47:23+00:00",
         "id": "stocks_us-5"
       },
       {
-        "title": "[오늘 증시 전망] 코스피 4,700선까지 밀렸지만 뉴욕증시 급반등…24일 외국인 수급 회복 및 젠슨 황 복귀주목",
-        "publisher": "업코리아",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DcVFScFNVTmEzNktBRnNOdmpMVTJMMjNxcjJIT3FHbm9vWEVJUV9FVWx1V1J3bFZleDZJYlRWLTJsbGxwQ1VpUmJTcElNeEd2bUY4UWdFMDRaUUhfdTJPZzNqYXFaWkhZVzN4aVR3?oc=5",
-        "published_at": "2026-11-23T22:41:02+00:00",
+        "title": "젠슨 황 돌아오자 주가 폭등… 글로벌 증시 웃었다",
+        "publisher": "매일신문",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiVlF2S292dWE0NjhhVC1NMFU2X1RUckk2Vkg0bGxUMHd1N1RPOGJkSjRGc0lYZGcyNnNXV0c1dWlnaUt3dWl4dG5vck5YT05pOV9SdDdvamdtOHRxc1hvY3FB?oc=5",
+        "published_at": "2026-11-24T07:59:42+00:00",
         "id": "stocks_us-6"
       },
       {
-        "title": "미국증시 나스닥 6.51% 폭등…SK하이닉스 ADR 20%↑",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBjdHBpV0dpdDNoblRVeXN6X3V3czRnaWpBeXpodUtkMGZ6cjlVUy1uQ1UxQmJlX2lZTExOZ3lsV3NTaG5QOU5jWWtGTm05Ri1fbWZLc194ZWdiZGhqSWhOZ2hNcnhhQWUxTVY3R0lIU2J2QQ?oc=5",
-        "published_at": "2026-11-23T22:35:04+00:00",
+        "title": "나스닥 급등이 더 불안…긴축 우려에 AI 4대 암초, 랠리 재개 확신 어려워[오미주] - 머니투데이",
+        "publisher": "머니투데이",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqaXROOVJmNjU3M28wR18zbDBUT05RdHF4MHB0TXZZSmZGQmNHbHdocGdja0RqNDQwcUQ2Z1I3Z3NfV1RoMHVhWjQ0bnZ1OHZhaThXX3psN0dVQ01CQktWTTI0RkRwWlpPa2hlQnZR0gFuQVVfeXFMUGppdE45UmY2NTczbzBHXzNsMFRPTlF0cXgwcHRNdllKZkZCY0dsd2hwZ2NrRGo0NDBxRDZnUjdnc19XVGgwdWFaNDRudnU4dmFpOFdfemw3R1VDTUJCS1ZNMjRGRHBaWk9raGVCdlE?oc=5",
+        "published_at": "2026-11-24T07:46:14+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
-        "title": "한은 다시 긴축 나서나…채권시장 전문가 54% \"11월 기준금리 인상\" By EBN",
-        "publisher": "Investing.com 한국어",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41aUU1NVItRTNmVUlPazJScjQ3TzY4V3hmWko5X3pYZUg2QWZTdXBhdTNSLUlRaWNvWEMtZThoTTNSM1JRZ2JxbEtoaXJlX0NNV3FZbTJ3R2ExT29XWkVVVW9fYk5XZFUtTDN4bkQ0eDQ?oc=5",
-        "published_at": "2026-11-24T10:37:16+00:00",
-        "id": "bonds-0"
-      },
-      {
         "title": "[채권-마감] 금리 혼조세…주가 급등에도 外人 매수에 방향성 제한",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15Sk1KaVR3U2FVTlQ1cFhiSzJEUnA3U0FYcUdyTC1ERWcyX1JjWU5ZNkdjXzRhZjJxODJCZDVENk1Ea2NPellNRkxseVRMUEFTWTNiVmhlak9CaDdDRzI4aWNWS1RwWGR0QnF0MHlGT1o?oc=5",
         "published_at": "2026-11-24T09:43:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-0"
       },
       {
-        "title": "국고채 금리 혼조세…금리 인상 전망에 단기물 상승",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsN2M3Ujl4MlpUQmZ1eWFvVEVFWlR4UU1tSmg1RlBlOG1vam1MLW14a2FTV2FqWXRieTJLQWNpdU1YRjd4RFB2c0dCTGJHMXdjZ2lV0gFYQVVfeXFMTjFaLXhBNk9LY1hVX2x6WGx6VU96azRobnVxVm1CS3VZTEplaDRURUh0TDJTdkhWRk40QS1vdV95UTRKcFBMQm9PMnFZM1NTNFZRRWwweWswTA?oc=5",
-        "published_at": "2026-11-24T09:13:00+00:00",
-        "id": "bonds-2"
+        "title": "국고채 금리 혼조 마감…외국인 선물 매수에 장기물 하락",
+        "publisher": "스페셜타임스",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WSTNKWnkwdUJOVmJwQ0VFNEc2RkREa2Vnd0V3SnlZYUhOZ1FHMGxCX0xMR2xSQXZHeDhlZ1ZHY2pQNVRaNFBSeFY5c1BOcXFPdWpKcEc0eV91NHRFRmtUQXFrb3BBMUd4QldGb3lIWndfUQ?oc=5",
+        "published_at": "2026-11-24T08:12:48+00:00",
+        "id": "bonds-1"
       },
       {
         "title": "국고채 금리 혼조세…코스피 상승 속 외인 선물 매수(종합)",
         "publisher": "매일경제 마켓",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05N0cyZlctcFVoRkJuaWVJWlR3RmthSGZKcUxrQmFUWmRWU2M2UkJoR1ZPVGdVaTd6VENqMTFhUVFFU2V6b0FLMy02eS1DUlV3MEE?oc=5",
         "published_at": "2026-11-24T08:02:04+00:00",
-        "id": "bonds-3"
+        "id": "bonds-2"
       },
       {
         "title": "[더밸류 브리핑] 오늘의 금투협 소식...12월 채권심리 악화·일본자산운용협회 협력",
         "publisher": "더밸류뉴스",
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9YcEFYU21oV1pfU2V6MUFqdzJtVHNCZGtwN2gwRHNnS05PUEdmWjB4VnNwU0czQjIwWFNQTzB0RjM5VHhsVXh4TXdob0paRWEwcDRQZg?oc=5",
         "published_at": "2026-11-24T07:54:19+00:00",
+        "id": "bonds-3"
+      },
+      {
+        "title": "3년 국고채 금리 상승 전환…10년물은 연 3.819% : 금융",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9OeTJpUElaLXFKcTlua3ZQMWE3RmtMbzNhWkhaN3h1eG5HcGZ0N04xZ2RZQnFSdDd1S2p6cXZqZlRESWpEakh2SXJwTQ?oc=5",
+        "published_at": "2026-11-24T07:52:23+00:00",
         "id": "bonds-4"
       },
       {
@@ -199,10 +199,10 @@
         "id": "bonds-6"
       },
       {
-        "title": "금리 인상 전망 급증…채권시장 심리 한 달 새 위축 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JMFVFQkM4M1dQNW81SXVuRnlIMDYyNTZLTDJlTE52S2Y0SHpVUWMxV0V4T0MtU1F1VWVmZDFSa196dzY5NHo4R0Q0VQ?oc=5",
-        "published_at": "2026-11-24T03:33:35+00:00",
+        "title": "한은 다시 긴축 나서나…채권시장 전문가 54% \"11월 기준금리 인상\" By EBN",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE41aUU1NVItRTNmVUlPazJScjQ3TzY4V3hmWko5X3pYZUg2QWZTdXBhdTNSLUlRaWNvWEMtZThoTTNSM1JRZ2JxbEtoaXJlX0NNV3FZbTJ3R2ExT29XWkVVVW9fYk5XZFUtTDN4bkQ0eDQ?oc=5",
+        "published_at": "2026-11-24T04:59:13+00:00",
         "id": "bonds-7"
       }
     ]
