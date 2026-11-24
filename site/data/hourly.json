@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-24T14:14:17.643939+09:00",
+  "data_updated_at": "2026-11-24T15:08:08.734315+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-23",
-      "fetched_at": "2026-11-24T14:14:17.643939+09:00",
+      "fetched_at": "2026-11-24T15:08:08.734315+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-23",
-      "fetched_at": "2026-11-24T14:14:17.643939+09:00",
+      "fetched_at": "2026-11-24T15:08:08.734315+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -208,18 +208,25 @@
     ]
   },
   "news_status": {
-    "stocks_kr": "ok",
-    "stocks_us": "ok",
-    "bonds": "ok"
+    "stocks_kr": "previous_snapshot",
+    "stocks_us": "previous_snapshot",
+    "bonds": "previous_snapshot"
   },
   "refresh_summary": {
     "fresh_market_items": 2,
-    "fresh_news_items": 24,
+    "fresh_news_items": 0,
     "market_items_visible": 2,
     "news_items_visible": 24,
     "gemini_called": false,
     "market_source_note": "미 국채 2·10년: 미국 재무부 일별 공시. 국내외 주가지수: 기존 TradingView 위젯 사용(본 파일에서 재게시하지 않음)."
   },
-  "errors": [],
+  "errors": [
+    "뉴스 stocks_kr: 일부 RSS 피드 조회 실패",
+    "뉴스 stocks_kr: 일부 RSS 피드 조회 실패",
+    "뉴스 stocks_us: 일부 RSS 피드 조회 실패",
+    "뉴스 stocks_us: 일부 RSS 피드 조회 실패",
+    "뉴스 bonds: 일부 RSS 피드 조회 실패",
+    "뉴스 bonds: 일부 RSS 피드 조회 실패"
+  ],
   "source_note": "뉴스: Google 뉴스 RSS 기사 제목·발행처·링크, 원문 분석 아님. 금리: 미국 재무부 공시."
 }
