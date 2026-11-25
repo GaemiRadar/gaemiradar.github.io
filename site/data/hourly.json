@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-25T18:17:59.292873+09:00",
+  "data_updated_at": "2026-11-25T20:04:04.825242+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-25T18:17:59.292873+09:00",
+      "fetched_at": "2026-11-25T20:04:04.825242+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.01,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-25T18:17:59.292873+09:00",
+      "fetched_at": "2026-11-25T20:04:04.825242+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,175 +34,175 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[오늘증시] 코스피, 하루 만에 6% 급락…'젠슨 황 랠리' 반납에 외국인 1.9조 원 순매도",
+        "publisher": "Queen 이코노미퀸",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DRzlfcDYxOE4yV3NRU01CSzM2ZEtvTlZiR0hqbmMxSkxmd3lDTUpxVkZWODVqN3R4TTFTb0k4VVR4ajJzMGgzR1JOVF9NVGxBRm5Wc0Fxa0lPNmdIYkRVQVFlcElqQm9COXc?oc=5",
+        "published_at": "2026-11-25T09:03:43+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "[오늘의 주목주] 'AI 투심 위축' 삼성전기 주가 12% 하락, 코스피 6%대 내려 4690선 마감",
+        "publisher": "비즈니스포스트",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBnSUg1Q3Q2UUljd3NKZWdMUTJ1Y1Y3Ymo1aW1hQU9xNUVTSm82aWRYUU1sRm5iZjBWU21WMDFxRWVGcS1pZHpoYjB1R3IyTklYdUgySTVCT2FQV3M4Tkc0alBYc1JfRXg3MXVKaFZGbnNudWs?oc=5",
+        "published_at": "2026-11-25T08:46:31+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "\"미국 정보기관부터 국내 금융권까지 뚫렸습니다\" 하락장에서 수익을 지키는 보안주 분석",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMkZWV3JjeV83VVA4QlRybUtpN3VvTS1BSy1hdnUwd19uTG5Ka2pNYzRBaFhrSW1rU2NkUnhFN1F0N183UFhZSGtNOTNwTlR1cEJJZ1dudnBfeGtRQzFjX3dDa2FuZi1aYzJvdUVNaV9EZkR5UHRnMVFHQ0V4NVplRG81SkI4VmFTYVE?oc=5",
         "published_at": "2026-11-25T08:36:00+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[증시 오늘] 코스피 6.16% 급락…또다시 4600선",
         "publisher": "빅터뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwZ3JkQ3p1Z1VNb1VpaEJUbDNnUWJIejNKLVZfcjdlMkxTOVJvX1duY3dZRU9DUTdIMVQwaHM2LXNnZ0psOHczR1ZnODA0YWNyemNlZlhIZHEtclNsa1ExNmQ4RlRieWM?oc=5",
         "published_at": "2026-11-25T08:13:51+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-3"
       },
       {
-        "title": "[e마켓클로징] 삼성전자 시총 1000兆 붕괴···코스피 4600선 후퇴",
+        "title": "[e마켓클로징] 삼성전자 시총 1000兆 붕괴···코스피 4600선 후퇴 |",
         "publisher": "시사저널e",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9mSVAyMm9WanFCYkNxUGp4MWhZV0UtOXl6UmlUdWF0TWFWdUg2ZGRkTTBSbmdPSXJrTVJ5T3YzZGY4S3UxSjJMSTFXMngxNzBabnhYYVlTOUJnekM3UUpab0FCV0k3Nm4teHNLbXMzeEt0UQ?oc=5",
-        "published_at": "2026-11-25T08:00:37+00:00",
-        "id": "stocks_kr-2"
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUnFNVC0xaElMSmRHT08tanVITmk0R2JGVThXNTgyZl9mY2xRZzhlaTVjUlB3bTE2U0JHNmNQVk9JQk4yNmhyU0ZiNDZ4a3AtVUFfN2p5VTVzTktSa21yZ0dJc19HZE1xb3pzZml2Zlg4NUVCeWc?oc=5",
+        "published_at": "2026-11-25T08:07:49+00:00",
+        "id": "stocks_kr-4"
       },
       {
         "title": "[위클리오늘] 美 반도체지수 7.88% 급락 여파에 코스피 6.16%↓···4697.51 마감",
         "publisher": "위클리오늘",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QQjlsMVdCRDhHTUdhOHFxYzNQRFUycDNMcDROaUItdWtMRkV0WlRIOVRHOW9iUmpoMmZUaTZuZXl4SjI2NFRPcVVBTGtMQkg0ZkY1T0NsdFZ3N0hBR0tKUUJxZnI4MVk3ckFQUWJxVQ?oc=5",
         "published_at": "2026-11-25T07:41:31+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-5"
       },
       {
         "title": "[마감시황] 하루 만에 5천선 붕괴…코스피 6.16% 급락, ‘검은 수요일’",
         "publisher": "남도일보",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BV3A3V0RIMGxsTVhGb2pLMHNuVndmNnBlVlQ2TDQ1RUxWTVpFMmpPTW92NGtpV0o0Z3dtY1V1MGJNT0RqRG1KYzZLbnRURzI4blhjNWdDSHJHYlYzMi1UOEh1N1BabWxPc2V6YdIBcEFVX3lxTE9ueWg3dnBKWm9YVERNMlctOE9xVXNISVVZUnV4UWMwcHJYSDhwNm94U2JqQVZ6bG12WnVHT21zRVZ2UlV1cTA1c2F2RmNqMGcwamU0MzNhMUZsNlFyTTEtMVZvT1pHNDF3WW9jVHZmTUQ?oc=5",
         "published_at": "2026-11-25T07:23:22+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[오늘의 시황] '5,000선 회복 하루 만에' 코스피 6.16% 급락…4,697선 마감",
-        "publisher": "nbn 시사경제",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNRVo4V2hoYzNwemhNZ0NEQXB0SFB4am1FV0VqclBwWUc1eDVuV2tXNUVyWnNtY0k0ejlfcC1iXzUybGN4Wlg1R2h3d0pfX1F1d0NhWmQwSUpVY2paRm1zY2MyQ1FtaUVteWc?oc=5",
-        "published_at": "2026-11-25T07:19:00+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "코스피, 6%대 급락 4,697…전날 급등분 모두 반납(종합)",
-        "publisher": "연합뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hU3NaWG1Zb2tHWmY5d3hTNTdUenNjcXROXzRnUTZCYUNMOWNSLTE5NFFra2V6MXc2Njl6ZDJTc1RiTW4tWFFqcFRfZTFtUmZDeGxDTzI0MXA5RVdtbXUxbtIBYEFVX3lxTE5hU3NaWG1Zb2tHWmY5d3hTNTdUenNjcXROXzRnUTZCYUNMOWNSLTE5NFFra2V6MXc2Njl6ZDJTc1RiTW4tWFFqcFRfZTFtUmZDeGxDTzI0MXA5RVdtbXUxbg?oc=5",
-        "published_at": "2026-11-25T07:11:22+00:00",
         "id": "stocks_kr-6"
       },
       {
-        "title": "[MD증시] 어제는 환호, 오늘은 비명…코스피 6% 폭락",
-        "publisher": "마이데일리",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1COVE2RkdQTk1xcnc2TF9TTTlPcmhUNDJzR3ZfQ2dCYk5iVWEwN3JtMDBwU0pPSjd0RktGVEpvYVVHYW5jQmNfUGdsRkZBb0dyMXYxUjFmelhZb2pMZVR3ZWRQQ1pyQQ?oc=5",
-        "published_at": "2026-11-25T07:07:33+00:00",
+        "title": "코스피 6.16% 폭락…6월 고점 대비 반토막 났다",
+        "publisher": "진일보 | 전남일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXTUJvdzJjRHBwVElCZ3h4eGhvUlM1QVh5Q3JXQVVCbExON2Jkb254VjF5T19rbFhkQ3Vva0UyWDRaZTdBQjF3OWRkd1VlZGsxT2N4YzQ1SHJ3cHJWamxDcXBmQU9xWnB5LXc1ajNDWQ?oc=5",
+        "published_at": "2026-11-25T07:20:15+00:00",
         "id": "stocks_kr-7"
       }
     ],
     "stocks_us": [
       {
-        "title": "美 증시 불안에 안정성 찾는데…서학개미는 고위험 베팅",
-        "publisher": "파이낸셜뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMUWRMSV9oeXFiQzVZZ082cG10WnBJVGg4ckh2T01DZ29FVUVXMWVTTWlvMTZ1YWRVSW51WkdaRTRjbzJGQnJkRi12UVlHWEJGNGxFS3ZZeXhnUQ?oc=5",
-        "published_at": "2026-11-25T07:13:38+00:00",
-        "id": "stocks_us-0"
-      },
-      {
         "title": "[오늘증시] 하루짜리 '젠슨 황 효과'...코스피, 하루만에 매도 사이드카",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13MEdxTVVydUdfVHFpY0RBbEx5WU1NMGtScTIzSUx2bldQWFVvRGxUbHJPWm96a2JHRjdlUFBHbDBySUlRUG9qcFl3OGZvZW5JTUI3NVM1ZHhzUHhTTzRENE4yUklaSnNZYVkwSGttSFlvRDQ?oc=5",
         "published_at": "2026-11-25T01:58:50+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-0"
       },
       {
         "title": "[뉴욕 증시] 젠슨 황 복귀 소식 하루 만에 혼조 마감 … 나스닥 1.5% ↓",
         "publisher": "한양경제",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zWm1zS2doZE9rc1RIUnRNSENMUGp2aS1qZ29xel9TaGlrYVJmYTBxYVlvUDl2UFY1ZzZGLUF6WkROSE5OR1pMWXJCVWJweEg1VXF0bV95M3ZlNm1VOTV1NVVOaHRpSFp2RW0tMEVCM3Fhdw?oc=5",
         "published_at": "2026-11-25T00:23:03+00:00",
-        "id": "stocks_us-2"
-      },
-      {
-        "title": "11월 25일 오전 브리핑(미국 증시)",
-        "publisher": "데일리바이트(DAILY BYTE)",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUk53aXQtWmVWNUZjdWJYWjJjSFR2T0VwSFhtT0t1TjV6cV9JTE1UQllIUEVxNHVGM2VGdWZja2czQzItYXhGUEF6WEpzNWg1TGd3dV9XOGFhOTZBVGxZWlNwdEtYTGVWMGxsWldpZHhKdFZGaDBTTDNfLTBYUmlyOXBB?oc=5",
-        "published_at": "2026-11-25T00:21:05+00:00",
-        "id": "stocks_us-3"
-      },
-      {
-        "title": "젠슨 황 랠리 하루 만에 반납, 반도체 −7.9%… 코스피 5,000 오늘 지킬까, 볼 숫자 4개",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQmktMmxSLWtMaXNTcDdRbkJQU05JNWhIUFVvaEQtaWRzRkl2WEpwWlRDRHhKTXdkeHhMLVAwWi1OM0dnVUV6WXYzUHNHOHJTeHUtd1BhUDZBbER3bEI2UG4wd1loTEl2Q2VLZkpTSXprU1FGYXY3emtWOTVfbmhBMmQ1QWY5LVlqakZWVlcyV3p3RXVS?oc=5",
-        "published_at": "2026-11-24T23:59:00+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-1"
       },
       {
         "title": "AI 반도체의 끝없는 폭락, 지금은 공포에 매수해야 할 때일까요?",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZXdwRlNiYVhWc3huZWNlWTc4dXNlcENFN3ZCcl96ZVBpcGY0NlctMkdIVndNUlA5bTVPUTIwOE1vVzlnRW5kaHBCcmgyNTVpal9ldDYwT0x2T3ZLcC1sWjRMTG8xMzkwMWthUUt2Z08wSkowS0E2cTU1TGhneTUwN1p0TDdMMXNPNjhRTA?oc=5",
         "published_at": "2026-11-24T23:49:14+00:00",
+        "id": "stocks_us-2"
+      },
+      {
+        "title": "[오늘 증시 전망] 코스피 6.32% 급반등에 5,000선 회복…미국 기술주 재하락에 25일 증시 시험대",
+        "publisher": "업코리아",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoMUlKUjRBMmY3NENKb0E1bjhocUhLTy1aQ1g2amQyRUwxMTU5eHpxSF9meFQ0VlZ0ZVJQcXp3ZzBjMjl2WVFmS0c4SU9vblNyaEl4S21qWGtfTTRaNUJoSEFhNkxTRFR2dFFHQjNn?oc=5",
+        "published_at": "2026-11-24T23:18:49+00:00",
+        "id": "stocks_us-3"
+      },
+      {
+        "title": "뉴욕증시, 엔비디아 급등 후 차익실현에 혼조...나스닥 1.5%↓",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kUTRMTDZteUNldERlWkdUMDMwYmI0cGZmMll1VEhFTFhGb2loN0s0MXBjTVdselBvczhLdXBRa3RIdDM3VTdYVXJYcHItQUNRYjAw0gFYQVVfeXFMTlBfU2tCTTB1T3l2cXhxNU00VWZoUjFhUVFWMmc1RHQzc3dOTEJYQldISjhoZkFXTzJPb1lxbkZQSVJaei16RXJsaVV0X2E4M3lwcW9OQ28yYg?oc=5",
+        "published_at": "2026-11-24T22:56:00+00:00",
+        "id": "stocks_us-4"
+      },
+      {
+        "title": "11/24 미국 증시 마감 시황 : 하루짜리 반등일까?",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa0dDRHVTbFh2QlNOejRhVHhYVjdkamVWWE9iRllXemxzaVllN1pUS3hGbFVjQWFkdmV4NjRnYk5sTmtIZzVpSkp4ZmNzVVhFdjFlWnlxNTlPVEk4TWtpUHVzc2Uyc3RraW02SWtTaXdJbk5pYTJuVmprblN3R3d2REh4SmVJQS1KRnhSTUpGRFVEOFNw?oc=5",
+        "published_at": "2026-11-24T22:29:00+00:00",
         "id": "stocks_us-5"
       },
       {
-        "title": "오늘(11월 25일) 금 가격: 2% 추가 하락하여 3,600달러 아래로 떨어졌습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVkdfQ0ZPZWNMb2p5WUlMNG1hU0ZVaVRiQ3h3YkVabFhUVXhicWZmQm0wWndtNlVOWHliX1dxVkt4cldVMGkwVjZUaXpIZ1drMTB5eDQwSURuM09sU2pxazlOQmxvUW1TV2NWdFNWSG0xbGxOTHRkN2VKU1VEXzhadlZHb2U?oc=5",
-        "published_at": "2026-11-24T23:43:48+00:00",
+        "title": "뉴욕증시 급락…나스닥 5.3%↓ S&P500 3.7%↓, BofA \"닷컴 붕괴기와 닮았다\" - 와우넷 오늘장전략",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpZmR3LWoweHRQblhrMkNXX2o1aWJiejN1SkdNcnFvaUFIbEVleDJBVmRWb1hXaFlsUklNOWljMnAweG5xNERZeWo3bjZtY1Q3bGtJOWR3WjBJNkhvN3VoNlRjQzg5U1NpZDFQaUE3Yk94SXpISFQ0?oc=5",
+        "published_at": "2026-11-24T06:35:07+00:00",
         "id": "stocks_us-6"
       },
       {
-        "title": "[미국증시] BTIG \"반등은 팔 기회\"…지난주 저점 바닥 아니다",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QaVVaWGFqVTN0NElNMFZ2SGdQdW9DN0hidFAyOTRDT3hhR2trMG1FMDBFYmNfN0hDUzFvR2ZZVXdUQTY4S2lQVlJzOEdxLUVES2toRkxNR0tRSVNCckRXQVpHaGJkTkk?oc=5",
-        "published_at": "2026-11-24T23:35:42+00:00",
+        "title": "“만원으로 美 대표지수 3종에 투자”…미래에셋, ‘4·4·2 ETF’ 내놓는다",
+        "publisher": "매일경제 마켓",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE01bk53M0N5aVVWMVdyeERhal92V1VuOUk2OG9VaHhKekRXTlBiRmxhWnRZZkJqRm8tM3Q0V1NDenp1amdlWGd0dVZSSlR3bUZmNmc?oc=5",
+        "published_at": "2026-11-24T05:13:26+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "AI 관련 주가 급변에 안전자산 수요 늘며 유로존 국채금리 소폭 하락",
+        "publisher": "Investing.com 한국어",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrNXNwUGp1QmhMXzNPOVg0dEx6MVN3ZnRIbXlfSlQzVlF6SkRrZGd5YnFyS3Rhc0hGa2NXdXl3QVlqZTYtRzZCeDFja2RPako4WnJiTHVla0ZuZ2ZHUExpUHYzS0dkS1NkQ2c?oc=5",
+        "published_at": "2026-11-25T10:04:00+00:00",
+        "id": "bonds-0"
+      },
+      {
         "title": "코스피 6% 폭락하자 채권시장으로?…금통위 전날 국고채 금리 일제히 하락",
         "publisher": "매일경제",
         "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLZW9iMFF1b2NzbU1Pa2IzcGNzZ1ZEa05mQWhuTkNhSTFNWVQxUnFBNVNvSWNIaVJpeV9ranNXRHZHU2tHYURQaEQ5SnBaUTBGU3BBcQ?oc=5",
         "published_at": "2026-11-25T08:51:22+00:00",
-        "id": "bonds-0"
+        "id": "bonds-1"
+      },
+      {
+        "title": "기준금리 결정 앞두고 국고채 금리 일제히 하락… 3년물 연 3.583%",
+        "publisher": "SBS Biz",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ldjJqdkVsQ24wRUhmLTRvQkRxV2RRUXZFeTJWN0FOTzZMUzdYTlBSNGxmN0UzRzBxYVVZWDNZYVBZaFdFQU1ObkpRZFA5VnFrcWh30gFYQVVfeXFMTnJ4Vkp2bHN3ZkNlamJTNzcyYjdBTFh1cWVKYmJsMW82dmZiZEhSd2tPT0FhZWEzM1FLX09vbjNQRkVNNEU5QjhWc1p1THpPS2hzdlpzTEpCTg?oc=5",
+        "published_at": "2026-11-25T08:46:00+00:00",
+        "id": "bonds-2"
       },
       {
         "title": "금통위 앞둔 국고채 일제히 하락… 3년물 5.7bp↓ 연 3.583%",
         "publisher": "파이낸스투데이",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBreG53ZVFzWkVhZ3k2YURaT2xKdW5rc044SW5VM3V1YlBIVllyTk1FT2o1V2FfR3pFZHNnV1BtMGluOVE5dDNvcV9oSjZOSmU4RmxZYTExUE1nenFpeTVWcjFxQndhVUxsYzhDTA?oc=5",
         "published_at": "2026-11-25T08:29:36+00:00",
-        "id": "bonds-1"
+        "id": "bonds-3"
       },
       {
         "title": "금통위 하루 앞 국고채 금리 일제히 하락…3년물 연 3.583%",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XVzVqZms1a2RZTHJUendwRzl6ckxnRXI5eUxEWE4zS3FCWFBBUVJYUU01elR5NTEzY0Z4Rm5GZmdoWDd0b2oybHYtQzJUZWpIWTRXUXZWNFB2UUVERVZRcEpWUlFjV0poUkZsaHRoQk9aUQ?oc=5",
         "published_at": "2026-11-25T08:15:02+00:00",
-        "id": "bonds-2"
+        "id": "bonds-4"
       },
       {
         "title": "'금통위 D-1' 국고채 금리 일제히 하락…3년물 연 3.583%(종합)",
         "publisher": "연합뉴스",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rQmMtay02Si1JQnpvZ19ELXlhcURZRHROR2NSMk0yazN3SURyRnVsQTh0eFNxMVRvUmI0Ml9NVHJ4RDRSYTAwY1JEUzdNTzk0T1p0Y3JqdkFKWFhWQll3WQ?oc=5",
         "published_at": "2026-11-25T08:05:48+00:00",
-        "id": "bonds-3"
-      },
-      {
-        "title": "채권 사들이는 외인, 경기둔화 베팅?",
-        "publisher": "톱스타뉴스",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XaUpZemFydUtXdmNyWF9qSFZobHNJVmFOWGR5YkNuUnkxbHYwRVFTcU0wdk13SXdYMGMyd0twX2hycmNycGk5OWpoa1JoV0diX2dJcndDbHJPemVnR1NhWERqM05iMmUxYktiaXZFQUZ0dw?oc=5",
-        "published_at": "2026-11-25T05:34:28+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "금통위 경계 속 국고채 '불 플래트닝'…코스피 급락·外人 매수",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvVHZ1MTc1ZDJpZjhXTjlqNTZkZEpOdmFjcV9SQ3JDZjhCOXVLUEV0c1owaDRRUnNkTVBHc2tzd3BWMHVKVVV0V1JSN3JvUFBOV0tISTVKdFl6VTl4SmViSUxGUUd1SEdZcUd3R3RhZ2d1Zw?oc=5",
-        "published_at": "2026-11-25T02:10:56+00:00",
         "id": "bonds-5"
       },
       {
-        "title": "[포커스] 금리인상 전망 속 국채선물 ‘큰 손’된 외인…10년물 금리 왜 내렸나",
-        "publisher": "오늘경제",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BejJhTV95WlUwZHlsTEx1Q3pMc2dkbHFvRXdYaThRNHRxaHZXdGVfTUJYTTZwUDlSSTJ4MWI2eTRvWFhqa1dmVlkwdEdRdi1PZl9JZmlVMlMxUzR2ZGlmSHlDS3U3RXRLUWFfREFVSGI4Vzg?oc=5",
-        "published_at": "2026-11-25T02:10:00+00:00",
+        "title": "독일상업은행, 미 10월 PCE 앞두고 채권 변동성 확대 가능성 제기",
+        "publisher": "토큰포스트",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ldkpQdkJfZndyZmUyWUE4emkzRFAyQ2pmbUZUc3VuQ1FNQlh6SV9UUUFJRUdCTmRhc1hGZHdGQjRTeDlPQ2xBMXM2bHEwOWJKdXpLYlI4UdIBXEFVX3lxTE5sT0Zjb19YUG5HemI0RGsyY2EwaGZkbUlTNUFXZENiTTNCQy1tMEpaUmhQbkwzX1FmQUNuNkRFNVMzcXVuWmFxZVhaU1p0dnFuUFpyWDRkbzJKUEct?oc=5",
+        "published_at": "2026-11-25T07:43:49+00:00",
         "id": "bonds-6"
       },
       {
-        "title": "세계 금 가격이 온스당 3,550달러 아래로 하락했습니다.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM0dxVnRLdkJKdHVxSlluYnl5UnBPRDV0WVNnM3h3ZWg3bDBsb2puZDZwRjNvQ3E0U29RcVE1TVotRlhtdWFqWnFhRlVONzFwYUVHMmhMQ05PUTByR2VkMy1Xbkw0V2Rtd2NPRUJ5cVJLbnhmQ1NiaUhpUWJWTWd2dg?oc=5",
-        "published_at": "2026-11-25T01:28:12+00:00",
+        "title": "골드만삭스 경고: 월요일 급등은 전형적인 약세장 반등이다",
+        "publisher": "深潮TechFlow",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaS0tMy1kR1VDMy1pT1g3WnAtcUlNcG5xRnV2OTFPelY5VXZ6cVN1OHJXNlFNQW1PSVFhb282aTFCNVBhSXhzZHRVdDBDcnVBcGJNc2V4NWlsZ0p2RzFyaWdRdGp4VUs5eXZDZ2Uydm5uaDJBSW1HSUhHZWhoOVhrdHhBLVJwS0E?oc=5",
+        "published_at": "2026-11-25T07:17:13+00:00",
         "id": "bonds-7"
       }
     ]
