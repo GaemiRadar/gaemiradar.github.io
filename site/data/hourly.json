@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-26T02:55:18.575995+09:00",
+  "data_updated_at": "2026-11-26T03:58:51.872881+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-26T02:55:18.575995+09:00",
+      "fetched_at": "2026-11-26T03:58:51.872881+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.01,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-26T02:55:18.575995+09:00",
+      "fetched_at": "2026-11-26T03:58:51.872881+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -92,59 +92,59 @@
     ],
     "stocks_us": [
       {
+        "title": "뉴욕증시 추수감사절 주간…23일 S&P500 4.73%·나스닥 6.51% 급반등, 25일 PCE·GDP가 다음 변수",
+        "publisher": "ISSUE ON (이슈온)",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1EQ3NHRTFweDU0SUZvQWlKMFFId2xxODhvdkE5R240ak9IczVpM0hKODQ5TUxyTS02eHV4ZzduWFplMWdRRzVMR1VwV0FTVjloT2xnVGhBckhBd0JNTER6NGMzSXE3em55WVpZ?oc=5",
+        "published_at": "2026-11-25T18:13:06+00:00",
+        "id": "stocks_us-0"
+      },
+      {
+        "title": "미국 증시 오늘: 안전자산 선호에 기술주 매도세 심화",
+        "publisher": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR0F2WXJyYUVSdW1ETDlLUjdVczhrUDljVjlXYWFiTlRSZXNLTFhaOUhZaG9qci1vMk1zVGNXYUNzYkxId1M1RTFjME44bUpyR0gyV3pmYVp6N1M1Sm5wRXVac2VtcmFCOFNUT1lpajktcDJyc0NGQ1BOR3pRQzAzeEcwNEtlSC1jeGM3ejJB?oc=5",
+        "published_at": "2026-11-25T13:50:54+00:00",
+        "id": "stocks_us-1"
+      },
+      {
         "title": "오늘 밤 미국장, 추수감사절 전 마지막 하루… 개장 전 나스닥 선물 −2.8%, 볼 숫자 4개",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWERfcDlPRVNNRTB6RUo5TkU0VlJmdFZmTzhPckdzdnFFYjVzY3cwWGFYVUhGOHdMR3BOTkpYYlVwQVFVeUljeDZYRlM2Nk4tUGNsbHppcS1DZXpEQjRTblRTeVg4RlJJUXVlSU9hNzVLWjlGVGx1Zm5kSmt1bWoybWdaeVhRRWFwYU5OUFBxbEdSQWVW?oc=5",
         "published_at": "2026-11-25T13:04:43+00:00",
-        "id": "stocks_us-0"
+        "id": "stocks_us-2"
       },
       {
         "title": "[오늘증시] 하루짜리 '젠슨 황 효과'...코스피, 하루만에 매도 사이드카",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13MEdxTVVydUdfVHFpY0RBbEx5WU1NMGtScTIzSUx2bldQWFVvRGxUbHJPWm96a2JHRjdlUFBHbDBySUlRUG9qcFl3OGZvZW5JTUI3NVM1ZHhzUHhTTzRENE4yUklaSnNZYVkwSGttSFlvRDQ?oc=5",
         "published_at": "2026-11-25T01:58:50+00:00",
-        "id": "stocks_us-1"
+        "id": "stocks_us-3"
       },
       {
         "title": "[뉴욕 증시] 젠슨 황 복귀 소식 하루 만에 혼조 마감 … 나스닥 1.5% ↓",
         "publisher": "한양경제",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zWm1zS2doZE9rc1RIUnRNSENMUGp2aS1qZ29xel9TaGlrYVJmYTBxYVlvUDl2UFY1ZzZGLUF6WkROSE5OR1pMWXJCVWJweEg1VXF0bV95M3ZlNm1VOTV1NVVOaHRpSFp2RW0tMEVCM3Fhdw?oc=5",
         "published_at": "2026-11-25T00:23:03+00:00",
-        "id": "stocks_us-2"
+        "id": "stocks_us-4"
       },
       {
         "title": "AI 반도체의 끝없는 폭락, 지금은 공포에 매수해야 할 때일까요?",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZXdwRlNiYVhWc3huZWNlWTc4dXNlcENFN3ZCcl96ZVBpcGY0NlctMkdIVndNUlA5bTVPUTIwOE1vVzlnRW5kaHBCcmgyNTVpal9ldDYwT0x2T3ZLcC1sWjRMTG8xMzkwMWthUUt2Z08wSkowS0E2cTU1TGhneTUwN1p0TDdMMXNPNjhRTA?oc=5",
         "published_at": "2026-11-24T23:49:14+00:00",
-        "id": "stocks_us-3"
+        "id": "stocks_us-5"
       },
       {
         "title": "[오늘 증시 전망] 코스피 6.32% 급반등에 5,000선 회복…미국 기술주 재하락에 25일 증시 시험대",
         "publisher": "업코리아",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoMUlKUjRBMmY3NENKb0E1bjhocUhLTy1aQ1g2amQyRUwxMTU5eHpxSF9meFQ0VlZ0ZVJQcXp3ZzBjMjl2WVFmS0c4SU9vblNyaEl4S21qWGtfTTRaNUJoSEFhNkxTRFR2dFFHQjNn?oc=5",
         "published_at": "2026-11-24T23:18:49+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-6"
       },
       {
         "title": "뉴욕증시, 엔비디아 급등 후 차익실현에 혼조...나스닥 1.5%↓",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kUTRMTDZteUNldERlWkdUMDMwYmI0cGZmMll1VEhFTFhGb2loN0s0MXBjTVdselBvczhLdXBRa3RIdDM3VTdYVXJYcHItQUNRYjAw0gFYQVVfeXFMTlBfU2tCTTB1T3l2cXhxNU00VWZoUjFhUVFWMmc1RHQzc3dOTEJYQldISjhoZkFXTzJPb1lxbkZQSVJaei16RXJsaVV0X2E4M3lwcW9OQ28yYg?oc=5",
         "published_at": "2026-11-24T22:56:00+00:00",
-        "id": "stocks_us-5"
-      },
-      {
-        "title": "11/24 미국 증시 마감 시황 : 하루짜리 반등일까?",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa0dDRHVTbFh2QlNOejRhVHhYVjdkamVWWE9iRllXemxzaVllN1pUS3hGbFVjQWFkdmV4NjRnYk5sTmtIZzVpSkp4ZmNzVVhFdjFlWnlxNTlPVEk4TWtpUHVzc2Uyc3RraW02SWtTaXdJbk5pYTJuVmprblN3R3d2REh4SmVJQS1KRnhSTUpGRFVEOFNw?oc=5",
-        "published_at": "2026-11-24T22:29:00+00:00",
-        "id": "stocks_us-6"
-      },
-      {
-        "title": "오늘의 증시",
-        "publisher": "MBC 뉴스",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9WOEFkYlNZOHE2NDNTUXRPM1FxZFl6Ty1Wd2FHTTBFdmNTOXhKZkFhRktVRG5HRkQzWDhibktNVUpMb3E0MHdfcEdwcFJQV1cwTDFFeEt1NDdRc3ZaRngwYmY4WXpaR0R5cFpFOHFjd0h0NFZHaExsWtIBeEFVX3lxTFAtVE5VUHpudHlBN2N2SHFhaHVtSmljZnpCRGVBMVVOS1JKLUpZV0ZDNXhYZjJuX3hRM3pCSllORExmc3VQWVo5MnA4dnhabDZBWGUxNDR6enZfV3JVNzZkam9US0ZYcXB6bFhlZ0ltdnI4d1pXWWp0Yw?oc=5",
-        "published_at": "2026-11-24T08:12:01+00:00",
         "id": "stocks_us-7"
       }
     ],
