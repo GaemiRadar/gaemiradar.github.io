@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-25T12:02:01.680634+09:00",
+  "data_updated_at": "2026-11-25T13:12:57.389307+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.0,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-25T12:02:01.680634+09:00",
+      "fetched_at": "2026-11-25T13:12:57.389307+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.01,
       "change_unit": "pp",
       "as_of": "2026-11-24",
-      "fetched_at": "2026-11-25T12:02:01.680634+09:00",
+      "fetched_at": "2026-11-25T13:12:57.389307+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,9 +41,9 @@
         "id": "stocks_kr-0"
       },
       {
-        "title": "美반도체는 지켰는데…'거래 없는' 코스피만 바로 반납 - 머니투데이",
+        "title": "31% 폭등→5% 하락, 엔비디아는 지켰는데...삼전닉스 '뚝', 왜 - 머니투데이",
         "publisher": "머니투데이",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fVVpkYXNiUEt1cy01REt6T1NzaFlEOWpUNXpNVkN0UHAwT2wxUTM2VXh3c25rcHZaUGF5LTY0VXNCd0dKaENZT200dXV4WnJuNlZmMldiYTdCS3hQcGxOeUY2ZUxRZEdBaXVoZERVbGQzUW0xdUHSAXtBVV95cUxNeUR2eHY0VzVYMm4yaXBIMnRPUVV0WGdCcHk4a1NuNmJ1aExkT3EtWlZpc0ZQZHRmdFVCMnd0N0ZKazh3V0tWZ3JpZDIxVF9UYjdXQmw1cmV0OVgwWFQ1Q0p0c3dHSEozOU51R3RmWVhGTk1lTDMyUzg3dmc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uSE1QZklFUWs2dUZBZTkzWXZDaG5NQWcwdk4xYm5PYjFESC1iTTIyTXN0dDRuMzl6ejM0aU13NWRKblR4RFpxR29iSW44TVBBbWNlZGk1aE92UTVSeWRKcVZFVnM1dkZF0gFuQVVfeXFMUGx0X0h1NGJ0Y3dEazhIV210eWVoWDNULXVEbFgwNndRUWVOUldGdTNHMnBXMW5DN1RnN09lWFg2cENmY2ltYjBzMmU3aUtDV2Q0S1h1Y3NkRS1mZ0JrZ1NxWEF3QmxCVllRWWt2Y2c?oc=5",
         "published_at": "2026-11-25T02:26:34+00:00",
         "id": "stocks_kr-1"
       },
@@ -164,45 +164,45 @@
         "id": "bonds-1"
       },
       {
+        "title": "세계 금 가격이 온스당 3,550달러 아래로 하락했습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM0dxVnRLdkJKdHVxSlluYnl5UnBPRDV0WVNnM3h3ZWg3bDBsb2puZDZwRjNvQ3E0U29RcVE1TVotRlhtdWFqWnFhRlVONzFwYUVHMmhMQ05PUTByR2VkMy1Xbkw0V2Rtd2NPRUJ5cVJLbnhmQ1NiaUhpUWJWTWd2dg?oc=5",
+        "published_at": "2026-11-25T01:28:12+00:00",
+        "id": "bonds-2"
+      },
+      {
         "title": "[노현우의 채권분석] '4%' 넘으면 멱살 좀 놓을까",
         "publisher": "연합인포맥스",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9neXg4aFJVRXJYajJReW1qbnIxeWR4aFF3c2VtbWwxOW50aVUtNF9kQUluVTQ3ekg1WFlzbjJjNHIzQk9odUdJb2R5NEF2ZjRRSThNRmpFMTN0d3NON1JfMU1TbFdIalZEYmlWRVVjLUc?oc=5",
         "published_at": "2026-11-25T00:48:49+00:00",
-        "id": "bonds-2"
-      },
-      {
-        "title": "외인 국채선물 대량 매수…10년물 1만3018계약 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03dzQ5X2dnMlI5M2JoN1dnLXpqT0xwdHdnNWJ4ODBoeWJ2TmVsMG9Pa1pTYlUyQXktekNXN1pRVmFaTlgtMjFtVV9KMA?oc=5",
-        "published_at": "2026-11-24T23:19:00+00:00",
         "id": "bonds-3"
       },
       {
-        "title": "외국인 채권 매수 확대…한은 마지막 인상에 베팅 : 경제",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE84c3pWcVJ5RXY4RWpWQXZaV3VkbksyTGxTbjdNcUpWUTJVc3BRTEM1X2RHQlY0eVpvakJUTmlEbE1TRTFadVYwOE8wYw?oc=5",
-        "published_at": "2026-11-24T23:11:00+00:00",
+        "title": "[뉴욕마켓워치] 젠슨 황 복귀에도 AI 불안 여전…달러↓주식·채권 혼조",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zZGRtWXVTQkZvS0RsN29IV3FUUFdySUFXLXpnekZHaDlXYno5YjNtZWFqR0tHNTlUNTJodUxQeF9mQWhScmdxNDdFM1htZEZrT2ZfUHlPeDAyODN6QVdweVFrR09OWEpmVW5XRVNONC0?oc=5",
+        "published_at": "2026-11-24T23:56:39+00:00",
         "id": "bonds-4"
       },
       {
-        "title": "국고채 금리 혼조세…금리 인상 전망에 단기물 상승",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsN2M3Ujl4MlpUQmZ1eWFvVEVFWlR4UU1tSmg1RlBlOG1vam1MLW14a2FTV2FqWXRieTJLQWNpdU1YRjd4RFB2c0dCTGJHMXdjZ2lV0gFYQVVfeXFMTjFaLXhBNk9LY1hVX2x6WGx6VU96azRobnVxVm1CS3VZTEplaDRURUh0TDJTdkhWRk40QS1vdV95UTRKcFBMQm9PMnFZM1NTNFZRRWwweWswTA?oc=5",
-        "published_at": "2026-11-24T09:13:00+00:00",
+        "title": "2026년 11월 25일 오늘 은 가격: 은 가격이 회복세를 보이지만 하락 압력은 여전히 ​​남아 있습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTlI0aVV3Y3VnNkdWYlR6UVhDVE9mR0VNcEVVTnNncEtPSWw0cVRRaElqaUZZMmlhekxfSVMtdXhJdmIzWkZxV0ljbE4xT2xxaWlyZUx4VUt1bHR6VGh0YkdpOGt6X3lhRWlpaUJhMXdOUXota1dITUIzcTJaU1FBUUdjTzgwR1N5MjJUN0F0U3M?oc=5",
+        "published_at": "2026-11-24T23:32:00+00:00",
         "id": "bonds-5"
       },
       {
-        "title": "국고채 금리 혼조세…코스피 상승 속 외인 선물 매수(종합)",
-        "publisher": "매일경제 마켓",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05N0cyZlctcFVoRkJuaWVJWlR3RmthSGZKcUxrQmFUWmRWU2M2UkJoR1ZPVGdVaTd6VENqMTFhUVFFU2V6b0FLMy02eS1DUlV3MEE?oc=5",
-        "published_at": "2026-11-24T08:02:04+00:00",
+        "title": "오늘(11월 25일) 금 가격: 금괴는 변동이 없으며, 금반지는 소폭 상승했습니다.",
+        "publisher": "Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWTR2RDE2ZXYzMnZkRnhCOTZvcTRNd01NeUk3dXJ5ODNTTlNnWGVRaEFyWUlfWnpmWVNCLVRkTElyNElDMzZ4bEo1aENiWGVZeGdreEtDVndnX1lOU1pKTk1sU0kzcUx2dERZSzQ2YUp2OEExOTVhM3pVR3FNNThUQ1VxRGRqb1BBZHFiLXJkTjA?oc=5",
+        "published_at": "2026-11-24T23:31:58+00:00",
         "id": "bonds-6"
       },
       {
-        "title": "개인 투자자, 올해 32조 쓸어담았다... 고개 든 ‘채권의 시간’",
-        "publisher": "Chosunbiz",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQS1RZdDBhVnROUC1pUHNOLTF4UEh1NEowLU9PLTdEdE5DaEZLMkJfRjB2eUQzU3k5andVQ2FiNzFyRnBLVDJCdXBuV2V3OXFiTkZaNnlRNTZtRmRSd21vOTZzQ1pUaExQb3FJbUMwSktZM3d0Sm84WFgwZDh2d2FFZi1wa2RSakZH0gGcAUFVX3lxTE9FWXhQYk9RbkR5VUJ5cmt2WTFqclVqTFl5bmMtc2RXeFpMd2pQUzNVb0pWVXlFaVhVdGtLLVMzSHNZVzJPS0VWUldTSVgwZFM5THZkSmQtR1hVRGVWbEFLTi1oSjVLUHg2NmFsY3lpcHJ5SlBkWE1GWmFINFVEbF9OV3RSVjdKbmxsVzZWUkNtNkFpaTM3Ujl6YkV4QQ?oc=5",
-        "published_at": "2026-11-24T07:39:00+00:00",
+        "title": "국채선물, 美 기술주 다시 급락에 상승…10년물 29틱↑",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03YU05RnlpeGNnN3hXUjhMNjUzWU5BX3pQVUJ6Y3hYWVZ0NTBySThfQkFlMTVqd05kVHZVdXg3ekNKSFVKT0xmcXlCUzdIaDRoV0o5UjR0U3BjQ1RTbVpTX214amVFTDM1M29yVEp1NUw?oc=5",
+        "published_at": "2026-11-24T23:22:25+00:00",
         "id": "bonds-7"
       }
     ]
@@ -220,8 +220,6 @@
     "gemini_called": false,
     "market_source_note": "미 국채 2·10년: 미국 재무부 일별 공시. 국내외 주가지수: 기존 TradingView 위젯 사용(본 파일에서 재게시하지 않음)."
   },
-  "errors": [
-    "뉴스 bonds: 일부 RSS 피드 조회 실패"
-  ],
+  "errors": [],
   "source_note": "뉴스: Google 뉴스 RSS 기사 제목·발행처·링크, 원문 분석 아님. 금리: 미국 재무부 공시."
 }
