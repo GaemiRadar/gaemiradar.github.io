@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-27T03:03:12.200536+09:00",
+  "data_updated_at": "2026-11-27T04:05:35.031649+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T03:03:12.200536+09:00",
+      "fetched_at": "2026-11-27T04:05:35.031649+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.06,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T03:03:12.200536+09:00",
+      "fetched_at": "2026-11-27T04:05:35.031649+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -41,52 +41,52 @@
         "id": "stocks_kr-0"
       },
       {
+        "title": "[증시분석] 코스피 급락 하루 만에 4,711선 반등…기관은 사고 외국인은 팔았다",
+        "publisher": "강릉뉴스",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85LXEwcmZEYkt4NGxIeDVFWl9GdzhtdnpLcXo1cUM3REJ0UDExMXVhenNfQVlIWEoyTURtNkRUcy0wTUxSdmFibm9maUI3SzlmSkFEbDFFeGVIckFJcnBiQTgxczNObzZwa2FnZWM0cw?oc=5",
+        "published_at": "2026-11-26T08:02:24+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
         "title": "[e마켓클로징] 코스피 4711 강보합···금리 인상에 상승폭 반납 |",
         "publisher": "시사저널e",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54TzNDSTRFcDBrTTlucFVmMzFiaF9QaFdsRTVsWjhkLUZqbUE2dDJpajJrY0tmRW9ic0ZfbFJKeGY5RTFSSzlrX0lXVGtTUTY5Z0FsRThYR2V3TmsyV0pkU0xFVXRZLW03X2dDaV9Qc3VDZlFfM1E?oc=5",
         "published_at": "2026-11-26T07:52:52+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[오늘의 주목주] 현대모비스 주가 5%대 내려, 코스피 '기관 순매수'에 4710선 강보합 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BZktvU1VhUTJuU0hpMHEwbGJpM3pseEtPcldYX0VfbHBpSHBiUUJQdEtWV3JBM3dySGp3YkRPR21hWkFHZ1V1TTE5OThnU1VMVXFXS003Rk54TmR0SVJBZzVzaDNSS2laV0JWUl8zUnNoems?oc=5",
         "published_at": "2026-11-26T07:48:15+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "금리 인상에 반등세 주춤…코스피 4711.21 마감",
         "publisher": "애드뉴스인천",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96eVhPQTZKOFowU19wV2pVMjlCTGdpa0dwX29qdmljZTgzQmxkVzRod1JXcnFVZlFuODVBLVFTRTI1bmN0QWhOZXV1RUpFMnhFd0VKVHlBdUlLd2x6a2lKYmN6cy1wUE9nQk5v?oc=5",
         "published_at": "2026-11-26T07:27:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "[11.26(목) 한국장 마감] 동반 상승 (코스피 +0.29%, 코스닥 +0.78%)",
+        "publisher": "주달",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA5NlIzbmlfcFVVeUtDX09XOTZYQjY1MUxESW5PNG9yWFltdkx1OWEyNEszclhrQTZkVkZCajhYOHUzSktIc1BqcUZGM29FWmFUanBISVYwSU1CLXhWVnFvVjVpM01ZX19SUFhiZmhSdGdLUF9OOG1icw?oc=5",
+        "published_at": "2026-11-26T07:00:45+00:00",
+        "id": "stocks_kr-5"
       },
       {
         "title": "반발매수 유입에 양 지수 소폭 반등",
         "publisher": "KB Think",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLLTRFSFNHQ3JIZHI2MjBXTTREUGNzX1dwZm1yMmVsYnZ3SF9Kdy1NZ29ZZ3JzNkJPWXdHMElsT1pLZFhzSVMxd19Ma2NZYjlGSlZrbFNqcnA1ZlByeWxWU3lEZVZoMXNPbjBBZw?oc=5",
         "published_at": "2026-11-26T06:58:29+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[마감시황] 코스피, 13.69포인트(+0.29%) 오른 4711.20 마감",
         "publisher": "라이센스뉴스",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YZlpZajRXTThWc0dCd0dfc084ZkdETGxGXzVYcU14RmwtMkZ6SFlGVWM4Ynk1OURlTnFGdXQ5UWNhS3A5bmhJczllQlVadFZYRjAtLUxhUldRWmQwMXJUTGQ0RTU2X1ZGdmVn?oc=5",
         "published_at": "2026-11-26T06:55:42+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "[오전시황] 한은 금리 인상에 코스피 상승 폭 줄어...코스닥 상한가 7종목",
-        "publisher": "중기이코노미",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2dVdsNmxKeFJsX3kyS0ZtSWNCN2E3eHVrOEk3eHJYUndZUmQzVXZ5Qjc5M1RSRUgxS3g0UkN2UDJKbnJsUGQxV3lxMlUxMEs0NTI2a0VLM1J1RDdZM1dva1Z4Tmx2d0Flc2c?oc=5",
-        "published_at": "2026-11-26T03:04:33+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[시황발자국] 11월 26일(목) 오전 장중 시황 : 장 초반 4,815선 터치 후 조정! 한은 기준금리 3.25% 인상과 반도체 매물 소화 속 스페이스X 발 우주항공주 독주",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbmJobGlrVXZhTkpkVmRKZjA4X196R1pHcGQybjdlcHBXbU9tT0EwbmZ3OGFlT29qZWszWEdMdzVWNVI3OXRLSm9Td0J0Y3ZHTG9MWi1XMVoxMHlJVGlRUnFaR01DMFJYOHZCOTQtZm5RVHJjeXJ2SUdHTUlKdU1SalVRY1NpclBX?oc=5",
-        "published_at": "2026-11-26T02:10:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -113,38 +113,38 @@
         "id": "stocks_us-2"
       },
       {
-        "title": "널뛰는 코스피에 개미 투자금은 미국 대표지수 ETF로 ＇쏠림＇",
-        "publisher": "한국경제TV",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdXlodHJ1SVZMVnhIQ2ZuWll2aTdYczZpRldsRmNJLUpYZ2JUYkpvTzBYNUx4eGJ0dzVFMWdMRjlzb0Ffbll1VXAtTXRaQnRES3d2Z0lIVW5URGJEbWlzd0NaSkRyRF80ZUVxWFhhMXVOQk96R0RmS2NJUWlrWFlrcg?oc=5",
-        "published_at": "2026-11-26T06:16:00+00:00",
-        "id": "stocks_us-3"
-      },
-      {
         "title": "[오늘증시] 1.9조 던진 외인 돌아왔다…4700선서 반등 시도",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5MRlFoVGRRTXYzNVcxTFlycXByd2RRNDFRY1ROZFlLV2gtT0RlODlUX3F1WUdFNmMwRGxXN2Y4cEFMb1FxckM0dXdiVF9OMUxJRE90aWNZRWxvU29mb2kybUdWZnVZajFYNUU4OWZwY2Mxbzg?oc=5",
         "published_at": "2026-11-26T02:02:11+00:00",
-        "id": "stocks_us-4"
+        "id": "stocks_us-3"
       },
       {
-        "title": "모건스탠리 CEO, 이번엔 \"S&P 500 매수\"...이번 예측도 맞출까?",
-        "publisher": "코인리더스",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE53OGlEYllPb2VadmczZ0docUthZ1puLXJ1OTRCMEFDNTlHbGM1WkpvTUdGbEwtaFRDb0xybFV4NnFVeFJaWVRyUjNR?oc=5",
-        "published_at": "2026-11-26T01:10:00+00:00",
-        "id": "stocks_us-5"
+        "title": "11월 26일 오전 브리핑(미국 증시)",
+        "publisher": "데일리바이트(DAILY BYTE)",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYWNHUl8tSGRHTmlSV3lRSlFYTnRsTE92WkdvbzAxblY3c3JybGRUdjNfaTV0Z2tTOWxNbU9mLWdPY1Y2RTFhTGRlZ2VMZUVuU3BkY21xSEFaWlVGRk9EZGtoNmJ0QmVVQkl6YV9FajU0N082c2FTTWRQV0p5ZXp3S1B3?oc=5",
+        "published_at": "2026-11-26T00:25:48+00:00",
+        "id": "stocks_us-4"
       },
       {
         "title": "뉴욕증시, AI 투자 불안에 혼조…다우 5만선 회복",
         "publisher": "스페셜경제",
         "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDdmxwSmRDZ0ZJLUd3bTlTUUlTM3daaFkyM3EtcU11Zk9icS1lemdNZE92QjAxN19SUXVYRnlMNnJUR1A4bnZ2XzlxazE5a0tXc2Z1X0dPUUtXR1ItLXhTT29QdkliRnBGMTU0bA?oc=5",
         "published_at": "2026-11-25T23:54:13+00:00",
-        "id": "stocks_us-6"
+        "id": "stocks_us-5"
       },
       {
         "title": "[미국증시] 골드만 '매수 기회'…'빅쇼트' 버리도 매수로 돌아서",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nQU5LR0NVZl9LS2N0SmE4Y2lXVXByRWstSFEwVl8xTkFLWEoxamZXTHpKcDd2TDdtOUwxNXV1Wl9CNnNiMkY5ZXJkbURQVlA4ODVWOHZncW5MeWIyNFp4RzNYQW4ySkU?oc=5",
         "published_at": "2026-11-25T23:35:00+00:00",
+        "id": "stocks_us-6"
+      },
+      {
+        "title": "[시황발자국] 11월 26일(목) 장전 시황 : 뉴욕증시 장중 -4.6% 투매 딛고 낙폭 대거 만회…오늘 한은 금통위 금리 결정과 코스피 4,700선 반등 시험대",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOFl6cXUyNzZhQk1MaWJ4X0tvamNLX2h3bVFjSWZCa0RrVWJ2dllTUHdNN1d3MTNic1ZOaXp3UC1rdTV6Ujl3clpqRmJaVnhkakJMeENFa2NwbEpsWEdwRFBjSXA1NHdJa1NtbmNYTzR2aDNZTXE0VWRGOFZ3VEhGOXMwX3lzeGgt?oc=5",
+        "published_at": "2026-11-25T22:42:00+00:00",
         "id": "stocks_us-7"
       }
     ],
