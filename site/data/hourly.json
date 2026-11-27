@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-28T00:03:33.918345+09:00",
+  "data_updated_at": "2026-11-28T01:10:53.603084+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-28T00:03:33.918345+09:00",
+      "fetched_at": "2026-11-28T01:10:53.603084+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.06,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-28T00:03:33.918345+09:00",
+      "fetched_at": "2026-11-28T01:10:53.603084+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "[증시분석] 코스닥 8.13% 급등…코스피, 다시 5,000선 앞에 섰다",
-        "publisher": "강릉뉴스",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KTGVfUzB4OElZSWdpMzk3ZVAyT0t3VFhPcWREN0lFUDk1VkNjbHFpN2h0QnpRLV9IS3gwNWxyZ2Q3OEY5VHlNSmprTDRIaEpOYzQxbDFUdHotRVlkendIQ2RKUVNIVVdtNkpEa0IwZw?oc=5",
-        "published_at": "2026-11-27T12:26:32+00:00",
-        "id": "stocks_kr-0"
-      },
-      {
         "title": "[마감시황] '증안펀드'에 코스닥 8%·코스피 4% 급등",
         "publisher": "자본시장뉴스",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6dUlTLU55RXl0TkxBSVNpVFVLMnBQdVRVc2RnclRvbElMdU9ka2ZheEdJMnprVWxtbHF5SGEydlZzWFdsMnJNVFp3ek94RFAtMnFtcS1TXzBhWEpjbld4ODI4bmgzSTA?oc=5",
         "published_at": "2026-11-27T11:54:35+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-0"
       },
       {
         "title": "‘입금되셨죠?’ 삼전 30조 배당…다음달엔 하닉 14조 쏜다",
         "publisher": "JTBC",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VWHIycy1xclFjMU9NT3VZZUUzT3Y3TVVIM214TFpQZ1BINHJuNnlySGpYWWdMQ2J4WW00bG52OW02MkFqVm9IMWhBcFBfbnIxWlE?oc=5",
         "published_at": "2026-11-27T11:15:45+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-1"
       },
       {
         "title": "코스피·코스닥 급반등, 삼성전자 16만 원대의 진짜 의미는?",
         "publisher": "네이버페이 머니스토리",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YZ0Jmam5XZ0VEQ0tibU1jSTV2cTEwd1gzQS1GVXUzUW9ldVljT2VxU0hnMGNfRG5rdjRSYl9kOE5fbjhPOVFYVkNEUjZ0YXhpb2pkY1VHZzN0UQ?oc=5",
         "published_at": "2026-11-27T11:11:48+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-2"
       },
       {
         "title": "코스피 4%·코스닥 8% 급등…증안펀드 기대감",
         "publisher": "연합뉴스TV",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLMFd3aFFUcjR3TGc4Unluc0xxdlhIVlhvaTJKc05NYVdsc1BZS3lUUG80Mm5JZm1Sc0JKREs2cFZpdWc2VzdmelNmNFBCSkN0MVA5WkxHYVpwR0JtcWNiVFlMOWVKcGM?oc=5",
         "published_at": "2026-11-27T09:45:00+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[오늘증시] 코스피 4%·코스닥 8% 급등…외국인 석 달 만에 '조 단위 순매수'",
         "publisher": "Queen 이코노미퀸",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84U2VJSXg1TEtjWWZ0SXItYjFrdURlQ0lVejhsWWhxZU51YUpfZUxxeWJ1R05tN0c1OTRiOTJMTGoyaWlNZl8yX2tSamt3S3pxNW95RmppTzVUbmo4SzhaUWpTLWdrRlEz?oc=5",
         "published_at": "2026-11-27T09:08:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-4"
       },
       {
         "title": "[오늘의 주목주] SK 주가 10%대 올라, 코스피 '외국인·기관 순매수'에 4910선 상승 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zZ1hoNEVlNWZibVlnV3JIQy12dlQ3UW1PVDV1eHRWODc0TVVJSE5kbThuNkpDQzlZbGRYZVpNWmU0c0R3T1F3enJjWVFaSzhUaFUtUnZSTFQ2ZHBwUmRhRUlIemh1bTJVQ0xOTko4RXlING8?oc=5",
         "published_at": "2026-11-27T08:51:19+00:00",
-        "id": "stocks_kr-6"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피, 4.34% 오른 4915.68…코스닥 8.13%↑",
         "publisher": "MTN 머니투데이방송",
         "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Pby1kaW5QNU80NUZsOGdVS2M0eWNtQzF2dEJFX21JOF90MGRDTkNsZWJSNmtrZ2szTndKYWhsVGs5YklJc2dBazFkaWtQdGxEYVhxa2NfVkxHdFBFOHBR?oc=5",
         "published_at": "2026-11-27T08:34:00+00:00",
+        "id": "stocks_kr-6"
+      },
+      {
+        "title": "코스닥 +8% 폭등 속 로봇주 상한가 12종목, 지금 올라타도 될까?",
+        "publisher": "네이버 프리미엄콘텐츠",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdnF1X3BURzQzdk8xZ1JnSU5hWmpyM2lsS1NWMjVNVDBLWDIyeVRYWjVmQVlncTlvamRnSy1uY1pqdFhMbkZYRDMxWmYtUTJXbkVITHFPUk1DMDdWUmp4VG5CbWVqYXdNMU16Z3R5QUl2QloxMWdmaHhJZTVRenNheHkyLXk4WlYzZ2c?oc=5",
+        "published_at": "2026-11-27T08:10:00+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -143,66 +143,66 @@
       {
         "title": "[굿모닝 오늘의 증시] '빅쇼트' 버리도 롱에 걸었다? 월가 '경계 VS 기회' 논쟁 격화",
         "publisher": "매일경제TV",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qdFhOS3ZqOGE4LUJVSVdHUzAwSE9oTngyMFlmbXBLWTNoenhqdnc1bkNrTWZqZmgxZ0hFbTJrMy1vaTR4RDRvYk1TQ1ZTNmVCMkl1aDhoUUtQU2tmUjNWeUZkNjVtMDh4?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YMXJuWkd5LWRXUk5mWUNrMVVjVzV3Q25NZTZTOXFpM3UzNW1mMDZjX19YOUZLbkN2LUZaT1lVOEZrc3N6eFJLb2l4OEt5ZWFzV3RibjYySXpyRXl6cUFJT0FPaGJDVWJFc01N?oc=5",
         "published_at": "2026-11-26T22:54:00+00:00",
         "id": "stocks_us-7"
       }
     ],
     "bonds": [
       {
+        "title": "미 국채가 약세…AI주 반등 속 위험선호 회복",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nOHp5UUhCZlk0RC1mTVNIYUpMc3A2ekxIOWJrcjFOcXgzQXktT3ZRX0VzeV83T3BYa3NfdVhQeEVxZXV4b1VwQ3RSOFcwTWNLYVQ0OXJzTlU0RmZwYnBMUmJMN3VyRk9ZZmVHWElpLWs?oc=5",
+        "published_at": "2026-11-27T15:42:57+00:00",
+        "id": "bonds-0"
+      },
+      {
+        "title": "석달새 202조원 증발한 국민연금…국민 노후자금에 무슨 일이",
+        "publisher": "매일신문",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8zRGI1Ty1XUExEM0RGaC1Nb20yZEhpZHdYTHBHUDlPeU5rT1d3aFZLU2NpZ2RmLXBQOWRvTlkwemI4ZjllQUNUdEp5SWZ6VS1HV1RZTDFyY0tkRmtrLURNa193?oc=5",
+        "published_at": "2026-11-27T12:10:41+00:00",
+        "id": "bonds-1"
+      },
+      {
         "title": "증시 부진에 내려온 국고채 금리… 증권가 \"다시 반짝 오른다\" - 머니투데이",
         "publisher": "머니투데이",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0wSGJmd2QtMi1TTUo0QWJxU1JJZ0taZi1EWmVBWGUyWGVFeU8xNWNrTmZ3cmxLeUJDVWpOOGk5dFhaR2J2MGZXM3ZlYWdVTTdHNENiOU9jZENhZDJiR3ptcl9DYmFWekJ4RktiMnVXZ29LNVJaVkHSAXtBVV95cUxPNWk0dl82YkgxX0pURU9UcUk4SXg1Z2ZBT1NSYXVKQm9YcDIxY1NoZWtxQWIxdmxvenVpRjRZZ1U4MVM2QXpoU0tpNEg1bjRxbDVhYWJwN3RlQk9paEF6cW1XTXFLTlEwbnFYWEFWckkxaEc4aW1NekdZWHc?oc=5",
         "published_at": "2026-11-27T08:28:08+00:00",
-        "id": "bonds-0"
-      },
-      {
-        "title": "증시 급등에 국고채 금리 상승…3년물 연 3.685%",
-        "publisher": "SBS Biz",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5xRXpmUk5rY2w4bGRMbzJvVTVWZHFPcDRpa0xHMzdHczBmYmVGdWdvQWh1QUpla1pZcHA0V09YQ1U3MnR3MmhLS2ZIUGhyRzIwOVEw0gFYQVVfeXFMTV96WTdCVnkwdXZrTjFNLTZVTFdydWxrTFVOdE52OUVnRU1LVi1OSGtIM3cyLVJZVXpmOExQY0dPRWZndGFWalZPbERoSGdqVWFMWnFrQ3Ezag?oc=5",
-        "published_at": "2026-11-27T08:15:00+00:00",
-        "id": "bonds-1"
+        "id": "bonds-2"
       },
       {
         "title": "국고채 금리, 증시 강세에 중단기물 상승…초장기물은 하락",
         "publisher": "스페셜타임스",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1JZk00dUR5LVkybzBnN29MdG5UT2xGYkMxVDJoYjZybV85cXpfOE14c0YtLWRXWm5sZXNEel80MVVuajNsV18zQnV0ZmxjRGthcDBjYVY0a1NhZHN0ZWtHMnBvOU5yTENjN3RubUUtSXhhTW8?oc=5",
         "published_at": "2026-11-27T08:11:42+00:00",
-        "id": "bonds-2"
+        "id": "bonds-3"
+      },
+      {
+        "title": "국고채 금리, 증시 강세에 중단기물 상승…초장기물은 하락(종합)",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rNjY5OEJIMld2d2RNamZXVWtkZy1FZDJkS0xZbUVTQ3lJUmlEd2dJME5XUW1BMERvdi1jUXRpMjRsQTNTaTJVbXprVmZRYjhhNnNzS1NCNWVSV1U?oc=5",
+        "published_at": "2026-11-27T08:06:23+00:00",
+        "id": "bonds-4"
       },
       {
         "title": "한은 기준금리 올린 날 무슨 일이?…국고채 만기별로 희비 엇갈린 이유",
         "publisher": "매일경제",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE55Umx0RFpRN3oybmdXRW9lTVFTVThMdWpzOHB0MTlVSFRPQ1g3eC1Zc0haM2hjNGJCeFdlVzdxMFY3VE93V1FBTHdZQ242dkdOX2c?oc=5",
         "published_at": "2026-11-27T06:03:52+00:00",
-        "id": "bonds-3"
-      },
-      {
-        "title": "11월 27일 오전 금 시세 업데이트: 횡보, 상승 및 하락 엇갈림",
-        "publisher": "Laodong.vn",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONFZnSklkYWFXeGg3cllfRWh4d25iTE01NllIdzV0SlBERHRTRm5fdXczY281VjJXbzhCVzRDemhlNWdVNWVpMF9GWXhvZmNRdTc5WTBPNGk1VE1QNnVMREdiT284MnNSRlYybHNmTlBRQjRxcXJRYmdlLVN4bHByMVpHLWJRSVpNbjJXX3lwd082aWxHamN5RGR4SGFNR1U4UlZzdWRRT3lxdw?oc=5",
-        "published_at": "2026-11-26T23:15:00+00:00",
-        "id": "bonds-4"
-      },
-      {
-        "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
-        "publisher": "네이버 프리미엄콘텐츠",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
-        "published_at": "2026-11-26T11:48:00+00:00",
         "id": "bonds-5"
       },
       {
-        "title": "[채권-마감] '점도표·성장률' 생각보다 매파적…국고 3년 3.9bp↑",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qbXZVNnhRLVBfY3dMVi1wZTBIbXpUb2M4NWtFcGZ4WndDVEI1Vm9YUTU1OTVHc2tTU1RrLU5NZS1kcjBRY1lScDR5QXRTMWJYLU5SdjktTTI2UHBtQUllSWZ1LTFJNWtIUllRUHpUakM?oc=5",
-        "published_at": "2026-11-26T09:45:14+00:00",
+        "title": "국제 금 가격 하락, 은과 백금 일제히 상승",
+        "publisher": "Laodong.vn",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWWNlTDhXaE9YUUctNi1kMXdBNFBCUzQxVVA4V01WVEJiU3RBUTBZZHAzOUtjWWdCV0dodzQ4eG5nRkx1ZWhodUJVOHB3cUgxejBVZkJSOXlJd2JYRm8xVENQS0oxU1lNSTBiTDB0bzdDeW4yOTJJYm1fMlJTOU5WdFdOaVd5LWstZDE5WThxN1ZKNFZJRFNQX1dZcEhiQk5FQWw3dEg4cw?oc=5",
+        "published_at": "2026-11-27T00:14:18+00:00",
         "id": "bonds-6"
       },
       {
-        "title": "오늘 밤만큼은 푹 자려고요…. [11/26 G프터눈]｜Global Money Club",
-        "publisher": "중앙일보",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1DYXZuUHQtaktRVkh1dktUNnRFVl84ZW5Fb0tWQmdpTGk5OTlUNlhoSWJ5REJHZW9pMExuZFNRaDVvWFIyaWMwczlQNW5iNGVGS2RGdXF3dV9xZEE?oc=5",
-        "published_at": "2026-11-26T09:17:34+00:00",
+        "title": "머스크 \"스페이스X 기업가치 장기적으로 세계 경제 규모 100만배 가능\"…스피어·에이치브이엠 수혜 기대 - 와우넷 오늘장전략",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5lVE9PNnpGbGRUT2FVNHlPQnFkUlQ1bkpySlRhTGxMVHd2eVpGM3hrMnJOVllUU1NnTERRelNqN2htZHpmbE9JUUNNQ25OeUFwT0JVLURhc0dFYXpyWXpoMElNLUFUdWNBUnZRNXZ4cFJZNmJUZWhJ?oc=5",
+        "published_at": "2026-11-27T00:04:33+00:00",
         "id": "bonds-7"
       }
     ]
