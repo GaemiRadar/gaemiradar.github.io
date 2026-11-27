@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-27T19:19:43.703748+09:00",
+  "data_updated_at": "2026-11-27T21:02:23.734356+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T19:19:43.703748+09:00",
+      "fetched_at": "2026-11-27T21:02:23.734356+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.06,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T19:19:43.703748+09:00",
+      "fetched_at": "2026-11-27T21:02:23.734356+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -178,31 +178,31 @@
         "id": "bonds-3"
       },
       {
-        "title": "[노현우의 채권분석] 두 내러티브 속 더 굳게 '움켜쥔 손'",
-        "publisher": "연합인포맥스",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uTUh3LUxIbjhhZkJCbnQ0Y3dhbUhUT3dNVUg2NEl4SFBVa0tEV3ZjUlhSTVZZcmhKeU5CaWxvQU90d2ZnZW50a3lveU8yLUZUTXZNU3BFRnRoN2ZFVDFmTWttV1lIYS14WXp3NEY1STc?oc=5",
-        "published_at": "2026-11-27T00:51:14+00:00",
-        "id": "bonds-4"
-      },
-      {
         "title": "국제 금 가격 하락, 은과 백금 일제히 상승",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWWNlTDhXaE9YUUctNi1kMXdBNFBCUzQxVVA4V01WVEJiU3RBUTBZZHAzOUtjWWdCV0dodzQ4eG5nRkx1ZWhodUJVOHB3cUgxejBVZkJSOXlJd2JYRm8xVENQS0oxU1lNSTBiTDB0bzdDeW4yOTJJYm1fMlJTOU5WdFdOaVd5LWstZDE5WThxN1ZKNFZJRFNQX1dZcEhiQk5FQWw3dEg4cw?oc=5",
         "published_at": "2026-11-27T00:14:18+00:00",
-        "id": "bonds-5"
+        "id": "bonds-4"
       },
       {
         "title": "11월 27일 오전 금 시세 업데이트: 횡보, 상승 및 하락 엇갈림",
         "publisher": "Laodong.vn",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONFZnSklkYWFXeGg3cllfRWh4d25iTE01NllIdzV0SlBERHRTRm5fdXczY281VjJXbzhCVzRDemhlNWdVNWVpMF9GWXhvZmNRdTc5WTBPNGk1VE1QNnVMREdiT284MnNSRlYybHNmTlBRQjRxcXJRYmdlLVN4bHByMVpHLWJRSVpNbjJXX3lwd082aWxHamN5RGR4SGFNR1U4UlZzdWRRT3lxdw?oc=5",
         "published_at": "2026-11-26T23:15:00+00:00",
-        "id": "bonds-6"
+        "id": "bonds-5"
       },
       {
         "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
         "published_at": "2026-11-26T11:48:00+00:00",
+        "id": "bonds-6"
+      },
+      {
+        "title": "[채권-마감] '점도표·성장률' 생각보다 매파적…국고 3년 3.9bp↑",
+        "publisher": "연합인포맥스",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qbXZVNnhRLVBfY3dMVi1wZTBIbXpUb2M4NWtFcGZ4WndDVEI1Vm9YUTU1OTVHc2tTU1RrLU5NZS1kcjBRY1lScDR5QXRTMWJYLU5SdjktTTI2UHBtQUllSWZ1LTFJNWtIUllRUHpUakM?oc=5",
+        "published_at": "2026-11-26T09:45:14+00:00",
         "id": "bonds-7"
       }
     ]
