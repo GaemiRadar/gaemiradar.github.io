@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-27T12:02:38.036954+09:00",
+  "data_updated_at": "2026-11-27T13:12:09.325919+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": -0.02,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T12:02:38.036954+09:00",
+      "fetched_at": "2026-11-27T13:12:09.325919+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": -0.06,
       "change_unit": "pp",
       "as_of": "2026-11-25",
-      "fetched_at": "2026-11-27T12:02:38.036954+09:00",
+      "fetched_at": "2026-11-27T13:12:09.325919+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
-        "title": "코스닥 5% 급등에 ‘매수 사이드카’...코스피도 1.7% 상승세",
+        "title": "코스피 4,800선 회복…코스닥 6% 급등",
+        "publisher": "연합뉴스TV",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NOHJOTk5nSFY0b3I1S3BZMWxQdHdWNE44ZTFFbVFUb1RTRTZWZFdJTmxwS3F6dDhyY1ItRHFOZzNNN2ZncHZZNFlLQlBDQ1BtX040Rm1VU2Fxdms0cFNSRFBNM2FaZzA?oc=5",
+        "published_at": "2026-11-27T03:56:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
+        "title": "엔비디아발 ＇AI 조정＇ 잦아드나…코스피·코스닥 일제히 급등",
+        "publisher": "한국경제TV",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObFZKRVg2Y2J1Wll1cnpnSW5DWWRabHVHYUthZU8wdWhOSFV6alB0QXhsT0EycU80UFZGMmRsZWo3OWVVcVY1NHh1cWc5VDN4Nm4wajhoZnlTenhISndHZkJ5blkzbmszRnQ1WE4zQnlkLXFqRTNXdjY2TVpKVF9ENQ?oc=5",
+        "published_at": "2026-11-27T03:39:00+00:00",
+        "id": "stocks_kr-1"
+      },
+      {
+        "title": "코스닥 5% 급등에 ‘매수 사이드카’...코스피도 3% 상승세",
         "publisher": "조선일보",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNajJuODhPbEoyTTlYVEt0R2UxSnlMY01QanB1UmZ3ajVSbDRDT3JEdXNjOGswVS1oVzY3YVBBUW85V093dFJQUjJsTUFsVlZiZWdSYXZkWUVWZ21zNDRiNE9NR0QySGw5Q2FfTXFxSjJRQVFqbXFWOGphZG5JNkhDRg?oc=5",
         "published_at": "2026-11-27T01:53:00+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[오늘의 증시] 코스피 4790선 회복·코스닥 5%대 급등…외국인·기관 동반 매수",
         "publisher": "잡포스트",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FYUJJXzBMb2JDSWwtYVZ1U0UyMWVYNm50amE2a256R2V4UG50U0VxME9WeVdzdWtnSGQxaXV4VkpzaV8xSnhVUFIxV1Y0Ni1fLW81b211Nk5wOHVSb2dwc2s1akJDOTlEV3V3WHFKMWgyZ9IBckFVX3lxTE9FYUJJXzBMb2JDSWwtYVZ1U0UyMWVYNm50amE2a256R2V4UG50U0VxME9WeVdzdWtnSGQxaXV4VkpzaV8xSnhVUFIxV1Y0Ni1fLW81b211Nk5wOHVSb2dwc2s1akJDOTlEV3V3WHFKMWgyZw?oc=5",
         "published_at": "2026-11-27T01:45:43+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[오늘증시] 대형 반도체株 밖 매수세 확장…코스닥 로봇·이차전지 강세",
         "publisher": "오늘경제",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sX0NDNHNEUG5mSlppbXI3aUExajJ0T1ptWjJaTGdBLTBfcTFpMkxON1czSlJDTnhGVGR2bk9iWmhvdlFkZWVaVE1OLUxnRmNQa3Zzc0doaDBRQ3VvV3E3S0RoekR4NGJYRzVTY3dxa25ELTQ?oc=5",
         "published_at": "2026-11-27T01:31:40+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-4"
+      },
+      {
+        "title": "코스닥 상승세 강해져 5%대 급등…매수 사이드카 발동",
+        "publisher": "연합뉴스",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hSDBiWlZUT3RoWDctaXRBZG5QMUhyRTVMQm9uWHVtS1JpdGVjcHI1NzFJaFNfMC02ckpheGFVQVFBOEZERXE2RE0xcFA1MDBmUDRPZUk2M2s1clRFQ3hZa9IBYEFVX3lxTE5hSDBiWlZUT3RoWDctaXRBZG5QMUhyRTVMQm9uWHVtS1JpdGVjcHI1NzFJaFNfMC02ckpheGFVQVFBOEZERXE2RE0xcFA1MDBmUDRPZUk2M2s1clRFQ3hZaw?oc=5",
+        "published_at": "2026-11-27T01:29:19+00:00",
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스피 강보합…코스닥 4%대 급등",
         "publisher": "연합뉴스TV",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tQmxCYTN1MkxVWlcxeG84bko4enViRUNHcmVWNkpPZndGTU9oN1JKVG1vbnkzUVJtM1pKSTQ1OWRhMWpSdURYRVBvMG1rR1psZi1uUk9ZdV9pZW0zTXhET3J2YUYzMUE?oc=5",
         "published_at": "2026-11-27T01:24:00+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-6"
       },
       {
         "title": "[증시 오늘(27일) 주요 특징주] 로봇·보안·바이오가 이끈 코스닥 4%대 급등…코스피 4750선 안착속 테마 순환매 가속",
         "publisher": "더페어",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBrSVJPck1YS1NDYnpZcHRIVURlOHpfRzlhbXU1UU52ZmotbFFFRFZSeEc5ems2X3M5MC04ZWh0b3oteVBWTHJ6WTdIM3FFc2VFXzlBTGdRbjlOaWxxWGlKaDVySWVDbHpBclpBS1pXajDSAXRBVV95cUxOd0hhcW1ZTXVZZXp4ZjZvOGN0SVRXenV3SmxMaGZoV3Rtb1ZoUlZkNDlQTi1aU3ZKR1htem4xUUEtend0emw5N3RyVlZRSDlkZl8wVU1HU0V1dkpmVTJCS3NBTVo4a0lpMHUzT3ZhdWNnUGxwUg?oc=5",
         "published_at": "2026-11-27T01:13:50+00:00",
-        "id": "stocks_kr-4"
-      },
-      {
-        "title": "[개장시황] 코스피 4750선 상승…코스닥 2%대 강세",
-        "publisher": "자본시장뉴스",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNWDVFNFMzTlNXYW1ZMXczSzFLVGZtbzlCWkpYVVpiUlRnTUU5bU1wV2YtX2dGd3dwcTR6d3N5RWVOXzFxek5yUnhqaWwzNlNjOXVnLVRtSkpQUFFXZzI5WTlQX0o3U2M?oc=5",
-        "published_at": "2026-11-27T00:56:07+00:00",
-        "id": "stocks_kr-5"
-      },
-      {
-        "title": "오늘의 국내 증시는?",
-        "publisher": "뉴스핌",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB5QkJMeXhDbW5Ba016MnpNRGdrel8tellMUmlIYUpsenVnd1Z6SURqWXlqVXhVQ0xyQ0dnb0xIQklDQXVObHlUSXpKQXZmOV84OGhJdUdMd1d3Nkxz?oc=5",
-        "published_at": "2026-11-27T00:47:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[개장시황] 코스피 소폭 상승·코스닥 2%대 강세…로봇·바이오 약진",
-        "publisher": "한국경제",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01MEJwSzltd3pRSzRpVVdmSURPSHF6bFd0M2YtQWRaZTl4WGtrTVdEX0lIbWhELTcwZjNFSHZxR1RYX2thTXpieW1RRkszUmk3ekZkQ1JXT2Yydw?oc=5",
-        "published_at": "2026-11-27T00:21:53+00:00",
         "id": "stocks_kr-7"
       }
     ],
