@@ -1,6 +1,6 @@
 {
   "mode": "hourly_public_data",
-  "data_updated_at": "2026-11-28T23:56:22.817392+09:00",
+  "data_updated_at": "2026-11-29T00:53:59.455752+09:00",
   "market": [
     {
       "id": "UST2Y",
@@ -10,7 +10,7 @@
       "change": 0.08,
       "change_unit": "pp",
       "as_of": "2026-11-27",
-      "fetched_at": "2026-11-28T23:56:22.817392+09:00",
+      "fetched_at": "2026-11-29T00:53:59.455752+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -24,7 +24,7 @@
       "change": 0.09,
       "change_unit": "pp",
       "as_of": "2026-11-27",
-      "fetched_at": "2026-11-28T23:56:22.817392+09:00",
+      "fetched_at": "2026-11-29T00:53:59.455752+09:00",
       "price_type": "official_daily_par_yield",
       "source": "U.S. Department of the Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
@@ -34,59 +34,59 @@
   "news": {
     "stocks_kr": [
       {
+        "title": "[아침 경제 브리핑] 11월 28일…중국 증시 급등·코스피 반등·종부세 증가 外 : 경제",
+        "publisher": "재경일보",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBXbHhTRkZNM3dtRU4zYTJVdzNhMFlydU9BUGxWeHdFT2U1aElvc3VsZjZ4R0VMeU5OR1pKbDBlWnlNQ01uOHN0V2lIUQ?oc=5",
+        "published_at": "2026-11-27T22:00:00+00:00",
+        "id": "stocks_kr-0"
+      },
+      {
         "title": "[주간증시분석] 코스닥 주간 9.81% 상승…700선 반등 이어갈까",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sdS0xd05kMWZaTkFRTE1IajR6TVM3dEtVZENsUXVuT0Z1YkJ1RGp6YXJYcTc0bU1BUFlsbVRmRk1ETURRVGNwd2c3aTVBOEYtcXlYQUIyLTlWWi1rOTFUSlJRUGZEQ29IbGpDS2ZvWQ?oc=5",
         "published_at": "2026-11-27T16:25:26+00:00",
-        "id": "stocks_kr-0"
+        "id": "stocks_kr-1"
       },
       {
         "title": "[증시분석] 코스닥 8.13% 급등…코스피, 다시 5,000선 앞에 섰다",
         "publisher": "강릉뉴스",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KTGVfUzB4OElZSWdpMzk3ZVAyT0t3VFhPcWREN0lFUDk1VkNjbHFpN2h0QnpRLV9IS3gwNWxyZ2Q3OEY5VHlNSmprTDRIaEpOYzQxbDFUdHotRVlkendIQ2RKUVNIVVdtNkpEa0IwZw?oc=5",
         "published_at": "2026-11-27T12:26:32+00:00",
-        "id": "stocks_kr-1"
+        "id": "stocks_kr-2"
       },
       {
         "title": "[오늘증시] 코스피 4%·코스닥 8% 급등…외국인 석 달 만에 '조 단위 순매수'",
         "publisher": "Queen 이코노미퀸",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XZFRFRGZfUFVsbGtFT0pRTDZSa05kY0dUS2RyamhKcXdBaEJsMlJXdWk0SWxHbFhwdUJQQzlKMnBzaVQxZDZfYnhxeFh3OE5rVHJqei1WR3lncXZrMnRILXZqM0ZTVTRsWUE?oc=5",
         "published_at": "2026-11-27T09:08:00+00:00",
-        "id": "stocks_kr-2"
+        "id": "stocks_kr-3"
       },
       {
         "title": "[오늘의 주목주] SK 주가 10%대 올라, 코스피 '외국인·기관 순매수'에 4910선 상승 마감",
         "publisher": "비즈니스포스트",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zZ1hoNEVlNWZibVlnV3JIQy12dlQ3UW1PVDV1eHRWODc0TVVJSE5kbThuNkpDQzlZbGRYZVpNWmU0c0R3T1F3enJjWVFaSzhUaFUtUnZSTFQ2ZHBwUmRhRUlIemh1bTJVQ0xOTko4RXlING8?oc=5",
         "published_at": "2026-11-27T08:51:19+00:00",
-        "id": "stocks_kr-3"
+        "id": "stocks_kr-4"
       },
       {
         "title": "코스피, 4.34% 오른 4915.68…코스닥 8.13%↑",
         "publisher": "MTN 머니투데이방송",
         "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Pby1kaW5QNU80NUZsOGdVS2M0eWNtQzF2dEJFX21JOF90MGRDTkNsZWJSNmtrZ2szTndKYWhsVGs5YklJc2dBazFkaWtQdGxEYVhxa2NfVkxHdFBFOHBR?oc=5",
         "published_at": "2026-11-27T08:34:00+00:00",
-        "id": "stocks_kr-4"
+        "id": "stocks_kr-5"
       },
       {
         "title": "코스닥 +8% 폭등 속 로봇주 상한가 12종목, 지금 올라타도 될까?",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdnF1X3BURzQzdk8xZ1JnSU5hWmpyM2lsS1NWMjVNVDBLWDIyeVRYWjVmQVlncTlvamRnSy1uY1pqdFhMbkZYRDMxWmYtUTJXbkVITHFPUk1DMDdWUmp4VG5CbWVqYXdNMU16Z3R5QUl2QloxMWdmaHhJZTVRenNheHkyLXk4WlYzZ2c?oc=5",
         "published_at": "2026-11-27T08:10:00+00:00",
-        "id": "stocks_kr-5"
+        "id": "stocks_kr-6"
       },
       {
         "title": "코스피 급등 +4.3%, 4,900선 회복… 외국인 1조 돌아왔다, 오늘 오른 이유와 이런 날 뒤 20일",
         "publisher": "네이버 프리미엄콘텐츠",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUWlKb1FZQTF2QTlHMDY4R1cxTmpHZG5OOWhOSWRmLWRFeE1sbEVqbFEyaUhmVGpwUzQ0ZzNsRmpLd1FkTzBReFBxdEI4QVQ3RWZPMnpKdVVrbEhlZWNKTDFVZU9CZ0JoekZZczhnck85bHU1N09Zb1c1X0pQYkFpQnRkdzBIQ3FIb2RzYUtiVE52ajhf?oc=5",
         "published_at": "2026-11-27T08:05:00+00:00",
-        "id": "stocks_kr-6"
-      },
-      {
-        "title": "[e마켓클로징] 외국인 1兆 순매수···코스피 4900선 회복 |",
-        "publisher": "시사저널e",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5YT24xTUF2aDhnazJ2bnBsYkRFN3F5ZHcyRWJvd0pCcUl3ZXZ6SC1BOWRyWEdzNnVFZlB2YU5sMHRFZEhWMDhXN05BTXo5eDZ6YTZXTm9uVVk4elBBd2t5el9KZW9PY2F4VkR0QUV3RXZqeVF5YUE?oc=5",
-        "published_at": "2026-11-27T07:51:10+00:00",
         "id": "stocks_kr-7"
       }
     ],
@@ -157,52 +157,52 @@
         "id": "bonds-0"
       },
       {
+        "title": "AI 하락론자도 공매도 청산, 주가 바닥 찍었나 [트럼프 스톡커]",
+        "publisher": "서울경제",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zQ2g5OXpFdTNJVldsVVVkRHVrM1FfZHowbkVfUk1kbEVBZVVNNm9tN2NFblB0VS16LTZqcEFFWHMxR0dtMTVVRjdSSGlrN2g5U2fSAVNBVV95cUxNcFFiN2hnZ1kyQmpLTGFkd0tSb0ZCZDlXNWNYOXYxNERyd3BOYVlFcnlwRVNoaDRQN0Nja2pjVnJ1RWFzYXRjOWkzdHY0UlNuYjJ2cw?oc=5",
+        "published_at": "2026-11-28T04:40:48+00:00",
+        "id": "bonds-1"
+      },
+      {
+        "title": "금 가격, 주간 회복세로 마감, 큰 시험대에 오르다",
+        "publisher": "Laodong.vn",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMm1EdWRFY2ZUN09kU29VaDBTaWRUSXpVLTFwQ0ZqeUVhV1lPR3QtM3g5bS1oU0hqcWZoMHFEYkFaNE9sVlJUdU1qeno2ZVp2SUZEZFpUeEVIM1pONEFPVzdwZ0Nuc05HUi1rZ2wyUkk3LU5vVE83bURRR1kxNHRDWHJhTlptWkNUSXl6QVViWENpOTBjWEtWYTNoVWkyVG1TXzhqNVNqNW1WcjVERkJjaVRB?oc=5",
+        "published_at": "2026-11-28T04:18:24+00:00",
+        "id": "bonds-2"
+      },
+      {
         "title": "블랙 프라이데이 이후 미국 증시는 강하게 반등했습니다.",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc0Zaa2owQ0V5RmExWEFHNEpERnZKOWxiUkpNQ0dJQnBIQUQwMk11ekMxZDZMRGhSQkNSblZpQkZmVERQY1lTVTFzb0ttNjJYM3pJNmhSUk9zMzhIWlB5dlZPay01WHFLTGdXVEhZMHpWcngwd1VrUWJIMFlHRmFBQzBYLWg?oc=5",
         "published_at": "2026-11-28T03:53:44+00:00",
-        "id": "bonds-1"
+        "id": "bonds-3"
+      },
+      {
+        "title": "[11월 넷째 주 세계경제동향 브리핑] 코스닥 9.8% 급등…한미 증시 동반 반등",
+        "publisher": "기호일보",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3X2FRWHd4ODNHM3U1bDV6MTZycmkwejFiN1JEM0Q1TDBLLXRPWVN4UUg4cXp0ajdZYUJGdHRfMkprN2NmTENJUHNWQkpWanExQXVsTV9wRGNicDlONWxiaG4xMHhXWWFUOC1mMmNvUQ?oc=5",
+        "published_at": "2026-11-28T01:34:08+00:00",
+        "id": "bonds-4"
       },
       {
         "title": "8거래일 연속 하락하더니…美 10년물 국채금리 '반등'",
         "publisher": "SBS Biz",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wOFZmVHc5TUlFOXF2Q1FtM0dKWHZiWmdwYTBmbk5ZazR0UTJqYnB2ZW4yZjkyZnZadkZjQ0h0SXJLLWo0UHVBWTRIS3o0ME5pdkhN?oc=5",
         "published_at": "2026-11-28T00:59:00+00:00",
-        "id": "bonds-2"
-      },
-      {
-        "title": "8거래일 내리던 美 10년물 금리, 4.936%로 반등 : 금융",
-        "publisher": "재경일보",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBJQXJDZURmRVdnb19RRDhXLUtiQWhvMFhkUGh5TXRIQmpJNDZMcGFqaFdJdFJrVEJaM2V3UEpudG9KcHA2TUVyc283RQ?oc=5",
-        "published_at": "2026-11-28T00:56:48+00:00",
-        "id": "bonds-3"
+        "id": "bonds-5"
       },
       {
         "title": "美 10년물 국채금리 8거래일 연속 하락 뒤 반등",
         "publisher": "한국경제TV",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNN0VBZXY5X3htMzlZOEhjS3NTeVZwZ2pNMkFSeWVUT1dFVFZfTlpxTzNNb0xWRzNOYjd2bm9ta2s0dGtCUkZGMzJIUllQLUdUcU9iUUtBbHYtV2pYdVllUkVQVlVhRjdUZG5jdTQzWmx2N3lsQVg2cllDWElnRmNxbA?oc=5",
         "published_at": "2026-11-28T00:39:00+00:00",
-        "id": "bonds-4"
+        "id": "bonds-6"
       },
       {
         "title": "'투자하는 모든 것이 결국 손실을 가져올 때' 투자자들은 어디에 돈을 투자해야 할까요?",
         "publisher": "Vietnam.vn",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOFZ4UWpoRXdWRmY2QWwzbW5mTlFZMl9YZFdsTm9jNUpVX3dOaFJ6bEkxb1hJVHJfdVJtZXNZdzVpWkstdDc4RVoxWXU0Y2t6VVFzUG1LWVBjc2R6VXZUaTdCVzExZG5nNHFHa2VDbnBGV2tPYkRxUEcwekFyN3R2Tg?oc=5",
         "published_at": "2026-11-27T23:31:06+00:00",
-        "id": "bonds-5"
-      },
-      {
-        "title": "2026년 11월 28일 오늘 은 가격: 회복세 유지.",
-        "publisher": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9aak9sdjBndDRtOFFIMThsemJLNzlyNW1FaEdiS3pqWlNFX0ZCUjVSbFZzNkZ4MzFGY3d3QXFiYUhWbGhReURSQzhvdk1hZXN2Q3pVdDZRRFBMUEZ2N2ZvbFEtcmtnUjR4ME9xdFM3LU10N3B1MVhFWXNB?oc=5",
-        "published_at": "2026-11-27T22:34:55+00:00",
-        "id": "bonds-6"
-      },
-      {
-        "title": "[뉴욕마켓워치] 블프엔 AI주 쇼핑…주식·달러↑채권↓",
-        "publisher": "KB Think",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5WUFpsOEZuYTBJV0NqOXRjTjl2ZmxsS3dfTi1JZ183VV9YNVJPYml0MUFmZm5IWTZyS290MTFxYVlNMEFrcEkteEx5SW9iRUx0SG12RkRzSUYybzlfLWJNcnhORTY5azZIazlhRW94X1Nmdw?oc=5",
-        "published_at": "2026-11-27T21:52:13+00:00",
         "id": "bonds-7"
       }
     ]
